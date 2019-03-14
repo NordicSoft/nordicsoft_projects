@@ -1,3 +1,10 @@
+.navbar-brand{
+    &.logo {
+        font-weight: 700;
+        color: #fff;
+        opacity: 0.6
+    }
+}
 .navbar.navbar-light.navbar-transparent.bg-faded {
     background-color: transparent !important;
     position: fixed;
@@ -28,11 +35,6 @@
 }
 
 .navbar.navbar-light.navbar-transparent.bg-faded.fixed-top {
-    /*animation: fadeInDown 0.3s ease-out forwards;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;*/
     background-color: rgb(52, 73, 94) !important;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 }

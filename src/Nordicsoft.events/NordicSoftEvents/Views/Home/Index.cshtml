@@ -4,11 +4,11 @@
 @section metatags{
     <meta property="og:type" content="website" />
     <meta property="og:title" content="NordicSoft | YOUCANHACKIT" />
-    <meta property="og:description" content="" />
-    <meta property="og:url" content="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
+    <meta property="og:description" content="Register now if you are sure #youcanhackit. Learn more info about hackathon itself, prizes and facilities we offer." />
+    @*<meta property="og:url" content="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
     <meta property="og:image" content="@($"{Context.Request.Scheme}://{Context.Request.Host}/img/noridc_og_image.jpg")" />
     <meta property="og:image:width" content="1269" />
-    <meta property="og:image:height" content="642" />
+    <meta property="og:image:height" content="642" />*@
     <meta name="description" content="Register now if you are sure #youcanhackit. Learn more info about hackathon itself, prizes and facilities we offer." />
 }
 @section links
@@ -24,8 +24,9 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarevent" aria-controls="navbarevent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="/">
-        <img src="images/logo-light.png" alt="" class="logo-first">
+    <a class="navbar-brand logo" href="/">
+        #YOUCANHACKIT
+        @*<img src="images/logo-light.png" alt="" class="logo-first">*@
     </a>
     <div class="collapse navbar-collapse" id="navbarevent">
         <ul class="navbar-nav ml-auto">
