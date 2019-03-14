@@ -1,4 +1,4 @@
-﻿namespace WeddingInvitation
+﻿namespace RichardGrace.com
 {
     public class Settings
     {

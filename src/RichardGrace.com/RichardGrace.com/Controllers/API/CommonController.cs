@@ -1,10 +1,10 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
-using WeddingInvitation.Services.GoogleRecaptcha;
-using WeddingInvitation.Services.MailSender;
+using RichardGrace.com.Services.GoogleRecaptcha;
+using RichardGrace.com.Services.MailSender;
 
-namespace WeddingInvitation.Controllers.API
+namespace RichardGrace.com.Controllers.API
 {
     [Route("api/")]
     [ApiController]

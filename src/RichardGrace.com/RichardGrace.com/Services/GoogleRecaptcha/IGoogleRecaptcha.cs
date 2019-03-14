@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace WeddingInvitation.Services.GoogleRecaptcha
+namespace RichardGrace.com.Services.GoogleRecaptcha
 {
     public interface IGoogleRecaptcha
     {

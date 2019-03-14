@@ -1,4 +1,4 @@
-﻿namespace WeddingInvitation.Services.MailSender
+﻿namespace RichardGrace.com.Services.MailSender
 {
     public interface IMail
     {

@@ -7,11 +7,11 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Net.Http.Headers;
+using RichardGrace.com.Services.GoogleRecaptcha;
+using RichardGrace.com.Services.MailSender;
 using SmartBreadcrumbs;
-using WeddingInvitation.Services.GoogleRecaptcha;
-using WeddingInvitation.Services.MailSender;
 
-namespace WeddingInvitation
+namespace RichardGrace.com
 {
     public class Startup
     {

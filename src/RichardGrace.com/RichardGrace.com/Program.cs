@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 using NLog.Common;
 using NLog.Web;
 
-namespace WeddingInvitation
+namespace RichardGrace.com
 {
     public class Program
     {

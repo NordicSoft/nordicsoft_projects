@@ -4,7 +4,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using SmartBreadcrumbs;
 
-namespace WeddingInvitation.Controllers
+namespace RichardGrace.com.Controllers
 {
     [Route("/", Name = "CultureLessHome")]
     public class HomeController : Controller

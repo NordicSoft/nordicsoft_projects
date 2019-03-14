@@ -5,10 +5,10 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
+using RichardGrace.com.Extensions;
 using SmartBreadcrumbs;
-using WeddingInvitation.Extensions;
 
-namespace WeddingInvitation.TagHelpers
+namespace RichardGrace.com.TagHelpers
 {
     [HtmlTargetElement("breadcrumbs")]
     public class BreadcrumbsTagHelper : TagHelper

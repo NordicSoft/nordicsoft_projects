@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace WeddingInvitation.Services.MailSender
+namespace RichardGrace.com.Services.MailSender
 {
     public interface IMailSender
     {

@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 
-namespace WeddingInvitation.Services.GoogleRecaptcha
+namespace RichardGrace.com.Services.GoogleRecaptcha
 {
     public class GoogleRecaptcha : IGoogleRecaptcha
     {

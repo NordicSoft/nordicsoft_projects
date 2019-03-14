@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WeddingInvitation.Extensions
+namespace RichardGrace.com.Extensions
 {
     public static class Extensions
     {
