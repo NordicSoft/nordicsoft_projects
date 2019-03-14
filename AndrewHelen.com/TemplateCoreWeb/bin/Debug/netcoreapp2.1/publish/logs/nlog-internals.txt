@@ -1,6 +1,0 @@
-2018-11-19 12:53:42.5826 Info Logger closing down...
-2018-11-19 12:53:42.5876 Info Closing old configuration.
-2018-11-19 12:53:42.5876 Info Logger has been closed down.
-2018-11-19 12:54:12.3813 Info Logger closing down...
-2018-11-19 12:54:12.3872 Info Closing old configuration.
-2018-11-19 12:54:12.4046 Info Logger has been closed down.

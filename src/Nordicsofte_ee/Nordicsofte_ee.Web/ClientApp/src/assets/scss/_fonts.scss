@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'DosisSubset';
+    src: url('../fonts/Dosis/dosissemibold-subset.woff2') format("woff2"), url('../fonts/Dosis/dosissemibold-subset.zopfli.woff') format("woff"), url('../fonts/Dosis/dosissemibold-subset.ttf') format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    unicode-range: U+20-7E,U+A3,U+20AC;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'OpenSansSubset';
+    src: url('../fonts/opensans/opensans-subset.woff2') format("woff2"), url('../fonts/opensans/opensans-subset.zopfli.woff') format("woff"), url('../fonts/opensans/opensans-subset.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    unicode-range: U+20-7E,U+A3,U+20AC;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('../fonts/Dosis/dosis.woff2') format("woff2"), url('../fonts/Dosis/dosis.woff') format("woff"), url('../fonts/Dosis/dosis.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('../fonts/Dosis/dosismedium.woff2') format("woff2"), url('../fonts/Dosis/dosismedium.woff') format("woff"), url('../fonts/Dosis/dosismedium.ttf') format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('../fonts/Dosis/dosissemibold.woff2') format("woff2"), url('../fonts/Dosis/dosissemibold.woff') format("woff"), url('../fonts/Dosis/dosissemibold.ttf') format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans/opensans.woff2') format("woff2"), url('../fonts/opensans/opensans.woff') format("woff"), url('../fonts/opensans/opensans.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans/opensanssemibold.woff2') format("woff2"), url('../fonts/opensans/opensanssemibold.woff') format("woff"), url('../fonts/opensans/opensanssemibold.ttf') format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans/opensansbold.woff2') format("woff2"), url('../fonts/opensans/opensansbold.woff') format("woff"), url('../fonts/opensans/opensansbold.ttf') format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    font-family: Arial;
+}
+
+.fonts-loaded-1 body {
+    font-family: OpenSansSubset, Arial;
+}
+
+.fonts-loaded-2 body {
+    font-family: Open Sans, OpenSansSubset, Arial;
+}

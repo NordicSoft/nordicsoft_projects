@@ -1,6 +1,0 @@
-2019-03-14 11:14:57.2200||DEBUG|WeddingInvitation.Program|init main |url: |action: 
-2019-03-14 11:15:13.8366||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\RichardGrace.com\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
-2019-03-14 11:15:41.7798|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 
-2019-03-14 11:26:27.3562||DEBUG|WeddingInvitation.Program|init main |url: |action: 
-2019-03-14 11:26:34.7705||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Documents\nordicsoftprojects\RichardGrace.com\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
-2019-03-14 11:26:49.3919|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 

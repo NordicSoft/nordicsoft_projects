@@ -1,9 +1,0 @@
-2019-03-11 11:00:49.8284||DEBUG|TemplateCoreWebTest.Program|init main |url: |action: 
-2019-03-11 11:00:56.4432||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
-2019-03-11 11:01:08.5796|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 
-2019-03-11 17:26:22.0835||DEBUG|TemplateCoreWebTest.Program|init main |url: |action: 
-2019-03-11 17:26:28.0146||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
-2019-03-11 17:26:39.8706|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 
-2019-03-11 18:05:17.3782||DEBUG|TemplateCoreWebTest.Program|init main |url: |action: 
-2019-03-11 18:05:24.5296||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
-2019-03-11 18:05:43.9493|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 

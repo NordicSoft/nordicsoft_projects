@@ -1,6 +1,0 @@
-2018-10-26 12:08:04.7137||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
-2018-10-26 12:08:15.7825||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
-2018-10-26 12:08:34.9622|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 
-2018-10-26 14:48:33.3980||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
-2018-10-26 14:48:48.9852||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
-2018-10-26 14:49:04.5019|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 

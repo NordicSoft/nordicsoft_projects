@@ -1,3 +1,0 @@
-﻿User-agent: *
-Host: https://nordicsoft.net
-Sitemap: https://nordicsoft.net/sitemap.xml
