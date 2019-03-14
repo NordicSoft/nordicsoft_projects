@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Weeding.Services.GoogleRecaptcha
+namespace AndrewHelen.com.Services.GoogleRecaptcha
 {
     public interface IGoogleRecaptcha
     {

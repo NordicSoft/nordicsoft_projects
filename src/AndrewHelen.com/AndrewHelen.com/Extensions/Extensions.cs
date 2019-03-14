@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Weeding.Extensions
+namespace AndrewHelen.com.Extensions
 {
     public static class Extensions
     {

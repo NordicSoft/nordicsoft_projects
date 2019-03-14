@@ -1,4 +1,6 @@
 ﻿using Amazon.SimpleEmail;
+using AndrewHelen.com.Services.GoogleRecaptcha;
+using AndrewHelen.com.Services.MailSender;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -8,10 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Net.Http.Headers;
 using SmartBreadcrumbs;
-using Weeding.Services.GoogleRecaptcha;
-using Weeding.Services.MailSender;
 
-namespace Weeding
+namespace AndrewHelen.com
 {
     public class Startup
     {

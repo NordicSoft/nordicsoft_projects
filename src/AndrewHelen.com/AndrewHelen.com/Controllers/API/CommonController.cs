@@ -1,10 +1,10 @@
 ﻿using System.Threading.Tasks;
+using AndrewHelen.com.Services.GoogleRecaptcha;
+using AndrewHelen.com.Services.MailSender;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
-using Weeding.Services.GoogleRecaptcha;
-using Weeding.Services.MailSender;
 
-namespace Weeding.Controllers.API
+namespace AndrewHelen.com.Controllers.API
 {
     [Route("api/")]
     [ApiController]

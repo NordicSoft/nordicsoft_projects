@@ -1,14 +1,14 @@
 ﻿using System.Text;
 using System.Threading.Tasks;
+using AndrewHelen.com.Extensions;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using SmartBreadcrumbs;
-using Weeding.Extensions;
 
-namespace Weeding.TagHelpers
+namespace AndrewHelen.com.TagHelpers
 {
     [HtmlTargetElement("breadcrumbs")]
     public class BreadcrumbsTagHelper : TagHelper

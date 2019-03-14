@@ -1,4 +1,4 @@
-﻿namespace Weeding.Services.MailSender
+﻿namespace AndrewHelen.com.Services.MailSender
 {
     public class AmazonSESMail : IAmazonSESMail
     {

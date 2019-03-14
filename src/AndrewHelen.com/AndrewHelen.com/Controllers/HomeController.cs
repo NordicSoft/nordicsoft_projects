@@ -4,7 +4,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using SmartBreadcrumbs;
 
-namespace Weeding.Controllers
+namespace AndrewHelen.com.Controllers
 {
     [Route("/", Name = "CultureLessHome")]
     public class HomeController : Controller

@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Weeding.Services.MailSender
+namespace AndrewHelen.com.Services.MailSender
 {
     public interface IMailSender
     {

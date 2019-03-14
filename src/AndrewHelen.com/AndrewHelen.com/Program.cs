@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 using NLog.Common;
 using NLog.Web;
 
-namespace Weeding
+namespace AndrewHelen.com
 {
     public class Program
     {

@@ -1,4 +1,4 @@
-﻿namespace Weeding
+﻿namespace AndrewHelen.com
 {
     public class Settings
     {

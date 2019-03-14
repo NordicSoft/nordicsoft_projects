@@ -5,7 +5,7 @@ using Amazon.SimpleEmail;
 using Amazon.SimpleEmail.Model;
 using Microsoft.Extensions.Logging;
 
-namespace Weeding.Services.MailSender
+namespace AndrewHelen.com.Services.MailSender
 {
     public class MailSender : IMailSender
     {
