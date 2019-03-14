@@ -1,0 +1,612 @@
+2019-03-11 15:29:38.5113||DEBUG|TemplateCoreWebTest.Program|init main 
+2019-03-11 15:29:39.0549||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Diana\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-03-11 15:29:43.9681||INFO|Microsoft.AspNetCore.NodeServices|development mode: true 
+2019-03-11 15:29:48.5626||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist has been removed. 
+2019-03-11 15:29:49.5228|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-11 15:29:49.5228|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-11 15:29:49.6115|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-11 15:29:49.6840||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: /__webpack_hmr 
+2019-03-11 15:29:49.6874||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: /__webpack_hmr 
+2019-03-11 15:29:49.6874||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: / 
+2019-03-11 15:30:11.1091||INFO|Microsoft.AspNetCore.NodeServices|webpack built 032c2d05fd34c293f197 in 22204ms 
+2019-03-11 15:30:11.2318||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Hash: 032c2d05fd34c293f197
+Version: webpack 4.23.1
+Time: 22204ms
+Built at: 2019-03-11 15:30:10
+                                              Asset      Size         Chunks             Chunk Names
+        ../img/_/fonts/bower-components/themify.svg  43 bytes                 [emitted]  
+../img/_/fonts/font-awesome/fontawesome-webfont.svg  55 bytes                 [emitted]  
+         critical-foft-preload-fallback-optional.js  8.04 KiB                 [emitted]  
+                                   custom_styles.js   289 KiB  custom_styles  [emitted]  custom_styles
+                                custom_styles.js.gz  53.3 KiB                 [emitted]  
+                      fonts/fontawesome-webfont.eot   162 KiB                 [emitted]  
+                   fonts/fontawesome-webfont.eot.gz  95.9 KiB                 [emitted]  
+                      fonts/fontawesome-webfont.svg   437 KiB                 [emitted]  
+                   fonts/fontawesome-webfont.svg.gz   132 KiB                 [emitted]  
+                      fonts/fontawesome-webfont.ttf   162 KiB                 [emitted]  
+                   fonts/fontawesome-webfont.ttf.gz  95.8 KiB                 [emitted]  
+                     fonts/fontawesome-webfont.woff  95.7 KiB                 [emitted]  
+                    fonts/fontawesome-webfont.woff2  75.4 KiB                 [emitted]  
+                                  fonts/themify.eot  76.9 KiB                 [emitted]  
+                               fonts/themify.eot.gz  40.1 KiB                 [emitted]  
+                                  fonts/themify.svg   229 KiB                 [emitted]  
+                               fonts/themify.svg.gz  71.7 KiB                 [emitted]  
+                                  fonts/themify.ttf  76.7 KiB                 [emitted]  
+                               fonts/themify.ttf.gz    40 KiB                 [emitted]  
+                                 fonts/themify.woff  54.8 KiB                 [emitted]  
+                              fonts/themify.woff.gz  33.6 KiB                 [emitted]  
+                                            main.js   207 KiB           main  [emitted]  main
+                                         main.js.gz  45.2 KiB                 [emitted]  
+                                              sw.js  1.46 KiB                 [emitted]  
+                                      vendor_src.js   958 KiB     vendor_src  [emitted]  vendor_src
+                                   vendor_src.js.gz   212 KiB                 [emitted]  
+                                   vendor_styles.js  1.51 MiB  vendor_styles  [emitted]  vendor_styles
+                                vendor_styles.js.gz   189 KiB                 [emitted]  
+Entrypoint vendor_styles = vendor_styles.js
+Entrypoint vendor_src = vendor_src.js
+Entrypoint custom_styles = custom_styles.js
+Entrypoint main = main.js
+[0] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/vendor_styles.js 40 bytes {vendor_styles} [built]
+[1] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true script-loader!./ClientApp/src/assets/vendor/js/theme/plugins.js script-loader!./ClientApp/src/assets/vendor/js/theme/event.custom.js script-loader!./ClientApp/src/assets/vendor/js/theme/gmap.js.js script-loader!./ClientApp/src/assets/vendor/js/theme/jquery.gmap.min.js script-loader!./ClientApp/src/assets/vendor/js/theme/jquery.countdown.min.js script-loader!./ClientApp/src/assets/vendor/js/jconfirm/jquery-confirm.min.js script-loader!./ClientApp/src/assets/vendor/js/init.js 112 bytes {vendor_src} [built]
+[2] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/custom_styles.js 40 bytes {custom_styles} [built]
+[3] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/index.js 40 bytes {main} [built]
+[./ClientApp/src/assets/js/custom_styles.js] 28 bytes {custom_styles} [built]
+[./ClientApp/src/assets/js/index.js] 184 bytes {main} [built]
+[./ClientApp/src/assets/js/vendor_styles.js] 97 bytes {vendor_styles} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/init.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/init.js 429 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/jconfirm/jquery-confirm.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/jconfirm/jquery-confirm.min.js 453 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/theme/event.custom.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/theme/event.custom.js 444 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/theme/gmap.js.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/theme/gmap.js.js 439 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/theme/jquery.countdown.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/theme/jquery.countdown.min.js 452 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/theme/jquery.gmap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/theme/jquery.gmap.min.js 447 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/theme/plugins.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/theme/plugins.js 439 bytes {vendor_src} [built]
+[./node_modules/webpack-hot-middleware/client.js?path=__webpack_hmr&dynamicPublicPath=true] (webpack)-hot-middleware/client.js?path=__webpack_hmr&dynamicPublicPath=true 7.59 KiB {vendor_styles} {vendor_src} {custom_styles} {main} [built]
+    + 43 hidden modules 
+2019-03-11 15:30:11.2318||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Compiled successfully. 
+2019-03-11 15:30:11.2529|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2019-03-11 15:30:11.7383|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) 
+2019-03-11 15:30:11.7907|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:30:11.8014|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) with arguments () - Validation state: Valid 
+2019-03-11 15:30:11.8112|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:30:11.8112|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.927ms. 
+2019-03-11 15:30:11.8112|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:30:11.8286|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7314ms. 
+2019-03-11 15:30:11.8652|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:30:11.8652|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-11 15:30:12.0114|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 169.3784ms. 
+2019-03-11 15:30:12.0178|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 183.1981ms. 
+2019-03-11 15:30:12.0178|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 206.6623ms 
+2019-03-11 15:30:12.0750|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:30:12.0806|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) in 339.8728ms 
+2019-03-11 15:30:12.1201|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/logo-light.png   
+2019-03-11 15:30:12.1243|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:30:12.1243|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 342.2167ms 404 text/html; charset=utf-8 
+2019-03-11 15:30:12.1243|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 22523.377ms 200 text/html; charset=utf-8 
+2019-03-11 15:30:12.1966|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/logo-light.png'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\logo-light.png' 
+2019-03-11 15:30:12.2086|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:30:12.2725|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/about.jpg   
+2019-03-11 15:30:12.3202|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 199.9945ms 200 image/png 
+2019-03-11 15:30:12.3310|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0603ms. 
+2019-03-11 15:30:12.3667|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:30:12.3912|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 24.7667ms. 
+2019-03-11 15:30:12.3912|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 190.3827ms 
+2019-03-11 15:30:12.4224|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 347.2466ms 404 text/html; charset=utf-8 
+2019-03-11 15:30:12.4372|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:30:12.4604|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-11 15:30:12.4604|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:30:12.5556|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:30:12.5807|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0244ms. 
+2019-03-11 15:30:12.6105|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:30:12.6105|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 5.0549ms. 
+2019-03-11 15:30:12.6105|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 61.7783ms 
+2019-03-11 15:30:12.6105|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 181.8766ms 404 text/html; charset=utf-8 
+2019-03-11 15:30:12.6644|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/bg4.jpg   
+2019-03-11 15:30:12.7116|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/bg4.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\event\bg4.jpg' 
+2019-03-11 15:30:12.7438|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 79.4075ms 200 image/jpeg 
+2019-03-11 15:30:13.0384|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:30:13.0669|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:30:13.0872|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:30:13.1584|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0232ms. 
+2019-03-11 15:30:13.1832|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:30:13.2199|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 36.6853ms. 
+2019-03-11 15:30:13.2570|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 169.8897ms 
+2019-03-11 15:30:13.2736|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 235.2361ms 404 text/html; charset=utf-8 
+2019-03-11 15:30:13.3603|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:30:13.3917|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:30:13.3917|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:30:13.4212|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0247ms. 
+2019-03-11 15:30:13.4212|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:30:13.4479|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 25.1081ms. 
+2019-03-11 15:30:13.4579|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 64.5608ms 
+2019-03-11 15:30:13.5008|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 140.6869ms 404 text/html; charset=utf-8 
+2019-03-11 15:30:14.2984|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:30:14.2984|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:30:14.3195|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:30:14.3195|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0229ms. 
+2019-03-11 15:30:14.3273|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:30:14.3273|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 4.9855ms. 
+2019-03-11 15:30:14.3273|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 16.6484ms 
+2019-03-11 15:30:14.3439|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 45.4634ms 404 text/html; charset=utf-8 
+2019-03-11 15:30:15.6472|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/about.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\event\about.jpg' 
+2019-03-11 15:30:15.6472|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3378.8311ms 200 image/jpeg 
+2019-03-11 15:30:16.2634|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:30:16.2634|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:30:16.2634|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:30:16.2634|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0437ms. 
+2019-03-11 15:30:16.2634|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:30:16.2804|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 2.4815ms. 
+2019-03-11 15:30:16.2804|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 9.7383ms 
+2019-03-11 15:30:16.2804|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 24.3232ms 404 text/html; charset=utf-8 
+2019-03-11 15:30:16.2804|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:30:16.2968|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:30:16.2968|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:30:16.2968|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0238ms. 
+2019-03-11 15:30:16.2968|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:30:16.2968|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 2.912ms. 
+2019-03-11 15:30:16.3101|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 11.1555ms 
+2019-03-11 15:30:16.3101|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 23.1695ms 404 text/html; charset=utf-8 
+2019-03-11 15:30:16.3101|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:30:16.3101|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:30:16.3268|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:30:16.3268|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.022ms. 
+2019-03-11 15:30:16.3268|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:30:16.3268|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 3.8795ms. 
+2019-03-11 15:30:16.3268|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 13.0161ms 
+2019-03-11 15:30:16.3706|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 54.7465ms 404 text/html; charset=utf-8 
+2019-03-11 15:30:16.3852|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:30:16.3914|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:30:16.4057|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:30:16.4057|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0211ms. 
+2019-03-11 15:30:16.4057|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:30:16.4057|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 2.7357ms. 
+2019-03-11 15:30:16.4057|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 10.489ms 
+2019-03-11 15:30:16.4057|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 32.5341ms 404 text/html; charset=utf-8 
+2019-03-11 15:30:54.2116|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-11 15:30:54.2192|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) 
+2019-03-11 15:30:54.2192|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) with arguments () - Validation state: Valid 
+2019-03-11 15:30:54.2192|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0326ms. 
+2019-03-11 15:30:54.2192|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-11 15:30:54.2192|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 3.8339ms. 
+2019-03-11 15:30:54.2323|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) in 10.236ms 
+2019-03-11 15:30:54.2323|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 22.004ms 200 text/html; charset=utf-8 
+2019-03-11 15:30:54.2814|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2019-03-11 15:30:54.2814|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/logo-light.png   
+2019-03-11 15:30:54.2814|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2019-03-11 15:30:54.3105|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/logo-light.png'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\logo-light.png' 
+2019-03-11 15:30:54.3497|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2019-03-11 15:30:54.3497|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 66.3421ms 200 image/png 
+2019-03-11 15:30:54.3677|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 86.2954ms 200 application/javascript 
+2019-03-11 15:30:54.3840|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/about.jpg   
+2019-03-11 15:30:54.3840|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2019-03-11 15:30:54.6170|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2019-03-11 15:30:54.6170|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 232.4463ms 200 application/javascript 
+2019-03-11 15:30:54.8587|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2019-03-11 15:30:54.8587|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2019-03-11 15:30:54.8837|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 597.2189ms 200 application/javascript 
+2019-03-11 15:30:54.9006|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\main.js' 
+2019-03-11 15:30:54.9050|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 46.3062ms 200 application/javascript 
+2019-03-11 15:30:55.1594|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-11 15:30:55.2165|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:30:55.2187|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 42757.7112ms 200 text/event-stream; charset=utf-8 
+2019-03-11 15:30:55.2187|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:30:55.2187|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:30:55.2187|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0214ms. 
+2019-03-11 15:30:55.2187|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:30:55.2346|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 5.5629ms. 
+2019-03-11 15:30:55.2346|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 20.933ms 
+2019-03-11 15:30:55.2545|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 37.9733ms 404 text/html; charset=utf-8 
+2019-03-11 15:30:55.2346|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:30:55.2870|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:30:55.2870|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:30:55.2870|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0181ms. 
+2019-03-11 15:30:55.2947|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:30:55.2947|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 3.4544ms. 
+2019-03-11 15:30:55.2947|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 12.5452ms 
+2019-03-11 15:30:55.2947|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 60.0933ms 404 text/html; charset=utf-8 
+2019-03-11 15:30:55.3145|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:30:55.3351|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/bg4.jpg   
+2019-03-11 15:30:55.3351|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:30:55.3351|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:30:55.3351|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0362ms. 
+2019-03-11 15:30:55.3455|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/bg4.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\event\bg4.jpg' 
+2019-03-11 15:30:55.3455|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:30:55.3656|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.5485ms 200 image/jpeg 
+2019-03-11 15:30:55.3656|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 18.6096ms. 
+2019-03-11 15:30:55.3858|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 47.7645ms 
+2019-03-11 15:30:55.3928|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 78.2822ms 404 text/html; charset=utf-8 
+2019-03-11 15:30:55.4200|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/themify.woff   
+2019-03-11 15:30:55.4200|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fontawesome-webfont.woff2   
+2019-03-11 15:30:55.4371|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/themify.woff'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\fonts\themify.woff' 
+2019-03-11 15:30:55.4371|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 25.8244ms 200 application/font-woff 
+2019-03-11 15:30:55.4371|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\fonts\fontawesome-webfont.woff2' 
+2019-03-11 15:30:55.4371|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.6961ms 200 font/woff2 
+2019-03-11 15:30:55.4697|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:30:55.4697|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:30:55.4697|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:30:55.4697|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0268ms. 
+2019-03-11 15:30:55.4697|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:30:55.4853|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 4.229ms. 
+2019-03-11 15:30:55.4853|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 10.6945ms 
+2019-03-11 15:30:55.4853|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 19.5792ms 404 text/html; charset=utf-8 
+2019-03-11 15:30:55.4853|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:30:55.4988|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:30:55.4988|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:30:55.4988|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0217ms. 
+2019-03-11 15:30:55.4988|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:30:55.4988|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 1.8347ms. 
+2019-03-11 15:30:55.4988|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 6.9445ms 
+2019-03-11 15:30:55.4988|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 18.6476ms 404 text/html; charset=utf-8 
+2019-03-11 15:30:55.5145|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:30:55.5145|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:30:55.5145|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:30:55.5145|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0241ms. 
+2019-03-11 15:30:55.5145|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:30:55.5325|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 8.171ms. 
+2019-03-11 15:30:55.5325|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 15.9046ms 
+2019-03-11 15:30:55.5325|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 24.8237ms 404 text/html; charset=utf-8 
+2019-03-11 15:30:55.5325|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:30:55.5553|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:30:55.5617|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:30:55.5617|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0591ms. 
+2019-03-11 15:30:55.5617|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:30:55.5617|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 2.8136ms. 
+2019-03-11 15:30:55.5759|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 15.0362ms 
+2019-03-11 15:30:55.5759|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 39.1986ms 404 text/html; charset=utf-8 
+2019-03-11 15:30:55.5759|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:30:55.6100|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:30:55.6100|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:30:55.6100|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0612ms. 
+2019-03-11 15:30:55.6262|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:30:55.6420|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 15.8274ms. 
+2019-03-11 15:30:55.6420|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 33.5665ms 
+2019-03-11 15:30:55.6420|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 63.8533ms 404 text/html; charset=utf-8 
+2019-03-11 15:30:59.5451|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/about.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\event\about.jpg' 
+2019-03-11 15:30:59.5451|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5166.5261ms 200 image/jpeg 
+2019-03-11 15:30:59.6133|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/favicon-32x32.png   
+2019-03-11 15:30:59.6133|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\favicon-32x32.png' 
+2019-03-11 15:30:59.6133|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.5694ms 200 image/png 
+2019-03-11 15:33:38.7892|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-11 15:33:38.7892|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) 
+2019-03-11 15:33:38.7980|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) with arguments () - Validation state: Valid 
+2019-03-11 15:33:38.7980|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0374ms. 
+2019-03-11 15:33:41.3395|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-11 15:33:41.6450|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 2843.4234ms. 
+2019-03-11 15:33:41.6450|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) in 2849.0181ms 
+2019-03-11 15:33:41.6450|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2859.5485ms 200 text/html; charset=utf-8 
+2019-03-11 15:33:41.6982|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2019-03-11 15:33:41.6982|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/about.jpg   
+2019-03-11 15:33:41.6982|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2019-03-11 15:33:41.6982|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/logo-light.png   
+2019-03-11 15:33:41.7170|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2019-03-11 15:33:41.7567|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 58.4219ms 200 application/javascript 
+2019-03-11 15:33:41.7567|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/logo-light.png'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\logo-light.png' 
+2019-03-11 15:33:41.7698|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 69.0987ms 200 image/png 
+2019-03-11 15:33:41.7827|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2019-03-11 15:33:41.9023|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2019-03-11 15:33:41.9108|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 127.9662ms 200 application/javascript 
+2019-03-11 15:33:42.0335|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2019-03-11 15:33:42.0699|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\main.js' 
+2019-03-11 15:33:42.0885|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 54.9098ms 200 application/javascript 
+2019-03-11 15:33:42.1124|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2019-03-11 15:33:42.1124|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 420.3203ms 200 application/javascript 
+2019-03-11 15:33:42.6204|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-11 15:33:42.6536|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 167492.0168ms 200 text/event-stream; charset=utf-8 
+2019-03-11 15:33:42.6654|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:33:42.6731|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:33:42.6731|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:33:42.6731|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0271ms. 
+2019-03-11 15:33:42.6731|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:33:42.6731|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 2.6195ms. 
+2019-03-11 15:33:42.6731|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 9.8744ms 
+2019-03-11 15:33:42.6924|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27.0481ms 404 text/html; charset=utf-8 
+2019-03-11 15:33:42.7044|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:33:42.7044|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:33:42.7191|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:33:42.7191|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0262ms. 
+2019-03-11 15:33:42.7191|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:33:42.7191|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 2.5941ms. 
+2019-03-11 15:33:42.7191|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 9.6211ms 
+2019-03-11 15:33:42.7191|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27.3771ms 404 text/html; charset=utf-8 
+2019-03-11 15:33:42.7191|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:33:42.7407|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:33:42.7407|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:33:42.7407|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0159ms. 
+2019-03-11 15:33:42.7407|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:33:42.7407|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 1.6611ms. 
+2019-03-11 15:33:42.7407|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 6.732ms 
+2019-03-11 15:33:42.7544|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 21.2349ms 404 text/html; charset=utf-8 
+2019-03-11 15:33:42.7662|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:33:42.8055|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:33:42.8055|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:33:42.8055|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0241ms. 
+2019-03-11 15:33:42.8145|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:33:42.8145|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 2.9038ms. 
+2019-03-11 15:33:42.8145|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 12.1383ms 
+2019-03-11 15:33:42.8145|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 58.6054ms 404 text/html; charset=utf-8 
+2019-03-11 15:33:42.8363|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:33:42.8538|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:33:42.8538|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:33:42.8538|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0434ms. 
+2019-03-11 15:33:42.8629|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:33:42.8629|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 3.8306ms. 
+2019-03-11 15:33:42.8629|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 13.2579ms 
+2019-03-11 15:33:42.8629|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 35.2062ms 404 text/html; charset=utf-8 
+2019-03-11 15:33:42.8629|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:33:42.8820|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:33:42.8820|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:33:42.8820|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0196ms. 
+2019-03-11 15:33:42.8820|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:33:42.8820|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 1.6967ms. 
+2019-03-11 15:33:42.8820|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 5.7637ms 
+2019-03-11 15:33:42.8927|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 18.1846ms 404 text/html; charset=utf-8 
+2019-03-11 15:33:42.8927|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:33:42.8927|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:33:42.8927|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:33:42.8927|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.028ms. 
+2019-03-11 15:33:42.9103|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:33:42.9103|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 3.0107ms. 
+2019-03-11 15:33:42.9103|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 13.5836ms 
+2019-03-11 15:33:42.9103|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 25.1446ms 404 text/html; charset=utf-8 
+2019-03-11 15:33:42.9103|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-11 15:33:42.9360|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) 
+2019-03-11 15:33:42.9360|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) - Validation state: Valid 
+2019-03-11 15:33:42.9391|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.019ms. 
+2019-03-11 15:33:42.9391|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-11 15:33:42.9391|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 7.3077ms. 
+2019-03-11 15:33:42.9391|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (TemplateCoreWebTest) in 13.433ms 
+2019-03-11 15:33:42.9538|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 33.8231ms 404 text/html; charset=utf-8 
+2019-03-11 15:33:43.0263|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/bg4.jpg   
+2019-03-11 15:33:43.0381|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/bg4.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\event\bg4.jpg' 
+2019-03-11 15:33:43.0381|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16.8154ms 200 image/jpeg 
+2019-03-11 15:33:43.0937|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fontawesome-webfont.woff2   
+2019-03-11 15:33:43.0937|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/themify.woff   
+2019-03-11 15:33:43.1052|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/themify.woff'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\fonts\themify.woff' 
+2019-03-11 15:33:43.1052|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\fonts\fontawesome-webfont.woff2' 
+2019-03-11 15:33:43.1101|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16.4459ms 200 application/font-woff 
+2019-03-11 15:33:43.1101|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 20.9665ms 200 font/woff2 
+2019-03-11 15:33:45.0552|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/about.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\event\about.jpg' 
+2019-03-11 15:33:45.0552|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3359.158ms 200 image/jpeg 
+2019-03-11 15:33:45.1552|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/favicon-32x32.png   
+2019-03-11 15:33:45.1667|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\favicon-32x32.png' 
+2019-03-11 15:33:45.1667|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 13.4674ms 200 image/png 
+2019-03-11 15:34:20.4787|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 270953.2992ms 200 text/event-stream; charset=utf-8 
+2019-03-11 15:34:20.4787|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 270954.7282ms 200 text/event-stream; charset=utf-8 
+2019-03-11 15:35:12.3488|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-11 15:35:12.3488|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) 
+2019-03-11 15:35:12.3488|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) with arguments () - Validation state: Valid 
+2019-03-11 15:35:12.3488|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0274ms. 
+2019-03-11 15:35:12.7504|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-11 15:35:12.7742|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 413.8091ms. 
+2019-03-11 15:35:12.7742|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) in 419.7947ms 
+2019-03-11 15:35:12.7846|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 435.7477ms 200 text/html; charset=utf-8 
+2019-03-11 15:35:12.8213|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2019-03-11 15:35:12.8360|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/about.jpg   
+2019-03-11 15:35:12.8360|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/logo-light.png   
+2019-03-11 15:35:12.8512|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2019-03-11 15:35:12.8512|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/logo-light.png'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\logo-light.png' 
+2019-03-11 15:35:12.8819|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2019-03-11 15:35:12.9111|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 68.2885ms 200 image/png 
+2019-03-11 15:35:12.9379|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 86.6081ms 200 application/javascript 
+2019-03-11 15:35:12.9534|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2019-03-11 15:35:13.0904|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2019-03-11 15:35:13.1107|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 157.2261ms 200 application/javascript 
+2019-03-11 15:35:13.1680|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2019-03-11 15:35:13.1829|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\main.js' 
+2019-03-11 15:35:13.1916|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 23.4357ms 200 application/javascript 
+2019-03-11 15:35:13.2884|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2019-03-11 15:35:13.2884|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 469.5859ms 200 application/javascript 
+2019-03-11 15:35:13.6094|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-11 15:35:13.6493|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 91027.7557ms 200 text/event-stream; charset=utf-8 
+2019-03-11 15:35:13.8872|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/bg4.jpg   
+2019-03-11 15:35:13.8994|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/bg4.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\event\bg4.jpg' 
+2019-03-11 15:35:13.8994|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 18.9178ms 200 image/jpeg 
+2019-03-11 15:35:13.9362|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/themify.woff   
+2019-03-11 15:35:13.9446|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fontawesome-webfont.woff2   
+2019-03-11 15:35:13.9639|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/themify.woff'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\fonts\themify.woff' 
+2019-03-11 15:35:13.9836|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\fonts\fontawesome-webfont.woff2' 
+2019-03-11 15:35:14.0035|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 58.9106ms 200 font/woff2 
+2019-03-11 15:35:13.9894|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 53.1496ms 200 application/font-woff 
+2019-03-11 15:35:15.8679|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/about.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\event\about.jpg' 
+2019-03-11 15:35:15.8679|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3033.6815ms 200 image/jpeg 
+2019-03-11 15:35:16.9970|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/favicon-32x32.png   
+2019-03-11 15:35:17.0052|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\favicon-32x32.png' 
+2019-03-11 15:35:17.0052|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11.0317ms 200 image/png 
+2019-03-11 15:42:18.6019|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-11 15:42:18.6427|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) 
+2019-03-11 15:42:18.6427|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) with arguments () - Validation state: Valid 
+2019-03-11 15:42:18.6427|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0226ms. 
+2019-03-11 15:42:19.1658|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-11 15:42:19.1900|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 543.57ms. 
+2019-03-11 15:42:19.1900|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) in 549.5791ms 
+2019-03-11 15:42:19.2018|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 599.8261ms 200 text/html; charset=utf-8 
+2019-03-11 15:42:19.2347|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/logo-light.png   
+2019-03-11 15:42:19.2347|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2019-03-11 15:42:19.2347|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2019-03-11 15:42:19.2441|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/about.jpg   
+2019-03-11 15:42:19.2441|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/logo-light.png'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\logo-light.png' 
+2019-03-11 15:42:19.2754|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2019-03-11 15:42:19.3485|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 113.838ms 200 image/png 
+2019-03-11 15:42:19.3779|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 137.5195ms 200 application/javascript 
+2019-03-11 15:42:19.4047|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2019-03-11 15:42:19.8011|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2019-03-11 15:42:19.8279|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 423.1254ms 200 application/javascript 
+2019-03-11 15:42:19.9213|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2019-03-11 15:42:19.9213|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2019-03-11 15:42:19.9213|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 688.0123ms 200 application/javascript 
+2019-03-11 15:42:19.9531|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\main.js' 
+2019-03-11 15:42:19.9869|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 58.7045ms 200 application/javascript 
+2019-03-11 15:42:20.2019|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-11 15:42:20.2262|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 426611.2578ms 200 text/event-stream; charset=utf-8 
+2019-03-11 15:42:20.3761|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/bg4.jpg   
+2019-03-11 15:42:20.4039|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fontawesome-webfont.woff2   
+2019-03-11 15:42:20.4039|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/bg4.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\event\bg4.jpg' 
+2019-03-11 15:42:20.4188|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/themify.woff   
+2019-03-11 15:42:20.4345|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\fonts\fontawesome-webfont.woff2' 
+2019-03-11 15:42:20.4345|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 63.8035ms 200 image/jpeg 
+2019-03-11 15:42:20.4568|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/themify.woff'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\fonts\themify.woff' 
+2019-03-11 15:42:20.4631|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 59.0229ms 200 font/woff2 
+2019-03-11 15:42:20.5337|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 114.8727ms 200 application/font-woff 
+2019-03-11 15:42:23.0326|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/about.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\event\about.jpg' 
+2019-03-11 15:42:23.0326|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3790.7232ms 200 image/jpeg 
+2019-03-11 15:42:23.1560|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/favicon-32x32.png   
+2019-03-11 15:42:23.1647|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\favicon-32x32.png' 
+2019-03-11 15:42:23.1647|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10.4706ms 200 image/png 
+2019-03-11 15:43:16.5330|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-11 15:43:16.5408|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) 
+2019-03-11 15:43:16.5408|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) with arguments () - Validation state: Valid 
+2019-03-11 15:43:16.5408|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0319ms. 
+2019-03-11 15:43:16.9218|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-11 15:43:16.9455|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 399.1089ms. 
+2019-03-11 15:43:16.9455|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) in 405.9336ms 
+2019-03-11 15:43:16.9455|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 417.7185ms 200 text/html; charset=utf-8 
+2019-03-11 15:43:16.9967|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/about.jpg   
+2019-03-11 15:43:17.0100|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2019-03-11 15:43:17.0100|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2019-03-11 15:43:17.0100|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/logo-light.png   
+2019-03-11 15:43:17.0522|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/logo-light.png'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\logo-light.png' 
+2019-03-11 15:43:17.0574|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2019-03-11 15:43:17.0801|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 69.8117ms 200 image/png 
+2019-03-11 15:43:17.0878|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 77.4481ms 200 application/javascript 
+2019-03-11 15:43:17.1127|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2019-03-11 15:43:17.2180|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2019-03-11 15:43:17.2279|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 115.1978ms 200 application/javascript 
+2019-03-11 15:43:17.3362|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2019-03-11 15:43:17.3705|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\main.js' 
+2019-03-11 15:43:17.3868|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 50.422ms 200 application/javascript 
+2019-03-11 15:43:17.5801|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2019-03-11 15:43:17.5874|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 577.3291ms 200 application/javascript 
+2019-03-11 15:43:17.8849|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-11 15:43:17.9190|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 57716.3045ms 200 text/event-stream; charset=utf-8 
+2019-03-11 15:43:18.0875|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/bg4.jpg   
+2019-03-11 15:43:18.1111|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/bg4.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\event\bg4.jpg' 
+2019-03-11 15:43:18.1190|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fontawesome-webfont.woff2   
+2019-03-11 15:43:18.1190|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 32.7656ms 200 image/jpeg 
+2019-03-11 15:43:18.1190|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/themify.woff   
+2019-03-11 15:43:18.1383|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\fonts\fontawesome-webfont.woff2' 
+2019-03-11 15:43:18.1603|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/themify.woff'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\fonts\themify.woff' 
+2019-03-11 15:43:18.1603|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 42.276ms 200 font/woff2 
+2019-03-11 15:43:18.1686|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 40.4259ms 200 application/font-woff 
+2019-03-11 15:43:21.7915|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/about.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\event\about.jpg' 
+2019-03-11 15:43:21.7915|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4800.7377ms 200 image/jpeg 
+2019-03-11 15:43:21.9134|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/favicon-32x32.png   
+2019-03-11 15:43:21.9295|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\favicon-32x32.png' 
+2019-03-11 15:43:21.9295|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 18.2966ms 200 image/png 
+2019-03-11 16:00:13.7827|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-11 16:00:13.7983|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) 
+2019-03-11 16:00:13.7983|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) with arguments () - Validation state: Valid 
+2019-03-11 16:00:13.7983|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0295ms. 
+2019-03-11 16:00:14.2723|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-11 16:00:14.6067|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 803.2274ms. 
+2019-03-11 16:00:14.6067|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) in 810.5164ms 
+2019-03-11 16:00:14.6067|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 830.6209ms 200 text/html; charset=utf-8 
+2019-03-11 16:00:14.9813|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-11 16:00:14.9973|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1017099.2497ms 200 text/event-stream; charset=utf-8 
+2019-03-11 16:00:18.0101|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/favicon-32x32.png   
+2019-03-11 16:00:18.0101|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\favicon-32x32.png' 
+2019-03-11 16:00:18.0101|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.3105ms 200 image/png 
+2019-03-11 16:03:30.3760|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-11 16:03:30.3944|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) 
+2019-03-11 16:03:30.3944|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) with arguments () - Validation state: Valid 
+2019-03-11 16:03:30.3944|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0274ms. 
+2019-03-11 16:03:30.3989|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-11 16:03:30.3989|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 3.1339ms. 
+2019-03-11 16:03:30.3989|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) in 11.5014ms 
+2019-03-11 16:03:30.4158|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 39.8841ms 200 text/html; charset=utf-8 
+2019-03-11 16:03:30.4656|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/logo-light.png   
+2019-03-11 16:03:30.4800|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/logo-light.png'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\logo-light.png' 
+2019-03-11 16:03:30.4800|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/about.jpg   
+2019-03-11 16:03:30.4800|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2019-03-11 16:03:30.4800|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2019-03-11 16:03:30.4800|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 19.2405ms 200 image/png 
+2019-03-11 16:03:30.5322|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2019-03-11 16:03:30.5679|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 83.3842ms 200 application/javascript 
+2019-03-11 16:03:30.5679|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2019-03-11 16:03:30.6337|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 195649.8817ms 200 text/event-stream; charset=utf-8 
+2019-03-11 16:03:30.7154|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2019-03-11 16:03:30.7154|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 147.7764ms 200 application/javascript 
+2019-03-11 16:03:30.7498|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2019-03-11 16:03:30.7498|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 274.1171ms 200 application/javascript 
+2019-03-11 16:03:30.8954|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2019-03-11 16:03:30.9090|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\main.js' 
+2019-03-11 16:03:30.9160|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 20.5907ms 200 application/javascript 
+2019-03-11 16:03:31.1850|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-11 16:03:31.3542|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/bg4.jpg   
+2019-03-11 16:03:31.3693|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/bg4.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\event\bg4.jpg' 
+2019-03-11 16:03:31.3693|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fontawesome-webfont.woff2   
+2019-03-11 16:03:31.3693|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.0653ms 200 image/jpeg 
+2019-03-11 16:03:31.3836|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/themify.woff   
+2019-03-11 16:03:31.4004|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\fonts\fontawesome-webfont.woff2' 
+2019-03-11 16:03:31.4197|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 39.7175ms 200 font/woff2 
+2019-03-11 16:03:31.4197|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/themify.woff'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\fonts\themify.woff' 
+2019-03-11 16:03:31.4332|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 49.6348ms 200 application/font-woff 
+2019-03-11 16:03:34.7352|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/about.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\event\about.jpg' 
+2019-03-11 16:03:34.7352|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4258.7935ms 200 image/jpeg 
+2019-03-11 16:03:34.8884|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/favicon-32x32.png   
+2019-03-11 16:03:34.8884|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\favicon-32x32.png' 
+2019-03-11 16:03:34.9000|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11.6113ms 200 image/png 
+2019-03-11 16:10:16.7818|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-11 16:10:16.7946|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) 
+2019-03-11 16:10:16.7946|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) with arguments () - Validation state: Valid 
+2019-03-11 16:10:16.7946|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1252ms. 
+2019-03-11 16:10:16.7946|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-11 16:10:16.8114|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 7.7913ms. 
+2019-03-11 16:10:16.8114|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) in 19.3413ms 
+2019-03-11 16:10:16.8114|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 38.6112ms 200 text/html; charset=utf-8 
+2019-03-11 16:10:16.8637|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2019-03-11 16:10:16.8637|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/logo-light.png   
+2019-03-11 16:10:16.8637|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2019-03-11 16:10:16.8637|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/logo-light.png'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\logo-light.png' 
+2019-03-11 16:10:16.8755|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2019-03-11 16:10:16.9089|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 43.0708ms 200 image/png 
+2019-03-11 16:10:16.9089|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 53.437ms 200 application/javascript 
+2019-03-11 16:10:16.9089|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2019-03-11 16:10:16.9238|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/about.jpg   
+2019-03-11 16:10:16.9898|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2019-03-11 16:10:17.0064|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2019-03-11 16:10:17.0150|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 147.8147ms 200 application/javascript 
+2019-03-11 16:10:17.0340|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 114.4661ms 200 application/javascript 
+2019-03-11 16:10:17.1420|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2019-03-11 16:10:17.1591|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\main.js' 
+2019-03-11 16:10:17.1696|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27.6376ms 200 application/javascript 
+2019-03-11 16:10:17.3584|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-11 16:10:17.3986|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 406208.3126ms 200 text/event-stream; charset=utf-8 
+2019-03-11 16:10:17.6248|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/bg4.jpg   
+2019-03-11 16:10:17.6512|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/bg4.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\event\bg4.jpg' 
+2019-03-11 16:10:17.6815|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fontawesome-webfont.woff2   
+2019-03-11 16:10:17.7160|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 91.1082ms 200 image/jpeg 
+2019-03-11 16:10:17.7282|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\fonts\fontawesome-webfont.woff2' 
+2019-03-11 16:10:17.7282|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 50.0287ms 200 font/woff2 
+2019-03-11 16:10:17.7467|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/themify.woff   
+2019-03-11 16:10:17.7834|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/themify.woff'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist\fonts\themify.woff' 
+2019-03-11 16:10:17.7969|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 50.1135ms 200 application/font-woff 
+2019-03-11 16:10:20.1498|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/about.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\images\event\about.jpg' 
+2019-03-11 16:10:20.1546|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3230.7275ms 200 image/jpeg 
+2019-03-11 16:10:21.5879|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-11 16:10:21.5879|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/favicon-32x32.png   
+2019-03-11 16:10:21.5992|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) 
+2019-03-11 16:10:21.5992|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) with arguments () - Validation state: Valid 
+2019-03-11 16:10:21.5992|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0289ms. 
+2019-03-11 16:10:21.5992|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\favicon-32x32.png' 
+2019-03-11 16:10:21.6099|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-11 16:10:21.6099|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.2982ms 200 image/png 
+2019-03-11 16:10:21.6239|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 14.021ms. 
+2019-03-11 16:10:21.6239|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) in 31.3122ms 
+2019-03-11 16:10:21.6383|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 50.451ms 200 text/html; charset=utf-8 
+2019-03-11 17:11:00.7150|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-11 17:11:00.7304|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) 
+2019-03-11 17:11:00.7326|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) with arguments () - Validation state: Valid 
+2019-03-11 17:11:00.7326|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0413ms. 
+2019-03-11 17:11:00.7326|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-11 17:11:00.7326|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 7.5987ms. 
+2019-03-11 17:11:00.7326|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) in 14.2873ms 
+2019-03-11 17:11:00.7482|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 33.2966ms 200 text/html; charset=utf-8 
+2019-03-11 17:11:00.9304|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-11 17:11:00.9304|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) 
+2019-03-11 17:11:00.9358|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) with arguments () - Validation state: Valid 
+2019-03-11 17:11:00.9358|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.038ms. 
+2019-03-11 17:11:00.9358|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-11 17:11:00.9358|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 4.0914ms. 
+2019-03-11 17:11:00.9358|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) in 12.701ms 
+2019-03-11 17:11:00.9513|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 20.8678ms 200 text/html; charset=utf-8 
+2019-03-11 17:11:01.4316|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-11 17:11:01.4684|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3644063.9212ms 200 text/event-stream; charset=utf-8 

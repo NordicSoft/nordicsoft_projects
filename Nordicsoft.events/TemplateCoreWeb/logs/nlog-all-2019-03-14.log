@@ -1,0 +1,256 @@
+2019-03-14 11:18:10.5245||DEBUG|Event.Program|init main 
+2019-03-14 11:18:11.2449||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Diana\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-03-14 11:18:14.2539||INFO|Microsoft.AspNetCore.NodeServices|development mode: true 
+2019-03-14 11:18:16.8440||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\Nordicsoft.events\TemplateCoreWeb\wwwroot\dist has been removed. 
+2019-03-14 11:18:17.8211|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-14 11:18:17.8211|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-14 11:18:18.4883||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: / 
+2019-03-14 11:18:18.4883||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: /__webpack_hmr 
+2019-03-14 11:18:34.8835||INFO|Microsoft.AspNetCore.NodeServices|webpack built ce66affa95ba4440ac60 in 17702ms 
+2019-03-14 11:18:34.9474||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Hash: ce66affa95ba4440ac60
+Version: webpack 4.23.1
+Time: 17702ms
+Built at: 2019-03-14 11:18:34
+                                              Asset      Size         Chunks             Chunk Names
+        ../img/_/fonts/bower-components/themify.svg  43 bytes                 [emitted]  
+../img/_/fonts/font-awesome/fontawesome-webfont.svg  55 bytes                 [emitted]  
+         critical-foft-preload-fallback-optional.js  8.04 KiB                 [emitted]  
+                                   custom_styles.js   289 KiB  custom_styles  [emitted]  custom_styles
+                                custom_styles.js.gz  53.3 KiB                 [emitted]  
+                      fonts/fontawesome-webfont.eot   162 KiB                 [emitted]  
+                   fonts/fontawesome-webfont.eot.gz  95.9 KiB                 [emitted]  
+                      fonts/fontawesome-webfont.svg   437 KiB                 [emitted]  
+                   fonts/fontawesome-webfont.svg.gz   132 KiB                 [emitted]  
+                      fonts/fontawesome-webfont.ttf   162 KiB                 [emitted]  
+                   fonts/fontawesome-webfont.ttf.gz  95.8 KiB                 [emitted]  
+                     fonts/fontawesome-webfont.woff  95.7 KiB                 [emitted]  
+                    fonts/fontawesome-webfont.woff2  75.4 KiB                 [emitted]  
+                                  fonts/themify.eot  76.9 KiB                 [emitted]  
+                               fonts/themify.eot.gz  40.1 KiB                 [emitted]  
+                                  fonts/themify.svg   229 KiB                 [emitted]  
+                               fonts/themify.svg.gz  71.7 KiB                 [emitted]  
+                                  fonts/themify.ttf  76.7 KiB                 [emitted]  
+                               fonts/themify.ttf.gz    40 KiB                 [emitted]  
+                                 fonts/themify.woff  54.8 KiB                 [emitted]  
+                              fonts/themify.woff.gz  33.6 KiB                 [emitted]  
+                                            main.js   207 KiB           main  [emitted]  main
+                                         main.js.gz  45.2 KiB                 [emitted]  
+                                              sw.js  1.46 KiB                 [emitted]  
+                                      vendor_src.js   958 KiB     vendor_src  [emitted]  vendor_src
+                                   vendor_src.js.gz   212 KiB                 [emitted]  
+                                   vendor_styles.js  1.51 MiB  vendor_styles  [emitted]  vendor_styles
+                                vendor_styles.js.gz   189 KiB                 [emitted]  
+Entrypoint vendor_styles = vendor_styles.js
+Entrypoint vendor_src = vendor_src.js
+Entrypoint custom_styles = custom_styles.js
+Entrypoint main = main.js
+[0] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/vendor_styles.js 40 bytes {vendor_styles} [built]
+[1] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true script-loader!./ClientApp/src/assets/vendor/js/theme/plugins.js script-loader!./ClientApp/src/assets/vendor/js/theme/event.custom.js script-loader!./ClientApp/src/assets/vendor/js/theme/gmap.js.js script-loader!./ClientApp/src/assets/vendor/js/theme/jquery.gmap.min.js script-loader!./ClientApp/src/assets/vendor/js/theme/jquery.countdown.min.js script-loader!./ClientApp/src/assets/vendor/js/jconfirm/jquery-confirm.min.js script-loader!./ClientApp/src/assets/vendor/js/init.js 112 bytes {vendor_src} [built]
+[2] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/custom_styles.js 40 bytes {custom_styles} [built]
+[3] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/index.js 40 bytes {main} [built]
+[./ClientApp/src/assets/js/custom_styles.js] 28 bytes {custom_styles} [built]
+[./ClientApp/src/assets/js/index.js] 184 bytes {main} [built]
+[./ClientApp/src/assets/js/vendor_styles.js] 97 bytes {vendor_styles} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/init.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/init.js 477 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/jconfirm/jquery-confirm.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/jconfirm/jquery-confirm.min.js 501 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/theme/event.custom.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/theme/event.custom.js 492 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/theme/gmap.js.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/theme/gmap.js.js 487 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/theme/jquery.countdown.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/theme/jquery.countdown.min.js 500 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/theme/jquery.gmap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/theme/jquery.gmap.min.js 495 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/theme/plugins.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/theme/plugins.js 487 bytes {vendor_src} [built]
+[./node_modules/webpack-hot-middleware/client.js?path=__webpack_hmr&dynamicPublicPath=true] (webpack)-hot-middleware/client.js?path=__webpack_hmr&dynamicPublicPath=true 7.59 KiB {vendor_styles} {vendor_src} {custom_styles} {main} [built]
+    + 43 hidden modules 
+2019-03-14 11:18:34.9474||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Compiled successfully. 
+2019-03-14 11:18:34.9629|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2019-03-14 11:18:35.0139|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 17195.5185ms 200 text/event-stream; charset=utf-8 
+2019-03-14 11:18:35.2381|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action Event.Controllers.HomeController.Index (Event) 
+2019-03-14 11:18:35.2727|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Event.Controllers.HomeController.Index (Event) with arguments () - Validation state: Valid 
+2019-03-14 11:18:35.2727|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Event.Controllers.HomeController.Index (Event), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6477ms. 
+2019-03-14 11:18:35.3153|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-14 11:18:35.4598|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 166.3742ms. 
+2019-03-14 11:18:35.4841|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Event.Controllers.HomeController.Index (Event) in 244.5844ms 
+2019-03-14 11:18:35.5013|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/logo-light.png   
+2019-03-14 11:18:35.5013|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 17693.4545ms 200 text/html; charset=utf-8 
+2019-03-14 11:18:35.5262|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /images/logo-light.png was not modified 
+2019-03-14 11:18:35.5547|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 53.2892ms 304 image/png 
+2019-03-14 11:18:35.5547|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/about.jpg   
+2019-03-14 11:18:35.5692|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /images/event/about.jpg was not modified 
+2019-03-14 11:18:35.5692|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.9492ms 304 image/jpeg 
+2019-03-14 11:18:35.7282|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-14 11:18:35.7609|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/69f9d6e709ebe58558e6.hot-update.json   
+2019-03-14 11:18:35.7734|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Event.Controllers.HomeController.Error404 (Event) 
+2019-03-14 11:18:35.7734|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Event.Controllers.HomeController.Error404 (Event) - Validation state: Valid 
+2019-03-14 11:18:35.7807|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Event.Controllers.HomeController.Error404 (Event), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3679ms. 
+2019-03-14 11:18:35.7807|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 11:18:35.8097|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 25.1989ms. 
+2019-03-14 11:18:35.8268|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Event.Controllers.HomeController.Error404 (Event) in 51.2585ms 
+2019-03-14 11:18:35.8310|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 70.1293ms 404 text/html; charset=utf-8 
+2019-03-14 11:18:35.8453|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/bg4.jpg   
+2019-03-14 11:18:35.8453|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /images/event/bg4.jpg was not modified 
+2019-03-14 11:18:35.8453|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.263ms 304 image/jpeg 
+2019-03-14 11:18:39.8893|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-14 11:18:39.8949|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action Event.Controllers.HomeController.Index (Event) 
+2019-03-14 11:18:39.8949|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Event.Controllers.HomeController.Index (Event) with arguments () - Validation state: Valid 
+2019-03-14 11:18:39.8949|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Event.Controllers.HomeController.Index (Event), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0313ms. 
+2019-03-14 11:18:39.8949|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-14 11:18:39.9094|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 7.0611ms. 
+2019-03-14 11:18:39.9094|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Event.Controllers.HomeController.Index (Event) in 14.8421ms 
+2019-03-14 11:18:39.9094|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 24.1702ms 200 text/html; charset=utf-8 
+2019-03-14 11:18:40.0156|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2019-03-14 11:18:40.0156|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2019-03-14 11:18:40.0432|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/logo-light.png   
+2019-03-14 11:18:40.0846|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\Nordicsoft.events\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2019-03-14 11:18:40.0846|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 70.7424ms 200 application/javascript 
+2019-03-14 11:18:40.1378|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\Nordicsoft.events\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2019-03-14 11:18:40.1477|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/logo-light.png'. Physical path: 'C:\Users\Diana\Work\Projects\Nordicsoft.events\TemplateCoreWeb\wwwroot\images\logo-light.png' 
+2019-03-14 11:18:40.1477|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/about.jpg   
+2019-03-14 11:18:40.1929|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 174.0559ms 200 application/javascript 
+2019-03-14 11:18:40.1929|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 155.9032ms 200 image/png 
+2019-03-14 11:18:40.3674|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2019-03-14 11:18:40.8268|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-14 11:18:40.9539|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5226.2454ms 200 text/event-stream; charset=utf-8 
+2019-03-14 11:18:40.9943|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2019-03-14 11:18:40.9943|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/bg4.jpg   
+2019-03-14 11:18:41.0051|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fontawesome-webfont.woff2   
+2019-03-14 11:18:41.0197|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Diana\Work\Projects\Nordicsoft.events\TemplateCoreWeb\wwwroot\dist\main.js' 
+2019-03-14 11:18:41.0197|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/bg4.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Nordicsoft.events\TemplateCoreWeb\wwwroot\images\event\bg4.jpg' 
+2019-03-14 11:18:41.0565|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 66.4337ms 200 application/javascript 
+2019-03-14 11:18:41.1030|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 105.9991ms 200 image/jpeg 
+2019-03-14 11:18:41.1519|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/themify.woff   
+2019-03-14 11:18:41.1624|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\Nordicsoft.events\TemplateCoreWeb\wwwroot\dist\fonts\fontawesome-webfont.woff2' 
+2019-03-14 11:18:41.1624|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Diana\Work\Projects\Nordicsoft.events\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2019-03-14 11:18:41.1798|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 815.9745ms 200 application/javascript 
+2019-03-14 11:18:41.1798|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 174.7118ms 200 font/woff2 
+2019-03-14 11:18:41.2262|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/themify.woff'. Physical path: 'C:\Users\Diana\Work\Projects\Nordicsoft.events\TemplateCoreWeb\wwwroot\dist\fonts\themify.woff' 
+2019-03-14 11:18:41.2262|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 77.115ms 200 application/font-woff 
+2019-03-14 11:18:45.8364|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/about.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Nordicsoft.events\TemplateCoreWeb\wwwroot\images\event\about.jpg' 
+2019-03-14 11:18:45.8464|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5698.4747ms 200 image/jpeg 
+2019-03-14 11:18:45.9689|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/favicon-32x32.png   
+2019-03-14 11:18:45.9689|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'C:\Users\Diana\Work\Projects\Nordicsoft.events\TemplateCoreWeb\wwwroot\favicon-32x32.png' 
+2019-03-14 11:18:45.9848|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 15.9137ms 200 image/png 
+2019-03-14 11:28:31.7935||DEBUG|Event.Program|init main 
+2019-03-14 11:28:32.4118||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Diana\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-03-14 11:28:36.1122||INFO|Microsoft.AspNetCore.NodeServices|development mode: true 
+2019-03-14 11:28:39.7498||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Documents\nordicsoftprojects\Nordicsoft.events\TemplateCoreWeb\wwwroot\dist has been removed. 
+2019-03-14 11:28:40.6230|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-14 11:28:42.1088||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: / 
+2019-03-14 11:28:58.1870||INFO|Microsoft.AspNetCore.NodeServices|webpack built dc846c31e4562617e7b2 in 17924ms 
+2019-03-14 11:28:58.3998||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Hash: dc846c31e4562617e7b2
+Version: webpack 4.23.1
+Time: 17924ms
+Built at: 2019-03-14 11:28:57
+                                              Asset      Size         Chunks             Chunk Names
+        ../img/_/fonts/bower-components/themify.svg  43 bytes                 [emitted]  
+../img/_/fonts/font-awesome/fontawesome-webfont.svg  55 bytes                 [emitted]  
+         critical-foft-preload-fallback-optional.js  8.04 KiB                 [emitted]  
+                                   custom_styles.js   289 KiB  custom_styles  [emitted]  custom_styles
+                                custom_styles.js.gz  53.3 KiB                 [emitted]  
+                      fonts/fontawesome-webfont.eot   162 KiB                 [emitted]  
+                   fonts/fontawesome-webfont.eot.gz  95.9 KiB                 [emitted]  
+                      fonts/fontawesome-webfont.svg   437 KiB                 [emitted]  
+                   fonts/fontawesome-webfont.svg.gz   132 KiB                 [emitted]  
+                      fonts/fontawesome-webfont.ttf   162 KiB                 [emitted]  
+                   fonts/fontawesome-webfont.ttf.gz  95.8 KiB                 [emitted]  
+                     fonts/fontawesome-webfont.woff  95.7 KiB                 [emitted]  
+                    fonts/fontawesome-webfont.woff2  75.4 KiB                 [emitted]  
+                                  fonts/themify.eot  76.9 KiB                 [emitted]  
+                               fonts/themify.eot.gz  40.1 KiB                 [emitted]  
+                                  fonts/themify.svg   229 KiB                 [emitted]  
+                               fonts/themify.svg.gz  71.7 KiB                 [emitted]  
+                                  fonts/themify.ttf  76.7 KiB                 [emitted]  
+                               fonts/themify.ttf.gz    40 KiB                 [emitted]  
+                                 fonts/themify.woff  54.8 KiB                 [emitted]  
+                              fonts/themify.woff.gz  33.6 KiB                 [emitted]  
+                                            main.js   207 KiB           main  [emitted]  main
+                                         main.js.gz  45.2 KiB                 [emitted]  
+                                              sw.js  1.46 KiB                 [emitted]  
+                                      vendor_src.js   958 KiB     vendor_src  [emitted]  vendor_src
+                                   vendor_src.js.gz   212 KiB                 [emitted]  
+                                   vendor_styles.js  1.51 MiB  vendor_styles  [emitted]  vendor_styles
+                                vendor_styles.js.gz   189 KiB                 [emitted]  
+Entrypoint vendor_styles = vendor_styles.js
+Entrypoint vendor_src = vendor_src.js
+Entrypoint custom_styles = custom_styles.js
+Entrypoint main = main.js
+[0] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/vendor_styles.js 40 bytes {vendor_styles} [built]
+[1] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true script-loader!./ClientApp/src/assets/vendor/js/theme/plugins.js script-loader!./ClientApp/src/assets/vendor/js/theme/event.custom.js script-loader!./ClientApp/src/assets/vendor/js/theme/gmap.js.js script-loader!./ClientApp/src/assets/vendor/js/theme/jquery.gmap.min.js script-loader!./ClientApp/src/assets/vendor/js/theme/jquery.countdown.min.js script-loader!./ClientApp/src/assets/vendor/js/jconfirm/jquery-confirm.min.js script-loader!./ClientApp/src/assets/vendor/js/init.js 112 bytes {vendor_src} [built]
+[2] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/custom_styles.js 40 bytes {custom_styles} [built]
+[3] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/index.js 40 bytes {main} [built]
+[./ClientApp/src/assets/js/custom_styles.js] 28 bytes {custom_styles} [built]
+[./ClientApp/src/assets/js/index.js] 184 bytes {main} [built]
+[./ClientApp/src/assets/js/vendor_styles.js] 97 bytes {vendor_styles} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/init.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/init.js 537 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/jconfirm/jquery-confirm.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/jconfirm/jquery-confirm.min.js 561 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/theme/event.custom.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/theme/event.custom.js 552 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/theme/gmap.js.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/theme/gmap.js.js 547 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/theme/jquery.countdown.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/theme/jquery.countdown.min.js 560 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/theme/jquery.gmap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/theme/jquery.gmap.min.js 555 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/theme/plugins.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/theme/plugins.js 547 bytes {vendor_src} [built]
+[./node_modules/webpack-hot-middleware/client.js?path=__webpack_hmr&dynamicPublicPath=true] (webpack)-hot-middleware/client.js?path=__webpack_hmr&dynamicPublicPath=true 7.59 KiB {vendor_styles} {vendor_src} {custom_styles} {main} [built]
+    + 43 hidden modules 
+2019-03-14 11:28:58.3998||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Compiled successfully. 
+2019-03-14 11:28:58.4218|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2019-03-14 11:28:58.9450|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action Event.Controllers.HomeController.Index (Event) 
+2019-03-14 11:28:59.0224|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Event.Controllers.HomeController.Index (Event) with arguments () - Validation state: Valid 
+2019-03-14 11:28:59.0578|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Event.Controllers.HomeController.Index (Event), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.9028ms. 
+2019-03-14 11:28:59.1469|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-14 11:28:59.4729|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 371.8788ms. 
+2019-03-14 11:28:59.5094|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Event.Controllers.HomeController.Index (Event) in 562.059ms 
+2019-03-14 11:28:59.5443|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 18921.7481ms 200 text/html; charset=utf-8 
+2019-03-14 11:28:59.9122|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-14 11:29:00.4583|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/8cb23a0d717d5d2133a9.hot-update.json   
+2019-03-14 11:29:00.4719|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/8cb23a0d717d5d2133a9.hot-update.json   
+2019-03-14 11:29:00.5143|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Event.Controllers.HomeController.Error404 (Event) 
+2019-03-14 11:29:00.5143|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Event.Controllers.HomeController.Error404 (Event) 
+2019-03-14 11:29:00.5452|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Event.Controllers.HomeController.Error404 (Event) - Validation state: Valid 
+2019-03-14 11:29:00.5603|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Event.Controllers.HomeController.Error404 (Event) - Validation state: Valid 
+2019-03-14 11:29:00.6062|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Event.Controllers.HomeController.Error404 (Event), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3501ms. 
+2019-03-14 11:29:00.6062|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Event.Controllers.HomeController.Error404 (Event), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0178ms. 
+2019-03-14 11:29:00.6207|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 11:29:00.6458|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 11:29:00.6510|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 35.7529ms. 
+2019-03-14 11:29:00.6827|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 65.1169ms. 
+2019-03-14 11:29:00.6827|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Event.Controllers.HomeController.Error404 (Event) in 151.1184ms 
+2019-03-14 11:29:00.7123|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Event.Controllers.HomeController.Error404 (Event) in 152.4137ms 
+2019-03-14 11:29:00.7123|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 261.6935ms 404 text/html; charset=utf-8 
+2019-03-14 11:29:00.7123|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 252.1885ms 404 text/html; charset=utf-8 
+2019-03-14 11:29:03.9647|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-14 11:29:04.0019|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action Event.Controllers.HomeController.Index (Event) 
+2019-03-14 11:29:04.0019|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Event.Controllers.HomeController.Index (Event) with arguments () - Validation state: Valid 
+2019-03-14 11:29:04.0125|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Event.Controllers.HomeController.Index (Event), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0247ms. 
+2019-03-14 11:29:04.0125|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-14 11:29:04.0314|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 15.169ms. 
+2019-03-14 11:29:04.0314|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Event.Controllers.HomeController.Index (Event) in 31.7348ms 
+2019-03-14 11:29:04.0314|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 72.6927ms 200 text/html; charset=utf-8 
+2019-03-14 11:29:04.1275|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2019-03-14 11:29:04.1606|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2019-03-14 11:29:04.2156|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/about.jpg   
+2019-03-14 11:29:04.2651|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/logo-light.png   
+2019-03-14 11:29:04.3111|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/logo-light.png'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\Nordicsoft.events\TemplateCoreWeb\wwwroot\images\logo-light.png' 
+2019-03-14 11:29:04.3111|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\Nordicsoft.events\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2019-03-14 11:29:04.3111|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 47.581ms 200 image/png 
+2019-03-14 11:29:04.3111|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 153.2143ms 200 application/javascript 
+2019-03-14 11:29:04.3985|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2019-03-14 11:29:05.0947|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\Nordicsoft.events\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2019-03-14 11:29:05.0947|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 697.6848ms 200 application/javascript 
+2019-03-14 11:29:05.1200|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\Nordicsoft.events\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2019-03-14 11:29:05.1200|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1003.5498ms 200 application/javascript 
+2019-03-14 11:29:05.4186|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2019-03-14 11:29:05.4319|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\Nordicsoft.events\TemplateCoreWeb\wwwroot\dist\main.js' 
+2019-03-14 11:29:05.4811|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 62.4195ms 200 application/javascript 
+2019-03-14 11:29:05.6621|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-14 11:29:05.7208|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5808.4793ms 200 text/event-stream; charset=utf-8 
+2019-03-14 11:29:06.0050|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/images/event/bg4.jpg   
+2019-03-14 11:29:06.0430|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/bg4.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\Nordicsoft.events\TemplateCoreWeb\wwwroot\images\event\bg4.jpg' 
+2019-03-14 11:29:06.0430|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 44.9608ms 200 image/jpeg 
+2019-03-14 11:29:06.0660|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fontawesome-webfont.woff2   
+2019-03-14 11:29:06.0791|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/themify.woff   
+2019-03-14 11:29:06.0990|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\Nordicsoft.events\TemplateCoreWeb\wwwroot\dist\fonts\fontawesome-webfont.woff2' 
+2019-03-14 11:29:06.1332|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 67.1753ms 200 font/woff2 
+2019-03-14 11:29:06.1332|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/themify.woff'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\Nordicsoft.events\TemplateCoreWeb\wwwroot\dist\fonts\themify.woff' 
+2019-03-14 11:29:06.1566|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 77.5352ms 200 application/font-woff 
+2019-03-14 11:29:11.9847|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/event/about.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\Nordicsoft.events\TemplateCoreWeb\wwwroot\images\event\about.jpg' 
+2019-03-14 11:29:11.9847|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7774.8925ms 200 image/jpeg 
+2019-03-14 11:29:12.1710|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/favicon-32x32.png   
+2019-03-14 11:29:12.1710|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\Nordicsoft.events\TemplateCoreWeb\wwwroot\favicon-32x32.png' 
+2019-03-14 11:29:12.1803|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.36ms 200 image/png 

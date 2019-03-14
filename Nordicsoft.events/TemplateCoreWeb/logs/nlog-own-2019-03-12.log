@@ -1,0 +1,3 @@
+2019-03-12 16:17:21.5221||DEBUG|TemplateCoreWebTest.Program|init main |url: |action: 
+2019-03-12 16:17:32.1408||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\Assan\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2019-03-12 16:17:52.1907|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 

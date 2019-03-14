@@ -1,0 +1,33 @@
+.fw-carousel {
+    .owl-item {
+        padding: 0
+    }
+
+    .hover-item-caption h3 {
+        font-size: 20px
+    }
+}
+
+.owl-theme .owl-controls {
+    counter-reset: owl;
+
+    .owl-page {
+        /*&:first-child{
+        transform: rotate(180deg);
+    }*/
+        span {
+            position: relative;
+            border: none;
+            &:before {
+                counter-increment: owl;
+                content: counter(owl);
+                position: absolute;
+            }
+            /*width: 10px;
+        height: 18px;
+        border: 9px solid transparent;
+        border-left: 10px solid rgb(255, 255, 255);*/
+        }
+    }
+}
+

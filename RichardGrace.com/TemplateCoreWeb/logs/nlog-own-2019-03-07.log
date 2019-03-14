@@ -1,0 +1,75 @@
+2019-03-07 10:58:49.1430||DEBUG|TemplateCoreWebTest.Program|init main |url: |action: 
+2019-03-07 10:59:01.2218||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2019-03-07 10:59:14.6341|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 
+2019-03-07 11:07:06.6555||DEBUG|TemplateCoreWebTest.Program|init main |url: |action: 
+2019-03-07 11:07:24.1157||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2019-03-07 11:07:49.4441|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 
+2019-03-07 12:43:45.9386||DEBUG|TemplateCoreWebTest.Program|init main |url: |action: 
+2019-03-07 12:43:51.6107||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2019-03-07 12:44:05.0932|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 
+2019-03-07 15:20:24.6662||DEBUG|TemplateCoreWebTest.Program|init main |url: |action: 
+2019-03-07 15:20:30.6461||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2019-03-07 15:20:44.6976|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 
+2019-03-07 17:50:26.6531||ERROR|Microsoft.AspNetCore.NodeServices|[31m├Ч[39m [90mя╜вwdmя╜г[39m: Hash: 8de854a4c87cbf68cbf1
+Version: webpack 4.23.1
+Time: 449ms
+Built at: 2019-03-07 17:50:26
+                                                               Asset       Size                        Chunks             Chunk Names
+../img/_/fonts/glyphicons-halflings/glyphicons-halflings-regular.svg   64 bytes                                           
+                                                     ../img/drag.png   49.2 KiB                                           
+                                                  ../img/drag.png.gz   35.2 KiB                                [emitted]  
+                                9885971a7fcee3ffc037.hot-update.json   55 bytes                                [emitted]  
+                    custom_styles.9885971a7fcee3ffc037.hot-update.js   1.35 KiB  custom_styles, custom_styles  [emitted]  custom_styles, custom_styles
+                 custom_styles.9885971a7fcee3ffc037.hot-update.js.gz  487 bytes                                [emitted]  
+                                                    custom_styles.js    163 KiB                 custom_styles  [emitted]  custom_styles
+                                                 custom_styles.js.gz   34.5 KiB                                [emitted]  
+                              fonts/glyphicons-halflings-regular.eot   19.9 KiB                                           
+                              fonts/glyphicons-halflings-regular.svg   61.7 KiB                                           
+                           fonts/glyphicons-halflings-regular.svg.gz   16.4 KiB                                [emitted]  
+                              fonts/glyphicons-halflings-regular.ttf   40.3 KiB                                           
+                           fonts/glyphicons-halflings-regular.ttf.gz   22.7 KiB                                [emitted]  
+                             fonts/glyphicons-halflings-regular.woff   22.8 KiB                                           
+                            fonts/glyphicons-halflings-regular.woff2   17.6 KiB                                           
+                                                             main.js    207 KiB                          main  [emitted]  main
+                                                          main.js.gz   45.2 KiB                                [emitted]  
+                                                       vendor_src.js    828 KiB                    vendor_src  [emitted]  vendor_src
+                                                    vendor_src.js.gz    187 KiB                                [emitted]  
+                                                    vendor_styles.js   1.12 MiB                 vendor_styles  [emitted]  vendor_styles
+                                                 vendor_styles.js.gz    172 KiB                                [emitted]  
+Entrypoint vendor_styles = vendor_styles.js
+Entrypoint vendor_src = vendor_src.js
+Entrypoint custom_styles = custom_styles.js custom_styles.9885971a7fcee3ffc037.hot-update.js custom_styles.9885971a7fcee3ffc037.hot-update.js
+Entrypoint main = main.js
+[0] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/vendor_styles.js 40 bytes {vendor_styles}
+[1] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true script-loader!./ClientApp/src/assets/vendor/js/jquery/jquery.js script-loader!./ClientApp/src/assets/vendor/js/bootstrap/bootstrap.min.js script-loader!./ClientApp/src/assets/vendor/js/plugins/plugins.js script-loader!./ClientApp/src/assets/vendor/js/jconfirm/jquery-confirm.min.js script-loader!./ClientApp/src/assets/vendor/js/init.js 88 bytes {vendor_src}
+[2] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/custom_styles.js 40 bytes {custom_styles}
+[3] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/index.js 40 bytes {main}
+[./ClientApp/src/assets/js/custom_styles.js] 28 bytes {custom_styles}
+[./ClientApp/src/assets/js/index.js] 184 bytes {main}
+[./ClientApp/src/assets/js/vendor_styles.js] 241 bytes {vendor_styles}
+[./ClientApp/src/assets/scss/style.scss] 1.29 KiB {custom_styles}
+[./ClientApp/src/assets/vendor/css/animate/animate.css] 1.34 KiB {vendor_styles}
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/bootstrap/bootstrap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/bootstrap/bootstrap.min.js 457 bytes {vendor_src}
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/init.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/init.js 437 bytes {vendor_src}
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/jconfirm/jquery-confirm.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/jconfirm/jquery-confirm.min.js 461 bytes {vendor_src}
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/jquery/jquery.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/jquery/jquery.js 447 bytes {vendor_src}
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/js/plugins/plugins.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/js/plugins/plugins.js 449 bytes {vendor_src}
+[./node_modules/webpack-hot-middleware/client.js?path=__webpack_hmr&dynamicPublicPath=true] (webpack)-hot-middleware/client.js?path=__webpack_hmr&dynamicPublicPath=true 7.59 KiB {vendor_styles} {vendor_src} {custom_styles} {main}
+    + 42 hidden modules
+
+ERROR in ./ClientApp/src/assets/scss/style.scss (./node_modules/css-loader??ref--5-1!./node_modules/sass-loader/lib/loader.js??ref--5-2!./ClientApp/src/assets/scss/style.scss)
+Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+ |url: |action: 
+2019-03-07 17:50:26.6531||ERROR|Microsoft.AspNetCore.NodeServices|
+        &:before { |url: |action: 
+2019-03-07 17:50:26.6531||ERROR|Microsoft.AspNetCore.NodeServices|
+       ^ |url: |action: 
+2019-03-07 17:50:26.6531||ERROR|Microsoft.AspNetCore.NodeServices|
+      Expected ":".
+  ClientApp\src\assets\scss\component\_carousel.scss 18:9  root stylesheet
+  stdin 238:9                                              root stylesheet |url: |action: 
+2019-03-07 17:50:26.6698||ERROR|Microsoft.AspNetCore.NodeServices|
+      in C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\ClientApp\src\assets\scss\component\_carousel.scss (line 18, column 9)
+ @ ./ClientApp/src/assets/scss/style.scss 2:14-155 21:1-42:3 22:19-160
+ @ ./ClientApp/src/assets/js/custom_styles.js
+ @ multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/custom_styles.js |url: |action: 

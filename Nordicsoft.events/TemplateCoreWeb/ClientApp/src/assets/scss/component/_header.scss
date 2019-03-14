@@ -1,0 +1,29 @@
+.fullscreen-hero {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.fullscreen-hero .hero-content {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: table;
+}
+
+.fullscreen-hero .hero-content .hero-inner {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.fullscreen-hero:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(52, 73, 94, 0.6);
+}

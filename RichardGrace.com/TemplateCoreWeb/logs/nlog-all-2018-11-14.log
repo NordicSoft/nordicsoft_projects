@@ -1,0 +1,866 @@
+2018-11-14 19:43:04.3403||DEBUG|TemplateCoreWeb.Program|init main 
+2018-11-14 19:43:07.4705||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Rodion\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2018-11-14 19:43:12.2618||INFO|Microsoft.AspNetCore.NodeServices|development mode: true 
+2018-11-14 19:43:15.0492||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. 
+2018-11-14 19:43:15.9996|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:53185/  0 
+2018-11-14 19:43:15.9996|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2018-11-14 19:43:16.0759|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 74.6788ms 200  
+2018-11-14 19:43:16.9000||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: / 
+2018-11-14 19:43:26.9579||INFO|Microsoft.AspNetCore.NodeServices|webpack built 013e5ca40805b1e29df0 in 11225ms 
+2018-11-14 19:43:27.0771||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Hash: 013e5ca40805b1e29df0
+Version: webpack 4.23.1
+Time: 11225ms
+Built at: 2018-11-14 19:43:26
+                                     Asset      Size         Chunks             Chunk Names
+critical-foft-preload-fallback-optional.js  8.04 KiB                 [emitted]  
+                          custom_styles.js   573 KiB  custom_styles  [emitted]  custom_styles
+                       custom_styles.js.gz  91.8 KiB                 [emitted]  
+                fonts/Linearicons-Free.eot  54.5 KiB                 [emitted]  
+             fonts/Linearicons-Free.eot.gz  25.2 KiB                 [emitted]  
+                fonts/Linearicons-Free.svg   201 KiB                 [emitted]  
+             fonts/Linearicons-Free.svg.gz  54.7 KiB                 [emitted]  
+                fonts/Linearicons-Free.ttf  54.3 KiB                 [emitted]  
+             fonts/Linearicons-Free.ttf.gz  25.1 KiB                 [emitted]  
+               fonts/Linearicons-Free.woff  54.4 KiB                 [emitted]  
+            fonts/Linearicons-Free.woff.gz  25.2 KiB                 [emitted]  
+              fonts/Linearicons-Free.woff2  21.3 KiB                 [emitted]  
+                fonts/Stroke-Gap-Icons.eot  44.7 KiB                 [emitted]  
+             fonts/Stroke-Gap-Icons.eot.gz  20.1 KiB                 [emitted]  
+                           fonts/dosis.ttf  29.7 KiB                 [emitted]  
+                        fonts/dosis.ttf.gz  15.3 KiB                 [emitted]  
+                          fonts/dosis.woff  15.4 KiB                 [emitted]  
+                         fonts/dosis.woff2  12.5 KiB                 [emitted]  
+                     fonts/dosismedium.ttf  28.5 KiB                 [emitted]  
+                  fonts/dosismedium.ttf.gz  15.1 KiB                 [emitted]  
+                    fonts/dosismedium.woff  15.2 KiB                 [emitted]  
+                   fonts/dosismedium.woff2  12.3 KiB                 [emitted]  
+            fonts/dosissemibold-subset.ttf  19.4 KiB                 [emitted]  
+         fonts/dosissemibold-subset.ttf.gz  11.7 KiB                 [emitted]  
+          fonts/dosissemibold-subset.woff2  9.57 KiB                 [emitted]  
+    fonts/dosissemibold-subset.zopfli.woff  11.7 KiB                 [emitted]  
+                   fonts/dosissemibold.ttf  28.6 KiB                 [emitted]  
+                fonts/dosissemibold.ttf.gz  15.1 KiB                 [emitted]  
+                  fonts/dosissemibold.woff  15.3 KiB                 [emitted]  
+                 fonts/dosissemibold.woff2  12.4 KiB                 [emitted]  
+             fonts/fontawesome-webfont.eot   162 KiB                 [emitted]  
+          fonts/fontawesome-webfont.eot.gz  95.9 KiB                 [emitted]  
+             fonts/fontawesome-webfont.svg   434 KiB                 [emitted]  
+          fonts/fontawesome-webfont.svg.gz   131 KiB                 [emitted]  
+             fonts/fontawesome-webfont.ttf   162 KiB                 [emitted]  
+          fonts/fontawesome-webfont.ttf.gz  95.8 KiB                 [emitted]  
+            fonts/fontawesome-webfont.woff  95.7 KiB                 [emitted]  
+           fonts/fontawesome-webfont.woff2  75.4 KiB                 [emitted]  
+                 fonts/opensans-subset.ttf  16.6 KiB                 [emitted]  
+              fonts/opensans-subset.ttf.gz  10.8 KiB                 [emitted]  
+               fonts/opensans-subset.woff2  8.66 KiB                 [emitted]  
+         fonts/opensans-subset.zopfli.woff  10.9 KiB                 [emitted]  
+                        fonts/opensans.ttf  51.2 KiB                 [emitted]  
+                     fonts/opensans.ttf.gz  31.2 KiB                 [emitted]  
+                       fonts/opensans.woff  31.1 KiB                 [emitted]  
+                      fonts/opensans.woff2  24.3 KiB                 [emitted]  
+                    fonts/opensansbold.ttf  52.8 KiB                 [emitted]  
+                 fonts/opensansbold.ttf.gz  30.8 KiB                 [emitted]  
+                   fonts/opensansbold.woff  30.8 KiB                 [emitted]  
+                  fonts/opensansbold.woff2  23.9 KiB                 [emitted]  
+                fonts/opensanssemibold.ttf  52.1 KiB                 [emitted]  
+             fonts/opensanssemibold.ttf.gz  31.5 KiB                 [emitted]  
+               fonts/opensanssemibold.woff  31.4 KiB                 [emitted]  
+              fonts/opensanssemibold.woff2  24.4 KiB                 [emitted]  
+                                   main.js   235 KiB           main  [emitted]  main
+                                main.js.gz  52.9 KiB                 [emitted]  
+                                     sw.js  2.14 KiB                 [emitted]  
+                             vendor_src.js   619 KiB     vendor_src  [emitted]  vendor_src
+                          vendor_src.js.gz   134 KiB                 [emitted]  
+                          vendor_styles.js  1.35 MiB  vendor_styles  [emitted]  vendor_styles
+                       vendor_styles.js.gz   332 KiB                 [emitted]  
+Entrypoint vendor_styles = vendor_styles.js
+Entrypoint vendor_src = vendor_src.js
+Entrypoint custom_styles = custom_styles.js
+Entrypoint main = main.js
+[0] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/vendor_styles.js 40 bytes {vendor_styles} [built]
+[1] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true script-loader!./ClientApp/src/assets/vendor/jquery/dist/jquery.min.js script-loader!./ClientApp/src/assets/vendor/popper.js/dist/popper.min.js script-loader!./ClientApp/src/assets/vendor/bootstrap/dist/js/bootstrap.min.js script-loader!./ClientApp/src/assets/vendor/slick-carousel/slick/slick.min.js script-loader!./ClientApp/src/assets/vendor/fancybox/dist/jquery.fancybox.min.js script-loader!./ClientApp/src/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/isotope/dist/isotope.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/vide/dist/jquery.vide.min.js 124 bytes {vendor_src} [built]
+[2] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/custom_styles.js 40 bytes {custom_styles} [built]
+[3] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/index.js 40 bytes {main} [built]
+[./ClientApp/src/assets/js/custom_styles.js] 28 bytes {custom_styles} [built]
+[./ClientApp/src/assets/js/index.js] 300 bytes {main} [built]
+[./ClientApp/src/assets/js/vendor_styles.js] 446 bytes {vendor_styles} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/bootstrap/dist/js/bootstrap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/bootstrap/dist/js/bootstrap.min.js 599 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/fancybox/dist/jquery.fancybox.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/fancybox/dist/jquery.fancybox.min.js 600 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js 600 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/isotope/dist/isotope.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/isotope/dist/isotope.pkgd.min.js 596 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/jquery/dist/jquery.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/jquery/dist/jquery.min.js 589 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/popper.js/dist/popper.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/popper.js/dist/popper.min.js 592 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/slick-carousel/slick/slick.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/slick-carousel/slick/slick.min.js 597 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/vide/dist/jquery.vide.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/vide/dist/jquery.vide.min.js 592 bytes {vendor_src} [built]
+    + 84 hidden modules 
+2018-11-14 19:43:27.0800||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Compiled successfully. 
+2018-11-14 19:43:27.0800|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2018-11-14 19:43:27.3675|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) 
+2018-11-14 19:43:27.4475|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:43:27.4475|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.779ms. 
+2018-11-14 19:43:27.4986|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-14 19:43:27.6839|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 211.9512ms. 
+2018-11-14 19:43:27.6839|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) in 297.144ms 
+2018-11-14 19:43:27.7031|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11704.5321ms 200 text/html; charset=utf-8 
+2018-11-14 19:43:27.8255|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosissemibold-subset.woff2   
+2018-11-14 19:43:27.8657|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/webdesign1x.png   
+2018-11-14 19:43:27.8657|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/logo_nordic.svg   
+2018-11-14 19:43:27.8657|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosissemibold-subset.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosissemibold-subset.woff2' 
+2018-11-14 19:43:27.8657|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2018-11-14 19:43:27.8870|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 61.4499ms 200 font/woff2 
+2018-11-14 19:43:27.8978|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/webdesign1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\webdesign1x.png' 
+2018-11-14 19:43:27.8978|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2018-11-14 19:43:27.8978|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 37.1823ms 200 image/png 
+2018-11-14 19:43:27.9179|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensans-subset.woff2   
+2018-11-14 19:43:27.9452|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/logo_nordic.svg'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\logo_nordic.svg' 
+2018-11-14 19:43:27.9452|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 80.9904ms 200 image/svg+xml 
+2018-11-14 19:43:27.9452|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/content1x.png   
+2018-11-14 19:43:27.9563|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensans-subset.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensans-subset.woff2' 
+2018-11-14 19:43:27.9563|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 45.6111ms 200 font/woff2 
+2018-11-14 19:43:27.9728|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/content1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\content1x.png' 
+2018-11-14 19:43:27.9728|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.1196ms 200 image/png 
+2018-11-14 19:43:27.9728|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/webdevelopment1x.png   
+2018-11-14 19:43:28.0048|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/itservices1x.png   
+2018-11-14 19:43:28.0360|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/webdevelopment1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\webdevelopment1x.png' 
+2018-11-14 19:43:28.0360|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 58.3009ms 200 image/png 
+2018-11-14 19:43:28.0360|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/itservices1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\itservices1x.png' 
+2018-11-14 19:43:28.0360|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosismedium.woff2   
+2018-11-14 19:43:28.0569|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52.1389ms 200 image/png 
+2018-11-14 19:43:28.0692|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosis.woff2   
+2018-11-14 19:43:28.0692|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosismedium.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosismedium.woff2' 
+2018-11-14 19:43:28.1064|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosissemibold.woff2   
+2018-11-14 19:43:28.1175|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 71.5882ms 200 font/woff2 
+2018-11-14 19:43:28.1435|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensans.woff2   
+2018-11-14 19:43:28.1435|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosissemibold.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosissemibold.woff2' 
+2018-11-14 19:43:28.1435|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 46.7338ms 200 font/woff2 
+2018-11-14 19:43:28.1435|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensans.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensans.woff2' 
+2018-11-14 19:43:28.1435|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosis.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosis.woff2' 
+2018-11-14 19:43:28.1632|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 19.6344ms 200 font/woff2 
+2018-11-14 19:43:28.1632|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 97.4328ms 200 font/woff2 
+2018-11-14 19:43:28.1632|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensanssemibold.woff2   
+2018-11-14 19:43:28.1989|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensanssemibold.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensanssemibold.woff2' 
+2018-11-14 19:43:28.1989|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.7214ms 200 font/woff2 
+2018-11-14 19:43:28.1989|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensansbold.woff2   
+2018-11-14 19:43:28.2081|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/support1x.png   
+2018-11-14 19:43:28.2081|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2018-11-14 19:43:28.2403|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensansbold.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensansbold.woff2' 
+2018-11-14 19:43:28.2403|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 370.1616ms 200 application/javascript 
+2018-11-14 19:43:28.2403|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/support1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\support1x.png' 
+2018-11-14 19:43:28.2563|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 50.3699ms 200 image/png 
+2018-11-14 19:43:28.2563|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2018-11-14 19:43:28.2403|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 46.8066ms 200 font/woff2 
+2018-11-14 19:43:28.3127|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2018-11-14 19:43:28.3706|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2018-11-14 19:43:28.3815|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2018-11-14 19:43:28.4075|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\main.js' 
+2018-11-14 19:43:28.4204|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 164.1452ms 200 application/javascript 
+2018-11-14 19:43:28.4280|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 527.7212ms 200 application/javascript 
+2018-11-14 19:43:28.4280|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 124.3771ms 200 application/javascript 
+2018-11-14 19:43:28.6848|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2018-11-14 19:43:28.7006|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/startup/bg-3.png   
+2018-11-14 19:43:28.7105|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/startup/hero-banner.png   
+2018-11-14 19:43:28.7272|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/startup/bg-3.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\startup\bg-3.png' 
+2018-11-14 19:43:28.7272|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/startup/hero-banner.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\startup\hero-banner.png' 
+2018-11-14 19:43:28.7470|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 46.2301ms 200 image/png 
+2018-11-14 19:43:28.7470|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 40.2055ms 200 image/png 
+2018-11-14 19:43:28.8460|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fontawesome-webfont.woff2   
+2018-11-14 19:43:28.8460|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\fontawesome-webfont.woff2' 
+2018-11-14 19:43:28.8460|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.2694ms 200 font/woff2 
+2018-11-14 19:43:29.1888|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/team.png   
+2018-11-14 19:43:29.2477|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/team.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\team.png' 
+2018-11-14 19:43:29.2523|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 63.5494ms 200 image/png 
+2018-11-14 19:43:29.7916|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/sw.js   
+2018-11-14 19:43:29.7916|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/favicon-32x32.png   
+2018-11-14 19:43:29.8050|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/sw.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\sw.js' 
+2018-11-14 19:43:29.8214|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.0451ms 200 application/javascript 
+2018-11-14 19:43:29.8380|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\favicon-32x32.png' 
+2018-11-14 19:43:29.8514|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 55.6658ms 200 image/png 
+2018-11-14 19:43:29.8972|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/favicon-16x16.png   
+2018-11-14 19:43:29.8972|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-16x16.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\favicon-16x16.png' 
+2018-11-14 19:43:29.9104|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 13.1806ms 200 image/png 
+2018-11-14 19:43:29.9803|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2018-11-14 19:43:29.9803|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/experience1x.png   
+2018-11-14 19:43:30.0089|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) 
+2018-11-14 19:43:30.0238|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:43:30.0400|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0845ms. 
+2018-11-14 19:43:30.0510|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-14 19:43:30.1277|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/experience1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\experience1x.png' 
+2018-11-14 19:43:30.1277|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 152.9657ms 200 image/png 
+2018-11-14 19:43:30.1976|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 146.6978ms. 
+2018-11-14 19:43:30.2393|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) in 218.5191ms 
+2018-11-14 19:43:30.2393|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 268.0745ms 200 text/html; charset=utf-8 
+2018-11-14 19:43:47.6691|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2018-11-14 19:43:47.7187|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) 
+2018-11-14 19:43:47.7266|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:43:47.7266|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0224ms. 
+2018-11-14 19:43:47.7493|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-14 19:43:47.7567|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 7.5001ms. 
+2018-11-14 19:43:47.7567|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) in 33.4254ms 
+2018-11-14 19:43:47.7567|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 94.0943ms 200 text/html; charset=utf-8 
+2018-11-14 19:43:47.8236|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/webdesign1x.png   
+2018-11-14 19:43:47.8236|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2018-11-14 19:43:47.8236|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosissemibold-subset.woff2   
+2018-11-14 19:43:47.8369|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/webdesign1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\webdesign1x.png' 
+2018-11-14 19:43:47.8236|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/logo_nordic.svg   
+2018-11-14 19:43:47.9547|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosissemibold-subset.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosissemibold-subset.woff2' 
+2018-11-14 19:43:47.9665|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 131.557ms 200 image/png 
+2018-11-14 19:43:47.9863|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/content1x.png   
+2018-11-14 19:43:47.9033|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2018-11-14 19:43:47.9808|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 158.7883ms 200 font/woff2 
+2018-11-14 19:43:48.0047|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/content1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\content1x.png' 
+2018-11-14 19:43:47.9808|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/logo_nordic.svg'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\logo_nordic.svg' 
+2018-11-14 19:43:48.1229|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/webdevelopment1x.png   
+2018-11-14 19:43:48.1229|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 139.867ms 200 image/png 
+2018-11-14 19:43:48.1340|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 307.6001ms 200 image/svg+xml 
+2018-11-14 19:43:47.8723|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensans-subset.woff2   
+2018-11-14 19:43:48.1081|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2018-11-14 19:43:48.1644|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 264.2879ms 200 application/javascript 
+2018-11-14 19:43:48.1644|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/support1x.png   
+2018-11-14 19:43:48.1500|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/webdevelopment1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\webdevelopment1x.png' 
+2018-11-14 19:43:48.1500|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/itservices1x.png   
+2018-11-14 19:43:48.1644|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensans-subset.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensans-subset.woff2' 
+2018-11-14 19:43:48.2094|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 340.1775ms 200 font/woff2 
+2018-11-14 19:43:48.1911|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 70.3376ms 200 image/png 
+2018-11-14 19:43:48.1500|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2018-11-14 19:43:48.1911|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/support1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\support1x.png' 
+2018-11-14 19:43:48.2094|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/itservices1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\itservices1x.png' 
+2018-11-14 19:43:48.2094|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2018-11-14 19:43:48.2254|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2018-11-14 19:43:48.2388|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 91.5263ms 200 image/png 
+2018-11-14 19:43:48.2841|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2018-11-14 19:43:48.3133|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\main.js' 
+2018-11-14 19:43:48.2388|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 74.4289ms 200 image/png 
+2018-11-14 19:43:48.2254|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 411.4843ms 200 application/javascript 
+2018-11-14 19:43:48.3302|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 109.5862ms 200 application/javascript 
+2018-11-14 19:43:48.3302|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 108.9032ms 200 application/javascript 
+2018-11-14 19:43:48.4677|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2018-11-14 19:43:48.5142|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/startup/bg-3.png   
+2018-11-14 19:43:48.5199|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensans.woff2   
+2018-11-14 19:43:48.5199|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/startup/hero-banner.png   
+2018-11-14 19:43:48.5356|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/startup/bg-3.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\startup\bg-3.png' 
+2018-11-14 19:43:48.5199|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosissemibold.woff2   
+2018-11-14 19:43:48.5356|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.6018ms 200 image/png 
+2018-11-14 19:43:48.5514|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensans.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensans.woff2' 
+2018-11-14 19:43:48.5514|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 42.3036ms 200 font/woff2 
+2018-11-14 19:43:48.5755|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/startup/hero-banner.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\startup\hero-banner.png' 
+2018-11-14 19:43:48.5755|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 58.0715ms 200 image/png 
+2018-11-14 19:43:48.5800|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosissemibold.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosissemibold.woff2' 
+2018-11-14 19:43:48.5800|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 68.8323ms 200 font/woff2 
+2018-11-14 19:43:48.5800|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensanssemibold.woff2   
+2018-11-14 19:43:48.6165|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensansbold.woff2   
+2018-11-14 19:43:48.6165|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensanssemibold.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensanssemibold.woff2' 
+2018-11-14 19:43:48.6353|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 55.1203ms 200 font/woff2 
+2018-11-14 19:43:48.6353|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensansbold.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensansbold.woff2' 
+2018-11-14 19:43:48.6492|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 32.6349ms 200 font/woff2 
+2018-11-14 19:43:48.6492|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fontawesome-webfont.woff2   
+2018-11-14 19:43:48.6903|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\fontawesome-webfont.woff2' 
+2018-11-14 19:43:48.6903|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 40.3897ms 200 font/woff2 
+2018-11-14 19:43:48.7068|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 20022.3817ms 200 text/event-stream; charset=utf-8 
+2018-11-14 19:43:49.5923|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosis.woff2   
+2018-11-14 19:43:49.6106|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosis.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosis.woff2' 
+2018-11-14 19:43:49.6187|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.43ms 200 font/woff2 
+2018-11-14 19:43:51.2459|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/sw.js   
+2018-11-14 19:43:51.2867|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/sw.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\sw.js' 
+2018-11-14 19:43:51.2867|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 43.0664ms 200 application/javascript 
+2018-11-14 19:43:51.4756|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2018-11-14 19:43:51.4927|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) 
+2018-11-14 19:43:51.4927|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:43:51.4927|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0224ms. 
+2018-11-14 19:43:51.5040|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-14 19:43:51.5228|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 18.8467ms. 
+2018-11-14 19:43:51.5228|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) in 27.9488ms 
+2018-11-14 19:43:51.5228|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 53.5779ms 200 text/html; charset=utf-8 
+2018-11-14 19:43:57.6461|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2018-11-14 19:43:57.7069|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) 
+2018-11-14 19:43:57.7069|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:43:57.7385|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0227ms. 
+2018-11-14 19:43:57.7385|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-14 19:43:57.7549|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 13.625ms. 
+2018-11-14 19:43:57.7549|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) in 38.7208ms 
+2018-11-14 19:43:57.7549|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 118.6736ms 200 text/html; charset=utf-8 
+2018-11-14 19:43:57.9589|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosissemibold-subset.woff2   
+2018-11-14 19:43:57.9589|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensans-subset.woff2   
+2018-11-14 19:43:57.9948|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2018-11-14 19:43:57.9948|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/webdesign1x.png   
+2018-11-14 19:43:58.0068|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/logo_nordic.svg   
+2018-11-14 19:43:58.0068|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2018-11-14 19:43:58.0068|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosissemibold-subset.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosissemibold-subset.woff2' 
+2018-11-14 19:43:58.0253|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensans-subset.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensans-subset.woff2' 
+2018-11-14 19:43:58.0253|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 73.0029ms 200 font/woff2 
+2018-11-14 19:43:58.0348|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 73.4281ms 200 font/woff2 
+2018-11-14 19:43:58.0348|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/webdesign1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\webdesign1x.png' 
+2018-11-14 19:43:58.0348|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 43.336ms 200 image/png 
+2018-11-14 19:43:58.0348|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/logo_nordic.svg'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\logo_nordic.svg' 
+2018-11-14 19:43:58.0848|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosismedium.woff2   
+2018-11-14 19:43:58.0848|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 78.7407ms 200 image/svg+xml 
+2018-11-14 19:43:58.1192|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/content1x.png   
+2018-11-14 19:43:58.1192|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosissemibold.woff2   
+2018-11-14 19:43:58.1356|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosis.woff2   
+2018-11-14 19:43:58.1356|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/content1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\content1x.png' 
+2018-11-14 19:43:58.1442|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosismedium.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosismedium.woff2' 
+2018-11-14 19:43:58.1356|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosissemibold.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosissemibold.woff2' 
+2018-11-14 19:43:58.1442|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 33.3955ms 200 image/png 
+2018-11-14 19:43:58.1442|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 70.6008ms 200 font/woff2 
+2018-11-14 19:43:58.1580|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 38.403ms 200 font/woff2 
+2018-11-14 19:43:58.1747|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosis.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosis.woff2' 
+2018-11-14 19:43:58.2010|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 65.4082ms 200 font/woff2 
+2018-11-14 19:43:58.2050|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensans.woff2   
+2018-11-14 19:43:58.2050|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensanssemibold.woff2   
+2018-11-14 19:43:58.2050|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensansbold.woff2   
+2018-11-14 19:43:58.2232|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/webdevelopment1x.png   
+2018-11-14 19:43:58.2232|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensans.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensans.woff2' 
+2018-11-14 19:43:58.2232|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 23.8567ms 200 font/woff2 
+2018-11-14 19:43:58.2411|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensansbold.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensansbold.woff2' 
+2018-11-14 19:43:58.2411|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/webdevelopment1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\webdevelopment1x.png' 
+2018-11-14 19:43:58.2411|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.5549ms 200 font/woff2 
+2018-11-14 19:43:58.2534|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.2024ms 200 image/png 
+2018-11-14 19:43:58.2534|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensanssemibold.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensanssemibold.woff2' 
+2018-11-14 19:43:58.2928|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 82.6303ms 200 font/woff2 
+2018-11-14 19:43:58.2928|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/itservices1x.png   
+2018-11-14 19:43:58.3091|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/support1x.png   
+2018-11-14 19:43:58.3460|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/itservices1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\itservices1x.png' 
+2018-11-14 19:43:58.3460|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/support1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\support1x.png' 
+2018-11-14 19:43:58.3460|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 59.4598ms 200 image/png 
+2018-11-14 19:43:58.3460|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 47.1898ms 200 image/png 
+2018-11-14 19:43:58.3732|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2018-11-14 19:43:58.4013|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2018-11-14 19:43:58.4013|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 409.3307ms 200 application/javascript 
+2018-11-14 19:43:58.4321|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2018-11-14 19:43:58.4510|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\main.js' 
+2018-11-14 19:43:58.4562|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 54.8939ms 200 application/javascript 
+2018-11-14 19:43:58.4891|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2018-11-14 19:43:58.4891|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 482.0599ms 200 application/javascript 
+2018-11-14 19:43:58.5086|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2018-11-14 19:43:58.5086|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 83.8302ms 200 application/javascript 
+2018-11-14 19:43:58.7639|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2018-11-14 19:43:58.7813|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/startup/bg-3.png   
+2018-11-14 19:43:58.7910|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/startup/hero-banner.png   
+2018-11-14 19:43:58.8007|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/startup/bg-3.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\startup\bg-3.png' 
+2018-11-14 19:43:58.8007|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/startup/hero-banner.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\startup\hero-banner.png' 
+2018-11-14 19:43:58.8187|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 37.3975ms 200 image/png 
+2018-11-14 19:43:58.8187|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 35.2154ms 200 image/png 
+2018-11-14 19:43:58.9844|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fontawesome-webfont.woff2   
+2018-11-14 19:43:59.0128|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\fontawesome-webfont.woff2' 
+2018-11-14 19:43:59.0275|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 43.1694ms 200 font/woff2 
+2018-11-14 19:43:59.5377|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/sw.js   
+2018-11-14 19:43:59.5377|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/sw.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\sw.js' 
+2018-11-14 19:43:59.5377|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.8864ms 200 application/javascript 
+2018-11-14 19:43:59.6270|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2018-11-14 19:43:59.6717|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) 
+2018-11-14 19:43:59.6717|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/experience1x.png   
+2018-11-14 19:43:59.6717|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/team.png   
+2018-11-14 19:43:59.6748|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:43:59.6748|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0199ms. 
+2018-11-14 19:43:59.6748|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/experience1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\experience1x.png' 
+2018-11-14 19:43:59.6748|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-14 19:43:59.6914|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 20.4049ms 200 image/png 
+2018-11-14 19:43:59.7203|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 32.4923ms. 
+2018-11-14 19:43:59.6914|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/team.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\team.png' 
+2018-11-14 19:43:59.7203|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) in 52.9132ms 
+2018-11-14 19:43:59.7203|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 59.2908ms 200 image/png 
+2018-11-14 19:43:59.7359|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 108.8564ms 200 text/html; charset=utf-8 
+2018-11-14 19:44:02.9058|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2018-11-14 19:44:02.9916|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4227.8163ms 200 text/event-stream; charset=utf-8 
+2018-11-14 19:44:43.2860|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2018-11-14 19:44:43.2860|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/sw.js   
+2018-11-14 19:44:43.3419|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) 
+2018-11-14 19:44:43.3472|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:44:43.3472|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 54880.5106ms 200 text/event-stream; charset=utf-8 
+2018-11-14 19:44:43.3472|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/sw.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\sw.js' 
+2018-11-14 19:44:43.3669|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0346ms. 
+2018-11-14 19:44:43.3669|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 81.5553ms 200 application/javascript 
+2018-11-14 19:44:43.3769|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-14 19:44:43.3769|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 8.9062ms. 
+2018-11-14 19:44:43.3769|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) in 39.586ms 
+2018-11-14 19:44:43.3944|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 108.6977ms 200 text/html; charset=utf-8 
+2018-11-14 19:44:43.3944|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2018-11-14 19:44:43.4191|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/logo_nordic.svg   
+2018-11-14 19:44:43.4562|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/logo_nordic.svg'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\logo_nordic.svg' 
+2018-11-14 19:44:43.4562|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2018-11-14 19:44:43.4562|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 39.6068ms 200 image/svg+xml 
+2018-11-14 19:44:43.4562|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/critical-foft-preload-fallback-optional.js   
+2018-11-14 19:44:43.4562|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/webdesign1x.png   
+2018-11-14 19:44:43.4562|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2018-11-14 19:44:43.4946|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/webdesign1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\webdesign1x.png' 
+2018-11-14 19:44:43.4946|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 32.9633ms 200 image/png 
+2018-11-14 19:44:43.5115|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/critical-foft-preload-fallback-optional.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\critical-foft-preload-fallback-optional.js' 
+2018-11-14 19:44:43.5267|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 61.6798ms 200 application/javascript 
+2018-11-14 19:44:43.5444|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2018-11-14 19:44:43.6087|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/content1x.png   
+2018-11-14 19:44:43.6338|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/content1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\content1x.png' 
+2018-11-14 19:44:43.6338|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27.7255ms 200 image/png 
+2018-11-14 19:44:43.6338|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/webdevelopment1x.png   
+2018-11-14 19:44:43.6530|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/webdevelopment1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\webdevelopment1x.png' 
+2018-11-14 19:44:43.6530|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 15.1973ms 200 image/png 
+2018-11-14 19:44:43.6583|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/itservices1x.png   
+2018-11-14 19:44:43.6583|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/itservices1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\itservices1x.png' 
+2018-11-14 19:44:43.6583|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10.5671ms 200 image/png 
+2018-11-14 19:44:43.6865|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\main.js' 
+2018-11-14 19:44:43.6903|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 145.9057ms 200 application/javascript 
+2018-11-14 19:44:43.6903|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/support1x.png   
+2018-11-14 19:44:43.7125|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/support1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\support1x.png' 
+2018-11-14 19:44:43.7125|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 18.5588ms 200 image/png 
+2018-11-14 19:44:43.7333|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2018-11-14 19:44:43.7378|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 336.0712ms 200 application/javascript 
+2018-11-14 19:44:43.7869|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2018-11-14 19:44:43.7869|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 321.7184ms 200 application/javascript 
+2018-11-14 19:44:43.8170|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2018-11-14 19:44:43.8170|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 365.0078ms 200 application/javascript 
+2018-11-14 19:44:43.9909|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/startup/hero-banner.png   
+2018-11-14 19:44:43.9909|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/startup/hero-banner.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\startup\hero-banner.png' 
+2018-11-14 19:44:44.0028|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11.8931ms 200 image/png 
+2018-11-14 19:44:44.1233|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/stroke-gap-icons.eot   
+2018-11-14 19:44:44.1333|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/stroke-gap-icons.eot'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\stroke-gap-icons.eot' 
+2018-11-14 19:44:44.1333|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.9227ms 200 application/vnd.ms-fontobject 
+2018-11-14 19:44:44.1333|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fontawesome-webfont.eot?   
+2018-11-14 19:44:44.1502|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fontawesome-webfont.eot'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\fontawesome-webfont.eot' 
+2018-11-14 19:44:44.1576|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 17.5188ms 200 application/vnd.ms-fontobject 
+2018-11-14 19:44:44.2727|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosis.woff   
+2018-11-14 19:44:44.2727|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosissemibold.woff   
+2018-11-14 19:44:44.2874|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosis.woff'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosis.woff' 
+2018-11-14 19:44:44.2874|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 20.3331ms 200 application/font-woff 
+2018-11-14 19:44:44.2874|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosismedium.woff   
+2018-11-14 19:44:44.3051|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosismedium.woff'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosismedium.woff' 
+2018-11-14 19:44:44.3051|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.1563ms 200 application/font-woff 
+2018-11-14 19:44:44.3051|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosissemibold.woff'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosissemibold.woff' 
+2018-11-14 19:44:44.3167|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 36.486ms 200 application/font-woff 
+2018-11-14 19:44:44.3167|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensansbold.woff   
+2018-11-14 19:44:44.3405|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensanssemibold.woff   
+2018-11-14 19:44:44.3505|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensans.woff   
+2018-11-14 19:44:44.3623|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensansbold.woff'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensansbold.woff' 
+2018-11-14 19:44:44.3623|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52.1649ms 200 application/font-woff 
+2018-11-14 19:44:44.3866|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensanssemibold.woff'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensanssemibold.woff' 
+2018-11-14 19:44:44.3866|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 49.511ms 200 application/font-woff 
+2018-11-14 19:44:44.3938|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/startup/bg-3.png   
+2018-11-14 19:44:44.3938|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensans.woff'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensans.woff' 
+2018-11-14 19:44:44.4872|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 134.8958ms 200 application/font-woff 
+2018-11-14 19:44:44.5291|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/startup/bg-3.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\startup\bg-3.png' 
+2018-11-14 19:44:44.5356|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 141.7942ms 200 image/png 
+2018-11-14 19:44:44.5610|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/favicon-32x32.png   
+2018-11-14 19:44:44.5757|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\favicon-32x32.png' 
+2018-11-14 19:44:44.6038|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 42.648ms 200 image/png 
+2018-11-14 19:45:19.3241|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/team.png   
+2018-11-14 19:45:19.3241|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2018-11-14 19:45:19.3241|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2018-11-14 19:45:19.3241|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2018-11-14 19:45:19.3895|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2018-11-14 19:45:19.4100|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/team.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\team.png' 
+2018-11-14 19:45:19.4100|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) 
+2018-11-14 19:45:19.4486|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 124.4682ms 200 image/png 
+2018-11-14 19:45:19.4486|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:45:19.4783|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0357ms. 
+2018-11-14 19:45:19.4486|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) 
+2018-11-14 19:45:19.4935|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-14 19:45:19.5023|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:45:19.5230|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0252ms. 
+2018-11-14 19:45:19.5406|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-14 19:45:19.5230|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 31.9104ms. 
+2018-11-14 19:45:19.5569|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) in 108.3031ms 
+2018-11-14 19:45:19.5569|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 17.6202ms. 
+2018-11-14 19:45:19.5646|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 240.5115ms 200 text/html; charset=utf-8 
+2018-11-14 19:45:19.5646|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) in 67.3177ms 
+2018-11-14 19:45:19.5646|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2018-11-14 19:45:19.5782|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 253.9712ms 200 text/html; charset=utf-8 
+2018-11-14 19:45:19.5782|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /dist/vendor_styles.js was not modified 
+2018-11-14 19:45:19.5937|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 19.234ms 304 application/javascript 
+2018-11-14 19:45:19.6847|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2018-11-14 19:45:19.6896|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /dist/custom_styles.js was not modified 
+2018-11-14 19:45:19.6896|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.1289ms 304 application/javascript 
+2018-11-14 19:45:19.7335|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/logo_nordic.svg   
+2018-11-14 19:45:19.7335|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensans.woff   
+2018-11-14 19:45:19.7551|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /dist/fonts/opensans.woff was not modified 
+2018-11-14 19:45:19.7551|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 25.4171ms 304 application/font-woff 
+2018-11-14 19:45:19.7551|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/logo_nordic.svg was not modified 
+2018-11-14 19:45:19.7551|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensanssemibold.woff   
+2018-11-14 19:45:19.7551|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 31.7473ms 304 image/svg+xml 
+2018-11-14 19:45:19.7703|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /dist/fonts/opensanssemibold.woff was not modified 
+2018-11-14 19:45:19.7703|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensans-subset.zopfli.woff   
+2018-11-14 19:45:19.7703|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosis.woff   
+2018-11-14 19:45:19.7822|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensansbold.woff   
+2018-11-14 19:45:19.7703|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.6891ms 304 application/font-woff 
+2018-11-14 19:45:19.7822|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /dist/fonts/dosis.woff was not modified 
+2018-11-14 19:45:19.7822|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosismedium.woff   
+2018-11-14 19:45:19.7980|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /dist/fonts/opensansbold.woff was not modified 
+2018-11-14 19:45:19.7980|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.1984ms 304 application/font-woff 
+2018-11-14 19:45:19.7980|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensans-subset.zopfli.woff'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensans-subset.zopfli.woff' 
+2018-11-14 19:45:19.7980|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /dist/fonts/dosismedium.woff was not modified 
+2018-11-14 19:45:19.8129|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.3163ms 304 application/font-woff 
+2018-11-14 19:45:19.7980|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 40.5022ms 200 application/font-woff 
+2018-11-14 19:45:19.7980|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 24.7563ms 304 application/font-woff 
+2018-11-14 19:45:19.8129|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosissemibold.woff   
+2018-11-14 19:45:19.8129|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosissemibold-subset.zopfli.woff   
+2018-11-14 19:45:19.8399|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /dist/fonts/dosissemibold.woff was not modified 
+2018-11-14 19:45:19.8399|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fontawesome-webfont.eot?   
+2018-11-14 19:45:19.8479|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.9652ms 304 application/font-woff 
+2018-11-14 19:45:19.8479|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2018-11-14 19:45:19.8479|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /dist/fonts/fontawesome-webfont.eot was not modified 
+2018-11-14 19:45:19.8630|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2018-11-14 19:45:19.8630|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/webdesign1x.png   
+2018-11-14 19:45:19.8630|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /dist/vendor_src.js was not modified 
+2018-11-14 19:45:19.8752|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /dist/main.js was not modified 
+2018-11-14 19:45:19.8752|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 31.7819ms 304 application/vnd.ms-fontobject 
+2018-11-14 19:45:19.8752|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosissemibold-subset.zopfli.woff'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosissemibold-subset.zopfli.woff' 
+2018-11-14 19:45:19.8752|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/home/webdesign1x.png was not modified 
+2018-11-14 19:45:19.8946|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 39.6356ms 304 application/javascript 
+2018-11-14 19:45:19.8946|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 37.2659ms 304 application/javascript 
+2018-11-14 19:45:19.9095|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/stroke-gap-icons.eot   
+2018-11-14 19:45:19.9095|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 92.9415ms 200 application/font-woff 
+2018-11-14 19:45:19.9095|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 50.3164ms 304 image/png 
+2018-11-14 19:45:19.9272|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/content1x.png   
+2018-11-14 19:45:19.9272|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /dist/fonts/stroke-gap-icons.eot was not modified 
+2018-11-14 19:45:19.9272|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/webdevelopment1x.png   
+2018-11-14 19:45:19.9439|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/itservices1x.png   
+2018-11-14 19:45:19.9439|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 35.206ms 304 application/vnd.ms-fontobject 
+2018-11-14 19:45:19.9569|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/home/webdevelopment1x.png was not modified 
+2018-11-14 19:45:19.9439|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/home/content1x.png was not modified 
+2018-11-14 19:45:19.9569|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/support1x.png   
+2018-11-14 19:45:19.9778|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/home/itservices1x.png was not modified 
+2018-11-14 19:45:19.9778|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52.688ms 304 image/png 
+2018-11-14 19:45:19.9865|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 59.2883ms 304 image/png 
+2018-11-14 19:45:19.9865|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/startup/hero-banner.png   
+2018-11-14 19:45:19.9865|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/home/support1x.png was not modified 
+2018-11-14 19:45:19.9865|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 50.2851ms 304 image/png 
+2018-11-14 19:45:20.0339|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/startup/hero-banner.png was not modified 
+2018-11-14 19:45:20.0339|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 77.0975ms 304 image/png 
+2018-11-14 19:45:20.0339|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/startup/bg-3.png   
+2018-11-14 19:45:20.0339|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 47.6032ms 304 image/png 
+2018-11-14 19:45:20.0521|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/startup/bg-3.png was not modified 
+2018-11-14 19:45:20.0676|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 31.4901ms 304 image/png 
+2018-11-14 19:45:21.2175|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/team.png   
+2018-11-14 19:45:21.2238|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/team.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\team.png' 
+2018-11-14 19:45:21.2238|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.6193ms 200 image/png 
+2018-11-14 19:46:06.0230|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 46699.7085ms 200 text/event-stream; charset=utf-8 
+2018-11-14 19:46:06.0230|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 123126.2118ms 200 text/event-stream; charset=utf-8 
+2018-11-14 19:46:31.7651|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/faq   
+2018-11-14 19:46:31.7870|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Faq", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Faq (TemplateCoreWeb) 
+2018-11-14 19:46:31.7956|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Faq (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:46:31.7956|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Faq (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2529ms. 
+2018-11-14 19:46:31.7956|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Faq. 
+2018-11-14 19:46:31.8192|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Faq executed in 18.8035ms. 
+2018-11-14 19:46:31.8192|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Faq (TemplateCoreWeb) in 31.4846ms 
+2018-11-14 19:46:31.8345|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 69.4025ms 200 text/html; charset=utf-8 
+2018-11-14 19:46:32.1052|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2018-11-14 19:46:32.1479|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 72759.7302ms 200 text/event-stream; charset=utf-8 
+2018-11-14 19:46:32.5050|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/sw.js   
+2018-11-14 19:46:32.5050|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/sw.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\sw.js' 
+2018-11-14 19:46:32.5050|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.5096ms 200 application/javascript 
+2018-11-14 19:46:32.6226|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2018-11-14 19:46:32.6414|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) 
+2018-11-14 19:46:32.6414|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:46:32.6563|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0207ms. 
+2018-11-14 19:46:32.6563|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-14 19:46:32.6563|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 7.816ms. 
+2018-11-14 19:46:32.6720|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) in 22.7482ms 
+2018-11-14 19:46:32.6720|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 59.2642ms 200 text/html; charset=utf-8 
+2018-11-14 19:46:33.8742|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/pricing   
+2018-11-14 19:46:33.8900|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Pricing", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Pricing (TemplateCoreWeb) 
+2018-11-14 19:46:33.8900|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Pricing (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:46:33.8900|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Pricing (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4721ms. 
+2018-11-14 19:46:33.9301|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Pricing. 
+2018-11-14 19:46:33.9634|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Pricing executed in 62.4822ms. 
+2018-11-14 19:46:33.9677|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Pricing (TemplateCoreWeb) in 75.2473ms 
+2018-11-14 19:46:33.9677|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 98.1604ms 200 text/html; charset=utf-8 
+2018-11-14 19:46:34.0171|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/svg/dollar-bag.svg   
+2018-11-14 19:46:34.0304|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/svg/phone-book.svg   
+2018-11-14 19:46:34.0304|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/svg/dollar-bag.svg'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\svg\dollar-bag.svg' 
+2018-11-14 19:46:34.0497|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 32.5119ms 200 image/svg+xml 
+2018-11-14 19:46:34.0497|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/svg/phone-book.svg'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\svg\phone-book.svg' 
+2018-11-14 19:46:34.0497|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 25.2481ms 200 image/svg+xml 
+2018-11-14 19:46:34.1886|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/svg/plane-up.svg   
+2018-11-14 19:46:34.2268|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2018-11-14 19:46:34.2345|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/svg/plane-up.svg'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\svg\plane-up.svg' 
+2018-11-14 19:46:34.2759|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2170.7372ms 200 text/event-stream; charset=utf-8 
+2018-11-14 19:46:34.2759|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 87.5633ms 200 image/svg+xml 
+2018-11-14 19:46:34.9361|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/sw.js   
+2018-11-14 19:46:34.9425|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/sw.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\sw.js' 
+2018-11-14 19:46:34.9425|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.8172ms 200 application/javascript 
+2018-11-14 19:46:35.1175|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2018-11-14 19:46:35.1353|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) 
+2018-11-14 19:46:35.1353|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:46:35.1395|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0263ms. 
+2018-11-14 19:46:35.1395|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-14 19:46:35.1395|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 11.0151ms. 
+2018-11-14 19:46:35.1554|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) in 18.2316ms 
+2018-11-14 19:46:35.1554|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 41.3788ms 200 text/html; charset=utf-8 
+2018-11-14 19:46:39.1072|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2018-11-14 19:46:39.1168|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) 
+2018-11-14 19:46:39.1168|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:46:39.1231|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0443ms. 
+2018-11-14 19:46:39.1231|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-14 19:46:39.1231|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 7.0361ms. 
+2018-11-14 19:46:39.1424|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) in 23.5007ms 
+2018-11-14 19:46:39.1424|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 40.7136ms 200 text/html; charset=utf-8 
+2018-11-14 19:46:39.3866|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2018-11-14 19:46:39.4196|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5192.9078ms 200 text/event-stream; charset=utf-8 
+2018-11-14 19:46:39.9187|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/sw.js   
+2018-11-14 19:46:39.9258|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/sw.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\sw.js' 
+2018-11-14 19:46:39.9258|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11.2997ms 200 application/javascript 
+2018-11-14 19:46:39.9872|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2018-11-14 19:46:40.0056|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) 
+2018-11-14 19:46:40.0056|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:46:40.0056|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0229ms. 
+2018-11-14 19:46:40.0203|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-14 19:46:40.0203|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 6.2562ms. 
+2018-11-14 19:46:40.0325|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) in 23.4708ms 
+2018-11-14 19:46:40.0325|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 49.8396ms 200 text/html; charset=utf-8 
+2018-11-14 19:46:51.4038|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2018-11-14 19:46:51.4157|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) 
+2018-11-14 19:46:51.4157|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:46:51.4232|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0205ms. 
+2018-11-14 19:46:51.4232|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-14 19:46:51.4406|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 13.9132ms. 
+2018-11-14 19:46:51.4529|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) in 34.7328ms 
+2018-11-14 19:46:51.4529|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 56.0124ms 200 text/html; charset=utf-8 
+2018-11-14 19:46:51.7719|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2018-11-14 19:46:51.8039|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12417.5377ms 200 text/event-stream; charset=utf-8 
+2018-11-14 19:46:52.2408|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/sw.js   
+2018-11-14 19:46:52.2408|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/sw.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\sw.js' 
+2018-11-14 19:46:52.2493|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8.5388ms 200 application/javascript 
+2018-11-14 19:46:52.3019|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2018-11-14 19:46:52.3427|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) 
+2018-11-14 19:46:52.3427|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:46:52.3427|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0218ms. 
+2018-11-14 19:46:52.3586|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-14 19:46:52.3586|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 13.8503ms. 
+2018-11-14 19:46:52.3835|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) in 30.6958ms 
+2018-11-14 19:46:52.3835|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 85.4324ms 200 text/html; charset=utf-8 
+2018-11-14 19:47:22.4374|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2018-11-14 19:47:22.4374|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) 
+2018-11-14 19:47:22.4501|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:47:22.4501|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0279ms. 
+2018-11-14 19:47:22.4501|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-14 19:47:22.4501|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 4.0746ms. 
+2018-11-14 19:47:22.4698|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) in 19.7843ms 
+2018-11-14 19:47:22.4698|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 34.6176ms 200 text/html; charset=utf-8 
+2018-11-14 19:47:22.5384|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosissemibold-subset.woff2   
+2018-11-14 19:47:22.5384|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensans-subset.woff2   
+2018-11-14 19:47:22.5384|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2018-11-14 19:47:22.5512|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/webdesign1x.png   
+2018-11-14 19:47:22.5512|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensans-subset.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensans-subset.woff2' 
+2018-11-14 19:47:22.5512|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2018-11-14 19:47:22.5512|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 17.9416ms 200 font/woff2 
+2018-11-14 19:47:22.5512|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/logo_nordic.svg   
+2018-11-14 19:47:22.5612|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosissemibold-subset.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosissemibold-subset.woff2' 
+2018-11-14 19:47:22.5612|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/webdesign1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\webdesign1x.png' 
+2018-11-14 19:47:22.5612|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27.0337ms 200 font/woff2 
+2018-11-14 19:47:22.5612|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 15.9193ms 200 image/png 
+2018-11-14 19:47:22.5612|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/logo_nordic.svg'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\logo_nordic.svg' 
+2018-11-14 19:47:22.6096|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 51.0445ms 200 image/svg+xml 
+2018-11-14 19:47:22.6052|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosismedium.woff2   
+2018-11-14 19:47:22.6096|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosis.woff2   
+2018-11-14 19:47:22.6232|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/content1x.png   
+2018-11-14 19:47:22.6232|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosissemibold.woff2   
+2018-11-14 19:47:22.6420|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosismedium.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosismedium.woff2' 
+2018-11-14 19:47:22.6536|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosis.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosis.woff2' 
+2018-11-14 19:47:22.6536|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52.4508ms 200 font/woff2 
+2018-11-14 19:47:22.6536|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 44.6955ms 200 font/woff2 
+2018-11-14 19:47:22.6734|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/content1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\content1x.png' 
+2018-11-14 19:47:22.6734|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 57.4115ms 200 image/png 
+2018-11-14 19:47:22.6734|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosissemibold.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosissemibold.woff2' 
+2018-11-14 19:47:22.6861|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensans.woff2   
+2018-11-14 19:47:22.6861|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 56.8014ms 200 font/woff2 
+2018-11-14 19:47:22.7087|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensans.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensans.woff2' 
+2018-11-14 19:47:22.7172|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensanssemibold.woff2   
+2018-11-14 19:47:22.7172|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 34.9697ms 200 font/woff2 
+2018-11-14 19:47:22.7723|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensansbold.woff2   
+2018-11-14 19:47:22.7723|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/webdevelopment1x.png   
+2018-11-14 19:47:22.7957|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensanssemibold.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensanssemibold.woff2' 
+2018-11-14 19:47:22.7957|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 82.1814ms 200 font/woff2 
+2018-11-14 19:47:22.7957|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/itservices1x.png   
+2018-11-14 19:47:22.7957|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/webdevelopment1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\webdevelopment1x.png' 
+2018-11-14 19:47:22.8111|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensansbold.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensansbold.woff2' 
+2018-11-14 19:47:22.8111|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 48.1775ms 200 image/png 
+2018-11-14 19:47:22.8111|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 51.3703ms 200 font/woff2 
+2018-11-14 19:47:22.8409|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/itservices1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\itservices1x.png' 
+2018-11-14 19:47:22.8558|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2018-11-14 19:47:22.8645|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 60.9227ms 200 image/png 
+2018-11-14 19:47:22.8645|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 316.2324ms 200 application/javascript 
+2018-11-14 19:47:22.8976|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/support1x.png   
+2018-11-14 19:47:22.8976|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2018-11-14 19:47:22.9764|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/support1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\support1x.png' 
+2018-11-14 19:47:22.9861|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 88.457ms 200 image/png 
+2018-11-14 19:47:23.0082|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2018-11-14 19:47:23.0082|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2018-11-14 19:47:23.0129|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 112.9449ms 200 application/javascript 
+2018-11-14 19:47:23.0375|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\main.js' 
+2018-11-14 19:47:23.0484|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2018-11-14 19:47:23.0484|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 511.4608ms 200 application/javascript 
+2018-11-14 19:47:23.0484|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 40.2324ms 200 application/javascript 
+2018-11-14 19:47:23.2555|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2018-11-14 19:47:23.2746|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/startup/bg-3.png   
+2018-11-14 19:47:23.2835|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/startup/hero-banner.png   
+2018-11-14 19:47:23.2975|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/startup/bg-3.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\startup\bg-3.png' 
+2018-11-14 19:47:23.2975|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/startup/hero-banner.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\startup\hero-banner.png' 
+2018-11-14 19:47:23.2975|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 31.3987ms 200 image/png 
+2018-11-14 19:47:23.3316|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 47.8672ms 200 image/png 
+2018-11-14 19:47:23.4260|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fontawesome-webfont.woff2   
+2018-11-14 19:47:23.4544|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\fontawesome-webfont.woff2' 
+2018-11-14 19:47:23.4544|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 33.2267ms 200 font/woff2 
+2018-11-14 19:47:23.6228|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/team.png   
+2018-11-14 19:47:23.6228|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/team.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\team.png' 
+2018-11-14 19:47:23.6404|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 17.5961ms 200 image/png 
+2018-11-14 19:47:23.8551|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/sw.js   
+2018-11-14 19:47:23.8721|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/sw.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\sw.js' 
+2018-11-14 19:47:23.8780|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 22.9178ms 200 application/javascript 
+2018-11-14 19:47:24.2088|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2018-11-14 19:47:24.2088|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/experience1x.png   
+2018-11-14 19:47:24.2368|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) 
+2018-11-14 19:47:24.4467|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:47:24.4467|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/experience1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\experience1x.png' 
+2018-11-14 19:47:24.5001|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 293.7426ms 200 image/png 
+2018-11-14 19:47:24.5001|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0216ms. 
+2018-11-14 19:47:24.5150|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-14 19:47:24.5350|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 20.0516ms. 
+2018-11-14 19:47:24.5350|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) in 92.1577ms 
+2018-11-14 19:47:24.5350|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 335.4872ms 200 text/html; charset=utf-8 
+2018-11-14 19:47:31.3866|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/sw.js   
+2018-11-14 19:47:31.3939|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/sw.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\sw.js' 
+2018-11-14 19:47:31.3939|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10.5297ms 200 application/javascript 
+2018-11-14 19:47:31.4361|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2018-11-14 19:47:31.4759|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) 
+2018-11-14 19:47:31.4852|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:47:31.4852|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0221ms. 
+2018-11-14 19:47:31.4852|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-14 19:47:31.4852|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 4.9374ms. 
+2018-11-14 19:47:31.5016|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Index (TemplateCoreWeb) in 16.5629ms 
+2018-11-14 19:47:31.5016|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 68.0059ms 200 text/html; charset=utf-8 
+2018-11-14 19:47:31.7876|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/workflow   
+2018-11-14 19:47:31.7943|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Workflow", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Workflow (TemplateCoreWeb) 
+2018-11-14 19:47:31.7943|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Workflow (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:47:31.7943|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Workflow (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2169ms. 
+2018-11-14 19:47:31.8121|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Workflow. 
+2018-11-14 19:47:32.3570|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Workflow executed in 557.3033ms. 
+2018-11-14 19:47:32.3570|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Workflow (TemplateCoreWeb) in 566.5576ms 
+2018-11-14 19:47:32.3570|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 577.6362ms 200 text/html; charset=utf-8 
+2018-11-14 19:47:32.4080|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/idea1x.png   
+2018-11-14 19:47:32.4509|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/idea1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\idea1x.png' 
+2018-11-14 19:47:32.4509|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 48.037ms 200 image/png 
+2018-11-14 19:47:32.4997|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/strategy1x.png   
+2018-11-14 19:47:32.4997|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/strategy1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\strategy1x.png' 
+2018-11-14 19:47:32.5160|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16.2931ms 200 image/png 
+2018-11-14 19:47:32.7006|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/launch1x.png   
+2018-11-14 19:47:32.7015|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/support1x.png   
+2018-11-14 19:47:32.7006|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/content1x.png   
+2018-11-14 19:47:32.7457|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/support1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\support1x.png' 
+2018-11-14 19:47:32.7015|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/code1x.png   
+2018-11-14 19:47:32.7535|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52.0269ms 200 image/png 
+2018-11-14 19:47:32.7015|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/design1x.png   
+2018-11-14 19:47:32.8355|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2018-11-14 19:47:32.8355|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/launch1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\launch1x.png' 
+2018-11-14 19:47:32.8827|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/design1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\design1x.png' 
+2018-11-14 19:47:32.8827|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 182.0009ms 200 image/png 
+2018-11-14 19:47:32.8827|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 185.4815ms 200 image/png 
+2018-11-14 19:47:32.9056|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/code1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\code1x.png' 
+2018-11-14 19:47:32.9056|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 210.5144ms 200 image/png 
+2018-11-14 19:47:32.9487|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9693.3927ms 200 text/event-stream; charset=utf-8 
+2018-11-14 19:47:32.9487|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/content1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\content1x.png' 
+2018-11-14 19:47:32.9561|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 255.5704ms 200 image/png 
+2018-11-14 19:47:46.7373|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/idea2x.png   
+2018-11-14 19:47:46.7610|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/idea2x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\idea2x.png' 
+2018-11-14 19:47:46.7650|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27.6263ms 200 image/png 
+2018-11-14 19:47:51.1644|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2018-11-14 19:47:52.2372|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/sw.js   
+2018-11-14 19:47:52.2524|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/sw.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\sw.js' 
+2018-11-14 19:47:52.2524|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 20.7404ms 200 application/javascript 
+2018-11-14 19:48:03.5673|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/content2x.png   
+2018-11-14 19:48:03.5673|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/strategy2x.png   
+2018-11-14 19:48:03.5673|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/content2x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\content2x.png' 
+2018-11-14 19:48:03.5777|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10.3328ms 200 image/png 
+2018-11-14 19:48:03.5777|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/strategy2x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\strategy2x.png' 
+2018-11-14 19:48:03.5777|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 20.9149ms 200 image/png 
+2018-11-14 19:48:04.3983|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/design2x.png   
+2018-11-14 19:48:04.4057|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/design2x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\design2x.png' 
+2018-11-14 19:48:04.4057|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.434ms 200 image/png 
+2018-11-14 19:48:04.9477|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/code2x.png   
+2018-11-14 19:48:04.9531|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/code2x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\code2x.png' 
+2018-11-14 19:48:04.9531|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.1009ms 200 image/png 
+2018-11-14 19:48:05.7360|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/support2x.png   
+2018-11-14 19:48:05.7360|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/support2x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\support2x.png' 
+2018-11-14 19:48:05.7471|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11.0636ms 200 image/png 
+2018-11-14 19:48:05.9974|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/launch2x.png   
+2018-11-14 19:48:05.9974|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/launch2x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\launch2x.png' 
+2018-11-14 19:48:05.9974|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6.9313ms 200 image/png 
+2018-11-14 19:48:25.2755|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/workflow   
+2018-11-14 19:48:25.2933|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Workflow", controller = "Home"}. Executing action TemplateCoreWeb.Controllers.HomeController.Workflow (TemplateCoreWeb) 
+2018-11-14 19:48:25.2967|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWeb.Controllers.HomeController.Workflow (TemplateCoreWeb) with arguments () - Validation state: Valid 
+2018-11-14 19:48:25.2967|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWeb.Controllers.HomeController.Workflow (TemplateCoreWeb), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0254ms. 
+2018-11-14 19:48:25.2967|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Workflow. 
+2018-11-14 19:48:25.2967|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Workflow executed in 2.8858ms. 
+2018-11-14 19:48:25.2967|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWeb.Controllers.HomeController.Workflow (TemplateCoreWeb) in 11.966ms 
+2018-11-14 19:48:25.3141|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 38.5204ms 200 text/html; charset=utf-8 
+2018-11-14 19:48:25.3544|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosissemibold-subset.woff2   
+2018-11-14 19:48:25.3648|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2018-11-14 19:48:25.3648|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensans-subset.woff2   
+2018-11-14 19:48:25.3648|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2018-11-14 19:48:25.4096|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosissemibold-subset.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosissemibold-subset.woff2' 
+2018-11-14 19:48:25.5039|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 149.5244ms 200 font/woff2 
+2018-11-14 19:48:25.4267|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensans-subset.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensans-subset.woff2' 
+2018-11-14 19:48:25.5126|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/logo_nordic.svg   
+2018-11-14 19:48:25.5126|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 150.3713ms 200 font/woff2 
+2018-11-14 19:48:25.5126|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2018-11-14 19:48:25.5466|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 181.7986ms 200 application/javascript 
+2018-11-14 19:48:25.5466|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/logo_nordic.svg'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\logo_nordic.svg' 
+2018-11-14 19:48:25.5466|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/idea1x.png   
+2018-11-14 19:48:25.5729|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 60.1217ms 200 image/svg+xml 
+2018-11-14 19:48:25.5952|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/idea1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\idea1x.png' 
+2018-11-14 19:48:25.5952|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 49.7157ms 200 image/png 
+2018-11-14 19:48:25.6085|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/strategy1x.png   
+2018-11-14 19:48:25.6085|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/content1x.png   
+2018-11-14 19:48:25.6085|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/strategy1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\strategy1x.png' 
+2018-11-14 19:48:25.6085|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/content1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\content1x.png' 
+2018-11-14 19:48:25.6270|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 18.847ms 200 image/png 
+2018-11-14 19:48:25.6270|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/design1x.png   
+2018-11-14 19:48:25.6270|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 19.431ms 200 image/png 
+2018-11-14 19:48:25.6538|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/code1x.png   
+2018-11-14 19:48:25.6538|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/design1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\design1x.png' 
+2018-11-14 19:48:25.6717|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 41.9343ms 200 image/png 
+2018-11-14 19:48:25.6717|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/code1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\code1x.png' 
+2018-11-14 19:48:25.6717|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/support1x.png   
+2018-11-14 19:48:25.6956|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 41.8221ms 200 image/png 
+2018-11-14 19:48:25.7245|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/workflow/launch1x.png   
+2018-11-14 19:48:25.7245|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2018-11-14 19:48:25.7310|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/support1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\support1x.png' 
+2018-11-14 19:48:25.7310|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/workflow/launch1x.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\workflow\launch1x.png' 
+2018-11-14 19:48:25.7516|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 384.7353ms 200 application/javascript 
+2018-11-14 19:48:25.7516|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2018-11-14 19:48:25.7516|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 78.327ms 200 image/png 
+2018-11-14 19:48:25.7653|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 40.758ms 200 image/png 
+2018-11-14 19:48:25.7817|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2018-11-14 19:48:25.8211|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\main.js' 
+2018-11-14 19:48:25.8260|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 44.2054ms 200 application/javascript 
+2018-11-14 19:48:25.8260|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2018-11-14 19:48:25.8471|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 86.7897ms 200 application/javascript 
+2018-11-14 19:48:26.0172|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2018-11-14 19:48:26.0356|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/startup/hero-banner.png   
+2018-11-14 19:48:26.0356|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosissemibold.woff2   
+2018-11-14 19:48:26.0529|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/startup/hero-banner.png'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\startup\hero-banner.png' 
+2018-11-14 19:48:26.0644|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 34.1754ms 200 image/png 
+2018-11-14 19:48:26.0644|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosissemibold.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosissemibold.woff2' 
+2018-11-14 19:48:26.0823|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensans.woff2   
+2018-11-14 19:48:26.0823|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 46.4706ms 200 font/woff2 
+2018-11-14 19:48:26.0990|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensans.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensans.woff2' 
+2018-11-14 19:48:26.0990|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 22.9685ms 200 font/woff2 
+2018-11-14 19:48:26.1582|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fontawesome-webfont.woff2   
+2018-11-14 19:48:26.1582|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\fontawesome-webfont.woff2' 
+2018-11-14 19:48:26.1712|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 13.0011ms 200 font/woff2 
+2018-11-14 19:48:26.2599|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/opensanssemibold.woff2   
+2018-11-14 19:48:26.2637|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/dosis.woff2   
+2018-11-14 19:48:26.2637|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/opensanssemibold.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\opensanssemibold.woff2' 
+2018-11-14 19:48:26.2637|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10.7885ms 200 font/woff2 
+2018-11-14 19:48:26.2637|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/dosis.woff2'. Physical path: 'C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\dosis.woff2' 
+2018-11-14 19:48:26.2799|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16.1764ms 200 font/woff2 
+2018-11-14 19:48:46.0544|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 20037.5399ms 200 text/event-stream; charset=utf-8 
+2018-11-14 19:49:06.1272|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 93293.3833ms 200 text/event-stream; charset=utf-8 
+2018-11-14 19:49:06.1272|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 74964.4157ms 200 text/event-stream; charset=utf-8 
+2018-11-14 19:50:22.8054||DEBUG|TemplateCoreWeb.Program|init main 
+2018-11-14 19:50:23.1493||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Rodion\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2018-11-14 19:50:25.5514||INFO|Microsoft.AspNetCore.NodeServices|development mode: true 
+2018-11-14 19:50:27.6123||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. 
+2018-11-14 19:50:28.3148|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2018-11-14 19:50:28.3859||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: /__webpack_hmr 
+2018-11-14 19:50:57.3690||DEBUG|TemplateCoreWeb.Program|init main 
+2018-11-14 19:50:57.7297||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Rodion\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2018-11-14 19:50:59.7246||INFO|Microsoft.AspNetCore.NodeServices|development mode: true 
+2018-11-14 19:51:01.1887||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Rodion\Documents\Visual Studio 2017\Projects\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. 
+2018-11-14 19:51:01.4900|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2018-11-14 19:51:02.1930||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: /__webpack_hmr 

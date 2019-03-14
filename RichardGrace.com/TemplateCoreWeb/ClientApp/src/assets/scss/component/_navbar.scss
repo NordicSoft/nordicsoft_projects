@@ -1,0 +1,187 @@
+@import "variables";
+.navbar-nav {
+    float: none;
+    margin: 0 auto;
+}
+
+.navbar-nav > li {
+    float: none;
+    display: inline-block;
+}
+
+.navbar-default {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+
+.navbar-default .navbar-brand, .navbar-default .nav li a.navbar-brand {
+    margin-top: 0;
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Dancing Script';
+    text-transform: none;
+    color: $white;
+    line-height: 40px;
+    padding: 21px 25px 30px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: $dark-gray;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255, 255, 255, .02)
+}
+
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    border-color: transparent;
+    background-color: transparent
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: $white;
+}
+
+.caret {
+    margin-top: -3px
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: $dark-gray;
+    padding: 25px 15px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.navbar-default.background--dark .nav li > a,
+.navbar-default.background--dark .navbar-brand,
+#headerwrap.background--dark .intro-text, .navbar-default .nav li > a,
+.navbar-default .navbar-brand,
+#headerwrap .intro-text {
+    color: $light-gray;
+}
+
+.navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
+    color: $white;
+}
+
+
+.navbar-default .nav li.dropdown.open > a, .navbar-default .dropdown-menu a {
+    color: $dark-gray !important;
+}
+
+.navbar-default .nav .dropdown-menu li a {
+    padding: 15px 20px;
+    font-size: 14px;
+}
+
+#headerwrap .btn-primary {
+    border-color: $light-gray;
+    color: $light-gray;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: $dark-gray;
+}
+
+.navbar-default .navbar-nav > .active > a {
+    border-radius: 0;
+    background-color: transparent;
+    color: $white;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+
+.navbar-default.navbar-shrink .nav li > a,
+.navbar-default.navbar-shrink .navbar-brand {
+    color: $dark-gray;
+}
+
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: $theme-color;
+    background-color: transparent;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 0;
+    margin: 2px 0 0;
+    font-size: 12px;
+    text-align: left;
+    list-style: none;
+    background-color: $white;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.navbar-default.navbar-shrink .nav .dropdown-menu li a {
+    color: $dark-gray;
+}
+
+.navbar-default.navbar-shrink .nav .dropdown-menu li a:hover,
+.navbar-default .nav .dropdown-menu li a:hover {
+    color: $dark-gray;
+    background-color: rgb(238, 238, 238);
+}
+
+
+@media(max-width: 767px){
+    .navbar-default .nav li > a,
+    .navbar-default.navbar-shrink .nav li > a {
+        color: $dark-gray;
+    }
+    .navbar-default,
+    .navbar-default.navbar-shrink {
+        background-color: rgb(255, 255, 255);
+    }
+    .navbar-default .navbar-brand.logo {
+        padding: 0;
+        color: rgb(51, 51, 51);
+    }
+    #main-navigation{
+        background-color: rgb(255, 255, 255);
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: rgb(51, 51, 51);
+    }
+}
+
+@media(max-width: 419px){
+    .navbar-default .nav li a{
+        padding: 15px 9px;
+    }
+    .navbar-default .navbar-brand.logo {
+        font-size: 24px;
+        line-height: 50px;
+    }
+}

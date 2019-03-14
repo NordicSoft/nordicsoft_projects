@@ -1,0 +1,53 @@
+.navbar.navbar-light.navbar-transparent.bg-faded {
+    background-color: transparent !important;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar.navbar-light.navbar-transparent.bg-faded .nav-link {
+    color: #fff;
+    opacity: 0.8;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.navbar.navbar-light.navbar-transparent.bg-faded .nav-link.btn {
+    opacity: 1;
+    margin-left: 15px;
+}
+
+.navbar.navbar-light.navbar-transparent.bg-faded .nav-item .nav-link.active {
+    color: #8bcb26;
+    opacity: 1;
+}
+
+.navbar.navbar-light.navbar-transparent.bg-faded.fixed-top {
+    /*animation: fadeInDown 0.3s ease-out forwards;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;*/
+    background-color: rgb(52, 73, 94) !important;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.navbar-light.navbar-transparent.bg-faded.fixed-top .nav-link {
+    color: #fff;
+    opacity: 0.6;
+}
+
+.navbar.navbar-light.navbar-transparent.bg-faded.fixed-top .nav-link.btn {
+    opacity: 1;
+    color: #fff;
+}
+
+.navbar.navbar-light.navbar-transparent.bg-faded.fixed-top .nav-item .nav-link.active {
+    color: #8bcb26;
+    opacity: 1;
+}

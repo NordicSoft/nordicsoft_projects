@@ -1,0 +1,92 @@
+2018-11-19 12:54:03.3379||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 12:54:10.7219||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 12:54:23.9842|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 
+2018-11-19 12:54:56.6567||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 12:55:07.7032||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 12:55:21.3650|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 
+2018-11-19 12:56:11.5395||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 12:56:17.2546||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 12:56:29.2659|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/dist/sw.js|action: 
+2018-11-19 12:56:29.2659|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/faq|action: 
+2018-11-19 12:58:49.3066||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 12:58:56.4247||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 12:59:11.1140|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/dist/sw.js|action: 
+2018-11-19 13:00:57.5810||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:01:04.2455||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 13:01:18.6804|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/dist/sw.js|action: 
+2018-11-19 13:01:34.6658||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:01:47.9091||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:01:56.5429||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 13:02:08.6253|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/favicon-32x32.png|action: 
+2018-11-19 13:02:20.5550||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:02:29.2677||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 13:02:46.4607|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/dist/sw.js|action: 
+2018-11-19 13:03:38.8612||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:03:45.6427||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 13:03:59.6697|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/dist/sw.js|action: 
+2018-11-19 13:11:03.8486||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:11:11.7448||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 13:11:30.8952|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/dist/sw.js|action: 
+2018-11-19 13:12:21.6939||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:12:32.0874||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 13:12:46.6537|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/dist/sw.js|action: 
+2018-11-19 13:14:42.8138||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:14:49.8252||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 13:15:08.3103|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/dist/sw.js|action: 
+2018-11-19 13:17:24.7319||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:17:39.8686||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 13:17:53.3344|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/dist/sw.js|action: 
+2018-11-19 13:18:10.7590||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:24:41.0088||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:24:56.1861||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 13:25:07.7695|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/dist/sw.js|action: 
+2018-11-19 13:30:10.2685||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:30:14.6590||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 13:30:27.0075|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/pricing|action: 
+2018-11-19 13:30:42.0254||ERROR|Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware|'MS-ASPNETCORE-TOKEN' does not match the expected pairing token 'd6f071a3-f9a8-49b5-84f3-35cc5875b744', request rejected. |url: http://127.0.0.1/|action: 
+2018-11-19 13:30:47.1315||ERROR|Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware|'MS-ASPNETCORE-TOKEN' does not match the expected pairing token 'd6f071a3-f9a8-49b5-84f3-35cc5875b744', request rejected. |url: http://127.0.0.1/|action: 
+2018-11-19 13:31:01.9576||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:31:07.4104||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 13:31:21.3774|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/dist/sw.js|action: 
+2018-11-19 13:32:06.4489||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:32:13.2543||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 13:32:30.5187|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/dist/sw.js|action: 
+2018-11-19 13:32:30.5187|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/dist/sw.js|action: 
+2018-11-19 13:35:25.4462||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:35:33.1864||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:35:46.5496||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 13:36:02.9362|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/dist/sw.js|action: 
+2018-11-19 13:36:07.5897||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:36:14.4632||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 13:36:28.5366|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/img/home/team.png|action: 
+2018-11-19 13:39:53.1175||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:39:58.1476||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 13:40:12.2345|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/dist/sw.js|action: 
+2018-11-19 13:46:27.6923||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:46:32.6974||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 13:46:45.5226|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/de705e029d6c11e716ac.hot-update.json|action: 
+2018-11-19 13:47:10.1157||DEBUG|TemplateCoreWeb.Program|init main |url: |action: 
+2018-11-19 13:47:14.7219||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 13:47:29.1014|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 
+2018-11-19 13:48:57.2217||DEBUG|TemplateCoreWebTest.Program|init main |url: |action: 
+2018-11-19 13:49:05.6007||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 13:49:21.7026|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 
+2018-11-19 13:52:52.6306||DEBUG|TemplateCoreWebTest.Program|init main |url: |action: 
+2018-11-19 13:52:58.7120||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2018-11-19 13:53:21.0424|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 
+2018-11-19 14:55:21.7963|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.IO.IOException: The server returned an invalid or unrecognized response.
+   at System.Net.Http.HttpConnection.FillAsync()
+   at System.Net.Http.HttpConnection.ChunkedEncodingReadStream.CopyToAsyncCore(Stream destination, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.PerformProxyRequest(HttpContext context)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/__webpack_hmr|action: 
+2018-11-19 14:55:27.2597|2|WARN|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|The response has already started, the error page middleware will not be executed. |url: http://localhost/__webpack_hmr|action: 
+2018-11-19 14:55:27.2597|13|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLIE2M6P9LC9", Request id "0HLIE2M6P9LC9:00000002": An unhandled exception was thrown by the application. System.IO.IOException: The server returned an invalid or unrecognized response.
+   at System.Net.Http.HttpConnection.FillAsync()
+   at System.Net.Http.HttpConnection.ChunkedEncodingReadStream.CopyToAsyncCore(Stream destination, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.PerformProxyRequest(HttpContext context)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)|url: http://localhost/__webpack_hmr|action: 

@@ -1,0 +1,2 @@
+2019-01-22 10:20:23.1340|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52747466.4188ms 200 text/event-stream; charset=utf-8 
+2019-01-22 10:20:30.7480|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   

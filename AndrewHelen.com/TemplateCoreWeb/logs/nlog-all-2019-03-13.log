@@ -1,0 +1,810 @@
+2019-03-13 18:16:30.5714||DEBUG|TemplateCoreWebTest.Program|init main 
+2019-03-13 18:16:34.0547||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Diana\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-03-13 18:16:42.4499||INFO|Microsoft.AspNetCore.NodeServices|development mode: true 
+2019-03-13 18:16:47.5685||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist has been removed. 
+2019-03-13 18:16:48.6230|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-13 18:16:48.8386||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: / 
+2019-03-13 18:17:15.0822||INFO|Microsoft.AspNetCore.NodeServices|webpack built 0b6ac1575a4202133310 in 26961ms 
+2019-03-13 18:17:15.3636||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Hash: 0b6ac1575a4202133310
+Version: webpack 4.23.1
+Time: 26961ms
+Built at: 2019-03-13 18:17:14
+                                         Asset      Size         Chunks             Chunk Names
+ ../img/_/fonts/font-awesome/fa-brands-400.svg  49 bytes                 [emitted]  
+../img/_/fonts/font-awesome/fa-regular-400.svg  50 bytes                 [emitted]  
+  ../img/_/fonts/font-awesome/fa-solid-900.svg  48 bytes                 [emitted]  
+    critical-foft-preload-fallback-optional.js  8.04 KiB                 [emitted]  
+                              custom_styles.js   430 KiB  custom_styles  [emitted]  custom_styles
+                           custom_styles.js.gz  66.2 KiB                 [emitted]  
+                       fonts/fa-brands-400.eot  96.3 KiB                 [emitted]  
+                    fonts/fa-brands-400.eot.gz    63 KiB                 [emitted]  
+                       fonts/fa-brands-400.svg   496 KiB                 [emitted]  
+                    fonts/fa-brands-400.svg.gz   159 KiB                 [emitted]  
+                       fonts/fa-brands-400.ttf  96.1 KiB                 [emitted]  
+                    fonts/fa-brands-400.ttf.gz  62.9 KiB                 [emitted]  
+                      fonts/fa-brands-400.woff  62.2 KiB                 [emitted]  
+                     fonts/fa-brands-400.woff2  53.2 KiB                 [emitted]  
+                      fonts/fa-regular-400.eot  30.4 KiB                 [emitted]  
+                   fonts/fa-regular-400.eot.gz  14.6 KiB                 [emitted]  
+                      fonts/fa-regular-400.svg   105 KiB                 [emitted]  
+                   fonts/fa-regular-400.svg.gz  35.7 KiB                 [emitted]  
+                      fonts/fa-regular-400.ttf  30.2 KiB                 [emitted]  
+                   fonts/fa-regular-400.ttf.gz  14.6 KiB                 [emitted]  
+                     fonts/fa-regular-400.woff  14.4 KiB                 [emitted]  
+                    fonts/fa-regular-400.woff2    12 KiB                 [emitted]  
+                        fonts/fa-solid-900.eot   104 KiB                 [emitted]  
+                     fonts/fa-solid-900.eot.gz  50.3 KiB                 [emitted]  
+                        fonts/fa-solid-900.svg   382 KiB                 [emitted]  
+                     fonts/fa-solid-900.svg.gz   130 KiB                 [emitted]  
+                        fonts/fa-solid-900.ttf   103 KiB                 [emitted]  
+                     fonts/fa-solid-900.ttf.gz  50.2 KiB                 [emitted]  
+                       fonts/fa-solid-900.woff  49.3 KiB                 [emitted]  
+                      fonts/fa-solid-900.woff2  39.2 KiB                 [emitted]  
+                            fonts/flaticon.eot  2.57 KiB                 [emitted]  
+                         fonts/flaticon.eot.gz  1.42 KiB                 [emitted]  
+                            fonts/flaticon.ttf  27.6 KiB                 [emitted]  
+                         fonts/flaticon.ttf.gz  17.4 KiB                 [emitted]  
+                           fonts/flaticon.woff  17.6 KiB                 [emitted]  
+                        fonts/montserrat.woff2  18.3 KiB                 [emitted]  
+                       fonts/ptserif-400.woff2  33.5 KiB                 [emitted]  
+                       fonts/ptserif-700.woff2  27.3 KiB                 [emitted]  
+                                       main.js   215 KiB           main  [emitted]  main
+                                    main.js.gz  47.4 KiB                 [emitted]  
+                                         sw.js  2.14 KiB                 [emitted]  
+                                 vendor_src.js   965 KiB     vendor_src  [emitted]  vendor_src
+                              vendor_src.js.gz   212 KiB                 [emitted]  
+                              vendor_styles.js  1.07 MiB  vendor_styles  [emitted]  vendor_styles
+                           vendor_styles.js.gz   182 KiB                 [emitted]  
+Entrypoint vendor_styles = vendor_styles.js
+Entrypoint vendor_src = vendor_src.js
+Entrypoint custom_styles = custom_styles.js
+Entrypoint main = main.js
+[0] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/vendor_styles.js 40 bytes {vendor_styles} [built]
+[1] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true script-loader!./ClientApp/src/assets/vendor/jquery.min.js script-loader!./ClientApp/src/assets/vendor/popper.min.js script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js script-loader!./ClientApp/src/assets/vendor/pace.min.js script-loader!./ClientApp/src/assets/vendor/particles.min.js script-loader!./ClientApp/src/assets/vendor/jquery.easing.min.js script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/jquery.magnific-popup.min.js script-loader!./ClientApp/src/assets/vendor/jquery.countdown.min.js script-loader!./ClientApp/src/assets/vendor/jquery.validate.min.js script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js script-loader!./ClientApp/src/assets/vendor/theme.js script-loader!./ClientApp/src/assets/vendor/milea.js 244 bytes {vendor_src} [built]
+[2] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/custom_styles.js 40 bytes {custom_styles} [built]
+[3] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/index.js 40 bytes {main} [built]
+[./ClientApp/src/assets/js/custom_styles.js] 28 bytes {custom_styles} [built]
+[./ClientApp/src/assets/js/index.js] 274 bytes {main} [built]
+[./ClientApp/src/assets/js/vendor_styles.js] 215 bytes {vendor_styles} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/ScrollMagic.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js 484 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/animation.gsap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js 487 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/bootstrap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js 482 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/flickity.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js 486 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js 492 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js 490 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/isotope.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js 485 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/jquery-confirm.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js 487 bytes {vendor_src} [built]
+    + 86 hidden modules 
+2019-03-13 18:17:15.3832|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2019-03-13 18:17:15.4016||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Compiled successfully. 
+2019-03-13 18:17:15.7583|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation) 
+2019-03-13 18:17:15.8049|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation) with arguments () - Validation state: Valid 
+2019-03-13 18:17:15.8049|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.9587ms. 
+2019-03-13 18:17:15.8690|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-13 18:17:16.1079|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 276.1209ms. 
+2019-03-13 18:17:16.1193|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation) in 358.8344ms 
+2019-03-13 18:17:16.1558|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27534.9485ms 200 text/html; charset=utf-8 
+2019-03-13 18:17:16.2963|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/the-bride.jpg   
+2019-03-13 18:17:16.3050|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/the-groom.jpg   
+2019-03-13 18:17:16.3188|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/the-bride.jpg was not modified 
+2019-03-13 18:17:16.3188|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/the-groom.jpg was not modified 
+2019-03-13 18:17:16.3188|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 32.6461ms 304 image/jpeg 
+2019-03-13 18:17:16.3392|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 34.194ms 304 image/jpeg 
+2019-03-13 18:17:16.6487|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-13 18:17:16.6487|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/title-divider.png   
+2019-03-13 18:17:16.6595|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/love-story/love-story-1.jpg   
+2019-03-13 18:17:16.6595|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/title-divider.png was not modified 
+2019-03-13 18:17:16.6595|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10.5146ms 304 image/png 
+2019-03-13 18:17:16.6595|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/love-story/love-story-1.jpg was not modified 
+2019-03-13 18:17:16.6595|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.998ms 304 image/jpeg 
+2019-03-13 18:17:16.6958|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/love-story/love-story-2.jpg   
+2019-03-13 18:17:16.7050|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/love-story/love-story-2.jpg was not modified 
+2019-03-13 18:17:16.7050|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10.7326ms 304 image/jpeg 
+2019-03-13 18:17:16.8071|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/love-story/love-story-4.jpg   
+2019-03-13 18:17:16.8138|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/love-story/love-story-4.jpg was not modified 
+2019-03-13 18:17:16.8138|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8.1831ms 304 image/jpeg 
+2019-03-13 18:17:16.8409|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-3.jpg   
+2019-03-13 18:17:16.8886|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/love-story/love-story-3.jpg   
+2019-03-13 18:17:16.8963|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/gallery/gallery-3.jpg was not modified 
+2019-03-13 18:17:16.9370|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-2.jpg   
+2019-03-13 18:17:16.9389|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/love-story/love-story-3.jpg was not modified 
+2019-03-13 18:17:16.9389|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 97.9954ms 304 image/jpeg 
+2019-03-13 18:17:16.9562|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-1.jpg   
+2019-03-13 18:17:16.9389|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/gallery/gallery-2.jpg was not modified 
+2019-03-13 18:17:16.9389|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 54.0516ms 304 image/jpeg 
+2019-03-13 18:17:16.9562|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/2760fdd2ca2e4987117b.hot-update.json   
+2019-03-13 18:17:16.9562|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 31.5202ms 304 image/jpeg 
+2019-03-13 18:17:16.9723|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/gallery/gallery-1.jpg was not modified 
+2019-03-13 18:17:16.9997|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (WeedingInvitation) 
+2019-03-13 18:17:17.0846|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 128.4356ms 304 image/jpeg 
+2019-03-13 18:17:17.1226|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (WeedingInvitation) - Validation state: Valid 
+2019-03-13 18:17:17.1423|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (WeedingInvitation), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3987ms. 
+2019-03-13 18:17:17.2000|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-4.jpg   
+2019-03-13 18:17:17.2000|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-13 18:17:17.2049|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/gallery/gallery-4.jpg was not modified 
+2019-03-13 18:17:17.2388|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-5.jpg   
+2019-03-13 18:17:17.2529|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52.9269ms 304 image/jpeg 
+2019-03-13 18:17:17.2529|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/gallery/gallery-5.jpg was not modified 
+2019-03-13 18:17:17.2529|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-6.jpg   
+2019-03-13 18:17:17.2529|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 21.6623ms 304 image/jpeg 
+2019-03-13 18:17:17.2529|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/gallery/gallery-6.jpg was not modified 
+2019-03-13 18:17:17.2718|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 13.7995ms 304 image/jpeg 
+2019-03-13 18:17:17.2829|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-7.jpg   
+2019-03-13 18:17:17.2829|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/gallery/gallery-7.jpg was not modified 
+2019-03-13 18:17:17.2829|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6.1419ms 304 image/jpeg 
+2019-03-13 18:17:17.3176|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 170.9568ms. 
+2019-03-13 18:17:17.3176|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (WeedingInvitation) in 207.0272ms 
+2019-03-13 18:17:17.3304|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 369.5758ms 404 text/html; charset=utf-8 
+2019-03-13 18:17:17.3504|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-8.jpg   
+2019-03-13 18:17:17.3504|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/2760fdd2ca2e4987117b.hot-update.json   
+2019-03-13 18:17:17.3504|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /img/gallery/gallery-8.jpg was not modified 
+2019-03-13 18:17:17.3618|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Error404 (WeedingInvitation) 
+2019-03-13 18:17:17.3618|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 19.8183ms 304 image/jpeg 
+2019-03-13 18:17:17.3771|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Error404 (WeedingInvitation) - Validation state: Valid 
+2019-03-13 18:17:17.3771|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Error404 (WeedingInvitation), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.6663ms. 
+2019-03-13 18:17:17.3771|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-13 18:17:17.4280|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 37.7747ms. 
+2019-03-13 18:17:17.4280|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Error404 (WeedingInvitation) in 54.2907ms 
+2019-03-13 18:17:17.4432|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 87.3033ms 404 text/html; charset=utf-8 
+2019-03-13 18:17:21.9096|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-13 18:17:21.9330|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation) 
+2019-03-13 18:17:21.9504|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation) with arguments () - Validation state: Valid 
+2019-03-13 18:17:21.9559|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.038ms. 
+2019-03-13 18:17:21.9706|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-13 18:17:21.9965|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 25.9382ms. 
+2019-03-13 18:17:21.9965|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation) in 49.7908ms 
+2019-03-13 18:17:22.0045|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 94.896ms 200 text/html; charset=utf-8 
+2019-03-13 18:17:22.0985|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2019-03-13 18:17:22.1115|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/the-bride.jpg   
+2019-03-13 18:17:22.1115|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2019-03-13 18:17:22.1610|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/the-bride.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\the-bride.jpg' 
+2019-03-13 18:17:22.1610|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/the-groom.jpg   
+2019-03-13 18:17:22.1740|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 62.507ms 200 image/jpeg 
+2019-03-13 18:17:22.2287|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/the-groom.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\the-groom.jpg' 
+2019-03-13 18:17:22.3359|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 173.7149ms 200 image/jpeg 
+2019-03-13 18:17:22.3855|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2019-03-13 18:17:22.4084|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 295.0725ms 200 application/javascript 
+2019-03-13 18:17:22.4565|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/title-divider.png   
+2019-03-13 18:17:22.4565|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5817.3466ms 200 text/event-stream; charset=utf-8 
+2019-03-13 18:17:22.4565|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/title-divider.png'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\title-divider.png' 
+2019-03-13 18:17:22.4847|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.2492ms 200 image/png 
+2019-03-13 18:17:22.4973|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/love-story/love-story-1.jpg   
+2019-03-13 18:17:22.5444|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/love-story/love-story-2.jpg   
+2019-03-13 18:17:22.5839|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/love-story/love-story-1.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\love-story\love-story-1.jpg' 
+2019-03-13 18:17:22.5839|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 94.007ms 200 image/jpeg 
+2019-03-13 18:17:22.6107|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/love-story/love-story-2.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\love-story\love-story-2.jpg' 
+2019-03-13 18:17:22.6337|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 89.3115ms 200 image/jpeg 
+2019-03-13 18:17:22.6796|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/love-story/love-story-4.jpg   
+2019-03-13 18:17:22.6796|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2019-03-13 18:17:22.6983|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 599.7582ms 200 application/javascript 
+2019-03-13 18:17:22.7104|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/love-story/love-story-4.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\love-story\love-story-4.jpg' 
+2019-03-13 18:17:22.7442|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 64.5041ms 200 image/jpeg 
+2019-03-13 18:17:22.7621|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/love-story/love-story-3.jpg   
+2019-03-13 18:17:22.7900|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/love-story/love-story-3.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\love-story\love-story-3.jpg' 
+2019-03-13 18:17:22.7900|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.8165ms 200 image/jpeg 
+2019-03-13 18:17:22.8721|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-1.jpg   
+2019-03-13 18:17:22.8921|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-2.jpg   
+2019-03-13 18:17:22.8992|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-1.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\gallery\gallery-1.jpg' 
+2019-03-13 18:17:22.8992|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.3564ms 200 image/jpeg 
+2019-03-13 18:17:22.8992|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-2.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\gallery\gallery-2.jpg' 
+2019-03-13 18:17:22.9158|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 23.8242ms 200 image/jpeg 
+2019-03-13 18:17:23.2013|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-13 18:17:23.2013|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-3.jpg   
+2019-03-13 18:17:23.2154|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-4.jpg   
+2019-03-13 18:17:23.2443|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-3.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\gallery\gallery-3.jpg' 
+2019-03-13 18:17:23.3012|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 96.3244ms 200 image/jpeg 
+2019-03-13 18:17:23.3149|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-4.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\gallery\gallery-4.jpg' 
+2019-03-13 18:17:23.3419|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-6.jpg   
+2019-03-13 18:17:23.3527|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 137.3411ms 200 image/jpeg 
+2019-03-13 18:17:23.3802|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-5.jpg   
+2019-03-13 18:17:23.3802|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-7.jpg   
+2019-03-13 18:17:23.3802|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-8.jpg   
+2019-03-13 18:17:23.4043|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-5.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\gallery\gallery-5.jpg' 
+2019-03-13 18:17:23.4084|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-6.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\gallery\gallery-6.jpg' 
+2019-03-13 18:17:23.4333|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 53.1388ms 200 image/jpeg 
+2019-03-13 18:17:23.4333|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 95.787ms 200 image/jpeg 
+2019-03-13 18:17:23.4660|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/montserrat.woff2   
+2019-03-13 18:17:23.4858|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-7.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\gallery\gallery-7.jpg' 
+2019-03-13 18:17:23.4883|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 105.8299ms 200 image/jpeg 
+2019-03-13 18:17:23.5038|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-8.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\gallery\gallery-8.jpg' 
+2019-03-13 18:17:23.5411|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/montserrat.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist\fonts\montserrat.woff2' 
+2019-03-13 18:17:23.5971|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 208.676ms 200 image/jpeg 
+2019-03-13 18:17:23.6115|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 145.4883ms 200 font/woff2 
+2019-03-13 18:17:23.6289|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/ptserif-400.woff2   
+2019-03-13 18:17:23.6498|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/flaticon.woff   
+2019-03-13 18:17:23.6666|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/ptserif-400.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist\fonts\ptserif-400.woff2' 
+2019-03-13 18:17:23.6666|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/flaticon.woff'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist\fonts\flaticon.woff' 
+2019-03-13 18:17:23.6850|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 55.9838ms 200 font/woff2 
+2019-03-13 18:17:23.6850|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 37.561ms 200 application/font-woff 
+2019-03-13 18:17:23.7946|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fa-brands-400.woff2   
+2019-03-13 18:17:23.8010|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fa-brands-400.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist\fonts\fa-brands-400.woff2' 
+2019-03-13 18:17:23.8010|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.7931ms 200 font/woff2 
+2019-03-13 18:17:23.8521|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/section-divider-top.png   
+2019-03-13 18:17:23.8777|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/section-divider-top.png'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\section-divider-top.png' 
+2019-03-13 18:17:23.9070|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 54.9149ms 200 image/png 
+2019-03-13 18:17:23.9076|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/bg/bg-hero-static.jpg   
+2019-03-13 18:17:23.9806|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/bg/bg-hero-static.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\bg\bg-hero-static.jpg' 
+2019-03-13 18:17:23.9806|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 74.9358ms 200 image/jpeg 
+2019-03-13 18:17:23.9925|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2019-03-13 18:17:24.0660|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2019-03-13 18:17:24.1064|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist\main.js' 
+2019-03-13 18:17:24.1064|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 41.7429ms 200 application/javascript 
+2019-03-13 18:17:24.1542|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/section-divider-bottom.png   
+2019-03-13 18:17:24.1542|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/bg/bg-wedding-event.jpg   
+2019-03-13 18:17:24.1632|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/section-divider-bottom.png'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\section-divider-bottom.png' 
+2019-03-13 18:17:24.1918|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 37.5447ms 200 image/png 
+2019-03-13 18:17:24.2095|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/bg/bg-wedding-event.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\bg\bg-wedding-event.jpg' 
+2019-03-13 18:17:24.2308|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 76.1492ms 200 image/jpeg 
+2019-03-13 18:17:24.2623|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/bg/bg-proposed.jpg   
+2019-03-13 18:17:24.3000|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/bg/bg-proposed.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\bg\bg-proposed.jpg' 
+2019-03-13 18:17:24.3000|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 45.9352ms 200 image/jpeg 
+2019-03-13 18:17:24.4677|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/section-divider-top-gray-100.png   
+2019-03-13 18:17:24.4768|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/section-divider-top-gray-100.png'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\section-divider-top-gray-100.png' 
+2019-03-13 18:17:24.4928|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/icon-zoom-in-white.png   
+2019-03-13 18:17:24.4928|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.903ms 200 image/png 
+2019-03-13 18:17:24.5436|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/icon-zoom-in-white.png'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\icon-zoom-in-white.png' 
+2019-03-13 18:17:24.5436|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/section-divider-bottom-gray-100.png   
+2019-03-13 18:17:24.5679|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2019-03-13 18:17:24.5679|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 86.1963ms 200 image/png 
+2019-03-13 18:17:24.5901|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/bg/bg-wedding-gifts.jpg   
+2019-03-13 18:17:24.5974|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/section-divider-bottom-gray-100.png'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\section-divider-bottom-gray-100.png' 
+2019-03-13 18:17:24.5974|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 609.3833ms 200 application/javascript 
+2019-03-13 18:17:24.6131|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/bg/bg-footer.jpg   
+2019-03-13 18:17:24.6600|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/bg/bg-wedding-gifts.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\bg\bg-wedding-gifts.jpg' 
+2019-03-13 18:17:24.6600|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 112.1038ms 200 image/png 
+2019-03-13 18:17:24.6853|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/bg/bg-footer.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\bg\bg-footer.jpg' 
+2019-03-13 18:17:24.6853|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 96.0358ms 200 image/jpeg 
+2019-03-13 18:17:24.6963|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 83.2559ms 200 image/jpeg 
+2019-03-13 18:17:25.1481|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/json/particles.json   
+2019-03-13 18:17:25.1481|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/json/particles.json'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\json\particles.json' 
+2019-03-13 18:17:25.1481|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.9843ms 200 application/json 
+2019-03-13 18:17:25.1978|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fa-regular-400.woff2   
+2019-03-13 18:17:25.1978|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/ptserif-700.woff2   
+2019-03-13 18:17:25.2084|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fa-regular-400.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist\fonts\fa-regular-400.woff2' 
+2019-03-13 18:17:25.2084|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 19.1931ms 200 font/woff2 
+2019-03-13 18:17:25.2216|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/ptserif-700.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist\fonts\ptserif-700.woff2' 
+2019-03-13 18:17:25.2433|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 44.9258ms 200 font/woff2 
+2019-03-13 18:17:25.8022|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/favicon-32x32.png   
+2019-03-13 18:17:25.8205|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\favicon-32x32.png' 
+2019-03-13 18:17:25.8419|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 39.6652ms 200 image/png 
+2019-03-13 18:17:27.3529|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fa-solid-900.woff2   
+2019-03-13 18:17:27.3821|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fa-solid-900.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist\fonts\fa-solid-900.woff2' 
+2019-03-13 18:17:27.4108|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 57.884ms 200 font/woff2 
+2019-03-13 18:17:32.3192|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9117.7359ms 200 text/event-stream; charset=utf-8 
+2019-03-13 18:19:11.6527||DEBUG|TemplateCoreWebTest.Program|init main 
+2019-03-13 18:19:12.6843||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Diana\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-03-13 18:19:20.8457||INFO|Microsoft.AspNetCore.NodeServices|development mode: true 
+2019-03-13 18:19:25.3967||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist has been removed. 
+2019-03-13 18:19:26.3940|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-13 18:19:26.3940|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-13 18:19:26.5433||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: / 
+2019-03-13 18:19:26.5433||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: / 
+2019-03-13 18:19:41.7902||INFO|Microsoft.AspNetCore.NodeServices|webpack built 0b6ac1575a4202133310 in 15985ms 
+2019-03-13 18:19:41.8649||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Hash: 0b6ac1575a4202133310
+Version: webpack 4.23.1
+Time: 15985ms
+Built at: 2019-03-13 18:19:41
+                                         Asset      Size         Chunks             Chunk Names
+ ../img/_/fonts/font-awesome/fa-brands-400.svg  49 bytes                 [emitted]  
+../img/_/fonts/font-awesome/fa-regular-400.svg  50 bytes                 [emitted]  
+  ../img/_/fonts/font-awesome/fa-solid-900.svg  48 bytes                 [emitted]  
+    critical-foft-preload-fallback-optional.js  8.04 KiB                 [emitted]  
+                              custom_styles.js   430 KiB  custom_styles  [emitted]  custom_styles
+                           custom_styles.js.gz  66.2 KiB                 [emitted]  
+                       fonts/fa-brands-400.eot  96.3 KiB                 [emitted]  
+                    fonts/fa-brands-400.eot.gz    63 KiB                 [emitted]  
+                       fonts/fa-brands-400.svg   496 KiB                 [emitted]  
+                    fonts/fa-brands-400.svg.gz   159 KiB                 [emitted]  
+                       fonts/fa-brands-400.ttf  96.1 KiB                 [emitted]  
+                    fonts/fa-brands-400.ttf.gz  62.9 KiB                 [emitted]  
+                      fonts/fa-brands-400.woff  62.2 KiB                 [emitted]  
+                     fonts/fa-brands-400.woff2  53.2 KiB                 [emitted]  
+                      fonts/fa-regular-400.eot  30.4 KiB                 [emitted]  
+                   fonts/fa-regular-400.eot.gz  14.6 KiB                 [emitted]  
+                      fonts/fa-regular-400.svg   105 KiB                 [emitted]  
+                   fonts/fa-regular-400.svg.gz  35.7 KiB                 [emitted]  
+                      fonts/fa-regular-400.ttf  30.2 KiB                 [emitted]  
+                   fonts/fa-regular-400.ttf.gz  14.6 KiB                 [emitted]  
+                     fonts/fa-regular-400.woff  14.4 KiB                 [emitted]  
+                    fonts/fa-regular-400.woff2    12 KiB                 [emitted]  
+                        fonts/fa-solid-900.eot   104 KiB                 [emitted]  
+                     fonts/fa-solid-900.eot.gz  50.3 KiB                 [emitted]  
+                        fonts/fa-solid-900.svg   382 KiB                 [emitted]  
+                     fonts/fa-solid-900.svg.gz   130 KiB                 [emitted]  
+                        fonts/fa-solid-900.ttf   103 KiB                 [emitted]  
+                     fonts/fa-solid-900.ttf.gz  50.2 KiB                 [emitted]  
+                       fonts/fa-solid-900.woff  49.3 KiB                 [emitted]  
+                      fonts/fa-solid-900.woff2  39.2 KiB                 [emitted]  
+                            fonts/flaticon.eot  2.57 KiB                 [emitted]  
+                         fonts/flaticon.eot.gz  1.42 KiB                 [emitted]  
+                            fonts/flaticon.ttf  27.6 KiB                 [emitted]  
+                         fonts/flaticon.ttf.gz  17.4 KiB                 [emitted]  
+                           fonts/flaticon.woff  17.6 KiB                 [emitted]  
+                        fonts/montserrat.woff2  18.3 KiB                 [emitted]  
+                       fonts/ptserif-400.woff2  33.5 KiB                 [emitted]  
+                       fonts/ptserif-700.woff2  27.3 KiB                 [emitted]  
+                                       main.js   215 KiB           main  [emitted]  main
+                                    main.js.gz  47.4 KiB                 [emitted]  
+                                         sw.js  2.14 KiB                 [emitted]  
+                                 vendor_src.js   965 KiB     vendor_src  [emitted]  vendor_src
+                              vendor_src.js.gz   212 KiB                 [emitted]  
+                              vendor_styles.js  1.07 MiB  vendor_styles  [emitted]  vendor_styles
+                           vendor_styles.js.gz   182 KiB                 [emitted]  
+Entrypoint vendor_styles = vendor_styles.js
+Entrypoint vendor_src = vendor_src.js
+Entrypoint custom_styles = custom_styles.js
+Entrypoint main = main.js
+[0] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/vendor_styles.js 40 bytes {vendor_styles} [built]
+[1] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true script-loader!./ClientApp/src/assets/vendor/jquery.min.js script-loader!./ClientApp/src/assets/vendor/popper.min.js script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js script-loader!./ClientApp/src/assets/vendor/pace.min.js script-loader!./ClientApp/src/assets/vendor/particles.min.js script-loader!./ClientApp/src/assets/vendor/jquery.easing.min.js script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/jquery.magnific-popup.min.js script-loader!./ClientApp/src/assets/vendor/jquery.countdown.min.js script-loader!./ClientApp/src/assets/vendor/jquery.validate.min.js script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js script-loader!./ClientApp/src/assets/vendor/theme.js script-loader!./ClientApp/src/assets/vendor/milea.js 244 bytes {vendor_src} [built]
+[2] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/custom_styles.js 40 bytes {custom_styles} [built]
+[3] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/index.js 40 bytes {main} [built]
+[./ClientApp/src/assets/js/custom_styles.js] 28 bytes {custom_styles} [built]
+[./ClientApp/src/assets/js/index.js] 274 bytes {main} [built]
+[./ClientApp/src/assets/js/vendor_styles.js] 215 bytes {vendor_styles} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/ScrollMagic.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js 484 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/animation.gsap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js 487 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/bootstrap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js 482 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/flickity.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js 486 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js 492 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js 490 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/isotope.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js 485 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/jquery-confirm.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js 487 bytes {vendor_src} [built]
+    + 86 hidden modules 
+2019-03-13 18:19:41.8649||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Compiled successfully. 
+2019-03-13 18:19:41.8792|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2019-03-13 18:19:41.8792|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2019-03-13 18:19:42.1317|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation) 
+2019-03-13 18:19:42.1317|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation) 
+2019-03-13 18:19:42.1770|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation) with arguments () - Validation state: Valid 
+2019-03-13 18:19:42.1770|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation) with arguments () - Validation state: Valid 
+2019-03-13 18:19:42.1770|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.4344ms. 
+2019-03-13 18:19:42.1770|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1343ms. 
+2019-03-13 18:19:42.2384|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-13 18:19:42.2384|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-13 18:19:42.3977|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 196.9488ms. 
+2019-03-13 18:19:42.4039|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 196.9488ms. 
+2019-03-13 18:19:42.4039|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation) in 273.3576ms 
+2019-03-13 18:19:42.4039|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation) in 269.8703ms 
+2019-03-13 18:19:42.4294|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16035.6864ms 200 text/html; charset=utf-8 
+2019-03-13 18:19:42.4294|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16035.7568ms 200 text/html; charset=utf-8 
+2019-03-13 18:19:42.8611|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-13 18:20:12.0893|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-13 18:20:12.1039|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation) 
+2019-03-13 18:20:12.1039|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation) with arguments () - Validation state: Valid 
+2019-03-13 18:20:12.1039|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0229ms. 
+2019-03-13 18:20:12.1039|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-13 18:20:22.1916|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 10082.4868ms. 
+2019-03-13 18:20:22.2086|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (WeedingInvitation) in 10103.022ms 
+2019-03-13 18:20:22.2240|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10134.5241ms 200 text/html; charset=utf-8 
+2019-03-13 18:20:22.6409|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-13 18:20:22.6949|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 39832.3282ms 200 text/event-stream; charset=utf-8 
+2019-03-13 18:20:23.7052|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/favicon-32x32.png   
+2019-03-13 18:20:23.8141|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\favicon-32x32.png' 
+2019-03-13 18:20:23.8188|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 114.3798ms 200 image/png 
+2019-03-13 18:21:33.1874||DEBUG|TemplateCoreWebTest.Program|init main 
+2019-03-13 18:21:35.4135||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Diana\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-03-13 18:21:43.9256||INFO|Microsoft.AspNetCore.NodeServices|development mode: true 
+2019-03-13 18:21:48.3952||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist has been removed. 
+2019-03-13 18:21:49.7579|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-13 18:21:49.9275||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: /__webpack_hmr 
+2019-03-13 18:22:14.9530||INFO|Microsoft.AspNetCore.NodeServices|webpack built 0b6ac1575a4202133310 in 26037ms 
+2019-03-13 18:22:15.1242||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Hash: 0b6ac1575a4202133310
+Version: webpack 4.23.1
+Time: 26037ms
+Built at: 2019-03-13 18:22:14
+                                         Asset      Size         Chunks             Chunk Names
+ ../img/_/fonts/font-awesome/fa-brands-400.svg  49 bytes                 [emitted]  
+../img/_/fonts/font-awesome/fa-regular-400.svg  50 bytes                 [emitted]  
+  ../img/_/fonts/font-awesome/fa-solid-900.svg  48 bytes                 [emitted]  
+    critical-foft-preload-fallback-optional.js  8.04 KiB                 [emitted]  
+                              custom_styles.js   430 KiB  custom_styles  [emitted]  custom_styles
+                           custom_styles.js.gz  66.2 KiB                 [emitted]  
+                       fonts/fa-brands-400.eot  96.3 KiB                 [emitted]  
+                    fonts/fa-brands-400.eot.gz    63 KiB                 [emitted]  
+                       fonts/fa-brands-400.svg   496 KiB                 [emitted]  
+                    fonts/fa-brands-400.svg.gz   159 KiB                 [emitted]  
+                       fonts/fa-brands-400.ttf  96.1 KiB                 [emitted]  
+                    fonts/fa-brands-400.ttf.gz  62.9 KiB                 [emitted]  
+                      fonts/fa-brands-400.woff  62.2 KiB                 [emitted]  
+                     fonts/fa-brands-400.woff2  53.2 KiB                 [emitted]  
+                      fonts/fa-regular-400.eot  30.4 KiB                 [emitted]  
+                   fonts/fa-regular-400.eot.gz  14.6 KiB                 [emitted]  
+                      fonts/fa-regular-400.svg   105 KiB                 [emitted]  
+                   fonts/fa-regular-400.svg.gz  35.7 KiB                 [emitted]  
+                      fonts/fa-regular-400.ttf  30.2 KiB                 [emitted]  
+                   fonts/fa-regular-400.ttf.gz  14.6 KiB                 [emitted]  
+                     fonts/fa-regular-400.woff  14.4 KiB                 [emitted]  
+                    fonts/fa-regular-400.woff2    12 KiB                 [emitted]  
+                        fonts/fa-solid-900.eot   104 KiB                 [emitted]  
+                     fonts/fa-solid-900.eot.gz  50.3 KiB                 [emitted]  
+                        fonts/fa-solid-900.svg   382 KiB                 [emitted]  
+                     fonts/fa-solid-900.svg.gz   130 KiB                 [emitted]  
+                        fonts/fa-solid-900.ttf   103 KiB                 [emitted]  
+                     fonts/fa-solid-900.ttf.gz  50.2 KiB                 [emitted]  
+                       fonts/fa-solid-900.woff  49.3 KiB                 [emitted]  
+                      fonts/fa-solid-900.woff2  39.2 KiB                 [emitted]  
+                            fonts/flaticon.eot  2.57 KiB                 [emitted]  
+                         fonts/flaticon.eot.gz  1.42 KiB                 [emitted]  
+                            fonts/flaticon.ttf  27.6 KiB                 [emitted]  
+                         fonts/flaticon.ttf.gz  17.4 KiB                 [emitted]  
+                           fonts/flaticon.woff  17.6 KiB                 [emitted]  
+                        fonts/montserrat.woff2  18.3 KiB                 [emitted]  
+                       fonts/ptserif-400.woff2  33.5 KiB                 [emitted]  
+                       fonts/ptserif-700.woff2  27.3 KiB                 [emitted]  
+                                       main.js   215 KiB           main  [emitted]  main
+                                    main.js.gz  47.4 KiB                 [emitted]  
+                                         sw.js  2.14 KiB                 [emitted]  
+                                 vendor_src.js   965 KiB     vendor_src  [emitted]  vendor_src
+                              vendor_src.js.gz   212 KiB                 [emitted]  
+                              vendor_styles.js  1.07 MiB  vendor_styles  [emitted]  vendor_styles
+                           vendor_styles.js.gz   182 KiB                 [emitted]  
+Entrypoint vendor_styles = vendor_styles.js
+Entrypoint vendor_src = vendor_src.js
+Entrypoint custom_styles = custom_styles.js
+Entrypoint main = main.js
+[0] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/vendor_styles.js 40 bytes {vendor_styles} [built]
+[1] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true script-loader!./ClientApp/src/assets/vendor/jquery.min.js script-loader!./ClientApp/src/assets/vendor/popper.min.js script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js script-loader!./ClientApp/src/assets/vendor/pace.min.js script-loader!./ClientApp/src/assets/vendor/particles.min.js script-loader!./ClientApp/src/assets/vendor/jquery.easing.min.js script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/jquery.magnific-popup.min.js script-loader!./ClientApp/src/assets/vendor/jquery.countdown.min.js script-loader!./ClientApp/src/assets/vendor/jquery.validate.min.js script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js script-loader!./ClientApp/src/assets/vendor/theme.js script-loader!./ClientApp/src/assets/vendor/milea.js 244 bytes {vendor_src} [built]
+[2] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/custom_styles.js 40 bytes {custom_styles} [built]
+[3] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/index.js 40 bytes {main} [built]
+[./ClientApp/src/assets/js/custom_styles.js] 28 bytes {custom_styles} [built]
+[./ClientApp/src/assets/js/index.js] 274 bytes {main} [built]
+[./ClientApp/src/assets/js/vendor_styles.js] 215 bytes {vendor_styles} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/ScrollMagic.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js 484 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/animation.gsap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js 487 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/bootstrap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js 482 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/flickity.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js 486 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js 492 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js 490 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/isotope.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js 485 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/jquery-confirm.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js 487 bytes {vendor_src} [built]
+    + 86 hidden modules 
+2019-03-13 18:22:15.1242||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Compiled successfully. 
+2019-03-13 18:22:58.3021||DEBUG|TemplateCoreWebTest.Program|init main 
+2019-03-13 18:22:58.7192||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Diana\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-03-13 18:23:01.0466||INFO|Microsoft.AspNetCore.NodeServices|development mode: true 
+2019-03-13 18:23:03.0418||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist has been removed. 
+2019-03-13 18:23:03.6425|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-13 18:23:04.5883||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: / 
+2019-03-13 18:23:06.3937|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-13 18:23:11.8090||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: /__webpack_hmr 
+2019-03-13 18:23:17.3321||INFO|Microsoft.AspNetCore.NodeServices|webpack built 0b6ac1575a4202133310 in 14018ms 
+2019-03-13 18:23:17.4229||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Hash: 0b6ac1575a4202133310
+Version: webpack 4.23.1
+Time: 14018ms
+Built at: 2019-03-13 18:23:17
+                                         Asset      Size         Chunks             Chunk Names
+ ../img/_/fonts/font-awesome/fa-brands-400.svg  49 bytes                 [emitted]  
+../img/_/fonts/font-awesome/fa-regular-400.svg  50 bytes                 [emitted]  
+  ../img/_/fonts/font-awesome/fa-solid-900.svg  48 bytes                 [emitted]  
+    critical-foft-preload-fallback-optional.js  8.04 KiB                 [emitted]  
+                              custom_styles.js   430 KiB  custom_styles  [emitted]  custom_styles
+                           custom_styles.js.gz  66.2 KiB                 [emitted]  
+                       fonts/fa-brands-400.eot  96.3 KiB                 [emitted]  
+                    fonts/fa-brands-400.eot.gz    63 KiB                 [emitted]  
+                       fonts/fa-brands-400.svg   496 KiB                 [emitted]  
+                    fonts/fa-brands-400.svg.gz   159 KiB                 [emitted]  
+                       fonts/fa-brands-400.ttf  96.1 KiB                 [emitted]  
+                    fonts/fa-brands-400.ttf.gz  62.9 KiB                 [emitted]  
+                      fonts/fa-brands-400.woff  62.2 KiB                 [emitted]  
+                     fonts/fa-brands-400.woff2  53.2 KiB                 [emitted]  
+                      fonts/fa-regular-400.eot  30.4 KiB                 [emitted]  
+                   fonts/fa-regular-400.eot.gz  14.6 KiB                 [emitted]  
+                      fonts/fa-regular-400.svg   105 KiB                 [emitted]  
+                   fonts/fa-regular-400.svg.gz  35.7 KiB                 [emitted]  
+                      fonts/fa-regular-400.ttf  30.2 KiB                 [emitted]  
+                   fonts/fa-regular-400.ttf.gz  14.6 KiB                 [emitted]  
+                     fonts/fa-regular-400.woff  14.4 KiB                 [emitted]  
+                    fonts/fa-regular-400.woff2    12 KiB                 [emitted]  
+                        fonts/fa-solid-900.eot   104 KiB                 [emitted]  
+                     fonts/fa-solid-900.eot.gz  50.3 KiB                 [emitted]  
+                        fonts/fa-solid-900.svg   382 KiB                 [emitted]  
+                     fonts/fa-solid-900.svg.gz   130 KiB                 [emitted]  
+                        fonts/fa-solid-900.ttf   103 KiB                 [emitted]  
+                     fonts/fa-solid-900.ttf.gz  50.2 KiB                 [emitted]  
+                       fonts/fa-solid-900.woff  49.3 KiB                 [emitted]  
+                      fonts/fa-solid-900.woff2  39.2 KiB                 [emitted]  
+                            fonts/flaticon.eot  2.57 KiB                 [emitted]  
+                         fonts/flaticon.eot.gz  1.42 KiB                 [emitted]  
+                            fonts/flaticon.ttf  27.6 KiB                 [emitted]  
+                         fonts/flaticon.ttf.gz  17.4 KiB                 [emitted]  
+                           fonts/flaticon.woff  17.6 KiB                 [emitted]  
+                        fonts/montserrat.woff2  18.3 KiB                 [emitted]  
+                       fonts/ptserif-400.woff2  33.5 KiB                 [emitted]  
+                       fonts/ptserif-700.woff2  27.3 KiB                 [emitted]  
+                                       main.js   215 KiB           main  [emitted]  main
+                                    main.js.gz  47.4 KiB                 [emitted]  
+                                         sw.js  2.14 KiB                 [emitted]  
+                                 vendor_src.js   965 KiB     vendor_src  [emitted]  vendor_src
+                              vendor_src.js.gz   212 KiB                 [emitted]  
+                              vendor_styles.js  1.07 MiB  vendor_styles  [emitted]  vendor_styles
+                           vendor_styles.js.gz   182 KiB                 [emitted]  
+Entrypoint vendor_styles = vendor_styles.js
+Entrypoint vendor_src = vendor_src.js
+Entrypoint custom_styles = custom_styles.js
+Entrypoint main = main.js
+[0] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/vendor_styles.js 40 bytes {vendor_styles} [built]
+[1] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true script-loader!./ClientApp/src/assets/vendor/jquery.min.js script-loader!./ClientApp/src/assets/vendor/popper.min.js script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js script-loader!./ClientApp/src/assets/vendor/pace.min.js script-loader!./ClientApp/src/assets/vendor/particles.min.js script-loader!./ClientApp/src/assets/vendor/jquery.easing.min.js script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/jquery.magnific-popup.min.js script-loader!./ClientApp/src/assets/vendor/jquery.countdown.min.js script-loader!./ClientApp/src/assets/vendor/jquery.validate.min.js script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js script-loader!./ClientApp/src/assets/vendor/theme.js script-loader!./ClientApp/src/assets/vendor/milea.js 244 bytes {vendor_src} [built]
+[2] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/custom_styles.js 40 bytes {custom_styles} [built]
+[3] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/index.js 40 bytes {main} [built]
+[./ClientApp/src/assets/js/custom_styles.js] 28 bytes {custom_styles} [built]
+[./ClientApp/src/assets/js/index.js] 274 bytes {main} [built]
+[./ClientApp/src/assets/js/vendor_styles.js] 215 bytes {vendor_styles} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/ScrollMagic.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js 484 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/animation.gsap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js 487 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/bootstrap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js 482 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/flickity.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js 486 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js 492 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js 490 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/isotope.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js 485 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/jquery-confirm.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js 487 bytes {vendor_src} [built]
+    + 86 hidden modules 
+2019-03-13 18:23:17.4391||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Compiled successfully. 
+2019-03-13 18:23:17.4467|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2019-03-13 18:23:17.8669|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (Weeding) 
+2019-03-13 18:23:17.8963|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (Weeding) with arguments () - Validation state: Valid 
+2019-03-13 18:23:17.9009|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6819ms. 
+2019-03-13 18:23:17.9349|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-13 18:23:18.0756|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 157.4268ms. 
+2019-03-13 18:23:18.0756|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (Weeding) in 215.5889ms 
+2019-03-13 18:23:18.1400|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 14502.4038ms 200 text/html; charset=utf-8 
+2019-03-13 18:23:18.3469|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-13 18:27:28.2992||DEBUG|Weeding.Program|init main 
+2019-03-13 18:27:28.9014||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Diana\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-03-13 18:27:32.0614||INFO|Microsoft.AspNetCore.NodeServices|development mode: true 
+2019-03-13 18:27:34.5642||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist has been removed. 
+2019-03-13 18:27:35.4613|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-13 18:27:35.4750|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-13 18:27:36.4933||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: /__webpack_hmr 
+2019-03-13 18:27:36.4952||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: /__webpack_hmr 
+2019-03-13 18:27:52.7544||INFO|Microsoft.AspNetCore.NodeServices|webpack built 0b6ac1575a4202133310 in 17252ms 
+2019-03-13 18:27:52.9479||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Hash: 0b6ac1575a4202133310
+Version: webpack 4.23.1
+Time: 17252ms
+Built at: 2019-03-13 18:27:51
+                                         Asset      Size         Chunks             Chunk Names
+ ../img/_/fonts/font-awesome/fa-brands-400.svg  49 bytes                 [emitted]  
+../img/_/fonts/font-awesome/fa-regular-400.svg  50 bytes                 [emitted]  
+  ../img/_/fonts/font-awesome/fa-solid-900.svg  48 bytes                 [emitted]  
+    critical-foft-preload-fallback-optional.js  8.04 KiB                 [emitted]  
+                              custom_styles.js   430 KiB  custom_styles  [emitted]  custom_styles
+                           custom_styles.js.gz  66.2 KiB                 [emitted]  
+                       fonts/fa-brands-400.eot  96.3 KiB                 [emitted]  
+                    fonts/fa-brands-400.eot.gz    63 KiB                 [emitted]  
+                       fonts/fa-brands-400.svg   496 KiB                 [emitted]  
+                    fonts/fa-brands-400.svg.gz   159 KiB                 [emitted]  
+                       fonts/fa-brands-400.ttf  96.1 KiB                 [emitted]  
+                    fonts/fa-brands-400.ttf.gz  62.9 KiB                 [emitted]  
+                      fonts/fa-brands-400.woff  62.2 KiB                 [emitted]  
+                     fonts/fa-brands-400.woff2  53.2 KiB                 [emitted]  
+                      fonts/fa-regular-400.eot  30.4 KiB                 [emitted]  
+                   fonts/fa-regular-400.eot.gz  14.6 KiB                 [emitted]  
+                      fonts/fa-regular-400.svg   105 KiB                 [emitted]  
+                   fonts/fa-regular-400.svg.gz  35.7 KiB                 [emitted]  
+                      fonts/fa-regular-400.ttf  30.2 KiB                 [emitted]  
+                   fonts/fa-regular-400.ttf.gz  14.6 KiB                 [emitted]  
+                     fonts/fa-regular-400.woff  14.4 KiB                 [emitted]  
+                    fonts/fa-regular-400.woff2    12 KiB                 [emitted]  
+                        fonts/fa-solid-900.eot   104 KiB                 [emitted]  
+                     fonts/fa-solid-900.eot.gz  50.3 KiB                 [emitted]  
+                        fonts/fa-solid-900.svg   382 KiB                 [emitted]  
+                     fonts/fa-solid-900.svg.gz   130 KiB                 [emitted]  
+                        fonts/fa-solid-900.ttf   103 KiB                 [emitted]  
+                     fonts/fa-solid-900.ttf.gz  50.2 KiB                 [emitted]  
+                       fonts/fa-solid-900.woff  49.3 KiB                 [emitted]  
+                      fonts/fa-solid-900.woff2  39.2 KiB                 [emitted]  
+                            fonts/flaticon.eot  2.57 KiB                 [emitted]  
+                         fonts/flaticon.eot.gz  1.42 KiB                 [emitted]  
+                            fonts/flaticon.ttf  27.6 KiB                 [emitted]  
+                         fonts/flaticon.ttf.gz  17.4 KiB                 [emitted]  
+                           fonts/flaticon.woff  17.6 KiB                 [emitted]  
+                        fonts/montserrat.woff2  18.3 KiB                 [emitted]  
+                       fonts/ptserif-400.woff2  33.5 KiB                 [emitted]  
+                       fonts/ptserif-700.woff2  27.3 KiB                 [emitted]  
+                                       main.js   215 KiB           main  [emitted]  main
+                                    main.js.gz  47.4 KiB                 [emitted]  
+                                         sw.js  2.14 KiB                 [emitted]  
+                                 vendor_src.js   965 KiB     vendor_src  [emitted]  vendor_src
+                              vendor_src.js.gz   212 KiB                 [emitted]  
+                              vendor_styles.js  1.07 MiB  vendor_styles  [emitted]  vendor_styles
+                           vendor_styles.js.gz   182 KiB                 [emitted]  
+Entrypoint vendor_styles = vendor_styles.js
+Entrypoint vendor_src = vendor_src.js
+Entrypoint custom_styles = custom_styles.js
+Entrypoint main = main.js
+[0] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/vendor_styles.js 40 bytes {vendor_styles} [built]
+[1] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true script-loader!./ClientApp/src/assets/vendor/jquery.min.js script-loader!./ClientApp/src/assets/vendor/popper.min.js script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js script-loader!./ClientApp/src/assets/vendor/pace.min.js script-loader!./ClientApp/src/assets/vendor/particles.min.js script-loader!./ClientApp/src/assets/vendor/jquery.easing.min.js script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/jquery.magnific-popup.min.js script-loader!./ClientApp/src/assets/vendor/jquery.countdown.min.js script-loader!./ClientApp/src/assets/vendor/jquery.validate.min.js script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js script-loader!./ClientApp/src/assets/vendor/theme.js script-loader!./ClientApp/src/assets/vendor/milea.js 244 bytes {vendor_src} [built]
+[2] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/custom_styles.js 40 bytes {custom_styles} [built]
+[3] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/index.js 40 bytes {main} [built]
+[./ClientApp/src/assets/js/custom_styles.js] 28 bytes {custom_styles} [built]
+[./ClientApp/src/assets/js/index.js] 274 bytes {main} [built]
+[./ClientApp/src/assets/js/vendor_styles.js] 215 bytes {vendor_styles} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/ScrollMagic.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js 484 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/animation.gsap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js 487 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/bootstrap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js 482 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/flickity.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js 486 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js 492 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js 490 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/isotope.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js 485 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/jquery-confirm.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js 487 bytes {vendor_src} [built]
+    + 86 hidden modules 
+2019-03-13 18:27:52.9739||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Compiled successfully. 
+2019-03-13 18:27:56.7729||DEBUG|Weeding.Program|init main 
+2019-03-13 18:27:57.4118||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Diana\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-03-13 18:28:00.0020||INFO|Microsoft.AspNetCore.NodeServices|development mode: true 
+2019-03-13 18:28:02.1322||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist has been removed. 
+2019-03-13 18:28:02.6596|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-13 18:28:03.4289||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: / 
+2019-03-13 18:28:15.7988||INFO|Microsoft.AspNetCore.NodeServices|webpack built 0b6ac1575a4202133310 in 13435ms 
+2019-03-13 18:28:15.8683||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Hash: 0b6ac1575a4202133310
+Version: webpack 4.23.1
+Time: 13435ms
+Built at: 2019-03-13 18:28:15
+                                         Asset      Size         Chunks             Chunk Names
+ ../img/_/fonts/font-awesome/fa-brands-400.svg  49 bytes                 [emitted]  
+../img/_/fonts/font-awesome/fa-regular-400.svg  50 bytes                 [emitted]  
+  ../img/_/fonts/font-awesome/fa-solid-900.svg  48 bytes                 [emitted]  
+    critical-foft-preload-fallback-optional.js  8.04 KiB                 [emitted]  
+                              custom_styles.js   430 KiB  custom_styles  [emitted]  custom_styles
+                           custom_styles.js.gz  66.2 KiB                 [emitted]  
+                       fonts/fa-brands-400.eot  96.3 KiB                 [emitted]  
+                    fonts/fa-brands-400.eot.gz    63 KiB                 [emitted]  
+                       fonts/fa-brands-400.svg   496 KiB                 [emitted]  
+                    fonts/fa-brands-400.svg.gz   159 KiB                 [emitted]  
+                       fonts/fa-brands-400.ttf  96.1 KiB                 [emitted]  
+                    fonts/fa-brands-400.ttf.gz  62.9 KiB                 [emitted]  
+                      fonts/fa-brands-400.woff  62.2 KiB                 [emitted]  
+                     fonts/fa-brands-400.woff2  53.2 KiB                 [emitted]  
+                      fonts/fa-regular-400.eot  30.4 KiB                 [emitted]  
+                   fonts/fa-regular-400.eot.gz  14.6 KiB                 [emitted]  
+                      fonts/fa-regular-400.svg   105 KiB                 [emitted]  
+                   fonts/fa-regular-400.svg.gz  35.7 KiB                 [emitted]  
+                      fonts/fa-regular-400.ttf  30.2 KiB                 [emitted]  
+                   fonts/fa-regular-400.ttf.gz  14.6 KiB                 [emitted]  
+                     fonts/fa-regular-400.woff  14.4 KiB                 [emitted]  
+                    fonts/fa-regular-400.woff2    12 KiB                 [emitted]  
+                        fonts/fa-solid-900.eot   104 KiB                 [emitted]  
+                     fonts/fa-solid-900.eot.gz  50.3 KiB                 [emitted]  
+                        fonts/fa-solid-900.svg   382 KiB                 [emitted]  
+                     fonts/fa-solid-900.svg.gz   130 KiB                 [emitted]  
+                        fonts/fa-solid-900.ttf   103 KiB                 [emitted]  
+                     fonts/fa-solid-900.ttf.gz  50.2 KiB                 [emitted]  
+                       fonts/fa-solid-900.woff  49.3 KiB                 [emitted]  
+                      fonts/fa-solid-900.woff2  39.2 KiB                 [emitted]  
+                            fonts/flaticon.eot  2.57 KiB                 [emitted]  
+                         fonts/flaticon.eot.gz  1.42 KiB                 [emitted]  
+                            fonts/flaticon.ttf  27.6 KiB                 [emitted]  
+                         fonts/flaticon.ttf.gz  17.4 KiB                 [emitted]  
+                           fonts/flaticon.woff  17.6 KiB                 [emitted]  
+                        fonts/montserrat.woff2  18.3 KiB                 [emitted]  
+                       fonts/ptserif-400.woff2  33.5 KiB                 [emitted]  
+                       fonts/ptserif-700.woff2  27.3 KiB                 [emitted]  
+                                       main.js   215 KiB           main  [emitted]  main
+                                    main.js.gz  47.4 KiB                 [emitted]  
+                                         sw.js  2.14 KiB                 [emitted]  
+                                 vendor_src.js   965 KiB     vendor_src  [emitted]  vendor_src
+                              vendor_src.js.gz   212 KiB                 [emitted]  
+                              vendor_styles.js  1.07 MiB  vendor_styles  [emitted]  vendor_styles
+                           vendor_styles.js.gz   182 KiB                 [emitted]  
+Entrypoint vendor_styles = vendor_styles.js
+Entrypoint vendor_src = vendor_src.js
+Entrypoint custom_styles = custom_styles.js
+Entrypoint main = main.js
+[0] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/vendor_styles.js 40 bytes {vendor_styles} [built]
+[1] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true script-loader!./ClientApp/src/assets/vendor/jquery.min.js script-loader!./ClientApp/src/assets/vendor/popper.min.js script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js script-loader!./ClientApp/src/assets/vendor/pace.min.js script-loader!./ClientApp/src/assets/vendor/particles.min.js script-loader!./ClientApp/src/assets/vendor/jquery.easing.min.js script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/jquery.magnific-popup.min.js script-loader!./ClientApp/src/assets/vendor/jquery.countdown.min.js script-loader!./ClientApp/src/assets/vendor/jquery.validate.min.js script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js script-loader!./ClientApp/src/assets/vendor/theme.js script-loader!./ClientApp/src/assets/vendor/milea.js 244 bytes {vendor_src} [built]
+[2] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/custom_styles.js 40 bytes {custom_styles} [built]
+[3] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/index.js 40 bytes {main} [built]
+[./ClientApp/src/assets/js/custom_styles.js] 28 bytes {custom_styles} [built]
+[./ClientApp/src/assets/js/index.js] 274 bytes {main} [built]
+[./ClientApp/src/assets/js/vendor_styles.js] 215 bytes {vendor_styles} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/ScrollMagic.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js 484 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/animation.gsap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js 487 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/bootstrap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js 482 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/flickity.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js 486 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js 492 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js 490 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/isotope.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js 485 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/jquery-confirm.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js 487 bytes {vendor_src} [built]
+    + 86 hidden modules 
+2019-03-13 18:28:15.8717||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Compiled successfully. 
+2019-03-13 18:28:15.8717|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2019-03-13 18:28:16.1756|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Index (Weeding) 
+2019-03-13 18:28:16.2017|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Index (Weeding) with arguments () - Validation state: Valid 
+2019-03-13 18:28:16.2017|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Index (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.2859ms. 
+2019-03-13 18:28:16.2445|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-13 18:28:16.3816|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 159.3147ms. 
+2019-03-13 18:28:16.3816|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Index (Weeding) in 207.084ms 
+2019-03-13 18:28:16.4182|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 13758.4541ms 200 text/html; charset=utf-8 
+2019-03-13 18:28:16.6721|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-13 18:28:52.2929|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/navbar-toggler-light.svg   
+2019-03-13 18:28:52.3171|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/navbar-toggler-light.svg'. Physical path: 'C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\img\navbar-toggler-light.svg' 
+2019-03-13 18:28:52.3171|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 25.9659ms 200 image/svg+xml 
+2019-03-13 18:32:17.0610||DEBUG|Weeding.Program|init main 
+2019-03-13 18:32:17.5627||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Diana\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-03-13 18:32:21.5648||INFO|Microsoft.AspNetCore.NodeServices|development mode: true 
+2019-03-13 18:32:25.1766||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\WeedingInvitation\TemplateCoreWeb\wwwroot\dist has been removed. 
+2019-03-13 18:32:26.4764|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-13 18:32:26.4764|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-13 18:32:27.0992||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: /__webpack_hmr 
+2019-03-13 18:32:27.0992||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: / 
+2019-03-13 18:32:46.9299||INFO|Microsoft.AspNetCore.NodeServices|webpack built 0b6ac1575a4202133310 in 21291ms 
+2019-03-13 18:32:47.0315||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Hash: 0b6ac1575a4202133310
+Version: webpack 4.23.1
+Time: 21291ms
+Built at: 2019-03-13 18:32:46
+                                         Asset      Size         Chunks             Chunk Names
+ ../img/_/fonts/font-awesome/fa-brands-400.svg  49 bytes                 [emitted]  
+../img/_/fonts/font-awesome/fa-regular-400.svg  50 bytes                 [emitted]  
+  ../img/_/fonts/font-awesome/fa-solid-900.svg  48 bytes                 [emitted]  
+    critical-foft-preload-fallback-optional.js  8.04 KiB                 [emitted]  
+                              custom_styles.js   430 KiB  custom_styles  [emitted]  custom_styles
+                           custom_styles.js.gz  66.2 KiB                 [emitted]  
+                       fonts/fa-brands-400.eot  96.3 KiB                 [emitted]  
+                    fonts/fa-brands-400.eot.gz    63 KiB                 [emitted]  
+                       fonts/fa-brands-400.svg   496 KiB                 [emitted]  
+                    fonts/fa-brands-400.svg.gz   159 KiB                 [emitted]  
+                       fonts/fa-brands-400.ttf  96.1 KiB                 [emitted]  
+                    fonts/fa-brands-400.ttf.gz  62.9 KiB                 [emitted]  
+                      fonts/fa-brands-400.woff  62.2 KiB                 [emitted]  
+                     fonts/fa-brands-400.woff2  53.2 KiB                 [emitted]  
+                      fonts/fa-regular-400.eot  30.4 KiB                 [emitted]  
+                   fonts/fa-regular-400.eot.gz  14.6 KiB                 [emitted]  
+                      fonts/fa-regular-400.svg   105 KiB                 [emitted]  
+                   fonts/fa-regular-400.svg.gz  35.7 KiB                 [emitted]  
+                      fonts/fa-regular-400.ttf  30.2 KiB                 [emitted]  
+                   fonts/fa-regular-400.ttf.gz  14.6 KiB                 [emitted]  
+                     fonts/fa-regular-400.woff  14.4 KiB                 [emitted]  
+                    fonts/fa-regular-400.woff2    12 KiB                 [emitted]  
+                        fonts/fa-solid-900.eot   104 KiB                 [emitted]  
+                     fonts/fa-solid-900.eot.gz  50.3 KiB                 [emitted]  
+                        fonts/fa-solid-900.svg   382 KiB                 [emitted]  
+                     fonts/fa-solid-900.svg.gz   130 KiB                 [emitted]  
+                        fonts/fa-solid-900.ttf   103 KiB                 [emitted]  
+                     fonts/fa-solid-900.ttf.gz  50.2 KiB                 [emitted]  
+                       fonts/fa-solid-900.woff  49.3 KiB                 [emitted]  
+                      fonts/fa-solid-900.woff2  39.2 KiB                 [emitted]  
+                            fonts/flaticon.eot  2.57 KiB                 [emitted]  
+                         fonts/flaticon.eot.gz  1.42 KiB                 [emitted]  
+                            fonts/flaticon.ttf  27.6 KiB                 [emitted]  
+                         fonts/flaticon.ttf.gz  17.4 KiB                 [emitted]  
+                           fonts/flaticon.woff  17.6 KiB                 [emitted]  
+                        fonts/montserrat.woff2  18.3 KiB                 [emitted]  
+                       fonts/ptserif-400.woff2  33.5 KiB                 [emitted]  
+                       fonts/ptserif-700.woff2  27.3 KiB                 [emitted]  
+                                       main.js   215 KiB           main  [emitted]  main
+                                    main.js.gz  47.4 KiB                 [emitted]  
+                                         sw.js  2.14 KiB                 [emitted]  
+                                 vendor_src.js   965 KiB     vendor_src  [emitted]  vendor_src
+                              vendor_src.js.gz   212 KiB                 [emitted]  
+                              vendor_styles.js  1.07 MiB  vendor_styles  [emitted]  vendor_styles
+                           vendor_styles.js.gz   182 KiB                 [emitted]  
+Entrypoint vendor_styles = vendor_styles.js
+Entrypoint vendor_src = vendor_src.js
+Entrypoint custom_styles = custom_styles.js
+Entrypoint main = main.js
+[0] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/vendor_styles.js 40 bytes {vendor_styles} [built]
+[1] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true script-loader!./ClientApp/src/assets/vendor/jquery.min.js script-loader!./ClientApp/src/assets/vendor/popper.min.js script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js script-loader!./ClientApp/src/assets/vendor/pace.min.js script-loader!./ClientApp/src/assets/vendor/particles.min.js script-loader!./ClientApp/src/assets/vendor/jquery.easing.min.js script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/jquery.magnific-popup.min.js script-loader!./ClientApp/src/assets/vendor/jquery.countdown.min.js script-loader!./ClientApp/src/assets/vendor/jquery.validate.min.js script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js script-loader!./ClientApp/src/assets/vendor/theme.js script-loader!./ClientApp/src/assets/vendor/milea.js 244 bytes {vendor_src} [built]
+[2] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/custom_styles.js 40 bytes {custom_styles} [built]
+[3] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/index.js 40 bytes {main} [built]
+[./ClientApp/src/assets/js/custom_styles.js] 28 bytes {custom_styles} [built]
+[./ClientApp/src/assets/js/index.js] 274 bytes {main} [built]
+[./ClientApp/src/assets/js/vendor_styles.js] 215 bytes {vendor_styles} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/ScrollMagic.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js 484 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/animation.gsap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js 487 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/bootstrap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js 482 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/flickity.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js 486 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js 492 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js 490 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/isotope.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js 485 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/jquery-confirm.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js 487 bytes {vendor_src} [built]
+    + 86 hidden modules 
+2019-03-13 18:32:47.0315||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Compiled successfully. 
+2019-03-13 18:32:47.0526|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2019-03-13 18:32:47.1148|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 20638.7225ms 200 text/event-stream; charset=utf-8 
+2019-03-13 18:32:47.3586|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Index (Weeding) 
+2019-03-13 18:32:47.4016|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Index (Weeding) with arguments () - Validation state: Valid 
+2019-03-13 18:32:47.4102|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Index (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.9001ms. 
+2019-03-13 18:32:47.4595|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-13 18:32:47.6730|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 239.9529ms. 
+2019-03-13 18:32:47.6730|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Index (Weeding) in 319.1314ms 
+2019-03-13 18:32:47.7061|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 21230.2563ms 200 text/html; charset=utf-8 
+2019-03-13 18:32:48.1829|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   

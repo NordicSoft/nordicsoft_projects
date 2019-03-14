@@ -1,0 +1,732 @@
+2019-03-14 10:30:43.7338||DEBUG|Weeding.Program|init main 
+2019-03-14 10:30:44.8489||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Diana\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-03-14 10:30:48.1911||INFO|Microsoft.AspNetCore.NodeServices|development mode: true 
+2019-03-14 10:30:51.5997||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist has been removed. 
+2019-03-14 10:30:52.5946|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-14 10:30:53.8940||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: / 
+2019-03-14 10:30:58.9445|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-14 10:30:59.6814||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: /__webpack_hmr 
+2019-03-14 10:31:06.7369||INFO|Microsoft.AspNetCore.NodeServices|webpack built e9683f6a07701f45f1dc in 14763ms 
+2019-03-14 10:31:06.8196||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Hash: e9683f6a07701f45f1dc
+Version: webpack 4.23.1
+Time: 14763ms
+Built at: 2019-03-14 10:31:06
+                                         Asset      Size         Chunks             Chunk Names
+ ../img/_/fonts/font-awesome/fa-brands-400.svg  49 bytes                 [emitted]  
+../img/_/fonts/font-awesome/fa-regular-400.svg  50 bytes                 [emitted]  
+  ../img/_/fonts/font-awesome/fa-solid-900.svg  48 bytes                 [emitted]  
+    critical-foft-preload-fallback-optional.js  8.04 KiB                 [emitted]  
+                              custom_styles.js   430 KiB  custom_styles  [emitted]  custom_styles
+                           custom_styles.js.gz  66.2 KiB                 [emitted]  
+                       fonts/fa-brands-400.eot  96.3 KiB                 [emitted]  
+                    fonts/fa-brands-400.eot.gz    63 KiB                 [emitted]  
+                       fonts/fa-brands-400.svg   496 KiB                 [emitted]  
+                    fonts/fa-brands-400.svg.gz   159 KiB                 [emitted]  
+                       fonts/fa-brands-400.ttf  96.1 KiB                 [emitted]  
+                    fonts/fa-brands-400.ttf.gz  62.9 KiB                 [emitted]  
+                      fonts/fa-brands-400.woff  62.2 KiB                 [emitted]  
+                     fonts/fa-brands-400.woff2  53.2 KiB                 [emitted]  
+                      fonts/fa-regular-400.eot  30.4 KiB                 [emitted]  
+                   fonts/fa-regular-400.eot.gz  14.6 KiB                 [emitted]  
+                      fonts/fa-regular-400.svg   105 KiB                 [emitted]  
+                   fonts/fa-regular-400.svg.gz  35.7 KiB                 [emitted]  
+                      fonts/fa-regular-400.ttf  30.2 KiB                 [emitted]  
+                   fonts/fa-regular-400.ttf.gz  14.6 KiB                 [emitted]  
+                     fonts/fa-regular-400.woff  14.4 KiB                 [emitted]  
+                    fonts/fa-regular-400.woff2    12 KiB                 [emitted]  
+                        fonts/fa-solid-900.eot   104 KiB                 [emitted]  
+                     fonts/fa-solid-900.eot.gz  50.3 KiB                 [emitted]  
+                        fonts/fa-solid-900.svg   382 KiB                 [emitted]  
+                     fonts/fa-solid-900.svg.gz   130 KiB                 [emitted]  
+                        fonts/fa-solid-900.ttf   103 KiB                 [emitted]  
+                     fonts/fa-solid-900.ttf.gz  50.2 KiB                 [emitted]  
+                       fonts/fa-solid-900.woff  49.3 KiB                 [emitted]  
+                      fonts/fa-solid-900.woff2  39.2 KiB                 [emitted]  
+                            fonts/flaticon.eot  2.57 KiB                 [emitted]  
+                         fonts/flaticon.eot.gz  1.42 KiB                 [emitted]  
+                            fonts/flaticon.ttf  27.6 KiB                 [emitted]  
+                         fonts/flaticon.ttf.gz  17.4 KiB                 [emitted]  
+                           fonts/flaticon.woff  17.6 KiB                 [emitted]  
+                        fonts/montserrat.woff2  18.3 KiB                 [emitted]  
+                       fonts/ptserif-400.woff2  33.5 KiB                 [emitted]  
+                       fonts/ptserif-700.woff2  27.3 KiB                 [emitted]  
+                                       main.js   215 KiB           main  [emitted]  main
+                                    main.js.gz  47.4 KiB                 [emitted]  
+                                         sw.js  2.14 KiB                 [emitted]  
+                                 vendor_src.js   965 KiB     vendor_src  [emitted]  vendor_src
+                              vendor_src.js.gz   212 KiB                 [emitted]  
+                              vendor_styles.js  1.07 MiB  vendor_styles  [emitted]  vendor_styles
+                           vendor_styles.js.gz   182 KiB                 [emitted]  
+Entrypoint vendor_styles = vendor_styles.js
+Entrypoint vendor_src = vendor_src.js
+Entrypoint custom_styles = custom_styles.js
+Entrypoint main = main.js
+[0] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/vendor_styles.js 40 bytes {vendor_styles} [built]
+[1] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true script-loader!./ClientApp/src/assets/vendor/jquery.min.js script-loader!./ClientApp/src/assets/vendor/popper.min.js script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js script-loader!./ClientApp/src/assets/vendor/pace.min.js script-loader!./ClientApp/src/assets/vendor/particles.min.js script-loader!./ClientApp/src/assets/vendor/jquery.easing.min.js script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/jquery.magnific-popup.min.js script-loader!./ClientApp/src/assets/vendor/jquery.countdown.min.js script-loader!./ClientApp/src/assets/vendor/jquery.validate.min.js script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js script-loader!./ClientApp/src/assets/vendor/theme.js script-loader!./ClientApp/src/assets/vendor/milea.js 244 bytes {vendor_src} [built]
+[2] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/custom_styles.js 40 bytes {custom_styles} [built]
+[3] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/index.js 40 bytes {main} [built]
+[./ClientApp/src/assets/js/custom_styles.js] 28 bytes {custom_styles} [built]
+[./ClientApp/src/assets/js/index.js] 274 bytes {main} [built]
+[./ClientApp/src/assets/js/vendor_styles.js] 215 bytes {vendor_styles} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/ScrollMagic.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js 444 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/animation.gsap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js 447 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/bootstrap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js 442 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/flickity.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js 446 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js 452 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js 450 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/isotope.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js 445 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/jquery-confirm.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js 447 bytes {vendor_src} [built]
+    + 86 hidden modules 
+2019-03-14 10:31:06.8196||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Compiled successfully. 
+2019-03-14 10:31:06.8425|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2019-03-14 10:31:06.8914|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/0b6ac1575a4202133310.hot-update.json   
+2019-03-14 10:31:07.0953|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 10:31:07.1066|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Index (Weeding) 
+2019-03-14 10:31:07.1226|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 10:31:07.1226|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7923ms. 
+2019-03-14 10:31:07.1226|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Index (Weeding) with arguments () - Validation state: Valid 
+2019-03-14 10:31:07.1336|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Index (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7938ms. 
+2019-03-14 10:31:07.1679|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 10:31:07.1679|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-14 10:31:07.2823|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 137.1068ms. 
+2019-03-14 10:31:07.2884|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 189.7059ms 
+2019-03-14 10:31:07.2884|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/0b6ac1575a4202133310.hot-update.json   
+2019-03-14 10:31:07.2884|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 155.6902ms. 
+2019-03-14 10:31:07.2884|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Index (Weeding) in 192.893ms 
+2019-03-14 10:31:07.2884|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 10:31:07.3065|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 10:31:07.3065|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 417.6177ms 404 text/html; charset=utf-8 
+2019-03-14 10:31:07.3065|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 14714.9207ms 200 text/html; charset=utf-8 
+2019-03-14 10:31:07.3065|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0253ms. 
+2019-03-14 10:31:07.3203|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 10:31:07.3203|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 7.5344ms. 
+2019-03-14 10:31:07.3594|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 52.9323ms 
+2019-03-14 10:31:07.3718|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 78.8482ms 404 text/html; charset=utf-8 
+2019-03-14 10:31:07.3867|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/0b6ac1575a4202133310.hot-update.json   
+2019-03-14 10:31:07.3994|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 10:31:07.3994|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 10:31:07.3994|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.099ms. 
+2019-03-14 10:31:07.4270|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 10:31:07.4330|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 6.1796ms. 
+2019-03-14 10:31:07.4330|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 32.4505ms 
+2019-03-14 10:31:07.4445|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 57.8596ms 404 text/html; charset=utf-8 
+2019-03-14 10:31:07.4932|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/0b6ac1575a4202133310.hot-update.json   
+2019-03-14 10:31:07.4932|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 10:31:07.4932|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 10:31:07.4932|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0211ms. 
+2019-03-14 10:31:07.5085|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 10:31:07.5085|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 2.7433ms. 
+2019-03-14 10:31:07.5085|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 16.1808ms 
+2019-03-14 10:31:07.5224|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.2209ms 404 text/html; charset=utf-8 
+2019-03-14 10:31:07.6214|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-14 10:31:07.6495|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/0b6ac1575a4202133310.hot-update.json   
+2019-03-14 10:31:07.6495|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 10:31:07.6495|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 10:31:07.6638|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0292ms. 
+2019-03-14 10:31:07.6638|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 10:31:07.6638|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 8.5993ms. 
+2019-03-14 10:31:07.6795|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 18.1801ms 
+2019-03-14 10:31:07.6795|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 34.6689ms 404 text/html; charset=utf-8 
+2019-03-14 10:31:07.6795|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e634800250294986b6de.hot-update.json   
+2019-03-14 10:31:07.6947|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 10:31:07.6947|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 10:31:07.6947|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0244ms. 
+2019-03-14 10:31:07.6947|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/0b6ac1575a4202133310.hot-update.json   
+2019-03-14 10:31:07.6947|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 10:31:07.7128|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 4.9779ms. 
+2019-03-14 10:31:07.7128|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 10:31:07.7128|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 20.8174ms 
+2019-03-14 10:31:07.7247|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 37.2573ms 404 text/html; charset=utf-8 
+2019-03-14 10:31:07.7128|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 10:31:07.7641|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0549ms. 
+2019-03-14 10:31:07.7754|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 10:31:07.7754|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 2.8432ms. 
+2019-03-14 10:31:07.7754|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 64.1856ms 
+2019-03-14 10:31:07.7875|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 81.6844ms 404 text/html; charset=utf-8 
+2019-03-14 10:31:07.8210|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/0b6ac1575a4202133310.hot-update.json   
+2019-03-14 10:31:07.8210|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 10:31:07.8355|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 10:31:07.8355|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.025ms. 
+2019-03-14 10:31:07.8355|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 10:31:07.8355|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 3.6736ms. 
+2019-03-14 10:31:07.8355|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 11.0058ms 
+2019-03-14 10:31:07.8516|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.6085ms 404 text/html; charset=utf-8 
+2019-03-14 10:31:07.8516|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/0b6ac1575a4202133310.hot-update.json   
+2019-03-14 10:31:07.8679|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 10:31:07.8679|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 10:31:07.8679|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.022ms. 
+2019-03-14 10:31:07.8679|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 10:31:07.8679|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 2.4411ms. 
+2019-03-14 10:31:07.8679|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 7.5703ms 
+2019-03-14 10:31:07.8823|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 21.9434ms 404 text/html; charset=utf-8 
+2019-03-14 10:34:21.2601|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-14 10:34:21.2734|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Index (Weeding) 
+2019-03-14 10:34:21.2734|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Index (Weeding) with arguments () - Validation state: Valid 
+2019-03-14 10:34:21.2734|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Index (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0205ms. 
+2019-03-14 10:34:21.2778|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-14 10:34:21.2778|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 5.9125ms. 
+2019-03-14 10:34:21.2778|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Index (Weeding) in 11.33ms 
+2019-03-14 10:34:21.2778|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.1236ms 200 text/html; charset=utf-8 
+2019-03-14 10:34:21.3337|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2019-03-14 10:34:21.3430|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2019-03-14 10:34:21.3769|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/the-groom.jpg   
+2019-03-14 10:34:21.4010|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/the-bride.jpg   
+2019-03-14 10:34:21.4010|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/the-groom.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\the-groom.jpg' 
+2019-03-14 10:34:21.4085|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2019-03-14 10:34:21.4374|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 100.7723ms 200 application/javascript 
+2019-03-14 10:34:21.4374|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 60.3882ms 200 image/jpeg 
+2019-03-14 10:34:21.4334|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/the-bride.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\the-bride.jpg' 
+2019-03-14 10:34:21.4834|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 82.3434ms 200 image/jpeg 
+2019-03-14 10:34:21.4807|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/title-divider.png   
+2019-03-14 10:34:21.5137|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/love-story/love-story-1.jpg   
+2019-03-14 10:34:21.5327|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/title-divider.png'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\title-divider.png' 
+2019-03-14 10:34:21.5327|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 61.2147ms 200 image/png 
+2019-03-14 10:34:21.5522|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/love-story/love-story-1.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\love-story\love-story-1.jpg' 
+2019-03-14 10:34:21.5693|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 55.5189ms 200 image/jpeg 
+2019-03-14 10:34:21.5693|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/love-story/love-story-2.jpg   
+2019-03-14 10:34:21.5693|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2019-03-14 10:34:21.5772|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 243.4584ms 200 application/javascript 
+2019-03-14 10:34:21.5772|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/love-story/love-story-2.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\love-story\love-story-2.jpg' 
+2019-03-14 10:34:21.5918|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 19.6948ms 200 image/jpeg 
+2019-03-14 10:34:21.5918|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/love-story/love-story-4.jpg   
+2019-03-14 10:34:21.6086|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/love-story/love-story-4.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\love-story\love-story-4.jpg' 
+2019-03-14 10:34:21.6086|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/love-story/love-story-3.jpg   
+2019-03-14 10:34:21.6086|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 23.3896ms 200 image/jpeg 
+2019-03-14 10:34:21.6310|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/love-story/love-story-3.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\love-story\love-story-3.jpg' 
+2019-03-14 10:34:21.6310|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.7951ms 200 image/jpeg 
+2019-03-14 10:34:21.6431|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-1.jpg   
+2019-03-14 10:34:21.6688|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-1.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\gallery\gallery-1.jpg' 
+2019-03-14 10:34:21.6723|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-2.jpg   
+2019-03-14 10:34:21.6723|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.495ms 200 image/jpeg 
+2019-03-14 10:34:21.7099|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-2.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\gallery\gallery-2.jpg' 
+2019-03-14 10:34:21.7173|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 44.9895ms 200 image/jpeg 
+2019-03-14 10:34:21.7173|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-3.jpg   
+2019-03-14 10:34:21.7318|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-3.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\gallery\gallery-3.jpg' 
+2019-03-14 10:34:21.7318|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 17.7031ms 200 image/jpeg 
+2019-03-14 10:34:21.7318|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-4.jpg   
+2019-03-14 10:34:21.7559|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-4.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\gallery\gallery-4.jpg' 
+2019-03-14 10:34:21.7559|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16.0517ms 200 image/jpeg 
+2019-03-14 10:34:21.7864|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-5.jpg   
+2019-03-14 10:34:21.7864|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-6.jpg   
+2019-03-14 10:34:21.7945|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-5.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\gallery\gallery-5.jpg' 
+2019-03-14 10:34:21.7945|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16.3925ms 200 image/jpeg 
+2019-03-14 10:34:21.8099|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-6.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\gallery\gallery-6.jpg' 
+2019-03-14 10:34:21.8099|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.3663ms 200 image/jpeg 
+2019-03-14 10:34:21.8398|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-7.jpg   
+2019-03-14 10:34:21.8594|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-8.jpg   
+2019-03-14 10:34:21.8594|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-7.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\gallery\gallery-7.jpg' 
+2019-03-14 10:34:21.8891|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-8.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\gallery\gallery-8.jpg' 
+2019-03-14 10:34:21.8891|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 50.4003ms 200 image/jpeg 
+2019-03-14 10:34:21.8891|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 38.4198ms 200 image/jpeg 
+2019-03-14 10:34:22.0230|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-14 10:34:22.0656|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2019-03-14 10:34:22.0656|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2019-03-14 10:34:22.0656|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 194446.5003ms 200 text/event-stream; charset=utf-8 
+2019-03-14 10:34:22.0867|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist\main.js' 
+2019-03-14 10:34:22.0934|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 23.8734ms 200 application/javascript 
+2019-03-14 10:34:22.1702|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2019-03-14 10:34:22.1702|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/bg/bg-hero-static.jpg   
+2019-03-14 10:34:22.1702|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 118.3737ms 200 application/javascript 
+2019-03-14 10:34:22.1902|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/section-divider-bottom.png   
+2019-03-14 10:34:22.1902|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/section-divider-top.png   
+2019-03-14 10:34:22.2040|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/section-divider-bottom.png'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\section-divider-bottom.png' 
+2019-03-14 10:34:22.2040|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/section-divider-top.png'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\section-divider-top.png' 
+2019-03-14 10:34:22.2155|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.1728ms 200 image/png 
+2019-03-14 10:34:22.2155|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 25.361ms 200 image/png 
+2019-03-14 10:34:22.2155|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/bg/bg-hero-static.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\bg\bg-hero-static.jpg' 
+2019-03-14 10:34:22.2521|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/bg/bg-wedding-event.jpg   
+2019-03-14 10:34:22.2521|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 77.0337ms 200 image/jpeg 
+2019-03-14 10:34:22.2521|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/montserrat.woff2   
+2019-03-14 10:34:22.2722|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/montserrat.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist\fonts\montserrat.woff2' 
+2019-03-14 10:34:22.2722|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 15.562ms 200 font/woff2 
+2019-03-14 10:34:22.2776|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/bg/bg-wedding-event.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\bg\bg-wedding-event.jpg' 
+2019-03-14 10:34:22.2776|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/ptserif-400.woff2   
+2019-03-14 10:34:22.2776|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 39.4781ms 200 image/jpeg 
+2019-03-14 10:34:22.2963|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/ptserif-400.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist\fonts\ptserif-400.woff2' 
+2019-03-14 10:34:22.2963|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 18.6307ms 200 font/woff2 
+2019-03-14 10:34:22.3124|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/flaticon.woff   
+2019-03-14 10:34:22.3124|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/flaticon.woff'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist\fonts\flaticon.woff' 
+2019-03-14 10:34:22.3385|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.1736ms 200 application/font-woff 
+2019-03-14 10:34:22.3413|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fa-brands-400.woff2   
+2019-03-14 10:34:22.3898|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fa-brands-400.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist\fonts\fa-brands-400.woff2' 
+2019-03-14 10:34:22.3898|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/bg/bg-proposed.jpg   
+2019-03-14 10:34:22.3898|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52.1375ms 200 font/woff2 
+2019-03-14 10:34:22.4339|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/bg/bg-proposed.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\bg\bg-proposed.jpg' 
+2019-03-14 10:34:22.4376|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/section-divider-top-gray-100.png   
+2019-03-14 10:34:22.4376|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 47.7358ms 200 image/jpeg 
+2019-03-14 10:34:22.4376|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/icon-zoom-in-white.png   
+2019-03-14 10:34:22.4376|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/section-divider-top-gray-100.png'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\section-divider-top-gray-100.png' 
+2019-03-14 10:34:22.4537|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16.0779ms 200 image/png 
+2019-03-14 10:34:22.4537|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/icon-zoom-in-white.png'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\icon-zoom-in-white.png' 
+2019-03-14 10:34:22.4695|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/section-divider-bottom-gray-100.png   
+2019-03-14 10:34:22.4695|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 23.6389ms 200 image/png 
+2019-03-14 10:34:22.4695|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/bg/bg-wedding-gifts.jpg   
+2019-03-14 10:34:22.4856|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/section-divider-bottom-gray-100.png'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\section-divider-bottom-gray-100.png' 
+2019-03-14 10:34:22.4856|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 19.7603ms 200 image/png 
+2019-03-14 10:34:22.4856|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/bg/bg-footer.jpg   
+2019-03-14 10:34:22.5003|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/bg/bg-wedding-gifts.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\bg\bg-wedding-gifts.jpg' 
+2019-03-14 10:34:22.5131|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 34.6175ms 200 image/jpeg 
+2019-03-14 10:34:22.5350|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/bg/bg-footer.jpg'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\img\bg\bg-footer.jpg' 
+2019-03-14 10:34:22.5350|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 43.7995ms 200 image/jpeg 
+2019-03-14 10:34:22.5794|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/0b6ac1575a4202133310.hot-update.json   
+2019-03-14 10:34:22.5794|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 10:34:22.5924|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 10:34:22.5924|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.022ms. 
+2019-03-14 10:34:22.5924|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 10:34:22.5924|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 2.5833ms. 
+2019-03-14 10:34:22.5924|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 9.3277ms 
+2019-03-14 10:34:22.6062|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.758ms 404 text/html; charset=utf-8 
+2019-03-14 10:34:22.6062|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/0b6ac1575a4202133310.hot-update.json   
+2019-03-14 10:34:22.6228|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 10:34:22.6228|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 10:34:22.6228|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0193ms. 
+2019-03-14 10:34:22.6228|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 10:34:22.6228|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 2.5766ms. 
+2019-03-14 10:34:22.6228|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 9.9363ms 
+2019-03-14 10:34:22.6228|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 18.4919ms 404 text/html; charset=utf-8 
+2019-03-14 10:34:22.6585|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/0b6ac1575a4202133310.hot-update.json   
+2019-03-14 10:34:22.6585|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 10:34:22.6585|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 10:34:22.6585|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.019ms. 
+2019-03-14 10:34:22.6695|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 10:34:22.6695|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 2.3279ms. 
+2019-03-14 10:34:22.6695|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 8.4795ms 
+2019-03-14 10:34:22.6695|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 18.6733ms 404 text/html; charset=utf-8 
+2019-03-14 10:34:22.6983|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/0b6ac1575a4202133310.hot-update.json   
+2019-03-14 10:34:22.7047|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 10:34:22.7047|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 10:34:22.7663|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.022ms. 
+2019-03-14 10:34:22.7663|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 10:34:22.7663|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 1.5597ms. 
+2019-03-14 10:34:22.7845|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 69.345ms 
+2019-03-14 10:34:22.7845|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 94.2358ms 404 text/html; charset=utf-8 
+2019-03-14 10:34:23.0691|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/json/particles.json   
+2019-03-14 10:34:23.0761|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/json/particles.json'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\json\particles.json' 
+2019-03-14 10:34:23.0761|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.9755ms 200 application/json 
+2019-03-14 10:34:23.1469|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fa-regular-400.woff2   
+2019-03-14 10:34:23.1469|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/ptserif-700.woff2   
+2019-03-14 10:34:23.1577|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fa-regular-400.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist\fonts\fa-regular-400.woff2' 
+2019-03-14 10:34:23.1577|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 13.8218ms 200 font/woff2 
+2019-03-14 10:34:23.1749|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/ptserif-700.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist\fonts\ptserif-700.woff2' 
+2019-03-14 10:34:23.1749|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.2759ms 200 font/woff2 
+2019-03-14 10:34:23.5604|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/favicon-32x32.png   
+2019-03-14 10:34:23.5755|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\favicon-32x32.png' 
+2019-03-14 10:34:23.5755|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 21.5325ms 200 image/png 
+2019-03-14 10:34:24.2586|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fa-solid-900.woff2   
+2019-03-14 10:34:24.2674|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fa-solid-900.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist\fonts\fa-solid-900.woff2' 
+2019-03-14 10:34:24.2674|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10.3821ms 200 font/woff2 
+2019-03-14 11:12:47.9010||DEBUG|Weeding.Program|init main 
+2019-03-14 11:12:48.7423||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Diana\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-03-14 11:12:53.6461||INFO|Microsoft.AspNetCore.NodeServices|development mode: true 
+2019-03-14 11:12:57.6552||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\AndrewHelen.com\TemplateCoreWeb\wwwroot\dist has been removed. 
+2019-03-14 11:12:58.6237|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-14 11:12:58.8223||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: / 
+2019-03-14 11:13:13.5450||INFO|Microsoft.AspNetCore.NodeServices|webpack built 2bb7c0b33dcea3c060b4 in 15469ms 
+2019-03-14 11:13:13.6414||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Hash: 2bb7c0b33dcea3c060b4
+Version: webpack 4.23.1
+Time: 15469ms
+Built at: 2019-03-14 11:13:13
+                                         Asset      Size         Chunks             Chunk Names
+ ../img/_/fonts/font-awesome/fa-brands-400.svg  49 bytes                 [emitted]  
+../img/_/fonts/font-awesome/fa-regular-400.svg  50 bytes                 [emitted]  
+  ../img/_/fonts/font-awesome/fa-solid-900.svg  48 bytes                 [emitted]  
+    critical-foft-preload-fallback-optional.js  8.04 KiB                 [emitted]  
+                              custom_styles.js   430 KiB  custom_styles  [emitted]  custom_styles
+                           custom_styles.js.gz  66.2 KiB                 [emitted]  
+                       fonts/fa-brands-400.eot  96.3 KiB                 [emitted]  
+                    fonts/fa-brands-400.eot.gz    63 KiB                 [emitted]  
+                       fonts/fa-brands-400.svg   496 KiB                 [emitted]  
+                    fonts/fa-brands-400.svg.gz   159 KiB                 [emitted]  
+                       fonts/fa-brands-400.ttf  96.1 KiB                 [emitted]  
+                    fonts/fa-brands-400.ttf.gz  62.9 KiB                 [emitted]  
+                      fonts/fa-brands-400.woff  62.2 KiB                 [emitted]  
+                     fonts/fa-brands-400.woff2  53.2 KiB                 [emitted]  
+                      fonts/fa-regular-400.eot  30.4 KiB                 [emitted]  
+                   fonts/fa-regular-400.eot.gz  14.6 KiB                 [emitted]  
+                      fonts/fa-regular-400.svg   105 KiB                 [emitted]  
+                   fonts/fa-regular-400.svg.gz  35.7 KiB                 [emitted]  
+                      fonts/fa-regular-400.ttf  30.2 KiB                 [emitted]  
+                   fonts/fa-regular-400.ttf.gz  14.6 KiB                 [emitted]  
+                     fonts/fa-regular-400.woff  14.4 KiB                 [emitted]  
+                    fonts/fa-regular-400.woff2    12 KiB                 [emitted]  
+                        fonts/fa-solid-900.eot   104 KiB                 [emitted]  
+                     fonts/fa-solid-900.eot.gz  50.3 KiB                 [emitted]  
+                        fonts/fa-solid-900.svg   382 KiB                 [emitted]  
+                     fonts/fa-solid-900.svg.gz   130 KiB                 [emitted]  
+                        fonts/fa-solid-900.ttf   103 KiB                 [emitted]  
+                     fonts/fa-solid-900.ttf.gz  50.2 KiB                 [emitted]  
+                       fonts/fa-solid-900.woff  49.3 KiB                 [emitted]  
+                      fonts/fa-solid-900.woff2  39.2 KiB                 [emitted]  
+                            fonts/flaticon.eot  2.57 KiB                 [emitted]  
+                         fonts/flaticon.eot.gz  1.42 KiB                 [emitted]  
+                            fonts/flaticon.ttf  27.6 KiB                 [emitted]  
+                         fonts/flaticon.ttf.gz  17.4 KiB                 [emitted]  
+                           fonts/flaticon.woff  17.6 KiB                 [emitted]  
+                        fonts/montserrat.woff2  18.3 KiB                 [emitted]  
+                       fonts/ptserif-400.woff2  33.5 KiB                 [emitted]  
+                       fonts/ptserif-700.woff2  27.3 KiB                 [emitted]  
+                                       main.js   215 KiB           main  [emitted]  main
+                                    main.js.gz  47.4 KiB                 [emitted]  
+                                         sw.js  2.14 KiB                 [emitted]  
+                                 vendor_src.js   965 KiB     vendor_src  [emitted]  vendor_src
+                              vendor_src.js.gz   212 KiB                 [emitted]  
+                              vendor_styles.js  1.07 MiB  vendor_styles  [emitted]  vendor_styles
+                           vendor_styles.js.gz   182 KiB                 [emitted]  
+Entrypoint vendor_styles = vendor_styles.js
+Entrypoint vendor_src = vendor_src.js
+Entrypoint custom_styles = custom_styles.js
+Entrypoint main = main.js
+[0] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/vendor_styles.js 40 bytes {vendor_styles} [built]
+[1] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true script-loader!./ClientApp/src/assets/vendor/jquery.min.js script-loader!./ClientApp/src/assets/vendor/popper.min.js script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js script-loader!./ClientApp/src/assets/vendor/pace.min.js script-loader!./ClientApp/src/assets/vendor/particles.min.js script-loader!./ClientApp/src/assets/vendor/jquery.easing.min.js script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/jquery.magnific-popup.min.js script-loader!./ClientApp/src/assets/vendor/jquery.countdown.min.js script-loader!./ClientApp/src/assets/vendor/jquery.validate.min.js script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js script-loader!./ClientApp/src/assets/vendor/theme.js script-loader!./ClientApp/src/assets/vendor/milea.js 244 bytes {vendor_src} [built]
+[2] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/custom_styles.js 40 bytes {custom_styles} [built]
+[3] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/index.js 40 bytes {main} [built]
+[./ClientApp/src/assets/js/custom_styles.js] 28 bytes {custom_styles} [built]
+[./ClientApp/src/assets/js/index.js] 274 bytes {main} [built]
+[./ClientApp/src/assets/js/vendor_styles.js] 215 bytes {vendor_styles} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/ScrollMagic.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js 476 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/animation.gsap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js 479 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/bootstrap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js 474 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/flickity.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js 478 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js 484 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js 482 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/isotope.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js 477 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/jquery-confirm.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js 479 bytes {vendor_src} [built]
+    + 86 hidden modules 
+2019-03-14 11:13:13.6414||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Compiled successfully. 
+2019-03-14 11:13:13.6567|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2019-03-14 11:13:13.8677|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Index (Weeding) 
+2019-03-14 11:13:13.8987|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Index (Weeding) with arguments () - Validation state: Valid 
+2019-03-14 11:13:13.9042|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Index (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6568ms. 
+2019-03-14 11:13:13.9322|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-14 11:13:14.0676|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 154.0824ms. 
+2019-03-14 11:13:14.0676|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Index (Weeding) in 200.9927ms 
+2019-03-14 11:13:14.0910|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 15472.794ms 200 text/html; charset=utf-8 
+2019-03-14 11:13:14.1358|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/robots.txt   
+2019-03-14 11:13:14.1574|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /robots.txt was not modified 
+2019-03-14 11:13:14.1574|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.8335ms 304 text/plain 
+2019-03-14 11:13:14.3707|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-14 11:13:14.4074|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/e9683f6a07701f45f1dc.hot-update.json   
+2019-03-14 11:13:14.4074|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 11:13:14.4222|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 11:13:14.4222|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3353ms. 
+2019-03-14 11:13:14.4222|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 11:13:14.4673|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 41.3482ms. 
+2019-03-14 11:13:14.4673|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 50.4867ms 
+2019-03-14 11:13:14.4673|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 64.2932ms 404 text/html; charset=utf-8 
+2019-03-14 11:23:51.0916||DEBUG|Weeding.Program|init main 
+2019-03-14 11:23:51.5955||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Diana\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-03-14 11:23:55.2130||INFO|Microsoft.AspNetCore.NodeServices|development mode: true 
+2019-03-14 11:23:58.2638||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\dist has been removed. 
+2019-03-14 11:23:58.8833|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-14 11:23:58.8833|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-14 11:23:59.0852||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: /__webpack_hmr 
+2019-03-14 11:23:59.0852||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: / 
+2019-03-14 11:24:14.3361||INFO|Microsoft.AspNetCore.NodeServices|webpack built 225c2749b1b2eb787209 in 15714ms 
+2019-03-14 11:24:14.4155||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Hash: 225c2749b1b2eb787209
+Version: webpack 4.23.1
+Time: 15714ms
+Built at: 2019-03-14 11:24:14
+                                         Asset      Size         Chunks             Chunk Names
+ ../img/_/fonts/font-awesome/fa-brands-400.svg  49 bytes                 [emitted]  
+../img/_/fonts/font-awesome/fa-regular-400.svg  50 bytes                 [emitted]  
+  ../img/_/fonts/font-awesome/fa-solid-900.svg  48 bytes                 [emitted]  
+    critical-foft-preload-fallback-optional.js  8.04 KiB                 [emitted]  
+                              custom_styles.js   431 KiB  custom_styles  [emitted]  custom_styles
+                           custom_styles.js.gz  66.2 KiB                 [emitted]  
+                       fonts/fa-brands-400.eot  96.3 KiB                 [emitted]  
+                    fonts/fa-brands-400.eot.gz    63 KiB                 [emitted]  
+                       fonts/fa-brands-400.svg   496 KiB                 [emitted]  
+                    fonts/fa-brands-400.svg.gz   159 KiB                 [emitted]  
+                       fonts/fa-brands-400.ttf  96.1 KiB                 [emitted]  
+                    fonts/fa-brands-400.ttf.gz  62.9 KiB                 [emitted]  
+                      fonts/fa-brands-400.woff  62.2 KiB                 [emitted]  
+                     fonts/fa-brands-400.woff2  53.2 KiB                 [emitted]  
+                      fonts/fa-regular-400.eot  30.4 KiB                 [emitted]  
+                   fonts/fa-regular-400.eot.gz  14.6 KiB                 [emitted]  
+                      fonts/fa-regular-400.svg   105 KiB                 [emitted]  
+                   fonts/fa-regular-400.svg.gz  35.7 KiB                 [emitted]  
+                      fonts/fa-regular-400.ttf  30.2 KiB                 [emitted]  
+                   fonts/fa-regular-400.ttf.gz  14.6 KiB                 [emitted]  
+                     fonts/fa-regular-400.woff  14.4 KiB                 [emitted]  
+                    fonts/fa-regular-400.woff2    12 KiB                 [emitted]  
+                        fonts/fa-solid-900.eot   104 KiB                 [emitted]  
+                     fonts/fa-solid-900.eot.gz  50.3 KiB                 [emitted]  
+                        fonts/fa-solid-900.svg   382 KiB                 [emitted]  
+                     fonts/fa-solid-900.svg.gz   130 KiB                 [emitted]  
+                        fonts/fa-solid-900.ttf   103 KiB                 [emitted]  
+                     fonts/fa-solid-900.ttf.gz  50.2 KiB                 [emitted]  
+                       fonts/fa-solid-900.woff  49.3 KiB                 [emitted]  
+                      fonts/fa-solid-900.woff2  39.2 KiB                 [emitted]  
+                            fonts/flaticon.eot  2.57 KiB                 [emitted]  
+                         fonts/flaticon.eot.gz  1.42 KiB                 [emitted]  
+                            fonts/flaticon.ttf  27.6 KiB                 [emitted]  
+                         fonts/flaticon.ttf.gz  17.4 KiB                 [emitted]  
+                           fonts/flaticon.woff  17.6 KiB                 [emitted]  
+                        fonts/montserrat.woff2  18.3 KiB                 [emitted]  
+                       fonts/ptserif-400.woff2  33.5 KiB                 [emitted]  
+                       fonts/ptserif-700.woff2  27.3 KiB                 [emitted]  
+                                       main.js   215 KiB           main  [emitted]  main
+                                    main.js.gz  47.4 KiB                 [emitted]  
+                                         sw.js  2.14 KiB                 [emitted]  
+                                 vendor_src.js   965 KiB     vendor_src  [emitted]  vendor_src
+                              vendor_src.js.gz   212 KiB                 [emitted]  
+                              vendor_styles.js  1.08 MiB  vendor_styles  [emitted]  vendor_styles
+                           vendor_styles.js.gz   183 KiB                 [emitted]  
+Entrypoint vendor_styles = vendor_styles.js
+Entrypoint vendor_src = vendor_src.js
+Entrypoint custom_styles = custom_styles.js
+Entrypoint main = main.js
+[0] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/vendor_styles.js 40 bytes {vendor_styles} [built]
+[1] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true script-loader!./ClientApp/src/assets/vendor/jquery.min.js script-loader!./ClientApp/src/assets/vendor/popper.min.js script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js script-loader!./ClientApp/src/assets/vendor/pace.min.js script-loader!./ClientApp/src/assets/vendor/particles.min.js script-loader!./ClientApp/src/assets/vendor/jquery.easing.min.js script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/jquery.magnific-popup.min.js script-loader!./ClientApp/src/assets/vendor/jquery.countdown.min.js script-loader!./ClientApp/src/assets/vendor/jquery.validate.min.js script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js script-loader!./ClientApp/src/assets/vendor/theme.js script-loader!./ClientApp/src/assets/vendor/milea.js 244 bytes {vendor_src} [built]
+[2] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/custom_styles.js 40 bytes {custom_styles} [built]
+[3] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/index.js 40 bytes {main} [built]
+[./ClientApp/src/assets/js/custom_styles.js] 28 bytes {custom_styles} [built]
+[./ClientApp/src/assets/js/index.js] 274 bytes {main} [built]
+[./ClientApp/src/assets/js/vendor_styles.js] 215 bytes {vendor_styles} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/ScrollMagic.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js 536 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/animation.gsap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js 539 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/bootstrap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js 534 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/flickity.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/flickity.pkgd.min.js 538 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js 544 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.min.js 542 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/isotope.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js 537 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/jquery-confirm.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js 539 bytes {vendor_src} [built]
+    + 86 hidden modules 
+2019-03-14 11:24:14.4169||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Compiled successfully. 
+2019-03-14 11:24:14.4355|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2019-03-14 11:24:14.5673|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/ce66affa95ba4440ac60.hot-update.json   
+2019-03-14 11:24:14.7129|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 11:24:14.7341|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Index (Weeding) 
+2019-03-14 11:24:14.7561|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 11:24:14.7650|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.9312ms. 
+2019-03-14 11:24:14.7650|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Index (Weeding) with arguments () - Validation state: Valid 
+2019-03-14 11:24:14.7650|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Index (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4286ms. 
+2019-03-14 11:24:14.8129|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-14 11:24:14.8129|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 11:24:15.0065|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 220.0138ms. 
+2019-03-14 11:24:15.0065|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 220.322ms. 
+2019-03-14 11:24:15.0065|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 275.5021ms 
+2019-03-14 11:24:15.0227|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Index (Weeding) in 285.2537ms 
+2019-03-14 11:24:15.0487|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/ce66affa95ba4440ac60.hot-update.json   
+2019-03-14 11:24:15.0788|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 511.2486ms 404 text/html; charset=utf-8 
+2019-03-14 11:24:15.0788|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16199.2908ms 200 text/html; charset=utf-8 
+2019-03-14 11:24:15.0922|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 11:24:15.0922|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 11:24:15.0922|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.019ms. 
+2019-03-14 11:24:15.1384|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 11:24:15.1384|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 12.0375ms. 
+2019-03-14 11:24:15.1520|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 52.0624ms 
+2019-03-14 11:24:15.1520|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 110.4198ms 404 text/html; charset=utf-8 
+2019-03-14 11:24:15.1904|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/ce66affa95ba4440ac60.hot-update.json   
+2019-03-14 11:24:15.1990|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 11:24:15.1990|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 11:24:15.2164|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0467ms. 
+2019-03-14 11:24:15.2164|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 11:24:15.2164|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 2.1275ms. 
+2019-03-14 11:24:15.2321|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 31.5622ms 
+2019-03-14 11:24:15.2468|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 56.3265ms 404 text/html; charset=utf-8 
+2019-03-14 11:24:15.2468|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/ce66affa95ba4440ac60.hot-update.json   
+2019-03-14 11:24:15.2667|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 11:24:15.2667|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 11:24:15.2831|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0301ms. 
+2019-03-14 11:24:15.2831|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 11:24:15.2967|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 10.5895ms. 
+2019-03-14 11:24:15.2967|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 28.3009ms 
+2019-03-14 11:24:15.3081|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 55.5018ms 404 text/html; charset=utf-8 
+2019-03-14 11:24:15.4927|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-14 11:24:15.5355|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/ce66affa95ba4440ac60.hot-update.json   
+2019-03-14 11:24:15.5355|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 11:24:15.5417|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 11:24:15.5417|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0193ms. 
+2019-03-14 11:24:15.5417|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 11:24:15.5417|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 4.9489ms. 
+2019-03-14 11:24:15.5417|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 13.321ms 
+2019-03-14 11:24:15.5610|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 25.4564ms 404 text/html; charset=utf-8 
+2019-03-14 11:24:15.5761|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/ce66affa95ba4440ac60.hot-update.json   
+2019-03-14 11:24:15.5761|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 11:24:15.5981|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 11:24:15.6266|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0283ms. 
+2019-03-14 11:24:15.6266|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 11:24:15.6390|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 5.4715ms. 
+2019-03-14 11:24:15.6390|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 48.473ms 
+2019-03-14 11:24:15.6390|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 73.518ms 404 text/html; charset=utf-8 
+2019-03-14 11:24:15.6854|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/ce66affa95ba4440ac60.hot-update.json   
+2019-03-14 11:24:15.6854|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 11:24:15.6854|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 11:24:15.6854|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0241ms. 
+2019-03-14 11:24:15.6854|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 11:24:15.7013|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 4.9348ms. 
+2019-03-14 11:24:15.7013|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 15.0579ms 
+2019-03-14 11:24:15.7151|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.5943ms 404 text/html; charset=utf-8 
+2019-03-14 11:24:15.7457|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/ce66affa95ba4440ac60.hot-update.json   
+2019-03-14 11:24:15.7457|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 11:24:15.7457|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 11:24:15.7457|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0199ms. 
+2019-03-14 11:24:15.7457|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 11:24:15.7609|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 5.1237ms. 
+2019-03-14 11:24:15.7609|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 11.9515ms 
+2019-03-14 11:24:15.7609|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 23.3241ms 404 text/html; charset=utf-8 
+2019-03-14 11:24:15.7892|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/ce66affa95ba4440ac60.hot-update.json   
+2019-03-14 11:24:15.8024|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 11:24:15.8024|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 11:24:15.8024|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.019ms. 
+2019-03-14 11:24:15.8096|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 11:24:15.8096|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 3.3681ms. 
+2019-03-14 11:24:15.8096|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 12.3488ms 
+2019-03-14 11:24:15.8096|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.4809ms 404 text/html; charset=utf-8 
+2019-03-14 11:24:23.2772|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-03-14 11:24:23.3057|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Index (Weeding) 
+2019-03-14 11:24:23.3129|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Index (Weeding) with arguments () - Validation state: Valid 
+2019-03-14 11:24:23.3129|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Index (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0214ms. 
+2019-03-14 11:24:23.3129|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-03-14 11:24:23.3313|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 12.634ms. 
+2019-03-14 11:24:23.3464|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Index (Weeding) in 33.9475ms 
+2019-03-14 11:24:23.3464|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 72.6628ms 200 text/html; charset=utf-8 
+2019-03-14 11:24:23.4014|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2019-03-14 11:24:23.4014|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/the-groom.jpg   
+2019-03-14 11:24:23.4381|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2019-03-14 11:24:23.4625|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/the-bride.jpg   
+2019-03-14 11:24:23.4930|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/the-groom.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\the-groom.jpg' 
+2019-03-14 11:24:23.5064|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 98.5265ms 200 image/jpeg 
+2019-03-14 11:24:23.5264|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/the-bride.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\the-bride.jpg' 
+2019-03-14 11:24:23.5264|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2019-03-14 11:24:23.5429|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 80.4804ms 200 image/jpeg 
+2019-03-14 11:24:23.5700|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 168.5953ms 200 application/javascript 
+2019-03-14 11:24:23.6300|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/title-divider.png   
+2019-03-14 11:24:23.6402|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/title-divider.png'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\title-divider.png' 
+2019-03-14 11:24:23.6570|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8164.5678ms 200 text/event-stream; charset=utf-8 
+2019-03-14 11:24:23.6570|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 32.97ms 200 image/png 
+2019-03-14 11:24:23.7464|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/love-story/love-story-2.jpg   
+2019-03-14 11:24:23.7464|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/love-story/love-story-1.jpg   
+2019-03-14 11:24:23.7868|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/love-story/love-story-2.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\love-story\love-story-2.jpg' 
+2019-03-14 11:24:23.7868|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 44.3275ms 200 image/jpeg 
+2019-03-14 11:24:23.7943|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/love-story/love-story-1.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\love-story\love-story-1.jpg' 
+2019-03-14 11:24:23.8113|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 64.3074ms 200 image/jpeg 
+2019-03-14 11:24:23.8764|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/love-story/love-story-4.jpg   
+2019-03-14 11:24:23.8881|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/love-story/love-story-4.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\love-story\love-story-4.jpg' 
+2019-03-14 11:24:23.8881|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 13.2652ms 200 image/jpeg 
+2019-03-14 11:24:23.8881|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/love-story/love-story-3.jpg   
+2019-03-14 11:24:23.9351|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/love-story/love-story-3.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\love-story\love-story-3.jpg' 
+2019-03-14 11:24:23.9351|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 43.2345ms 200 image/jpeg 
+2019-03-14 11:24:23.9710|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-1.jpg   
+2019-03-14 11:24:23.9831|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-1.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\gallery\gallery-1.jpg' 
+2019-03-14 11:24:24.0009|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.904ms 200 image/jpeg 
+2019-03-14 11:24:24.0259|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2019-03-14 11:24:24.0259|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 597.9015ms 200 application/javascript 
+2019-03-14 11:24:24.0626|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-2.jpg   
+2019-03-14 11:24:24.0935|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-2.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\gallery\gallery-2.jpg' 
+2019-03-14 11:24:24.1053|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 42.7111ms 200 image/jpeg 
+2019-03-14 11:24:24.1639|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-3.jpg   
+2019-03-14 11:24:24.1904|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-3.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\gallery\gallery-3.jpg' 
+2019-03-14 11:24:24.1904|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 31.2117ms 200 image/jpeg 
+2019-03-14 11:24:24.3250|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-03-14 11:24:24.3421|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-4.jpg   
+2019-03-14 11:24:24.3594|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-4.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\gallery\gallery-4.jpg' 
+2019-03-14 11:24:24.3594|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 19.2294ms 200 image/jpeg 
+2019-03-14 11:24:24.4902|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-7.jpg   
+2019-03-14 11:24:24.4902|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-5.jpg   
+2019-03-14 11:24:24.4902|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-6.jpg   
+2019-03-14 11:24:24.5462|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-5.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\gallery\gallery-5.jpg' 
+2019-03-14 11:24:24.5314|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-7.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\gallery\gallery-7.jpg' 
+2019-03-14 11:24:24.5660|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 75.8589ms 200 image/jpeg 
+2019-03-14 11:24:24.5462|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 66.2121ms 200 image/jpeg 
+2019-03-14 11:24:24.5660|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-6.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\gallery\gallery-6.jpg' 
+2019-03-14 11:24:24.6010|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 107.4758ms 200 image/jpeg 
+2019-03-14 11:24:24.6235|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/flaticon.woff   
+2019-03-14 11:24:24.6235|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/flaticon.woff'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\dist\fonts\flaticon.woff' 
+2019-03-14 11:24:24.6235|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.4074ms 200 application/font-woff 
+2019-03-14 11:24:24.6927|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/gallery/gallery-8.jpg   
+2019-03-14 11:24:24.7096|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/gallery/gallery-8.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\gallery\gallery-8.jpg' 
+2019-03-14 11:24:24.7096|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 18.4708ms 200 image/jpeg 
+2019-03-14 11:24:24.7388|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fa-solid-900.woff2   
+2019-03-14 11:24:24.7546|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fa-solid-900.woff2'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\dist\fonts\fa-solid-900.woff2' 
+2019-03-14 11:24:24.7624|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 23.5469ms 200 font/woff2 
+2019-03-14 11:24:24.7836|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fa-brands-400.woff2   
+2019-03-14 11:24:24.7922|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fa-brands-400.woff2'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\dist\fonts\fa-brands-400.woff2' 
+2019-03-14 11:24:24.8274|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 47.4989ms 200 font/woff2 
+2019-03-14 11:24:24.8274|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2019-03-14 11:24:24.8905|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2019-03-14 11:24:24.9653|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\dist\main.js' 
+2019-03-14 11:24:24.9951|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 104.6525ms 200 application/javascript 
+2019-03-14 11:24:25.0741|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/bg/bg-hero-static.jpg   
+2019-03-14 11:24:25.0741|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/montserrat.woff2   
+2019-03-14 11:24:25.0741|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/ptserif-400.woff2   
+2019-03-14 11:24:25.0898|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/bg/bg-hero-static.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\bg\bg-hero-static.jpg' 
+2019-03-14 11:24:25.1060|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/montserrat.woff2'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\dist\fonts\montserrat.woff2' 
+2019-03-14 11:24:25.1060|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/ptserif-400.woff2'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\dist\fonts\ptserif-400.woff2' 
+2019-03-14 11:24:25.1193|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 45.2533ms 200 image/jpeg 
+2019-03-14 11:24:25.1446|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 68.1672ms 200 font/woff2 
+2019-03-14 11:24:25.1572|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2019-03-14 11:24:25.1572|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 72.3918ms 200 font/woff2 
+2019-03-14 11:24:25.1908|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 363.3163ms 200 application/javascript 
+2019-03-14 11:24:25.2085|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/section-divider-top.png   
+2019-03-14 11:24:25.2358|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/section-divider-bottom.png   
+2019-03-14 11:24:25.2497|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/section-divider-top.png'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\section-divider-top.png' 
+2019-03-14 11:24:25.2913|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 82.7344ms 200 image/png 
+2019-03-14 11:24:25.3092|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/section-divider-bottom.png'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\section-divider-bottom.png' 
+2019-03-14 11:24:25.3092|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 75.5341ms 200 image/png 
+2019-03-14 11:24:25.4296|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/bg/bg-wedding-event.jpg   
+2019-03-14 11:24:25.4443|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/bg/bg-wedding-event.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\bg\bg-wedding-event.jpg' 
+2019-03-14 11:24:25.5454|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 115.7489ms 200 image/jpeg 
+2019-03-14 11:24:25.6055|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/section-divider-top-gray-100.png   
+2019-03-14 11:24:25.6055|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/bg/bg-proposed.jpg   
+2019-03-14 11:24:25.6431|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/section-divider-top-gray-100.png'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\section-divider-top-gray-100.png' 
+2019-03-14 11:24:25.6613|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 55.8474ms 200 image/png 
+2019-03-14 11:24:25.6757|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/icon-zoom-in-white.png   
+2019-03-14 11:24:25.6757|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/bg/bg-proposed.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\bg\bg-proposed.jpg' 
+2019-03-14 11:24:25.6941|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 84.4161ms 200 image/jpeg 
+2019-03-14 11:24:25.6941|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/icon-zoom-in-white.png'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\icon-zoom-in-white.png' 
+2019-03-14 11:24:25.7303|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/section-divider-bottom-gray-100.png   
+2019-03-14 11:24:25.7303|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 55.3871ms 200 image/png 
+2019-03-14 11:24:25.7303|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/bg/bg-footer.jpg   
+2019-03-14 11:24:25.7787|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/section-divider-bottom-gray-100.png'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\section-divider-bottom-gray-100.png' 
+2019-03-14 11:24:25.8095|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 79.2277ms 200 image/png 
+2019-03-14 11:24:25.7787|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/bg/bg-wedding-gifts.jpg   
+2019-03-14 11:24:25.8340|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/bg/bg-footer.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\bg\bg-footer.jpg' 
+2019-03-14 11:24:25.9198|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 176.1152ms 200 image/jpeg 
+2019-03-14 11:24:25.9651|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/bg/bg-wedding-gifts.jpg'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\img\bg\bg-wedding-gifts.jpg' 
+2019-03-14 11:24:26.0000|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 217.4097ms 200 image/jpeg 
+2019-03-14 11:24:26.1232|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/json/particles.json   
+2019-03-14 11:24:26.1484|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/json/particles.json'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\json\particles.json' 
+2019-03-14 11:24:26.1484|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.5929ms 200 application/json 
+2019-03-14 11:24:26.1786|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fa-regular-400.woff2   
+2019-03-14 11:24:26.1960|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/ptserif-700.woff2   
+2019-03-14 11:24:26.2145|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fa-regular-400.woff2'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\dist\fonts\fa-regular-400.woff2' 
+2019-03-14 11:24:26.2145|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 42.2377ms 200 font/woff2 
+2019-03-14 11:24:26.2145|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/ptserif-700.woff2'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\dist\fonts\ptserif-700.woff2' 
+2019-03-14 11:24:26.2394|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 43.4395ms 200 font/woff2 
+2019-03-14 11:24:26.5468|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/ce66affa95ba4440ac60.hot-update.json   
+2019-03-14 11:24:26.5617|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 11:24:26.5726|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 11:24:26.5726|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.022ms. 
+2019-03-14 11:24:26.5726|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 11:24:26.5726|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 2.1127ms. 
+2019-03-14 11:24:26.5726|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 10.4268ms 
+2019-03-14 11:24:26.6080|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 61.2299ms 404 text/html; charset=utf-8 
+2019-03-14 11:24:26.6662|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/ce66affa95ba4440ac60.hot-update.json   
+2019-03-14 11:24:26.6708|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 11:24:26.6848|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 11:24:26.6848|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0214ms. 
+2019-03-14 11:24:26.7159|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 11:24:26.7348|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 18.9453ms. 
+2019-03-14 11:24:26.7515|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 66.7793ms 
+2019-03-14 11:24:26.7769|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 110.7126ms 404 text/html; charset=utf-8 
+2019-03-14 11:24:26.9540|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/ce66affa95ba4440ac60.hot-update.json   
+2019-03-14 11:24:26.9540|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 11:24:26.9641|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/favicon-32x32.png   
+2019-03-14 11:24:26.9641|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 11:24:26.9847|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0479ms. 
+2019-03-14 11:24:26.9996|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'C:\Users\Diana\Documents\nordicsoftprojects\AndrewHelen.com\TemplateCoreWeb\wwwroot\favicon-32x32.png' 
+2019-03-14 11:24:27.0179|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 11:24:27.0504|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 86.3646ms 200 image/png 
+2019-03-14 11:24:27.0720|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 54.0191ms. 
+2019-03-14 11:24:27.1149|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 140.131ms 
+2019-03-14 11:24:27.1257|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 171.6187ms 404 text/html; charset=utf-8 
+2019-03-14 11:24:27.2320|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/ce66affa95ba4440ac60.hot-update.json   
+2019-03-14 11:24:27.2320|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Error404", controller = "Home"}. Executing action Weeding.Controllers.HomeController.Error404 (Weeding) 
+2019-03-14 11:24:27.2320|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Weeding.Controllers.HomeController.Error404 (Weeding) - Validation state: Valid 
+2019-03-14 11:24:27.2496|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Weeding.Controllers.HomeController.Error404 (Weeding), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0319ms. 
+2019-03-14 11:24:27.2625|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Error404. 
+2019-03-14 11:24:27.2625|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Error404 executed in 5.2324ms. 
+2019-03-14 11:24:27.2625|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Weeding.Controllers.HomeController.Error404 (Weeding) in 25.6496ms 
+2019-03-14 11:24:27.2625|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 42.2051ms 404 text/html; charset=utf-8 

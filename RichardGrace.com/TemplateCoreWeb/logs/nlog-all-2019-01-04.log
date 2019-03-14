@@ -1,0 +1,318 @@
+2019-01-04 12:08:43.2983||DEBUG|TemplateCoreWebTest.Program|init main 
+2019-01-04 12:08:44.3230||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Diana\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-01-04 12:08:52.0389||INFO|Microsoft.AspNetCore.NodeServices|development mode: true 
+2019-01-04 12:08:57.9032||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. 
+2019-01-04 12:08:59.5983|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-01-04 12:09:00.7424||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: / 
+2019-01-04 12:09:15.4519||INFO|Microsoft.AspNetCore.NodeServices|webpack built f4745bb6585e5c60b2ce in 16784ms 
+2019-01-04 12:09:15.5684||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Hash: f4745bb6585e5c60b2ce
+Version: webpack 4.23.1
+Time: 16784ms
+Built at: 2019-01-04 12:09:15
+                                                     Asset      Size         Chunks             Chunk Names
+../img/_/vendor/font-awesome/fonts/fontawesome-webfont.svg  55 bytes                 [emitted]  
+    ../img/_/vendor/linearicons/fonts/Linearicons-Free.svg  52 bytes                 [emitted]  
+                critical-foft-preload-fallback-optional.js  8.04 KiB                 [emitted]  
+                                          custom_styles.js   572 KiB  custom_styles  [emitted]  custom_styles
+                                       custom_styles.js.gz  91.8 KiB                 [emitted]  
+                                fonts/Linearicons-Free.eot  54.5 KiB                 [emitted]  
+                             fonts/Linearicons-Free.eot.gz  25.2 KiB                 [emitted]  
+                                fonts/Linearicons-Free.svg   201 KiB                 [emitted]  
+                             fonts/Linearicons-Free.svg.gz  54.7 KiB                 [emitted]  
+                                fonts/Linearicons-Free.ttf  54.3 KiB                 [emitted]  
+                             fonts/Linearicons-Free.ttf.gz  25.1 KiB                 [emitted]  
+                               fonts/Linearicons-Free.woff  54.4 KiB                 [emitted]  
+                            fonts/Linearicons-Free.woff.gz  25.2 KiB                 [emitted]  
+                              fonts/Linearicons-Free.woff2  21.3 KiB                 [emitted]  
+                                fonts/Stroke-Gap-Icons.eot  44.7 KiB                 [emitted]  
+                             fonts/Stroke-Gap-Icons.eot.gz  20.1 KiB                 [emitted]  
+                                           fonts/dosis.ttf  29.7 KiB                 [emitted]  
+                                        fonts/dosis.ttf.gz  15.3 KiB                 [emitted]  
+                                          fonts/dosis.woff  15.4 KiB                 [emitted]  
+                                         fonts/dosis.woff2  12.5 KiB                 [emitted]  
+                                     fonts/dosismedium.ttf  28.5 KiB                 [emitted]  
+                                  fonts/dosismedium.ttf.gz  15.1 KiB                 [emitted]  
+                                    fonts/dosismedium.woff  15.2 KiB                 [emitted]  
+                                   fonts/dosismedium.woff2  12.3 KiB                 [emitted]  
+                            fonts/dosissemibold-subset.ttf  19.4 KiB                 [emitted]  
+                         fonts/dosissemibold-subset.ttf.gz  11.7 KiB                 [emitted]  
+                          fonts/dosissemibold-subset.woff2  9.57 KiB                 [emitted]  
+                    fonts/dosissemibold-subset.zopfli.woff  11.7 KiB                 [emitted]  
+                                   fonts/dosissemibold.ttf  28.6 KiB                 [emitted]  
+                                fonts/dosissemibold.ttf.gz  15.1 KiB                 [emitted]  
+                                  fonts/dosissemibold.woff  15.3 KiB                 [emitted]  
+                                 fonts/dosissemibold.woff2  12.4 KiB                 [emitted]  
+                             fonts/fontawesome-webfont.eot   162 KiB                 [emitted]  
+                          fonts/fontawesome-webfont.eot.gz  95.9 KiB                 [emitted]  
+                             fonts/fontawesome-webfont.svg   434 KiB                 [emitted]  
+                          fonts/fontawesome-webfont.svg.gz   131 KiB                 [emitted]  
+                             fonts/fontawesome-webfont.ttf   162 KiB                 [emitted]  
+                          fonts/fontawesome-webfont.ttf.gz  95.8 KiB                 [emitted]  
+                            fonts/fontawesome-webfont.woff  95.7 KiB                 [emitted]  
+                           fonts/fontawesome-webfont.woff2  75.4 KiB                 [emitted]  
+                                 fonts/opensans-subset.ttf  16.6 KiB                 [emitted]  
+                              fonts/opensans-subset.ttf.gz  10.8 KiB                 [emitted]  
+                               fonts/opensans-subset.woff2  8.66 KiB                 [emitted]  
+                         fonts/opensans-subset.zopfli.woff  10.9 KiB                 [emitted]  
+                                        fonts/opensans.ttf  51.2 KiB                 [emitted]  
+                                     fonts/opensans.ttf.gz  31.2 KiB                 [emitted]  
+                                       fonts/opensans.woff  31.1 KiB                 [emitted]  
+                                      fonts/opensans.woff2  24.3 KiB                 [emitted]  
+                                    fonts/opensansbold.ttf  52.8 KiB                 [emitted]  
+                                 fonts/opensansbold.ttf.gz  30.8 KiB                 [emitted]  
+                                   fonts/opensansbold.woff  30.8 KiB                 [emitted]  
+                                  fonts/opensansbold.woff2  23.9 KiB                 [emitted]  
+                                fonts/opensanssemibold.ttf  52.1 KiB                 [emitted]  
+                             fonts/opensanssemibold.ttf.gz  31.5 KiB                 [emitted]  
+                               fonts/opensanssemibold.woff  31.4 KiB                 [emitted]  
+                              fonts/opensanssemibold.woff2  24.4 KiB                 [emitted]  
+                                                   main.js   224 KiB           main  [emitted]  main
+                                                main.js.gz  49.4 KiB                 [emitted]  
+                                                     sw.js  2.14 KiB                 [emitted]  
+                                             vendor_src.js   632 KiB     vendor_src  [emitted]  vendor_src
+                                          vendor_src.js.gz   138 KiB                 [emitted]  
+                                          vendor_styles.js  1.35 MiB  vendor_styles  [emitted]  vendor_styles
+                                       vendor_styles.js.gz   332 KiB                 [emitted]  
+Entrypoint vendor_styles = vendor_styles.js
+Entrypoint vendor_src = vendor_src.js
+Entrypoint custom_styles = custom_styles.js
+Entrypoint main = main.js
+[0] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/vendor_styles.js 40 bytes {vendor_styles} [built]
+[1] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true script-loader!./ClientApp/src/assets/vendor/jquery/dist/jquery.min.js script-loader!./ClientApp/src/assets/vendor/popper.js/dist/popper.min.js script-loader!./ClientApp/src/assets/vendor/bootstrap/dist/js/bootstrap.min.js script-loader!./ClientApp/src/assets/vendor/slick-carousel/slick/slick.min.js script-loader!./ClientApp/src/assets/vendor/fancybox/dist/jquery.fancybox.min.js script-loader!./ClientApp/src/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/isotope/dist/isotope.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/smoothscroll/smoothscroll.js script-loader!./ClientApp/src/assets/vendor/vide/dist/jquery.vide.min.js 136 bytes {vendor_src} [built]
+[2] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/custom_styles.js 40 bytes {custom_styles} [built]
+[3] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/index.js 40 bytes {main} [built]
+[./ClientApp/src/assets/js/custom_styles.js] 28 bytes {custom_styles} [built]
+[./ClientApp/src/assets/js/index.js] 272 bytes {main} [built]
+[./ClientApp/src/assets/js/vendor_styles.js] 446 bytes {vendor_styles} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/bootstrap/dist/js/bootstrap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/bootstrap/dist/js/bootstrap.min.js 587 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/fancybox/dist/jquery.fancybox.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/fancybox/dist/jquery.fancybox.min.js 588 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js 588 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/isotope/dist/isotope.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/isotope/dist/isotope.pkgd.min.js 584 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/jquery/dist/jquery.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/jquery/dist/jquery.min.js 577 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/popper.js/dist/popper.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/popper.js/dist/popper.min.js 580 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/slick-carousel/slick/slick.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/slick-carousel/slick/slick.min.js 585 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/smoothscroll/smoothscroll.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/smoothscroll/smoothscroll.js 579 bytes {vendor_src} [built]
+    + 85 hidden modules 
+2019-01-04 12:09:15.5710||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Compiled successfully. 
+2019-01-04 12:09:15.5869|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2019-01-04 12:09:15.8964|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) 
+2019-01-04 12:09:15.9433|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) with arguments () - Validation state: Valid 
+2019-01-04 12:09:15.9495|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.773ms. 
+2019-01-04 12:09:15.9962|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-01-04 12:09:16.2976|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 325.5281ms. 
+2019-01-04 12:09:16.3258|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) in 427.1791ms 
+2019-01-04 12:09:16.3258|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/robots.txt   
+2019-01-04 12:09:16.3437|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2019-01-04 12:09:16.3437|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/logo_nordic.svg   
+2019-01-04 12:09:16.3512|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2019-01-04 12:09:16.3512|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/robots.txt'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\robots.txt' 
+2019-01-04 12:09:16.3512|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/webdesign1x.png   
+2019-01-04 12:09:16.3835|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 56.3856ms 200 text/plain 
+2019-01-04 12:09:16.4028|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/logo_nordic.svg'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\logo_nordic.svg' 
+2019-01-04 12:09:16.3835|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16785.4431ms 200 text/html; charset=utf-8 
+2019-01-04 12:09:16.4028|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 63.1107ms 200 image/svg+xml 
+2019-01-04 12:09:16.4156|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/webdesign1x.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\webdesign1x.png' 
+2019-01-04 12:09:16.4328|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 68.8086ms 200 image/png 
+2019-01-04 12:09:16.4814|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/webdevelopment1x.png   
+2019-01-04 12:09:16.4814|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/content1x.png   
+2019-01-04 12:09:16.4984|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/webdevelopment1x.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\webdevelopment1x.png' 
+2019-01-04 12:09:16.4984|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/content1x.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\content1x.png' 
+2019-01-04 12:09:16.5084|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 18.2ms 200 image/png 
+2019-01-04 12:09:16.4984|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 21.9011ms 200 image/png 
+2019-01-04 12:09:16.5329|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/itservices1x.png   
+2019-01-04 12:09:16.5329|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/support1x.png   
+2019-01-04 12:09:16.5437|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/itservices1x.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\itservices1x.png' 
+2019-01-04 12:09:16.5437|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16.0767ms 200 image/png 
+2019-01-04 12:09:16.5437|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/support1x.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\support1x.png' 
+2019-01-04 12:09:16.5591|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 24.5137ms 200 image/png 
+2019-01-04 12:09:16.5817|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2019-01-04 12:09:16.5917|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2019-01-04 12:09:16.5917|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2019-01-04 12:09:16.6033|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 252.0572ms 200 application/javascript 
+2019-01-04 12:09:16.6033|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\main.js' 
+2019-01-04 12:09:16.6282|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2019-01-04 12:09:16.6282|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 37.5894ms 200 application/javascript 
+2019-01-04 12:09:16.6405|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 58.8596ms 200 application/javascript 
+2019-01-04 12:09:16.8181|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2019-01-04 12:09:16.8200|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 476.3455ms 200 application/javascript 
+2019-01-04 12:09:17.2118|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-01-04 12:09:17.3299|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/startup/hero-banner.png   
+2019-01-04 12:09:17.3414|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/startup/hero-banner.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\startup\hero-banner.png' 
+2019-01-04 12:09:17.3414|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 21.2373ms 200 image/png 
+2019-01-04 12:09:17.3414|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/startup/bg-3.png   
+2019-01-04 12:09:17.3600|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/startup/bg-3.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\startup\bg-3.png' 
+2019-01-04 12:09:17.3600|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.7402ms 200 image/png 
+2019-01-04 12:09:17.3600|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fontawesome-webfont.woff2   
+2019-01-04 12:09:17.3854|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\fontawesome-webfont.woff2' 
+2019-01-04 12:09:17.3854|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.0565ms 200 font/woff2 
+2019-01-04 12:09:18.0512|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/favicon-32x32.png   
+2019-01-04 12:09:18.0512|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/manifest.json   
+2019-01-04 12:09:18.0597|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\favicon-32x32.png' 
+2019-01-04 12:09:18.0819|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/manifest.json'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\manifest.json' 
+2019-01-04 12:09:18.1083|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 57.002ms 200 image/png 
+2019-01-04 12:09:18.1286|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 76.2839ms 200 application/json 
+2019-01-04 12:09:18.1388|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/favicon-16x16.png   
+2019-01-04 12:09:18.1824|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-16x16.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\favicon-16x16.png' 
+2019-01-04 12:09:18.1969|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 58.0929ms 200 image/png 
+2019-01-04 12:09:19.0130|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/team.png   
+2019-01-04 12:09:19.0130|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/team.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\team.png' 
+2019-01-04 12:09:19.0241|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11.1229ms 200 image/png 
+2019-01-04 12:12:03.9112|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/experience1x.png   
+2019-01-04 12:12:03.9250|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/experience1x.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\experience1x.png' 
+2019-01-04 12:12:03.9250|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16.7136ms 200 image/png 
+2019-01-04 13:20:21.6323|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4264394.21ms 200 text/event-stream; charset=utf-8 
+2019-01-04 13:46:02.3227|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-01-04 14:24:26.0015||DEBUG|TemplateCoreWebTest.Program|init main 
+2019-01-04 14:24:26.8466||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Diana\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-01-04 14:24:31.8072||INFO|Microsoft.AspNetCore.NodeServices|development mode: true 
+2019-01-04 14:24:36.3182||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist has been removed. 
+2019-01-04 14:24:37.1162|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/   
+2019-01-04 14:24:37.3070||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: wait until bundle finished: / 
+2019-01-04 14:24:58.4985||INFO|Microsoft.AspNetCore.NodeServices|webpack built f4745bb6585e5c60b2ce in 21664ms 
+2019-01-04 14:24:58.6304||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Hash: f4745bb6585e5c60b2ce
+Version: webpack 4.23.1
+Time: 21664ms
+Built at: 2019-01-04 14:24:58
+                                                     Asset      Size         Chunks             Chunk Names
+../img/_/vendor/font-awesome/fonts/fontawesome-webfont.svg  55 bytes                 [emitted]  
+    ../img/_/vendor/linearicons/fonts/Linearicons-Free.svg  52 bytes                 [emitted]  
+                critical-foft-preload-fallback-optional.js  8.04 KiB                 [emitted]  
+                                          custom_styles.js   572 KiB  custom_styles  [emitted]  custom_styles
+                                       custom_styles.js.gz  91.8 KiB                 [emitted]  
+                                fonts/Linearicons-Free.eot  54.5 KiB                 [emitted]  
+                             fonts/Linearicons-Free.eot.gz  25.2 KiB                 [emitted]  
+                                fonts/Linearicons-Free.svg   201 KiB                 [emitted]  
+                             fonts/Linearicons-Free.svg.gz  54.7 KiB                 [emitted]  
+                                fonts/Linearicons-Free.ttf  54.3 KiB                 [emitted]  
+                             fonts/Linearicons-Free.ttf.gz  25.1 KiB                 [emitted]  
+                               fonts/Linearicons-Free.woff  54.4 KiB                 [emitted]  
+                            fonts/Linearicons-Free.woff.gz  25.2 KiB                 [emitted]  
+                              fonts/Linearicons-Free.woff2  21.3 KiB                 [emitted]  
+                                fonts/Stroke-Gap-Icons.eot  44.7 KiB                 [emitted]  
+                             fonts/Stroke-Gap-Icons.eot.gz  20.1 KiB                 [emitted]  
+                                           fonts/dosis.ttf  29.7 KiB                 [emitted]  
+                                        fonts/dosis.ttf.gz  15.3 KiB                 [emitted]  
+                                          fonts/dosis.woff  15.4 KiB                 [emitted]  
+                                         fonts/dosis.woff2  12.5 KiB                 [emitted]  
+                                     fonts/dosismedium.ttf  28.5 KiB                 [emitted]  
+                                  fonts/dosismedium.ttf.gz  15.1 KiB                 [emitted]  
+                                    fonts/dosismedium.woff  15.2 KiB                 [emitted]  
+                                   fonts/dosismedium.woff2  12.3 KiB                 [emitted]  
+                            fonts/dosissemibold-subset.ttf  19.4 KiB                 [emitted]  
+                         fonts/dosissemibold-subset.ttf.gz  11.7 KiB                 [emitted]  
+                          fonts/dosissemibold-subset.woff2  9.57 KiB                 [emitted]  
+                    fonts/dosissemibold-subset.zopfli.woff  11.7 KiB                 [emitted]  
+                                   fonts/dosissemibold.ttf  28.6 KiB                 [emitted]  
+                                fonts/dosissemibold.ttf.gz  15.1 KiB                 [emitted]  
+                                  fonts/dosissemibold.woff  15.3 KiB                 [emitted]  
+                                 fonts/dosissemibold.woff2  12.4 KiB                 [emitted]  
+                             fonts/fontawesome-webfont.eot   162 KiB                 [emitted]  
+                          fonts/fontawesome-webfont.eot.gz  95.9 KiB                 [emitted]  
+                             fonts/fontawesome-webfont.svg   434 KiB                 [emitted]  
+                          fonts/fontawesome-webfont.svg.gz   131 KiB                 [emitted]  
+                             fonts/fontawesome-webfont.ttf   162 KiB                 [emitted]  
+                          fonts/fontawesome-webfont.ttf.gz  95.8 KiB                 [emitted]  
+                            fonts/fontawesome-webfont.woff  95.7 KiB                 [emitted]  
+                           fonts/fontawesome-webfont.woff2  75.4 KiB                 [emitted]  
+                                 fonts/opensans-subset.ttf  16.6 KiB                 [emitted]  
+                              fonts/opensans-subset.ttf.gz  10.8 KiB                 [emitted]  
+                               fonts/opensans-subset.woff2  8.66 KiB                 [emitted]  
+                         fonts/opensans-subset.zopfli.woff  10.9 KiB                 [emitted]  
+                                        fonts/opensans.ttf  51.2 KiB                 [emitted]  
+                                     fonts/opensans.ttf.gz  31.2 KiB                 [emitted]  
+                                       fonts/opensans.woff  31.1 KiB                 [emitted]  
+                                      fonts/opensans.woff2  24.3 KiB                 [emitted]  
+                                    fonts/opensansbold.ttf  52.8 KiB                 [emitted]  
+                                 fonts/opensansbold.ttf.gz  30.8 KiB                 [emitted]  
+                                   fonts/opensansbold.woff  30.8 KiB                 [emitted]  
+                                  fonts/opensansbold.woff2  23.9 KiB                 [emitted]  
+                                fonts/opensanssemibold.ttf  52.1 KiB                 [emitted]  
+                             fonts/opensanssemibold.ttf.gz  31.5 KiB                 [emitted]  
+                               fonts/opensanssemibold.woff  31.4 KiB                 [emitted]  
+                              fonts/opensanssemibold.woff2  24.4 KiB                 [emitted]  
+                                                   main.js   224 KiB           main  [emitted]  main
+                                                main.js.gz  49.4 KiB                 [emitted]  
+                                                     sw.js  2.14 KiB                 [emitted]  
+                                             vendor_src.js   632 KiB     vendor_src  [emitted]  vendor_src
+                                          vendor_src.js.gz   138 KiB                 [emitted]  
+                                          vendor_styles.js  1.35 MiB  vendor_styles  [emitted]  vendor_styles
+                                       vendor_styles.js.gz   332 KiB                 [emitted]  
+Entrypoint vendor_styles = vendor_styles.js
+Entrypoint vendor_src = vendor_src.js
+Entrypoint custom_styles = custom_styles.js
+Entrypoint main = main.js
+[0] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/vendor_styles.js 40 bytes {vendor_styles} [built]
+[1] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true script-loader!./ClientApp/src/assets/vendor/jquery/dist/jquery.min.js script-loader!./ClientApp/src/assets/vendor/popper.js/dist/popper.min.js script-loader!./ClientApp/src/assets/vendor/bootstrap/dist/js/bootstrap.min.js script-loader!./ClientApp/src/assets/vendor/slick-carousel/slick/slick.min.js script-loader!./ClientApp/src/assets/vendor/fancybox/dist/jquery.fancybox.min.js script-loader!./ClientApp/src/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/isotope/dist/isotope.pkgd.min.js script-loader!./ClientApp/src/assets/vendor/smoothscroll/smoothscroll.js script-loader!./ClientApp/src/assets/vendor/vide/dist/jquery.vide.min.js 136 bytes {vendor_src} [built]
+[2] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/custom_styles.js 40 bytes {custom_styles} [built]
+[3] multi webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/src/assets/js/index.js 40 bytes {main} [built]
+[./ClientApp/src/assets/js/custom_styles.js] 28 bytes {custom_styles} [built]
+[./ClientApp/src/assets/js/index.js] 272 bytes {main} [built]
+[./ClientApp/src/assets/js/vendor_styles.js] 446 bytes {vendor_styles} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/bootstrap/dist/js/bootstrap.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/bootstrap/dist/js/bootstrap.min.js 587 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/fancybox/dist/jquery.fancybox.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/fancybox/dist/jquery.fancybox.min.js 588 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js 588 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/isotope/dist/isotope.pkgd.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/isotope/dist/isotope.pkgd.min.js 584 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/jquery/dist/jquery.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/jquery/dist/jquery.min.js 577 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/popper.js/dist/popper.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/popper.js/dist/popper.min.js 580 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/slick-carousel/slick/slick.min.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/slick-carousel/slick/slick.min.js 585 bytes {vendor_src} [built]
+[./node_modules/script-loader/index.js!./ClientApp/src/assets/vendor/smoothscroll/smoothscroll.js] ./node_modules/script-loader!./ClientApp/src/assets/vendor/smoothscroll/smoothscroll.js 579 bytes {vendor_src} [built]
+    + 85 hidden modules 
+2019-01-04 14:24:58.6304||INFO|Microsoft.AspNetCore.NodeServices|[34mi[39m [90mя╜вwdmя╜г[39m: Compiled successfully. 
+2019-01-04 14:24:58.6515|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2019-01-04 14:24:58.9607|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) 
+2019-01-04 14:24:59.0214|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) with arguments () - Validation state: Valid 
+2019-01-04 14:24:59.0441|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5.6583ms. 
+2019-01-04 14:24:59.0957|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2019-01-04 14:24:59.4343|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 370.552ms. 
+2019-01-04 14:24:59.4637|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/custom_styles.js   
+2019-01-04 14:24:59.4637|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action TemplateCoreWebTest.Controllers.HomeController.Index (TemplateCoreWebTest) in 510.5676ms 
+2019-01-04 14:24:59.4807|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/logo_nordic.svg   
+2019-01-04 14:24:59.4807|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/webdesign1x.png   
+2019-01-04 14:24:59.5000|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_styles.js   
+2019-01-04 14:24:59.5128|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/logo_nordic.svg'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\logo_nordic.svg' 
+2019-01-04 14:24:59.5128|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 34.5629ms 200 image/svg+xml 
+2019-01-04 14:24:59.5128|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/webdesign1x.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\webdesign1x.png' 
+2019-01-04 14:24:59.5259|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 33.6591ms 200 image/png 
+2019-01-04 14:24:59.5418|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 22426.0013ms 200 text/html; charset=utf-8 
+2019-01-04 14:24:59.5631|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/custom_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\custom_styles.js' 
+2019-01-04 14:24:59.5953|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/content1x.png   
+2019-01-04 14:24:59.5953|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 135.1834ms 200 application/javascript 
+2019-01-04 14:24:59.6100|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/content1x.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\content1x.png' 
+2019-01-04 14:24:59.6100|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/webdevelopment1x.png   
+2019-01-04 14:24:59.6294|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 34.0863ms 200 image/png 
+2019-01-04 14:24:59.6463|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/webdevelopment1x.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\webdevelopment1x.png' 
+2019-01-04 14:24:59.6627|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52.6588ms 200 image/png 
+2019-01-04 14:24:59.7199|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/itservices1x.png   
+2019-01-04 14:24:59.7313|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/support1x.png   
+2019-01-04 14:24:59.7313|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/itservices1x.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\itservices1x.png' 
+2019-01-04 14:24:59.7455|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 25.6617ms 200 image/png 
+2019-01-04 14:24:59.7455|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/support1x.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\support1x.png' 
+2019-01-04 14:24:59.7902|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 58.8581ms 200 image/png 
+2019-01-04 14:24:59.7920|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/vendor_src.js   
+2019-01-04 14:24:59.7920|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/main.js   
+2019-01-04 14:24:59.8148|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_src.js'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\vendor_src.js' 
+2019-01-04 14:24:59.8244|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/main.js'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\main.js' 
+2019-01-04 14:24:59.8244|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 33.0935ms 200 application/javascript 
+2019-01-04 14:24:59.8244|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 38.513ms 200 application/javascript 
+2019-01-04 14:24:59.9771|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/vendor_styles.js'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\vendor_styles.js' 
+2019-01-04 14:24:59.9802|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 480.0236ms 200 application/javascript 
+2019-01-04 14:25:00.3772|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   
+2019-01-04 14:25:00.4680|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/startup/hero-banner.png   
+2019-01-04 14:25:00.4680|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/startup/hero-banner.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\startup\hero-banner.png' 
+2019-01-04 14:25:00.4680|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/startup/bg-3.png   
+2019-01-04 14:25:00.4806|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.6732ms 200 image/png 
+2019-01-04 14:25:00.4806|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/dist/fonts/fontawesome-webfont.woff2   
+2019-01-04 14:25:00.4806|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/startup/bg-3.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\startup\bg-3.png' 
+2019-01-04 14:25:00.4994|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 20.8238ms 200 image/png 
+2019-01-04 14:25:00.4994|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/dist/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\dist\fonts\fontawesome-webfont.woff2' 
+2019-01-04 14:25:00.5209|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 33.6658ms 200 font/woff2 
+2019-01-04 14:25:01.9587|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/manifest.json   
+2019-01-04 14:25:01.9662|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/team.png   
+2019-01-04 14:25:01.9662|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/manifest.json'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\manifest.json' 
+2019-01-04 14:25:01.9662|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/team.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\team.png' 
+2019-01-04 14:25:01.9802|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 21.5509ms 200 application/json 
+2019-01-04 14:25:01.9802|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.5688ms 200 image/png 
+2019-01-04 14:35:51.1159|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/img/home/experience1x.png   
+2019-01-04 14:35:51.1302|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/img/home/experience1x.png'. Physical path: 'C:\Users\Diana\Work\Projects\TemplateCoreWeb_0.2.1\TemplateCoreWeb\TemplateCoreWeb\wwwroot\img\home\experience1x.png' 
+2019-01-04 14:35:51.1302|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 17.7004ms 200 image/png 
+2019-01-04 14:35:55.3403|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:53185/__webpack_hmr   

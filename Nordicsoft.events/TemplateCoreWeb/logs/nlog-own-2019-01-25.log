@@ -1,0 +1,15 @@
+2019-01-25 10:13:49.0088||DEBUG|TemplateCoreWebTest.Program|init main |url: |action: 
+2019-01-25 10:13:54.6526||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2019-01-25 10:14:11.8122|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 
+2019-01-25 10:16:54.4659||DEBUG|TemplateCoreWebTest.Program|init main |url: |action: 
+2019-01-25 10:16:59.5175||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2019-01-25 10:17:13.2940|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 
+2019-01-25 10:28:11.7592||DEBUG|TemplateCoreWebTest.Program|init main |url: |action: 
+2019-01-25 10:28:17.6639||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2019-01-25 10:28:30.1098|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 
+2019-01-25 10:53:53.8917||DEBUG|TemplateCoreWebTest.Program|init main |url: |action: 
+2019-01-25 10:53:58.9517||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2019-01-25 10:54:12.5700|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 
+2019-01-25 11:32:35.7124||DEBUG|TemplateCoreWebTest.Program|init main |url: |action: 
+2019-01-25 11:32:40.9429||ERROR|Microsoft.AspNetCore.NodeServices|clean-webpack-plugin: C:\Users\Diana\Work\Projects\Weeding\TemplateCoreWeb\wwwroot\dist has been removed. |url: |action: 
+2019-01-25 11:32:54.8452|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: 

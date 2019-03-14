@@ -1,0 +1,425 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@section metatags{
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NordicSoft | YOUCANHACKIT" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
+    <meta property="og:image" content="@($"{Context.Request.Scheme}://{Context.Request.Host}/img/noridc_og_image.jpg")" />
+    <meta property="og:image:width" content="1269" />
+    <meta property="og:image:height" content="642" />
+    <meta name="description" content="Register now if you are sure #youcanhackit. Learn more info about hackathon itself, prizes and facilities we offer." />
+}
+@section links
+    {
+    <link rel="canonical" href="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
+}
+
+<div id="preloader">
+    <div id="preloader-inner"></div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-faded navbar-sticky navbar-transparent">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarevent" aria-controls="navbarevent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">
+        <img src="images/logo-light.png" alt="" class="logo-first">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarevent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" data-scroll href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-scroll href="#schedule">Schedule</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-scroll href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" data-scroll href="#facilities">Facilities</a>
+            </li>
+            @*<li class="nav-item">
+                    <a class="nav-link btn btn-primary" href="#" data-toggle="modal" data-target="#ticketsModal">Register Now</a>
+                </li>*@
+        </ul>
+    </div>
+</nav>
+
+<div id="home" class="fullscreen-hero bg-overlay bg-parallax" data-jarallax='{"speed": 0.4}' style='background-image: url("images/event/bg4.jpg")'>
+    <div class="hero-content">
+        <div class="hero-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 text-center mr-auto ml-auto">
+                        <h5 class="text-white font700">NordicSoft annual high-intensity coding and designing Hackathon</h5>
+                        <h5 class="font700 mb20 text-white display-3 text-uppercase">#YOUCANHACKIT 2019</h5>
+                        <p class="text-white-gray mb30 lead">
+                            When: 7, November – 9, November 2019<br>
+                            Where: Ulemiste City park, Tallinn
+                        </p>
+                        <a class="btn btn-primary btn-width" href="#" data-toggle="modal" data-target="#ticketsModal">Register Now</a>
+                        @*<div class="social-buttons">
+                                <a data-scroll href="https://www.youtube.com/watch?v=_xAklPmvnqo" class="btn btn-link modal-video"><i class="fa fa-play"></i> Watch film</a>
+                            </div>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="schedule" class="pt90 pb90">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 mr-auto ml-auto text-center">
+                <div class="center-title mb60">
+                    <h2>Hackathon Schedule</h2>
+                    <p class="lead">
+                        07 - 09 November 2019
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-b-30">
+            <div class="col-lg-10 mr-auto ml-auto">
+                <div>
+                    <div class="row">
+                        <div class="offset-md-3 col-md-9">
+                            <!-- Nav tabs -->
+                            <ul class="nav tabs-schedule nav-tabs list-inline" role="tablist">
+                                <li role="presentation" class="nav-item"><a class="nav-link active" href="#first" aria-controls="first" role="tab" data-toggle="tab">Day 1 <span>1 November 2016</span></a></li>
+                                <li role="presentation" class="nav-item"><a class="nav-link" href="#second" aria-controls="second" role="tab" data-toggle="tab">Day 2 <span>2 November 2016</span></a></li>
+                                <li role="presentation" class="nav-item"><a class="nav-link" href="#third" aria-controls="third" role="tab" data-toggle="tab">Day 3 <span>3 November 2016</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade active show" id="first">
+                            <div class="row margin-b-30">
+                                <div class="col-sm-3 event-info">
+                                    <span>07.00 pm</span>
+                                </div>
+                                <div class="col-sm-9 event-detail">
+                                    <h3>Registration & Dinner</h3>
+                                </div>
+                            </div>
+                            <div class="row margin-b-30">
+                                <div class="col-sm-3 event-info">
+                                    <span>08.00 pm</span>
+                                </div>
+                                <div class="col-sm-9 event-detail">
+                                    <h3>Welcome & Briefing</h3>
+                                </div>
+                            </div>
+                            <div class="row margin-b-30">
+                                <div class="col-sm-3 event-info">
+                                    <span>10.00 pm </span>
+                                </div>
+                                <div class="col-sm-9 event-detail">
+                                    <h3>End Session</h3>
+                                </div>
+                            </div>
+                            @*<div class="row">
+                                <div class="col-sm-3 event-info">
+                                    <span>Monday4</span>
+                                    <span>2:00 AM to 4:30 AM</span>
+                                    <span class="event-hall">10.00 pm</span>
+                                </div>
+                                <div class="col-sm-9 event-detail">
+                                    <h3>Bootstrap with AngularJs</h3>
+                                    <div class="row">
+                                        @*<div class="col-sm-2">
+                                                            <img src="images/team4.jpg" alt="" class="img-fluid">
+                                                        </div>*@
+                                        @*<div class="col-sm-12">
+                                            <h4>Smitha Doe</h4>
+                                            <p>
+                                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings, the master-builder of human happiness
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>*@
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="second">
+                            <div class="row margin-b-30">
+                                <div class="col-sm-3 event-info">
+                                    <span>09.00 am </span>
+                                </div>
+                                <div class="col-sm-9 event-detail">
+                                    <h3>Registration & Breakfast</h3>
+                                </div>
+                            </div>
+                            <div class="row margin-b-30">
+                                <div class="col-sm-3 event-info">
+                                    <span>10.00 am </span>
+                                </div>
+                                <div class="col-sm-9 event-detail">
+                                    <h3>Welcome & Briefing</h3>
+                                </div>
+                            </div>
+                            <div class="row margin-b-30">
+                                <div class="col-sm-3 event-info">
+                                    <span>11.30 am</span>
+                                </div>
+                                <div class="col-sm-9 event-detail">
+                                    <h3>Lunch</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3 event-info">
+                                    <span>12.30 pm</span>
+                                </div>
+                                <div class="col-sm-9 event-detail">
+                                    <h3>Kickoff Hackathon</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3 event-info">
+                                    <span>07.00 pm</span>
+                                </div>
+                                <div class="col-sm-9 event-detail">
+                                    <h3>Dinner</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade " id="third">
+                            <div class="row margin-b-30">
+                                <div class="col-sm-3 event-info">
+                                    <span>08.00 am</span>
+                                </div>
+                                <div class="col-sm-9 event-detail">
+                                    <h3>Breakfast</h3>
+                                </div>
+                            </div>
+                            <div class="row margin-b-30">
+                                <div class="col-sm-3 event-info">
+                                    <span>12.00 pm</span>
+                                </div>
+                                <div class="col-sm-9 event-detail">
+                                    <h3>End Hackathon</h3>
+                                </div>
+                            </div>
+                            <div class="row margin-b-30">
+                                <div class="col-sm-3 event-info">
+                                    <span>12.15 pm</span>
+                                </div>
+                                <div class="col-sm-9 event-detail">
+                                    <h3>12.15 pm </h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3 event-info">
+                                    <span>03.00 pm</span>
+                                </div>
+                                <div class="col-sm-9 event-detail">
+                                    <h3>End Event & Prizes Giving Ceremony</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="bg-light">
+    <div class="half-image-content one-half-image-content">
+        <div class="content-img bg-parallax pos-left hidden-md-down" data-jarallax='{"speed": 0.2}' style="background:url(images/event/about.jpg) no-repeat;"></div>
+        <img src="images/event/about.jpg" class="visible-lg-down hidden-lg-up img-fluid img-about" alt="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="offset-lg-4 col-lg-8 pl-110 pt80 pb80">
+                    <h2 class="mb20">About  NordicSoft’s #YOUCANHACKIT 2019</h2>
+                    <div class="clearfix">
+                        <p>Hackathons are about great learning and teaching experience, but prizes ain’t bad motivation, isn’t it? Meet and network with fellow techies, experienced mentors, and company partners throughout the 24 hours and win great cash prizes for your innovative ideas.</p>
+                        <p>So if you think #youcanhackit, bring your A-game and sign up now.</p>
+                        <br>
+                        <h5 class="font700">Conference will start in</h5>
+                        <div id="clock" data-until-date="2019/03/13 11:00:00" class="row mt-4 mb-4"></div>
+                        <a href="#schedule" data-scroll class="btn btn-primary mr-3 mb-2">Apply Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class=" pt90 pb60" id="facilities">
+    <div class="container">
+        <div class="center-title mb60 text-center">
+            <h2>Event Facilities</h2>
+            <p>Hackathon attenders will be provided with.</p>
+        </div>
+        <div class="row">
+            @*<div class="col-md-4 mb30 text-center">
+                <i class="fa fa-plane fa-3x text-primary mb20"></i>
+                <h4>Travel</h4>
+                <p>
+                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.
+                </p>
+            </div>*@
+            <div class="col-md-6 mb30 text-center">
+                <i class="fa fa-bed fa-3x text-primary mb20"></i>
+                <h4>Accommodation</h4>
+                <p>Typically, teams are working overnight in order to finish up the projects. We will provide comfortable spaces for you to be able to take naps if needed.</p>
+            </div>
+            <div class="col-md-6 mb30 text-center">
+                <i class="fa fa-spoon fa-3x text-primary mb20"></i>
+                <h4>Meals & Drinks</h4>
+                <p>All meals are included and will be provided according to the schedule. Also, there will be coffee spots with alcohol-free drinks and fresh cookies.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-dark contact-us">
+    <div class="half-image-content two-half-image-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 pl-110 pt80 pb80">
+                    <div class="mr-auto m-auto mb30">
+                        <div class="center-title mb30">
+                            <h2 class="text-white">Contact us</h2>
+                            <p class="text-white-gray">Subscribe to our newsletter to get the Hackathon updates.</p>
+                        </div>
+                        <div class="center-title mb30">
+                            <h2 class="text-white">Social</h2>
+                            <p class="text-white-gray">Join our social media now and get to know us better.</p>
+                        </div>
+                        <div class="tags-post">
+                            <div class="cleafix">
+                                <a href="#" class="social-icon si-dark si-colored-facebook">
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon  si-dark si-colored-twitter">
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon si-dark si-colored-linkedin">
+                                    <i class="fa fa-linkedin"></i>
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-img bg-parallax pos-right hidden-md-down">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2029.67572079907!2d24.797930116195655!3d59.421804110646406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692eb55d55f3afb%3A0x102b6ddb991c33d6!2s%C3%9Clemiste+City+Park!5e0!3m2!1sru!2sua!4v1549977385649" width="100%" height="600" frameborder="0" style="border: 0"></iframe>
+        </div>
+    </div>
+</section>
+<section class="pt90 pb60">
+    <div class="container">
+        <div class="row newsletter-row">
+            <div class="col-lg-10 mr-auto ml-auto">
+                <div class="row">
+                    <div class="offset-lg-3 col-lg-9">
+                        <div class="center-title mb30 text-center">
+                            <h2>Subscribe to our newsletter</h2>
+                        </div>
+                    </div>
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="col-sm-3 event-info"><span>Name</span></div>
+                        <div class="col-sm-9 event-detail">
+                            <input type="text" class="form-control" required="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 event-info"><span>Email</span></div>
+                        <div class="col-sm-9 event-detail">
+                            <input type="email" class="form-control" required="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 event-info pb-0"></div>
+                        <div class="col-sm-9 event-detail">
+                            <button type="submit" class="btn btn-primary btn-block btn-square">Subscribe</button>
+                            <label class="custom-checkbox accept-terms">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Accept our <a href="#">terms &amp; conditions</a></span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-light footer">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <span>&copy; 2019 NordicSoft. All rights reserved</span>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<div class="modal fade modal-event-form" id="ticketsModal" tabindex="-1" role="dialog" aria-labelledby="ticketsModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title h4" id="exampleModalLabel">Register for conference</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="ti-close"></i></span>
+                </button>
+            </div>
+            <form method="POST" asp-controller="Common" asp-action="SendFeedback" id="contact-form"> 
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 mb10">
+                            <input type="text" name="name" class="form-control" placeholder="Name" required="">
+                        </div>
+                        <div class="col-md-12 mb10">
+                            <input type="text" name="email" class="form-control" placeholder="Email address" required="">
+                        </div>
+                        <div class="col-md-12 mb10">
+                            <input type="text" name="phone" class="form-control" placeholder="Phone" required="">
+                        </div>
+                        <div class="col-md-12 mb10">
+                            <select class="form-control" name="numberSeats" required="">
+                                <option value="">Number of Seats</option>
+                                <option value="1">1 Seat</option>
+                                <option value="2">2 Seats</option>
+                                <option value="3">3 Seats</option>
+                                <option value="4">4 Seats</option>
+                                <option value="5">5 Seats</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12 mb10">
+                            <select class="form-control" name="selectPass" required="">
+                                <option value="">Select a Pass</option>
+                                <option value="1">Bronze pass - 99$/1 seat</option>
+                                <option value="2">Silver pass - 199$/1 seat</option>
+                                <option value="3">Gold pass - 299$/1 seat</option>
+                                <option value="4">VIP pass - 399$/1 seat</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="ti-angle-up"></i></a>
+
