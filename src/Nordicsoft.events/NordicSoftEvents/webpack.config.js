@@ -133,8 +133,8 @@ module.exports = (env, options) => {
             loader: 'file-loader',
             options: {
               name: '[path][name].[ext]',
-              outputPath: '../img/',
-              context: './ClientApp/src/assets/img'
+              outputPath: '../images/',
+              context: './ClientApp/src/assets/images'
             }
           }]
         },

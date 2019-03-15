@@ -6,17 +6,20 @@
 }
 
 .fullscreen-hero .hero-content {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: table;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    z-index: 2;
 }
 
-.fullscreen-hero .hero-content .hero-inner {
+/*.fullscreen-hero .hero-content .hero-inner {
     display: table-cell;
     width: 100%;
     vertical-align: middle;
-}
+}*/
 
 .fullscreen-hero:before {
     content: "";

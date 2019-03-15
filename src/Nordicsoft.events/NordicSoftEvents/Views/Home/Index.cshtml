@@ -1,19 +1,19 @@
-﻿@{
+﻿@using Event
+@{
     ViewData["Title"] = "Home Page";
 }
 @section metatags{
     <meta property="og:type" content="website" />
     <meta property="og:title" content="NordicSoft | YOUCANHACKIT" />
+    <meta property="og:url" content="@Html.Raw($"https://{Context.Request.Host}{Context.Request.Path}")" />
     <meta property="og:description" content="Register now if you are sure #youcanhackit. Learn more info about hackathon itself, prizes and facilities we offer." />
-    @*<meta property="og:url" content="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
-    <meta property="og:image" content="@($"{Context.Request.Scheme}://{Context.Request.Host}/img/noridc_og_image.jpg")" />
-    <meta property="og:image:width" content="1269" />
-    <meta property="og:image:height" content="642" />*@
+    <meta property="og:image" content="@($"{Context.Request.Scheme}://{Context.Request.Host}/images/events_og_image.jpg")" />
+
     <meta name="description" content="Register now if you are sure #youcanhackit. Learn more info about hackathon itself, prizes and facilities we offer." />
 }
 @section links
     {
-    <link rel="canonical" href="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
+    <link rel="canonical" href="@Html.Raw($"https://{Context.Request.Host}{Context.Request.Path}")" />
 }
 
 <div id="preloader">
@@ -26,7 +26,6 @@
     </button>
     <a class="navbar-brand logo" href="/">
         #YOUCANHACKIT
-        @*<img src="images/logo-light.png" alt="" class="logo-first">*@
     </a>
     <div class="collapse navbar-collapse" id="navbarevent">
         <ul class="navbar-nav ml-auto">
@@ -43,14 +42,11 @@
             <li class="nav-item">
                 <a class="nav-link" data-scroll href="#facilities">Facilities</a>
             </li>
-            @*<li class="nav-item">
-                    <a class="nav-link btn btn-primary" href="#" data-toggle="modal" data-target="#ticketsModal">Register Now</a>
-                </li>*@
         </ul>
     </div>
 </nav>
 
-<div id="home" class="fullscreen-hero bg-overlay bg-parallax" data-jarallax='{"speed": 0.4}' style='background-image: url("images/event/bg4.jpg")'>
+<div id="home" class="fullscreen-hero bg-overlay bg-parallax" data-jarallax='{"speed": 0.4}' style='background-image: url("images/event/bg.jpg")'>
     <div class="hero-content">
         <div class="hero-inner">
             <div class="container">
@@ -63,9 +59,6 @@
                             Where: Ulemiste City park, Tallinn
                         </p>
                         <a class="btn btn-primary btn-width" href="#" data-toggle="modal" data-target="#ticketsModal">Register Now</a>
-                        @*<div class="social-buttons">
-                                <a data-scroll href="https://www.youtube.com/watch?v=_xAklPmvnqo" class="btn btn-link modal-video"><i class="fa fa-play"></i> Watch film</a>
-                            </div>*@
                     </div>
                 </div>
             </div>
@@ -92,9 +85,9 @@
                         <div class="offset-md-3 col-md-9">
                             <!-- Nav tabs -->
                             <ul class="nav tabs-schedule nav-tabs list-inline" role="tablist">
-                                <li role="presentation" class="nav-item"><a class="nav-link active" href="#first" aria-controls="first" role="tab" data-toggle="tab">Day 1 <span>1 November 2016</span></a></li>
-                                <li role="presentation" class="nav-item"><a class="nav-link" href="#second" aria-controls="second" role="tab" data-toggle="tab">Day 2 <span>2 November 2016</span></a></li>
-                                <li role="presentation" class="nav-item"><a class="nav-link" href="#third" aria-controls="third" role="tab" data-toggle="tab">Day 3 <span>3 November 2016</span></a></li>
+                                <li role="presentation" class="nav-item"><a class="nav-link active" href="#first" aria-controls="first" role="tab" data-toggle="tab">Day 1 <span>7 November 2019</span></a></li>
+                                <li role="presentation" class="nav-item"><a class="nav-link" href="#second" aria-controls="second" role="tab" data-toggle="tab">Day 2 <span>8 November 2019</span></a></li>
+                                <li role="presentation" class="nav-item"><a class="nav-link" href="#third" aria-controls="third" role="tab" data-toggle="tab">Day 3 <span>9 November 2019</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -125,27 +118,6 @@
                                     <h3>End Session</h3>
                                 </div>
                             </div>
-                            @*<div class="row">
-                                <div class="col-sm-3 event-info">
-                                    <span>Monday4</span>
-                                    <span>2:00 AM to 4:30 AM</span>
-                                    <span class="event-hall">10.00 pm</span>
-                                </div>
-                                <div class="col-sm-9 event-detail">
-                                    <h3>Bootstrap with AngularJs</h3>
-                                    <div class="row">
-                                        @*<div class="col-sm-2">
-                                                            <img src="images/team4.jpg" alt="" class="img-fluid">
-                                                        </div>*@
-                                        @*<div class="col-sm-12">
-                                            <h4>Smitha Doe</h4>
-                                            <p>
-                                                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings, the master-builder of human happiness
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>*@
                         </div>
                         <div role="tabpanel" class="tab-pane fade" id="second">
                             <div class="row margin-b-30">
@@ -211,7 +183,7 @@
                                     <span>12.15 pm</span>
                                 </div>
                                 <div class="col-sm-9 event-detail">
-                                    <h3>12.15 pm </h3>
+                                    <h3>Lunch</h3>
                                 </div>
                             </div>
                             <div class="row">
@@ -243,8 +215,8 @@
                         <p>So if you think #youcanhackit, bring your A-game and sign up now.</p>
                         <br>
                         <h5 class="font700">Conference will start in</h5>
-                        <div id="clock" data-until-date="2019/03/13 11:00:00" class="row mt-4 mb-4"></div>
-                        <a href="#schedule" data-scroll class="btn btn-primary mr-3 mb-2">Apply Now</a>
+                        <div id="clock" data-until-date="2019/11/07 19:00:00" class="row mt-4 mb-4"></div>
+                        <a href="#schedule" data-toggle="modal" data-target="#ticketsModal" class="btn btn-primary mr-3 mb-2">Apply Now</a>
                     </div>
                 </div>
 
@@ -260,13 +232,6 @@
             <p>Hackathon attenders will be provided with.</p>
         </div>
         <div class="row">
-            @*<div class="col-md-4 mb30 text-center">
-                <i class="fa fa-plane fa-3x text-primary mb20"></i>
-                <h4>Travel</h4>
-                <p>
-                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.
-                </p>
-            </div>*@
             <div class="col-md-6 mb30 text-center">
                 <i class="fa fa-bed fa-3x text-primary mb20"></i>
                 <h4>Accommodation</h4>
@@ -316,7 +281,7 @@
             </div>
         </div>
         <div class="content-img bg-parallax pos-right hidden-md-down">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2029.67572079907!2d24.797930116195655!3d59.421804110646406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692eb55d55f3afb%3A0x102b6ddb991c33d6!2s%C3%9Clemiste+City+Park!5e0!3m2!1sru!2sua!4v1549977385649" width="100%" height="600" frameborder="0" style="border: 0"></iframe>
+            <iframe width="100%" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=%C3%9Clemiste%20City%20Park&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </div>
     </div>
 </section>
@@ -351,7 +316,6 @@
                             <label class="custom-checkbox accept-terms">
                                 <input type="checkbox" class="custom-control-input">
                                 <span class="custom-control-indicator"></span>
-                                <span class="custom-control-description">Accept our <a href="#">terms &amp; conditions</a></span>
                             </label>
                         </div>
                     </div>
@@ -365,7 +329,7 @@
     <div class="container text-center">
         <div class="row">
             <div class="col-lg-12">
-                <span>&copy; 2019 NordicSoft. All rights reserved</span>
+                <span>&copy; 2019 Powered by NordicSoft. All rights reserved.</span>
             </div>
         </div>
 
@@ -381,7 +345,7 @@
                     <span aria-hidden="true"><i class="ti-close"></i></span>
                 </button>
             </div>
-            <form method="POST" asp-controller="Common" asp-action="SendFeedback" id="contact-form"> 
+            <form method="POST" asp-controller="Common" asp-action="SendFeedback" id="contact-form">
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-12 mb10">
