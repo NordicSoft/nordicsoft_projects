@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
@@ -7,20 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="logs\**" />
-    <Content Remove="logs\**" />
-    <EmbeddedResource Remove="logs\**" />
-    <None Remove="logs\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="ClientApp\src\assets\css\bootstrap\" />
     <Folder Include="ClientApp\src\assets\css\plugins\" />
     <Folder Include="ClientApp\src\assets\scss\component\_sections\" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Credentials\.aws\credentials" />
+    <Content Include="Credentials\.aws\credentials">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
