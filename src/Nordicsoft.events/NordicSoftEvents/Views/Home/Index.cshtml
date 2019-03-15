@@ -8,11 +8,9 @@
     <meta property="og:url" content="@Html.Raw($"https://{Context.Request.Host}{Context.Request.Path}")" />
     <meta property="og:description" content="Register now if you are sure #youcanhackit. Learn more info about hackathon itself, prizes and facilities we offer." />
     <meta property="og:image" content="@($"{Context.Request.Scheme}://{Context.Request.Host}/images/events_og_image.jpg")" />
-
     <meta name="description" content="Register now if you are sure #youcanhackit. Learn more info about hackathon itself, prizes and facilities we offer." />
 }
-@section links
-    {
+@section links{
     <link rel="canonical" href="@Html.Raw($"https://{Context.Request.Host}{Context.Request.Path}")" />
 }
 
