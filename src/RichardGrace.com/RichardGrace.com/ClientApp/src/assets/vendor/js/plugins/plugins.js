@@ -478,8 +478,8 @@ $('#name').focus(function() {
     this.width = element.offsetWidth;
     this.height = element.offsetHeight;
     this.setDimensions = function () {
-      this.width = this.element.offsetWidth;
-      this.height = this.element.offsetHeight;
+      this.width = element.offsetWidth;
+      this.height = element.offsetHeight;
       this.canvas.width = this.width;
       this.canvas.height = this.height;
     };
@@ -512,6 +512,14 @@ $('#name').focus(function() {
     window.removeEventListener('resize', canvas.setDimensions);
     canvas.halt = true;
   };
+    //Canvas.prototype.setDimensions = function () {
+    //    var canvas = this;
+
+    //    this.width = this.element.offsetWidth;
+    //    this.height = this.element.offsetHeight;
+    //    this.canvas.width = this.width;
+    //    this.canvas.height = this.height;
+    //};
 
   function ConfettiClass(config) {
     for (var prop in config) {
@@ -536,7 +544,7 @@ $('#name').focus(function() {
     animate: animate.bind(global),
     createCanvas: function (element, canvas) {
       var newCanvas = new Canvas(element, canvas);
-      window.addEventListener('resize', newCanvas.setDimensions);
+      window.addEventListener('resize', newCanvas.setDimensions.bind(newCanvas));
       newCanvas.setDimensions();
 
       return newCanvas;

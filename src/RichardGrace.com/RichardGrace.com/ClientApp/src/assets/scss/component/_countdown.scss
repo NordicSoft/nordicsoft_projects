@@ -1,0 +1,21 @@
+﻿#countdown span {
+    width: 25%;
+    display: inline-block;
+    float: left;
+    font-size: 70px;
+    font-weight: 300
+}
+
+#countdown small {
+    font-weight: 300;
+    font-size: 18px;
+    display: block;
+    clear: both;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#countdown {
+    overflow: hidden;
+    padding-bottom: 80px;
+}

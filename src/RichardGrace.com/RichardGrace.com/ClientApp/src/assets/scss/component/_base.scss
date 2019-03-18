@@ -1,4 +1,5 @@
 @import "variables";
+
 body {
     overflow-x: hidden;
     font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -84,7 +85,7 @@ h6 {
     display: block;
 }
 
-.mb-45{
+.mb-45 {
     margin-bottom: 45px;
 }
 
@@ -203,6 +204,7 @@ img::-moz-selection {
 .col-md-5th {
     width: 20%
 }
+
 .thin-hr {
     width: 180px;
     margin: 45px auto;
@@ -215,44 +217,7 @@ img::-moz-selection {
         border-color: $light-gray;
     }
 }
-/*.thin-hr {
-    margin: 30px 0 40px;
-    width: 100%;
-    clear: both;
-    display: block;
-    position: relative;
-    border: none;
-    text-align: center;
-}*/
-/*.thin-hr.bordered {
-    margin: 20px 0;
-    width: 100%;
-    clear: both;
-    display: block;
-    position: relative;
-    border: 1px solid #333;
-}
 
-.thin-hr:after {
-    content: '';
-    position: absolute;
-    width: 180px;
-    height: 2px;
-    background-color: #333;
-    left: 50%;
-    margin-left: -80px;
-}
-
-.thin-hr:before {
-    font-family: 'FontAwesome';
-    content: "\f004";
-    color: #C10E1F;
-    position: absolute;
-    width: 180px;
-    margin-left: -80px;
-    margin-top: -10px;
-    z-index: 5;
-}*/
 .rotate-45 {
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -275,10 +240,18 @@ img::-moz-selection {
     line-height: 32px;
 }
 
+.lead, p {
+    #when &,
+    #where & {
+        font-size: 16px;
+    }
+}
+
 .white {
     color: rgb(255, 255, 255);
 }
-@media(max-width: 767px){
+
+@media(max-width: 767px) {
     .max-sm-width {
         max-width: 450px;
         margin-left: auto;
