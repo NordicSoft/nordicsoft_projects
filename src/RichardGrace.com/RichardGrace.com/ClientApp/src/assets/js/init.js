@@ -1,4 +1,4 @@
-$(document).ready(function(){
+(function ($) {
     'use strict';
     $('#headerwrap').backstretch([
         "img/bg/bg1.jpg",
@@ -279,5 +279,4 @@ $(window).load(function() {
         this.angle += 0.01;
         this.tiltAngle += 0.1;
     }
-});
-
+}(jQuery));

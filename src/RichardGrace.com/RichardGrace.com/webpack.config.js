@@ -28,7 +28,7 @@ module.exports = (env, options) => {
         "script-loader!./ClientApp/src/assets/vendor/js/plugins/plugins.js",
         "script-loader!./ClientApp/src/assets/vendor/js/jconfirm/jquery-confirm.min.js",
         //"script-loader!./ClientApp/src/assets/vendor/js/maps/maps.js",
-        "script-loader!./ClientApp/src/assets/vendor/js/init.js"
+
         ],
 
       custom_styles: './ClientApp/src/assets/js/custom_styles.js',
