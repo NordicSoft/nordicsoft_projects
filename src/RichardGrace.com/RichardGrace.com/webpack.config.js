@@ -34,7 +34,7 @@ module.exports = (env, options) => {
       custom_styles: './ClientApp/src/assets/js/custom_styles.js',
       main: './ClientApp/src/assets/js/index.js'
     },
-    devtool: 'eval',
+      devtool: 'source-map',
     output: {
       path: path.resolve(__dirname, './wwwroot/dist'),
       filename: "[name].js",

@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="ClientApp\src\assets\css\bootstrap\" />
     <Folder Include="ClientApp\src\assets\css\plugins\" />
-    <Folder Include="ClientApp\src\assets\scss\component\_sections\" />
   </ItemGroup>
 
   <ItemGroup>
