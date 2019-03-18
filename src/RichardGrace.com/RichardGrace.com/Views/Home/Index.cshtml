@@ -6,8 +6,8 @@
     <meta property="og:title" content="Wedding | Richard and Grace" />
     <meta property="og:description" content="We are happy to invite you to celebrate our special day with us, click here to find some useful and interesting information about us and our wedding." />
     <meta property="og:url" content="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
-    <meta property="og:image" content="@($"{Context.Request.Scheme}://{Context.Request.Host}/img/noridc_og_image.jpg")" />
-    <meta property="og:image:width" content="1269" />
+    <meta property="og:image" content="@($"{Context.Request.Scheme}://{Context.Request.Host}/img/richard-grace_og_image.jpg")" />
+    <meta property="og:image:width" content="1024" />
     <meta property="og:image:height" content="642" />
     <meta name="description" content="We are happy to invite you to celebrate our special day with us, click here to find some useful and interesting information about us and our wedding." />
 }
@@ -15,8 +15,6 @@
     {
     <link rel="canonical" href="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
 }
-
-
 <div class="master-wrapper">
     <nav class="navbar navbar-default navbar-fixed-top fadeInDown">
         <div class="container-fluid">
@@ -46,7 +44,6 @@
         <canvas id="fettiwrap"></canvas>
         <div class="container vertical-center">
             <div class="intro-text vertical-center text-center smoothie">
-
                 <div class="intro-heading wow fadeIn heading-font"><span class="secondary-font">Richard and Grace</span>Saturday, January 11, 2020</div>
             </div>
         </div>
@@ -81,57 +78,53 @@
         </div>
     </section>
 
-    <section class="parallax" data-parallax="scroll" data-image-src="img/bg/bg1.jpg" data-speed="0.7">
-        <div class="section-inner light-opaqued">
-            <div class="wow fadeIn">
-                <div class="container text-center the-date">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <p class="lead a-quote secondary-font">Together is a beautiful place to be.</p>
-                        </div>
+<section class="parallax-custom section-info">
+    <div class="section-inner light-opaqued">
+        <div class="wow fadeIn">
+            <div class="container text-center the-date">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="lead a-quote secondary-font">Together is a beautiful place to be.</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div id="wedding-date" class="section-inner white-bg">
-            <div class="wow fadeIn">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-xs-12" role="tabpanel">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <!-- Nav tabs -->
-                                    <ul class="nav nav-justified icon-tabs" id="nav-tabs" role="tablist">
-                                        <li role="presentation" class="active">
-                                            <a href="#when" aria-controls="daksh" role="tab" data-toggle="tab">
-                                                <span class="tabtitle heading-font">The Date</span>
-                                            </a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href="#where" aria-controls="dustin" role="tab" data-toggle="tab">
-                                                <span class="tabtitle heading-font">The Place</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-12">
-                                    <!-- Tab panes -->
-                                    <div class="tab-content" id="tabs-collapse">
-                                        <div role="tabpanel" class="tab-pane fade in active" id="when">
-                                            <div class="tab-inner">
-                                                @*<p>Sunday, January 11th, 2020</p>*@
-                                                <p>The Ceremony Sunday, January 11th, 2020 4.00 - 5.00 pm</p>
-                                                <p>The Reception Sunday, January 11th, 2020 5.00 - 10.00 pm</p>
-                                                <p></p>
-                                            </div>
+    <div id="wedding-date" class="section-inner white-bg">
+        <div class="wow fadeIn">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-xs-12" role="tabpanel">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="nav nav-justified icon-tabs" id="nav-tabs" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#when" aria-controls="daksh" role="tab" data-toggle="tab">
+                                            <span class="tabtitle heading-font">The Date</span>
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#where" aria-controls="dustin" role="tab" data-toggle="tab">
+                                            <span class="tabtitle heading-font">The Place</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="tab-content" id="tabs-collapse">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="when">
+                                        <div class="tab-inner">
+                                            <p>The Ceremony Sunday, January 11th, 2020 4.00 - 5.00 pm</p>
+                                            <p>The Reception Sunday, January 11th, 2020 5.00 - 10.00 pm</p>
+                                            <p></p>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane fade" id="where">
-                                            <div class="tab-inner">
-                                                <p>Both the ceremony and the reception will take place in Hollins House Weddings and Events, Santa Cruz County, California.</p>
-                                                <p>This venue is fantastic, we hope you will love it too.</p>
-                                                <p>Address: Hollins House Weddings and Events 20 Clubhouse Rd, Santa Cruz, CA 95060</p>
-                                            </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="where">
+                                        <div class="tab-inner">
+                                            <p>Both the ceremony and the reception will take place in Hollins House Weddings and Events, Santa Cruz County, California.</p>
+                                            <p>This venue is fantastic, we hope you will love it too.</p>
+                                            <p>Address: Hollins House Weddings and Events 20 Clubhouse Rd, Santa Cruz, CA 95060</p>
                                         </div>
                                     </div>
                                 </div>
@@ -141,62 +134,63 @@
                 </div>
             </div>
         </div>
-        
-        <div class="section-inner light-opaqued white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center mb-45 wow fadeIn">
-                        <h2 class="section-heading">Our Guests’ Wishes</h2>
-                        <hr class="thin-hr">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <ul class="owl-carousel-paged testimonial-owl wow fadeIn list-unstyled" data-items="1" data-items-desktop="[1200,1]" data-items-desktop-small="[980,1]" data-items-tablet="[768,1]" data-items-mobile="[479,1]">
-                            <li>
-                                <div class="row">
-                                    <div class="col-sm-10 col-sm-offset-1 item-caption">
-                                        <div class="row">
-                                            <div class="col-sm-offset-1 col-sm-10">
-                                                <p class="lead">“May the years ahead be filled with the lasting joy, happiness, and lots of love! I am so happy for you two, can’t wait to see you saying your vows to each other”</p>
-                                                <p class="lead secondary-font">Julie, friend</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row">
-                                    <div class="col-sm-10 col-sm-offset-1 item-caption">
-                                        <div class="row">
-                                            <div class="col-sm-offset-1 col-sm-10">
-                                                <p class="lead">“I am so happy to see that you have grown into the man I had always wished you would become. It’s a wonderful feeling to see how happy you are and how loved by your lovely wife to be! God bless you both as you start your new and wonderful journey as a family.”</p>
-                                                <p class="lead secondary-font">Kathrine, groom’s mother</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row">
-                                    <div class="col-sm-10 col-sm-offset-1 item-caption">
-                                        <div class="row">
-                                            <div class="col-sm-offset-1 col-sm-10">
-                                                <p class="lead">“Seeing you as a little girl and a grown woman is a heartbreaking sight. You have become a loving, careful, responsible, and generous young woman, and now you are getting married…Congratulations to you both on this happiest occasion, may your life together be bright and happy!”</p>
-                                                <p class="lead secondary-font">Christian, bride’s father</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+    </div>
+
+    <div class="section-inner light-opaqued white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-45 wow fadeIn">
+                    <h2 class="section-heading">Our Guests’ Wishes</h2>
+                    <hr class="thin-hr">
                 </div>
             </div>
         </div>
-    </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="owl-carousel-paged testimonial-owl wow fadeIn list-unstyled" data-items="1" data-items-desktop="[1200,1]" data-items-desktop-small="[980,1]" data-items-tablet="[768,1]" data-items-mobile="[479,1]">
+                        <li>
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1 item-caption">
+                                    <div class="row">
+                                        <div class="col-sm-offset-1 col-sm-10">
+                                            <p class="lead">“May the years ahead be filled with the lasting joy, happiness, and lots of love! I am so happy for you two, can’t wait to see you saying your vows to each other”</p>
+                                            <p class="lead secondary-font">Julie, friend</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1 item-caption">
+                                    <div class="row">
+                                        <div class="col-sm-offset-1 col-sm-10">
+                                            <p class="lead">“I am so happy to see that you have grown into the man I had always wished you would become. It’s a wonderful feeling to see how happy you are and how loved by your lovely wife to be! God bless you both as you start your new and wonderful journey as a family.”</p>
+                                            <p class="lead secondary-font">Kathrine, groom’s mother</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1 item-caption">
+                                    <div class="row">
+                                        <div class="col-sm-offset-1 col-sm-10">
+                                            <p class="lead">“Seeing you as a little girl and a grown woman is a heartbreaking sight. You have become a loving, careful, responsible, and generous young woman, and now you are getting married…Congratulations to you both on this happiest occasion, may your life together be bright and happy!”</p>
+                                            <p class="lead secondary-font">Christian, bride’s father</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <section id="gifts" class="light-wrapper white-bg">
         <div class="section-inner">
@@ -240,7 +234,7 @@
         </div>
     </section>
 
-    <section id="rsvp" class="dark-wrapper section-inner opaqued parallax" data-parallax="scroll" data-image-src="img/bg/bg9.jpg" data-speed="0.7">
+    <section id="rsvp" class="dark-wrapper section-inner opaqued parallax-custom section-form">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
