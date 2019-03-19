@@ -54,8 +54,11 @@
 
 .event-info {
     padding-right: 30px;
-    text-align: right;
     text-transform: uppercase;
+
+    @media(min-width: 575px) {
+        text-align: right;
+    }
 }
 
 .event-info span {
@@ -102,7 +105,9 @@
 }
 
 .event-detail h3 {
-    margin-bottom: 20px;
+    @media(min-width: 575px) {
+        margin-bottom: 20px;
+    }
 }
 
 .event-detail h3 a {

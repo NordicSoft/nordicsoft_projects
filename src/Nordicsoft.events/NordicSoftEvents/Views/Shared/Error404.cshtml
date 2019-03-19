@@ -1,13 +1,15 @@
-﻿
-@*
-    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-*@
-<section class="u-py-md-250 u-flex-center error-section">
-    <img src="/img/404.png"/>
-    <div class="container text-center">
-        <h1 class="text-white">Oops! page not found</h1>
-        <button class="btn btn-primary btn-rounded" aria-label="Go to Home">
-            <a class="" href="@Url.RouteUrl("HomeIndex").ToLower()" title="Home">GO HOME</a>
-        </button>
+﻿<div id="home" class="fullscreen-hero bg-overlay bg-parallax" data-jarallax='{"speed": 0.4}' style='background-image: url("images/event/bg.jpg")'>
+    <div class="hero-content">
+        <div class="hero-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 text-center mr-auto ml-auto">
+                        <h5 class="font700 mb20 text-white display-3 text-uppercase">Oops!</h5>
+                        <p class="text-white-gray mb30 lead">Page not found</p>
+                        <a class="btn btn-primary btn-width" href="@Url.RouteUrl("HomeIndex").ToLower()" title="Home">GO HOME</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
+</div>
