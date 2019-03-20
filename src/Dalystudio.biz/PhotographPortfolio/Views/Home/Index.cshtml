@@ -1,0 +1,313 @@
+﻿@{
+     ViewData["Title"] = "DalyStudio|Photographer";
+     ViewData["Description"] = "Best wedding, destination, and special events photographer in New Jersey and all over the US. Click here to get more information and pricing.";
+}
+@section metatags{
+    @*<meta property="og:type" content="website" />
+    <meta property="og:title" content="@ViewData["Title"]" />
+    <meta property="og:description" content="@ViewData["Description"]" />
+    <meta property="og:url" content="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />*@
+    @*<meta property="og:image" content="@($"{Context.Request.Scheme}://{Context.Request.Host}/img/noridc_og_image.jpg")" />
+        <meta property="og:image:width" content="1269" />
+        <meta property="og:image:height" content="642" />*@
+
+    <meta name="description" content="@ViewData["Description"]" />
+}
+@section links
+    {
+    @*   <link rel="canonical" href="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />*@
+}
+
+@section criticalCSS{
+
+    @*    <style>@@font-face{font-family:Stroke-Gap-Icons;src:url(/dist/fonts/Stroke-Gap-Icons.eot)}.icon{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-family:Stroke-Gap-Icons;font-style:normal;font-variant:normal;font-weight:400;line-height:1;speak:none;text-transform:none}.icon-User:before{content:"\E69C"}.icon-Mail:before{content:"\E6B7"}@@font-face{font-family:FontAwesome;font-style:normal;font-weight:400;src:url(/dist/fonts/fontawesome-webfont.eot);src:url(/dist/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format("embedded-opentype"),url(/dist/fonts/fontawesome-webfont.woff2) format("woff2"),url(/dist/fonts/fontawesome-webfont.woff) format("woff"),url(/dist/fonts/fontawesome-webfont.ttf) format("truetype"),url(/dist/fonts/fontawesome-webfont.svg#fontawesomeregular) format("svg")}.fa{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto}.fa-check:before{content:"\F00C"}.fa-info-circle:before{content:"\F05A"}.fa-minus:before{content:"\F068"}html{-ms-overflow-style:scrollbar;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;box-sizing:border-box;font-family:sans-serif;line-height:1.15}*,:after,:before{box-sizing:inherit}@@-ms-viewport{width:device-width}header,main,nav,section{display:block}body{background-color:#fff;color:#212529;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;font-size:1rem;font-weight:400;line-height:1.5;margin:0}h1,h2{margin-bottom:.5rem;margin-top:0}p{margin-bottom:1rem;margin-top:0}ul{margin-bottom:1rem}ul{margin-top:0}a{-webkit-text-decoration-skip:objects;background-color:transparent;color:#007bff;text-decoration:none}img{border-style:none;vertical-align:middle}a,button,input{touch-action:manipulation}table{border-collapse:collapse}th{text-align:left}button,input{font-family:inherit;font-size:inherit;line-height:inherit;margin:0}button,input{overflow:visible}button{text-transform:none}button{-webkit-appearance:button}button::-moz-focus-inner{border-style:none;padding:0}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}.h1,h1,h2{color:inherit;font-family:inherit;font-weight:500;line-height:1.1;margin-bottom:.5rem}.h1,h1{font-size:2.5rem}h2{font-size:2rem}.display-4{font-weight:300;line-height:1.1}.display-4{font-size:3.5rem}.list-unstyled{list-style:none;padding-left:0}.container{margin-left:auto;margin-right:auto;padding-left:15px;padding-right:15px;width:100%}@@media (min-width:576px){.container{max-width:540px}}@@media (min-width:768px){.container{max-width:720px}}@@media (min-width:992px){.container{max-width:960px}}@@media (min-width:1200px){.container{max-width:1140px}}.row{display:flex;flex-wrap:wrap;margin-left:-15px;margin-right:-15px}.col-10,.col-lg-5,.col-lg-7,.col-lg-9{min-height:1px;padding-left:15px;padding-right:15px;position:relative;width:100%}.col-10{flex:0 0 83.3333333333%;max-width:83.3333333333%}@@media (min-width:992px){.col-lg-5{flex:0 0 41.6666666667%;max-width:41.6666666667%}.col-lg-7{flex:0 0 58.3333333333%;max-width:58.3333333333%}.col-lg-9{flex:0 0 75%;max-width:75%}}.table{background-color:transparent;margin-bottom:1rem;max-width:100%;width:100%}.table td,.table th{border-top:1px solid #e9ecef;padding:.75rem;vertical-align:top}.table thead th{border-bottom:2px solid #e9ecef;vertical-align:bottom}@@media (max-width:991px){.table-responsive{-ms-overflow-style:-ms-autohiding-scrollbar;display:block;overflow-x:auto;width:100%}}.form-control{background-clip:padding-box;background-color:#fff;background-image:none;border:1px solid rgba(0,0,0,.15);border-radius:.25rem;color:#495057;display:block;font-size:1rem;line-height:1.25;padding:.5rem .75rem;width:100%}.form-control::-ms-expand{background-color:transparent;border:0}.btn{border:1px solid transparent;border-radius:.25rem;display:inline-block;font-size:1rem;font-weight:400;line-height:1.25;padding:.5rem .75rem;text-align:center;vertical-align:middle;white-space:nowrap}.btn-primary{background-color:#007bff;border-color:#007bff;color:#fff}.fade{opacity:0}.collapse{display:none}.input-group{display:flex;position:relative;width:100%}.input-group .form-control{flex:1 1 auto;margin-bottom:0;position:relative;width:1%;z-index:2}.input-group-addon,.input-group .form-control{align-items:center;display:flex}.input-group-addon{vertical-align:middle;white-space:nowrap}.input-group-addon{background-color:#e9ecef;border:1px solid rgba(0,0,0,.15);border-radius:.25rem;color:#495057;font-size:1rem;font-weight:400;line-height:1.25;margin-bottom:0;padding:.5rem .75rem;text-align:center}.input-group-addon:not(:last-child){border-bottom-right-radius:0;border-top-right-radius:0}.input-group-addon:not(:last-child){border-right:0}.input-group .form-control:not(:first-child){border-bottom-left-radius:0;border-top-left-radius:0}.nav-link{display:block;padding:.5rem 1rem}.tab-content>.tab-pane{display:none}.navbar{padding:.5rem 1rem;position:relative}.navbar{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-between}.navbar-brand{display:inline-block;font-size:1.25rem;line-height:inherit;margin-right:1rem;padding-bottom:.3125rem;padding-top:.3125rem;white-space:nowrap}.navbar-nav{display:flex;flex-direction:column;list-style:none;margin-bottom:0;padding-left:0}.navbar-nav .nav-link{padding-left:0;padding-right:0}.navbar-collapse{align-items:center;flex-basis:100%}.navbar-toggler{background:transparent;border:1px solid transparent;border-radius:.25rem;font-size:1.25rem;line-height:1;padding:.25rem .75rem}@@media (min-width:992px){.navbar-expand-lg{flex-wrap:nowrap;justify-content:flex-start}.navbar-expand-lg,.navbar-expand-lg .navbar-nav{flex-direction:row}.navbar-expand-lg .navbar-nav .nav-link{padding-left:.5rem;padding-right:.5rem}.navbar-expand-lg .navbar-collapse{display:flex!important}.navbar-expand-lg .navbar-toggler{display:none}}.card{background-clip:border-box;background-color:#fff;border:1px solid rgba(0,0,0,.125);border-radius:.25rem;display:flex;flex-direction:column;min-width:0;position:relative;word-wrap:break-word}.bg-primary{background-color:#007bff!important}.bg-white{background-color:#fff!important}.border{border:1px solid #e9ecef!important}.border-0{border:0!important}.rounded{border-radius:.25rem!important}.d-flex{display:flex!important}.justify-content-center{justify-content:center!important}.align-items-center{align-items:center!important}.align-self-center{align-self:center!important}@@supports (position:sticky){.sticky-top{position:sticky;top:0;z-index:1020}}.w-100{width:100%!important}.m-0{margin:0!important}.mr-2{margin-right:.5rem!important}.mt-4{margin-top:1.5rem!important}.my-4{margin-bottom:1.5rem!important;margin-top:1.5rem!important}.mt-5{margin-top:3rem!important}.mb-5{margin-bottom:3rem!important}.p-0{padding:0!important}.pr-0{padding-right:0!important}.pb-0{padding-bottom:0!important}.p-3{padding:1rem!important}.py-3{padding-bottom:1rem!important;padding-top:1rem!important}.p-4{padding:1.5rem!important}.pl-4{padding-left:1.5rem!important}.ml-auto,.mx-auto{margin-left:auto!important}.mx-auto{margin-right:auto!important}@@media (min-width:768px){.p-md-5{padding:3rem!important}}@@media (min-width:992px){.mb-lg-0{margin-bottom:0!important}}.text-left{text-align:left!important}.text-center{text-align:center!important}.text-white{color:#fff!important}.text-primary{color:#007bff!important}@@font-face{font-family:DosisSubset;font-style:normal;font-weight:600;src:url(/dist/fonts/dosissemibold-subset.woff2) format("woff2"),url(/dist/fonts/dosissemibold-subset.zopfli.woff) format("woff"),url(/dist/fonts/dosissemibold-subset.ttf) format("truetype")}@@font-face{font-family:OpenSansSubset;font-style:normal;font-weight:400;src:url(/dist/fonts/opensans-subset.woff2) format("woff2"),url(/dist/fonts/opensans-subset.zopfli.woff) format("woff"),url(/dist/fonts/opensans-subset.ttf) format("truetype")}@@font-face{font-family:Dosis;font-style:normal;font-weight:400;src:url(/dist/fonts/dosis.woff2) format("woff2"),url(/dist/fonts/dosis.woff) format("woff"),url(/dist/fonts/dosis.ttf) format("truetype")}@@font-face{font-family:Dosis;font-style:normal;font-weight:500;src:url(/dist/fonts/dosismedium.woff2) format("woff2"),url(/dist/fonts/dosismedium.woff) format("woff"),url(/dist/fonts/dosismedium.ttf) format("truetype")}@@font-face{font-family:Dosis;font-style:normal;font-weight:600;src:url(/dist/fonts/dosissemibold.woff2) format("woff2"),url(/dist/fonts/dosissemibold.woff) format("woff"),url(/dist/fonts/dosissemibold.ttf) format("truetype")}@@font-face{font-family:Open Sans;font-style:normal;font-weight:400;src:url(/dist/fonts/opensans.woff2) format("woff2"),url(/dist/fonts/opensans.woff) format("woff"),url(/dist/fonts/opensans.ttf) format("truetype")}@@font-face{font-family:Open Sans;font-style:normal;font-weight:600;src:url(/dist/fonts/opensanssemibold.woff2) format("woff2"),url(/dist/fonts/opensanssemibold.woff) format("woff"),url(/dist/fonts/opensanssemibold.ttf) format("truetype")}@@font-face{font-family:Open Sans;font-style:normal;font-weight:700;src:url(/dist/fonts/opensansbold.woff2) format("woff2"),url(/dist/fonts/opensansbold.woff) format("woff"),url(/dist/fonts/opensansbold.ttf) format("truetype")}body{color:#5a6671;font-family:Arial;font-family:Arial,sans-serif;font-size:1rem;font-weight:400;line-height:1.875em;overflow-x:hidden}.fonts-loaded-1 body{font-family:OpenSansSubset}.fonts-loaded-2 body{font-family:Open Sans}img{max-width:100%}.h1,h1,h2{color:#273f5b;font-family:Arial,sans-serif;font-weight:600;line-height:1.37em}.fonts-loaded-1 .h1,.fonts-loaded-1 h1,.fonts-loaded-1 h2{font-family:DosisSubset}.fonts-loaded-2 .h1,.fonts-loaded-2 h1,.fonts-loaded-2 h2{font-family:Dosis}.h1,h1{font-size:40px}@@media (max-width:767px){.h1,h1{font-size:30px}}h2{font-size:30px}@@media (max-width:767px){h2{font-size:28px}}a{color:inherit;text-decoration:none}button,input{font-family:Arial,sans-serif}.fonts-loaded-1 input{font-family:OpenSansSubset}.fonts-loaded-2 input{font-family:Open Sans}section{padding-bottom:75px;padding-top:75px;position:relative;z-index:10}@@media (max-width:991px){section{padding-bottom:40px;padding-top:40px}}input{border:1px solid #e9eff5;border-radius:4px;padding:9px 30px;width:100%}input:-moz-placeholder,input::-moz-placeholder{color:#8ea4b8;font-size:1rem;opacity:1}input:-ms-input-placeholder{color:#8ea4b8;font-size:1rem;opacity:1}input::-webkit-input-placeholder{color:#8ea4b8;font-size:1rem;opacity:1}@@media (max-width:767px){.display-4{font-size:2.5rem}}i.fa{line-height:inherit}.nav-breadcrumb{background-color:transparent;padding-left:0;position:absolute;top:0}.hamburger{background-color:transparent;border:0;color:inherit;display:inline-block;font:inherit;margin:0;overflow:visible;padding:10px;text-transform:none}.hamburger-box{display:inline-block;height:24px;position:relative;width:40px}.hamburger-inner{display:block;margin-top:-1px;top:50%}.hamburger-inner,.hamburger-inner:after,.hamburger-inner:before{background-color:#54667a;border-radius:4px;height:1px;position:absolute;width:30px}.hamburger-inner:after,.hamburger-inner:before{content:"";display:block}.hamburger-inner:before{top:-9px}.hamburger-inner:after{bottom:-9px}.header{background-color:#fafcff;padding-bottom:20px;padding-top:20px}.navbar-brand{color:#0070f0;font-family:Arial,sans-serif;font-size:2.5rem;font-weight:600;position:relative}.navbar-nav>.nav-item{margin-left:15px}.navbar-nav>.nav-item>.nav-link{font-family:Arial,sans-serif;font-size:16px;font-weight:600;text-transform:uppercase}.fonts-loaded-1 .navbar-nav>.nav-item>.nav-link{font-family:DosisSubset}.fonts-loaded-2 .navbar-nav>.nav-item>.nav-link{font-family:Dosis}.navbar-toggler{color:#54667a;position:relative}.header-shadow{box-shadow:0 3px 20px 0 rgba(0,112,240,.1)}@@media (max-width:991px){#navbarNav{background:#fff;max-height:100vh;overflow:auto;padding:20px}#navbarNav .nav-link{color:#54667a}}@@media (max-width:380px){.header .navbar-brand>img{width:200px}}.btn{font-family:Arial,sans-serif;font-size:18px!important;font-weight:600;padding:.8125rem 2rem;text-transform:capitalize}.fonts-loaded-1 .btn{font-family:DosisSubset}.fonts-loaded-2 .btn{font-family:Dosis}.btn-rounded{border-radius:100em}.btn-primary{background:#0070f0;box-shadow:0 5px 40px 0 rgba(0,129,255,.3);color:#fff}.u-rounded-50{border-radius:1000em}.box-shadow-v2{-webkit-box-shadow:0 0 50px 0 rgba(22,104,183,.15);box-shadow:0 0 50px 0 rgba(22,104,183,.15)}.u-flex-center{-ms-flex-align:center;-ms-flex-direction:column;-ms-flex-pack:center;-webkit-box-align:center;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-box-pack:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;flex-direction:column;justify-content:center}.bg-white{background:#fff!important}.text-white{color:#fff!important}.text-black{color:#111!important}.text-red{color:#f64d62!important}.bg-primary{background:#0070f0!important}.u-ff-secondary{font-family:Arial,sans-serif}.fonts-loaded-1 .u-ff-secondary{font-family:DosisSubset}.fonts-loaded-2 .u-ff-secondary{font-family:Dosis}.u-fs-22{font-size:1.375rem!important}.u-fs-24{font-size:1.5rem!important}.u-fw-600{font-weight:600}.u-of-hidden{overflow:hidden}.u-h-4{height:.25rem}.u-lh-1_8{line-height:1.8!important}.u-mt-10{margin-top:.625rem!important}.u-mt-15{margin-top:.9375rem!important}.u-mb-10{margin-bottom:.625rem!important}.u-mb-20{margin-bottom:1.25rem!important}.u-mb-70{margin-bottom:4.375rem!important}.u-ml-10{margin-left:.625rem!important}.u-my-40{margin-bottom:2.5rem!important;margin-top:2.5rem!important}.u-pb-10{padding-bottom:.625rem!important}.u-pl-10{padding-left:.625rem!important}@@media (min-width:768px){.u-pl-md-60{padding-left:3.75rem!important}}.u-w-50{width:3.125rem!important}.u-w-170{width:10.625rem!important}.card{border:none!important}.form-control{padding-left:30px!important;padding-right:30px!important}.input-group .form-control{padding-left:20px!important;padding-right:20px!important}.text-primary{color:#0070f0!important}@@supports (position:sticky) or (position:-webkit-sticky){.sticky-top{position:-webkit-sticky;position:sticky;top:0;z-index:1000}}</style>*@
+}
+
+<!-- HOME -->
+<section id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-30" data-background="../img/Homepage.jpg">
+
+    <div class="hs-caption container">
+        <div class="caption-content">
+            <div class="hs-title-size-4 font-alt m-b-30">
+                Daly Studio
+            </div>
+            <div class="hs-title-size-1 font-inc">
+                Life has unique moments that deserve to be remembered. I love capturing those moments and transform them into heart touching memories.
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- /HOME -->
+<!-- WRAPPER -->
+<div class="wrapper">
+
+    <!-- PORTFOLIO -->
+    <section class="module-small p-t-20 p-b-0 p-t-sm-0">
+
+        <div class="container">
+
+            <!-- PORTFOLIO FILTER -->
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <ul id="filters" class="filter font-inc">
+                        <li><a href="#" data-filter="*" class="current wow fadeInUp">All</a></li>
+                        <li><a href="#" data-filter=".wedding" class="wow fadeInUp" data-wow-delay="0.2s">Wedding</a></li>
+                        <li><a href="#" data-filter=".lovestory" class="wow fadeInUp" data-wow-delay="0.4s">Love Story</a></li>
+                        <li><a href="#" data-filter=".fashion" class="wow fadeInUp" data-wow-delay="0.6s">Fashion</a></li>
+                        <li><a href="#" data-filter=".family" class="wow fadeInUp" data-wow-delay="0.8s">Family</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- /PORTFOLIO FILTER -->
+
+        </div>
+
+        <!-- PORTFOLIO LIST -->
+        <ul id="works-grid" class="works-grid works-grid-masonry works-grid-3 works-hover-w">
+
+            <!-- PORTFOLIO ITEM -->
+            <li class="work-item wedding ">
+                <a href="@Url.RouteUrl("Project1")">
+                    <div class="work-image">
+                        <img src="../img/wedding/Cover.jpg" alt="wedding-1">
+                    </div>
+                    <div class="work-caption">
+                        <h3 class="work-title font-alt">TOM & OLIVIA</h3>
+                        <div class="work-descr font-inc">
+                            Once in awhile, right in the middle of an ordinary life, love gives us a fairy tale.
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <!-- /PORTFOLIO ITEM -->
+            <!-- PORTFOLIO ITEM -->
+            <li class="work-item wedding">
+                <a href="@Url.RouteUrl("Project1")">
+                    <div class="work-image">
+                        <img src="../img/wedding/2.jpg" alt="wedding-2">
+                    </div>
+                    <div class="work-caption">
+                        <h3 class="work-title font-alt">TOM & OLIVIA</h3>
+                        <div class="work-descr font-inc">
+                            Once in awhile, right in the middle of an ordinary life, love gives us a fairy tale.
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <!-- /PORTFOLIO ITEM -->
+            <!-- PORTFOLIO ITEM -->
+            <li class="work-item lovestory">
+                <a href="@Url.RouteUrl("Project2")">
+                    <div class="work-image">
+                        <img src="../img/lovestory/lovestory.jpg" alt="lovestory">
+                    </div>
+                    <div class="work-caption">
+                        <h3 class="work-title font-alt">AMY & ERICK</h3>
+                        <div class="work-descr font-inc">
+                            Love is not about how many days, weeks, or months you've been together, it's all about how much you love each other every day
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <!-- /PORTFOLIO ITEM -->
+            <!-- PORTFOLIO ITEM -->
+            <li class="work-item fashion">
+                <a href="@Url.RouteUrl("Project3")">
+                    <div class="work-image">
+                        <img src="../img/fashion/fashion.jpg" alt="fashion">
+                    </div>
+                    <div class="work-caption">
+                        <h3 class="work-title font-alt">COLOR BEAUTY</h3>
+                        <div class="work-descr font-inc">
+                            You can have anything you want in life, if you dress for it
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <!-- /PORTFOLIO ITEM -->
+            <!-- PORTFOLIO ITEM -->
+            <li class="work-item lovestory">
+                <a href="@Url.RouteUrl("Project2")">
+                    <div class="work-image">
+                        <img src="../img/lovestory/3.jpg" alt="lovestory">
+                    </div>
+                    <div class="work-caption">
+                        <h3 class="work-title font-alt">AMY & ERICK</h3>
+                        <div class="work-descr font-inc">
+                            Love is not about how many days, weeks, or months you've been together, it's all about how much you love each other every day
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <!-- /PORTFOLIO ITEM -->
+            <!-- PORTFOLIO ITEM -->
+            <li class="work-item family">
+                <a href="@Url.RouteUrl("Project4")">
+                    <div class="work-image">
+                        <img src="../img/family/family.jpg" alt="family">
+                    </div>
+                    <div class="work-caption">
+                        <h3 class="work-title font-alt">CHRISTMAS STORIES</h3>
+                        <div class="work-descr font-inc">
+                            The best gift around the Christmas tree is the presence of family wrapped in love
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <!-- /PORTFOLIO ITEM -->
+           
+
+        </ul>
+        <!-- /PORTFOLIO LIST -->
+
+    </section>
+    <!-- /PORTFOLIO -->
+    <!-- TESTIMONIAL -->
+    <section class="module-small">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- MODULE TITLE -->
+                <div class="col-sm-6">
+                    <h2 class="module-title text-left font-alt">Get in touch</h2>
+                    <div class="module-subtitle text-left font-inc">
+                        I look forward to hearing from you and hope to be a part of your story. If you would like to enquire about my work, please contact me by filling out the blocks and I will reply you as soon as possible.
+                    </div>
+                </div>
+                <!-- /MODULE TITLE -->
+                <!-- BLOCKQUOTE -->
+                <div class="col-sm-6">
+                   
+                    <form id="contact-form" role="form" novalidate="">
+
+                        <div class="form-group">
+                            <label class="sr-only" for="cname">Name</label>
+                            <input type="text" id="cname" class="form-control" name="cname" placeholder="Name" required="" data-validation-required-message="Please enter your name." aria-invalid="false">
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="sr-only" for="cemail">Email</label>
+                            <input type="email" id="cemail" name="cemail" class="form-control" placeholder="Your E-mail" required="" data-validation-required-message="Please enter your email address.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="sr-only" for="cmessage">Message</label>
+                            <textarea class="form-control" id="cmessage" name="cmessage" rows="7" placeholder="Message" required="" data-validation-required-message="Please enter your message."></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class=" text-right">
+                            <button type="submit" class="btn btn-round btn-g">Submit</button>
+                        </div>
+                    </form>
+
+                    <!-- Ajax response -->
+                    <div id="contact-response" class="ajax-response font-alt"></div>
+                </div>
+                <!-- /BLOCKQUOTE -->
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- /TESTIMONIAL -->
+    <!-- ABOUT -->
+    <section class="module p-t-0 p-b-0" data-background="../img/About.jpg">
+
+        <div class="container-fluid">
+
+            <div class="row relative">
+
+                <div class="col-sm-12 col-md-6 col-md-offset-6 col-bg">
+
+                    <h2 class="module-title font-alt">About</h2>
+
+                    <div class="module-subtitle font-inc">
+                        I am Ana Daly, a freelance photographer and a creative photo studio owner. Although I live in New Jersey, I travel all over the US, Canada, and anywhere my customers ask and my Passport allows me to go. 
+                    </div>
+
+                    <p>I create memories by capturing the most special moments of your events. I am completely mad about everything photography related and truly believe that I am a lucky person, because I have the best job in the world.</p>
+
+                    <p>I always have fun while working and try to make the process enjoyable for my customers as well. This can easily be reflected in my works - spontaneous, relaxed, and real. I love watching happy emotions people express, my job is to freeze those precious moments and make them as warm and beautiful as people remember it in their hearts.</p>
+
+                    <ul class="social-list">
+                        <li><a href="#"><span class="icon-facebook"></span></a></li>
+                        <li><a href="#"><span class="icon-twitter"></span></a></li>
+                        <li><a href="#"><span class="icon-googleplus"></span></a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+<!-- /ABOUT -->
+
+
+
+<!-- ACCORDIONS -->
+
+@*<section class="module p-t-0 p-b-0">
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-12 col-bg">
+            <h2 class="module-title text-left font-alt">FAQ</h2>
+
+            <div class="panel-group" id="accordion">
+
+                <!-- Accordion item start -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title font-inc text-uppercase">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#support1">
+                                Support Question 1
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="support1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion item end -->
+                <!-- Accordion item start -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title font-inc text-uppercase">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#support2" class="collapsed">
+                                Support Question 2
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="support2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion item end -->
+
+            </div>
+        </div>
+    </div>
+</div>
+</section>*@
+<!-- /ACCORDIONS -->
+<hr class="divider-w">
+    <partial name="_Footer" />
+
+</div>
+<!-- /WRAPPER -->
+
