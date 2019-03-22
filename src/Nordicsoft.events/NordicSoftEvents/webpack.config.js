@@ -144,7 +144,7 @@ module.exports = (env, options) => {
             loader: 'file-loader',
             options: {
               name: "fonts/[name].[ext]", // Output below ./fonts
-              publicPath: devMode ? "/dist" : "/dist"
+              publicPath: "/dist"
             }
           }]
         }
