@@ -1,0 +1,494 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\src\assets\img\case-studies\case-study-01.jpg" />
+    <None Remove="ClientApp\src\assets\img\case-studies\case-study-01.png" />
+    <None Remove="ClientApp\src\assets\img\case-studies\case-study-02.png" />
+    <None Remove="ClientApp\src\assets\img\case-studies\case-study-03.png" />
+    <None Remove="ClientApp\src\assets\img\favicon.png" />
+    <None Remove="ClientApp\src\assets\img\features\1.jpg" />
+    <None Remove="ClientApp\src\assets\img\features\2.jpg" />
+    <None Remove="ClientApp\src\assets\img\features\feature-01.jpg" />
+    <None Remove="ClientApp\src\assets\img\features\feature-02.jpg" />
+    <None Remove="ClientApp\src\assets\img\features\feature-03.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\dreamstime_xl_45979351.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\header-404.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\header-blog-single.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\header-blog.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\header-case-studies.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\header-case-study-single.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\header-contact.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\header-main.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\header-portfolio-single.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\header-portfolio.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\header-pricing.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\header-services.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\header-team.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\services-2_bg.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\skins\header-404.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\skins\header-blog-single.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\skins\header-blog.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\skins\header-case-studies.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\skins\header-case-study-single.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\skins\header-contact.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\skins\header-main.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\skins\header-portfolio-single.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\skins\header-portfolio.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\skins\header-pricing.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\skins\header-services.jpg" />
+    <None Remove="ClientApp\src\assets\img\headers\skins\header-team.jpg" />
+    <None Remove="ClientApp\src\assets\img\icons\icn-graphic-design.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\icn-location.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\icn-marketing.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\icn-mobile-apps.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\icn-mobile-contact.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\icn-online-contact.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\icn-research.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\icn-web-design.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\icn-web-development.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\blue\icn-graphic-design.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\blue\icn-location.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\blue\icn-marketing.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\blue\icn-mobile-apps.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\blue\icn-mobile-contact.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\blue\icn-online-contact.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\blue\icn-research.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\blue\icn-web-design.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\blue\icn-web-development.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\green\icn-graphic-design.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\green\icn-location.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\green\icn-marketing.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\green\icn-mobile-apps.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\green\icn-mobile-contact.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\green\icn-online-contact.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\green\icn-research.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\green\icn-web-design.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\green\icn-web-development.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\main\icn-graphic-design.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\main\icn-location.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\main\icn-marketing.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\main\icn-mobile-apps.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\main\icn-mobile-contact.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\main\icn-online-contact.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\main\icn-research.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\main\icn-web-design.svg" />
+    <None Remove="ClientApp\src\assets\img\icons\skins-icons\main\icn-web-development.svg" />
+    <None Remove="ClientApp\src\assets\img\logo.png" />
+    <None Remove="ClientApp\src\assets\img\patterns\square-pattern-dark.png" />
+    <None Remove="ClientApp\src\assets\img\patterns\square-pattern-fuschia.png" />
+    <None Remove="ClientApp\src\assets\img\patterns\square-pattern-light-blue.png" />
+    <None Remove="ClientApp\src\assets\img\patterns\square-pattern-light.png" />
+    <None Remove="ClientApp\src\assets\img\patterns\zig-zag-pattern-light.png" />
+    <None Remove="ClientApp\src\assets\img\patterns\zig-zag-pattern-lighter.png" />
+    <None Remove="ClientApp\src\assets\img\patterns\zig-zag-pattern.png" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\big-shots-01.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\big-shots-02.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\big-shots-03.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\flying-solo-01.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\flying-solo-02.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\flying-solo-03.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\blue\big-shots-01.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\blue\big-shots-02.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\blue\big-shots-03.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\blue\flying-solo-01.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\blue\flying-solo-02.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\blue\flying-solo-03.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\blue\small-team-01.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\blue\small-team-02.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\blue\small-team-03.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\green\big-shots-01.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\green\big-shots-02.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\green\big-shots-03.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\green\flying-solo-01.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\green\flying-solo-02.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\green\flying-solo-03.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\green\small-team-01.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\green\small-team-02.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\green\small-team-03.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\main\big-shots-01.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\main\big-shots-02.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\main\big-shots-03.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\main\flying-solo-01.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\main\flying-solo-02.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\main\flying-solo-03.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\main\small-team-01.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\main\small-team-02.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\skins\main\small-team-03.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\small-team-01.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\small-team-02.svg" />
+    <None Remove="ClientApp\src\assets\img\pricingplans\small-team-03.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ClientApp\src\assets\img\case-studies\case-study-01.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\features\2.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\features\feature-01.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\dreamstime_xl_45979351.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\header-404.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\header-blog-single.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\header-blog.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\header-case-studies.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\header-case-study-single.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\header-contact.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\header-main.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\header-portfolio-single.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\header-portfolio.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\header-pricing.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\header-services.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\header-team.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\services-2_bg.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\skins\header-404.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\skins\header-blog-single.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\skins\header-blog.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\skins\header-case-studies.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\skins\header-case-study-single.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\skins\header-contact.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\skins\header-main.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\skins\header-portfolio-single.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\skins\header-portfolio.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\skins\header-pricing.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\skins\header-services.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\headers\skins\header-team.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\icn-graphic-design.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\icn-location.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\icn-marketing.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\icn-mobile-apps.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\icn-mobile-contact.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\icn-online-contact.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\icn-research.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\icn-web-design.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\icn-web-development.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\blue\icn-graphic-design.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\blue\icn-location.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\blue\icn-marketing.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\blue\icn-mobile-apps.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\blue\icn-mobile-contact.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\blue\icn-online-contact.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\blue\icn-research.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\blue\icn-web-design.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\blue\icn-web-development.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\green\icn-graphic-design.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\green\icn-location.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\green\icn-marketing.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\green\icn-mobile-apps.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\green\icn-mobile-contact.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\green\icn-online-contact.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\green\icn-research.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\green\icn-web-design.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\green\icn-web-development.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\main\icn-graphic-design.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\main\icn-location.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\main\icn-marketing.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\main\icn-mobile-apps.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\main\icn-mobile-contact.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\main\icn-online-contact.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\main\icn-research.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\main\icn-web-design.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\icons\skins-icons\main\icn-web-development.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\logo.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\patterns\square-pattern-dark.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\patterns\square-pattern-fuschia.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\patterns\square-pattern-light-blue.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\patterns\square-pattern-light.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\patterns\zig-zag-pattern-light.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\patterns\zig-zag-pattern-lighter.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\patterns\zig-zag-pattern.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\big-shots-01.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\big-shots-02.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\big-shots-03.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\flying-solo-01.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\flying-solo-02.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\flying-solo-03.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\blue\big-shots-01.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\blue\big-shots-02.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\blue\big-shots-03.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\blue\flying-solo-01.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\blue\flying-solo-02.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\blue\flying-solo-03.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\blue\small-team-01.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\blue\small-team-02.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\blue\small-team-03.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\green\big-shots-01.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\green\big-shots-02.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\green\big-shots-03.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\green\flying-solo-01.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\green\flying-solo-02.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\green\flying-solo-03.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\green\small-team-01.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\green\small-team-02.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\green\small-team-03.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\main\big-shots-01.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\main\big-shots-02.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\main\big-shots-03.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\main\flying-solo-01.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\main\flying-solo-02.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\main\flying-solo-03.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\main\small-team-01.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\main\small-team-02.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\skins\main\small-team-03.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\small-team-01.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\small-team-02.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\assets\img\pricingplans\small-team-03.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Credentials\.aws\credentials" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Core" Version="3.3.26" />
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.3.6" />
+    <PackageReference Include="AWSSDK.SimpleEmail" Version="3.3.6.22" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="NLog" Version="4.5.10" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.7.0" />
+    <PackageReference Include="SmartBreadcrumbs" Version="1.0.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="nlog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Views\Home\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="wwwroot\images_sitemap.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\robots.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\sitemap.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\src\assets\vendor\owl-carousel\" />
+  </ItemGroup>
+
+</Project>
