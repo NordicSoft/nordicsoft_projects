@@ -6,41 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="ClientApp\src\assets\fonts\Blogger sans\**" />
-    <Compile Remove="ClientApp\src\assets\fonts\Dosis\**" />
-    <Compile Remove="ClientApp\src\assets\fonts\opensans\**" />
-    <Compile Remove="logs\**" />
-    <Content Remove="ClientApp\src\assets\fonts\Blogger sans\**" />
-    <Content Remove="ClientApp\src\assets\fonts\Dosis\**" />
-    <Content Remove="ClientApp\src\assets\fonts\opensans\**" />
-    <Content Remove="logs\**" />
-    <EmbeddedResource Remove="ClientApp\src\assets\fonts\Blogger sans\**" />
-    <EmbeddedResource Remove="ClientApp\src\assets\fonts\Dosis\**" />
-    <EmbeddedResource Remove="ClientApp\src\assets\fonts\opensans\**" />
-    <EmbeddedResource Remove="logs\**" />
-    <None Remove="ClientApp\src\assets\fonts\Blogger sans\**" />
-    <None Remove="ClientApp\src\assets\fonts\Dosis\**" />
-    <None Remove="ClientApp\src\assets\fonts\opensans\**" />
-    <None Remove="logs\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Remove="wwwroot\img\the-groom-test.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="ClientApp\src\assets\js\fury.js" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Credentials\.aws\credentials" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="Credentials\.aws\credentials">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include=".\wwwroot\images\**" />
   </ItemGroup>
 
   <ItemGroup>
