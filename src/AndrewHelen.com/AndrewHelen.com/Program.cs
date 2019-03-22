@@ -48,6 +48,7 @@ namespace AndrewHelen.com
                     config.AddEnvironmentVariables();
                 })
                 .UseStartup<Startup>()
+                .UseUrls("http://localhost:5005")
                 .ConfigureLogging(logging =>
                 {
                     logging.ClearProviders();
