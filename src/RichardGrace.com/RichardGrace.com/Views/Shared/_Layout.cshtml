@@ -8,7 +8,7 @@
 
     @if (!string.IsNullOrEmpty(Settings.FbAppId))
     {
-    @*<meta property="fb:app_id" content="@Settings.FbAppId" />*@
+        @*<meta property="fb:app_id" content="@Settings.FbAppId" />*@
     }
     <meta property="og:site_name" content="@Settings.SiteName" />
 
@@ -55,7 +55,27 @@
     <main>
         @RenderBody()
     </main>
-
+    <script type="application/ld+json">
+        {
+        "@@context": "http://schema.org",
+        "@@type": "Event",
+        "name": "Richard and Grace",
+        "startDate": "2020-01-11T16:00",
+        "endDate": "2020-01-11T22:00",
+        "location": {
+        "@@type": "Place",
+        "name": "Hollins House Weddings and Events",
+        "address": {
+        "@@type": "PostalAddress",
+        "streetAddress": "20 Clubhouse Rd",
+        "addressLocality": "Santa Cruz",
+        "postalCode": "95060"
+        }
+        },
+        "image": "https://richard-grace.com/img/richard-grace_google_image.jpg",
+        "description": "We are happy to invite you to celebrate our special day with us, click here to find some useful and interesting information about us and our wedding."
+        }
+    </script>
     <script src="~/dist/vendor_src.js" defer></script>
     <script src="~/dist/main.js" defer></script>
 
