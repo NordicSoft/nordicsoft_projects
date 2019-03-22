@@ -34,7 +34,6 @@
 
   <ItemGroup>
     <None Include="Credentials\.aws\credentials" />
-    <None Include="wwwroot\img\the-groom-test.jpg" />
   </ItemGroup>
 
   <ItemGroup>
