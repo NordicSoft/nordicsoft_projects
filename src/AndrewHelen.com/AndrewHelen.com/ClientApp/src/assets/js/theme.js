@@ -110,17 +110,17 @@
             
             
             /** Destroy Carousel - Family */
-            var $tabFamilyContent = $('#tab-family-content'),
-                $tabPane = $tabFamilyContent.find('.tab-pane').not('.active');
+            //var $tabFamilyContent = $('#tab-family-content'),
+            //    $tabPane = $tabFamilyContent.find('.tab-pane').not('.active');
                 
-            $tabPane.each(function(){
-                var $carouselInTab = $tabPane.find('.carousel-custom'),
-                    $carousel = $('#' + $carouselInTab.attr('id'));
+            //$tabPane.each(function(){
+            //    var $carouselInTab = $tabPane.find('.carousel-custom'),
+            //        $carousel = $('#' + $carouselInTab.attr('id'));
                     
-                if($carousel.data('flickity')){
-                    $carousel.flickity('destroy');
-                }
-            });
+            //    if($carousel.data('flickity')){
+            //        $carousel.flickity('destroy');
+            //    }
+            //});
         });
         
         
@@ -194,17 +194,27 @@
                 particlesJS.load(elem, 'json/particles.json');
             }
         }
-        
-        
-        /** Gallery - Grid */
-        if ($.fn.imagesLoaded && $.fn.isotope){
-            $galleryGrid.imagesLoaded(function(){
-                $galleryGrid.isotope({
-                    itemSelector: '.item',
-                    layoutMode: 'masonry'
-                });
-            });
-        }
+
+            /** Gallery - Grid */
+            //if ($.fn.imagesLoaded && $.fn.isotope){
+            //    $galleryGrid.imagesLoaded(function(){
+            //        $galleryGrid.isotope({
+            //            itemSelector: '.item',
+            //            layoutMode: 'masonry'
+            //        });
+            //    });
+            //}
+            //$('.gallery-wrapper').each(function () {
+            //    var $masonry = $(this);
+            //    var update = function () {
+            //        $.fn.matchHeight._update();
+            //        $masonry.masonry();
+            //    };
+            //    $('.item', $masonry).matchHeight();
+            //    $masonry.masonry();
+            //    this.addEventListener('load', update, true);
+            //});
+
         
         
         /** Gallery - Magnific popup */
@@ -260,28 +270,28 @@
             });
             
             
-            /** Carousel - Family */
-            var $tabFamily = $('#tab-family'),
-                $carouselFamily1 = $('#carousel-family-1') ;
+            ///** Carousel - Family */
+            //var $tabFamily = $('#tab-family'),
+            //    $carouselFamily1 = $('#carousel-family-1') ;
         
-            carouselCustom($carouselFamily1);
+            //carouselCustom($carouselFamily1);
             
-            $tabFamily.find('a[data-toggle="tab"]').on('shown.bs.tab', function(e){
-                var $carousel = $('#carousel-' + $(this).attr('aria-controls'));
-                if(!$carousel.data('flickity')){
-                    carouselCustom($carousel);
-                }
-            });
+            //$tabFamily.find('a[data-toggle="tab"]').on('shown.bs.tab', function(e){
+            //    var $carousel = $('#carousel-' + $(this).attr('aria-controls'));
+            //    if(!$carousel.data('flickity')){
+            //        carouselCustom($carousel);
+            //    }
+            //});
         
-            carouselCustom($carouselFamily1);
+            //carouselCustom($carouselFamily1);
             
             
             /** Carousel - Bridesmaid & Groomsmen */
-            var $carouselBridesmaid = $('#carousel-bridesmaid'),
-                $carouselGroomsmen = $('#carousel-groomsmen');
+            //var $carouselBridesmaid = $('#carousel-bridesmaid'),
+            //    $carouselGroomsmen = $('#carousel-groomsmen');
         
-            carouselCustom($carouselBridesmaid);
-            carouselCustom($carouselGroomsmen);
+            //carouselCustom($carouselBridesmaid);
+            //carouselCustom($carouselGroomsmen);
         }
         
         
@@ -297,9 +307,17 @@
                 autoPlay: $elem.data('autoplay'),
                 imagesLoaded: true,
                 pauseAutoPlayOnHover: false,
-                wrapAround: $elem.data('wrap-around')
+                wrapAround: $elem.data('wrap-around'),
+                lazyLoad: true
             });
-            
+
+            var flkty = $elem.data('flickity');
+
+            flkty.on('lazyLoad.flickity', function (event, cellElement) {
+                var img = event.originalEvent.target;
+                console.log(event.originalEvent.type, img.src);
+            });
+
             if ($elem.data('autoplay')){
                 var flkty = $elem.data('flickity');
                 $elem.find('.flickity-prev-next-button').on('mouseleave', function(){ 
@@ -307,7 +325,8 @@
                 });
             }
         }
-        
+
+
         
         /** Form - RSVP */
         var $formRSVP = $('#form-rsvp'),
