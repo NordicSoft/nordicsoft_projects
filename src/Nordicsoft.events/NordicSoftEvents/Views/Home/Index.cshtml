@@ -202,8 +202,8 @@
 
 <section id="about" class="bg-light">
     <div class="half-image-content one-half-image-content">
-        <div class="content-img bg-parallax pos-left hidden-md-down" data-jarallax='{"speed": 0.2}' style="background:url(images/event/about.jpg) no-repeat;"></div>
-        <img src="images/event/about.jpg" class="visible-lg-down hidden-lg-up img-fluid img-about" alt="">
+        <div class="content-img bg-parallax pos-left hidden-md-down" alt="About event" data-jarallax='{"speed": 0.2}' style="background:url(images/event/about.jpg) no-repeat;"></div>
+        <img src="images/event/about.jpg" class="visible-lg-down hidden-lg-up img-fluid img-about" alt="About event">
         <div class="container-fluid">
             <div class="row">
                 <div class="offset-lg-4 col-lg-8 pl-110 pt80 pb80">
@@ -260,15 +260,15 @@
                         </div>
                         <div class="tags-post">
                             <div class="cleafix">
-                                <a href="#" class="social-icon si-dark si-colored-facebook">
+                                <a href="#" class="social-icon si-dark si-colored-facebook" aria-label="Facebook">
                                     <i class="fa fa-facebook"></i>
                                     <i class="fa fa-facebook"></i>
                                 </a>
-                                <a href="#" class="social-icon  si-dark si-colored-twitter">
+                                <a href="#" class="social-icon  si-dark si-colored-twitter" aria-label="Twitter">
                                     <i class="fa fa-twitter"></i>
                                     <i class="fa fa-twitter"></i>
                                 </a>
-                                <a href="#" class="social-icon si-dark si-colored-linkedin">
+                                <a href="#" class="social-icon si-dark si-colored-linkedin" aria-label="Linkedin">
                                     <i class="fa fa-linkedin"></i>
                                     <i class="fa fa-linkedin"></i>
                                 </a>
@@ -279,7 +279,7 @@
             </div>
         </div>
         <div class="content-img bg-parallax pos-right hidden-md-down">
-            <iframe width="100%" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=%C3%9Clemiste%20City%20Park&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <iframe width="100%" title="Maps" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=%C3%9Clemiste%20City%20Park&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </div>
     </div>
 </section>
@@ -298,23 +298,19 @@
                     <div class="row">
                         <div class="col-sm-3 event-info"><span>Name</span></div>
                         <div class="col-sm-9 event-detail">
-                            <input type="text" class="form-control" required="">
+                            <input type="text" class="form-control" required="" aria-label="Name">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-3 event-info"><span>Email</span></div>
                         <div class="col-sm-9 event-detail">
-                            <input type="email" class="form-control" required="">
+                            <input type="email" class="form-control" required="" aria-label="Email">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-3 event-info pb-0"></div>
                         <div class="col-sm-9 event-detail">
                             <button type="submit" class="btn btn-primary btn-block btn-square">Subscribe</button>
-                            <label class="custom-checkbox accept-terms">
-                                <input type="checkbox" class="custom-control-input">
-                                <span class="custom-control-indicator"></span>
-                            </label>
                         </div>
                     </div>
                 </form>
