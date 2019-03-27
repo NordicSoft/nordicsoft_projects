@@ -46,7 +46,17 @@ body {
     .contact-us {
         iframe {
             height: 390px;
+            height: 390px;
             padding: 15px;
         }
     }
+}
+
+#home {
+    background-image: url('/images/event/bg.jpg');
+    background-attachment: fixed;
+}
+#about1 {
+    background-image: url('/images/event/about.jpg');
+    background-attachment: fixed;
 }
