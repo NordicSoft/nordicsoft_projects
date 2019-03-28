@@ -8,6 +8,9 @@
     <meta property="og:url" content="@Html.Raw($"https://{Context.Request.Host}{Context.Request.Path}")" />
     <meta property="og:description" content="Register now if you are sure #youcanhackit. Learn more info about hackathon itself, prizes and facilities we offer." />
     <meta property="og:image" content="@($"{Context.Request.Scheme}://{Context.Request.Host}/images/events_og_image.jpg")" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="522" />
+
     <meta name="description" content="Register now if you are sure #youcanhackit. Learn more info about hackathon itself, prizes and facilities we offer." />
 }
 @section links{
@@ -202,8 +205,8 @@
 
 <section id="about" class="bg-light">
     <div class="half-image-content one-half-image-content">
-        <div id="about1" class="content-img pos-left hidden-md-down"></div>
-        <img src="images/event/about.jpg" class="visible-lg-down hidden-lg-up img-fluid img-about" alt="About event">
+        <div class="bg-about content-img pos-left hidden-md-down lazyload" data-bg="/images/event/about.jpg"></div>
+        <img data-src="images/event/about.jpg" class="visible-lg-down hidden-lg-up img-fluid img-about lazyload" alt="About event">
         <div class="container-fluid">
             <div class="row">
                 <div class="offset-lg-4 col-lg-8 pl-110 pt80 pb80">
@@ -336,7 +339,7 @@
             <div class="modal-header">
                 <h5 class="modal-title h4" id="exampleModalLabel">Register for conference</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="ti-close"></i></span>
+                    <span aria-hidden="true"><i class="fa fa-times"></i></span>
                 </button>
             </div>
             <form method="POST" asp-controller="Common" asp-action="SendFeedback" id="contact-form">
@@ -380,5 +383,5 @@
     </div>
 </div>
 
-<a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="ti-angle-up"></i></a>
+<a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="fa fa-chevron-up"></i></a>
 

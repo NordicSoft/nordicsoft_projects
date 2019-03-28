@@ -5,16 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="ClientApp\src\assets\fonts\bower-components\themify.eot" />
-    <Content Include="ClientApp\src\assets\fonts\bower-components\themify.ttf" />
-    <Content Include="ClientApp\src\assets\fonts\bower-components\themify.woff" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="Credentials\.aws\credentials">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include=".\wwwroot\images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="logs\**" />
+    <Content Remove="logs\**" />
+    <EmbeddedResource Remove="logs\**" />
+    <None Remove="logs\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,6 +38,13 @@
     <Content Update="Views\Home\Index.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\dist\fonts\fontawesome-webfont.eot.gz" />
+    <None Include="wwwroot\dist\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\dist\fonts\fontawesome-webfont.svg.gz" />
+    <None Include="wwwroot\dist\fonts\fontawesome-webfont.ttf.gz" />
   </ItemGroup>
 
 </Project>

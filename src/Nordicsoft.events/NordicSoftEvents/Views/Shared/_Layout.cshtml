@@ -31,6 +31,12 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     @RenderSection("links", false)
+    
+    <link rel="preload" href="~/dist/fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="~/dist/fonts/fontawesome-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    @*<link rel="preload" href="/dist/fonts/icons_subset.woff2" as="font" type="font/woff2" crossorigin>*@
+    
+    <script src="~/dist/fonts-load.js"></script>
 
     @RenderSection("criticalCSS", false)
 

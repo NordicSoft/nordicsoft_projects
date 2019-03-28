@@ -7,6 +7,12 @@ $(function () {
         delay: 500
     });
      //auto close navbar-collapse on click a
+    document.addEventListener('lazybeforeunveil', function (e) {
+        var bg = e.target.getAttribute('data-bg');
+        if (bg) {
+            e.target.style.backgroundImage = 'url(' + bg + ')';
+        }
+    });
     $('.navbar a.nav-link').on('click', function () {
         $('.navbar-toggler:visible').click();
     });
