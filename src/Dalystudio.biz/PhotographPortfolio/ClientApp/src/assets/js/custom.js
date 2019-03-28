@@ -7,9 +7,9 @@
 	$(window).load(function() {
 		$('.loader').fadeOut();
 		$('.page-loader').delay(350).fadeOut('slow');
-	});
+	//});
 
-    $(document).ready(function () {
+ //   $(document).ready(function () {
 	    $("#menu li").removeClass("active");
 	    $("#menu a[href$='" + window.location.pathname + "']").closest("li").addClass("active");
 		/* ---------------------------------------------- /*
