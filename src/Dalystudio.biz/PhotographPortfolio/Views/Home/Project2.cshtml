@@ -3,13 +3,21 @@
     ViewData["Description"] = "Check sunny beach love story photo ideas for inspiration; best love story photographer - Ana Daly, find more information here.";
 }
 @section metatags
-    {
+{
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="@ViewData["Title"]" />
+    <meta property="og:description" content="@ViewData["Description"]" />
+    <meta property="og:url" content="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("Project2")}")" />
+    <meta property="og:image" content="@($"{Context.Request.Scheme}://{Context.Request.Host}/img/dalystudio.jpg")" />
+    <meta property="og:image:width" content="1250" />
+    <meta property="og:image:height" content="656" />
+    
     <meta name="description" content="We know answers to all your queries. Find the info you require or get in touch with us if you haven't found what you were looking for." />
 
 }
 @section links
     {
-    <link rel="canonical" href="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("Portfolio")}")" />
+    <link rel="canonical" href="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("Project2")}")" />
 }
 <div class="wrapper">
 

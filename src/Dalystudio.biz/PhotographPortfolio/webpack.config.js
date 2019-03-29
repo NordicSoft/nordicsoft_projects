@@ -28,7 +28,7 @@ module.exports = (env, options) => {
         "script-loader!./ClientApp/src/assets/vendor/bootstrap/js/bootstrap.js",
         "script-loader!./ClientApp/src/assets/vendor/appear.js",
         "script-loader!./ClientApp/src/assets/vendor/contact.js",
-        "script-loader!./ClientApp/src/assets/vendor/gmaps.js",
+        //"script-loader!./ClientApp/src/assets/vendor/gmaps.js",
         "script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.js",
         "script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.js",
         "script-loader!./ClientApp/src/assets/vendor/jqBootstrapValidation.js",
