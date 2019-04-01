@@ -210,6 +210,10 @@ $(window).load(function () {
         }, 300);
         return false;
     });
+    $('.backstretch img').each(function () {
+        $(this).attr('alt', 'Wedding');
+    });
+        
 
     /* CONFETTI JS */
     var canvas = Confetti.createCanvas(
