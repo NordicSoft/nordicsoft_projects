@@ -32,20 +32,18 @@
     }());
 
     // App Code, don’t bother with the subset font here.
-    var fontA = new FontFaceObserver("Dosis", { weight: 400 });
-    var fontB = new FontFaceObserver("Dosis", { weight: 500 });
-    var fontC = new FontFaceObserver("Dosis", { weight: 600 });
+    var fontA = new FontFaceObserver("Dancing Script", { weight: 400 });
+    var fontB = new FontFaceObserver("Dancing Script", { weight: 700 });
+    var fontC = new FontFaceObserver("Open Sans", { weight: 300 });
     var fontD = new FontFaceObserver("Open Sans", { weight: 400 });
-    var fontE = new FontFaceObserver("Open Sans", { weight: 600 });
-    var fontF = new FontFaceObserver("Open Sans", { weight: 700 });
+    var fontE = new FontFaceObserver("Open Sans", { weight: 700 });
 
     Promise.all([
         fontA.load(),
         fontB.load(),
         fontC.load(),
         fontD.load(),
-        fontE.load(),
-        fontF.load()
+        fontE.load()
     ]).then(function () {
         // Don’t add the class here, we’re emulating font-display: optional (load for next view)
         //document.documentElement.className += " fonts-loaded-2";

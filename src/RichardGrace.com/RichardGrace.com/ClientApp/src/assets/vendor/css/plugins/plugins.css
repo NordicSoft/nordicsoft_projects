@@ -1225,23 +1225,23 @@ img.mfp-img {
     background-color:transparent;
 }
 
-[data-easyshare] [data-easyshare-total-count],[data-easyshare] [data-easyshare-button-count] {
-    position:relative;
-    display:block;
-    float:left;
-    margin:0 15px 0 8px;
-    padding:0 7px;
-    height:24px;
-    line-height:24px;
-    border:1px solid #888;
-    border-radius:2px;
-    background-color:#fff;
-    font-family:Arial,Helvetica,sans-serif;
-    font-size:11px;
-    font-weight:700;
-    color:#555;
-    cursor:default
-}
+    [data-easyshare] [data-easyshare-total-count], [data-easyshare] [data-easyshare-button-count] {
+        position: relative;
+        display: block;
+        float: left;
+        margin: 0 15px 0 8px;
+        padding: 0 7px;
+        height: 24px;
+        line-height: 24px;
+        border: 1px solid #888;
+        border-radius: 2px;
+        background-color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        color: #555;
+        cursor: default
+    }
 
 [data-easyshare] [data-easyshare-total-count]:before,[data-easyshare] [data-easyshare-total-count]:after,[data-easyshare] [data-easyshare-button-count]:before,[data-easyshare] [data-easyshare-button-count]:after {
     content:"";
@@ -1267,18 +1267,18 @@ img.mfp-img {
     border-right:5px solid #fff
 }
 
-[data-easyshare] [data-easyshare-loader] {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:24px;
-    line-height:24px;
-    background-color:rgba(255,255,255,0.8);
-    font-family:Arial,Helvetica,sans-serif;
-    font-weight:700;
-    font-size:12px
-}
+    [data-easyshare] [data-easyshare-loader] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 24px;
+        line-height: 24px;
+        background-color: rgba(255,255,255,0.8);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 12px
+    }
 
 .no-item-padding .owl-item {
 	padding-left: 0 !important;

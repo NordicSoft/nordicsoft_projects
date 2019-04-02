@@ -27,7 +27,10 @@
     <meta name="theme-color" content="#ffffff">
     @RenderSection("links", false)
 
+    <link rel="preload" href="~/dist/fonts/open-sans-subset.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="~/dist/fonts/dancing-script-subset.woff2" as="font" type="font/woff2" crossorigin>
     @RenderSection("criticalCSS", false)
+    <script src="~/dist/fonts-load.js"></script>
 
     <environment include="Development">
         <script src="~/dist/vendor_styles.js"></script>

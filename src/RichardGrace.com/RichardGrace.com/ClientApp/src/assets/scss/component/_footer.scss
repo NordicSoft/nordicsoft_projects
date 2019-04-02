@@ -11,11 +11,16 @@ footer.white-wrapper {
     clear: both;
 }
 
-footer.white-wrapper span.copyright {
+footer span.copyright {
     letter-spacing: 1px;
     text-transform: uppercase;
     text-transform: none;
-    line-height: 40px
+    line-height: 40px;
+
+    a {
+        color: #ff1707;
+        cursor: pointer;
+    }
 }
 
 footer.white-wrapper .social-links li {
