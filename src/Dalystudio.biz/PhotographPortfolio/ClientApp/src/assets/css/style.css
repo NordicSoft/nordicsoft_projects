@@ -1622,3 +1622,9 @@ Multi-columns-row
 	.multi-columns-row .col-lg-1:nth-child(12n + 13) { clear: left; }
 
 }
+
+#works-grid .work-item{
+    /*position: static !important;
+    top: unset !important;
+    left: unset !important;*/
+}

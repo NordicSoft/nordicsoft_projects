@@ -7,9 +7,8 @@
 	$(window).load(function() {
 		$('.loader').fadeOut();
 		$('.page-loader').delay(350).fadeOut('slow');
-	//});
 
- //   $(document).ready(function () {
+
 	    $("#menu li").removeClass("active");
 	    $("#menu a[href$='" + window.location.pathname + "']").closest("li").addClass("active");
 		/* ---------------------------------------------- /*
@@ -284,12 +283,12 @@
 			worksgrid_mode = 'fitRows';
 		}
 
-		worksgrid.imagesLoaded(function() {
+		//worksgrid.imagesLoaded(function() {
 			worksgrid.isotope({
 				layoutMode: worksgrid_mode,
 				itemSelector: '.work-item',
 			});
-		});
+		//});
 
 		$('#filters a').click(function() {
 			$('#filters .current').removeClass('current');
