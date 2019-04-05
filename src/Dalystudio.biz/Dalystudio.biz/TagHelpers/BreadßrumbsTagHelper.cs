@@ -1,14 +1,14 @@
 ﻿using System.Text;
 using System.Threading.Tasks;
+using Dalystudio.biz.Extensions;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
-using PhotographPortfolio.Extensions;
 using SmartBreadcrumbs;
 
-namespace PhotographPortfolio.TagHelpers
+namespace Dalystudio.biz.TagHelpers
 {
     [HtmlTargetElement("breadcrumbs")]
     public class BreadcrumbsTagHelper : TagHelper

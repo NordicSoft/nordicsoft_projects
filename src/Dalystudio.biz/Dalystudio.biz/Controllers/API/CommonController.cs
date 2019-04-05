@@ -1,10 +1,10 @@
 ﻿using System.Threading.Tasks;
+using Dalystudio.biz.Services.GoogleRecaptcha;
+using Dalystudio.biz.Services.MailSender;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
-using PhotographPortfolio.Services.GoogleRecaptcha;
-using PhotographPortfolio.Services.MailSender;
 
-namespace PhotographPortfolio.Controllers.API
+namespace Dalystudio.biz.Controllers.API
 {
     [Route("api/")]
     [ApiController]

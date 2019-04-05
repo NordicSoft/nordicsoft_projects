@@ -5,7 +5,7 @@ using Amazon.SimpleEmail;
 using Amazon.SimpleEmail.Model;
 using Microsoft.Extensions.Logging;
 
-namespace PhotographPortfolio.Services.MailSender
+namespace Dalystudio.biz.Services.MailSender
 {
     public class MailSender : IMailSender
     {

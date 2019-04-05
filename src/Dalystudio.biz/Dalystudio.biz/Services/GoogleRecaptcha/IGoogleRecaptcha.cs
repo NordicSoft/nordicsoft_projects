@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace PhotographPortfolio.Services.GoogleRecaptcha
+namespace Dalystudio.biz.Services.GoogleRecaptcha
 {
     public interface IGoogleRecaptcha
     {

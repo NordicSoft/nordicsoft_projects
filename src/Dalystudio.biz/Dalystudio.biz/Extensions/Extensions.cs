@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PhotographPortfolio.Extensions
+namespace Dalystudio.biz.Extensions
 {
     public static class Extensions
     {

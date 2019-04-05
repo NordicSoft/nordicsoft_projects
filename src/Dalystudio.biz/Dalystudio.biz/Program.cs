@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 using NLog.Common;
 using NLog.Web;
 
-namespace PhotographPortfolio
+namespace Dalystudio.biz
 {
     public class Program
     {

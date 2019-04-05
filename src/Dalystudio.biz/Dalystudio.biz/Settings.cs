@@ -1,4 +1,4 @@
-﻿namespace PhotographPortfolio
+﻿namespace Dalystudio.biz
 {
     public class Settings
     {

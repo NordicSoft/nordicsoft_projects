@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 
-namespace PhotographPortfolio.Services.GoogleRecaptcha
+namespace Dalystudio.biz.Services.GoogleRecaptcha
 {
     public class GoogleRecaptcha : IGoogleRecaptcha
     {

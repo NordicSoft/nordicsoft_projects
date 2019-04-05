@@ -1,4 +1,4 @@
-﻿namespace PhotographPortfolio.Services.MailSender
+﻿namespace Dalystudio.biz.Services.MailSender
 {
     public interface IAmazonSESMail : IMail
     {

@@ -1,4 +1,6 @@
 ﻿using Amazon.SimpleEmail;
+using Dalystudio.biz.Services.GoogleRecaptcha;
+using Dalystudio.biz.Services.MailSender;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -7,11 +9,9 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Net.Http.Headers;
-using PhotographPortfolio.Services.GoogleRecaptcha;
-using PhotographPortfolio.Services.MailSender;
 using SmartBreadcrumbs;
 
-namespace PhotographPortfolio
+namespace Dalystudio.biz
 {
     public class Startup
     {

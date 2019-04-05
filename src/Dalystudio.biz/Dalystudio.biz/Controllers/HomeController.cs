@@ -4,7 +4,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using SmartBreadcrumbs;
 
-namespace PhotographPortfolio.Controllers
+namespace Dalystudio.biz.Controllers
 {
     [Route("/", Name = "CultureLessHome")]
     public class HomeController : Controller

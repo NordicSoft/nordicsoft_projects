@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotographPortfolio", "PhotographPortfolio\PhotographPortfolio.csproj", "{7A6258B1-05A0-491B-9217-2504207E986E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dalystudio.biz", "Dalystudio.biz\Dalystudio.biz.csproj", "{7A6258B1-05A0-491B-9217-2504207E986E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E6B48C7D-1998-46B3-B2A0-AF1B21845078}"
 	ProjectSection(SolutionItems) = preProject

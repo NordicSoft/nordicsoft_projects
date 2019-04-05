@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace PhotographPortfolio.Services.MailSender
+namespace Dalystudio.biz.Services.MailSender
 {
     public interface IMailSender
     {
