@@ -8,7 +8,6 @@
 		$('.loader').fadeOut();
 		$('.page-loader').delay(350).fadeOut('slow');
 
-
 	    $("#menu li").removeClass("active");
 	    $("#menu a[href$='" + window.location.pathname + "']").closest("li").addClass("active");
 		/* ---------------------------------------------- /*
@@ -48,11 +47,11 @@
 		 * Set module backgrounds
 		/* ---------------------------------------------- */
 
-		module.each(function(i) {
-			if ($(this).attr('data-background')) {
-				$(this).css('background-image', 'url(' + $(this).attr('data-background') + ')');
-			}
-		});
+		//module.each(function(i) {
+		//	if ($(this).attr('data-bg')) {
+		//		$(this).css('background-image', 'url(' + $(this).attr('data-bg') + ')');
+		//	}
+		//});
 
 		/* ---------------------------------------------- /*
 		 * Full height module
@@ -449,6 +448,11 @@
 
     });
 
-
+    document.addEventListener('lazybeforeunveil', function (e) {
+        var bg = e.target.getAttribute('data-bg');
+        if (bg) {
+            e.target.style.backgroundImage = 'url(' + bg + ')';
+        }
+    });
 
 })(jQuery);
