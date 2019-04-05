@@ -14,11 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ClientApp\src\assets\css\bootstrap\" />
-    <Folder Include="ClientApp\src\assets\css\plugins\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="Credentials\.aws\credentials">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

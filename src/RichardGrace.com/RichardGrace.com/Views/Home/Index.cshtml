@@ -15,6 +15,7 @@
     {
     <link rel="canonical" href="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
 }
+
 <div class="master-wrapper">
     <nav class="navbar navbar-default navbar-fixed-top fadeInDown">
         <div class="container-fluid">
@@ -30,23 +31,28 @@
 
             <div class="collapse navbar-collapse" id="main-navigation">
                 <ul class="nav navbar-nav text-center">
-                    <li><a href="#welcome" class="page-scroll smoothie">Welcome</a></li>
-                    <li><a href="#wedding-date" class="page-scroll smoothie">The day</a></li>
+                    <li><a href="#welcome" class="navbar-link page-scroll smoothie">Welcome</a></li>
+                    <li><a href="#wedding-date" class="navbar-link page-scroll smoothie">The day</a></li>
                     <li><a class="navbar-brand smoothie hidden-xs" href="/">Richard & Grace</a></li>
-                    <li><a href="#gifts" class="page-scroll smoothie">Gifts</a></li>
-                    <li><a href="#rsvp" class="page-scroll smoothie">RSVP</a></li>
+                    <li><a href="#gifts" class="navbar-link page-scroll smoothie">Gifts</a></li>
+                    <li><a href="#rsvp" class="navbar-link page-scroll smoothie">RSVP</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header id="headerwrap" class="backstretched fullheight">
+    <header id="headerwrap" class="fullheight">
         <canvas id="fettiwrap"></canvas>
         <div class="container vertical-center">
             <div class="intro-text vertical-center text-center smoothie">
                 <div class="intro-heading wow fadeIn heading-font"><span class="secondary-font">Richard and Grace</span>Saturday, January 11, 2020</div>
             </div>
         </div>
+        @*<img data-src="" class="lazyload" />*@
+        <div class="animation-bg "></div>
+        <div class="animation-bg opacity-2"></div>
+        <div class="animation-bg opacity-3"></div>
+        <div class="bg-header"></div>
     </header>
 
     <section id="welcome" class="light-wrapper">

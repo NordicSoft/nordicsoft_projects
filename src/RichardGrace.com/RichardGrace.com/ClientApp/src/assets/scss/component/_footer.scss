@@ -1,5 +1,6 @@
+@import "variables";
 #footer-widgets {
-    border-top: 1px solid #333
+    border-top: 1px solid $dark-gray;
 }
 
 #footer-widgets .section-inner {
@@ -18,7 +19,7 @@ footer span.copyright {
     line-height: 40px;
 
     a {
-        color: #ff1707;
+        color: $theme-color;
         cursor: pointer;
     }
 }

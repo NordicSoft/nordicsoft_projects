@@ -1,3 +1,4 @@
+@import "variables";
 .dark-wrapper textarea {
     &.form-control {
         background-color: rgba(213, 223, 220, 0.2);
@@ -36,7 +37,7 @@
     }
 
     &[type=submit] {
-        font-family: "Dancing Script";
+        font-family: $secondary-font;
         font-size: 30px;
         font-weight: 700;
         background-color: rgb(255, 255, 255);
@@ -44,6 +45,14 @@
         height: 62px;
         border: none;
         padding: 0 30px;
+
+        .fonts-loaded-1 & {
+            font-family: $secondary-font-loaded-1;
+        }
+
+        .fonts-loaded-2 & {
+            font-family: $secondary-font-loaded-2;
+        }
     }
 }
 .form-control {

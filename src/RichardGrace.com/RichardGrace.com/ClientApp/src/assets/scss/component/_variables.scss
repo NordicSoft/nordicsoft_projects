@@ -1,4 +1,15 @@
+//Color
 $white      : rgb(255, 255, 255);
 $light-gray : rgb(243, 243, 243);
 $dark-gray  : rgb( 51, 51, 51);
 $theme-color: rgb(193, 14, 31);
+
+// Typography
+$primary-font: 'Arial', sans-serif;
+$primary-font-loaded-1: 'OpenSansSubset', 'Arial';
+$primary-font-loaded-2: 'Open Sans', 'OpenSansSubset', 'Arial';
+
+$secondary-font: 'Times New Roman', serif;
+$secondary-font-loaded-1: 'DancingScriptSubset', 'Times New Roman';
+$secondary-font-loaded-2: 'Dancing Script', 'DancingScriptSubset', 'Times New Roman';
+

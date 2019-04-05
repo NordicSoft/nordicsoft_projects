@@ -1,3 +1,4 @@
+@import "variables";
 @media(max-width: 991px) {
     #where .lead,
     #when .lead {
@@ -153,12 +154,20 @@
 }
 
 .footer-goodbye {
-    font-family: 'Dancing Script';
+    font-family: $secondary-font;
     text-transform: none !important;
     font-size: 45px;
     margin-bottom: 44px;
     letter-spacing: 2px;
     font-weight: 700;
+
+    .fonts-loaded-1 & {
+        font-family: $secondary-font-loaded-1;
+    }
+
+    .fonts-loaded-2 & {
+        font-family: $secondary-font-loaded-2;
+    }
 }
 
 #fettiwrap {

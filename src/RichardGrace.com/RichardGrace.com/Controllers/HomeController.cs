@@ -1,8 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using SmartBreadcrumbs;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
+using RichardGrace.com.Services;
 
 namespace RichardGrace.com.Controllers
 {
@@ -41,55 +45,6 @@ namespace RichardGrace.com.Controllers
             ViewBag.TypeOfService = TempData["typeOfService"] ?? "";
 
 
-            return View();
-        }
-
-        [Breadcrumb("ViewData.Title", FromAction = "Home.Index")]
-        [Route("about", Name = "About")]
-        public IActionResult About(string culture)
-        {
-            return View();
-        }
-
-        [Breadcrumb("ViewData.Title", FromAction = "Home.Index")]
-        [Route("portfolio", Name = "Portfolio")]
-        public IActionResult Portfolio(string culture)
-        {
-            return View();
-        }
-
-        [Breadcrumb("ViewData.Title", FromAction = "Home.Index")]
-        [Route("sitemap", Name = "Sitemap")]
-        public IActionResult Sitemap(string culture)
-        {
-            return View();
-        }
-
-        [Breadcrumb("ViewData.Title", FromAction = "Home.Index")]
-        [Route("workflow", Name = "Workflow")]
-        public IActionResult Workflow(string culture)
-        {
-            return View();
-        }
-
-        [Breadcrumb("ViewData.Title", FromAction = "Home.Index")]
-        [Route("team", Name = "Team")]
-        public IActionResult Team(string culture)
-        {
-            return View();
-        }
-
-        [Breadcrumb("ViewData.Title", FromAction = "Home.Index")]
-        [Route("faq", Name = "Faq")]
-        public IActionResult Faq(string culture)
-        {
-            return View();
-        }
-
-        [Breadcrumb("ViewData.Title", FromAction = "Home.Index")]
-        [Route("pricing", Name = "Pricing")]
-        public IActionResult Pricing(string culture)
-        {
             return View();
         }
 

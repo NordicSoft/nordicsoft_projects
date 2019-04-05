@@ -2,25 +2,62 @@
 
 body {
     overflow-x: hidden;
-    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $primary-font;
     background-color: #ffffff;
     font-weight: 400;
     line-height: 1.75;
-    color: #333
-}
+    color: $dark-gray;
 
-.heading-font, .navbar-default .navbar-brand, .navbar-default .nav li a {
-    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    .fonts-loaded-1 & {
+        font-family: $primary-font-loaded-1;
+    }
+
+    .fonts-loaded-2 & {
+        font-family: $primary-font-loaded-2;
+    }
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $primary-font;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    .fonts-loaded-1 & {
+        font-family: $primary-font-loaded-1;
+    }
+
+    .fonts-loaded-2 & {
+        font-family: $primary-font-loaded-2;
+    }
+}
+.heading-font {
     text-transform: none;
+    font-family: $primary-font;
+
+    .fonts-loaded-1 & {
+        font-family: $primary-font-loaded-1;
+    }
+
+    .fonts-loaded-2 & {
+        font-family: $primary-font-loaded-2;
+    }
 }
 
 .secondary-font {
-    font-family: 'Dancing Script', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $secondary-font;
     text-transform: none;
+
+    .fonts-loaded-1 & {
+        font-family: $secondary-font-loaded-1;
+    }
+
+    .fonts-loaded-2 & {
+        font-family: $secondary-font-loaded-2;
+    }
 }
 
 .theme-accent-color {
-    color: #C10E1F;
+    color: $theme-color;
 }
 
 .text-muted {
@@ -28,7 +65,7 @@ body {
 }
 
 .text-primary {
-    color: #333
+    color: $dark-gray;
 }
 
 p {
@@ -50,27 +87,17 @@ a.active {
 }
 
 a {
-    color: #333
+    color: $dark-gray;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #C10E1F
+    color: $theme-color;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1px
-}
+
 
 .img-centered {
     margin: 0 auto
@@ -157,13 +184,13 @@ h6 {
 }
 
 ::-moz-selection {
-    color: #fff;
+    color: $white;
     text-shadow: none;
     background: #333
 }
 
 ::selection {
-    color: #fff;
+    color: $white;
     text-shadow: none;
     background: #333
 }
@@ -208,7 +235,6 @@ img::-moz-selection {
 .thin-hr {
     width: 180px;
     margin: 45px auto;
-
     .light-wrapper & {
         border-color: $dark-gray;
     }
@@ -248,7 +274,7 @@ img::-moz-selection {
 }
 
 .white {
-    color: rgb(255, 255, 255);
+    color: $white;
 }
 
 @media(max-width: 767px) {

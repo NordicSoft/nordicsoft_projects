@@ -7,7 +7,6 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const CompressionPlugin = require('compression-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-
 module.exports = (env, options) => {
     var devMode;
 
@@ -24,13 +23,15 @@ module.exports = (env, options) => {
             vendor_styles: "./ClientApp/src/assets/js/vendor_styles.js",
             vendor_src: [
                 "script-loader!./ClientApp/src/assets/vendor/js/jquery/jquery.js",
+                "script-loader!./ClientApp/src/assets/vendor/js/jconfirm/jquery-confirm.min.js",
                 "script-loader!./ClientApp/src/assets/vendor/js/bootstrap/bootstrap.min.js",
                 "script-loader!./ClientApp/src/assets/vendor/js/plugins/plugins.js",
-                "script-loader!./ClientApp/src/assets/vendor/js/jconfirm/jquery-confirm.min.js",
-                //"script-loader!./ClientApp/src/assets/vendor/js/maps/maps.js",
-
+                "script-loader!./ClientApp/src/assets/vendor/js/plugins/swing.js",
+                "script-loader!./ClientApp/src/assets/vendor/js/plugins/scroll.js",
+                "script-loader!./ClientApp/src/assets/vendor/js/plugins/owl.js",
+                "script-loader!./ClientApp/src/assets/vendor/js/plugins/canvas.js"
             ],
-
+            all_styles: './ClientApp/src/assets/js/all_styles.js',
             custom_styles: './ClientApp/src/assets/js/custom_styles.js',
             main: './ClientApp/src/assets/js/index.js'
         },
@@ -80,7 +81,7 @@ module.exports = (env, options) => {
             new MiniCssExtractPlugin({
                 // Options similar to the same options in webpackOptions.output
                 // both options are optional
-                filename: '[name].css',
+                filename: '[name].css'
             }),
             // Enable the plugin to let webpack communicate changes
             // to WDS. --hot sets this automatically!
@@ -89,8 +90,8 @@ module.exports = (env, options) => {
             new CopyWebpackPlugin([
                 "./ClientApp/src/assets/js/fonts-load.js",
                 "./ClientApp/src/assets/js/critical-foft-preload-fallback-optional.js",
+                "./ClientApp/src/assets/js/critical-css.js",
                 "./ClientApp/src/assets/js/sw.js"])
-
         ],
         module: {
             rules: [

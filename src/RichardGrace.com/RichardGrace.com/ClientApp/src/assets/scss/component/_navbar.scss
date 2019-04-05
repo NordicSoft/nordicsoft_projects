@@ -1,4 +1,5 @@
 @import "variables";
+
 .navbar-nav {
     float: none;
     margin: 0 auto;
@@ -12,19 +13,45 @@
 .navbar-default {
     border-color: transparent;
     background-color: transparent;
-}
 
+    .nav .link {
+        font-family: $primary-font;
+        text-transform: none;
 
-.navbar-default .navbar-brand, .navbar-default .nav li a.navbar-brand {
-    margin-top: 0;
-    letter-spacing: 5px;
-    font-size: 40px;
-    font-weight: 700;
-    font-family: 'DancingScriptSubset', cursive;
-    text-transform: none;
-    color: $white;
-    line-height: 40px;
-    padding: 21px 25px 30px;
+        .fonts-loaded-1 & {
+            font-family: $primary-font-loaded-1;
+        }
+
+        .fonts-loaded-2 & {
+            font-family: $primary-font-loaded-2;
+        }
+    }
+
+    .nav .navbar-brand {
+        font-family: $secondary-font;
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 300;
+        letter-spacing: 2.2px;
+        text-transform: none;
+        color: $white;
+        line-height: 40px;
+        padding: 21px 25px 30px;
+
+        .fonts-loaded-1 &, .fonts-loaded-2 & {
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: 5px;
+        }
+
+        .fonts-loaded-1 & {
+            font-family: $secondary-font-loaded-1;
+        }
+
+        .fonts-loaded-2 & {
+            font-family: $secondary-font-loaded-2;
+        }
+    }
 }
 
 .navbar-default .navbar-brand:hover,
@@ -62,7 +89,6 @@
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     letter-spacing: 1px;
 }
@@ -80,14 +106,10 @@
 }
 
 
-.navbar-default .nav li.dropdown.open > a, .navbar-default .dropdown-menu a {
+.navbar-default .nav li.dropdown.open > a{
     color: $dark-gray !important;
 }
 
-.navbar-default .nav .dropdown-menu li a {
-    padding: 15px 20px;
-    font-size: 14px;
-}
 
 #headerwrap .btn-primary {
     border-color: $light-gray;
@@ -107,7 +129,6 @@
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out
 }
 
@@ -122,64 +143,36 @@
     background-color: transparent;
 }
 
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 160px;
-    padding: 0;
-    margin: 2px 0 0;
-    font-size: 12px;
-    text-align: left;
-    list-style: none;
-    background-color: $white;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: none;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none
-}
-
-.navbar-default.navbar-shrink .nav .dropdown-menu li a {
-    color: $dark-gray;
-}
-
-.navbar-default.navbar-shrink .nav .dropdown-menu li a:hover,
-.navbar-default .nav .dropdown-menu li a:hover {
-    color: $dark-gray;
-    background-color: rgb(238, 238, 238);
-}
-
-
-@media(max-width: 767px){
+@media(max-width: 767px) {
     .navbar-default .nav li > a,
     .navbar-default.navbar-shrink .nav li > a {
         color: $dark-gray;
     }
+
     .navbar-default,
     .navbar-default.navbar-shrink {
         background-color: rgb(255, 255, 255);
     }
+
     .navbar-default .navbar-brand.logo {
         padding: 0;
         color: rgb(51, 51, 51);
     }
-    #main-navigation{
+
+    #main-navigation {
         background-color: rgb(255, 255, 255);
     }
+
     .navbar-default .navbar-toggle .icon-bar {
         background-color: rgb(51, 51, 51);
     }
 }
 
-@media(max-width: 419px){
-    .navbar-default .nav li a{
+@media(max-width: 419px) {
+    .navbar-default .nav li a {
         padding: 15px 9px;
     }
+
     .navbar-default .navbar-brand.logo {
         font-size: 24px;
         line-height: 50px;
