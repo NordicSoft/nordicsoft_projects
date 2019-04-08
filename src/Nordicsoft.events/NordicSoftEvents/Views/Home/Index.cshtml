@@ -17,6 +17,22 @@
     <link rel="canonical" href="@Html.Raw($"https://{Context.Request.Host}{Context.Request.Path}")" />
 }
 
+@section Scripts{ 
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/dist/sw.js', { scope: '/' }).then(function (registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+}
+
 <div id="preloader">
     <div id="preloader-inner"></div>
 </div>
@@ -31,17 +47,17 @@
     <div class="collapse navbar-collapse" id="navbarevent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" data-scroll href="#home">Home</a>
+                <a class="nav-link" data-scroll href="#home" title="Home">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-scroll href="#schedule">Schedule</a>
+                <a class="nav-link" data-scroll href="#schedule" title="Schedule">Schedule</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-scroll href="#about">About</a>
+                <a class="nav-link" data-scroll href="#about" title="About">About</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" data-scroll href="#facilities">Facilities</a>
+                <a class="nav-link" data-scroll href="#facilities" title="Facilities">Facilities</a>
             </li>
         </ul>
     </div>
@@ -59,7 +75,7 @@
                             When: 7, November – 9, November 2019<br>
                             Where: Ulemiste City park, Tallinn
                         </p>
-                        <a class="btn btn-primary btn-width" href="#" data-toggle="modal" data-target="#ticketsModal">Register Now</a>
+                        <a class="btn btn-primary btn-width" href="#" data-toggle="modal" data-target="#ticketsModal" title="Register Now">Register Now</a>
                     </div>
                 </div>
             </div>
@@ -217,7 +233,7 @@
                         <br>
                         <h5 class="font700">Conference will start in</h5>
                         <div id="clock" data-until-date="2019/11/07 19:00:00" class="row mt-4 mb-4"></div>
-                        <a href="#schedule" data-toggle="modal" data-target="#ticketsModal" class="btn btn-primary mr-3 mb-2">Apply Now</a>
+                        <a href="#schedule" data-toggle="modal" data-target="#ticketsModal" class="btn btn-primary mr-3 mb-2" title="Apply Now">Apply Now</a>
                     </div>
                 </div>
 
@@ -313,7 +329,7 @@
                     <div class="row">
                         <div class="col-sm-3 event-info pb-0"></div>
                         <div class="col-sm-9 event-detail">
-                            <button type="submit" class="btn btn-primary btn-block btn-square">Subscribe</button>
+                            <button type="submit" class="btn btn-primary btn-block btn-square" title="Subscribe">Subscribe</button>
                         </div>
                     </div>
                 </form>
@@ -376,12 +392,12 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    <button type="submit" class="btn btn-primary btn-block" title="Submit">Submit</button>
                 </div>
             </form>
         </div>
     </div>
 </div>
 
-<a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<a href="#" class="back-to-top hidden-xs-down" id="back-to-top" title="Back to top"><i class="fa fa-chevron-up"></i></a>
 
