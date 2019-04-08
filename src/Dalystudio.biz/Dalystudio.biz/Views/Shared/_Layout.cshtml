@@ -4,8 +4,19 @@
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137521661-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137521661-4');
+    </script>
+
     <title>@ViewData["Title"] </title>
-    <meta name="description" content="@ViewData["Description"]"/>
+    <meta name="description" content="@ViewData["Description"]" />
     @if (!string.IsNullOrEmpty(Settings.FbAppId))
     {
         <meta property="fb:app_id" content="@Settings.FbAppId" />
@@ -14,7 +25,7 @@
 
     @RenderSection("metatags", false)
 
-    
+
     <meta name="application-name" content="@Settings.SiteName">
     <meta name="msapplication-config" content="/browserconfig.xml">
     <meta name="apple-mobile-web-app-title" content="@Settings.SiteName">
@@ -26,55 +37,55 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d2a20e">
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#ffffff">
-   
+
     @RenderSection("links", false)
 
     @*<link rel="preload" href="/dist/fonts/dosissemibold-subset.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/dist/fonts/opensans-subset.woff2" as="font" type="font/woff2" crossorigin>*@
+        <link rel="preload" href="/dist/fonts/opensans-subset.woff2" as="font" type="font/woff2" crossorigin>*@
     @RenderSection("criticalCSS", false)
 
     @*<script>
-        (function () {
-            "use strict";
-            // Optimization for Repeat Views
-            if (sessionStorage.fontsLoadedCriticalFoftPreloadFallback) {
-                document.documentElement.className += " fonts-loaded-2";
-                return;
-            } else if ("fonts" in document) {
-                document.fonts.load("1em OpenSansSubset").then(function () {
-                    document.fonts.load("1em DosisSubset").then(function () {
-                        document.documentElement.className += " fonts-loaded-1";
-                        Promise.all([
-                            document.fonts.load("400 1em Dosis"),
-                            document.fonts.load("500 1em Dosis"),
-                            document.fonts.load("600 1em Dosis"),
-                            document.fonts.load("400 1em Open Sans"),
-                            document.fonts.load("600 1em Open Sans"),
-                            document.fonts.load("700 1em Open Sans")
-                        ]).then(function () {
+            (function () {
+                "use strict";
+                // Optimization for Repeat Views
+                if (sessionStorage.fontsLoadedCriticalFoftPreloadFallback) {
+                    document.documentElement.className += " fonts-loaded-2";
+                    return;
+                } else if ("fonts" in document) {
+                    document.fonts.load("1em OpenSansSubset").then(function () {
+                        document.fonts.load("1em DosisSubset").then(function () {
+                            document.documentElement.className += " fonts-loaded-1";
+                            Promise.all([
+                                document.fonts.load("400 1em Dosis"),
+                                document.fonts.load("500 1em Dosis"),
+                                document.fonts.load("600 1em Dosis"),
+                                document.fonts.load("400 1em Open Sans"),
+                                document.fonts.load("600 1em Open Sans"),
+                                document.fonts.load("700 1em Open Sans")
+                            ]).then(function () {
 
-                            document.documentElement.className += " fonts-loaded-2";
-                            // Optimization for Repeat Views
-                            sessionStorage.fontsLoadedCriticalFoftPreloadFallback = true;
+                                document.documentElement.className += " fonts-loaded-2";
+                                // Optimization for Repeat Views
+                                sessionStorage.fontsLoadedCriticalFoftPreloadFallback = true;
+                            });
                         });
                     });
-                });
-            } else {
-                // use fallback
-                var ref = document.getElementsByTagName("script")[0];
-                var script = document.createElement("script");
-                script.src = "/dist/critical-foft-preload-fallback-optional.js";
-                //script.async = true;
-                ref.parentNode.insertBefore(script, ref);
-                /*
-                 * technically you could trigger the web font load here too and race it with
-                 * the polyfill load, this means creating an element with text content that
-                 * uses the font and attaching it to the document
-                 * <div style="font-family: Lato; font-weight: 400; font-style: italic">A</div>
-                 */
-            }
-        })();
-    </script>*@
+                } else {
+                    // use fallback
+                    var ref = document.getElementsByTagName("script")[0];
+                    var script = document.createElement("script");
+                    script.src = "/dist/critical-foft-preload-fallback-optional.js";
+                    //script.async = true;
+                    ref.parentNode.insertBefore(script, ref);
+                    /*
+                     * technically you could trigger the web font load here too and race it with
+                     * the polyfill load, this means creating an element with text content that
+                     * uses the font and attaching it to the document
+                     * <div style="font-family: Lato; font-weight: 400; font-style: italic">A</div>
+                     */
+                }
+            })();
+        </script>*@
 
 
 
@@ -85,7 +96,7 @@
     <environment exclude="Development">
 
         @*<link rel="preload" href="~/dist/vendor_styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="~/dist/vendor_styles.css"></noscript>*@
+            <noscript><link rel="stylesheet" href="~/dist/vendor_styles.css"></noscript>*@
 
         <link rel="preload" href="~/dist/custom_styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="~/dist/custom_styles.css"></noscript>
