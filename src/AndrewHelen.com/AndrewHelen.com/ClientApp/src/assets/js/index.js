@@ -5,8 +5,7 @@ import 'flickity'
 import 'flickity-imagesloaded'
 import 'imagesloaded'
 var jconfirm = require('jquery-confirm');
-import './theme.js'
-import './milea.js'
+import './init.js'
 import objectFitImages from 'object-fit-images'
 
 objectFitImages();

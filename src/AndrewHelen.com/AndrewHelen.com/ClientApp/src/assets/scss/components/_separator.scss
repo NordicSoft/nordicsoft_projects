@@ -1,0 +1,37 @@
+﻿/** Separator  */
+
+.sep-line, .sep-line-long, .sep-line-full, .sep-line-thin, .sep-line-thin-long, .sep-line-thin-full, .sep-line-thick, .sep-line-thick-long, .sep-line-thick-full, .sep-line-medium-thick, .sep-line-medium-thick-long, .sep-line-medium-thick-full, .sep-line-extra-thick, .sep-line-extra-thick-long, .sep-line-extra-thick-full {
+    display: block;
+}
+
+.sep-line-thin, .sep-line-thin-long, .sep-line-thin-full {
+    height: 1px;
+}
+
+.sep-line, .sep-line-long, .sep-line-full {
+    height: 2px;
+}
+
+.sep-line-thick, .sep-line-thick-long, .sep-line-thick-full {
+    height: 4px;
+}
+
+.sep-line-medium-thick, .sep-line-medium-thick-long, .sep-line-medium-thick-full {
+    height: 6px;
+}
+
+.sep-line-extra-thick, .sep-line-extra-thick-long, .sep-line-extra-thick-full {
+    height: 8px;
+}
+
+.sep-line, .sep-line-thin, .sep-line-thick, .sep-line-medium-thick, .sep-line-extra-thick {
+    width: 30px;
+}
+
+.sep-line-long, .sep-line-thin-long, .sep-line-thick-long, .sep-line-medium-thick-long, .sep-line-extra-thick-long {
+    width: 62px;
+}
+
+.sep-line-full, .sep-line-thin-full, .sep-line-thick-full, .sep-line-medium-thick-full, .sep-line-extra-thick-full {
+    width: 100%;
+}

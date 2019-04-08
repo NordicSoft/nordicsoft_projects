@@ -1,21 +1,21 @@
 ﻿.bg-base-color {
-    background-color: #ff4081 !important;
+    background-color: $base !important;
 }
 
 .border-base-color {
-    border-color: #ff4081 !important;
+    border-color: $base !important;
 }
 
 .btn-base-color {
     color: #fff;
-    background-color: #ff4081;
-    border-color: #ff4081;
+    background-color: $base;
+    border-color: $base;
 }
 
 .btn-base-color:hover {
     color: #fff;
     background-color: #ff1a68;
-    border-color: #ff0d5f;
+    border-color: $base-hover;
 }
 
 .btn-base-color:focus, .btn-base-color.focus {
@@ -24,15 +24,15 @@
 
 .btn-base-color.disabled, .btn-base-color:disabled {
     color: #fff;
-    background-color: #ff4081;
-    border-color: #ff4081;
+    background-color: $base;
+    border-color: $base;
 }
 
 .btn-base-color:not(:disabled):not(.disabled):active, 
 .btn-base-color:not(:disabled):not(.disabled).active, 
 .show > .btn-base-color.dropdown-toggle {
     color: #fff;
-    background-color: #ff0d5f;
+    background-color: $base-hover;
     border-color: #ff0057;
 }
 
@@ -43,16 +43,16 @@
 }
 
 .btn-outline-base-color {
-    color: #ff4081;
+    color: $base;
     background-color: transparent;
     background-image: none;
-    border-color: #ff4081;
+    border-color: $base;
 }
 
 .btn-outline-base-color:hover {
     color: #ffffff;
-    background-color: #ff4081;
-    border-color: #ff4081;
+    background-color: $base;
+    border-color: $base;
 }
 
 .btn-outline-base-color:focus, 
@@ -62,7 +62,7 @@
 
 .btn-outline-base-color.disabled, 
 .btn-outline-base-color:disabled {
-    color: #ff4081;
+    color: $base;
     background-color: transparent;
 }
 
@@ -70,8 +70,8 @@
 .btn-outline-base-color:not(:disabled):not(.disabled).active, 
 .show > .btn-outline-base-color.dropdown-toggle {
     color: #fff;
-    background-color: #ff4081;
-    border-color: #ff4081;
+    background-color: $base;
+    border-color: $base;
 }
 
 .btn-outline-base-color:not(:disabled):not(.disabled):active:focus, 
@@ -81,23 +81,23 @@
 }
 
 .carousel-custom.carousel-base-color .flickity-prev-next-button {
-    background-color: #ff4081 !important;
+    background-color: $base !important;
 }
 
 .carousel-custom.carousel-base-color.page-dots-custom .flickity-page-dots .is-selected > .page > .page-dots {
-    color: #ff4081 !important;
+    color: $base !important;
 }
 
 .pace .pace-progress {
-    background-color: #ff4081 !important;
+    background-color: $base !important;
 }
 
 .nav-tabs.nav-tabs-custom .nav-link.active {
-    color: #ff4081 !important;
+    color: $base !important;
 }
 
 .text-base-color {
-    color: #ff4081 !important;
+    color: $base !important;
 }
 
 /*#region Hero*/

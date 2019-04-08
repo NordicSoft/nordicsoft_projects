@@ -38,6 +38,7 @@ module.exports = (env, options) => {
                 "script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js",
                 "script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js"
             ],
+            all_styles: './ClientApp/src/assets/js/all_styles.js',
             custom_styles: './ClientApp/src/assets/js/custom_styles.js',
             main: './ClientApp/src/assets/js/index.js'
 
@@ -94,7 +95,11 @@ module.exports = (env, options) => {
             // to WDS. --hot sets this automatically!
             new webpack.HotModuleReplacementPlugin(),
             new CompressionPlugin(),
-            new CopyWebpackPlugin(["./ClientApp/src/assets/js/critical-foft-preload-fallback-optional.js", "./ClientApp/src/assets/js/sw.js"])
+            new CopyWebpackPlugin([
+                "./ClientApp/src/assets/js/critical-foft-preload-fallback-optional.js",
+                "./ClientApp/src/assets/js/fonts-load.js",
+                "./ClientApp/src/assets/js/critical-css.js",
+                "./ClientApp/src/assets/js/sw.js"])
 
         ],
         module: {
