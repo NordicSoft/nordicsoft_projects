@@ -19,6 +19,22 @@
     <link rel="canonical" href="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
 }
 
+@section Scripts{ 
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/dist/sw.js', { scope: '/' }).then(function (registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+}
+
 <!-- Section - Hero Start -->
 <section id="hero-bg-static" class="bg-img-cover hero bg-overlay-black-5 h-100 p-0 w-100">
     <div class="container">
@@ -141,8 +157,8 @@
                         </div>
 
                         <div class="align-items-center d-flex mt-4">
-                            <button type="button" data-toggle="modal" data-target="#modalWeddingEvent" class="btn btn-outline-black btn-small border-thick">Show Map</button>
-                            <a href="#rsvp" class="page-scroll btn btn-medium d-none d-sm-block text-base-color text-underline">RSVP Now</a>
+                            <button type="button" data-toggle="modal" data-target="#modalWeddingEvent" class="btn btn-outline-black btn-small border-thick" title="Show Map">Show Map</button>
+                            <a href="#rsvp" class="page-scroll btn btn-medium d-none d-sm-block text-base-color text-underline" title="RSVP Now">RSVP Now</a>
                         </div>
                     </div>
                 </div>
@@ -174,8 +190,8 @@
                         </div>
 
                         <div class="align-items-center d-flex mt-4">
-                            <button type="button" data-toggle="modal" data-target="#modalWeddingEvent" class="btn btn-outline-black btn-small border-thick">Show Map</button>
-                            <a href="#rsvp" class="page-scroll btn btn-medium d-none d-sm-block text-base-color text-underline">RSVP Now</a>
+                            <button type="button" data-toggle="modal" data-target="#modalWeddingEvent" class="btn btn-outline-black btn-small border-thick" title="Show Map">Show Map</button>
+                            <a href="#rsvp" class="page-scroll btn btn-medium d-none d-sm-block text-base-color text-underline" title="RSVP Now">RSVP Now</a>
                         </div>
                     </div>
                 </div>
@@ -444,9 +460,9 @@
                 <div class="p-xl-2">
                     <h3 class="font-alt letter-spacing-1 text-uppercase title-small">Wedding Gifts</h3>
                     <span class="bg-base-color d-block mt-3 sep-line-thick-long"></span>
-                    <p class="mt-3 text-base">Our wedding is not about gifts, your friendship and your willing to come and share our happiness is the biggest gift you can provide! However, if it is what you want, you can help us to have a honeymoon of our dreams in Bali, Indonesia. We are registered with <a href="https://www.honeyfund.com/" class="text-base-color text-underline" target="_blank">Honeyfund.com</a>, please visit this website for more details. Thank you!</p>
+                    <p class="mt-3 text-base">Our wedding is not about gifts, your friendship and your willing to come and share our happiness is the biggest gift you can provide! However, if it is what you want, you can help us to have a honeymoon of our dreams in Bali, Indonesia. We are registered with <a href="https://www.honeyfund.com/" class="text-base-color text-underline" target="_blank" rel="noopener noreferrer nofollow" title="Honeyfund.com">Honeyfund.com</a>, please visit this website for more details. Thank you!</p>
                     <p class="font-alt2 mb-0 text-large">"There is nothing in the world more to be prized than true friendship"</p>
-                    <a href="#" class="btn btn-small btn-outline-black border-thick mt-4" target="_blank" rel="noopener">View Registry</a>
+                    <a href="#" class="btn btn-small btn-outline-black border-thick mt-4" target="_blank" rel="noopener" title="View Registry">View Registry</a>
                 </div>
             </div>
         </div>
@@ -524,7 +540,7 @@
                         </div>
 
                         <div class="col-12 mt-4 text-center">
-                            <button class="btn btn-small btn-lg-medium btn-base-color" aria-label="Submit" type="submit">Submit</button>
+                            <button class="btn btn-small btn-lg-medium btn-base-color" aria-label="Submit" type="submit" title="Submit">Submit</button>
                         </div>
                     </div>
                 </form>
@@ -534,6 +550,6 @@
 </section>
 <!-- //Section - RSVP End -->
 
-<a href="#page-top" class="page-scroll scroll-to-top">
+<a href="#page-top" class="page-scroll scroll-to-top" title="Back to top">
     <i class="fa fa-angle-up"></i>
 </a>
