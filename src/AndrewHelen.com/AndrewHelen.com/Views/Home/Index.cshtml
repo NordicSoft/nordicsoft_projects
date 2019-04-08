@@ -7,8 +7,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Wedding | Andrew & Helen" />
     <meta property="og:description" content="Come and help us make our most important day unforgettable, find more details about us and our happy occasion here." />
-    <meta property="og:url" content="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
-    <meta property="og:image" content="@($"{Context.Request.Scheme}://{Context.Request.Host}/img/andrew_helen_og_image.jpg")" />
+    <meta property="og:url" content="@($"https://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
+    <meta property="og:image" content="@($"https://{Context.Request.Host}/img/andrew_helen_og_image.jpg")" />
     <meta property="og:image:width" content="1024" />
     <meta property="og:image:height" content="576" />
 
@@ -16,7 +16,7 @@
 }
 @section links
     {
-    <link rel="canonical" href="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
+    <link rel="canonical" href="@($"https://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
 }
 
 @section Scripts{ 
