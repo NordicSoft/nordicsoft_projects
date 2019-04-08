@@ -32,6 +32,7 @@ module.exports = (env, options) => {
                 "script-loader!./ClientApp/src/assets/vendor/js/init.js"
             ],
 
+            all_styles: './ClientApp/src/assets/js/all_styles.js',
             custom_styles: './ClientApp/src/assets/js/custom_styles.js',
             main: './ClientApp/src/assets/js/index.js'
         },
@@ -90,7 +91,8 @@ module.exports = (env, options) => {
             new CopyWebpackPlugin([
                 "./ClientApp/src/assets/js/critical-foft-preload-fallback-optional.js",
                 "./ClientApp/src/assets/js/fonts-load.js",
-                "./ClientApp/src/assets/js/sw.js"
+                "./ClientApp/src/assets/js/sw.js",
+                "./ClientApp/src/assets/js/critical-css.js"
             ])
 
         ],
