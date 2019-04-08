@@ -1,14 +1,18 @@
 {
-  "name": "NordicSoft",
+  "name": "richard-grace_com",
+  "netcore_version": "netcoreapp2.1",
   "version": "1.0.0",
   "private": true,
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:stats": "webpack --env production --json > stats.json",
     "build": "webpack --mode=development",
     "release": "webpack --mode=production",
+    "copy_to_env": "pscp -pw 5gtaa$6A -r ./bin/Release/%npm_package_netcore_version%/publish/* xbanner@192.168.11.25:/var/www/%npm_package_name%",
     "publish_release": "npm run release && dotnet publish -c Release",
-    "publish_debug": "npm run release && dotnet publish -c Debug"
+    "publish_debug": "npm run release && dotnet clean -c Debug && dotnet publish -c Debug",
+    "publish_to_enviroment": "npm run publish_release && npm run copy_to_env"
   },
   "keywords": [],
   "author": "",
