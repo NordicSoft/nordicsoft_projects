@@ -89,7 +89,9 @@ module.exports = (env, options) => {
             new CompressionPlugin(),
             new CopyWebpackPlugin([
                 "./ClientApp/src/assets/js/critical-foft-preload-fallback-optional.js",
-                "./ClientApp/src/assets/js/fonts-load.js"])
+                "./ClientApp/src/assets/js/fonts-load.js",
+                "./ClientApp/src/assets/js/sw.js"
+            ])
 
         ],
         module: {
