@@ -15,7 +15,21 @@
     {
     <link rel="canonical" href="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
 }
-
+@section Scripts{ 
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/dist/sw.js', { scope: '/' }).then(function (registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+}
 <div class="master-wrapper">
     <nav class="navbar navbar-default navbar-fixed-top fadeInDown">
         <div class="container-fluid">
@@ -31,11 +45,11 @@
 
             <div class="collapse navbar-collapse" id="main-navigation">
                 <ul class="nav navbar-nav text-center">
-                    <li><a href="#welcome" class="navbar-link page-scroll smoothie">Welcome</a></li>
-                    <li><a href="#wedding-date" class="navbar-link page-scroll smoothie">The day</a></li>
-                    <li><a class="navbar-brand smoothie hidden-xs" href="/">Richard & Grace</a></li>
-                    <li><a href="#gifts" class="navbar-link page-scroll smoothie">Gifts</a></li>
-                    <li><a href="#rsvp" class="navbar-link page-scroll smoothie">RSVP</a></li>
+                    <li><a href="#welcome" class="navbar-link page-scroll smoothie" title="Welcome">Welcome</a></li>
+                    <li><a href="#wedding-date" class="navbar-link page-scroll smoothie" title="The day">The day</a></li>
+                    <li><a class="navbar-brand smoothie hidden-xs" href="/" title="Richard & Grace">Richard & Grace</a></li>
+                    <li><a href="#gifts" class="navbar-link page-scroll smoothie" title="Gifts">Gifts</a></li>
+                    <li><a href="#rsvp" class="navbar-link page-scroll smoothie" title="RSVP">RSVP</a></li>
                 </ul>
             </div>
         </div>
@@ -234,7 +248,7 @@
                             <input type="text" class="form-control" name="name" aria-label="Your name" maxlength="100" placeholder="Name" required>
                             <input type="text" class="form-control" name="email" placeholder="Email" id="email" required data-validation-required-message="Please enter your email address." aria-label="Email" />
                             <textarea name="comments" class="form-control" id="comments" placeholder="Your Message" required data-validation-required-message="Please enter a message." aria-label="Message"></textarea>
-                            <input type="submit" name="submit" value="Submit" />
+                            <input type="submit" name="submit" value="Submit" title="Submit" />
                         </form>
                     </div>
                 </div>
@@ -246,7 +260,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center wow fadeIn">
-                    <span class="copyright">Created With Love. Designed by <a href="https://nordicsoft.net/" target="_blank">NordicSoft</a>.</span>
+                    <span class="copyright">Created With Love. Designed by <a href="https://nordicsoft.net/" target="_blank" rel="noopener noreferrer nofollow" title="NordicSoft">NordicSoft</a>.</span>
                 </div>
             </div>
         </div>
