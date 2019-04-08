@@ -71,7 +71,7 @@ namespace Dalystudio.biz
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.Use((context, next) =>
             {
