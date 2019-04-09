@@ -56,10 +56,12 @@ header {
 }
 .animation-bg {
     background-image: url(/img/bg/bg1.jpg);
+    background-image: -webkit-image-set(url(/img/bg/bg1.webp) 1x);
     background-position: 50% 50%;
 
     &.opacity-2 {
         background-image: url(/img/bg/bg2.jpg);
+        background-image: -webkit-image-set(url(/img/bg/bg2.webp) 1x);
         animation-name: opacity2;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
@@ -69,6 +71,7 @@ header {
 
     &.opacity-3 {
         background-image: url(/img/bg/bg3.jpg);
+        background-image: -webkit-image-set(url(/img/bg/bg3.webp) 1x);
         animation-name: opacity3;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;

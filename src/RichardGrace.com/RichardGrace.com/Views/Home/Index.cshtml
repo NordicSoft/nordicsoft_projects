@@ -15,7 +15,7 @@
     {
     <link rel="canonical" href="@($"https://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
 }
-@section Scripts{ 
+@section Scripts{
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
@@ -62,7 +62,6 @@
                 <div class="intro-heading wow fadeIn heading-font"><span class="secondary-font">Richard and Grace</span>Saturday, January 11, 2020</div>
             </div>
         </div>
-        @*<img data-src="" class="lazyload" />*@
         <div class="animation-bg "></div>
         <div class="animation-bg opacity-2"></div>
         <div class="animation-bg opacity-3"></div>
@@ -84,12 +83,22 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-md-5 col-md-offset-1 wow fadeIn">
-                        <img data-src="img/him.jpg" class="img-responsive max-sm-width mb30 lazyload" alt="Groom">
+                        <picture>
+                            <source data-srcset="img/groom.webp" type="image/webp" class="img-responsive lazyload">
+                            <source data-srcset="img/groom.jpg" type="image/jpeg" class="img-responsive lazyload">
+                            <img data-src="img/groom.jpg" alt="Groom" class="img-responsive max-sm-width mb30 lazyload" />
+                        </picture>
+                        @*<img data-src="img/him.jpg" class="img-responsive max-sm-width mb30 lazyload" alt="">*@
                         <p class="text-center">My one and only. The most generous, thoughtful, honest, trustworthy, and caring man in the whole world. There aren’t enough words in the dictionary to describe what a wonderful person my future husband is. - Grace</p>
                     </div>
 
                     <div class="col-sm-6 col-md-5 wow fadeIn">
-                        <img data-src="img/her.jpg" class="img-responsive max-sm-width mb30 lazyload" alt="Bride">
+                        @*<img data-src="img/her.jpg" class="img-responsive max-sm-width mb30 lazyload" alt="Bride">*@
+                        <picture>
+                            <source type="image/webp" data-srcset="img/bride.webp" class="img-responsive lazyload">
+                            <source type="image/jpeg" data-srcset="img/bride.jpg" class="img-responsive lazyload">
+                            <img data-src="img/bride.jpg" alt="Bride" class="img-responsive max-sm-width mb30 lazyload" />
+                        </picture>
                         <p class="text-center">The woman of my dreams. She is my sunshine, my soulmate, and my world. The kindest, prettiest, and sweetest person I ever met. Beautiful, ravishing, stunning! I am the luckiest man in the world to have such a gorgeous bride. – Richard</p>
                     </div>
                 </div>
