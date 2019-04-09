@@ -1,5 +1,4 @@
-﻿@using Event
-@{
+﻿@{
     ViewData["Title"] = "Home Page";
 }
 @section metatags{
@@ -22,6 +21,16 @@
 }
 
 @section Scripts{ 
+    <script src='https://www.google.com/recaptcha/api.js?render=6LfMK50UAAAAAH5KicYId5sjl5qZIvxtJ00FIDa2'></script>
+    <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6LfMK50UAAAAAH5KicYId5sjl5qZIvxtJ00FIDa2', { action: 'contact' }).then(function (token) {
+                $("input[name=g-recaptcha-response-token]").val(token);
+                $("input[name=g-recaptcha-action]").val("contact");
+            });
+        });
+    </script>
+
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
@@ -313,17 +322,17 @@
                         </div>
                     </div>
                 </div>
-                <form>
+                <form method="POST" asp-controller="Common" asp-action="Subscribe" id="subscribe-form">
                     <div class="row">
                         <div class="col-sm-3 event-info"><span>Name</span></div>
                         <div class="col-sm-9 event-detail">
-                            <input type="text" class="form-control" required="" aria-label="Name">
+                            <input type="text" name="name" class="form-control" required aria-label="Name">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-3 event-info"><span>Email</span></div>
                         <div class="col-sm-9 event-detail">
-                            <input type="email" class="form-control" required="" aria-label="Email">
+                            <input type="email" name="email" class="form-control" required aria-label="Email">
                         </div>
                     </div>
                     <div class="row">
@@ -359,19 +368,23 @@
                 </button>
             </div>
             <form method="POST" asp-controller="Common" asp-action="SendFeedback" id="contact-form">
+
+                <input type="hidden" name="g-recaptcha-action">
+                <input type="hidden" name="g-recaptcha-response-token">
+
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-12 mb10">
-                            <input type="text" name="name" class="form-control" placeholder="Name" required="">
+                            <input type="text" name="name" class="form-control" placeholder="Name" required>
                         </div>
                         <div class="col-md-12 mb10">
-                            <input type="text" name="email" class="form-control" placeholder="Email address" required="">
+                            <input type="email" name="email" class="form-control" placeholder="Email address" required>
                         </div>
                         <div class="col-md-12 mb10">
-                            <input type="text" name="phone" class="form-control" placeholder="Phone" required="">
+                            <input type="text" name="phone" class="form-control" placeholder="Phone" required>
                         </div>
                         <div class="col-md-12 mb10">
-                            <select class="form-control" name="numberSeats" required="">
+                            <select class="form-control" name="numberSeats" required>
                                 <option value="">Number of Seats</option>
                                 <option value="1">1 Seat</option>
                                 <option value="2">2 Seats</option>
@@ -381,7 +394,7 @@
                             </select>
                         </div>
                         <div class="col-md-12 mb10">
-                            <select class="form-control" name="selectPass" required="">
+                            <select class="form-control" name="selectPass" required>
                                 <option value="">Select a Pass</option>
                                 <option value="1">Bronze pass - 99$/1 seat</option>
                                 <option value="2">Silver pass - 199$/1 seat</option>

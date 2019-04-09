@@ -1,4 +1,4 @@
-﻿namespace Event
+﻿namespace NordicSoftEvents
 {
     public class Settings
     {

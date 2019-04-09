@@ -7,11 +7,11 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Net.Http.Headers;
+using NordicSoftEvents.Services.GoogleRecaptcha;
+using NordicSoftEvents.Services.MailSender;
 using SmartBreadcrumbs;
-using Event.Services.GoogleRecaptcha;
-using Event.Services.MailSender;
 
-namespace Event
+namespace NordicSoftEvents
 {
     public class Startup
     {

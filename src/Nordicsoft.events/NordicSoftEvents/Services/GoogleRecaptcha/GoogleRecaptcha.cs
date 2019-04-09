@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 
-namespace Event.Services.GoogleRecaptcha
+namespace NordicSoftEvents.Services.GoogleRecaptcha
 {
     public class GoogleRecaptcha : IGoogleRecaptcha
     {

@@ -1,4 +1,4 @@
-﻿namespace Event.Services.MailSender
+﻿namespace NordicSoftEvents.Services.MailSender
 {
     public class AmazonSESMail : IAmazonSESMail
     {

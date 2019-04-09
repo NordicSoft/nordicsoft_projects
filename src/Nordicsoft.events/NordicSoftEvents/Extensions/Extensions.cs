@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Event.Extensions
+namespace NordicSoftEvents.Extensions
 {
     public static class Extensions
     {

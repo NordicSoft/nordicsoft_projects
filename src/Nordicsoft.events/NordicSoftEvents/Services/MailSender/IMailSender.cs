@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Event.Services.MailSender
+namespace NordicSoftEvents.Services.MailSender
 {
     public interface IMailSender
     {
