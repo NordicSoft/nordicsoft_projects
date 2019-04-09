@@ -96,7 +96,7 @@ module.exports = (env, options) => {
       // to WDS. --hot sets this automatically!
       new webpack.HotModuleReplacementPlugin(),
         new CompressionPlugin(),
-        //new CopyWebpackPlugin(["./ClientApp/src/assets/js/critical-foft-preload-fallback-optional.js", "./ClientApp/src/assets/js/sw.js"])
+        new CopyWebpackPlugin(["./ClientApp/src/assets/js/sw.js"/*, "./ClientApp/src/assets/js/critical-foft-preload-fallback-optional.js"*/ ])
 
     ],
     module: {
