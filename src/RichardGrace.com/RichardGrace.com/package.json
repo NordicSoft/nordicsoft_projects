@@ -12,7 +12,7 @@
     "copy_to_env": "pscp -pw 5gtaa$6A -r ./bin/Release/%npm_package_netcore_version%/publish/* xbanner@192.168.11.25:/var/www/%npm_package_name%",
     "publish_release": "npm run release && dotnet publish -c Release",
     "publish_debug": "npm run release && dotnet clean -c Debug && dotnet publish -c Debug",
-    "publish_to_enviroment": "npm run publish_release && npm run copy_to_env"
+    "publish_to_environment": "npm run publish_release && npm run copy_to_env"
   },
   "keywords": [],
   "author": "",

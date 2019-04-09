@@ -12,14 +12,17 @@ namespace RichardGrace.com.Controllers.API
     {
         [HttpPost]
         [Route("send-feedback")]
-        public async Task<JObject> SendFeedback([FromServices] IGoogleRecaptcha googleRecaptcha, [FromServices] IMailSender mailSender, string subject = "Feedback from customer")
+        public async Task<JObject> SendFeedback([FromServices] IGoogleRecaptcha googleRecaptcha, [FromServices] IMailSender mailSender)
         {
 
             string name = Request.Form["name"];
             string email = Request.Form["email"];
-            string feedbackMessage = Request.Form["feedbackMessage"];
+            string feedbackMessage = Request.Form["comments"];
             string encodedResponse = Request.Form["g-recaptcha-response-token"];
             string action = Request.Form["g-recaptcha-action"];
+
+
+            string subject = $"{Settings.SiteNameDomain}: Feedback from customer";
 
             bool isCaptchaValid = await googleRecaptcha.IsCaptchaValid(encodedResponse, action);
 
@@ -36,10 +39,10 @@ namespace RichardGrace.com.Controllers.API
                 FeedbackMessage = feedbackMessage
             };
 
-            var textBody = $"Feedback rom customer with name: {name} and e-mail: {email}: " +
+            var textBody = $"{Settings.SiteNameDomain}: Feedback rom customer with name: {name} and e-mail: {email}: " +
                            $"{feedbackMessage}";
 
-            var textHtml = $"<p>Feedback rom customer with name: <strong>{name}</strong></p>" +
+            var textHtml = $"<p>{Settings.SiteNameDomain}: Feedback rom customer with name: <strong>{name}</strong></p>" +
                            $"<p>and e-mail: <strong>{email}</strong>: </p>" +
                            $"<p>{feedbackMessage}</p>";
 
