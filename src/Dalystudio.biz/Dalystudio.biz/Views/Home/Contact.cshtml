@@ -43,14 +43,14 @@
 
 
 @section scripts{
-    <script src="https://www.google.com/recaptcha/api.js?render=6Lc1c3MUAAAAAOMPCD9lX3k12R7Bb46IjpCl9qTg"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdXTp0UAAAAAEWy3hhPCKXb8CBP4IclbuzSYPfK"></script>
     <script>
-        //grecaptcha.ready(function () {
-        //    grecaptcha.execute('6Lc1c3MUAAAAAOMPCD9lX3k12R7Bb46IjpCl9qTg', { action: 'contact' }).then(function (token) {
-        //        $("input[name=g-recaptcha-response-token]").val(token);
-        //        $("input[name=g-recaptcha-action]").val("contact");
-        //    });
-        //});
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6LdXTp0UAAAAAEWy3hhPCKXb8CBP4IclbuzSYPfK', { action: 'contact' }).then(function (token) {
+                $("input[name=g-recaptcha-response-token]").val(token);
+                $("input[name=g-recaptcha-action]").val("contact");
+            });
+        });
     </script>
 }
     <section class="module module-header bg-dark bg-dark-50 lazyload" data-bg="../img/Contact.jpg">
@@ -104,7 +104,10 @@
 
                 <div class="col-sm-6 col-sm-offset-3">
 
-                    <form id="contact-form" role="form" novalidate="">
+                    <form id="contact-form" role="form" asp-controller="Common" asp-action="SendFeedback" method="POST">
+                        
+                        <input type="hidden" name="g-recaptcha-response-token" />
+                        <input type="hidden" name="g-recaptcha-action" />
 
                         <div class="form-group">
                            @* <label class="sr-only" for="cname">Name</label>*@
