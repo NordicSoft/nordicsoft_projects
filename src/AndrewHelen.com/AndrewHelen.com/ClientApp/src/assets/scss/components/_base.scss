@@ -42,26 +42,21 @@ body, html {
     border-radius: 2px;
     display: none;
     position: fixed;
-    right: 35px;
-    top: 94%;
+    right: 18px;
+    bottom: 10px;
     text-align: center;
     z-index: 999;
-    min-height: 30px;
-    padding: 4px 0;
-
-    i {
-        color: #ffffff;
-        font-size: 1.125rem;
-        margin: 0 6px;
-    }
+    min-height: 35px;
+    width: 35px;
+    margin: auto;
+    padding: 6px 0;
 }
-
-.scroll-to-top i {
-
-}
-
 /** Overflow  */
 
 .overflow-hidden {
     overflow: hidden !important;
+}
+
+.grecaptcha-badge{
+    bottom: 55px !important;
 }
