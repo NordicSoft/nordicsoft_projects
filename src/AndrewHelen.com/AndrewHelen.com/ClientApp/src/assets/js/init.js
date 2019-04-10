@@ -192,7 +192,7 @@
             var $flickityPageDots = $carouselLoveStory.find('.flickity-page-dots').children();
             $flickityPageDots.each(function ($i) {
                 var num = ($i + 1 < 10) ? '0' + ($i + 1) : ($i + 1);
-                $(this).html('<span class="page" data-index="' + $i + '"><span class="page-dots far fa-heart"></span><span class="page-number font-alt2 text-medium text-sm-extra-large">' + num + '</span></span>');
+                $(this).html('<span class="page" data-index="' + $i + '"><span class="page-dots fa-icons fac-heart"></span><span class="page-number font-alt2 text-medium text-sm-extra-large">' + num + '</span></span>');
             });
 
             var $flickityPageNumber = $flickityPageDots.find('.page');

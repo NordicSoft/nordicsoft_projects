@@ -19,7 +19,7 @@
     <link rel="canonical" href="@($"https://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
 }
 
-@section Scripts{ 
+@section Scripts{
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
@@ -55,7 +55,7 @@
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-lg-7 mb-md-5 text-center">
-                <i class="flaticon flaticon-001-bride-1 icon-medium text-base-color"></i>
+                <i class="flaticon-icons flaticon-bride"></i>
                 <h3 class="font-alt letter-spacing-1 m-0 mt-1 text-uppercase title-small">The Perfect Couple</h3>
                 <span class="font-alt2 d-block mt-1 text-gray-700 text-large">A happy marriage is finding your true soulmate.</span>
                 <span class="bg-base-color d-block mt-3 mx-auto sep-line-thick-long"></span>
@@ -65,7 +65,11 @@
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-3">
                 <div class="bg-white border border-gray-200 box-shadow p-2 position-relative">
-                    <img data-src="/img/the-groom.jpg" alt="Groom" class="lazyload img-fluid" />
+                    <picture>
+                        <source data-srcset="/img/the-groom.webp" type="image/webp" class="img-fluid lazyload">
+                        <source data-srcset="/img/the-groom.jpg" type="image/jpeg" class="img-fluid lazyload">
+                        <img data-src="/img/the-groom.jpg" alt="Groom" class="img-fluid lazyload" />
+                    </picture>
 
                     <div class="bg-base-color bottom-0 box-shadow-shallow m-3 opacity-9-5 position-absolute px-3 py-2 right-0 rounded">
                         <span class="font-alt2 text-small text-white">The Groom</span>
@@ -86,8 +90,11 @@
 
             <div class="col-md-6 col-lg-3">
                 <div class="bg-white border border-gray-200 box-shadow p-2 position-relative">
-                    <img data-src="/img/the-bride.jpg" alt="Bride" class="lazyload img-fluid"/>
-
+                    <picture>
+                        <source data-srcset="/img/the-bride.webp" type="image/webp" class="img-fluid lazyload">
+                        <source data-srcset="/img/the-bride.jpg" type="image/jpeg" class="img-fluid lazyload">
+                        <img data-src="/img/the-bride.jpg" alt="Bride" class="img-fluid lazyload" />
+                    </picture>
                     <div class="bg-base-color bottom-0 box-shadow-shallow m-3 opacity-9-5 position-absolute px-3 py-2 right-0 rounded">
                         <span class="font-alt2 text-small text-white">The Bride</span>
                     </div>
@@ -118,7 +125,6 @@
     </div>
 </section>
 <!-- //Section - The Couple End -->
-
 <!-- Section - Wedding Event Start -->
 <section id="wedding-event" class="bg-overlay-black-5 py-big lazyload" data-bg="/img/bg/bg-wedding-event.jpg">
     <div class="container">
@@ -140,7 +146,7 @@
 
                         <div class="d-flex flex-column">
                             <div class="align-items-center d-flex">
-                                <i class="flaticon flaticon-014-date icon-small mr-4 text-base-color"></i>
+                                <i class="flaticon-icons flaticon-date mr-2 ml-0"></i>
                                 <span class="text-gray-800 text-base">
                                     Sunday – November 16th, 2019<br>
                                     10.00 – 11.00 am
@@ -148,7 +154,7 @@
                             </div>
 
                             <div class="align-items-center d-flex">
-                                <i class="flaticon flaticon-031-church icon-small mr-4 text-base-color"></i>
+                                <i class="flaticon-icons flaticon-locatoin-ceremony mr-2 ml-0"></i>
                                 <span class="text-gray-800 text-base">
                                     St. Monica Catholic Church<br>
                                     701 California Ave, CA 90403
@@ -173,7 +179,8 @@
 
                         <div class="d-flex flex-column">
                             <div class="align-items-center d-flex">
-                                <i class="flaticon flaticon-014-date icon-small mr-3 text-base-color"></i>
+                                <i class="flaticon-icons flaticon-date mr-2 ml-0"></i>
+
                                 <span class="text-gray-800 text-base">
                                     Sunday – November 16th, 2019 <br>
                                     16.00 - 23.00
@@ -181,7 +188,7 @@
                             </div>
 
                             <div class="align-items-center d-flex">
-                                <i class="flaticon flaticon-015-location icon-small mr-3 text-base-color"></i>
+                                <i class="flaticon-icons flaticon-locatoin-reception mr-2 ml-0"></i>
                                 <span class="text-gray-800 text-base">
                                     The Victorian event venue<br>
                                     2640 Main St, Santa Monica, CA 90405
@@ -200,7 +207,6 @@
     </div>
 </section>
 <!-- //Section - Wedding Event End -->
-
 <!-- Modal - Wedding Event Start -->
 <div class="modal fade" id="modalWeddingEvent" tabindex="-1" role="dialog" aria-labelledby="modalWeddingEvent" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -252,13 +258,12 @@
     </div>
 </div>
 <!-- //Modal - Wedding Event End -->
-
 <!-- Section - Love Story Start -->
 <section id="love-story" class="bg-white section-divider section-divider-y">
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-lg-7 mb-md-5 text-center">
-                <i class="flaticon flaticon-050-balloons icon-medium text-base-color"></i>
+                <i class="flaticon-icons flaticon-heart"></i>
                 <h3 class="font-alt letter-spacing-1 m-0 mt-1 text-uppercase title-small">Our Love Story</h3>
                 <span class="d-block font-alt2 mt-1 text-gray-700 text-large">To love and be loved is to feel the sun from both sides.</span>
                 <span class="bg-base-color d-block mt-3 mx-auto sep-line-thick-long"></span>
@@ -327,7 +332,6 @@
     </div>
 </section>
 <!-- //Section - Love Story End -->
-
 <!-- Section - Proposed Start -->
 <section id="proposed" class="bg-overlay-black-5 py-big lazyload" data-bg="/img/bg/bg-proposed.jpg">
     <div class="container">
@@ -345,13 +349,12 @@
     </div>
 </section>
 <!-- //Section - Proposed End -->
-
 <!-- Section - Gallery Start -->
 <section id="photos" class="bg-gray-100 section-divider section-divider-y section-divider-bg-gray-100">
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-lg-7 mb-md-5 text-center">
-                <i class="flaticon flaticon-004-notebook icon-medium text-base-color"></i>
+                <i class="flaticon-icons flaticon-camera"></i>
                 <h3 class="font-alt letter-spacing-1 m-0 mt-1 text-uppercase title-small">Photo Gallery</h3>
                 <span class="d-block font-alt2 mt-1 text-gray-700 text-large">Each photograph is a story people failed to put into words.</span>
                 <span class="bg-base-color d-block mt-3 mx-auto sep-line-thick-long"></span>
@@ -451,7 +454,6 @@
     </div>
 </section>
 <!-- //Section - Gallery End -->
-
 <!-- Section - Wedding Gifts Start -->
 <section id="wedding-gifts" class="bg-overlay-black-5 py-big lazyload" data-bg="/img/bg/bg-wedding-gifts.jpg">
     <div class="container">
@@ -469,7 +471,6 @@
     </div>
 </section>
 <!-- //Section - Wedding Gifts End -->
-
 <!-- Section - RSVP Start -->
 <section id="rsvp" class="bg-white section-divider section-divider-y">
     <div class="container">
@@ -551,5 +552,5 @@
 <!-- //Section - RSVP End -->
 
 <a href="#page-top" class="page-scroll scroll-to-top" title="Back to top">
-    <i class="fa fa-angle-up"></i>
+    <i class="fa-icons fac-up"></i>
 </a>

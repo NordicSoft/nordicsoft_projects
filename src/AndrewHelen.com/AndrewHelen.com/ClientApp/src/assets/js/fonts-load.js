@@ -6,7 +6,7 @@
     return;
                 } else if ("fonts" in document) {
         document.fonts.load("1em MontserratSubset").then(function () {
-            document.fonts.load("1em DosisSubset").then(function () {
+            document.fonts.load("1em PTSerifSubset").then(function () {
                 document.documentElementPTSerifSubsetclassName += " fonts-loaded-1";
                 Promise.all([
                     document.fonts.load("500 1em Montserrat"),

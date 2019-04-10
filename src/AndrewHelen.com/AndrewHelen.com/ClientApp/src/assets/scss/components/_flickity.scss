@@ -96,11 +96,7 @@
 }
 
 .carousel-custom.page-dots-custom .flickity-page-dots > li .page-dots {
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    background: #ffffff;
+    background-color: #ffffff;
     color: #495057;
     font-size: 22px;
 }
@@ -111,10 +107,6 @@
 }
 
 .flickity-prev-next-button {
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
     background-color: #000000 !important;
     border-radius: 0;
     height: 54px;
