@@ -23,13 +23,12 @@ module.exports = (env, options) => {
         entry: {
             vendor_styles: "./ClientApp/src/assets/js/vendor_styles.js",
             vendor_src: [
-                "script-loader!./ClientApp/src/assets/vendor/js/theme/plugins.js",
-                "script-loader!./ClientApp/src/assets/vendor/js/theme/event.custom.js",
-                "script-loader!./ClientApp/src/assets/vendor/js/theme/gmap.js.js",
-                "script-loader!./ClientApp/src/assets/vendor/js/theme/jquery.gmap.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/js/theme/jquery.countdown.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/js/jconfirm/jquery-confirm.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/js/init.js"
+                "script-loader!./ClientApp/src/assets/vendor/js/jquery/jquery.min.js",
+                "script-loader!./ClientApp/src/assets/vendor/js/bootstrap/bootstrap.min.js",
+                "script-loader!./ClientApp/src/assets/vendor/js/plugins/plugins.js",
+
+                "script-loader!./ClientApp/src/assets/vendor/js/jquery/jquery.countdown.min.js",
+                "script-loader!./ClientApp/src/assets/vendor/js/jquery/jquery.confirm.min.js"
             ],
 
             all_styles: './ClientApp/src/assets/js/all_styles.js',

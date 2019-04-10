@@ -9,10 +9,8 @@ h6,
 .h3,
 .h4,
 .h5,
-.h6 {
-    font-family: "Open Sans", sans-serif;
-    color: #252525;
-    font-weight: 500;
+.h6 {color: #252525;
+    font-weight: 400;
     font-variant-ligatures: common-ligatures;
     margin-top: 0;
 }
@@ -109,7 +107,6 @@ h6,
 }
 
 .base-font {
-    font-family: "Open Sans", sans-serif;
     font-weight: 300;
 }
 
@@ -443,7 +440,7 @@ strong, b {
 .back-to-top i {
     display: block;
     font-size: 25px;
-    line-height: 50px;
+    line-height: 46px;
     text-align: center;
 }
 
@@ -485,7 +482,6 @@ strong, b {
     padding-left: 23px;
     margin-top: 5px;
     display: block;
-    font-family: "Open Sans", sans-serif;
 }
 
 .list-icon li:before {
@@ -580,7 +576,7 @@ strong, b {
 
         span {
             line-height: 42px;
-            margin-top: 5px;
+            margin-top: 0;
 
             @media(max-width: 575px) {
                 line-height: 21px;
@@ -595,9 +591,6 @@ strong, b {
         margin: 10px auto;
         text-align: center;
     }
-}
-button, input, optgroup, select, textarea {
-    font-family: "Open Sans", sans-serif;
 }
 
 button:focus {

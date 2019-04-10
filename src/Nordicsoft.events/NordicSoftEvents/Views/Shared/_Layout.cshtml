@@ -50,10 +50,7 @@
     @RenderSection("links", false)
 
     <link rel="preload" href="~/dist/fonts/opensans-subset.woff2" as="font" type="font/woff2" crossorigin>
-    @*<link rel="preload" href="~/dist/fonts/fontawesome-webfont.woff2" as="font" type="font/woff2" crossorigin>*@
-    @*<link rel="preload" href="/dist/fonts/icons_subset.woff2" as="font" type="font/woff2" crossorigin>*@
-
-    <script src="~/dist/fonts-load.js"></script>
+    <script src="~/dist/fonts-load.js" defer></script>
 
     @RenderSection("criticalCSS", false)
 
@@ -75,7 +72,7 @@
     </environment>
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!--[if lt IE 8]>
         <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->

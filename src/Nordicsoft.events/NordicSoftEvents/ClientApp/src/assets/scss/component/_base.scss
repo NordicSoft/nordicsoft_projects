@@ -6,12 +6,21 @@ body {
     color: #666666;
     font-weight: 300;
     letter-spacing: 0em;
-    font-family: "Open Sans", sans-serif;
     font-size: 0.9em;
     line-height: 1.85714286em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    font-family: $primary-font;
+    .fonts-loaded-1 & {
+        font-family: $primary-font-loaded-1;
+    }
+
+    .fonts-loaded-2 & {
+        font-family: $primary-font-loaded-2;
+    }
 }
+
 .cd-row {
     display: inline-block;
     margin-bottom: 30px;
@@ -32,17 +41,20 @@ body {
 .cd-row > div h3 {
     margin-bottom: 0px;
 }
+
 #clock {
     .font-alt {
         color: rgb(37, 37, 37);
         font-size: 2.1em;
-        font-weight: 500;
+        font-weight: 400;
     }
 }
-@media(max-width: 991px){
+
+@media(max-width: 991px) {
     .img-about {
         display: none;
     }
+
     .contact-us {
         iframe {
             height: 390px;
@@ -53,9 +65,34 @@ body {
 }
 
 #home {
-    background-image: url('/images/event/bg.jpg');
+    background-image: url(/images/event/bg.jpg);
+    background-image: -webkit-image-set(url(/images/event/bg.webp) 1x);
     background-attachment: fixed;
 }
-.bg-about{
+
+.bg-about {
     background-attachment: fixed;
+}
+
+.grecaptcha-badge {
+    bottom: 65px !important;
+}
+
+select {
+    -moz-appearance: none; 
+    -webkit-appearance: none; 
+    appearance: none;
+    background-image: url('/images/event/arrow.png');
+    background-position: center right;
+    background-size: 28px 8px;
+    background-repeat: no-repeat;
+
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+body.jconfirm-noscroll {
+    overflow-y: hidden;
+    padding-right: 17px;
 }

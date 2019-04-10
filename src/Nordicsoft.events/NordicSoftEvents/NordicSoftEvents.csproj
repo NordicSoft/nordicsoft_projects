@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="ClientApp\src\assets\images\event\arrow.png" />
     <Content Include="Credentials\.aws\credentials">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -16,6 +17,10 @@
     <Content Remove="logs\**" />
     <EmbeddedResource Remove="logs\**" />
     <None Remove="logs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\src\assets\images\event\arrow.png" />
   </ItemGroup>
 
   <ItemGroup>

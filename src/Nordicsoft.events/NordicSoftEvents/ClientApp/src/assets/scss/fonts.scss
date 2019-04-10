@@ -54,6 +54,11 @@
     font-style: normal;
     font-display: swap;
 }
+
 .fonts-loaded-1 body {
-    font-family: OpenSansSubset, sans-serif;
+    font-family: OpenSansSubset, Arial;
+}
+
+.fonts-loaded-2 body {
+    font-family: Open Sans, OpenSansSubset, Arial;
 }
