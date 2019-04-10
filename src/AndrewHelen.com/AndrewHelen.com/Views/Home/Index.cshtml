@@ -19,7 +19,16 @@
     <link rel="canonical" href="@($"https://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
 }
 
-@section Scripts{
+@section Scripts{ 
+    <script src='https://www.google.com/recaptcha/api.js?render=6LeuM50UAAAAAHnc80H9hXsm0eVqJGhbqFCAsKFT'></script>
+    <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6LeuM50UAAAAAHnc80H9hXsm0eVqJGhbqFCAsKFT', { action: 'contact' }).then(function (token) {
+                $("input[name=g-recaptcha-response-token]").val(token);
+                $("input[name=g-recaptcha-action]").val("contact");
+            });
+        });
+    </script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
@@ -481,6 +490,10 @@
 
             <div class="col-lg-7 pl-lg-5 pt-5 pt-lg-0">
                 <form id="contact-form" asp-controller="Common" asp-action="SendFeedback" method="POST">
+
+                    <input type="hidden" name="g-recaptcha-action">
+                    <input type="hidden" name="g-recaptcha-response-token">
+
                     <div class="row">
                         <div class="col-12 text-center">
                             <span class="d-block font-alt2 text-extra-large text-gray-700">Come and celebrate our day with us.</span>
