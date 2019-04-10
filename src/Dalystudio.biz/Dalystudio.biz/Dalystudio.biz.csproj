@@ -12,9 +12,27 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\img\family\4.jpg" />
+    <Content Remove="wwwroot\img\family\5.jpg" />
+    <Content Remove="wwwroot\img\fashion\4.jpg" />
+    <Content Remove="wwwroot\img\lovestory\4.jpg" />
+    <Content Remove="wwwroot\img\lovestory\5.jpg" />
+    <Content Remove="wwwroot\img\wedding\5.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="Credentials\.aws\credentials">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\family\4.jpg" />
+    <None Include="wwwroot\img\family\5.jpg" />
+    <None Include="wwwroot\img\fashion\4.jpg" />
+    <None Include="wwwroot\img\lovestory\4.jpg" />
+    <None Include="wwwroot\img\lovestory\5.jpg" />
+    <None Include="wwwroot\img\wedding\5.jpg" />
   </ItemGroup>
 
   <ItemGroup>
