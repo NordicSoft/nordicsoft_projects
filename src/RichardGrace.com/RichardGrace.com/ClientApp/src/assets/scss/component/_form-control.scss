@@ -19,7 +19,7 @@
             width: 100%;
         }
 
-        &:first-child {
+        &[name=name] {
             margin-right: 5px;
 
             @media(max-width: 575px) {
@@ -27,7 +27,7 @@
             }
         }
 
-        &:nth-child(2) {
+        &[name=email] {
             margin-left: 5px;
 
             @media(max-width: 575px) {
