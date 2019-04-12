@@ -13,3 +13,26 @@ $secondary-font: 'Times New Roman', serif;
 $secondary-font-loaded-1: 'DancingScriptSubset', 'Times New Roman';
 $secondary-font-loaded-2: 'Dancing Script', 'DancingScriptSubset', 'Times New Roman';
 
+@mixin fonts-primary {
+    font-family: $primary-font;
+
+    .fonts-loaded-1 & {
+        font-family: $primary-font-loaded-1;
+    }
+
+    .fonts-loaded-2 & {
+        font-family: $primary-font-loaded-2;
+    }
+}
+
+@mixin fonts-secondary {
+    font-family: $secondary-font;
+
+    .fonts-loaded-1 & {
+        font-family: $secondary-font-loaded-1;
+    }
+
+    .fonts-loaded-2 & {
+        font-family: $secondary-font-loaded-2;
+    }
+}

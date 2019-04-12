@@ -11,6 +11,7 @@ section {
 
 .dark-wrapper.opaqued, .dark-opaqued {
     position: relative;
+
     &:before {
         content: '';
         position: absolute;
@@ -25,6 +26,7 @@ section {
 
 .light-opaqued {
     position: relative;
+
     &:before {
         content: '';
         position: absolute;
@@ -70,6 +72,10 @@ section h2.section-heading, .section-heading {
     margin-bottom: 10px;
     font-size: 34px;
     letter-spacing: 5px;
+
+    @media(max-width: 767px) {
+        font-size: 24px;
+    }
 }
 
 section h3.section-subheading {
@@ -133,11 +139,9 @@ footer {
 }
 
 .parallax-custom {
-    height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .section-404 {
@@ -149,7 +153,7 @@ footer {
     transform: translateY(-50%);
     overflow: hidden;
 
-    h1{
+    h1 {
         color: rgb(255, 255, 255);
     }
 
@@ -158,6 +162,7 @@ footer {
         display: inline-block;
         line-height: 52px;
         min-width: 140px;
+
         &:hover {
             transition: all 0.3s;
             color: rgb(51, 51, 51);
@@ -167,8 +172,33 @@ footer {
     button {
         border-color: rgb(255, 255, 255);
         padding: 0;
+
         &:hover {
             color: rgb(51, 51, 51);
         }
+    }
+}
+
+@media(max-width: 1199px) {
+    .section-info {
+        background-image: none !important;
+
+        .section-quote {
+            background-image: url(/img/bg/bg1.jpg);
+            background-position: 50% 0;
+        }
+
+        .section-wishes {
+            background-image: url(/img/bg/bg1.jpg);
+            background-position: 50% 50%;
+        }
+    }
+}
+
+#rsvp {
+    background-position: 50% 50%;
+
+    @media(max-width: 1024px) {
+        background-position: 25% 50%;
     }
 }

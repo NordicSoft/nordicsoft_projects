@@ -4,16 +4,34 @@
         background-color: transparent;
         border: 1px solid rgb(213, 223, 220);
         margin-bottom: 10px;
+        width: 100% !important;
+        min-height: 60px;
         height: 180px;
+        transition: all 0.3s;
+
+        &:focus, &:active {
+            background-color: rgb(255, 255, 255) !important;
+            color: #000000 !important;
+        }
     }
 }
 .dark-wrapper input {
     &.form-control {
-        background-color: transparent;
+        background-color: transparent !important;
         border: 1px solid rgb(213, 223, 220);
         margin-bottom: 10px;
         float: left;
         width: calc(50% - 5px);
+        transition: all 0.3s;
+
+        &:focus, &:active {
+            background-color: rgb(255, 255, 255) !important;
+            color: #000000 !important;
+        }
+
+        &:-ms-input-placeholder {
+            color: rgb(255, 255, 255) !important;
+        }
 
         @media(max-width: 575px) {
             width: 100%;
@@ -37,7 +55,6 @@
     }
 
     &[type=submit] {
-        font-family: $secondary-font;
         font-size: 30px;
         font-weight: 700;
         background-color: rgb(255, 255, 255);
@@ -45,23 +62,16 @@
         height: 62px;
         border: none;
         padding: 0 30px;
-
-        .fonts-loaded-1 & {
-            font-family: $secondary-font-loaded-1;
-        }
-
-        .fonts-loaded-2 & {
-            font-family: $secondary-font-loaded-2;
-        }
+        @include fonts-secondary;
     }
 }
 .form-control {
     display: block;
     width: 100%;
-    height: 40px;
-    padding: 29px 30px;
+    min-height: 60px;
+    //padding: 29px 30px;
     font-size: 14px;
-    line-height: 1.42857143;
+    //line-height: 1.42857143;
     color: rgba(255, 255, 255, 1);
     background-image: none;
     border-radius: 0;

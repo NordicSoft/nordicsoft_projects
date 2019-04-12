@@ -3,7 +3,14 @@ $(document).ready(function () {
     'use strict';
 
     /** carousel */
-    $('.owl-carousel-paged').owlCarousel({
+    $('.owl-carousel-wishes').owlCarousel({
+        navigation: false,
+        pagination: true,
+        autoPlay: 8000,
+        loop: true
+    });
+    $('.owl-carousel-partners').owlCarousel({
+        items: 3,
         navigation: false,
         pagination: true,
         autoPlay: 8000,
@@ -55,6 +62,16 @@ $(document).ready(function () {
                     .prop('selected', false);
             });
     });
+
+    //background-attachment IE
+    if (navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/Trident\/7\./) || navigator.userAgent.match(/Edge\/12\./)) {
+        $('body').on("mousewheel", function () {
+            event.preventDefault();
+            var wd = event.wheelDelta;
+            var csp = window.pageYOffset;
+            window.scrollTo(0, csp - wd);
+        });
+    }
 
     /** fullscreen fix */
     var windowHeight = $(window).innerHeight();

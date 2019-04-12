@@ -56,33 +56,31 @@ header {
 }
 .animation-bg {
     background-image: url(/img/bg/bg1.jpg);
-    background-image: -webkit-image-set(url(/img/bg/bg1.webp) 1x);
     background-position: 50% 50%;
+    background-size: cover;
+        &.opacity-2 {
+            background-image: url(/img/bg/bg4.jpg);
+            animation-name: opacity2;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+            animation-direction: alternate;
+        }
 
-    &.opacity-2 {
-        background-image: url(/img/bg/bg2.jpg);
-        background-image: -webkit-image-set(url(/img/bg/bg2.webp) 1x);
-        animation-name: opacity2;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-duration: 10s;
-        animation-direction: alternate;
-    }
-
-    &.opacity-3 {
-        background-image: url(/img/bg/bg3.jpg);
-        background-image: -webkit-image-set(url(/img/bg/bg3.webp) 1x);
-        animation-name: opacity3;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-duration: 10s;
-        animation-direction: alternate;
-    }
+        &.opacity-3 {
+            background-image: url(/img/bg/bg3.jpg);
+            animation-name: opacity3;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+            animation-direction: alternate;
+        }
 }
 
 #headerwrap {
     overflow: hidden;
     background-color: rgba(91,91,88,.4);
+    height: 100vh !important;
 }
 
 .opaque {
@@ -128,7 +126,7 @@ header .intro-text .intro-heading {
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 300;
-    line-height: 30px
+    line-height: 30px;
 }
 
 .intro-heading span {
@@ -136,5 +134,6 @@ header .intro-text .intro-heading {
     display: block;
     margin-bottom: 24px;
     font-size: 70px;
-    line-height: 1
+    line-height: 1;
+    text-transform: initial;
 }

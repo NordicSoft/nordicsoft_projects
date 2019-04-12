@@ -1,4 +1,5 @@
 @import "variables";
+
 @media(max-width: 991px) {
     #where .lead,
     #when .lead {
@@ -154,20 +155,12 @@
 }
 
 .footer-goodbye {
-    font-family: $secondary-font;
     text-transform: none !important;
     font-size: 45px;
     margin-bottom: 44px;
     letter-spacing: 2px;
     font-weight: 700;
-
-    .fonts-loaded-1 & {
-        font-family: $secondary-font-loaded-1;
-    }
-
-    .fonts-loaded-2 & {
-        font-family: $secondary-font-loaded-2;
-    }
+    @include fonts-secondary
 }
 
 #fettiwrap {
@@ -201,13 +194,22 @@
     width: 16.666666%;
 }
 
-.a-quote {
-    font-size: 73px;
-    line-height: 68px;
-    color: rgb(255, 255, 255);
+.lead {
+    &.a-quote {
+        font-size: 72px;
+        line-height: 68px;
+        color: rgb(255, 255, 255);
 
-    @media(max-width: 575px) {
-        font-size: 30px;
-        line-height: 25px;
+        @media(max-width: 991px) {
+            font-size: 54px;
+        }
+
+        @media(max-width: 575px) {
+            font-size: 30px;
+        }
+
+        @media(max-width: 489px) {
+            font-size: 24px;
+        }
     }
 }
