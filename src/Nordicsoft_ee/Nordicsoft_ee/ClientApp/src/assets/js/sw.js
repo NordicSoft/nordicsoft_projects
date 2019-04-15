@@ -1,73 +1,67 @@
 ﻿var CACHE_NAME = 'v1';
 var urlsToCache = [
-    '/',
-    '/img/headers/dreamstime1.jpg',
-    '/img/icons/icn-research.svg',
-    '/img/icons/icn-graphic-design.svg',
-    '/img/icons/icn-marketing.svg',
-    '/img/icons/icn-web-design.svg',
-    '/img/icons/icn-web-development.svg',
-    '/img/icons/icn-mobile-apps.svg',
-    '/img/features/feature-01.jpg',
-    '/img/features/2.jpg',
-    '/img/case-studies/case-study-01.png',
-    '/img/case-studies/case-study-02.png',
-    '/img/case-studies/case-study-03.png',
-    '/img/home/webdesign1x.png',
-    '/img/home/webdevelopment1x.png',
-    '/img/startup/bg-3.png',
-    '/img/startup/hero-banner.png',
-    //'/workflow',
-    //'/contact',
-    //'/faq',
-    //'/blog',
-    //'/dist',
-    //'/dist/custom_styles.js',
-    //'/dist/vendor_src.js',
-    //'/dist/main.js'
+
 ];
+var urlsToExclude = [
+]
 
-
-this.addEventListener('install', function (event) {
+self.addEventListener('install', function (event) {
     event.waitUntil(
-        caches.open('v1').then(function (cache) {
+        caches.open('v2').then(function (cache) {
             return cache.addAll(urlsToCache);
         })
     );
 });
 
-this.addEventListener('fetch', function (event) {
-    event.respondWith(caches.match(event.request).then(function (response) {
-        // caches.match() always resolves
-        // but in case of success response will have value
-        if (response !== undefined) {
-            return response;
-        } else {
-            return fetch(event.request).then(function (response) {
-                // response may be used only once
-                // we need to save clone to put one copy in cache
-                // and serve second one
-                let responseClone = response.clone();
+self.addEventListener('fetch', function (e) {
+    // Let the browser do its default thing
+    // for non-GET requests.
+    if (e.request.method !== 'GET' || urlsToExclude.some(url => e.request.url.includes(url))) { return; }
 
-                caches.open('v1').then(function (cache) {
-                    cache.put(event.request, responseClone);
-                });
-                return response;
-            });
-        }
+    var tryInCachesFirst = caches.open(CACHE_NAME).then(cache => {
+        return cache.match(e.request).then(response => {
+            if (!response) {
+                return handleNoCacheMatch(e);
+            }
+            // Update cache record in the background
+            fetchFromNetworkAndCache(e);
+            // Reply with stale data
+            return response;
+        });
+    });
+    e.respondWith(tryInCachesFirst);
+});
+
+self.addEventListener('activate', function (e) {
+    e.waitUntil(caches.keys().then(keys => {
+        return Promise.all(keys.map(key => {
+            if (key !== CACHE_NAME)
+                return caches.delete(key);
+        }));
     }));
 });
 
-//this.addEventListener('activate', function (event) {
-//    var cacheWhitelist = ['v2'];
+function fetchFromNetworkAndCache(e) {
+    // DevTools opening will trigger these o-i-c requests, which this SW can't handle.
+    // There's probaly more going on here, but I'd rather just ignore this problem. :)
+    // https://github.com/paulirish/caltrainschedule.io/issues/49
+    if (e.request.cache === 'only-if-cached' && e.request.mode !== 'same-origin') return;
 
-//    event.waitUntil(
-//        caches.keys().then(function (keyList) {
-//            return Promise.all(keyList.map(function (key) {
-//                if (cacheWhitelist.indexOf(key) === -1) {
-//                    return caches.delete(key);
-//                }
-//            }));
-//        })
-//    );
-//});
+    return fetch(e.request).then(res => {
+        // foreign requests may be res.type === 'opaque' and missing a url
+        if (!res.url) return res;
+        // regardless, we don't want to cache other origin's assets
+        if (new URL(res.url).origin !== location.origin) return res;
+        var responseClone = res.clone();
+        caches.open(CACHE_NAME).then(cache => {
+            // TODO: figure out if the content is new and therefore the page needs a reload.
+            cache.put(e.request, responseClone);
+        });
+        return res;
+    }).catch(err => console.error(e.request.url, err));
+}
+
+function handleNoCacheMatch(e) {
+    return fetchFromNetworkAndCache(e);
+}
+
