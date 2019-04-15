@@ -37,6 +37,9 @@ label.error {
 .form-group {
     margin-bottom: 1.25rem;
 }
+textarea {
+    min-height: 46px;
+}
 
 ::-webkit-input-placeholder {
     color: #868e96 !important;

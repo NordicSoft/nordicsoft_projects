@@ -65,16 +65,11 @@
     -ms-transform: scale(1.2, 1.2);
 }
 
-.gallery-grid figure a {
-    cursor: url("/img/icon-zoom-in-white.png"), pointer;
-}
-
-
 /** Gallery - Magnific popup  */
 
 .mfp-bg {
-    background: #ffffff;
-    opacity: 1 !important;
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0.5 !important;
 }
 
 .mfp-figure:after {
@@ -107,12 +102,6 @@
     color: #495057;
 }
 
-.mfp-zoom-out-cur {
-    cursor: url("/img/icon-zoom-out-dark.png"), -moz-zoom-out;
-    cursor: url("/img/icon-zoom-out-dark.png"), -webkit-zoom-out;
-    cursor: url("/img/icon-zoom-out-dark.png"), zoom-out;
-}
-
 .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
     cursor: pointer;
 }
@@ -126,9 +115,9 @@
 }
 
 .mfp-arrow {
-    height: 60px !important;
+    height: 46px !important;
     margin-top: -30px !important;
-    width: 60px !important;
+    width: 45px !important;
 }
 
 .mfp-arrow:before, .mfp-arrow:after {
@@ -136,18 +125,18 @@
 }
 
 .mfp-arrow-right, .mfp-arrow-left {
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
+    background-image: url(/img/icons.svg) !important;
+    background-size: 250px 150px !important;
 }
 
 .mfp-arrow-right {
-    background-image: url("/img/icon-arrow-right-dark.png") !important;
-    right: 25px !important;
+    right: 10px !important;
+    background-position: 45px -52px !important;
 }
 
 .mfp-arrow-left {
-    background-image: url("/img/icon-arrow-left-dark.png") !important;
-    left: 25px !important;
+    left: 10px !important;
+    background-position: 90px -52px !important;
 }
 
 

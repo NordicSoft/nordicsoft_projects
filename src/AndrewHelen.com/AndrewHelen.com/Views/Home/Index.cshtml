@@ -19,7 +19,7 @@
     <link rel="canonical" href="@($"https://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
 }
 
-@section Scripts{ 
+@section Scripts{
     <script src='https://www.google.com/recaptcha/api.js?render=6LeuM50UAAAAAHnc80H9hXsm0eVqJGhbqFCAsKFT'></script>
     <script>
         grecaptcha.ready(function () {
@@ -44,6 +44,8 @@
     </script>
 }
 
+
+
 <!-- Section - Hero Start -->
 <section id="hero-bg-static" class="bg-img-cover hero bg-overlay-black-5 h-100 p-0 w-100">
     <div class="container">
@@ -58,7 +60,6 @@
     </div>
 </section>
 <!-- //Section - Hero End -->
-
 <!-- Section - The Couple Start -->
 <section id="the-couple" class="bg-white section-divider section-divider-y">
     <div class="container">
@@ -134,6 +135,7 @@
     </div>
 </section>
 <!-- //Section - The Couple End -->
+
 <!-- Section - Wedding Event Start -->
 <section id="wedding-event" class="bg-overlay-black-5 py-big lazyload" data-bg="/img/bg/bg-wedding-event.jpg">
     <div class="container">
@@ -550,7 +552,7 @@
                     <div class="row">
                         <div class="col-12">
                             <label for="additionalInformation" class="text-base">Additional Information:</label>
-                            <textarea name="additionalInformation" class="form-control u-rounded-15 p-3 u-mb-30" rows="6" placeholder="Eg. Transfer organisation" maxlength="1000" required aria-label="Additional Information"></textarea>
+                            <textarea name="additionalInformation" class="form-control u-rounded-15 u-mb-30" rows="6" placeholder="Eg. Transfer organisation" maxlength="1000" required aria-label="Additional Information"></textarea>
                         </div>
 
                         <div class="col-12 mt-4 text-center">
