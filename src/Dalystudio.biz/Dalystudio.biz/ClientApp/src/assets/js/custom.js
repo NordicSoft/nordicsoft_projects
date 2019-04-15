@@ -48,9 +48,15 @@
 
 		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 			mobileTest = true;
-		}
+        }
 
-		buildModuleHero(moduleHero);
+        //$('#down-item').click(function() {
+        //    $('.dropdown-menu').addClass("visibleMenu");
+        //});
+
+	    
+
+	    buildModuleHero(moduleHero);
 		navbarCheck(navbar);
 		navbarAnimation(navbar, moduleHero, navHeight);
 		navbarSubmenu(width);
@@ -263,7 +269,9 @@
 					$(this).parent().toggleClass('open');
 				});
 			}
-		};
+        };
+
+	
 
 		/* ---------------------------------------------- /*
 		 * Youtube video background
