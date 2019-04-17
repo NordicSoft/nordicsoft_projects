@@ -125,7 +125,7 @@ jconfirm.defaults = {
         $('a.page-scroll').bind('click', function (event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
-                scrollTop: ($($anchor.attr('href')).offset().top - 50)
+                scrollTop: ($($anchor.attr('href')).offset().top )
             }, 1250);
             event.preventDefault();
         });
@@ -223,6 +223,14 @@ jconfirm.defaults = {
     //});
 
 
+    $("#toggled-but").click(function () {
+        if ($('body').hasClass("noscroll")){
+            $('body').removeClass('noscroll');
+        }
+        else {
+                $('body').addClass('noscroll');
+            }
+    });
 
     $("#contact-form").on('submit',
         function (e) {
@@ -230,13 +238,30 @@ jconfirm.defaults = {
             var data = $(this).serialize();
             var url = $(this).prop("action");
             var form = this;
+            
             $.post(url,
                 data,
                 function (resp) {
-                    resp.success == true
-                        ? $.alert({ content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "" })
-                        : $.alert({ content: "Sorry, we couldn't send your message. Try later!", theme: "my-theme", title: "" });
+                    resp.success == true ?
+                        $.alert({
+                            content: "Your message was successfully sent. We will write your back soon!",
+                            theme: "my-theme",
+                            title: "",
+                            backgroundDismiss: true,
+                            onOpen: function () { $('body').addClass('noscroll'); },
+                            onClose: function () { $('body').removeClass('noscroll'); }
 
+                        })
+                        :
+                        $.alert({
+                            content: "Sorry, we couldn't send your message. Try later!",
+                            theme: "my-theme",
+                            title: "",
+                            backgroundDismiss: true,
+                            onOpen: function () { $('body').addClass('noscroll'); },
+                            onClose: function () { $('body').removeClass('noscroll');  }
+                        });
+                 
                     $(':input', form)
                         .not(':button, :submit, :reset, :hidden')
                         .val('')
@@ -247,5 +272,9 @@ jconfirm.defaults = {
 
     $("#navbar ul.nav li").on("click", function(e) {
         $("#navbar").collapse('hide');
+        $('body').removeClass('noscroll');
     });
+
+
+
 }(jQuery));

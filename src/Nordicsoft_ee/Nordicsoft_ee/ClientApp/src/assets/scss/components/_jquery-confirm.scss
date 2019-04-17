@@ -1,8 +1,9 @@
 ﻿.jconfirm.jconfirm-my-theme {
     .jconfirm-bg {
+        background-color: rgba(0,0,0,0.5);
     }
 
-    .jconfirm-box {
+    /*.jconfirm-box {
         @extend .box-shadow-v2;
 
         &.loading {
@@ -47,5 +48,5 @@
 
         &.hilight {
         }
-    }
+    }*/
 }

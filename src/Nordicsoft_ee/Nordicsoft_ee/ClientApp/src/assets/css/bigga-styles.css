@@ -1648,3 +1648,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e91e63', end
 .row  .row {margin: 0;}
 
 
+#top-link-block a, #top-link-block a:hover {
+    text-decoration: none;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #contact_form #contact-form input {
+        height: 42px;
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+}
+
+#main_nav_alt .navbar-header .navbar-toggle {
+    margin-top: 15px;
+}
+
+@media (pointer:coarse) {
+    #main_nav_alt.navbar-default .navbar-nav > li > a:hover, #main_nav_alt .navbar-default .navbar-nav > li > a:focus {
+        background-color: unset;
+    }
+}
+
+.jconfirm-box.jconfirm-hilight-shake.jconfirm-type-default.jconfirm-type-animated {
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.noscroll {
+    overflow-y: hidden;
+}
+
+
+@media(max-width:767px) {
+    #navbar {
+        overflow: auto;
+        height: calc(100vh - 57px);
+    }
+}
