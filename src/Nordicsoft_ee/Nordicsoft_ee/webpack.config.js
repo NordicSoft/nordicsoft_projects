@@ -25,7 +25,7 @@ module.exports = (env, options) => {
             //critical_foft_preload: "./ClientApp/src/assets/js/critical-foft-preload-fallback-optional.js",
             vendor_styles: "./ClientApp/src/assets/js/vendor_styles.js",
             vendor_src: [
-                "script-loader!./ClientApp/src/assets/vendor/jquery/dist/jquery.min.js",
+                "script-loader!./ClientApp/src/assets/vendor/jquery/jquery.min.js",
                 "script-loader!./ClientApp/src/assets/vendor/bootstrap/js/bootstrap.min.js",
                 "script-loader!./ClientApp/src/assets/vendor/owl-carousel/owl.carousel.min.js",
                 "script-loader!./ClientApp/src/assets/vendor/easy-responsive-tabs/js/easyResponsiveTabs.js",
