@@ -12,25 +12,25 @@ jconfirm.defaults = {
 
     // Required code to run the OWL CAROUSEL (TESTIMONALS) Section
     //*******************
-    $('#testimonials-slider').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    })
+    //$('#testimonials-slider').owlCarousel({
+    //    loop: true,
+    //    margin: 10,
+    //    nav: false,
+    //    autoplay: true,
+    //    autoplayTimeout: 4000,
+    //    autoplayHoverPause: true,
+    //    responsive: {
+    //        0: {
+    //            items: 1
+    //        },
+    //        600: {
+    //            items: 1
+    //        },
+    //        1000: {
+    //            items: 1
+    //        }
+    //    }
+    //})
     $('#inner_slider').owlCarousel({
         loop: true,
         margin: 10,

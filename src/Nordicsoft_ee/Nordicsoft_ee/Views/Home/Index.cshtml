@@ -346,7 +346,7 @@
             <div class="col-md-10 col-md-offset-1 text-center">
 
                 <!-- Testimonial Carousel -->
-                <div id="testimonials-slider" class="owl-carousel">
+                <div id="testimonials-slider">
 
                     <!-- Testimonial 01 -->
                     <div class="item">
@@ -361,36 +361,8 @@
                         </div>
                     </div>
                     <!-- /.Testimonial 01 -->
-                    <!-- Testimonial 02 -->
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p class="quote-symbol mrgn-30-top">
-                                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                </p>
-                                <p class="testimonial-text mrgn30-top-btm">“Great things in business are never done by one person. They're done by a team of people.”</p>
-                                <p class="client mrgn-20-top">Steve Jobs</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.Testimonial 02 -->
-                    <!-- Testimonial 03 -->
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p class="quote-symbol mrgn-30-top">
-                                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                </p>
-                                <p class="testimonial-text mrgn30-top-btm">“Great things in business are never done by one person. They're done by a team of people.”</p>
-                                <p class="client mrgn-20-top">Steve Jobs</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.Testimonial 03 -->
-
                 </div>
                 <!-- /.Testimonial Carousel -->
-
             </div>
         </div>
     </div><!-- /.End Container -->
@@ -402,8 +374,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h3>Send us a message</h3>
-                <p class="form-subtitle">Velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <h3>Get In Touch to Discuss Your Business Requirements</h3>
+                <p class="form-subtitle">Leave us a message and we will get in touch with you to discuss how services we provide fit in with your business requirements.</p>
                 <div class="form-wrapper animate" data-animate="fadeIn" data-duration="1.0s"
                      data-delay="0.3s">
                     <!-- Contact Form -->
@@ -418,17 +390,17 @@
                                 <input type="text" class="form-control" id="firstName" name="name" placeholder="Name" maxlength="100" required>
                             </div>
                             <div class="form-group">
-                                <label class="sr-only" for="emailInput">Email address</label>
+                                <label class="sr-only" for="emailInput">Email Address</label>
                                 <input type="email" class="form-control" id="emailInput" name="email" placeholder="Email Address" maxlength="100" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" rows="3" data-validation-required-message="Any thoughts you'd like to share?"
-                                          id="thoughts" name="feedbackMessage" placeholder="Any thoughts you'd like to share?"
+                                <textarea class="form-control" rows="3" data-validation-required-message="Message"
+                                          id="thoughts" name="feedbackMessage" placeholder="Message"
                                           aria-invalid="false" aria-label="Feedback message" maxlength="1000" required></textarea>
                             </div>
                             <p class="text-center">
                                 <button type="submit" class="btn btn-main">
-                                    Submit
+                                    Send
                                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                                 </button>
                             </p>
@@ -447,13 +419,17 @@
 
 
 @section scripts{
-    <script src='https://www.google.com/recaptcha/api.js?render=6Lc3Q3oUAAAAAPOn-dLXG6chEP_hXUO5eCqo91Ez'></script>
-    <script>
-        grecaptcha.ready(function () {
-            grecaptcha.execute('6Lc3Q3oUAAAAAPOn-dLXG6chEP_hXUO5eCqo91Ez', { action: 'contact' }).then(function (token) {
-                $("input[name=g-recaptcha-response-token]").val(token);
-                $("input[name=g-recaptcha-action]").val("contact");
+    @if (Context.Request.Host.Value == Settings.SiteNameDomain.ToLower())
+    {
+        <script src='https://www.google.com/recaptcha/api.js?render=6Lc3Q3oUAAAAAPOn-dLXG6chEP_hXUO5eCqo91Ez'></script>
+        <script>
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6Lc3Q3oUAAAAAPOn-dLXG6chEP_hXUO5eCqo91Ez', { action: 'contact' }).then(
+                    function(token) {
+                        $("input[name=g-recaptcha-response-token]").val(token);
+                        $("input[name=g-recaptcha-action]").val("contact");
+                    });
             });
-        });
-    </script>
+        </script>
+    }
 }
