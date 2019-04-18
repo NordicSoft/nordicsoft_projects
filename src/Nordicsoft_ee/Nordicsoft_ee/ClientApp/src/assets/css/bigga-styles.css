@@ -174,9 +174,9 @@ and (max-device-width : 1024px) {
 04. Header - Index Page Main
 -----------------------------------------------------------------------------------*/
 @media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-    header#main-header { background: url(../img/headers/dreamstime2x.jpg) no-repeat; }
+    header#main-header { background-image: url(../img/headers/dreamstime2x.jpg); background-repeat: no-repeat; }
     }
-header#main-header {    margin-top: 70px;background:url(../img/headers/dreamstime1x.jpg) no-repeat;background-position:80% center;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover;min-height: 850px;}
+header#main-header {    margin-top: 70px;background-image: url(../img/headers/dreamstime1x.jpg); background-repeat: no-repeat;min-height: 850px;}
 @media all and (-ms-high-contrast: none),(-ms-high-contrast: active) {
     header#main-header{height:750px}
     header#main-header h1{margin-top:35px}
@@ -228,7 +228,7 @@ and (max-device-width: 1366px) {
     header#main-header{min-height:550px}
 }
 @media (min-width: 992px) {
-    header#main-header { background: url(../img/headers/dreamstime1x.jpg) no-repeat; }
+    header#main-header { background-image: url(../img/headers/dreamstime1x.jpg); background-repeat: no-repeat; }
         .flex-container{display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
     .flex-item:nth-child(1){-webkit-order:0;-ms-flex-order:0;order:0;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;-webkit-align-self:auto;-ms-flex-item-align:auto;align-self:auto}
     .flex-container-team{display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
@@ -238,7 +238,7 @@ and (max-device-width: 1366px) {
 /*-----------------------------------------------------------------------------------
 05. Header - Index Page Alternative
 -----------------------------------------------------------------------------------*/
-header#main-header-alt{background: url(../img/headers/header-main.jpg) no-repeat;background-position:80% center;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover;min-height:850px}
+header#main-header-alt{background-image: url(../img/headers/header-main.jpg); background-repeat: no-repeat;min-height:850px}
 @media all and (-ms-high-contrast: none),(-ms-high-contrast: active) {
     header#main-header-alt{height:750px}
     header#main-header-alt h1{margin-top:35px}
@@ -1686,3 +1686,47 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e91e63', end
         height: calc(100vh - 57px);
     }
 }
+
+
+header#main-header {
+    background-size: auto;
+    min-height: 850px;
+    margin-top: 0;
+    background-position: 80%;
+}
+
+@media(max-width:1800px) {
+    header#main-header {
+        min-height: 750px;
+    }
+}
+
+@media(max-width:1400px) {
+    header#main-header {
+        min-height: 725px;
+        background-position: 50%;
+    }
+}
+@media(max-width:767px) {
+    header#main-header {
+        background-position: 80%;
+        margin-top: 40px;
+        min-height: 545px;
+    }
+}
+
+header#main-header h1 {
+    margin-top: 50px;
+}
+@media(max-width:479px) {
+    header#main-header {
+        background-position: 80%;
+        margin-top: 40px;
+        min-height: 345px;
+    }
+
+    header#main-header h1 {
+        margin-top: 30px;
+    }
+}
+
