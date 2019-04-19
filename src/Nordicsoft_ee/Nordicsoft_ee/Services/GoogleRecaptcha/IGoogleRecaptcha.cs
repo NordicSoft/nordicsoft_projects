@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Nordicsoft_ee.Web.Services.GoogleRecaptcha
+namespace Nordicsoft_ee.Services.GoogleRecaptcha
 {
     public interface IGoogleRecaptcha
     {

@@ -4,7 +4,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using SmartBreadcrumbs;
 
-namespace Nordicsoft_ee.Web.Controllers
+namespace Nordicsoft_ee.Controllers
 {
     [Route("/", Name = "CultureLessHome")]
     public class HomeController : Controller

@@ -5,10 +5,10 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
-using Nordicsoft_ee.Web.Extensions;
+using Nordicsoft_ee.Extensions;
 using SmartBreadcrumbs;
 
-namespace Nordicsoft_ee.Web.TagHelpers
+namespace Nordicsoft_ee.TagHelpers
 {
     [HtmlTargetElement("breadcrumbs")]
     public class BreadcrumbsTagHelper : TagHelper

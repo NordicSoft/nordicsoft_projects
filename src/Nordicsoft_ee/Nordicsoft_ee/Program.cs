@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 using NLog.Common;
 using NLog.Web;
 
-namespace Nordicsoft_ee.Web
+namespace Nordicsoft_ee
 {
     public class Program
     {

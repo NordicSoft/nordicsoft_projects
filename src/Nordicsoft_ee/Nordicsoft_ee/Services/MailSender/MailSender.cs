@@ -5,7 +5,7 @@ using Amazon.SimpleEmail;
 using Amazon.SimpleEmail.Model;
 using Microsoft.Extensions.Logging;
 
-namespace Nordicsoft_ee.Web.Services.MailSender
+namespace Nordicsoft_ee.Services.MailSender
 {
     public class MailSender : IMailSender
     {

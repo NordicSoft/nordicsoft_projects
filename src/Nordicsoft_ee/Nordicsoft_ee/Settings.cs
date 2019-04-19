@@ -1,4 +1,4 @@
-﻿namespace Nordicsoft_ee.Web
+﻿namespace Nordicsoft_ee
 {
     public class Settings
     {

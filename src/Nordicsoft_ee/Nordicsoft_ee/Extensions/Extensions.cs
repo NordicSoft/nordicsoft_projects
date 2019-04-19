@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Nordicsoft_ee.Web.Extensions
+namespace Nordicsoft_ee.Extensions
 {
     public static class Extensions
     {
