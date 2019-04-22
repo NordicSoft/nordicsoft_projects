@@ -11,8 +11,15 @@
                 data,
                 function (resp) {
                     resp.success == true
-                        ? $.alert({ content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "" })
-                        : $.alert({ content: "Sorry, we couldn't send your message. Try later!", theme: "my-theme", title: "" });
+                        ? $.alert({
+                            content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "", backgroundDismiss: true, 
+                            onOpen: function () { $('body').addClass('overflow-y') },
+                            onClose: function () { $('body').removeClass('overflow-y') }
+                        })
+                        : $.alert({
+                            content: "Sorry, we couldn't send your message. Try later!", theme: "my-theme", title: "", backgroundDismiss: true, 
+                            onOpen: function () { $('body').addClass('overflow-y') },
+                            onClose: function () { $('body').removeClass('overflow-y') } });
 
                     $(':input', form)
                         .not(':button, :submit, :reset, :hidden')

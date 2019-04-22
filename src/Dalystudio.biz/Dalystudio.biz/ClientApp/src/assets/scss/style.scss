@@ -1,6 +1,8 @@
 @import "../vendor/bootstrap/css/bootstrap.min.css";
 @import  "../vendor/bootstrap/css/bootstrap-theme.min.css";
 
+@import "../vendor/jquery.confirm/jquery.confirm.min.css";
+
 @import "../css/animate.css";
 @import "../css/custom.css";
 @import "../css/et-line-font.css";
@@ -16,4 +18,8 @@
 
 .grecaptcha-badge {
     z-index: 999;
+}
+
+.overflow-y{
+    overflow-y:hidden;
 }
