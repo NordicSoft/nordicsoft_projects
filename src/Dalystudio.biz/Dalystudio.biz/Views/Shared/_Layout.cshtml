@@ -156,7 +156,7 @@
     <script src="~/dist/main.js"></script>
 
     @RenderSection("Scripts", required: false)
-@*<script>
+<script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function () {
             navigator.serviceWorker.register('/dist/sw.js', { scope: '/' }).then(function (registration) {
@@ -168,7 +168,7 @@
             });
         });
     }
-</script>*@
+</script>
 
 </body>
 </html>

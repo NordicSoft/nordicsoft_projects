@@ -1324,7 +1324,7 @@ Scroll to top
 }
 
 .scroll-up a {
-	background: #fff;
+	background: #ddd;
 	display: block;
 	height: 28px;
 	width: 28px;
@@ -1697,6 +1697,17 @@ Multi-columns-row
 .content-box a:focus {
     color: #000;
 }
+
+.count-static {
+    font-size: 36px;
+}
+
+/*@media(max-width:479px) {
+    .about-section {
+        background-size: cover;
+        background-position: center center;
+    }
+}*/
 /*li#mobile {
     display: none;
 }
