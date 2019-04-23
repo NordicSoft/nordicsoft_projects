@@ -66,16 +66,11 @@ body {
 
 #home {
     background-image: url(/images/event/bg.jpg);
-    background-image: -webkit-image-set(url(/images/event/bg.webp) 1x);
     background-attachment: fixed;
 }
 
 .bg-about {
     background-attachment: fixed;
-}
-
-.grecaptcha-badge {
-    bottom: 65px !important;
 }
 
 select {
@@ -95,4 +90,22 @@ select {
 body.jconfirm-noscroll {
     overflow-y: hidden;
     padding-right: 17px;
+}
+.item-input-phone {
+    position: relative;
+
+    &:before {
+        content: '+';
+        position: absolute;
+        text-align: center;
+        line-height: 45px;
+        color: #495057;
+        position: absolute;
+        left: 12px;
+        top: 0;
+        font-size: 17px;
+    }
+}
+input[name='phone']{
+    padding-left: 25px;
 }

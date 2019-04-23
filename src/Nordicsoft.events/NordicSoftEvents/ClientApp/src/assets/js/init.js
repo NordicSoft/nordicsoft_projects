@@ -147,4 +147,25 @@ $(function () {
             window.scrollTo(0, csp - wd);
         });
     }
+
+    var $inputPhone = $("input[name='phone']");
+    var $valuePhone = $inputPhone.val();
+    $inputPhone.on('keyup', function () {
+        var numStr = "0123456789";
+        var k = 0;
+        var data = $(this).val();
+        for (var i = 0; i < data.length; i++) {
+            var thisChar = data.substring(i, i + 1);
+            if (numStr.indexOf(thisChar) !== -1) k++;
+        }
+        if (k !== data.length) {
+            var newData  = data.replace(/\D/g, "");
+            $(this).val($valuePhone + newData);
+        }
+    });
+
+    $('body').scrollspy({
+        target: '.navbar',
+        offset: 60
+    });
 });
