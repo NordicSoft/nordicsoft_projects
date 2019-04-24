@@ -102,9 +102,16 @@
 
 /*#region Hero*/
 #hero-bg-static {
-    background-image: url(/img/bg/bg-hero-static.jpg);
     background-size: cover;
     background-position: 50% 100%;
+
+    .webp & {
+        background-image: url(/img/bg/bg-hero-static.webp);
+    }
+
+    .jpeg & {
+        background-image: url(/img/bg/bg-hero-static.jpg);
+    }
 }
 .hero {
     .container {

@@ -40,7 +40,6 @@
     /** Window load */
 
     $window.on('load', function () {
-
         /** Bootstrap scrollspy */
         var ww = Math.max($window.width(), window.innerWidth);
         $body.scrollspy({
@@ -233,5 +232,19 @@
                 });
             }
         }
+    });
+    function hasWebP() {
+        var rv = $.Deferred();
+        var img = new Image();
+        img.onload = function () { rv.resolve(); };
+        img.onerror = function () { rv.reject(); };
+        img.src = '/img/andrew_helen_google_image.webp';
+        return rv.promise();
+    }
+
+    hasWebP().then(function () {
+        $('body').addClass('webp');
+    }, function () {
+        $('body').addClass('jpeg');
     });
 })(jQuery);
