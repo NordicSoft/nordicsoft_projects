@@ -87,6 +87,21 @@ $(document).ready(function () {
     $('.header-fixed-top .navbar-collapse ul li a').on('click', function () {
         $('.navbar-toggle:visible').click();
     });
+
+    function hasWebP() {
+        var rv = $.Deferred();
+        var img = new Image();
+        img.onload = function () { rv.resolve(); };
+        img.onerror = function () { rv.reject(); };
+        img.src = '/img/bg/bg3.webp';
+        return rv.promise();
+    }
+
+    hasWebP().then(function () {
+        $('body').addClass('webp');
+    }, function () {
+        $('body').addClass('jpeg');
+    });
 });
 
 /** Window load */

@@ -184,13 +184,27 @@ footer {
         background-image: none !important;
 
         .section-quote {
-            background-image: url(/img/bg/bg1.jpg);
             background-position: 50% 0;
+
+            .jpeg & {
+                background-image: url(/img/bg/bg1.jpg);
+            }
+
+            .webp & {
+                background-image: url(/img/bg/bg1.webp);
+            }
         }
 
         .section-wishes {
-            background-image: url(/img/bg/bg1.jpg);
             background-position: 50% 50%;
+
+            .jpeg & {
+                background-image: url(/img/bg/bg1.jpg);
+            }
+
+            .webp & {
+                background-image: url(/img/bg/bg1.webp);
+            }
         }
     }
 }

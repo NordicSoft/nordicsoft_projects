@@ -1,189 +1,9 @@
-/* clearfix */
-.owl-carousel .owl-wrapper:after {
-	content:".";
-	display:block;
-	clear:both;
-	visibility:hidden;
-	line-height:0;
-	height:0
-}
 
-/* display none until init */
-.owl-carousel {
-	display:none;
-	position:relative;
-	width:100%;
-	-ms-touch-action:pan-y;
-	padding:0
-}
-
-.owl-carousel .owl-wrapper {
-	display:none;
-	position:relative;
-	-webkit-transform:translate3d(0px,0px,0px)
-}
-
-.owl-carousel .owl-wrapper-outer {
-	overflow:hidden;
-	position:relative;
-	width:100%
-}
-
-.owl-carousel .owl-wrapper-outer.autoHeight {
-	-webkit-transition:height 500ms ease-in-out;
-	-moz-transition:height 500ms ease-in-out;
-	-ms-transition:height 500ms ease-in-out;
-	-o-transition:height 500ms ease-in-out;
-	transition:height 500ms ease-in-out
-}
-
-.owl-carousel .owl-item {
-	float:left;
-	padding:0 15px
-}
-
-.owl-controls .owl-page,.owl-controls .owl-buttons div {
-	cursor:pointer
-}
-
-.owl-controls {
-	-webkit-user-select:none;
-	-khtml-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	user-select:none;
-	-webkit-tap-highlight-color:rgba(0,0,0,0)
-}
-
-
-/* fix */
-.owl-carousel .owl-wrapper,.owl-carousel .owl-item {
-	-webkit-backface-visibility:hidden;
-	-moz-backface-visibility:hidden;
-	-ms-backface-visibility:hidden;
-	-webkit-transform:translate3d(0,0,0);
-	-moz-transform:translate3d(0,0,0);
-	-ms-transform:translate3d(0,0,0)
-}
-
-/*
-* 	Owl Carousel Owl Demo Theme 
-*	v1.3.3
-*/
-.owl-theme .owl-controls {
-	margin-top:30px;
-	text-align:center
-}
-
-/* Styling Next and Prev buttons */
-.owl-theme .owl-controls .owl-buttons div {
-	color:#333;
-	display:inline-block;
-	zoom:1;
-	margin:5px;
-	padding:0 10px;
-	font-size:80px;
-	-webkit-border-radius:30px;
-	-moz-border-radius:30px;
-	border-radius:0;
-	background:transparent;
-	width:30px;
-	-webkit-transition:all .5s ease-in-out;
-	-moz-transition:all .5s ease-in-out;
-	-o-transition:all .5s ease-in-out;
-	-ms-transition:all .5s ease-in-out;
-	transition:all .5s ease-in-out
-}
-
-.owl-theme .owl-controls.clickable .owl-buttons div:hover {
-	text-decoration:none;
-	color:#333;
-	background:transparent;
-	-webkit-transition:all .5s ease-in-out;
-	-moz-transition:all .5s ease-in-out;
-	-o-transition:all .5s ease-in-out;
-	-ms-transition:all .5s ease-in-out;
-	transition:all .5s ease-in-out
-}
-
-/* Styling Pagination*/
-.owl-theme .owl-controls .owl-page {
-	display:inline-block;
-	zoom:1;
-	*display:inline
-/*IE7 life-saver */
-}
-
-.owl-theme .owl-controls .owl-page span {
-	display:block;
-	width:12px;
-	height:12px;
-	margin:5px 7px;
-	filter:Alpha(Opacity=50);
-/*IE7 fix*/
-	opacity:.5;
-	-webkit-border-radius:0;
-	-moz-border-radius:0;
-	border-radius:0;
-	background:transparent;
-	border:1px solid #fff
-}
-
-.owl-theme .owl-controls .owl-page.active span,.owl-theme .owl-controls.clickable .owl-page:hover span {
-	filter:Alpha(Opacity=100);
-/*IE7 fix*/
-	opacity:1
-}
-
-/* If PaginationNumbers is true */
-.owl-theme .owl-controls .owl-page span.owl-numbers {
-	height:auto;
-	width:auto;
-	color:#FFF;
-	padding:2px 10px;
-	font-size:12px;
-	-webkit-border-radius:30px;
-	-moz-border-radius:30px;
-	border-radius:30px
-}
-
-/* preloading images */
-.owl-item.loading {
-    min-height: 150px;
-    /*background:url(AjaxLoader.gif) no-repeat center center*/
-}
-
-.owl-theme .owl-controls .owl-buttons div {
-	position:absolute
-}
-
-.owl-theme .owl-controls .owl-buttons .owl-prev {
-	left:-45px;
-	top:50%;
-	margin-top:-70px
-}
-
-.owl-theme .owl-controls .owl-buttons .owl-next {
-	right:-40px;
-	top:50%;
-	margin-top:-70px
-}
-
-.owl-carousel .owl-item:hover, .owl-carousel .portfolio-item a:hover { 
-	cursor: url(../../../img/drag.png), auto;
-} 
-
-#single-slider .owl-controls {
-  position: absolute;
-  margin: 0 auto;
-  width: 100%;
-  bottom: 10px;
-}
 
 /*-----------------------------------------------------------------------------------*/
 /*  MAGNIFIC POPUP
 /*-----------------------------------------------------------------------------------*/
-.mfp-bg {
+/*.mfp-bg {
 	top:0;
 	left:0;
 	width:100%;
@@ -483,7 +303,7 @@ button::-moz-focus-inner {
 }
 
 /* Main image in popup */
-img.mfp-img {
+/*img.mfp-img {
 	width:auto;
 	max-width:100%;
 	height:auto;
@@ -495,9 +315,9 @@ img.mfp-img {
 	padding:40px 0;
 	margin:0 auto
 }
-
+*/
 /* The shadow behind the image */
-.mfp-figure {
+/*.mfp-figure {
 	line-height:0
 }
 
@@ -653,11 +473,11 @@ img.mfp-img {
 	padding:0
 }
 }
-
+*/
 /*-----------------------------------------------------------------------------------*/
 /*  TOUCH CAROUSEL
 /*-----------------------------------------------------------------------------------*/
-.touch-carousel {
+/*.touch-carousel {
 	position:relative;
 	overflow:hidden;
 	width:100%;
@@ -730,11 +550,11 @@ img.mfp-img {
 	-moz-transition:all .3s linear;
 	transition:all .3s linear
 }
-
+*/
 /*-----------------------------------------------------------------------------------*/
 /* YTPLAYER
 /*-----------------------------------------------------------------------------------*/
-.mb_YTPlayer :focus {
+/*.mb_YTPlayer :focus {
   outline: 0;
 }
 
@@ -790,9 +610,9 @@ img.mfp-img {
   margin:0!important;
   padding:0!important
 }
-
+*/
 /*CONTROL BAR*/
-
+/*
 .mb_YTPBar .ytpicon{
   font-size: 20px;
   font-family: 'ytpregular';
@@ -901,9 +721,9 @@ img.mfp-img {
 .mb_YTPMuteUnmute{
   cursor:pointer;
 }
-
+*/
 /*PROGRESS BAR*/
-.mb_YTPProgress{
+/*.mb_YTPProgress{
   height:10px;
   width:100%;
   background:#222;
@@ -932,10 +752,10 @@ img.mfp-img {
   -webkit-backface-visibility: hidden;
   -webkit-transform-style: "flat";
   box-sizing: border-box;
-}
+}*/
 
 /* ROTATOR */
-.rotating {
+/*.rotating {
   display: inline-block;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -1140,16 +960,16 @@ img.mfp-img {
     opacity: 1;
   }
 }
-
-.no-item-padding .owl-item {
+*/
+/*.no-item-padding .owl-item {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
-
+*/
 /*-----------------------------------------------------------------------------------*/
 /*  METISMENU CSS
 /*-----------------------------------------------------------------------------------*/
-.arrow {
+/*.arrow {
     float: right;
     line-height: 1.42857;
 }
@@ -1161,13 +981,13 @@ img.mfp-img {
 .active > a > .glyphicon.arrow:before {
     content: "\e114";
 }
-
+*/
 
 /*
  * Require Font-Awesome
  * http://fortawesome.github.io/Font-Awesome/
 */
-
+/*
 
 .fa.arrow:before {
     content: "\f104";
@@ -1204,4 +1024,4 @@ img.mfp-img {
 
 .active > a > .fa.plus-minus:before {
     content: "\f068";
-}
+}*/

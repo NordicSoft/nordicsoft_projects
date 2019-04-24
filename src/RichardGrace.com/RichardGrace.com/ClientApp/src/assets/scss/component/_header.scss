@@ -2,6 +2,7 @@
     position: relative;
     z-index: 3;
 }
+
 header {
     position: relative;
 
@@ -37,10 +38,12 @@ header {
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
 }
+
 @keyframes opacity3 {
     0% {
         opacity: 1;
@@ -54,27 +57,50 @@ header {
         opacity: 0;
     }
 }
+
 .animation-bg {
-    background-image: url(/img/bg/bg1.jpg);
     background-position: 50% 50%;
     background-size: cover;
-        &.opacity-2 {
+
+    .jpeg & {
+        background-image: url(/img/bg/bg1.jpg);
+    }
+
+    .webp & {
+        background-image: url(/img/bg/bg1.webp);
+    }
+
+    &.opacity-2 {
+        animation-name: opacity2;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+        animation-direction: alternate;
+
+        .jpeg & {
             background-image: url(/img/bg/bg4.jpg);
-            animation-name: opacity2;
-            animation-timing-function: ease-in-out;
-            animation-iteration-count: infinite;
-            animation-duration: 10s;
-            animation-direction: alternate;
         }
 
-        &.opacity-3 {
-            background-image: url(/img/bg/bg3.jpg);
-            animation-name: opacity3;
-            animation-timing-function: ease-in-out;
-            animation-iteration-count: infinite;
-            animation-duration: 10s;
-            animation-direction: alternate;
+        .webp & {
+            background-image: url(/img/bg/bg4.webp);
         }
+    }
+
+    &.opacity-3 {
+        animation-name: opacity3;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+        animation-direction: alternate;
+
+        .jpeg & {
+            background-image: url(/img/bg/bg3.jpg);
+        }
+
+        .webp & {
+            background-image: url(/img/bg/bg3.webp);
+        }
+    }
 }
 
 #headerwrap {
