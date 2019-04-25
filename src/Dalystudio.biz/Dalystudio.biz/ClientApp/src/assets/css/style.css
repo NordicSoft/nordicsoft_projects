@@ -594,7 +594,7 @@ Navbar
         .navbar-custom.navbar-transparent .nav > li.active > a {
             color: #FFF;
         }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .navbar-custom.navbar-transparent .nav > li.active > a {
         color: #999;
     }
@@ -1439,6 +1439,8 @@ Responsive Media Querries
             height: 1px;
             bottom: 8px;
             margin: 0 15px;
+            position: absolute;
+            left: 0;
         }
         .navbar-transparent .nav li.active:hover:after {
             background-color: #999;
@@ -1770,8 +1772,12 @@ li.dropdown.open i:before {
     content: "\F106";
 }
 
+nav.navbar-transparent li.dropdown.active a {
+    color: #FFF;
+}
+
 @media(max-width:767px) {
-    li.dropdown .arrow i {
+    li .dropdown .arrow i {
         color: #000;
     }
 
