@@ -154,6 +154,8 @@
                 delegate: 'a',
                 type: 'image',
                 mainClass: 'mfp-fade',
+                fixedContentPos: true,
+                overflowY: 'hidden',
                 gallery: {
                     enabled: true,
                     navigateByImgClick: true,

@@ -57,10 +57,3 @@ body, html {
 .grecaptcha-badge{
     z-index: 21;
 }
-body.modal-open {
-    overflow-y: auto !important;
-    padding-right: 0 !important;
-}
-.modal-scrollbar-measure {
-    overflow: hidden;
-}
