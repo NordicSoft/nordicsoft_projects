@@ -65,8 +65,15 @@ body {
 }
 
 #home {
-    background-image: url(/images/event/bg.jpg);
     background-attachment: fixed;
+
+    .webp & {
+        background-image: url(/images/event/bg.webp);
+    }
+
+    .jpeg & {
+        background-image: url(/images/event/bg.jpg);
+    }
 }
 
 .bg-about {

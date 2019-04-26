@@ -168,4 +168,19 @@ $(function () {
         target: '.navbar',
         offset: 60
     });
+
+    function hasWebP() {
+        var rv = $.Deferred();
+        var img = new Image();
+        img.onload = function () { rv.resolve(); };
+        img.onerror = function () { rv.reject(); };
+        img.src = '/images/event/bg.webp';
+        return rv.promise();
+    }
+
+    hasWebP().then(function () {
+        $('body').addClass('webp');
+    }, function () {
+        $('body').addClass('jpeg');
+    });
 });
