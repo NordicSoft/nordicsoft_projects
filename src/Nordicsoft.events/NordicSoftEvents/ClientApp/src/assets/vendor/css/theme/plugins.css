@@ -13652,7 +13652,16 @@ button.close {
 
 .modal.show .modal-dialog {
     -webkit-transform: translate(0, 50%);
-    transform: translate(0, 50%)
+    transform: translate(0, 50%);
+}
+
+@media(max-width: 767px) {
+    .modal.show .modal-dialog {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+        margin-top: 55px;
+        padding: 0 14px;
+    }
 }
 
 .modal-dialog-centered {
