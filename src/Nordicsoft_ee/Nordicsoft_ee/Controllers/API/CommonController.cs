@@ -48,8 +48,8 @@ namespace Nordicsoft_ee.Controllers.API
             // send email to administrator
             IMail mail = new AmazonSESMail
             {
-                SenderAddress = Settings.SupportEmail,
-                ReceiverAddress = Settings.SupportEmail,
+                SenderAddress = Settings.SupportEmailForSending,
+                ReceiverAddress = Settings.SupportEmailForSending,
                 Subject = subject,
                 TextBody = textBody,
                 HtmlBody = textHtml

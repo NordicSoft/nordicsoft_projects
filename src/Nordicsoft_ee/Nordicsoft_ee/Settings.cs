@@ -3,6 +3,7 @@
     public class Settings
     {
         public static string SupportEmail { get; set; }
+        public static string SupportEmailForSending { get; set; }
         public static string FbAppId { get; set; }
         public static string SiteName { get; set; }
         public static string SiteNameDomain { get; set; }
