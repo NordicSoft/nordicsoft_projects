@@ -1442,6 +1442,11 @@ Responsive Media Querries
             position: absolute;
             left: 0;
         }
+
+        .navbar-transparent .nav li.dropdown.active:after {
+            width: calc(100% - 55px);
+        }
+
         .navbar-transparent .nav li.active:hover:after {
             background-color: #999;
         }
