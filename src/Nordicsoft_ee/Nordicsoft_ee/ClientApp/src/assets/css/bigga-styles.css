@@ -1661,9 +1661,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e91e63', end
 }
 
 #main_nav_alt .navbar-header .navbar-toggle {
-    margin-top: 15px;
+    margin-top: 18px;
 }
-
+.navbar-brand > img {
+    margin-top: 2px;
+}
 @media (pointer:coarse) {
     #main_nav_alt.navbar-default .navbar-nav > li > a:hover, #main_nav_alt .navbar-default .navbar-nav > li > a:focus {
         background-color: unset;
