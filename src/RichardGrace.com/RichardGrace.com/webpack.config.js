@@ -28,8 +28,7 @@ module.exports = (env, options) => {
                 "script-loader!./ClientApp/src/assets/vendor/js/plugins/plugins.js",
                 "script-loader!./ClientApp/src/assets/vendor/js/plugins/swing.js",
                 "script-loader!./ClientApp/src/assets/vendor/js/plugins/scroll.js",
-                "script-loader!./ClientApp/src/assets/vendor/js/plugins/owl.js",
-                "script-loader!./ClientApp/src/assets/vendor/js/plugins/canvas.js"
+                "script-loader!./ClientApp/src/assets/vendor/js/plugins/owl.js"
             ],
             all_styles: './ClientApp/src/assets/js/all_styles.js',
             custom_styles: './ClientApp/src/assets/js/custom_styles.js',
