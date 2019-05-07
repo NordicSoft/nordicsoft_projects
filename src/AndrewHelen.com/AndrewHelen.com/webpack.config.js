@@ -26,17 +26,10 @@ module.exports = (env, options) => {
                 "script-loader!./ClientApp/src/assets/vendor/jquery.min.js",
                 "script-loader!./ClientApp/src/assets/vendor/popper.min.js",
                 "script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/pace.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/particles.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/jquery.easing.min.js",
                 "script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js",
                 "script-loader!./ClientApp/src/assets/vendor/jquery.magnific-popup.min.js",
                 "script-loader!./ClientApp/src/assets/vendor/jquery.countdown.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/jquery.validate.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/greensock/TweenMax.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/ScrollMagic.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/animation.gsap.min.js"
+                "script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js"
             ],
             all_styles: './ClientApp/src/assets/js/all_styles.js',
             custom_styles: './ClientApp/src/assets/js/custom_styles.js',

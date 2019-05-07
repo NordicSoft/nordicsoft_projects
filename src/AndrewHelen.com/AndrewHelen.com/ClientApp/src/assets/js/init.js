@@ -137,17 +137,6 @@
             $navbarCollapse.collapse('hide');
         };
 
-        /** background */
-        var heroBgStatic = 'hero-bg-static';
-
-        bgParticles(heroBgStatic);
-
-        function bgParticles(elem) {
-            if ($('#' + elem).length) {
-                particlesJS.load(elem, 'json/particles.json');
-            }
-        }
-
         /** gallery - magnific popup */
         if ($.fn.magnificPopup) {
             $galleryGrid.magnificPopup({
