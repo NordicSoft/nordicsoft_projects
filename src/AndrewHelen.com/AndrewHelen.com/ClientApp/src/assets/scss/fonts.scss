@@ -2,8 +2,8 @@
     font-family: 'MontserratSubset';
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/montserrat/montserrat-medium-subset.woff2') format('woff2'), url('../fonts/montserrat/montserrat-medium-subset.woff') format('woff'), url('../fonts/montserrat/montserrat-medium-subset.ttf') format('truetype');
-    unicode-range: U+20-7E,U+A3,U+20AC;
+    src: url('../fonts/montserrat/montserrat-medium-subset.woff2') format('woff2'), url('../fonts/montserrat/montserrat-medium-subset.woff') format('woff');
+    unicode-range: U+20-7E;
     font-display: swap;
 }
 
@@ -11,8 +11,8 @@
     font-family: 'PTSerifSubset';
     font-style: italic;
     font-weight: 400;
-    src: url('../fonts/ptserif/ptserif-italic-subset.woff2') format('woff2'), url('../fonts/ptserif/ptserif-italic-subset.woff') format('woff'), url('../fonts/ptserif/ptserif-italic-subset.ttf') format('truetype');
-    unicode-range: U+20-7E,U+A3,U+20AC;
+    src: url('../fonts/ptserif/ptserif-italic-subset.woff2') format('woff2'), url('../fonts/ptserif/ptserif-italic-subset.woff') format('woff');
+    unicode-range: U+20-7E;
     font-display: swap;
 }
 
