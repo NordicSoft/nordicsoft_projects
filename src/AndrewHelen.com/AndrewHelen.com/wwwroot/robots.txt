@@ -1,3 +1,0 @@
-﻿User-agent: *
-Host:  https://andrew-helen.com
-Sitemap: https://andrew-helen.com/sitemap.xml
