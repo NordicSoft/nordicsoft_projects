@@ -16,16 +16,7 @@
     <link rel="canonical" href="@($"https://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
 }
 @section Scripts{
-    <script src='https://www.google.com/recaptcha/api.js?render=6LefMp0UAAAAAIVYD-sYPIn4ZD0W6kZh5gdvsDsq'></script>
-    <script>
-        grecaptcha.ready(function () {
-            grecaptcha.execute('6LefMp0UAAAAAIVYD-sYPIn4ZD0W6kZh5gdvsDsq', { action: 'contact' }).then(function (token) {
-                $("input[name=g-recaptcha-response-token]").val(token);
-                $("input[name=g-recaptcha-action]").val("contact");
-            });
-        });
-    </script>
-
+    <script src="https://www.google.com/recaptcha/api.js?render=6LefMp0UAAAAAIVYD-sYPIn4ZD0W6kZh5gdvsDsq" defer></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
