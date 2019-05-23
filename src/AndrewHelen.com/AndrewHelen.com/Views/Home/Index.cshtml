@@ -20,15 +20,7 @@
 }
 
 @section Scripts{
-    <script src='https://www.google.com/recaptcha/api.js?render=6LeuM50UAAAAAHnc80H9hXsm0eVqJGhbqFCAsKFT'></script>
-    <script>
-        grecaptcha.ready(function () {
-            grecaptcha.execute('6LeuM50UAAAAAHnc80H9hXsm0eVqJGhbqFCAsKFT', { action: 'contact' }).then(function (token) {
-                $("input[name=g-recaptcha-response-token]").val(token);
-                $("input[name=g-recaptcha-action]").val("contact");
-            });
-        });
-    </script>
+    <script src='https://www.google.com/recaptcha/api.js?render=6LeuM50UAAAAAHnc80H9hXsm0eVqJGhbqFCAsKFT' defer></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
