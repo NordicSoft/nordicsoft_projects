@@ -232,6 +232,10 @@
 .btn-primary, .btn-success, .btn-warning, .btn-danger, .btn-info, .btn-secondary {
     box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.18);
     border: 0px;
+
+    :disabled {
+        background-color: #cccccc;
+    }
 }
 
 .btn-primary:hover, .btn-success:hover, .btn-warning:hover, .btn-danger:hover, .btn-info:hover, .btn-secondary:hover {

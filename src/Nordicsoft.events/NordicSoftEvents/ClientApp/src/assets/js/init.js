@@ -3,6 +3,7 @@ $(function () {
     $("#contact-form").on('submit', function (e) {
         e.preventDefault();
         var $form = $(this);
+        $("button[type=submit]", $form).prop("disabled", true);
         grecaptcha.execute('6LfMK50UAAAAAH5KicYId5sjl5qZIvxtJ00FIDa2', { action: 'contact' }).then(function (token) {
             $("input[name=g-recaptcha-response-token]", $form).val(token);
             $("input[name=g-recaptcha-action]", $form).val("contact");
@@ -12,7 +13,8 @@ $(function () {
 
             return $.post(url, data);
 
-        }).then(function (resp) {
+            }).then(function (resp) {
+            $("button[type=submit]", $form).prop("disabled", true);
             resp.success == true ?
                 $.alert({
                     backgroundDismiss: true,
