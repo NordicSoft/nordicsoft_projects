@@ -14,7 +14,7 @@ $(function () {
             return $.post(url, data);
 
             }).then(function (resp) {
-            $("button[type=submit]", $form).prop("disabled", true);
+            $("button[type=submit]", $form).prop("disabled", false);
             resp.success == true ?
                 $.alert({
                     backgroundDismiss: true,
