@@ -2,21 +2,25 @@ $(function () {
     //contact-form
     $("#contact-form").on('submit', function (e) {
         e.preventDefault();
-        $(this).submit(function () {
-            return false;
-        });
-        var data = $(this).serialize();
-        var url = $(this).prop("action");
-        var form = this;
-        $.post(url, data, function (resp) {
+        var $form = $(this);
+        grecaptcha.execute('6LfMK50UAAAAAH5KicYId5sjl5qZIvxtJ00FIDa2', { action: 'contact' }).then(function (token) {
+            $("input[name=g-recaptcha-response-token]", $form).val(token);
+            $("input[name=g-recaptcha-action]", $form).val("contact");
+        }).then(function () {
+            var data = $form.serialize();
+            var url = $form.prop("action");
+
+            return $.post(url, data);
+
+        }).then(function (resp) {
             resp.success == true ?
                 $.alert({
                     backgroundDismiss: true,
                     content: "Your message was successfully sent. We will write your back soon!",
                     theme: "my-theme",
                     title: "",
-                    onOpen: function () { $('body').addClass('overflow-y')},
-                    onClose: function () { $('body').removeClass('overflow-y')}
+                    onOpen: function () { $('body').addClass('overflow-y') },
+                    onClose: function () { $('body').removeClass('overflow-y') }
                 })
                 :
                 $.alert({
@@ -24,18 +28,14 @@ $(function () {
                     content: "Sorry, we couldn't send your message. Try later!",
                     theme: "my-theme",
                     title: "",
-                    onOpen: function () { $('body').addClass('overflow-y')},
-                    onClose: function () { $('body').removeClass('overflow-y')}
+                    onOpen: function () { $('body').addClass('overflow-y') },
+                    onClose: function () { $('body').removeClass('overflow-y') }
                 });
 
-            $(':input', form)
-                .not(':button, :submit, :reset, :hidden')
-                .val('')
-                .prop('checked', false)
-                .prop('selected', false);
+            $form.trigger("reset");
         });
-    });
 
+    });
     //subscribe
     $("#subscribe-form").on('submit', function (e) {
         e.preventDefault();

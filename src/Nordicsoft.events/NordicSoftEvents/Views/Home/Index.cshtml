@@ -23,15 +23,7 @@
 }
 
 @section Scripts{
-    <script src='https://www.google.com/recaptcha/api.js?render=6LfMK50UAAAAAH5KicYId5sjl5qZIvxtJ00FIDa2'></script>
-    <script>
-        grecaptcha.ready(function () {
-            grecaptcha.execute('6LfMK50UAAAAAH5KicYId5sjl5qZIvxtJ00FIDa2', { action: 'contact' }).then(function (token) {
-                $("input[name=g-recaptcha-response-token]").val(token);
-                $("input[name=g-recaptcha-action]").val("contact");
-            });
-        });
-    </script>
+    <script src='https://www.google.com/recaptcha/api.js?render=6LfMK50UAAAAAH5KicYId5sjl5qZIvxtJ00FIDa2' defer></script>
 
     <script>
         if ('serviceWorker' in navigator) {
