@@ -63,6 +63,14 @@
         border: none;
         padding: 0 30px;
         @include fonts-secondary;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:disabled {
+            opacity: 0.6;
+        }
     }
 }
 .form-control {

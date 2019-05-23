@@ -46,6 +46,7 @@ $(document).ready(function () {
     $("#contact-form").on('submit', function (e) {
         e.preventDefault();
         var $form = $(this);
+        $("input[type=submit]", $form).prop("disabled", true);
         grecaptcha.execute('6LefMp0UAAAAAIVYD-sYPIn4ZD0W6kZh5gdvsDsq', { action: 'contact' }).then(function (token) {
             $("input[name=g-recaptcha-response-token]", $form).val(token);
             $("input[name=g-recaptcha-action]", $form).val("contact");
@@ -55,7 +56,8 @@ $(document).ready(function () {
 
             return $.post(url, data);
 
-        }).then(function (resp) {
+            }).then(function (resp) {
+            $("input[type=submit]", $form).prop("disabled", false);
             resp.success == true
                 ? $.alert({ content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "" })
                 : $.alert({ content: "Sorry, we couldn't send your message. Try later!", theme: "my-theme", title: "" });
