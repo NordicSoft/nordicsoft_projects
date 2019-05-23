@@ -4,13 +4,20 @@
     $("#contact-form").on('submit',
         function (e) {
             e.preventDefault();
-            var data = $(this).serialize();
-            var url = $(this).prop("action");
-            var form = this;
-            $.post(url,
-                data,
-                function (resp) {
-                    resp.success == true
+            //var data = $(this).serialize();
+            //var url = $(this).prop("action");
+            var $form = $(this);
+            grecaptcha.execute('6LdXTp0UAAAAAEWy3hhPCKXb8CBP4IclbuzSYPfK', { action: 'contact' }).then(function (token) {
+                $("input[name=g-recaptcha-response-token]", $form).val(token);
+                $("input[name=g-recaptcha-action]", $form).val("contact");
+            }).then(function () {
+                var data = $form.serialize();
+                var url = $form.prop("action");
+
+                return $.post(url, data);
+
+            }).then(function (resp) {
+                resp.success == true
                         ? $.alert({
                             content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "", backgroundDismiss: true, 
                             onOpen: function () { $('body').addClass('overflow-y') },
@@ -21,11 +28,13 @@
                             onOpen: function () { $('body').addClass('overflow-y') },
                             onClose: function () { $('body').removeClass('overflow-y') } });
 
-                    $(':input', form)
-                        .not(':button, :submit, :reset, :hidden')
-                        .val('')
-                        .prop('checked', false)
-                        .prop('selected', false);
+                $form.trigger("reset");
+
+                    //$(':input', form)
+                    //    .not(':button, :submit, :reset, :hidden')
+                    //    .val('')
+                    //    .prop('checked', false)
+                    //    .prop('selected', false);
                 });
         });
 

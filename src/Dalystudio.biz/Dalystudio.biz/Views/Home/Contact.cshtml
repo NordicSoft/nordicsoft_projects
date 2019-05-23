@@ -42,15 +42,8 @@
 
 
 @section scripts{
-    <script src="https://www.google.com/recaptcha/api.js?render=6LdXTp0UAAAAAEWy3hhPCKXb8CBP4IclbuzSYPfK"></script>
-    <script>
-        grecaptcha.ready(function () {
-            grecaptcha.execute('6LdXTp0UAAAAAEWy3hhPCKXb8CBP4IclbuzSYPfK', { action: 'contact' }).then(function (token) {
-                $("input[name=g-recaptcha-response-token]").val(token);
-                $("input[name=g-recaptcha-action]").val("contact");
-            });
-        });
-    </script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdXTp0UAAAAAEWy3hhPCKXb8CBP4IclbuzSYPfK" defer></script>
+   
 }
 <section class="module module-header bg-dark bg-dark-50 lazyload" data-bg="../img/Contact.jpg">
 
