@@ -7,6 +7,8 @@
             //var data = $(this).serialize();
             //var url = $(this).prop("action");
             var $form = $(this);
+            $("button[type=submit]", $form).prop("disabled", true);
+
             grecaptcha.execute('6LdXTp0UAAAAAEWy3hhPCKXb8CBP4IclbuzSYPfK', { action: 'contact' }).then(function (token) {
                 $("input[name=g-recaptcha-response-token]", $form).val(token);
                 $("input[name=g-recaptcha-action]", $form).val("contact");
@@ -16,7 +18,9 @@
 
                 return $.post(url, data);
 
-            }).then(function (resp) {
+                }).then(function (resp) {
+                $("button[type=submit]", $form).prop("disabled", false);
+
                 resp.success == true
                         ? $.alert({
                             content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "", backgroundDismiss: true, 
