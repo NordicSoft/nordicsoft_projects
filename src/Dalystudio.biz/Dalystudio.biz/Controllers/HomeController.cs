@@ -81,12 +81,12 @@ namespace Dalystudio.biz.Controllers
             return View();
         }
 
-        //[Breadcrumb("ViewData.Title", FromAction = "Home.Index")]
-        //[Route("sitemap", Name = "Sitemap")]
-        //public IActionResult Sitemap(string culture)
-        //{
-        //    return View();
-        //}
+        [Breadcrumb("ViewData.Title", FromAction = "Home.Index")]
+        [Route("sitemap", Name = "Sitemap")]
+        public IActionResult Sitemap(string culture)
+        {
+            return View();
+        }
 
         [Breadcrumb("ViewData.Title", FromAction = "Home.Index")]
         [Route("workflow", Name = "Workflow")]
