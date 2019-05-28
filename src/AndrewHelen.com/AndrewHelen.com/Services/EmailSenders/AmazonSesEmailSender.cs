@@ -19,7 +19,7 @@ namespace AndrewHelen.com.Services.EmailSenders
             _logger = logger;
         }
 
-        public async Task SendEmailAsync(string email, string subject, string htmlMessage)
+        public Task SendEmailAsync(string email, string subject, string htmlMessage)
         {
             var sendRequest = new SendEmailRequest
             {
@@ -47,15 +47,7 @@ namespace AndrewHelen.com.Services.EmailSenders
                     }
                 },
             };
-            try
-            {
-                await _client.SendEmailAsync(sendRequest);
-            }
-            catch (Exception ex)
-            {
-                _logger.Log(LogLevel.Error, ex, "error in mail setting");
-                throw;
-            }
+            return _client.SendEmailAsync(sendRequest);
         }
 
     }
