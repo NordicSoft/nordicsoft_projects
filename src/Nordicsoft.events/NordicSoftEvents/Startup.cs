@@ -1,4 +1,6 @@
 ﻿using Amazon.SimpleEmail;
+using NordicSoftEvents.Services.GoogleRecaptcha;
+using NordicSoftEvents.Services.EmailSenders;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -6,21 +8,24 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Net.Http.Headers;
-using NordicSoftEvents.Services.GoogleRecaptcha;
-using NordicSoftEvents.Services.MailSender;
 using SmartBreadcrumbs;
 
 namespace NordicSoftEvents
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IHostingEnvironment hostingEnvironment)
+
         {
             Configuration = configuration;
+            HostingEnvironment = hostingEnvironment;
+
         }
 
         public IConfiguration Configuration { get; }
+        public IHostingEnvironment HostingEnvironment { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
@@ -46,9 +51,20 @@ namespace NordicSoftEvents
             services.Configure<ReCaptchaClass>(Configuration.GetSection("GooglRecaptcha"));
             services.AddScoped<IGoogleRecaptcha, GoogleRecaptcha>();
 
-            services.AddDefaultAWSOptions(Configuration.GetAWSOptions());
+            /*services.AddDefaultAWSOptions(Configuration.GetAWSOptions());
             services.AddAWSService<IAmazonSimpleEmailService>();
-            services.AddTransient<IMailSender, MailSender>();
+            services.AddTransient<IMailSender, MailSender>();*/
+            if (HostingEnvironment.IsProduction())
+            {
+                services.AddDefaultAWSOptions(Configuration.GetAWSOptions());
+                services.AddAWSService<IAmazonSimpleEmailService>();
+                services.AddTransient<IEmailSender, AmazonSesEmailSender>();
+            }
+            else
+            {
+                services.AddTransient<IEmailSender, SmtpEmailSender>();// Add Applciation Services
+            }
+
             services.AddSession();
         }
 

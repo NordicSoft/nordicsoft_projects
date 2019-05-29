@@ -1,8 +1,12 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Newtonsoft.Json.Linq;
 using NordicSoftEvents.Services.GoogleRecaptcha;
-using NordicSoftEvents.Services.MailSender;
+//using NordicSoftEvents.Services.MailSender;
+
+//using NordicSoftEvents.Services.MailSender;
 
 namespace NordicSoftEvents.Controllers.API
 {
@@ -12,93 +16,42 @@ namespace NordicSoftEvents.Controllers.API
     {
         [HttpPost]
         [Route("send-feedback")]
-        public async Task<JObject> SendFeedback([FromServices] IGoogleRecaptcha googleRecaptcha, [FromServices] IMailSender mailSender, string subject = "Feedback from customer")
+        public async Task<JObject> SendFeedback([FromServices] IGoogleRecaptcha googleRecaptcha, [FromServices] IEmailSender mailSender, [FromServices] IHostingEnvironment env)
         {
-
-            string encodedResponse = Request.Form["g-recaptcha-response-token"];
-            string action = Request.Form["g-recaptcha-action"];
-
-            bool isCaptchaValid = await googleRecaptcha.IsCaptchaValid(encodedResponse, action);
-
-            if (!isCaptchaValid)
-            {
-                return JObject.FromObject(new { success = false });
-            }
-
 
             string name = Request.Form["name"];
             string email = Request.Form["email"];
             string phone = Request.Form["phone"];
             string seats = Request.Form["numberSeats"];
             string pass = Request.Form["selectPass"];
+            string encodedResponse = Request.Form["g-recaptcha-response-token"];
+            string action = Request.Form["g-recaptcha-action"];
 
-            subject = $"{Settings.SiteNameDomain}: Feedback from customer"; 
+            string subject = $"{Settings.SiteNameDomain}: Feedback from customer";
             var feedbackMessage =
-                $"Seats: {seats} \n Pass: {pass}";
+                $"Seats: {seats} \n Pass: {pass} \n Phone: {phone}";
 
-            var emailModel = new
+            bool isCaptchaValid = await googleRecaptcha.IsCaptchaValid(encodedResponse, action);
+
+            if (!isCaptchaValid && env.IsProduction())
             {
-                Name = name,
-                Email = email,
-                Phone = phone,
-                //Seats = seats,
-                //Pass = pass,
-                //Subject = subject,
-                FeedbackMessage = feedbackMessage
-            };
+                return JObject.FromObject(new { success = false });
+            }
 
-            var textBody = $"{Settings.SiteNameDomain}: Feedback from customer with name: {name} and e-mail: {email}: " +
-                           $"{feedbackMessage}";
-
-            var textHtml = $"<p>{Settings.SiteNameDomain}: Feedback from customer with name: <strong>{name}</strong></p>" +
-                           $"<p>and e-mail: <strong>{email}</strong>: </p>" +
+            var textHtml = $"<p>{Settings.SiteNameDomain}: Feedback rom customer with name: <strong>{name}</strong></p><br>" +
+                           $"<p>and e-mail: <strong>{email}</strong>: </p><br>" +
                            $"<p>{feedbackMessage}</p>";
 
-            // send email to administrator
-            IMail mail = new AmazonSESMail
+            try
             {
-                SenderAddress = Settings.SupportEmail,
-                ReceiverAddress = Settings.SupportEmail,
-                Subject = subject,
-                TextBody = textBody,
-                HtmlBody = textHtml
-            };
-            var success = await mailSender.SendEmailAsync(mail);
+                await mailSender.SendEmailAsync(Settings.SupportEmail, subject, textHtml);
+                return JObject.FromObject(new { success = true });
 
-            return JObject.FromObject(new {success = success });
-        }
-
-        [HttpPost]
-        [Route("subscribe")]
-        public async Task<JObject> Subscribe([FromServices] IGoogleRecaptcha googleRecaptcha, [FromServices] IMailSender mailSender)
-        {
-
-            string name = Request.Form["name"];
-            string email = Request.Form["email"];
-
-            string subject = $"{Settings.SiteNameDomain}: Subscription from customer"; 
-
-
-            var textBody =
-                $"{Settings.SiteNameDomain}: Subscription from customer with name: {name} and e-mail: {email}: ";
-
-            var textHtml =
-                $"<p>{Settings.SiteNameDomain}: Subscription from customer with name: <strong>{name}</strong></p>" +
-                $"<p>and e-mail: <strong>{email}</strong>: </p>";
-
-            // send email to administrator
-            IMail mail = new AmazonSESMail
+            }
+            catch
             {
-                SenderAddress = Settings.SupportEmail,
-                ReceiverAddress = Settings.SupportEmail,
-                Subject = subject,
-                TextBody = textBody,
-                HtmlBody = textHtml
-            };
-            var success = await mailSender.SendEmailAsync(mail);
-
-            return JObject.FromObject(new {success = success });
+                return JObject.FromObject(new { success = false });
+            }
         }
-
     }
 }
