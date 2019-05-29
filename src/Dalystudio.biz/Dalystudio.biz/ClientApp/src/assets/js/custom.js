@@ -5,18 +5,22 @@
         function (e) {
             e.preventDefault();
             var $form = $(this);
+            var siteKey = $("input[name=g-recaptcha-site-key]", $form).val();
             $("button[type=submit]", $form).prop("disabled", true);
 
-            grecaptcha.execute('6LdXTp0UAAAAAEWy3hhPCKXb8CBP4IclbuzSYPfK', { action: 'contact' }).then(function (token) {
+            grecaptcha.execute(siteKey, {
+                action: 'contact'
+            }).then(function (token) {
+
                 $("input[name=g-recaptcha-response-token]", $form).val(token);
                 $("input[name=g-recaptcha-action]", $form).val("contact");
             }).then(function () {
                 var data = $form.serialize();
                 var url = $form.prop("action");
+                return $.post(url, data).fail(function (e) { console.log(e) });
 
-                return $.post(url, data);
+            }).then(function (resp) {
 
-                }).then(function (resp) {
                 $("button[type=submit]", $form).prop("disabled", false);
 
                 resp.success == true

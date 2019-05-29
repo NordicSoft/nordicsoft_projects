@@ -56,6 +56,7 @@ namespace Dalystudio.biz.Services.GoogleRecaptcha
 
     public class ReCaptchaClass
     {
+        public string SiteKey { get; set; }
         public string SecretKey { get; set; }
 
         [JsonProperty("success")]

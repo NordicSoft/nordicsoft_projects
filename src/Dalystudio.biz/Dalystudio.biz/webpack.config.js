@@ -23,7 +23,7 @@ module.exports = (env, options) => {
     entry: {
       vendor_styles: "./ClientApp/src/assets/js/vendor_styles.js",
       vendor_src: [
-        "script-loader!./ClientApp/src/assets/vendor/jquery-1.11.1.js",
+        //"script-loader!./ClientApp/src/assets/vendor/jquery-1.11.1.js",
         "script-loader!./ClientApp/src/assets/vendor/jquery-2.1.3.js",
           "script-loader!./ClientApp/src/assets/vendor/bootstrap/js/bootstrap.js",
           "script-loader!./ClientApp/src/assets/vendor/jquery.confirm.js",
