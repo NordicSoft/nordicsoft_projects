@@ -28,8 +28,7 @@ namespace NordicSoftEvents.Controllers.API
             string action = Request.Form["g-recaptcha-action"];
 
             string subject = $"{Settings.SiteNameDomain}: Feedback from customer";
-            var feedbackMessage =
-                $"Seats: {seats} \n Pass: {pass} \n Phone: {phone}";
+            var feedbackMessage = $"Seats: <strong>{seats}</strong> \n <br> Pass: <strong>{pass}</strong> \n <br> Phone: <strong>{phone}</strong>";
 
             bool isCaptchaValid = await googleRecaptcha.IsCaptchaValid(encodedResponse, action);
 
@@ -38,8 +37,7 @@ namespace NordicSoftEvents.Controllers.API
                 return JObject.FromObject(new { success = false });
             }
 
-            var textHtml = $"<p>{Settings.SiteNameDomain}: Feedback rom customer with name: <strong>{name}</strong></p><br>" +
-                           $"<p>and e-mail: <strong>{email}</strong>: </p><br>" +
+            var textHtml = $"<p>{Settings.SiteNameDomain}: Feedback from customer with name: <strong>{name}</strong> and e-mail: <strong>{email}</strong>: </p>" +
                            $"<p>{feedbackMessage}</p>";
 
             try
