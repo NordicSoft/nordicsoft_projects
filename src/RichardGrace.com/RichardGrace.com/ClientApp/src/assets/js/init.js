@@ -46,17 +46,18 @@ $(document).ready(function () {
     $("#contact-form").on('submit', function (e) {
         e.preventDefault();
         var $form = $(this);
+        var siteKey = $("input[name=g-recaptcha-site-key]", $form).val();
         $("input[type=submit]", $form).prop("disabled", true);
-        grecaptcha.execute('6LefMp0UAAAAAIVYD-sYPIn4ZD0W6kZh5gdvsDsq', { action: 'contact' }).then(function (token) {
+        grecaptcha.execute(siteKey, {
+            action: 'contact'
+        }).then(function (token) {
             $("input[name=g-recaptcha-response-token]", $form).val(token);
             $("input[name=g-recaptcha-action]", $form).val("contact");
         }).then(function () {
             var data = $form.serialize();
             var url = $form.prop("action");
-
-            return $.post(url, data);
-
-            }).then(function (resp) {
+            return $.post(url, data).fail(function (e) { console.log(e) });
+        }).then(function (resp) {
             $("input[type=submit]", $form).prop("disabled", false);
             resp.success == true
                 ? $.alert({ content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "" })
@@ -80,7 +81,7 @@ $(document).ready(function () {
     var isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     if (!isMobileDevice) {
         $('#headerwrap.fullheight').css('height', windowHeight);
-        $(window).resize(function() {
+        $(window).resize(function () {
             $('#headerwrap.fullheight').css('height', windowHeight);
         });
     }

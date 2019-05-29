@@ -1,4 +1,8 @@
-﻿@{
+﻿@using RichardGrace.com
+@using RichardGrace.com.Services.GoogleRecaptcha
+@using Microsoft.Extensions.Options;
+@inject IOptions<ReCaptchaClass> RecaptchaOptions;
+@{
     ViewData["Title"] = "Home Page";
 }
 @section metatags{
@@ -16,7 +20,8 @@
     <link rel="canonical" href="@($"https://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
 }
 @section Scripts{
-    <script src="https://www.google.com/recaptcha/api.js?render=6LefMp0UAAAAAIVYD-sYPIn4ZD0W6kZh5gdvsDsq" defer></script>
+    <script src='https://www.google.com/recaptcha/api.js?render=@RecaptchaOptions.Value.SiteKey' defer></script>
+
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
@@ -60,7 +65,7 @@
         <canvas id="fettiwrap"></canvas>
         <div class="container vertical-center">
             <div class="intro-text vertical-center text-center smoothie">
-                <div class="intro-heading wow fadeIn heading-font"><span class="secondary-font">Richard and Grace</span>Saturday, January 11, 2020</div>
+                <div class="intro-heading heading-font"><span class="secondary-font">Richard and Grace</span>Saturday, January 11, 2020</div>
             </div>
         </div>
         <div class="animation-bg "></div>
@@ -73,7 +78,7 @@
         <div class="section-inner">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center mb-45 wow fadeIn">
+                    <div class="col-lg-12 text-center mb-45">
                         <h2 class="section-heading">Richard and Grace</h2>
                         <hr class="thin-hr">
                         <h3 class="secondary-font">Welcome to our beginning.</h3>
@@ -83,7 +88,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-md-5 col-md-offset-1 wow fadeIn">
+                    <div class="col-sm-6 col-md-5 col-md-offset-1">
                         <picture>
                             <source data-srcset="img/groom.webp" type="image/webp" class="img-responsive lazyload">
                             <source data-srcset="img/groom.jpg" type="image/jpeg" class="img-responsive lazyload">
@@ -92,7 +97,7 @@
                         <p class="text-center">My one and only. The most generous, thoughtful, honest, trustworthy, and caring man in the whole world. There aren’t enough words in the dictionary to describe what a wonderful person my future husband is. - Grace</p>
                     </div>
 
-                    <div class="col-sm-6 col-md-5 wow fadeIn">
+                    <div class="col-sm-6 col-md-5">
                         <picture>
                             <source type="image/webp" data-srcset="img/bride.webp" class="img-responsive lazyload">
                             <source type="image/jpeg" data-srcset="img/bride.jpg" class="img-responsive lazyload">
@@ -108,7 +113,6 @@
 
     <div class="parallax-custom section-info lazyload" data-bg="/img/bg/bg1.jpg">
         <div class="section-inner light-opaqued section-quote">
-            <div class="wow fadeIn">
                 <div class="container text-center the-date">
                     <div class="row">
                         <div class="col-xs-12">
@@ -116,12 +120,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
 
         <div id="wedding-date" class="section-inner white-bg">
-            <div class="wow fadeIn">
-                <div class="container text-center">
+            <div class="container text-center">
                     <div class="row">
                         <div class="col-xs-12" role="tabpanel">
                             <div class="row">
@@ -161,13 +163,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
 
         <div class="section-inner light-opaqued white section-wishes">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center mb-45 wow fadeIn">
+                    <div class="col-lg-12 text-center mb-45">
                         <h2 class="section-heading">Our Guests’ Wishes</h2>
                         <hr class="thin-hr">
                     </div>
@@ -176,7 +177,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="owl-carousel-wishes testimonial-owl wow fadeIn list-unstyled" data-items="1" data-items-desktop="[1200,1]" data-items-desktop-small="[980,1]" data-items-tablet="[768,1]" data-items-mobile="[479,1]">
+                        <div class="owl-carousel-wishes testimonial-owl list-unstyled" data-items="1" data-items-desktop="[1200,1]" data-items-desktop-small="[980,1]" data-items-tablet="[768,1]" data-items-mobile="[479,1]">
                             <div class="row">
                                 <div class="col-sm-10 col-sm-offset-1 item-caption">
                                     <div class="row">
@@ -218,7 +219,7 @@
         <div class="section-inner">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center mb-45 wow fadeIn">
+                    <div class="col-lg-12 text-center mb-45">
                         <h2 class="section-heading">Gift Registration</h2>
                         <hr class="thin-hr">
                         <h3 class="secondary-font">Our ideal suggestions.</h3>
@@ -229,7 +230,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="owl-carousel-partners wow fadeIn" data-items="3" data-items-desktop="[1200,3]" data-items-desktop-small="[991,2]" data-items-mobile="[479,1]">
+                        <div class="owl-carousel-partners" data-items="3" data-items-desktop="[1200,3]" data-items-desktop-small="[991,2]" data-items-mobile="[479,1]">
                             <img data-src="img/logo/logo1.png" class="img-responsive lazyload" alt="Gavalier">
                             <img data-src="img/logo/logo2.png" class="img-responsive lazyload" alt="Harvest">
                             <img data-src="img/logo/logo3.png" class="img-responsive lazyload" alt="Gavalier Boundary">
@@ -252,11 +253,11 @@
                         <h4 class="footer-goodbye">We are looking forward to seeing you!</h4>
                         <hr class="thin-hr" />
                         <div id="message"></div>
-                        <form method="POST" asp-controller="Common" asp-action="SendFeedback" id="contact-form" class="main-contact-form wow fadeIn" data-wow-delay="0.2s">
+                        <form method="POST" asp-controller="Common" asp-action="SendFeedback" id="contact-form" class="main-contact-form">
 
                             <input type="hidden" name="g-recaptcha-action">
                             <input type="hidden" name="g-recaptcha-response-token">
-
+                            <input type="hidden" name="g-recaptcha-site-key" value="@RecaptchaOptions.Value.SiteKey">
                             <input type="text" class="form-control" name="name" aria-label="Your name" maxlength="100" placeholder="Name" required />
                             <input type="email" class="form-control" name="email" placeholder="Email" id="email" required data-validation-required-message="Please enter your email address." aria-label="Email" />
                             <textarea name="comments" class="form-control" id="comments" placeholder="Your Message" required data-validation-required-message="Please enter a message." aria-label="Message"></textarea>
@@ -271,7 +272,7 @@
     <footer class="">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center wow fadeIn">
+                <div class="col-md-12 text-center">
                     <span class="copyright">Created With Love. Designed by <a href="https://nordicsoft.net/" target="_blank" rel="noopener noreferrer nofollow" title="NordicSoft">NordicSoft</a>.</span>
                 </div>
             </div>

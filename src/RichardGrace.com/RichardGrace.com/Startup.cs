@@ -1,4 +1,6 @@
 ﻿using Amazon.SimpleEmail;
+using RichardGrace.com.Services.EmailSenders;
+using RichardGrace.com.Services.GoogleRecaptcha;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -7,20 +9,23 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Net.Http.Headers;
-using RichardGrace.com.Services.GoogleRecaptcha;
-using RichardGrace.com.Services.MailSender;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using RichardGrace.com.EmailSenders;
 using SmartBreadcrumbs;
 
 namespace RichardGrace.com
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IHostingEnvironment hostingEnvironment)
+
         {
             Configuration = configuration;
+            HostingEnvironment = hostingEnvironment;
         }
 
         public IConfiguration Configuration { get; }
+        public IHostingEnvironment HostingEnvironment { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
@@ -43,12 +48,20 @@ namespace RichardGrace.com
                 options.LiClasses = "breadcrumb-item";
                 options.ActiveLiClasses = "breadcrumb-item active";
             });
-            services.Configure<ReCaptchaClass>(Configuration.GetSection("GooglRecaptcha"));
+            services.Configure<ReCaptchaClass>(Configuration.GetSection("GoogleRecaptcha"));
             services.AddScoped<IGoogleRecaptcha, GoogleRecaptcha>();
+            if (HostingEnvironment.IsProduction())
+            {
+                services.AddDefaultAWSOptions(Configuration.GetAWSOptions());
+                services.AddAWSService<IAmazonSimpleEmailService>();
+                services.AddTransient<IEmailSender, AmazonSesEmailSender>();
 
-            services.AddDefaultAWSOptions(Configuration.GetAWSOptions());
-            services.AddAWSService<IAmazonSimpleEmailService>();
-            services.AddTransient<IMailSender, MailSender>();
+            }
+            else
+            {
+                services.AddTransient<IEmailSender, SmtpEmailSender>();// Add Applciation Services
+
+            }
             services.AddSession();
         }
 

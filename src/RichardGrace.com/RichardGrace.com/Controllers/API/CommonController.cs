@@ -1,8 +1,9 @@
 ﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Hosting;
 using Newtonsoft.Json.Linq;
 using RichardGrace.com.Services.GoogleRecaptcha;
-using RichardGrace.com.Services.MailSender;
 
 namespace RichardGrace.com.Controllers.API
 {
@@ -12,53 +13,37 @@ namespace RichardGrace.com.Controllers.API
     {
         [HttpPost]
         [Route("send-feedback")]
-        public async Task<JObject> SendFeedback([FromServices] IGoogleRecaptcha googleRecaptcha, [FromServices] IMailSender mailSender)
+        public async Task<JObject> SendFeedback([FromServices] IGoogleRecaptcha googleRecaptcha, [FromServices] IEmailSender mailSender, [FromServices] IHostingEnvironment env)
         {
 
             string name = Request.Form["name"];
             string email = Request.Form["email"];
-            string feedbackMessage = Request.Form["comments"];
+            string comments = Request.Form["comments"];
             string encodedResponse = Request.Form["g-recaptcha-response-token"];
             string action = Request.Form["g-recaptcha-action"];
 
-
             string subject = $"{Settings.SiteNameDomain}: Feedback from customer";
+            var feedbackMessage = $"Comments: {comments}";
 
             bool isCaptchaValid = await googleRecaptcha.IsCaptchaValid(encodedResponse, action);
 
-            if (!isCaptchaValid)
+            if (!isCaptchaValid && env.IsProduction())
             {
-                return JObject.FromObject(new {success = false});
+                return JObject.FromObject(new { success = false });
             }
 
-            var emailModel = new
-            {
-                Name = name,
-                Email = email,
-                Subject = subject,
-                FeedbackMessage = feedbackMessage
-            };
-
-            var textBody = $"{Settings.SiteNameDomain}: Feedback rom customer with name: {name} and e-mail: {email}: " +
-                           $"{feedbackMessage}";
-
-            var textHtml = $"<p>{Settings.SiteNameDomain}: Feedback rom customer with name: <strong>{name}</strong></p>" +
-                           $"<p>and e-mail: <strong>{email}</strong>: </p>" +
+            var textHtml = $"<p>{Settings.SiteNameDomain}: Feedback from customer with name: <strong>{name}</strong> and e-mail: <strong>{email}</strong>.</p>" +
                            $"<p>{feedbackMessage}</p>";
-
-            // send email to administrator
-            IMail mail = new AmazonSESMail
+            try
             {
-                SenderAddress = Settings.SupportEmail,
-                ReceiverAddress = Settings.SupportEmail,
-                Subject = subject,
-                TextBody = textBody,
-                HtmlBody = textHtml
-            };
-            var success = await mailSender.SendEmailAsync(mail);
+                await mailSender.SendEmailAsync(Settings.SupportEmail, subject, textHtml);
+                return JObject.FromObject(new { success = true });
 
-            return JObject.FromObject(new {success = success });
+            }
+            catch
+            {
+                return JObject.FromObject(new { success = false });
+            }
         }
-
     }
 }
