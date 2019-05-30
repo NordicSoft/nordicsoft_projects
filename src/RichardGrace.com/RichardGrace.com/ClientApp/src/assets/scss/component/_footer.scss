@@ -14,17 +14,16 @@ footer span.copyright {
         cursor: pointer;
     }
 }
+.footer-goodbye {
+    text-transform: none !important;
+    font-size: 45px;
+    margin-bottom: 44px;
+    letter-spacing: 2px;
+    font-weight: 700;
 
-footer.white-wrapper .social-links li {
-    padding: 15px 30px
-}
+    @media(max-width: 575px) {
+        font-size: 27px;
+    }
 
-footer.white-wrapper .social-links li a {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 26px;
-}
-
-.widget-title {
-    margin-bottom: 30px;
+    @include fonts-secondary
 }

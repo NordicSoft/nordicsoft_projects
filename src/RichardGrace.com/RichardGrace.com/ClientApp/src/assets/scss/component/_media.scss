@@ -153,47 +153,6 @@
 .nopadding-bottom {
     padding-bottom: 0 !important;
 }
-
-.footer-goodbye {
-    text-transform: none !important;
-    font-size: 45px;
-    margin-bottom: 44px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    @include fonts-secondary
-}
-
-#fettiwrap {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-}
-/* INSTAGRAM */
-.instafeed-wrapper {
-    position: relative;
-    overflow: hidden;
-}
-
-.instafeed-overlay {
-    background-color: rgba(0,0,0,0.6);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    text-align: center;
-}
-
-.instafeed-overlay .lead {
-    font-size: 80px;
-}
-
-#instafeed img {
-    width: 16.666666%;
-}
-
 .lead {
     &.a-quote {
         font-size: 72px;
