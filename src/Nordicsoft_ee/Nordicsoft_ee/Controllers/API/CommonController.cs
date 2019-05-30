@@ -2,7 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
 using Nordicsoft_ee.Services.GoogleRecaptcha;
-using Nordicsoft_ee.Services.MailSender;
+using Nordicsoft_ee.Services.EmailSenders;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 namespace Nordicsoft_ee.Controllers.API
 {
@@ -12,7 +14,9 @@ namespace Nordicsoft_ee.Controllers.API
     {
         [HttpPost]
         [Route("send-feedback")]
-        public async Task<JObject> SendFeedback([FromServices] IGoogleRecaptcha googleRecaptcha, [FromServices] IMailSender mailSender)
+        public async Task<JObject> SendFeedback([FromServices] IGoogleRecaptcha googleRecaptcha,
+            [FromServices] IEmailSender mailSender, [FromServices] IHostingEnvironment env)
+
         {
 
             string name = Request.Form["name"];
@@ -25,39 +29,32 @@ namespace Nordicsoft_ee.Controllers.API
 
             bool isCaptchaValid = await googleRecaptcha.IsCaptchaValid(encodedResponse, action);
 
-            if (!isCaptchaValid)
+            if (!isCaptchaValid && env.IsProduction())
+
             {
                 return JObject.FromObject(new {success = false});
             }
 
-            var emailModel = new
+
+            var textHtml =
+                $"<p>{Settings.SiteNameDomain}: Feedback from customer with name: <strong>{name}</strong></p><br>" +
+                $"<p>and e-mail: <strong>{email}</strong>: </p><br>" +
+                $"<p>{feedbackMessage}</p>";
+
+            try
             {
-                Name = name,
-                Email = email,
-                Subject = subject,
-                FeedbackMessage = feedbackMessage
-            };
 
-            var textBody = $"{Settings.SiteName}: Feedback rom customer with name: {name} and e-mail: {email}: " +
-                           $"{feedbackMessage}";
+                await mailSender.SendEmailAsync(Settings.SupportEmail, subject, textHtml);
+                return JObject.FromObject(new {success = true});
 
-            var textHtml = $"<p>{Settings.SiteName}: Feedback rom customer with name: <strong>{name}</strong></p>" +
-                           $"<p>and e-mail: <strong>{email}</strong>: </p>" +
-                           $"<p>{feedbackMessage}</p>";
 
-            // send email to administrator
-            IMail mail = new AmazonSESMail
+            }
+            catch
             {
-                SenderAddress = Settings.SupportEmailForSending,
-                ReceiverAddress = Settings.SupportEmailForSending,
-                Subject = subject,
-                TextBody = textBody,
-                HtmlBody = textHtml
-            };
-            var success = await mailSender.SendEmailAsync(mail);
+                return JObject.FromObject(new {success = false});
+            }
 
-            return JObject.FromObject(new {success = success });
+
         }
-
     }
 }

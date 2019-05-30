@@ -232,43 +232,46 @@ jconfirm.defaults = {
             }
     });
 
+
     $("#contact-form").on('submit',
         function (e) {
             e.preventDefault();
-            var data = $(this).serialize();
-            var url = $(this).prop("action");
-            var form = this;
-            
-            $.post(url,
-                data,
-                function (resp) {
-                    resp.success == true ?
-                        $.alert({
-                            content: "Your message was successfully sent. We will write your back soon!",
-                            theme: "my-theme",
-                            title: "",
-                            backgroundDismiss: true,
-                            onOpen: function () { $('body').addClass('noscroll'); },
-                            onClose: function () { $('body').removeClass('noscroll'); }
+            var $form = $(this);
+            var siteKey = $("input[name=g-recaptcha-site-key]", $form).val();
+            $("button[type=submit]", $form).prop("disabled", true);
 
-                        })
-                        :
-                        $.alert({
-                            content: "Sorry, we couldn't send your message. Try later!",
-                            theme: "my-theme",
-                            title: "",
-                            backgroundDismiss: true,
-                            onOpen: function () { $('body').addClass('noscroll'); },
-                            onClose: function () { $('body').removeClass('noscroll');  }
-                        });
-                 
-                    $(':input', form)
-                        .not(':button, :submit, :reset, :hidden')
-                        .val('')
-                        .prop('checked', false)
-                        .prop('selected', false);
-                });
+            grecaptcha.execute(siteKey, {
+                action: 'contact'
+            }).then(function (token) {
+
+                $("input[name=g-recaptcha-response-token]", $form).val(token);
+                $("input[name=g-recaptcha-action]", $form).val("contact");
+            }).then(function () {
+                var data = $form.serialize();
+                var url = $form.prop("action");
+                return $.post(url, data).fail(function (e) { console.log(e) });
+
+            }).then(function (resp) {
+
+                $("button[type=submit]", $form).prop("disabled", false);
+
+                resp.success == true
+                    ? $.alert({
+                        content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "", backgroundDismiss: true,
+                        onOpen: function () { $('body').addClass('overflow-y') },
+                        onClose: function () { $('body').removeClass('overflow-y') }
+                    })
+                    : $.alert({
+                        content: "Sorry, we couldn't send your message. Try later!", theme: "my-theme", title: "", backgroundDismiss: true,
+                        onOpen: function () { $('body').addClass('overflow-y') },
+                        onClose: function () { $('body').removeClass('overflow-y') }
+                    });
+
+                $form.trigger("reset");
+
+            });
         });
+
 
     $("#navbar ul.nav li").on("click", function(e) {
         $("#navbar").collapse('hide');
