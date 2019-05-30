@@ -48,7 +48,7 @@ namespace NordicSoftEvents
                 options.LiClasses = "breadcrumb-item";
                 options.ActiveLiClasses = "breadcrumb-item active";
             });
-            services.Configure<ReCaptchaClass>(Configuration.GetSection("GooglRecaptcha"));
+            services.Configure<ReCaptchaClass>(Configuration.GetSection("GoogleRecaptcha"));
             services.AddScoped<IGoogleRecaptcha, GoogleRecaptcha>();
 
             /*services.AddDefaultAWSOptions(Configuration.GetAWSOptions());
