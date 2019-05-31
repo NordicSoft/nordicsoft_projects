@@ -22,20 +22,22 @@ module.exports = (env, options) => {
         mode: devMode ? "development" : "production",
         entry: {
             vendor_styles: "./ClientApp/src/assets/js/vendor_styles.js",
-            vendor_src: [
+            jquery_src: [
                 "script-loader!./ClientApp/src/assets/vendor/js/jquery/jquery.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/js/bootstrap/bootstrap.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/js/plugins/plugins.js",
-
                 "script-loader!./ClientApp/src/assets/vendor/js/jquery/jquery.countdown.min.js",
                 "script-loader!./ClientApp/src/assets/vendor/js/jquery/jquery.confirm.min.js"
             ],
-
+            bootstrap_src: [
+                "script-loader!./ClientApp/src/assets/vendor/js/bootstrap/bootstrap.min.js"
+            ],
+            plugins_src: [
+                "script-loader!./ClientApp/src/assets/vendor/js/plugins/plugins.js"
+            ],
             all_styles: './ClientApp/src/assets/js/all_styles.js',
             custom_styles: './ClientApp/src/assets/js/custom_styles.js',
             main: './ClientApp/src/assets/js/index.js'
         },
-        devtool: 'eval',
+        devtool: devMode ? 'eval' : '',
         output: {
             path: path.resolve(__dirname, './wwwroot/dist'),
             filename: "[name].js",
@@ -53,9 +55,21 @@ module.exports = (env, options) => {
             splitChunks: {
                 chunks: 'async',
                 cacheGroups: {
-                    vendor_src: {
+                    jquery_src: {
                         // chunks: 'all',
-                        name: 'vendor_src',
+                        name: 'jquery_src',
+                        test: /[\\/]vendor[\\/].*.js/,
+                        enforce: true
+                    },
+                    bootstrap_src: {
+                        // chunks: 'all',
+                        name: 'jquery_src',
+                        test: /[\\/]vendor[\\/].*.js/,
+                        enforce: true
+                    },
+                    plugins_src: {
+                        // chunks: 'all',
+                        name: 'jquery_src',
                         test: /[\\/]vendor[\\/].*.js/,
                         enforce: true
                     },
