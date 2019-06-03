@@ -1,162 +1,103 @@
 /**social icons default size**/
+.sprite-icon {
+    background-image: url('/images/icons.svg');
+    background-repeat: no-repeat;
+}
+
 .social-icon {
     margin: 0 5px 5px 0;
     width: 40px;
     height: 40px;
-    font-size: 20px;
+    //font-size: 20px;
     line-height: 40px !important;
-    color: #555;
     text-shadow: none;
     border-radius: 3px;
     overflow: hidden;
     display: block;
     float: left;
     text-align: center;
-    border: 1px solid #AAA;
-}
 
-.social-icon:hover {
-    border-color: transparent;
-}
+    &.facebook {
+        background-position: 0 -50px;
+        background-color: rgb(59, 89, 152) !important;
 
-.social-icon i {
-    display: block;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    line-height: 40px;
-    position: relative;
-}
+        &:hover {
+            background-color: rgba(59, 89, 152, 0.8) !important;
+        }
+    }
 
-.social-icon i:last-child {
-    color: #FFF !important;
-}
+    &.twitter {
+        background-position: -40px -50px;
+        background-color: rgb(0,172,238) !important;
 
-.social-icon:hover i:first-child {
-    margin-top: -40px;
-}
+        &:hover {
+            background-color: rgbA(0, 172, 238, 0.8) !important;
+        }
+    }
 
-/***social icons lg (big)***/
-.social-icon-lg {
-    margin: 0 5px 5px 0;
-    width: 60px;
-    height: 60px;
-    font-size: 30px;
-    line-height: 60px !important;
-    color: #555;
-    text-shadow: none;
-    border-radius: 3px;
-    overflow: hidden;
-    display: block;
-    float: left;
-    text-align: center;
-    border: 1px solid #AAA;
-}
+    &.linkedin {
+        background-position: -80px -50px;
+        background-color: rgb(14, 118, 168) !important;
 
-.social-icon-lg i:last-child {
-    color: #FFF !important;
-}
-
-.social-icon-lg:hover i:first-child {
-    margin-top: -60px;
-}
-
-/***social icons small***/
-.social-icon-sm {
-    margin: 0 5px 5px 0;
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
-    line-height: 30px !important;
-    color: #555;
-    text-shadow: none;
-    border-radius: 3px;
-    overflow: hidden;
-    display: block;
-    float: left;
-    text-align: center;
-    border: 1px solid #AAA;
-}
-
-.social-icon-sm:hover {
-    border-color: transparent;
-}
-
-.social-icon-sm i {
-    display: block;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    line-height: 30px;
-    position: relative;
-}
-
-.social-icon-sm i:last-child {
-    color: #FFF !important;
-}
-
-.social-icon-sm:hover i:first-child {
-    margin-top: -30px;
-}
-
-si-border {
-    border: 1px solid #AAA !important;
-}
-
-.si-border-round {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%;
-}
-
-.si-dark-round {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%;
-}
-
-.si-gray-round {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%;
-}
-
-.si-gray {
-    background: #f3f3f3;
-    border: 0px;
-}
-
-.si-dark {
-    border: 0px !important;
-    color: #fff !important;
-}
-
-/**icons hover colored**/
-.si-colored-facebook {
-    background-color: rgb(59, 89, 152) !important;
-
-    &:hover {
-        background-color: rgba(59, 89, 152, 0.8) !important;
+        &:hover {
+            background-color: rgba(14, 118, 168, 0.8) !important;
+        }
     }
 }
 
-.si-colored-twitter {
-    background-color: rgb(0,172,238) !important;
+.back-to-top {
+    position: fixed;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    bottom: 85px;
+    right: 10px;
+    background-color: rgba(139,203,38, 0.6);
+    line-height: 50px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+    background-position: -100px 0;
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    -moz-transition: -moz-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+    transform: translate3d(0, 15px, 0);
+    -webkit-transform: translate3d(0, 15px, 0);
 
     &:hover {
-        background-color: rgbA(0, 172, 238, 0.8) !important;
+        box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translate3d(0, 0px, 0);
+        -webkit-transform: translate3d(0, 0px, 0);
     }
 }
 
-.si-colored-linkedin {
-    background-color: rgb(14, 118, 168) !important;
-
-    &:hover {
-        background-color: rgba(14, 118, 168, 0.8) !important;
-    }
+.icon-bed{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-position: 0 0;
+}
+.icon-meals {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-position: -50px 0;
+}
+.icon-close{
+    width: 40px;
+    height: 40px;
+    background-position: -120px -50px;
+    margin-right: 0 !important;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 24px;
+    right: 5px;
 }

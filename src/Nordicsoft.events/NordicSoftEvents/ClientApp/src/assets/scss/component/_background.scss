@@ -1,0 +1,42 @@
+﻿.bg-faded {
+    background: #f8f8f8;
+}
+.bg-dark {
+    border-color: #34495E !important;
+    background-color: #34495E !important;
+}
+
+.bg-white {
+    background: #fff;
+}
+.bg-default {
+    background-color: #f7f7f7 !important;
+}
+
+.bg-gray {
+    background-color: #fbfbfb;
+}
+.bg-overlay {
+    position: relative;
+
+    &:before {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        content: "";
+    }
+
+    .container {
+        z-index: 3;
+        position: relative;
+    }
+}
+
+.bg-parallax {
+    background-attachment: fixed;
+    background-position: center center;
+}

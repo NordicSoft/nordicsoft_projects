@@ -22,11 +22,6 @@
     </environment>
 
     <title>NordicSoft | YOUCANHACKIT</title>
-
-    @if (!string.IsNullOrEmpty(Settings.FbAppId))
-    {
-        @*<meta property="fb:app_id" content="@Settings.FbAppId" />*@
-    }
     <meta property="og:site_name" content="@Settings.SiteName" />
 
     @RenderSection("metatags", false)
