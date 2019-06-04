@@ -29,7 +29,8 @@ module.exports = (env, options) => {
                 "script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js",
                 "script-loader!./ClientApp/src/assets/vendor/jquery.magnific-popup.min.js",
                 "script-loader!./ClientApp/src/assets/vendor/jquery.countdown.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js"
+                "script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js",
+                "script-loader!./ClientApp/src/assets/vendor/smooth-scroll.js"
             ],
             all_styles: './ClientApp/src/assets/js/all_styles.js',
             custom_styles: './ClientApp/src/assets/js/custom_styles.js',

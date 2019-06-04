@@ -7,8 +7,6 @@
         $body = $('body'),
         $header = $('header'),
         $navbar = $('.navbar'),
-        $navbarCollapse = $('.navbar-collapse'),
-        $pageScrollLink = $('.page-scroll'),
         $galleryGrid = $('.gallery-grid'),
         $scrollToTop = $('.scroll-to-top'),
         navHeight = 90,
@@ -36,21 +34,6 @@
         }
     };
 
-
-    /** Window load */
-
-    $window.on('load', function () {
-        /** Bootstrap scrollspy */
-        var ww = Math.max($window.width(), window.innerWidth);
-        $body.scrollspy({
-            target: '#navigation',
-            offset: ww > 992 ? navHeightShrink : navHeight
-        });
-    });
-
-
-    /** Document ready */
-
     $document.ready(function () {
 
         /** contact form */
@@ -59,8 +42,8 @@
             var $form = $(this);
             var siteKey = $("input[name=g-recaptcha-site-key]", $form).val();
             $("button[type=submit]", $form).prop("disabled", true);
-            grecaptcha.execute(siteKey,{
-                action: 'contact' 
+            grecaptcha.execute(siteKey, {
+                action: 'contact'
             }).then(function (token) {
                 $("input[name=g-recaptcha-response-token]", $form).val(token);
                 $("input[name=g-recaptcha-action]", $form).val("contact");
@@ -68,7 +51,7 @@
                 var data = $form.serialize();
                 var url = $form.prop("action");
 
-                return $.post(url, data).catch(function(e) {console.log(e)});
+                return $.post(url, data).catch(function (e) { console.log(e) });
 
             }).then(function (resp) {
                 $("button[type=submit]", $form).prop("disabled", false);
@@ -89,20 +72,23 @@
             }
         });
 
+        /** smooth scroll */
+        smoothScroll.init({
+            selector: '[data-scroll]',
+            speed: 1000,
+            easing: 'easeInOutCubic'
+        });
+
         /** window scroll */
         $window.on('scroll', function () {
-
             if ($document.scrollTop() > navHeight) {
-
                 /** Shrink navigation */
                 $header.addClass('shrink');
                 $navbar.addClass('shrink');
 
                 /** Scroll to top */
                 $scrollToTop.fadeIn();
-            }
-            else {
-
+            } else {
                 /** Shrink navigation */
                 $header.removeClass('shrink');
                 $navbar.removeClass('shrink');
@@ -111,42 +97,6 @@
                 $scrollToTop.fadeOut();
             }
         });
-
-
-        /** resize */
-        $window.on('resize', function () {
-
-            /** Bootstrap scrollspy */
-            var dataScrollSpy = $body.data('bs.scrollspy'),
-                ww = Math.max($window.width(), window.innerWidth),
-                offset = ww > 992 ? navHeightShrink : navHeight;
-
-            dataScrollSpy._config.offset = offset;
-            $body.data('bs.scrollspy', dataScrollSpy);
-            $body.scrollspy('refresh');
-
-        });
-
-
-        /** page scroll */
-        $pageScrollLink.on('click', function (e) {
-            var anchor = $(this),
-                target = anchor.attr('href');
-            pageScroll(target);
-            e.preventDefault();
-        });
-
-        function pageScroll(target) {
-            var ww = Math.max($window.width(), window.innerWidth),
-                offset = ww > 992 ? navHeightShrink : navHeight;
-
-            $htmlBody.stop().animate({
-                scrollTop: $(target).offset().top - (offset - 1)
-            }, 1000, 'easeInOutExpo');
-
-            // Automatically retract the navigation after clicking on one of the menu items.
-            $navbarCollapse.collapse('hide');
-        };
 
         /** gallery - magnific popup */
         if ($.fn.magnificPopup) {
@@ -235,6 +185,8 @@
             }
         }
     });
+
+    /** .webp **/
     function hasWebP() {
         var rv = $.Deferred();
         var img = new Image();
@@ -249,4 +201,5 @@
     }, function () {
         $('body').addClass('jpeg');
     });
+
 })(jQuery);
