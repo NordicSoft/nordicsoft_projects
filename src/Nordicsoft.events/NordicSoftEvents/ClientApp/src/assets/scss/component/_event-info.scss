@@ -113,8 +113,12 @@
     }
 
     .event-detail {
+        &:before {
+            top: 14px;
+        }
+
         &:after {
-            top: 8px;
+            top: 13px;
         }
     }
 
