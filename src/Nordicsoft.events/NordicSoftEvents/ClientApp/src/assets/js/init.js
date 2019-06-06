@@ -6,41 +6,32 @@ $(function () {
         var siteKey = $("input[name=g-recaptcha-site-key]", $form).val();
 
         $("button[type=submit]", $form).prop("disabled", true);
-        //grecaptcha.execute('6LfMK50UAAAAAH5KicYId5sjl5qZIvxtJ00FIDa2', { action: 'contact' }).then(function (token) {
-        grecaptcha.execute(siteKey, {
-            action: 'contact'
-        }).then(function (token) {
-            $("input[name=g-recaptcha-response-token]", $form).val(token);
-            $("input[name=g-recaptcha-action]", $form).val("contact");
-        }).then(function () {
-            var data = $form.serialize();
-            var url = $form.prop("action");
-            //return $.post(url, data);
-            return $.post(url, data).catch(function (e) { console.log(e) });
+        var data = $form.serialize();
+        var url = $form.prop("action");
+        $.post(url,
+            data,
+            function (resp) {
+                $("button[type=submit]", $form).prop("disabled", false);
+                resp.success == true
+                    ? $.alert({
+                        backgroundDismiss: true,
+                        content: "Your message was successfully sent. We will write your back soon!",
+                        theme: "my-theme",
+                        title: "",
+                        onOpen: function () { $('body').addClass('overflow-y') },
+                        onClose: function () { $('body').removeClass('overflow-y') }
+                    })
+                    : $.alert({
+                        backgroundDismiss: true,
+                        content: "Sorry, we couldn't send your message. Try later!",
+                        theme: "my-theme",
+                        title: "",
+                        onOpen: function () { $('body').addClass('overflow-y') },
+                        onClose: function () { $('body').removeClass('overflow-y') }
+                    });
 
-        }).then(function (resp) {
-            $("button[type=submit]", $form).prop("disabled", false);
-            resp.success == true ?
-                $.alert({
-                    backgroundDismiss: true,
-                    content: "Your message was successfully sent. We will write your back soon!",
-                    theme: "my-theme",
-                    title: "",
-                    onOpen: function () { $('body').addClass('overflow-y') },
-                    onClose: function () { $('body').removeClass('overflow-y') }
-                })
-                :
-                $.alert({
-                    backgroundDismiss: true,
-                    content: "Sorry, we couldn't send your message. Try later!",
-                    theme: "my-theme",
-                    title: "",
-                    onOpen: function () { $('body').addClass('overflow-y') },
-                    onClose: function () { $('body').removeClass('overflow-y') }
-                });
-
-            $form.trigger("reset");
-        });
+                $form.trigger("reset");
+            });
 
     });
     //subscribe

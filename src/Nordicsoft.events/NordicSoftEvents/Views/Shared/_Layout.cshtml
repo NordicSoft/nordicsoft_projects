@@ -1,6 +1,11 @@
 ﻿@using NordicSoftEvents
+@{
+    var viewPath = ViewContext.View.Path.Replace(".cshtml", string.Empty);
+    var isCssCrawler = Context.Request.Headers.ContainsKey("CriticalCssCrawler");
+}
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" @Html.Raw(isCssCrawler ? $"data-id-view={viewPath}" : string.Empty) class="@Html.Raw(isCssCrawler ? "fonts-loaded-1 fonts-loaded-2" : "")">
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

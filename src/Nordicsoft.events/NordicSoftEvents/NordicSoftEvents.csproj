@@ -5,6 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="ClientApp\crawler\sitemap.xml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
     <Content Include="ClientApp\src\assets\images\event\arrow.png" />
     <Content Include="Credentials\.aws\credentials">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -20,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\crawler\sitemap.xml" />
     <None Remove="ClientApp\src\assets\images\event\arrow.png" />
   </ItemGroup>
 
@@ -50,6 +54,10 @@
     <None Include="wwwroot\dist\fonts\fontawesome-webfont.svg" />
     <None Include="wwwroot\dist\fonts\fontawesome-webfont.svg.gz" />
     <None Include="wwwroot\dist\fonts\fontawesome-webfont.ttf.gz" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\crawler\critical\" />
   </ItemGroup>
 
 </Project>
