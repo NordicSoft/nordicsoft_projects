@@ -228,7 +228,11 @@
 <section id="about" class="bg-light">
     <div class="half-image-content one-half-image-content">
         <div class="bg-about content-img pos-left hidden-md-down lazyload" data-bg="/images/event/about.jpg"></div>
-        <img data-src="images/event/about.jpg" class="visible-lg-down hidden-lg-up img-fluid img-about lazyload" alt="About event">
+        <picture>
+            <source type="image/webp" data-srcset="images/event/about.webp">
+            <img data-src="images/event/about.jpg" class="visible-lg-down hidden-lg-up img-fluid img-about lazyload" alt="About event">
+        </picture>
+
         <div class="container-fluid">
             <div class="row">
                 <div class="offset-lg-4 col-lg-8 pl110 pt80 pb80">

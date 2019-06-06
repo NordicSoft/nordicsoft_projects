@@ -40,3 +40,12 @@
     background-attachment: fixed;
     background-position: center center;
 }
+
+
+.bg-bg {
+    background-image: url("/images/event/bg.jpg");
+
+    .webp & {
+        background-image: url("/images/event/bg.webp");
+    }
+}

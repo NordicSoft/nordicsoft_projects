@@ -75,6 +75,9 @@ $(document).ready(function () {
     document.addEventListener('lazybeforeunveil', function (e) {
         var bg = e.target.getAttribute('data-bg');
         if (bg) {
+            if ($('html').hasClass("webp")) {
+                bg = bg.replace(/\.[^/.]+$/, ".webp");
+            }
             e.target.style.backgroundImage = 'url(' + bg + ')';
         }
     });
@@ -165,20 +168,6 @@ $(document).ready(function () {
         offset: 60
     });
 
-    function hasWebP() {
-        var rv = $.Deferred();
-        var img = new Image();
-        img.onload = function () { rv.resolve(); };
-        img.onerror = function () { rv.reject(); };
-        img.src = '/images/event/bg.webp';
-        return rv.promise();
-    }
-
-    hasWebP().then(function () {
-        $('body').addClass('webp');
-    }, function () {
-        $('body').addClass('jpeg');
-        });
     function addFixedTop() {
         if ($(document).scrollTop() > 0) $(".navbar-sticky").addClass("fixed-top");
     }

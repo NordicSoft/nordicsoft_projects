@@ -81,13 +81,20 @@ body {
 }
 
 select {
-    -moz-appearance: none; 
-    -webkit-appearance: none; 
+    -moz-appearance: none;
+    -webkit-appearance: none;
     appearance: none;
     background-image: url('/images/event/arrow.png');
     background-position: center right;
     background-size: 28px 8px;
     background-repeat: no-repeat;
+
+    .webp & {
+        background-image: url('/images/event/arrow.webp');
+        background-position: center right;
+        background-size: 28px 8px;
+        background-repeat: no-repeat;
+    }
 
     &::-ms-expand {
         display: none;
