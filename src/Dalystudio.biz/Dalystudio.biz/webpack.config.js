@@ -22,22 +22,29 @@ module.exports = (env, options) => {
     mode: devMode ? "development" : "production",
     entry: {
       vendor_styles: "./ClientApp/src/assets/js/vendor_styles.js",
+    
+        main_jquery: 
+            "script-loader!./ClientApp/src/assets/vendor/jquery-2.1.3.js",
+        main_bootstrap: [
+            "script-loader!./ClientApp/src/assets/vendor/bootstrap/js/bootstrap.js",
+            "script-loader!./ClientApp/src/assets/vendor/jqBootstrapValidation.js"
+        ],
       vendor_src: [
-        "script-loader!./ClientApp/src/assets/vendor/jquery-2.1.3.js",
-        "script-loader!./ClientApp/src/assets/vendor/bootstrap/js/bootstrap.js",
         "script-loader!./ClientApp/src/assets/vendor/jquery.confirm.js",
         "script-loader!./ClientApp/src/assets/vendor/appear.js",
         "script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.js",
-        "script-loader!./ClientApp/src/assets/vendor/jqBootstrapValidation.js",
-        "script-loader!./ClientApp/src/assets/vendor/jquery.fitvids.js",
+       ],
+        jquery_plugins: [
+          "script-loader!./ClientApp/src/assets/vendor/jquery.fitvids.js",
           "script-loader!./ClientApp/src/assets/vendor/jquery.flexslider.js",
-
-        "script-loader!./ClientApp/src/assets/vendor/jquery.magnific-popup.js", 
+        ],
+        effect_plugins: [
+  "script-loader!./ClientApp/src/assets/vendor/jquery.magnific-popup.js", 
        //"script-loader!./ClientApp/src/assets/vendor/jquery.mb.YTPlayer.js",
         "script-loader!./ClientApp/src/assets/vendor/jquery.simple-text-rotator.js",
        //"script-loader!./ClientApp/src/assets/vendor/smoothscroll.js",
-        "script-loader!./ClientApp/src/assets/vendor/wow.js",
-      ],
+       "script-loader!./ClientApp/src/assets/vendor/wow.js"
+            ],
       custom_styles: './ClientApp/src/assets/js/custom_styles.js',
       main: './ClientApp/src/assets/js/index.js',
 

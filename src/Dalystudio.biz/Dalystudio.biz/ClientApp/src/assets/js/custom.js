@@ -286,10 +286,19 @@
 			worksgrid_mode = 'fitRows';
 		}
 
-			worksgrid.isotope({
-				layoutMode: worksgrid_mode,
-				itemSelector: '.work-item',
-			});
+	    worksgrid.each(function () {
+	        var update = function () {
+	            worksgrid.isotope({
+	                layoutMode: worksgrid_mode,
+	                itemSelector: '.work-item',
+	            });
+	        };
+
+	        // Note: Instead of waiting for all images until we initialize the widget
+	        // we use event capturing to update the widget's layout progressively.
+	        this.addEventListener('load', update, true);
+	    });
+		
 
 		$('#filters a').click(function() {
 			$('#filters .current').removeClass('current');
