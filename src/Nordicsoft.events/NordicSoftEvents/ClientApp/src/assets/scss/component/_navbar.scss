@@ -30,7 +30,7 @@
 }
 
 .navbar.navbar-light.navbar-transparent.bg-faded .nav-item .nav-link.active {
-    color: #8bcb26;
+    color: $primary-color;
     opacity: 1;
 }
 
@@ -50,6 +50,6 @@
 }
 
 .navbar.navbar-light.navbar-transparent.bg-faded.fixed-top .nav-item .nav-link.active {
-    color: #8bcb26;
+    color: $primary-color;
     opacity: 1;
 }
