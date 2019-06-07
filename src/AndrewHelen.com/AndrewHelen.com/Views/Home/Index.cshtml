@@ -1,9 +1,11 @@
-﻿@using AndrewHelen.com
+﻿@using Microsoft.Extensions.Primitives
+@using AndrewHelen.com
+@using AndrewHelen.com.Extensions
 @using AndrewHelen.com.Services.GoogleRecaptcha
 @using Microsoft.Extensions.Options
 @inject IOptions<ReCaptchaClass> RecaptchaOptions
 @{
-
+    bool isWebP = Context.IsWebP();
     ViewData["Title"] = "Home Page";
 }
 
@@ -125,7 +127,12 @@
 
                 <div id="clock" data-until-date="2019/10/16 11:00:00" class="row justify-content-center mt-4"></div>
 
-                <img data-src="/img/title-divider.png" alt="" class="lazyload mt-4" />
+                @*<img data-src="/img/title-divider.png" alt="" class="lazyload mt-4" />*@
+                <picture>
+                    <source data-srcset="/img/title-divider.webp" type="image/webp" class="lazyload mt-4">
+                    <source data-srcset="/img/title-divider.png" type="image/jpeg" class="lazyload mt-4">
+                    <img data-src="/img/title-divider.png" class="lazyload mt-4" alt="Groom" />
+                </picture>
             </div>
         </div>
     </div>
@@ -280,7 +287,7 @@
             <div id="carousel-love-story" class="carousel-custom carousel-base-color col-12 page-dots-custom" data-autoplay="false" data-prev-next-buttons="false" data-page-dots="true" data-draggable="false" data-wrap-around="false">
                 <div class="carousel-cell align-items-center justify-content-center no-gutters row w-100">
                     <div class="col-md-8 col-lg-5">
-                        <img data-flickity-lazyload="/img/love-story/love-story-1.jpg" alt="" class="lazyload img-fluid" />
+                        <img data-flickity-lazyload="/img/love-story/love-story-1.jpg" alt="Love story" class="lazyload img-fluid" />
                     </div>
 
                     <div class="col-lg-7 pl-lg-5 pt-5 pt-lg-0 text-center text-lg-left">
@@ -294,7 +301,7 @@
 
                 <div class="carousel-cell align-items-center justify-content-center no-gutters row w-100">
                     <div class="col-md-8 col-lg-5">
-                        <img data-flickity-lazyload="/img/love-story/love-story-2.jpg" alt="" class="lazyload img-fluid" />
+                        <img data-flickity-lazyload="/img/love-story/love-story-2.jpg" alt="Love story" class="lazyload img-fluid"/>
                     </div>
 
                     <div class="col-lg-7 pl-lg-5 pt-5 pt-lg-0 text-center text-lg-left">
@@ -308,7 +315,7 @@
 
                 <div class="carousel-cell align-items-center justify-content-center no-gutters row w-100">
                     <div class="col-md-8 col-lg-5">
-                        <img data-flickity-lazyload="/img/love-story/love-story-4.jpg" alt="" class="lazyload img-fluid" />
+                        <img data-flickity-lazyload="/img/love-story/love-story-4.jpg" alt="Love story" class="lazyload img-fluid" />
                     </div>
 
                     <div class="col-lg-7 pl-lg-5 pt-5 pt-lg-0 text-center text-lg-left">
@@ -322,7 +329,7 @@
 
                 <div class="carousel-cell align-items-center justify-content-center no-gutters row w-100">
                     <div class="col-md-8 col-lg-5">
-                        <img data-flickity-lazyload="/img/love-story/love-story-3.jpg" alt="" class="lazyload img-fluid" />
+                        <img data-flickity-lazyload="/img/love-story/love-story-3.jpg" alt="Love story" class="img-fluid lazyload" />
                     </div>
 
                     <div class="col-lg-7 pl-lg-5 pt-5 pt-lg-0 text-center text-lg-left">
@@ -374,8 +381,12 @@
                         <div class="gallery-item">
                             <figure>
                                 <div class="gallery-img">
-                                    <a href="/img/gallery/gallery-1.jpg" aria-label="Gallery images">
-                                        <img data-src="/img/gallery/gallery-1.jpg" alt="" class="item-gallery-img lazyload" />
+                                    <a href="#" aria-link="1" aria-label="Gallery images">
+                                        <picture>
+                                            <source data-srcset="/img/gallery/gallery-1.webp" type="image/webp" class="img-fluid lazyload">
+                                            <source data-srcset="/img/gallery/gallery-1.jpg" type="image/jpeg" class="img-fluid lazyload">
+                                            <img data-src="/img/gallery/gallery-1.jpg" alt="Gallery" class="item-gallery-img lazyload" />
+                                        </picture>
                                     </a>
                                 </div>
                             </figure>
@@ -384,8 +395,12 @@
                         <div class="gallery-item">
                             <figure>
                                 <div class="gallery-img">
-                                    <a href="/img/gallery/gallery-7.jpg" aria-label="Gallery images">
-                                        <img data-src="/img/gallery/gallery-7.jpg" alt="" class="item-gallery-img lazyload" />
+                                    <a href="#" aria-link="7" aria-label="Gallery images">
+                                        <picture>
+                                            <source data-srcset="/img/gallery/gallery-7.webp" type="image/webp" class="img-fluid lazyload">
+                                            <source data-srcset="/img/gallery/gallery-7.jpg" type="image/jpeg" class="img-fluid lazyload">
+                                            <img data-src="/img/gallery/gallery-7.jpg" alt="Gallery" class="item-gallery-img lazyload" />
+                                        </picture>
                                     </a>
                                 </div>
                             </figure>
@@ -395,8 +410,12 @@
                         <div class="gallery-item">
                             <figure>
                                 <div class="gallery-img">
-                                    <a href="/img/gallery/gallery-2.jpg" aria-label="Gallery images">
-                                        <img data-src="/img/gallery/gallery-2.jpg" alt="" class="item-gallery-img lazyload" />
+                                    <a href="#" aria-link="2" aria-label="Gallery images">
+                                        <picture>
+                                            <source data-srcset="/img/gallery/gallery-2.webp" type="image/webp" class="img-fluid lazyload">
+                                            <source data-srcset="/img/gallery/gallery-2.jpg" type="image/jpeg" class="img-fluid lazyload">
+                                            <img data-src="/img/gallery/gallery-2.jpg" alt="Gallery" class="item-gallery-img lazyload" />
+                                        </picture>
                                     </a>
                                 </div>
                             </figure>
@@ -404,29 +423,12 @@
                         <div class="gallery-item">
                             <figure>
                                 <div class="gallery-img">
-                                    <a href="/img/gallery/gallery-5.jpg" aria-label="Gallery images">
-                                        <img data-src="/img/gallery/gallery-5.jpg" alt="" class="item-gallery-img lazyload" />
-                                    </a>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="gallery-column">
-                        <div class="gallery-item">
-                            <figure>
-                                <div class="gallery-img">
-                                    <a href="/img/gallery/gallery-3.jpg" aria-label="Gallery images">
-                                        <img data-src="/img/gallery/gallery-3.jpg" alt="" class="item-gallery-img lazyload" />
-                                    </a>
-                                </div>
-                            </figure>
-                        </div>
-
-                        <div class="gallery-item">
-                            <figure>
-                                <div class="gallery-img">
-                                    <a href="/img/gallery/gallery-8.jpg" aria-label="Gallery images">
-                                        <img data-src="/img/gallery/gallery-8.jpg" alt="" class="item-gallery-img lazyload" />
+                                    <a href="#" aria-link="5" aria-label="Gallery images">
+                                        <picture>
+                                            <source data-srcset="/img/gallery/gallery-5.webp" type="image/webp" class="img-fluid lazyload">
+                                            <source data-srcset="/img/gallery/gallery-5.jpg" type="image/jpeg" class="img-fluid lazyload">
+                                            <img data-src="/img/gallery/gallery-5.jpg" alt="Gallery" class="item-gallery-img lazyload" />
+                                        </picture>
                                     </a>
                                 </div>
                             </figure>
@@ -436,8 +438,12 @@
                         <div class="gallery-item">
                             <figure>
                                 <div class="gallery-img">
-                                    <a href="/img/gallery/gallery-4.jpg" aria-label="Gallery images">
-                                        <img data-src="/img/gallery/gallery-4.jpg" alt="" class="item-gallery-img lazyload" />
+                                    <a href="#" aria-link="3" aria-label="Gallery images">
+                                        <picture>
+                                            <source data-srcset="/img/gallery/gallery-3.webp" type="image/webp" class="img-fluid lazyload">
+                                            <source data-srcset="/img/gallery/gallery-3.jpg" type="image/jpeg" class="img-fluid lazyload">
+                                            <img data-src="/img/gallery/gallery-3.jpg" alt="Gallery" class="item-gallery-img lazyload" />
+                                        </picture>
                                     </a>
                                 </div>
                             </figure>
@@ -446,8 +452,41 @@
                         <div class="gallery-item">
                             <figure>
                                 <div class="gallery-img">
-                                    <a href="/img/gallery/gallery-6.jpg" aria-label="Gallery images">
-                                        <img data-src="/img/gallery/gallery-6.jpg" alt="" class="item-gallery-img lazyload" />
+                                    <a href="#" aria-link="8" aria-label="Gallery images">
+                                        <picture>
+                                            <source data-srcset="/img/gallery/gallery-8.webp" type="image/webp" class="img-fluid lazyload">
+                                            <source data-srcset="/img/gallery/gallery-8.jpg" type="image/jpeg" class="img-fluid lazyload">
+                                            <img data-src="/img/gallery/gallery-8.jpg" alt="Gallery" class="item-gallery-img lazyload" />
+                                        </picture>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="gallery-column">
+                        <div class="gallery-item">
+                            <figure>
+                                <div class="gallery-img">
+                                    <a href="#" aria-link="4" aria-label="Gallery images">
+                                        <picture>
+                                            <source data-srcset="/img/gallery/gallery-4.webp" type="image/webp" class="img-fluid lazyload">
+                                            <source data-srcset="/img/gallery/gallery-4.jpg" type="image/jpeg" class="img-fluid lazyload">
+                                            <img data-src="/img/gallery/gallery-4.jpg" alt="Gallery" class="item-gallery-img lazyload" />
+                                        </picture>
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+
+                        <div class="gallery-item">
+                            <figure>
+                                <div class="gallery-img">
+                                    <a href="#" aria-link="6" aria-label="Gallery images">
+                                        <picture>
+                                            <source data-srcset="/img/gallery/gallery-6.webp" type="image/webp" class="img-fluid lazyload">
+                                            <source data-srcset="/img/gallery/gallery-6.jpg" type="image/jpeg" class="img-fluid lazyload">
+                                            <img data-src="/img/gallery/gallery-6.jpg" alt="Gallery" class="item-gallery-img lazyload" />
+                                        </picture>
                                     </a>
                                 </div>
                             </figure>
@@ -482,7 +521,7 @@
     <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-md-8 col-lg-5">
-                <img data-src="/img/love-story/love-story-4.jpg" alt="" class="lazyload img-fluid" />
+                <img data-src="/img/love-story/love-story-4.jpg" alt="" class="lazyload img-fluid"/>
             </div>
 
             <div class="col-lg-7 pl-lg-5 pt-5 pt-lg-0">

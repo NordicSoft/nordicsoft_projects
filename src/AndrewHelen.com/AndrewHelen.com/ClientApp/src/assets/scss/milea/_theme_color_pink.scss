@@ -109,7 +109,7 @@
         background-image: url(/img/bg/bg-hero-static.webp);
     }
 
-    .jpeg & {
+    .no-webp & {
         background-image: url(/img/bg/bg-hero-static.jpg);
     }
 }

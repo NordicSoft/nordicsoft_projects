@@ -9,8 +9,8 @@
         $navbar = $('.navbar'),
         $galleryGrid = $('.gallery-grid'),
         $scrollToTop = $('.scroll-to-top'),
-        navHeight = 90,
-        navHeightShrink = 60;
+        navHeight = 90;
+        //navHeightShrink = 60;
 
     /** Detect mobile device */
     var isMobile = {
@@ -68,6 +68,9 @@
         document.addEventListener('lazybeforeunveil', function (e) {
             var bg = e.target.getAttribute('data-bg');
             if (bg) {
+                if ($('html').hasClass("webp")) {
+                    bg = bg.replace(/\.[^/.]+$/, ".webp");
+                }
                 e.target.style.backgroundImage = 'url(' + bg + ')';
             }
         });
@@ -184,22 +187,13 @@
                 });
             }
         }
+
+        /**/
+        $('.gallery-img a').each(function () {
+            var href = $(this).attr('aria-link');
+            var currentHref;
+            $('html').hasClass("webp") ? currentHref = '/img/gallery/gallery-' + href + '.webp' : currentHref = '/img/gallery/gallery-' + href + '.jpg';
+            $(this).attr('href', currentHref);
+        });
     });
-
-    /** .webp **/
-    function hasWebP() {
-        var rv = $.Deferred();
-        var img = new Image();
-        img.onload = function () { rv.resolve(); };
-        img.onerror = function () { rv.reject(); };
-        img.src = '/img/andrew_helen_google_image.webp';
-        return rv.promise();
-    }
-
-    hasWebP().then(function () {
-        $('body').addClass('webp');
-    }, function () {
-        $('body').addClass('jpeg');
-    });
-
 })(jQuery);
