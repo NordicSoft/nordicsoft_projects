@@ -423,6 +423,9 @@
     document.addEventListener('lazybeforeunveil', function (e) {
         var bg = e.target.getAttribute('data-bg');
         if (bg) {
+            if ($('html').hasClass("webp")) {
+                bg = bg.replace(/\.[^/.]+$/, ".webp");
+            }
             e.target.style.backgroundImage = 'url(' + bg + ')';
         }
     });

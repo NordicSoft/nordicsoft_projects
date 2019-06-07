@@ -1,6 +1,14 @@
 ﻿@using Dalystudio.biz
+﻿@using Microsoft.Extensions.Primitives
+@using Dalystudio.biz
+@using Dalystudio.biz.Extensions
+@{
+    bool isWebP = Context.IsWebP();
+
+}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="@Html.Raw(isWebP ? "webp" : "no-webp")">
+
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -95,7 +103,7 @@
         "url" : "https://dalystudio.biz/"
         }
     </script>
-    
+
     <script src="~/dist/main_jquery.js" defer></script>
     <script src="~/dist/main_bootstrap.js" defer></script>
     <script src="~/dist/vendor_src.js" defer></script>
@@ -105,18 +113,18 @@
 
     @RenderSection("Scripts", required: false)
     <script>
-            if ('serviceWorker' in navigator) {
-                window.addEventListener('load', function () {
-                    navigator.serviceWorker.register('/dist/sw.js', { scope: '/' }).then(function (registration) {
-                        // Registration was successful
-                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                    }, function (err) {
-                        // registration failed :(
-                        console.log('ServiceWorker registration failed: ', err);
+                if ('serviceWorker' in navigator) {
+                    window.addEventListener('load', function () {
+                        navigator.serviceWorker.register('/dist/sw.js', { scope: '/' }).then(function (registration) {
+                            // Registration was successful
+                            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                        }, function (err) {
+                            // registration failed :(
+                            console.log('ServiceWorker registration failed: ', err);
+                        });
                     });
-                });
-            }
-    </script>
+                }
+        </script>
 
 </body>
 </html>
