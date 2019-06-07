@@ -33,7 +33,6 @@ namespace NordicSoftEvents.Extensions
                 if (!string.IsNullOrEmpty(headerValue) && headerValue.Contains("image/webp"))
                 {
                     isWebP = true;
-                    context.Response.Headers.Add("Vary", "Accept");
                 }
             }
             return isWebP;
