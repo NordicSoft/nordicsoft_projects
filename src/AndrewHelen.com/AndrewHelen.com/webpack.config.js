@@ -22,14 +22,18 @@ module.exports = (env, options) => {
         mode: devMode ? "development" : "production",
         entry: {
             vendor_styles: "./ClientApp/src/assets/js/vendor_styles.js",
-            vendor_src: [
+            jquery_src: [
                 "script-loader!./ClientApp/src/assets/vendor/jquery.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/popper.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js",
                 "script-loader!./ClientApp/src/assets/vendor/jquery.magnific-popup.min.js",
                 "script-loader!./ClientApp/src/assets/vendor/jquery.countdown.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js",
+                "script-loader!./ClientApp/src/assets/vendor/jquery-confirm.min.js"
+            ],
+            bootstrap_src: [
+                "script-loader!./ClientApp/src/assets/vendor/popper.min.js",
+                "script-loader!./ClientApp/src/assets/vendor/bootstrap.min.js"
+            ],
+            plugins_src: [
+                "script-loader!./ClientApp/src/assets/vendor/isotope.pkgd.min.js",
                 "script-loader!./ClientApp/src/assets/vendor/smooth-scroll.js"
             ],
             all_styles: './ClientApp/src/assets/js/all_styles.js',
@@ -37,7 +41,7 @@ module.exports = (env, options) => {
             main: './ClientApp/src/assets/js/index.js'
 
         },
-        devtool: 'eval',
+        devtool: devMode ? 'eval' : '',
         output: {
             path: path.resolve(__dirname, './wwwroot/dist'),
             filename: "[name].js",
