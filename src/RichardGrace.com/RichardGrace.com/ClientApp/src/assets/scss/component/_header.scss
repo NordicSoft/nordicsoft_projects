@@ -4,7 +4,7 @@ header {
     height: 100vh;
     text-align: center;
     color: $dark-gray;
-
+    background-position: 50%;
     &:before {
         content: "";
         position: absolute;
@@ -44,7 +44,7 @@ header {
         }
     }
 
-    .jpeg & {
+    .no-webp & {
         background-image: url(/img/bg/bg1.jpg);
     }
 

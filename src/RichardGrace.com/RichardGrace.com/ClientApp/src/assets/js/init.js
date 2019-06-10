@@ -21,6 +21,9 @@ $(document).ready(function () {
     document.addEventListener('lazybeforeunveil', function (e) {
         var bg = e.target.getAttribute('data-bg');
         if (bg) {
+            if ($('html').hasClass("webp")) {
+                bg = bg.replace(/\.[^/.]+$/, ".webp");
+            }
             e.target.style.backgroundImage = 'url(' + bg + ')';
         }
     });
@@ -89,20 +92,5 @@ $(document).ready(function () {
     // closes the Responsive Menu on Menu Item Click
     $('.header-fixed-top .navbar-collapse ul li a').on('click', function () {
         $('.navbar-toggle:visible').click();
-    });
-
-    function hasWebP() {
-        var rv = $.Deferred();
-        var img = new Image();
-        img.onload = function () { rv.resolve(); };
-        img.onerror = function () { rv.reject(); };
-        img.src = '/img/bg/bg3.webp';
-        return rv.promise();
-    }
-
-    hasWebP().then(function () {
-        $('body').addClass('webp');
-    }, function () {
-        $('body').addClass('jpeg');
     });
 });

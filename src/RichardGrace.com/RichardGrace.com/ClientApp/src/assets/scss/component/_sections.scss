@@ -152,7 +152,7 @@ footer {
         .section-quote {
             background-position: 50% 0;
 
-            .jpeg & {
+            .no-webp & & {
                 background-image: url(/img/bg/bg1.jpg);
             }
 
@@ -164,7 +164,7 @@ footer {
         .section-wishes {
             background-position: 50% 50%;
 
-            .jpeg & {
+            .no-webp & & {
                 background-image: url(/img/bg/bg1.jpg);
             }
 
@@ -176,8 +176,6 @@ footer {
 }
 
 #rsvp {
-    background-position: 50% 50%;
-
     @media(max-width: 1024px) {
         background-position: 25% 50%;
     }
