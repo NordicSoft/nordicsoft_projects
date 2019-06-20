@@ -1,0 +1,80 @@
+@import "../variables";
+section {
+    clear: both;
+    position: relative;
+}
+
+.section-inner {
+    padding: 120px 0;
+
+    @media(max-width: 991px) {
+        padding: 90px 0;
+    }
+
+    @media(max-width: 767px) {
+        padding: 60px 0;
+    }
+
+    @media(max-width: 575px) {
+        padding: 45px 0;
+    }
+}
+
+.section-white {
+    background-color: $white;
+}
+.parallax-custom {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media(max-width: 1199px) {
+    .section-info {
+        background-image: none !important;
+
+        .section-quote {
+            background-position: 50% 0;
+
+            .no-webp & & {
+                background-image: url(/img/bg/bg1.jpg);
+            }
+
+            .webp & {
+                background-image: url(/img/bg/bg1.webp);
+            }
+        }
+
+        .section-wishes {
+            background-position: 50% 50%;
+
+            .no-webp & & {
+                background-image: url(/img/bg/bg1.jpg);
+            }
+
+            .webp & {
+                background-image: url(/img/bg/bg1.webp);
+            }
+        }
+    }
+}
+
+#rsvp {
+    @media(max-width: 1024px) {
+        background-position: 25% 50%;
+    }
+}
+
+.before-opacity {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(91, 91, 88, 0.6);
+    }
+}

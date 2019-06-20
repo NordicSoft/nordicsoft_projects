@@ -20,19 +20,10 @@ module.exports = (env, options) => {
     return {
         mode: devMode ? "development" : "production",
         entry: {
-            vendor_styles: "./ClientApp/src/assets/js/vendor_styles.js",
-            vendor_src: [
-                "script-loader!./ClientApp/src/assets/vendor/js/jquery/jquery.js",
-                "script-loader!./ClientApp/src/assets/vendor/js/jconfirm/jquery-confirm.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/js/bootstrap/bootstrap.min.js",
-                "script-loader!./ClientApp/src/assets/vendor/js/plugins/plugins.js",
-                "script-loader!./ClientApp/src/assets/vendor/js/plugins/swing.js",
-                "script-loader!./ClientApp/src/assets/vendor/js/plugins/scroll.js",
-                "script-loader!./ClientApp/src/assets/vendor/js/plugins/owl.js"
-            ],
             all_styles: './ClientApp/src/assets/js/all_styles.js',
             custom_styles: './ClientApp/src/assets/js/custom_styles.js',
-            main: './ClientApp/src/assets/js/index.js'
+            main: './ClientApp/src/assets/js/index.js',
+            react_js: './ClientApp/src/assets/component/index.js'
         },
         devtool: 'source-map',
         output: {
@@ -102,8 +93,7 @@ module.exports = (env, options) => {
                     test: /\.(sa|sc|c)ss$/,
                     use: [
                         {
-                            loader: devMode ? "style-loader" : MiniCssExtractPlugin.loader,
-                            //options: { sourceMap: devMode }
+                            loader: devMode ? "style-loader" : MiniCssExtractPlugin.loader
                         },
                         {
                             loader: "css-loader",
@@ -115,16 +105,16 @@ module.exports = (env, options) => {
                                 sourceMap: devMode,
                                 implementation: require("dart-sass")
                             }
-                        },
-                    ],
+                        }
+                    ]
                 },
                 {
-                    test: /\.js$/,
+                    test: /\.(js|jsx)$/,
                     exclude: /(node_modules|bower_components)/,
                     use: {
                         loader: 'babel-loader',
                         options: {
-                            presets: ['@babel/preset-env']
+                            presets: ['@babel/preset-env', "@babel/preset-react"]
                         }
                     }
                 },
@@ -146,11 +136,14 @@ module.exports = (env, options) => {
                         loader: 'file-loader',
                         options: {
                             name: "fonts/[name].[ext]", // Output below ./fonts
-                            publicPath: devMode ? "/dist" : "/dist"
+                            publicPath: "/dist"
                         }
                     }]
                 }
             ]
+        },
+        resolve: {
+            extensions: ['*', '.js', '.jsx']
         }
     }
 };
