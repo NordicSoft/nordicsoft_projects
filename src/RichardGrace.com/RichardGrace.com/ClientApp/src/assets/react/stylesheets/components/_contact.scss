@@ -1,0 +1,119 @@
+﻿@import "../_variables";
+
+h4 {
+}
+
+.contact-form {
+    overflow: hidden;
+    width: 100%;
+
+    textarea {
+        background-color: transparent;
+        border: 1px solid rgb(213, 223, 220);
+        margin-bottom: 10px;
+        width: 100% !important;
+        min-height: 60px;
+        height: 180px;
+        box-shadow: none;
+        padding: 6px 12px;
+        color: $white;
+        font-size: 14px;
+        @include fonts-primary;
+
+        @media(max-width: 575px) {
+            height: 120px;
+        }
+
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            overflow: hidden;
+        }
+
+        &:focus, &:active {
+            background-color: $white !important;
+            color: $black !important;
+        }
+    }
+
+    input {
+        &[type="text"], &[type="email"] {
+            background-color: transparent !important;
+            border: 1px solid rgb(213, 223, 220);
+            margin-bottom: 10px;
+            float: left;
+            width: calc(50% - 5px);
+            min-height: 60px;
+            padding: 6px 12px;
+            color: $white;
+            font-size: 14px;
+            box-shadow: none;
+            @include fonts-primary;
+
+            &:focus, &:active {
+                background-color: $white !important;
+                color: $black !important;
+            }
+
+
+
+            @media(max-width: 575px) {
+                width: 100%;
+            }
+
+            &[name=name] {
+                margin-right: 5px;
+
+                @media(max-width: 575px) {
+                    margin-right: 0;
+                }
+            }
+
+            &[name=email] {
+                margin-left: 5px;
+
+                @media(max-width: 575px) {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        &[type=submit] {
+            font-size: 30px;
+            font-weight: 700;
+            background-color: $white;
+            color: $black;
+            height: 62px;
+            border: none;
+            padding: 0 30px;
+
+            @include fonts-secondary;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &:disabled {
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+#rsvp {
+    h4 {
+        font-size: 45px;
+        font-weight: 700;
+        color: $white;
+        text-transform: none !important;
+        letter-spacing: 2px;
+        margin-bottom: 45px;
+        @include fonts-secondary;
+
+        @media(max-width: 575px) {
+            font-size: 27px;
+        }
+    }
+}

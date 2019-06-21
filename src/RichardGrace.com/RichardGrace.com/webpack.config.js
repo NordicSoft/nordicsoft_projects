@@ -23,7 +23,7 @@ module.exports = (env, options) => {
             all_styles: './ClientApp/src/assets/js/all_styles.js',
             custom_styles: './ClientApp/src/assets/js/custom_styles.js',
             main: './ClientApp/src/assets/js/index.js',
-            react_js: './ClientApp/src/assets/component/index.js'
+            react_js: './ClientApp/src/assets/react/index.js'
         },
         devtool: 'source-map',
         output: {

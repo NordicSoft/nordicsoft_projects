@@ -1,0 +1,10 @@
+﻿.img-responsive{
+    max-width: 100%;
+}
+@media(max-width: 767px) {
+    .max-sm-width {
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

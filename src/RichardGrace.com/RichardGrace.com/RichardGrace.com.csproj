@@ -18,133 +18,129 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\src\assets\component\carousel\carousel.jsx" />
-    <None Remove="ClientApp\src\assets\component\carousel\carouselGifts.jsx" />
-    <None Remove="ClientApp\src\assets\component\carousel\carouselWishes.jsx" />
-    <None Remove="ClientApp\src\assets\component\confirm\confirm.jsx" />
-    <None Remove="ClientApp\src\assets\component\confirm\_confirm.scss" />
-    <None Remove="ClientApp\src\assets\component\error\error.jsx" />
-    <None Remove="ClientApp\src\assets\component\contact\contact.jsx" />
-    <None Remove="ClientApp\src\assets\component\contact\_contact.scss" />
-    <None Remove="ClientApp\src\assets\component\couple\couple.jsx" />
-    <None Remove="ClientApp\src\assets\component\couple\_couple.scss" />
-    <None Remove="ClientApp\src\assets\component\error\_error.scss" />
-    <None Remove="ClientApp\src\assets\component\main\main.jsx" />
-    <None Remove="ClientApp\src\assets\component\section\section.jsx" />
-    <None Remove="ClientApp\src\assets\component\wishes\wishes.jsx" />
-    <None Remove="ClientApp\src\assets\component\navbar\navbar.jsx" />
-    <None Remove="ClientApp\src\assets\component\navbar\_navbar.scss" />
-    <None Remove="ClientApp\src\assets\component\footer\footer.jsx" />
-    <None Remove="ClientApp\src\assets\component\footer\_footer.scss" />
-    <None Remove="ClientApp\src\assets\component\gift\gift.jsx" />
-    <None Remove="ClientApp\src\assets\component\gift\_gift.scss" />
-    <None Remove="ClientApp\src\assets\component\header\header.jsx" />
-    <None Remove="ClientApp\src\assets\component\header\_header.scss" />
-    <None Remove="ClientApp\src\assets\component\carousel\_carousel.scss" />
-    <None Remove="ClientApp\src\assets\component\phrase\phrase.jsx" />
-    <None Remove="ClientApp\src\assets\component\phrase\_phrase.scss" />
-    <None Remove="ClientApp\src\assets\component\section\_section.scss" />
-    <None Remove="ClientApp\src\assets\component\title\_title.scss" />
-    <None Remove="ClientApp\src\assets\component\toggle\toggle.jsx" />
-    <None Remove="ClientApp\src\assets\component\toggle\_toggle.scss" />
-    <None Remove="ClientApp\src\assets\component\wishes\_wishes.scss" />
+    <None Remove="ClientApp\src\assets\react\stylesheets\components\_carousel.scss" />
+    <None Remove="ClientApp\src\assets\react\stylesheets\components\_confirm.scss" />
+    <None Remove="ClientApp\src\assets\react\stylesheets\components\_contact.scss" />
+    <None Remove="ClientApp\src\assets\react\stylesheets\components\_couple.scss" />
+    <None Remove="ClientApp\src\assets\react\stylesheets\components\_error.scss" />
+    <None Remove="ClientApp\src\assets\react\stylesheets\components\_footer.scss" />
+    <None Remove="ClientApp\src\assets\react\stylesheets\components\_gift.scss" />
+    <None Remove="ClientApp\src\assets\react\stylesheets\components\_header.scss" />
+    <None Remove="ClientApp\src\assets\react\stylesheets\components\_navbar.scss" />
+    <None Remove="ClientApp\src\assets\react\stylesheets\components\_phrase.scss" />
+    <None Remove="ClientApp\src\assets\react\stylesheets\components\_section.scss" />
+    <None Remove="ClientApp\src\assets\react\stylesheets\components\_title.scss" />
+    <None Remove="ClientApp\src\assets\react\stylesheets\components\_toggle.scss" />
+    <None Remove="ClientApp\src\assets\react\stylesheets\components\_wishes.scss" />
+    <None Remove="ClientApp\src\assets\react\components\carousel\carousel.jsx" />
+    <None Remove="ClientApp\src\assets\react\components\carousel\carouselGifts.jsx" />
+    <None Remove="ClientApp\src\assets\react\components\carousel\carouselWishes.jsx" />
+    <None Remove="ClientApp\src\assets\react\components\confirm\confirm.jsx" />
+    <None Remove="ClientApp\src\assets\react\components\error\error.jsx" />
+    <None Remove="ClientApp\src\assets\react\components\contact\contact.jsx" />
+    <None Remove="ClientApp\src\assets\react\components\couple\couple.jsx" />
+    <None Remove="ClientApp\src\assets\react\components\section\section.jsx" />
+    <None Remove="ClientApp\src\assets\react\components\wishes\wishes.jsx" />
+    <None Remove="ClientApp\src\assets\react\components\navbar\navbar.jsx" />
+    <None Remove="ClientApp\src\assets\react\components\footer\footer.jsx" />
+    <None Remove="ClientApp\src\assets\react\components\gift\gift.jsx" />
+    <None Remove="ClientApp\src\assets\react\components\header\header.jsx" />
+    <None Remove="ClientApp\src\assets\react\components\phrase\phrase.jsx" />
+    <None Remove="ClientApp\src\assets\react\components\toggle\toggle.jsx" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="ClientApp\src\assets\component\carousel\carousel.jsx">
+    <Content Include="ClientApp\src\assets\react\stylesheets\components\_carousel.scss">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\carousel\carouselWishes.jsx">
+    <Content Include="ClientApp\src\assets\react\stylesheets\components\_confirm.scss">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\error\error.jsx">
+    <Content Include="ClientApp\src\assets\react\stylesheets\components\_contact.scss">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\error\_error.scss">
+    <Content Include="ClientApp\src\assets\react\stylesheets\components\_couple.scss">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\couple\couple.jsx">
+    <Content Include="ClientApp\src\assets\react\stylesheets\components\_error.scss">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\couple\_couple.scss">
+    <Content Include="ClientApp\src\assets\react\stylesheets\components\_footer.scss">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\carousel\carouselGifts.jsx">
+    <Content Include="ClientApp\src\assets\react\stylesheets\components\_gift.scss">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\carousel\_carousel.scss">
+    <Content Include="ClientApp\src\assets\react\stylesheets\components\_header.scss">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\contact\contact.jsx">
+    <Content Include="ClientApp\src\assets\react\stylesheets\components\_navbar.scss">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\contact\_contact.scss">
+    <Content Include="ClientApp\src\assets\react\stylesheets\components\_phrase.scss">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\confirm\confirm.jsx">
+    <Content Include="ClientApp\src\assets\react\stylesheets\components\_section.scss">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\confirm\_confirm.scss">
+    <Content Include="ClientApp\src\assets\react\stylesheets\components\_title.scss">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\main\main.jsx">
+    <Content Include="ClientApp\src\assets\react\stylesheets\components\_toggle.scss">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\section\section.jsx">
+    <Content Include="ClientApp\src\assets\react\stylesheets\components\_wishes.scss">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\section\_section.scss">
+    <Content Include="ClientApp\src\assets\react\components\carousel\carousel.jsx">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\phrase\phrase.jsx">
+    <Content Include="ClientApp\src\assets\react\components\carousel\carouselWishes.jsx">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\phrase\_phrase.scss">
+    <Content Include="ClientApp\src\assets\react\components\error\error.jsx">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\wishes\wishes.jsx">
+    <Content Include="ClientApp\src\assets\react\components\couple\couple.jsx">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\toggle\toggle.jsx">
+    <Content Include="ClientApp\src\assets\react\components\carousel\carouselGifts.jsx">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\toggle\_toggle.scss">
+    <Content Include="ClientApp\src\assets\react\components\contact\contact.jsx">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\gift\gift.jsx">
+    <Content Include="ClientApp\src\assets\react\components\confirm\confirm.jsx">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\gift\_gift.scss">
+    <Content Include="ClientApp\src\assets\react\components\section\section.jsx">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\footer\footer.jsx">
+    <Content Include="ClientApp\src\assets\react\components\phrase\phrase.jsx">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\footer\_footer.scss">
+    <Content Include="ClientApp\src\assets\react\components\wishes\wishes.jsx">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\navbar\navbar.jsx">
+    <Content Include="ClientApp\src\assets\react\components\toggle\toggle.jsx">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\navbar\_navbar.scss">
+    <Content Include="ClientApp\src\assets\react\components\gift\gift.jsx">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\header\header.jsx">
+    <Content Include="ClientApp\src\assets\react\components\footer\footer.jsx">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\header\_header.scss">
+    <Content Include="ClientApp\src\assets\react\components\navbar\navbar.jsx">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\title\_title.scss">
+    <Content Include="ClientApp\src\assets\react\components\header\header.jsx">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\index.js">
+    <Content Include="ClientApp\src\assets\react\index.js">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\component\title\title.jsx">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Include="ClientApp\src\assets\component\wishes\_wishes.scss">
+    <Content Include="ClientApp\src\assets\react\components\title\title.jsx">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
     <Content Include="Credentials\.aws\credentials">

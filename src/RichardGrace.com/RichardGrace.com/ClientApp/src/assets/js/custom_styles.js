@@ -1,2 +1,2 @@
-import '../fonts/fonts.scss'
-import '../component/style.scss'
+import '../react/stylesheets/fonts.scss'
+import '../react/stylesheets/style.scss'
