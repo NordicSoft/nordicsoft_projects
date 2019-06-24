@@ -64,7 +64,7 @@
         list-style: none;
         display: inline-block;
         line-height: 40px;
-        vertical-align: top;
+        vertical-align: bottom;
 
         .navbar-link {
             text-transform: uppercase;
@@ -73,6 +73,8 @@
             padding: 0 13px;
             letter-spacing: 1px;
             color: $light-gray;
+            display: block;
+            margin-bottom: 1px;
 
             &:hover, &:focus, &:active {
                 cursor: pointer;

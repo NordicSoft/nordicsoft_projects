@@ -5,6 +5,10 @@
 }
 
 .slide-item {
+    @media(min-width: 768px) {
+        padding: 0 45px;
+    }
+
     .lead {
         font-size: 14px;
         line-height: 32px;
@@ -33,5 +37,20 @@
         &.button-gifts {
             background-position: -45px 0;
         }
+    }
+}
+
+.chevron-gifts {
+    align-items: center;
+    justify-content: center;
+}
+
+.chevron-wishes {
+    top: 25px !important;
+
+    @media(max-width: 767px) {
+        top: 0;
+        align-items: center;
+        justify-content: center;
     }
 }

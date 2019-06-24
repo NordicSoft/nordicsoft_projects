@@ -6,7 +6,7 @@ export default function Wishes() {
     return (
         <section className="section-inner before-opacity color-white section-wishes">
             <Title title="Our Guests’ Wishes" style="light-hr" />
-            <div className="container-thin">
+            <div className="container-small">
                 <div className="row">
                     <div className="column-1">
                         <CarouselWishes />

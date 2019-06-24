@@ -22,6 +22,6 @@ function SlideItem(props) {
 
 export default function CarouselWishes() {
     return (
-        <Carousel items={carouselWishes} noOfItems={noOfItems} noOfCards={noOfCards} style={'button-wishes'} />
+        <Carousel items={carouselWishes} noOfItems={noOfItems} noOfCards={noOfCards} style={'wishes'} />
     );
 }

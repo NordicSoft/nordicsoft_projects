@@ -33,6 +33,6 @@ changeCountSlide();
 
 export default function CarouselGift() {
     return (
-        <Carousel items={carouselGifts} noOfItems={noOfItems} noOfCards={noOfCards} style={'button-gifts'} />
+        <Carousel items={carouselGifts} noOfItems={noOfItems} noOfCards={noOfCards} style={'gifts'} />
     );
 }

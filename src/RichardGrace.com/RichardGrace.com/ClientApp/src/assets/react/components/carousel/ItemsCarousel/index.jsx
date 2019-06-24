@@ -25,6 +25,7 @@ const CarouselWrapper = styled.div`
 const Wrapper = styled.div`
   width: 100%;
   overflow-x: ${(props) => props.freeScrolling ? 'scroll' : 'hidden'};
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
 `;
 
@@ -48,8 +49,6 @@ const CarouselChevron = styled.div`
   cursor: pointer;
   top: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
 const CarouselRightChevron = styled(props => <CarouselChevron {...props} />)`
@@ -64,7 +63,7 @@ class ItemsCarousel extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isPlaceholderMode: this.props.enablePlaceholder && this.props.children.length === 0,
+            isPlaceholderMode: this.props.enablePlaceholder && this.props.children.length === 0
         };
     }
 
@@ -213,7 +212,7 @@ class ItemsCarousel extends React.Component {
             numberOfCards,
             gutter,
             firstAndLastGutter,
-            showSlither,
+            showSlither
         });
 
         const _showRightChevron = rightChevron && showRightChevron({
@@ -221,7 +220,7 @@ class ItemsCarousel extends React.Component {
             activePosition,
             numberOfChildren: items.length,
             numberOfCards,
-            slidesToScroll,
+            slidesToScroll
         });
 
         const _showLeftChevron = leftChevron && showLeftChevron({
@@ -229,7 +228,7 @@ class ItemsCarousel extends React.Component {
             activePosition,
             numberOfChildren: items.length,
             numberOfCards,
-            slidesToScroll,
+            slidesToScroll
         });
 
         return (
@@ -237,19 +236,19 @@ class ItemsCarousel extends React.Component {
                 <Motion
                     defaultStyle={this.getInitialFrame({ translateX, springConfig })}
                     style={this.calculateNextFrame({ translateX, springConfig })}
-                    children={({ translateX }) => this.renderList({ items, measureRef, containerWidth, translateX })}
-                />
+                    children={({ translateX }) => this.renderList({ items, measureRef, containerWidth, translateX })}/>
                 {
                     _showRightChevron &&
                     <CarouselRightChevron
                         chevronWidth={chevronWidth}
                         outsideChevron={outsideChevron}
+                        className={`chevron-${props.styleChevron}`}
                         onClick={() => requestToChangeActive(calculateNextIndex({
                             activePosition,
                             activeItemIndex,
                             numberOfCards,
                             slidesToScroll,
-                            numberOfChildren: items.length,
+                            numberOfChildren: items.length
                         }))}
                     >
                         {rightChevron}
@@ -260,12 +259,13 @@ class ItemsCarousel extends React.Component {
                     <CarouselLeftChevron
                         chevronWidth={chevronWidth}
                         outsideChevron={outsideChevron}
+                        className={`chevron-${props.styleChevron}`}
                         onClick={() => requestToChangeActive(calculatePreviousIndex({
                             activePosition,
                             activeItemIndex,
                             numberOfCards,
                             slidesToScroll,
-                            numberOfChildren: items.length,
+                            numberOfChildren: items.length
                         }))}
                     >
                         {leftChevron}
@@ -286,7 +286,7 @@ class ItemsCarousel extends React.Component {
                     return this.renderContent({
                         containerWidth: contentRect.bounds.width || 0,
                         containerHeight: contentRect.bounds.height || 0,
-                        measureRef,
+                        measureRef
                     });
                 }}
             </Measure>
@@ -359,7 +359,7 @@ ItemsCarousel.propTypes = {
     activePosition: PropTypes.oneOf([
         'left',
         'center',
-        'right',
+        'right'
     ]),
 
     /**
@@ -367,7 +367,7 @@ ItemsCarousel.propTypes = {
      */
     rightChevron: PropTypes.oneOfType([
         PropTypes.element,
-        PropTypes.string,
+        PropTypes.string
     ]),
 
     /**
@@ -375,7 +375,7 @@ ItemsCarousel.propTypes = {
      */
     leftChevron: PropTypes.oneOfType([
         PropTypes.element,
-        PropTypes.string,
+        PropTypes.string
     ]),
 
     /**
@@ -400,8 +400,8 @@ ItemsCarousel.propTypes = {
     springConfig: PropTypes.shape({
         stiffness: PropTypes.number,
         damping: PropTypes.number,
-        precision: PropTypes.number,
-    }),
+        precision: PropTypes.number
+    })
 };
 
 ItemsCarousel.defaultProps = {
@@ -414,6 +414,7 @@ ItemsCarousel.defaultProps = {
     activeItemIndex: 0,
     activePosition: 'left',
     slidesToScroll: 1,
+    chevronTop: true
 };
 
 export default ItemsCarousel;
