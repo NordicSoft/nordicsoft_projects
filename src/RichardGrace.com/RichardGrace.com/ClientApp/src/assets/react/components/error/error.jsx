@@ -1,6 +1,6 @@
 ﻿import React from 'react'
 
-export default function Test() {
+export default function NotFound() {
     return (
         <section className="firstScreen">
             <div className="intro-text text-center">

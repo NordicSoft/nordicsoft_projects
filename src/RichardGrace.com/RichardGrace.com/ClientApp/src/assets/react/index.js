@@ -9,7 +9,7 @@ import Section from './components/section/section';
 import Gift from './components/gift/gift';
 import Contact from './components/contact/contact';
 import Footer from "./components/footer/footer";
-import Test from "./components/error/error";
+import NotFound from "./components/error/error";
 
 class App extends Component {
     render() {
@@ -32,7 +32,7 @@ ReactDOM.render(
     <BrowserRouter>
         <Switch>
             <Route exact path="/" component={App} />
-            <Route component={Test} />
+            <Route component={NotFound} />
         </Switch>
     </BrowserRouter>,
     root

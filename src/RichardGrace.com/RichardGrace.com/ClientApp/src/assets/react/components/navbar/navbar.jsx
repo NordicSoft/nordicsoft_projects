@@ -1,5 +1,7 @@
-﻿import React, { Component } from 'react'
+﻿'use strict';
+import React, { Component } from 'react'
 import { Link, animateScroll as scroller } from "react-scroll";
+
 
 export default class Navbar extends React.Component {
     constructor(props) {
@@ -8,21 +10,26 @@ export default class Navbar extends React.Component {
         this.handleScroll = this.handleScroll.bind(this);
         this.toggleNavbar = this.toggleNavbar.bind(this);
     }
-
-    toggleNavbar() {       
+    //button toogle
+    toggleNavbar() {
         var navbar = document.querySelector('.navbar-nav');
         navbar.classList.toggle("show");
     }
+
     handleScroll() {
-        this.setState({ scroll: window.scrollY });
+        const element = document.querySelector('nav');
+        var scroll = window.scrollY || window.pageYOffset;
+        this.setState({
+            scroll: scroll,
+            top: element.offsetTop
+        });
     }
 
     componentDidMount() {
-        const el = document.querySelector('nav');
-        this.setState({ top: el.offsetTop, height: el.offsetHeight });
         window.addEventListener('scroll', this.handleScroll);
     }
 
+    //scroll to element
     scrollTo() {
         scroller.scrollTo("scroll-to-element", {
             duration: 1000,
@@ -30,6 +37,7 @@ export default class Navbar extends React.Component {
             smooth: "easeInOutQuart"
         });
     }
+    //
     render() {
         return (
             <nav className={`navbar ${this.state.scroll > this.state.top ? "navbar-fixed-top" : ""}`}>

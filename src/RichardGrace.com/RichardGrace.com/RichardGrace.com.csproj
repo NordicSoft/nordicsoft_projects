@@ -18,26 +18,24 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\assets\react\components\contact\contact.jsx" />
     <None Remove="ClientApp\src\assets\react\stylesheets\components\_carousel.scss" />
     <None Remove="ClientApp\src\assets\react\stylesheets\components\_confirm.scss" />
     <None Remove="ClientApp\src\assets\react\stylesheets\components\_contact.scss" />
     <None Remove="ClientApp\src\assets\react\stylesheets\components\_couple.scss" />
     <None Remove="ClientApp\src\assets\react\stylesheets\components\_error.scss" />
     <None Remove="ClientApp\src\assets\react\stylesheets\components\_footer.scss" />
-    <None Remove="ClientApp\src\assets\react\stylesheets\components\_gift.scss" />
     <None Remove="ClientApp\src\assets\react\stylesheets\components\_header.scss" />
     <None Remove="ClientApp\src\assets\react\stylesheets\components\_navbar.scss" />
     <None Remove="ClientApp\src\assets\react\stylesheets\components\_phrase.scss" />
     <None Remove="ClientApp\src\assets\react\stylesheets\components\_section.scss" />
     <None Remove="ClientApp\src\assets\react\stylesheets\components\_title.scss" />
     <None Remove="ClientApp\src\assets\react\stylesheets\components\_toggle.scss" />
-    <None Remove="ClientApp\src\assets\react\stylesheets\components\_wishes.scss" />
     <None Remove="ClientApp\src\assets\react\components\carousel\carousel.jsx" />
     <None Remove="ClientApp\src\assets\react\components\carousel\carouselGifts.jsx" />
     <None Remove="ClientApp\src\assets\react\components\carousel\carouselWishes.jsx" />
     <None Remove="ClientApp\src\assets\react\components\confirm\confirm.jsx" />
     <None Remove="ClientApp\src\assets\react\components\error\error.jsx" />
-    <None Remove="ClientApp\src\assets\react\components\contact\contact.jsx" />
     <None Remove="ClientApp\src\assets\react\components\couple\couple.jsx" />
     <None Remove="ClientApp\src\assets\react\components\section\section.jsx" />
     <None Remove="ClientApp\src\assets\react\components\wishes\wishes.jsx" />
@@ -50,6 +48,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="ClientApp\src\assets\react\components\contact\contact.jsx">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
     <Content Include="ClientApp\src\assets\react\stylesheets\components\_carousel.scss">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
@@ -66,9 +67,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
     <Content Include="ClientApp\src\assets\react\stylesheets\components\_footer.scss">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Include="ClientApp\src\assets\react\stylesheets\components\_gift.scss">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
     <Content Include="ClientApp\src\assets\react\stylesheets\components\_header.scss">
@@ -89,9 +87,6 @@
     <Content Include="ClientApp\src\assets\react\stylesheets\components\_toggle.scss">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="ClientApp\src\assets\react\stylesheets\components\_wishes.scss">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
     <Content Include="ClientApp\src\assets\react\components\carousel\carousel.jsx">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
@@ -105,9 +100,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
     <Content Include="ClientApp\src\assets\react\components\carousel\carouselGifts.jsx">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Include="ClientApp\src\assets\react\components\contact\contact.jsx">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
     <Content Include="ClientApp\src\assets\react\components\confirm\confirm.jsx">

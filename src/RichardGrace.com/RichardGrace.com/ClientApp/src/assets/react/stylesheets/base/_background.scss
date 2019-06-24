@@ -27,6 +27,11 @@ section {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        background-attachment: scroll;
+        background-size: cover;
+    }
 }
 
 @media(max-width: 1199px) {

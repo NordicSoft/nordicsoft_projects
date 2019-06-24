@@ -3,8 +3,8 @@
 function Date() {
     return (
         <div className="toggle-inner">
-            <p>The Ceremony Sunday, January 11th, 2020 4.00 - 5.00 pm</p>
-            <p>The Reception Sunday, January 11th, 2020 5.00 - 10.00 pm</p>
+            <p>The Ceremony Sunday, January 11th, 2020 4.00 - 5.00 pm.</p>
+            <p>The Reception Sunday, January 11th, 2020 5.00 - 10.00 pm.</p>
         </div>
     );
 };
@@ -12,9 +12,7 @@ function Date() {
 function Place() {
     return (
         <div className="toggle-inner">
-            <p>Both the ceremony and the reception will take place in Hollins House Weddings and Events, Santa Cruz County, California.</p>
-            <p>This venue is fantastic, we hope you will love it too.</p>
-            <p>Address: Hollins House Weddings and Events 20 Clubhouse Rd, Santa Cruz, CA 95060</p>
+            <p>Both the ceremony and the reception will take place in Hollins House Weddings and Events, Santa Cruz County, California. <span className="toggle-spacing"></span>This venue is fantastic, we hope you will love it too. Address: Hollins House Weddings and Events 20 Clubhouse Rd, Santa Cruz, CA 95060. </p>
         </div>
     );
 };

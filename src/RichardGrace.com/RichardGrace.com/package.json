@@ -32,8 +32,6 @@
     "dart-sass": "^1.11.0",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
-    "jquery": "^3.4.1",
-    "jquery-confirm": "^3.3.2",
     "lazysizes": "^4.1.4",
     "mini-css-extract-plugin": "^0.4.2",
     "object-fit-images": "^3.2.4",
