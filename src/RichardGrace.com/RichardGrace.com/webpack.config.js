@@ -20,7 +20,6 @@ module.exports = (env, options) => {
     return {
         mode: devMode ? "development" : "production",
         entry: {
-            all_styles: './ClientApp/src/assets/js/all_styles.js',
             custom_styles: './ClientApp/src/assets/js/custom_styles.js',
             main: './ClientApp/src/assets/js/index.js',
             react_js: './ClientApp/src/assets/react/index.js'
