@@ -43,10 +43,18 @@ section {
 
             .no-webp & {
                 background-image: url(/img/bg/bg1.jpg);
+
+                @media(max-width: 768px) {
+                    background-image: url(/img/bg/bg1-mobile.jpg);
+                }
             }
 
             .webp & {
                 background-image: url(/img/bg/bg1.webp);
+
+                @media(max-width: 768px) {
+                    background-image: url(/img/bg/bg1-mobile.webp);
+                }
             }
         }
 
@@ -55,10 +63,18 @@ section {
 
             .no-webp & {
                 background-image: url(/img/bg/bg1.jpg);
+
+                @media(max-width: 768px) {
+                    background-image: url(/img/bg/bg1-mobile.jpg);
+                }
             }
 
             .webp & {
                 background-image: url(/img/bg/bg1.webp);
+
+                @media(max-width: 768px) {
+                    background-image: url(/img/bg/bg1-mobile.webp);
+                }
             }
         }
     }

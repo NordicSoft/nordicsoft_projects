@@ -1,10 +1,10 @@
-var CACHE_NAME = 'v2';
+var CACHE_NAME = 'v3';
 var urlsToCache = [];
 var urlsToExclude = [];
 
 self.addEventListener('install', function (event) {
     event.waitUntil(
-        caches.open('v2').then(function (cache) {
+        caches.open('v3').then(function (cache) {
             return cache.addAll(urlsToCache);
         })
     );
