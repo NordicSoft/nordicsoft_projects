@@ -837,6 +837,8 @@ section#case-studies .cs-item-inner{padding:20px}
 section#case-studies .cs-item-inner h4{text-transform:uppercase;color:#e91e63;letter-spacing:2px;font-weight:600}
 section#case-studies .cs-item-inner .btn-link{text-transform:uppercase;color:#e91e63;letter-spacing:2px;font-weight:600}
 section#case-studies .cs-item-inner .btn-link:hover,section#case-studies .cs-item-inner .btn-link:focus{text-decoration:none;color:#ac1d4e}
+@media(min-width: 1200px) {section#case-studies .section-lead-sm {min-height: 60px;}}
+@media(min-width: 992px) {section#case-studies .section-lead-sm {min-height: 80px;}}
 
 /*-----------------------------------------------------------------------------------
 29. Section Why Us (@ Main Home Page[index.html], Main Alternative[index_alt.html] & Main Home Page with Left Menu[index-left-menu.html])
@@ -1729,6 +1731,7 @@ header#main-header h1 {
 
     header#main-header h1 {
         margin-top: 30px;
+        padding-top: 30px;
     }
 }
 
