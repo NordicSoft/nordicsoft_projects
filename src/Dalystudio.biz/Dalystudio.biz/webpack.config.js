@@ -47,7 +47,7 @@ module.exports = (env, options) => {
             ],
       custom_styles: './ClientApp/src/assets/js/custom_styles.js',
       main: './ClientApp/src/assets/js/index.js',
-
+      react_js: './ClientApp/src/assets/components/index.js'
     },
     devtool: 'eval',
     output: {
@@ -131,12 +131,12 @@ module.exports = (env, options) => {
           ],
         },
         {
-          test: /\.js$/,
+          test: /\.(js|jsx)$/,
           exclude: /(node_modules|bower_components)/,
           use: {
             loader: 'babel-loader',
             options: {
-              presets: ['@babel/preset-env']
+                presets: ['@babel/preset-env', "@babel/preset-react"]
             }
           }
         },
@@ -163,6 +163,9 @@ module.exports = (env, options) => {
           }]
         }
       ]
+      },
+    resolve: {
+        extensions: ['*', '.js', '.jsx']
     }
   }
 };

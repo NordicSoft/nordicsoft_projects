@@ -49,7 +49,7 @@
 
 
 <!-- HOME -->
-<div id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-30 lazyload" data-bg="../img/homepage.jpg">
+@*<div id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-30 lazyload" data-bg="../img/homepage.jpg">
 
     <div class="hs-caption container">
         <div class="caption-content">
@@ -62,13 +62,14 @@
         </div>
     </div>
 
-</div>
+</div>*@
 <!-- /HOME -->
 <!-- WRAPPER -->
+    <div id="root"></div>
 <div class="wrapper">
 
     <!-- PORTFOLIO -->
-    <section class="module-small p-t-20 p-b-0 p-t-sm-0">
+    @*<section class="module-small p-t-20 p-b-0 p-t-sm-0">
 
             <div class="container">
 
@@ -210,25 +211,22 @@
             </ul>
             <!-- /PORTFOLIO LIST -->
 
-        </section>
+        </section>*@
     <!-- /PORTFOLIO -->
 
         <!-- TESTIMONIAL -->
-        <section class="module-small">
+        @*<section class="module-small">
 
             <div class="container">
 
                 <div class="row">
 
-                    <!-- MODULE TITLE -->
                     <div class="col-sm-6">
                         <h2 class="module-title text-left font-alt">Get in touch</h2>
                         <div class="module-subtitle text-left font-inc">
                             I look forward to hearing from you and hope to be a part of your story. If you would like to enquire about my work, please contact me by filling out the blocks and I will reply you as soon as possible.
                         </div>
                     </div>
-                    <!-- /MODULE TITLE -->
-                    <!-- BLOCKQUOTE -->
                     <div class="col-sm-6">
 
                         <form id="contact-form" role="form" asp-controller="Common" asp-action="SendFeedback" method="POST">
@@ -256,19 +254,17 @@
                             </div>
                         </form>
 
-                        <!-- Ajax response -->
                         <div id="contact-response" class="ajax-response font-alt"></div>
                     </div>
-                    <!-- /BLOCKQUOTE -->
 
                 </div>
 
             </div>
 
-        </section>
+        </section>*@
         <!-- /TESTIMONIAL -->
         <!-- ABOUT -->
-        <div class="module p-t-0 p-b-0 lazyload" data-bg="../img/about.jpg">
+        @*<div class="module p-t-0 p-b-0 lazyload" data-bg="../img/about.jpg">
 
             <div class="container-fluid">
 
@@ -298,12 +294,11 @@
 
             </div>
 
-        </div>
+        </div>*@
         <!-- /ABOUT -->
 
 
-        <hr class="divider-w">
-        <partial name="_Footer" />
-
+        @*<partial name="_Footer" />*@
+        
     </div>
 <!-- /WRAPPER -->

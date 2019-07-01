@@ -110,21 +110,22 @@
     <script src="~/dist/jquery_plugins.js" defer></script>
     <script src="~/dist/effect_plugins.js" defer></script>
     <script src="~/dist/main.js" defer></script>
+    <script src="~/dist/react_js.js" defer></script>
 
     @RenderSection("Scripts", required: false)
-    <script>
-                if ('serviceWorker' in navigator) {
-                    window.addEventListener('load', function () {
-                        navigator.serviceWorker.register('/dist/sw.js', { scope: '/' }).then(function (registration) {
-                            // Registration was successful
-                            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                        }, function (err) {
-                            // registration failed :(
-                            console.log('ServiceWorker registration failed: ', err);
-                        });
-                    });
-                }
-        </script>
+    @*<script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/dist/sw.js', { scope: '/' }).then(function (registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>*@
 
 </body>
 </html>
