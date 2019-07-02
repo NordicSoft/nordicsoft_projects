@@ -50,7 +50,8 @@
             !function (t) { "use strict"; t.loadCSS || (t.loadCSS = function () { }); var e = loadCSS.relpreload = {}; if (e.support = function () { var e; try { e = t.document.createElement("link").relList.supports("preload") } catch (t) { e = !1 } return function () { return e } }(), e.bindMediaToggle = function (t) { var e = t.media || "all"; function a() { t.media = e } t.addEventListener ? t.addEventListener("load", a) : t.attachEvent && t.attachEvent("onload", a), setTimeout(function () { t.rel = "stylesheet", t.media = "only x" }), setTimeout(a, 3e3) }, e.poly = function () { if (!e.support()) for (var a = t.document.getElementsByTagName("link"), n = 0; n < a.length; n++) { var o = a[n]; "preload" !== o.rel || "style" !== o.getAttribute("as") || o.getAttribute("data-loadcss") || (o.setAttribute("data-loadcss", !0), e.bindMediaToggle(o)) } }, !e.support()) { e.poly(); var a = t.setInterval(e.poly, 500); t.addEventListener ? t.addEventListener("load", function () { e.poly(), t.clearInterval(a) }) : t.attachEvent && t.attachEvent("onload", function () { e.poly(), t.clearInterval(a) }) } "undefined" != typeof exports ? exports.loadCSS = loadCSS : t.loadCSS = loadCSS }("undefined" != typeof global ? global : this);
         </script>
     </environment>
-    <script src="~/dist/react_js.js" defer></script>
+
+
 
     @if (!isWebP)
     {
@@ -62,6 +63,47 @@
             });
         </script>
     }
+
+
+    @*<script src="~/dist/npm.react.js"></script>
+
+        <script src="~/dist/npm.react-dom.js"></script>
+        <script src="~/dist/npm.react-router-dom.js"></script>
+
+        <script src="~/dist/npm.lodash.js"></script>
+        <script src="~/dist/npm.react-scroll.js"></script>
+        <script src="~/dist/npm.react-motion.js"></script>
+        <script src="~/dist/npm.babel.js"></script>
+        <script src="~/dist/npm.emotion.js"></script>
+        <script src="~/dist/npm.prop-types.js"></script>
+        <script src="~/dist/npm.react-router.js"></script>
+        <script src="~/dist/npm.raf.js"></script>
+        <script src="~/dist/npm.react-is.js"></script>
+        <script src="~/dist/npm.scheduler.js"></script>
+        <script src="~/dist/npm.gud.js"></script>
+        <script src="~/dist/npm.history.js"></script>
+        <script src="~/dist/npm.hoist-non-react-statics.js"></script>
+        <script src="~/dist/npm.is-what.js"></script>
+        <script src="~/dist/npm.lodash.throttle.js"></script>
+        <script src="~/dist/npm.memoize-one.js"></script>
+        <script src="~/dist/npm.merge-anything.js"></script>
+        <script src="~/dist/npm.mini-create-react-context.js"></script>
+        <script src="~/dist/npm.object-assign.js"></script>
+        <script src="~/dist/npm.performance-now.js"></script>
+        <script src="~/dist/npm.process.js"></script>
+        <script src="~/dist/npm.react-measure.js"></script>
+        <script src="~/dist/npm.resize-observer-polyfill.js"></script>
+        <script src="~/dist/npm.resolve-pathname.js"></script>
+        <script src="~/dist/npm.styled-components.js"></script>
+        <script src="~/dist/npm.stylis-rule-sheet.js"></script>
+        <script src="~/dist/npm.stylis.js"></script>
+        <script src="~/dist/npm.value-equal.js"></script>
+        <script src="~/dist/npm.webpack.js"></script>
+        <script src="~/dist/main.js"></script>
+
+
+        <script src="~/dist/react_js.js"></script>*@
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -89,24 +131,72 @@
         "description": "We are happy to invite you to celebrate our special day with us, click here to find some useful and interesting information about us and our wedding."
         }
     </script>
-    <script src="~/dist/main.js" defer></script>
     @RenderSection("Scripts", required: false)
     <script src="~/dist/fonts-load.js" defer></script>
-    
 
-<environment include="Production">
-    @if (Context.Request.Host.Value == Settings.SiteNameDomain.ToLower())
-    {
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-137521661-3"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-            gtag('config', 'UA-137521661-3');
-        </script>
-    }
-</environment>
+
+
+    <environment include="Production">
+        @if (Context.Request.Host.Value == Settings.SiteNameDomain.ToLower())
+        {
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-137521661-3"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-137521661-3');
+            </script>
+        }
+    </environment>
+
+    <script defer type="text/javascript" src="~/dist/runtime.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.html-entities.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.webpack-hot-middleware.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.querystring-es3.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.ansi-html.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.webpack.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.strip-ansi.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.ansi-regex.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.css-loader.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.style-loader.js"></script>
+    <script defer type="text/javascript" src="~/dist/custom_styles.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.lazysizes.js"></script>
+    <script defer type="text/javascript" src="~/dist/main.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.lodash.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.react-scroll.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.react-motion.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.babel.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.prop-types.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.scheduler.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.emotion.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.react-router.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.raf.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.react-dom.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.react-is.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.react.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.gud.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.history.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.hoist-non-react-statics.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.is-what.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.lodash.throttle.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.memoize-one.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.merge-anything.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.mini-create-react-context.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.object-assign.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.performance-now.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.process.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.react-measure.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.react-router-dom.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.resize-observer-polyfill.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.resolve-pathname.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.styled-components.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.stylis-rule-sheet.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.stylis.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.tiny-invariant.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.tiny-warning.js"></script>
+    <script defer type="text/javascript" src="~/dist/npm.value-equal.js"></script>
+    <script defer type="text/javascript" src="~/dist/react_js.js"></script>
 
 </body>
 </html>
