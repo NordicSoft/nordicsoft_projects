@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400");
+/*@import url("https://fonts.googleapis.com/css?family=Montserrat:400");
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700");*/
 
 /* ------------------------------------------------------------------
 General Styles
@@ -112,7 +112,7 @@ a,
 
 /* ------------------------------------------------------------------
 Form styles
-------------------------------------------------------------------- */
+------------------------------------------------------------------- 
 
 .form-control {
 	font-family: "Inconsolata", sans-serif;
@@ -130,7 +130,7 @@ Form styles
 	border-color: #CACACA;
 }
 
-/* Form sizes */
+ Form sizes 
 
 .input-lg,
 .form-horizontal .form-group-lg .form-control {
@@ -141,7 +141,7 @@ Form styles
 .input-sm, .form-horizontal .form-group-sm .form-control {
 	height: 29px;
 	font-size: 10px;
-}
+}*/
 
 /* ------------------------------------------------------------------
 Button styles
@@ -201,51 +201,7 @@ Button styles
 	color: #fff;
 }
 
-/* ------------------------------------------------------------------
-Progress bars
-------------------------------------------------------------------- */
 
-.progress {
-	overflow: visible;
-	height: 4px;
-}
-
-.progress-bar {
-	position: relative;
-}
-
-.progress-bar.pb-dark {
-	background: #000;
-}
-
-.progress-bar span {
-	position: absolute;
-	display: block;
-	right: -0px;
-	top: 6px;
-	opacity: 0;
-	line-height: 12px;
-	font-size: 12px;
-	color: #666;
-	padding: 4px 0px;
-}
-
-.progress-bar span:after {
-	display: inline-block;
-	content: "%";
-}
-
-.progress-title {
-	margin: 0 0 5px;
-	text-transform: uppercase;
-	font-size: 14px;
-}
-
-.help-block ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
 
 /* ------------------------------------------------------------------
 Overlays
@@ -349,9 +305,9 @@ blockquote {
 	text-shadow: none !important;
 }
 
-/* ------------------------------------------------------------------
+ /*------------------------------------------------------------------
 Navbar
-------------------------------------------------------------------- */
+------------------------------------------------------------------- 
 
 .navbar-custom {
 	background: #fff;
@@ -477,10 +433,10 @@ Navbar
 }
     .dropdown-menu > .active:after, .dropdown-menu > .active:hover:after, .dropdown-menu > .active:focus:after {
         display: none;
-    }
+    }*/
     /* -------------------------------------------------------------------
 Home Section
-------------------------------------------------------------------- */
+------------------------------------------------------------------- 
     .module-hero {
         position: relative;
         background-color: #fff;
@@ -566,9 +522,9 @@ Sections
 	margin: 0;
 }
 
-/* ------------------------------------------------------------------
+ /*------------------------------------------------------------------
 Social list
-------------------------------------------------------------------- */
+------------------------------------------------------------------- 
 
 .social-list {
 	list-style: none;
@@ -580,11 +536,11 @@ Social list
 	display: inline-block;
 	font-size: 24px;
 	margin: 5px 5px 5px 0;
-}
+}*/
 
-/* ------------------------------------------------------------------
+ /*------------------------------------------------------------------
 Content boxes
-------------------------------------------------------------------- */
+------------------------------------------------------------------- 
 
 .content-box {
 	text-align: center;
@@ -602,13 +558,13 @@ Content boxes
 
 .content-box-text {
 	margin: 15px 0 0;
-}
+}*/
 
 /* ------------------------------------------------------------------
 Counters
 ------------------------------------------------------------------- */
 
-.counter-item {
+/*.counter-item {
 	text-align: center;
 }
 
@@ -619,41 +575,10 @@ Counters
 .counter-title {
 	text-transform: uppercase;
 	font-size: 14px;
-}
+}*/
 
 
-
-/* ------------------------------------------------------------------
-Portfolio
-------------------------------------------------------------------- */
-
-/* Portfolio filter */
-
-.filter {
-	text-align: center;
-	list-style: none;
-	padding: 0;
-	margin: 0 0 20px;
-}
-
-.filter > li {
-	display: inline-block;
-	padding: 5px 0;
-	margin: 0 25px;
-}
-
-.filter > li a {
-	text-transform: uppercase;
-	font-size: 14px;
-	color: rgba(102, 102, 102, 0.5);
-}
-
-.filter > li a:hover,
-.filter > li a.current {
-	color: #000;
-}
-
-/* Portfolio grid */
+ /*Portfolio grid 
 
 .works-grid {
 	list-style: none;
@@ -687,7 +612,7 @@ Portfolio
 	width: 25%;
 }
 
-/* Portfolio item */
+ Portfolio item 
 
 .work-item > a {
 	position: relative;
@@ -739,7 +664,7 @@ Portfolio
 	color: #999;
 }
 
-/* */
+ 
 .works-grid-4 .work-title {
 	font-size: 14px;
 }
@@ -748,7 +673,7 @@ Portfolio
 	font-size: 12px;
 }
 
-/* Portfolio item hover */
+ Portfolio item hover 
 
 .work-item:hover .work-image:after {
 	background: rgba(0, 0, 0, .7);
@@ -788,7 +713,7 @@ Portfolio
     }
 }
 
-/* Work item white background */
+ Work item white background 
 
 .works-grid.works-hover-w .work-title {
 	color: #FFF;
@@ -816,21 +741,21 @@ Portfolio
 }
 
 .works-grid.works-hover-g .work-item:hover .work-image:after {
-/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+ IE9 SVG, needs conditional override of 'filter' to 'none' 
 background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZmZmRmIiBzdG9wLW9wYWNpdHk9IjAuOSIvPgogICAgPHN0b3Agb2Zmc2V0PSIyNSUiIHN0b3AtY29sb3I9IiNmZmZmZGYiIHN0b3Atb3BhY2l0eT0iMC45Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmY2YwYjMiIHN0b3Atb3BhY2l0eT0iMC45Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-background: -moz-linear-gradient(-45deg,  rgba(255,255,223,0.8) 0%, rgba(255,255,223,0.8) 25%, rgba(252,240,179,0.8) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,223,0.8)), color-stop(25%,rgba(255,255,223,0.8)), color-stop(100%,rgba(252,240,179,0.8))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(-45deg,  rgba(255,255,223,0.8) 0%,rgba(255,255,223,0.8) 25%,rgba(252,240,179,0.8) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-45deg,  rgba(255,255,223,0.8) 0%,rgba(255,255,223,0.8) 25%,rgba(252,240,179,0.8) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-45deg,  rgba(255,255,223,0.8) 0%,rgba(255,255,223,0.8) 25%,rgba(252,240,179,0.8) 100%); /* IE10+ */
-background: linear-gradient(135deg,  rgba(255,255,223,0.8) 0%,rgba(255,255,223,0.8) 25%,rgba(252,240,179,0.8) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffdf', endColorstr='#e6fcf0b3',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+background: -moz-linear-gradient(-45deg,  rgba(255,255,223,0.8) 0%, rgba(255,255,223,0.8) 25%, rgba(252,240,179,0.8) 100%);  FF3.6+ 
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,223,0.8)), color-stop(25%,rgba(255,255,223,0.8)), color-stop(100%,rgba(252,240,179,0.8)));  Chrome,Safari4+ 
+background: -webkit-linear-gradient(-45deg,  rgba(255,255,223,0.8) 0%,rgba(255,255,223,0.8) 25%,rgba(252,240,179,0.8) 100%);  Chrome10+,Safari5.1+ 
+background: -o-linear-gradient(-45deg,  rgba(255,255,223,0.8) 0%,rgba(255,255,223,0.8) 25%,rgba(252,240,179,0.8) 100%);  Opera 11.10+ 
+background: -ms-linear-gradient(-45deg,  rgba(255,255,223,0.8) 0%,rgba(255,255,223,0.8) 25%,rgba(252,240,179,0.8) 100%);  IE10+ 
+background: linear-gradient(135deg,  rgba(255,255,223,0.8) 0%,rgba(255,255,223,0.8) 25%,rgba(252,240,179,0.8) 100%);  W3C 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffdf', endColorstr='#e6fcf0b3',GradientType=1 );  IE6-8 fallback on horizontal gradient 
 opacity: 1;
-}
+}*/
 
 /* Portfolio single */
 
-.work-details {
+/*.work-details {
 	margin: 0 0 20px;
 }
 
@@ -852,7 +777,7 @@ opacity: 1;
 .work-title > i,
 .work-title > span {
 	font-size: 31px;
-}
+}*/
 
 /* -------------------------------------------------------------------
 Scroll to top
@@ -892,7 +817,7 @@ Scroll to top
 Responsive Media Querries
 ------------------------------------------------------------------- */
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
 
 	.align-right {
 		text-align: right;
@@ -969,11 +894,11 @@ Responsive Media Querries
 		left: 0;
 	}
 
-}
+}*/
 
-@media (max-width: 991px) {
+/*@media (max-width: 991px) {
 
-	/* Headers */
+	/* Headers 
 
 	.hs-title-size-4 {
 		font-size: 32px;
@@ -984,11 +909,11 @@ Responsive Media Querries
 		width: 50%;
 	}
 
-}
+}*/
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
 
-	/* Navbar */
+	/* Navbar 
 
 	.navbar-custom .navbar-nav {
 		margin-top: 0;
@@ -1032,7 +957,7 @@ Responsive Media Querries
 		        box-shadow: none;
 	}
 
-	/* Headers */
+	 Headers 
 
 	.hs-title-size-1 {
 		font-size: 12px;
@@ -1042,9 +967,9 @@ Responsive Media Querries
 		font-size: 24px;
 	}
 
-}
+}*/
 
-@media only screen and (max-width: 480px) {
+/*@media only screen and (max-width: 480px) {
 
 	.work-item,
 	.works-grid-3 .work-item,
@@ -1053,7 +978,7 @@ Responsive Media Querries
 		width: 100%;
 	}
 
-}
+}*/
 
 
 /* -------------------------------------------------------------------
@@ -1116,13 +1041,13 @@ Multi-columns-row
 
 }
 
-.filter > li a {
+/*.filter > li a {
     color: #757575 !important;
 }
 
     .filter > li a.current, .filter > li a:hover {
         color: #000 !important;
-    }
+    }*/
 
 .grecaptcha-badge {
     bottom: 10px !important;
@@ -1158,15 +1083,15 @@ Multi-columns-row
     }
 }
 
-.content-box a:focus {
+/*.content-box a:focus {
     color: #000;
-}
+}*/
 
 .count-static {
     font-size: 36px;
 }
 
-.navbar-custom .navbar-nav > .dropdown > .dropdown-toggle:after {
+/*.navbar-custom .navbar-nav > .dropdown > .dropdown-toggle:after {
     display: none;
 }
 
@@ -1283,9 +1208,9 @@ nav.navbar-transparent li.dropdown.active > a {
     li.dropdown a {
         width: 85%;
     }
-}
+}*/
 
 
-#works-grid {
+/*#works-grid {
     overflow: hidden;
-}
+}*/

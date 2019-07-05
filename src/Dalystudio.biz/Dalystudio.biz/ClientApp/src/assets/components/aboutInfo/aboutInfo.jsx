@@ -43,7 +43,7 @@ function SocialList(props) {
 }
 
 function AboutInfo() {
-    return (
+    return(
         <section className="module">
             <div className="container">
                 <div className="row">
@@ -76,4 +76,4 @@ function AboutInfo() {
     );
 }
 
-export default AboutInfo;
+export default AboutInfo; 

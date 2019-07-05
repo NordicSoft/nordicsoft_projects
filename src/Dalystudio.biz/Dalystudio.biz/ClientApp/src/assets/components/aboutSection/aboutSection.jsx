@@ -10,8 +10,6 @@ const socials = [{ id: 1, linkUrl: '#', ariaLabel: 'Facebook', title: 'facebook'
     { id: 2, linkUrl: '#', ariaLabel: 'Twitter', title: 'twitter', spanClass:'icon-twitter' },
     { id: 3, linkUrl: '#', ariaLabel: 'Google Plus', title: 'google plus', spanClass: 'icon-googleplus' }];
 
-const devider = (<hr className="divider-w"/>) ;
-
 function SocialItem(props) {
     const social = props;
     return (<li><a href={`${social.item.linkUrl}`} aria-label={`${social.item.ariaLabel}`} title={`${social.item.title}`}><span className={`${social.item.spanClass}`}></span></a></li>);
@@ -43,8 +41,6 @@ function AboutSection(){
                     </div>
                 </div>
             </div>
-            {devider}
-            
         </React.Fragment>
 
     );

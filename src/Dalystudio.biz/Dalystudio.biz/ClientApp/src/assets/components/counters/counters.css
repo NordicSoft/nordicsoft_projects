@@ -1,0 +1,17 @@
+﻿/* ------------------------------------------------------------------
+Counters
+------------------------------------------------------------------- */
+
+.counter-item {
+    text-align: center;
+}
+
+.counter-number {
+    font-size: 36px;
+}
+
+.counter-title {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+

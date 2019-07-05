@@ -1,6 +1,6 @@
 ﻿"use strict";
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { BrowserRouter, Link } from 'react-router-dom'
 import "./header.css"
 
 const mainListMenu = [

@@ -1,2 +1,15 @@
-﻿body {
+﻿/* ------------------------------------------------------------------
+Social list
+------------------------------------------------------------------- */
+
+.social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-list > li {
+    display: inline-block;
+    font-size: 24px;
+    margin: 5px 5px 5px 0;
 }

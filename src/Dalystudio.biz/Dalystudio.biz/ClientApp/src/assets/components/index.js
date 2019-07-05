@@ -2,120 +2,154 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Footer from "./footer/footer";
-import AboutSection from "./aboutSection/aboutSection";
-import GetInTouch from "./getInTouch/getInTouch";
-import Header from "./header/header";
-import Banner from "./bannerIndex/banner";
-import BannerPage from "./banner/banner";
-import PortfolioSection from "./portfolioSection/portfolioSection";
-import AboutInfo from "./aboutInfo/aboutInfo";
+import { BrowserRouter, Route, Switch, withRouter } from "react-router-dom";
+import Routes from "./routes/routes";
+//import Footer from "./footer/footer";
+//import AboutSection from "./aboutSection/aboutSection";
+//import GetInTouch from "./getInTouch/getInTouch";
+//import Header from "./header/header";
+//import Banner from "./bannerIndex/banner";
+//import BannerPage from "./banner/banner";
+//import PortfolioSection from "./portfolioSection/portfolioSection";
+//import AboutInfo from "./aboutInfo/aboutInfo";
+//import ServicesSection from "./services/services";
+//import Counter from "./counters/counters";
+//import Description from "./description/description";
+//import PortfolioTale from "./portfolio/portfolio";
 
-function Index() {
-    return (
-        <React.Fragment>
-        <Header />
-            <Banner />
-            <div className="wrapper">
-                <PortfolioSection />
-            <GetInTouch />
-            <AboutSection />
-                <Footer />
-        </div>
-        </React.Fragment>
-    );
-}
+//const devide = (<hr className="divider-w" />);
 
-function About() {
-    return (
-        <React.Fragment>
-            <Header />
-            <BannerPage />
-            <AboutInfo />
-        </React.Fragment>
-    );
-}
+//function Index() {
+//    return (
+//        <React.Fragment>
+//            <Header />
+//            <Banner />
+//            <div className="wrapper">
+//                <PortfolioSection />
+//                <GetInTouch />
+//                <AboutSection />
+//                {devide}
+//                <Footer />
+//            </div>
+//        </React.Fragment>
+//    );
+//}
 
-function Portfolio() {
-    return (
-        <React.Fragment>
-            <Footer />
-        </React.Fragment>
-    );
-}
+//function About() {
+//    return (
+//        <React.Fragment>
+//            <Header />
+//            <BannerPage />
+//            <div className="wrapper">
+//                <AboutInfo />
+//                {devide}
+//                <ServicesSection />
+//                <Counter />
+//                {devide}
+//                <Footer />
+//            </div>
+//        </React.Fragment>
+//    );
+//}
 
-function Contact() {
-    return (
-        <React.Fragment>
-            <Footer />
-        </React.Fragment>
-    );
-}
+//function Portfolio() {
+//    return (
+//        <React.Fragment>
+//            <Header />
+//            <BannerPage />
+//            <div className="wrapper">
+//                <PortfolioSection />
+//                {devide}
+//                <Footer />
+//            </div>
+//        </React.Fragment>
+//    );
+//}
 
-function Wedding() {
-    return (
-        <React.Fragment>
-            <Footer />
-        </React.Fragment>
-    );
-}
+//function Contact() {
+//    return (
+//        <React.Fragment>
+//            <Header />
+//            <BannerPage />
+//            <div className="wrapper">
+//                <GetInTouch />
+//                {devide}
+//                <Footer />
+//            </div>
+//        </React.Fragment>
+//    );
+//}
 
-function Lovestory() {
-    return (
-        <React.Fragment>
-            <Footer />
-        </React.Fragment>
-    );
-}
+//function Wedding() {
+//    return (
+//        <React.Fragment>
+//            <Header />
+//            <BannerPage />
+//            <div className="wrapper">
+//                <Description />
+//                <PortfolioTale />
+//                {devide}
+//                <Footer />
+//            </div>
+//        </React.Fragment>
+//    );
+//}
 
-function Fashion() {
-    return (
-        <React.Fragment>
-            <Footer />
-        </React.Fragment>
-    );
-}
+//function Lovestory() {
+//    return (
+//        <React.Fragment>
+//        <Header />
+//        <BannerPage />
+//        <div className="wrapper">
+//        <Description />
+//        <PortfolioTale />
+//        {devide}
+//        <Footer />
+//        </div>
+//        </React.Fragment>
+//    );
+//}
 
-function Family() {
-    return (
-        <React.Fragment>
-            <Footer />
-        </React.Fragment>
-    );
-}
+//function Fashion() {
+//    return (
+//        <React.Fragment>
+//        <Header />
+//        <BannerPage />
+//        <div className="wrapper">
+//        <Description />
+//        <PortfolioTale />
+//        {devide}
+//        <Footer />
+//        </div>
+//        </React.Fragment>
+//    );
+//}
+
+//function Family() {
+//    return (
+//        <React.Fragment>
+//        <Header />
+//        <BannerPage />
+//        <div className="wrapper">
+//        <Description />
+//        <PortfolioTale />
+//        {devide}
+//        <Footer />
+//        </div>
+//        </React.Fragment>
+//    );
+//}
+
+
 
 function App() {
 
     return (
-        //switch (state) {
-        //case 'info':
-        //    return <Info text={text} />;
-        //case 'warning':
-        //    return <Warning text={text} />;
-        //case 'error':
-        //    return <Error text={text} />;
-        //default:
-        //    return null;
-        //}
-        <BrowserRouter>
-            <Switch>
-                <Route exact path="/" component={Index} />
-                <Route path="/about" component={About} />
-                <Route path="/portfolio" component={Portfolio} />
-                <Route path="/contact" component={Contact} />
-                <Route path="/project1" component={Wedding} />
-                <Route path="/project2" component={Lovestory} />
-                <Route path="/project3" component={Fashion} />
-                <Route path="/project4" component={Family} />
-            </Switch>
-        </BrowserRouter>
+
+        <Routes />
 
     )
 }
-//<Route path="/" exact component={Index} />
-//<Route path="/about/" component={About} />
-//<Route path="/users/" component={Users} />
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

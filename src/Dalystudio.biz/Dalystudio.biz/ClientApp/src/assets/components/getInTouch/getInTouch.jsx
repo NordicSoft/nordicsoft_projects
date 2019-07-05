@@ -6,7 +6,7 @@ const captcha = [{id:1, name:"g-recaptcha-response-token", value:'' }, { id:2, n
 
 function InputCaptcha() {
     const captchaArr = [];
-    for (var k = 0; k < 3; k++) {
+    for (var k = 0; k < captcha.length; k++) {
         captchaArr.push(<input key={captcha[k].id} type="hidden" name={captcha[k].name} value={captcha[k].value} />);
     }
     return(captchaArr);
@@ -40,8 +40,39 @@ function GetForm() {
         );
 }
 
+function GetTouch(props) {
+    return (
+        <React.Fragment>
+        <h2 className={props.classF}>Get in touch</h2>
+            <div className={props.classS}>
+                I look forward to hearing from you and hope to be a part of your story. If you would like to enquire about my work or availability, please contact by filling out the blocks and I will reply you as soon as possible.
+                    </div>
+        </ React.Fragment>
+        );
+}
 
-function GetInTouch() {
+
+function GetInTouchContact() {
+    return (
+        <section className="module">
+            <div className="container">
+                <div className="row">
+                    <div className="col-sm-6 col-sm-offset-3">
+                        <GetTouch classF={"module-title align-center font-alt"} classS={"module-subtitle align-center font-inc"} />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-sm-6 col-sm-offset-3">
+                        <GetForm />
+                    <div id="contact-response" className="ajax-response font-alt"></div>
+                                </div>
+            </div>
+        </div>
+    </section>
+    );
+}
+
+function GetInTouchIndex() {
     return (
 
         <section className="module-small">
@@ -52,10 +83,7 @@ function GetInTouch() {
 
 
                     <div className="col-sm-6">
-                        <h2 className="module-title text-left font-alt">Get in touch</h2>
-                        <div className="module-subtitle text-left font-inc">
-                            I look forward to hearing from you and hope to be a part of your story. If you would like to enquire about my work, please contact me by filling out the blocks and I will reply you as soon as possible.
-                        </div>
+                        <GetTouch classF={"module-title text-left font-alt"} classS={"module-subtitle text-left font-inc"} />
                     </div>
 
                     <div className="col-sm-6">
@@ -74,6 +102,17 @@ function GetInTouch() {
 
 
                     );
-                }
-                
+}
+
+function GetInTouch() {
+    const getTouch=[];
+   
+    if (window.location.pathname == "/") {
+        getTouch.push( <GetInTouchIndex key="11" />) ;
+    } else {
+        getTouch.push(<GetInTouchContact key="12" />);
+    }
+        return(getTouch);
+}
+
 export default GetInTouch;
