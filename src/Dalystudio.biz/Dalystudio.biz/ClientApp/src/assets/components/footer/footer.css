@@ -36,3 +36,9 @@ Content boxes
 .content-box a:focus {
     color: #000;
 }
+
+@media(max-width:767px) {
+    .content-box a:hover {
+        color: #000;
+    }
+}
