@@ -2,6 +2,9 @@
 ﻿@using Microsoft.Extensions.Primitives
 @using Dalystudio.biz
 @using Dalystudio.biz.Extensions
+@using Dalystudio.biz.Services.GoogleRecaptcha
+@using Microsoft.Extensions.Options;
+@inject IOptions<ReCaptchaClass> RecaptchaOptions;
 @{
     bool isWebP = Context.IsWebP();
 
@@ -69,10 +72,10 @@
 
 
     <partial name="_Header" />
-<main>
-    <div id="root"></div>
-    @*@RenderBody()*@
-</main>
+    <main>
+        <div id="root" data-key="@RecaptchaOptions.Value.SiteKey"></div>
+        @*@RenderBody()*@
+    </main>
     <!-- Scroll-up -->
     <div class="scroll-up">
         <a href="#totop"><i class="icon-angle-double-up"></i></a>
@@ -115,18 +118,18 @@
 
     @RenderSection("Scripts", required: false)
     @*<script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function () {
-                navigator.serviceWorker.register('/dist/sw.js', { scope: '/' }).then(function (registration) {
-                    // Registration was successful
-                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                }, function (err) {
-                    // registration failed :(
-                    console.log('ServiceWorker registration failed: ', err);
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function () {
+                    navigator.serviceWorker.register('/dist/sw.js', { scope: '/' }).then(function (registration) {
+                        // Registration was successful
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    }, function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
                 });
-            });
-        }
-    </script>*@
+            }
+        </script>*@
 
 </body>
 </html>

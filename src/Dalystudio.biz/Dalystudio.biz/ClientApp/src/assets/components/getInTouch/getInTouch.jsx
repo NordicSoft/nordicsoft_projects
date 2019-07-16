@@ -2,6 +2,9 @@
 import React, { Component } from 'react'
 import "./getInTouch.css"
 
+import Contact from '../contact/contact';
+var root = document.querySelector("#root");
+var siteKey = root.getAttribute("data-key");
 const captcha = [{id:1, name:"g-recaptcha-response-token", value:'' }, { id:2, name:"g-recaptcha-action", value:'' }, { id:3, name:"g-recaptcha-site-key", value:"@RecaptchaOptions.Value.SiteKey" }];
 
 function InputCaptcha() {
@@ -16,8 +19,9 @@ function GetForm() {
     return (
         
         <form id="contact-form" role="form" asp-controller="Common" asp-action="SendFeedback" method="POST">
-            <InputCaptcha />
-
+            <input type="hidden" name="g-recaptcha-action" />
+            <input type="hidden" name="g-recaptcha-response-token" />
+            <input type="hidden" name="g-recaptcha-site-key" value={this.props.siteKey} />
             <div className="form-group">
                         <input type="text" tabIndex="0" id="cname" name="cname" className="form-control" placeholder="Name" required="" data-validation-required-message="Please enter your name." aria-invalid="false" aria-label="your name" />
                         <p className="help-block text-danger"></p>
@@ -63,7 +67,7 @@ function GetInTouchContact() {
                 </div>
                 <div className="row">
                     <div className="col-sm-6 col-sm-offset-3">
-                        <GetForm />
+                        <Contact siteKey={siteKey} />
                     <div id="contact-response" className="ajax-response font-alt"></div>
                                 </div>
             </div>
@@ -88,7 +92,7 @@ function GetInTouchIndex() {
 
                     <div className="col-sm-6">
 
-                        <GetForm />
+                        <Contact siteKey={siteKey} />
 
                                     <div id="contact-response" className="ajax-response font-alt"></div>
                                 </div>
