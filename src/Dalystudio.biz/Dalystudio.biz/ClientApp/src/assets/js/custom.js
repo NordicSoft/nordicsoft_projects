@@ -85,19 +85,22 @@
 			navbarAnimation(navbar, moduleHero, navHeight);
 		});
 
+	
 
-		/* ---------------------------------------------- /*
-		 * Full height module
-		/* ---------------------------------------------- */
+	    /* ---------------------------------------------- /*
+         * Full height module
+        /* ---------------------------------------------- */
 
-		function buildModuleHero(moduleHero) {
-			if (moduleHero.length > 0) {
-				if (moduleHero.hasClass('module-full-height')) {
-					moduleHero.height($(window).height());
-				} else {
-					moduleHero.height($(window).height() * 0.85);
-				}
-			}
+        function buildModuleHero(moduleHero) {
+
+          
+			//if (moduleHero.length > 0) {
+			//	if (moduleHero.hasClass('module-full-height')) {
+			//		moduleHero.height($(window).height());
+			//	} else {
+			//		moduleHero.height($(window).height() * 0.85);
+			//	}
+			//}
 		};
 
 		/* ---------------------------------------------- /*

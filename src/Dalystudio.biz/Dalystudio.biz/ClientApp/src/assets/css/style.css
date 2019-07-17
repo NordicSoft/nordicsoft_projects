@@ -1300,3 +1300,28 @@ nav.navbar-transparent li.dropdown.active > a {
 #works-grid {
     overflow: hidden;
 }
+
+.module-hero {
+    height: 100vh;
+}
+
+@media(max-width: 1199px) {
+    .module-hero {
+        height: 520px;
+    }
+}
+@media(max-width: 991px) {
+    .module-hero {
+        height: 480px;
+    }
+}
+@media(max-width: 767px) {
+    .module-hero {
+        height: 400px;
+    }
+}
+@media(max-width: 479px) {
+    .module-hero {
+        height: 345px;
+    }
+}
