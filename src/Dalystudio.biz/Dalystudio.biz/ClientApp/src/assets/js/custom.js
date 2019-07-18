@@ -91,13 +91,13 @@
 		/* ---------------------------------------------- */
 
 		function buildModuleHero(moduleHero) {
-			if (moduleHero.length > 0) {
-				if (moduleHero.hasClass('module-full-height')) {
-					moduleHero.height($(window).height());
-				} else {
-					moduleHero.height($(window).height() * 0.85);
-				}
-			}
+			//if (moduleHero.length > 0) {
+			//	if (moduleHero.hasClass('module-full-height')) {
+			//		moduleHero.height($(window).height());
+			//	} else {
+			//		moduleHero.height($(window).height() * 0.85);
+			//	}
+			//}
 		};
 
 		/* ---------------------------------------------- /*

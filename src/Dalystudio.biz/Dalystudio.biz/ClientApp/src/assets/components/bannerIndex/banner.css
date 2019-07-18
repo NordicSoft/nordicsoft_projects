@@ -1,12 +1,27 @@
-﻿/* ------------------------------------------------------------------
-Footer
-------------------------------------------------------------------- */
-
-.footer {
-    background: #f5f5f5;
-    padding: 20px 0;
+﻿.module-hero {
+    height: 100vh;
 }
 
-.copyright {
-    font-size: 14px;
+@media(max-width: 1199px) {
+    .module-hero {
+        height: 520px;
+    }
+}
+
+@media(max-width: 991px) {
+    .module-hero {
+        height: 480px;
+    }
+}
+
+@media(max-width: 767px) {
+    .module-hero {
+        height: 400px;
+    }
+}
+
+@media(max-width: 479px) {
+    .module-hero {
+        height: 345px;
+    }
 }
