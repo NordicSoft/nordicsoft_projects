@@ -73,6 +73,24 @@ function ListOfMenu(props) {
     return (<ul className="nav navbar-nav navbar-right" id="menu">{items}</ul>);
 }
 
+//function ListOfMenu() {
+//    return(
+//        <ul className="nav navbar-nav navbar-right" id="menu">
+//            <NavLink to="/">
+//                <span>Home</span>
+//            </NavLink>
+//            <NavLink to="/about">
+//                 <span>About</span>
+//            </NavLink>
+//            <NavLink to="/portfolio">
+//               <span>Portfolio</span>
+//            </NavLink>
+//            <NavLink to="/contactS">
+//                <span>Contact</span>
+//            </NavLink>
+//        </ul>
+//    );
+//}
 
 function Header() {
     return (

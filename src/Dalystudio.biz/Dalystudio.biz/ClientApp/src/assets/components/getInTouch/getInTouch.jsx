@@ -7,42 +7,6 @@ var root = document.querySelector("#root");
 var siteKey = root.getAttribute("data-key");
 const captcha = [{id:1, name:"g-recaptcha-response-token", value:'' }, { id:2, name:"g-recaptcha-action", value:'' }, { id:3, name:"g-recaptcha-site-key", value:"@RecaptchaOptions.Value.SiteKey" }];
 
-function InputCaptcha() {
-    const captchaArr = [];
-    for (var k = 0; k < captcha.length; k++) {
-        captchaArr.push(<input key={captcha[k].id} type="hidden" name={captcha[k].name} value={captcha[k].value} />);
-    }
-    return(captchaArr);
-}
-
-function GetForm() {
-    return (
-        
-        <form id="contact-form" role="form" asp-controller="Common" asp-action="SendFeedback" method="POST">
-            <input type="hidden" name="g-recaptcha-action" />
-            <input type="hidden" name="g-recaptcha-response-token" />
-            <input type="hidden" name="g-recaptcha-site-key" value={this.props.siteKey} />
-            <div className="form-group">
-                        <input type="text" tabIndex="0" id="cname" name="cname" className="form-control" placeholder="Name" required="" data-validation-required-message="Please enter your name." aria-invalid="false" aria-label="your name" />
-                        <p className="help-block text-danger"></p>
-                    </div>
-
-                <div className="form-group">
-                        <input type="email" tabIndex="0" id="cemail" name="cemail" className="form-control" placeholder="Your E-mail" required="" data-validation-required-message="Please enter your email address." aria-label="your email" />
-                        <p className="help-block text-danger"></p>
-                    </div>
-
-                <div className="form-group">
-                        <textarea className="form-control" tabIndex="0" id="cmessage" name="cmessage" rows="7" placeholder="Message" required="" data-validation-required-message="Please enter your message." aria-label="your message"></textarea>
-                        <p className="help-block text-danger"></p>
-                    </div>
-                <div className=" text-right">
-                        <button type="submit" className="btn btn-round btn-g" title="submit">Submit</button>
-                    </div>
-
-            </form>
-        );
-}
 
 function GetTouch(props) {
     return (

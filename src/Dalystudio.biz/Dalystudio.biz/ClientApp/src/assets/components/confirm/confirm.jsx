@@ -4,7 +4,7 @@ import "./confirm.css"
 class Confirm extends React.Component {
     render() {
         return (
-            <section className="modal">
+            <section className="modal-test">
                 <div className="modal-inner">
                     <div className="modal-body">
                         <div className="modal-content">
