@@ -4,7 +4,9 @@ import ReactDOM from 'react-dom';
 
 import { BrowserRouter, Route, Switch, withRouter } from "react-router-dom";
 import Routes from "./routes/routes";
+import "./vendor.css";
 import "./index.css";
+import "./fonts.css";
 
 
 

@@ -1,4 +1,6 @@
-﻿/* ------------------------------------------------------------------
+﻿
+
+/* ------------------------------------------------------------------
 Navbar
 ------------------------------------------------------------------- */
 
@@ -304,7 +306,7 @@ nav:not(.navbar-transparent) li.dropdown:hover .arrow i {
 }
 
 li.dropdown .arrow {
-    margin-left: -8px;
+    margin-left: 0;
     width: 30px;
 }
 
@@ -359,7 +361,7 @@ nav.navbar-transparent li.dropdown.active > a {
 
     li.dropdown a + div {
         float: right;
-        width: 40px;
+        width: 40px !important;
         padding-right: 0;
     }
 
@@ -375,6 +377,10 @@ nav.navbar-transparent li.dropdown.active > a {
     li.dropdown ul > li:last-child > a {
         border-bottom: 0 !important;
     }
+    .navbar-custom .navbar-nav > .dropdown > .dropdown-toggle {
+        padding-right: 28px !important;
+        box-sizing: border-box;
+    }
 }
 
 
@@ -382,4 +388,8 @@ nav.navbar-transparent li.dropdown.active > a {
     li.dropdown a {
         width: 85%;
     }
+}
+.hs-title-size-4 {
+    letter-spacing: .2em;
+    font-size: 36px;
 }

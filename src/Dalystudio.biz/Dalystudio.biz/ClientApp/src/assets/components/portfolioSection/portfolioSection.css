@@ -28,6 +28,12 @@ Portfolio
     color: #000;
 }
 
+@media(max-width:768px) {
+    .filter {
+        margin: 10px 0 10px;
+    }
+}
+
 
 /* Portfolio grid */
 
