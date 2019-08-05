@@ -25,12 +25,12 @@ module.exports = (env, options) => {
     
         main_jquery: 
             "script-loader!./ClientApp/src/assets/vendor/jquery-2.1.3.js",
-        main_bootstrap: [
-            "script-loader!./ClientApp/src/assets/vendor/bootstrap/js/bootstrap.js",
-            "script-loader!./ClientApp/src/assets/vendor/jqBootstrapValidation.js"
-        ],
+        //main_bootstrap: [
+        //  //  "script-loader!./ClientApp/src/assets/vendor/bootstrap/js/bootstrap.js",
+        //   // "script-loader!./ClientApp/src/assets/vendor/jqBootstrapValidation.js"
+        //],
       vendor_src: [
-        "script-loader!./ClientApp/src/assets/vendor/jquery.confirm.js",
+       // "script-loader!./ClientApp/src/assets/vendor/jquery.confirm.js",
         "script-loader!./ClientApp/src/assets/vendor/appear.js",
         "script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.js",
        ],
