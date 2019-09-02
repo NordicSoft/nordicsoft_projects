@@ -51,15 +51,9 @@ export default class Contact extends React.Component {
 
         submitButton.disabled = true;
 
-        grecaptcha.execute(siteKeyValue, {
-            action: 'contact'
-        }).then(function (token) {
-            siteToken.value = token;
-            siteAction.value = "contact";
-        }).then(function () {
-            var formatData = new FormData(form);
-            return self.request({ method: "POST", url: "/api/send-feedback", body: formatData });
-        }).then(function (resp) {
+        var formatData = new FormData(form);
+        return self.request({ method: "POST", url: "/api/send-feedback", body: formatData })
+            .then(function (resp) {
             resp = JSON.parse(resp);
             (resp.success === true)
                 ? self.message = "Your message was successfully sent. We will write your back soon!"
