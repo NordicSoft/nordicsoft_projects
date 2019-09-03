@@ -39,37 +39,6 @@ export default class Contact extends React.Component {
         });
     };
 
-    componentDidMount() {
-        var div = document.createElement('div');
-        div.setAttribute('id', 'recaptcha-badge');
-        div.setAttribute('class', 'lazyload');
-        div.setAttribute('data-site-key', this.state.siteKey);
-        document.body.appendChild(div);
-
-        document.addEventListener('lazybeforeunveil',
-            function (e) {
-                var siteKey = e.target.getAttribute('data-site-key');
-                if (siteKey) {
-                    var script = document.createElement('script');
-
-                    script.async = true;
-                    script.src = 'https://www.google.com/recaptcha/api.js?render=explicit&onload=onRecaptchaLoadCallback';
-                    document.body.appendChild(script);
-                }
-            });
-
-        window.onRecaptchaLoadCallback = function () {
-            var siteKey = document.getElementById("recaptcha-badge").getAttribute('data-site-key');
-
-            var clientId = grecaptcha.render('recaptcha-badge',
-                {
-                    'sitekey': siteKey,
-                    'size': 'invisible'
-                });
-            document.getElementById("recaptcha-badge").setAttribute('data-widget-id', clientId);
-        }
-    }
-
     handleSubmit(event) {
         var self = this;
         event.preventDefault();
@@ -80,18 +49,11 @@ export default class Contact extends React.Component {
         var submitButton = document.querySelector("input[name=submit]");
         var siteKeyValue = siteKey.value;
 
-        var widgetId = document.getElementById("recaptcha-badge").getAttribute('data-widget-id');
         submitButton.disabled = true;
 
-        window.grecaptcha.execute(widgetId, {
-            action: 'contact'
-        }).then(function (token) {
-            siteToken.value = token;
-            siteAction.value = "contact";
-        }).then(function () {
-            var formatData = new FormData(form);
-            return self.request({ method: "POST", url: "/api/send-feedback", body: formatData });
-        }).then(function (resp) {
+        var formatData = new FormData(form);
+        return self.request({ method: "POST", url: "/api/send-feedback", body: formatData })
+            .then(function (resp) {
             resp = JSON.parse(resp);
             (resp.success === true)
                 ? self.message = "Your message was successfully sent. We will write your back soon!"

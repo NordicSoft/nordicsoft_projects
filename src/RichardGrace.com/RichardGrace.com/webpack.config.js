@@ -6,7 +6,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const CompressionPlugin = require('compression-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = (env, options) => {
     var devMode;
@@ -40,24 +39,27 @@ module.exports = (env, options) => {
                 }),
                 new OptimizeCSSAssetsPlugin({})
             ],
-             runtimeChunk: 'single',
             splitChunks: {
-                chunks: 'all',
-                maxInitialRequests: Infinity,
-                minSize: 0,
+                chunks: 'async',
                 cacheGroups: {
-                    vendor: {
-                        test: /[\\/]node_modules[\\/]/,
-                        name(module) {
-                            // get the name. E.g. node_modules/packageName/not/this/part.js
-                            // or node_modules/packageName
-                            const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
-
-                            // npm package names are URL-safe, but some servers don't like @ symbols
-                            return `npm.${packageName.replace('@', '')}`;
-                        },
+                    vendor_src: {
+                        // chunks: 'all',
+                        name: 'vendor_src',
+                        test: /[\\/]vendor[\\/].*.js/,
+                        enforce: true
                     },
-                },
+                    vendor_styles: {
+                        name: 'vendor_styles',
+                        test: /[\\/]vendor[\\/].*.css/,
+                        // chunks: 'all',
+                        enforce: true
+                    },
+                    vendor_npm: {
+                        test: /[\\/]node_modules[\\/]/,
+                        name: 'vendor_npm',
+                        // chunks: 'all'
+                    }
+                }
             },
         },
         devServer: {
@@ -78,10 +80,7 @@ module.exports = (env, options) => {
                 "./ClientApp/src/assets/js/fonts-load.js",
                 "./ClientApp/src/assets/js/critical-foft-preload-fallback-optional.js",
                 "./ClientApp/src/assets/js/critical-css.js",
-                "./ClientApp/src/assets/js/sw.js"]),
-                //new HTMLWebpackPlugin({
-                //  template: path.resolve(__dirname, 'index.html')
-                //}),
+                "./ClientApp/src/assets/js/sw.js"])
         ],
         module: {
             rules: [
