@@ -92,7 +92,11 @@ namespace RichardGrace.com
                                                        "</dist/fonts/dancing-script-subset.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
                                                        "</dist/react_js.js>; as=script; rel=preload, " +
                                                        "</dist/main.js>; as=script; rel=preload, " +
-                                                       "</dist/fonts-load.js>; as=script; rel=preload";
+                                                       "</dist/fonts-load.js>; as=script; rel=preload," +
+                                                       "</dist/fonts/open-sans-regular.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
+                                                       "</dist/fonts/open-sans-bold.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
+                                                       "</dist/fonts/dancing-script-regular.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
+                                                       "</dist/fonts/dancing-script-bold.woff2>; as=font; crossorigin=anonymus; rel=preload";
                     return next.Invoke();
                 });
             }
