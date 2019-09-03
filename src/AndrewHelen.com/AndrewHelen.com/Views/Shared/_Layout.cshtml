@@ -14,7 +14,7 @@
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    @*
     <environment include="Production">
         @if (Context.Request.Host.Value == Settings.SiteNameDomain.ToLower())
         {
@@ -30,7 +30,7 @@
             </script>
         }
     </environment>
-
+    *@
     <title>Wedding | Andrew & Helen</title>
 
     @if (!string.IsNullOrEmpty(Settings.FbAppId))

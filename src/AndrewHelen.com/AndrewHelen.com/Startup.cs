@@ -81,6 +81,23 @@ namespace AndrewHelen.com
             {
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
+                app.Use((context, next) =>
+                {
+                    //HTTP\2 push feeature
+                    context.Response.Headers["Link"] = "</dist/vendor_styles.css>; as=style; rel=preload, " +
+                                                       "</dist/custom_styles.css>; as=style; rel=preload, " +
+                                                       "</dist/fonts/montserrat-medium-subset.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
+                                                       "</dist/fonts/ptserif-italic-subset.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
+                                                       "</dist/fonts/montserrat-medium.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
+                                                       "</dist/fonts/montserrat-semibold.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
+                                                       "</dist/fonts/ptserif-italic.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
+                                                       "</dist/jquery_src.js>; as=script; rel=preload, " +
+                                                       "</dist/bootstrap_src.js>; as=script; rel=preload, " +
+                                                       "</dist/plugins_src.js>; as=script; rel=preload, " +
+                                                       "</dist/main.js>; as=script; rel=preload";
+                    return next.Invoke();
+                });
+
             }
 
             app.UseHttpsRedirection();

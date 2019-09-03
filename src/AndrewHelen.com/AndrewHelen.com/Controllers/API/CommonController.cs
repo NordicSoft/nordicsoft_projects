@@ -28,12 +28,12 @@ namespace AndrewHelen.com.Controllers.API
             var feedbackMessage =
                 $"Events: {events} \n Guests: {guests} \n Additional information: {additionalInformation}";
 
-            bool isCaptchaValid = await googleRecaptcha.IsCaptchaValid(encodedResponse, action);
+            //bool isCaptchaValid = await googleRecaptcha.IsCaptchaValid(encodedResponse, action);
 
-            if (!isCaptchaValid && env.IsProduction())
-            {
-                return JObject.FromObject(new { success = false });
-            }
+            //if (!isCaptchaValid && env.IsProduction())
+            //{
+            //   return JObject.FromObject(new { success = false });
+            //}
 
             var textHtml = $"<p>{Settings.SiteNameDomain}: Feedback rom customer with name: <strong>{name}</strong></p><br>" +
                            $"<p>and e-mail: <strong>{email}</strong>: </p><br>" +

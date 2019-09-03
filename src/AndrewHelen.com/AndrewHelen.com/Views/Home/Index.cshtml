@@ -26,7 +26,6 @@
 }
 
 @section Scripts{
-    <script src='https://www.google.com/recaptcha/api.js?render=@RecaptchaOptions.Value.SiteKey' defer></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
@@ -245,7 +244,7 @@
                             <div class="text-center">
                                 <h4 class="font-alt2 mb-0 text-base-color title-small">The Ceremony</h4>
                                 <span class="d-block text-base">(St. Monica Catholic Church)</span>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167963.43104521462!2d-118.43184446763553!3d34.0291749403036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc312c6d79b056c08!2sSt.+Monica+Catholic+Church!5e0!3m2!1sru!2sua!4v1552319452971" width="100%" height="194" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                <iframe class="lazyload" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167963.43104521462!2d-118.43184446763553!3d34.0291749403036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc312c6d79b056c08!2sSt.+Monica+Catholic+Church!5e0!3m2!1sru!2sua!4v1552319452971" width="100%" height="194" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </div>
 
                             <div class="pr-lg-3">
@@ -257,7 +256,7 @@
                             <div class="text-center">
                                 <h4 class="font-alt2 mb-0 text-base-color title-small">The Reception</h4>
                                 <span class="d-block text-base">(The Victorian event venue)</span>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d954514.3627147109!2d-118.3858509842801!3d33.59782462942141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3670a3510fff9e9!2sThe+Victorian!5e0!3m2!1sru!2sua!4v1552319493499" width="100%" height="194" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                <iframe class="lazyload" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d954514.3627147109!2d-118.3858509842801!3d33.59782462942141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3670a3510fff9e9!2sThe+Victorian!5e0!3m2!1sru!2sua!4v1552319493499" width="100%" height="194" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </div>
 
                             <div class="pr-lg-3">
@@ -301,7 +300,7 @@
 
                 <div class="carousel-cell align-items-center justify-content-center no-gutters row w-100">
                     <div class="col-md-8 col-lg-5">
-                        <img data-flickity-lazyload="/img/love-story/love-story-2.jpg" alt="Love story" class="lazyload img-fluid"/>
+                        <img data-flickity-lazyload="/img/love-story/love-story-2.jpg" alt="Love story" class="lazyload img-fluid" />
                     </div>
 
                     <div class="col-lg-7 pl-lg-5 pt-5 pt-lg-0 text-center text-lg-left">
@@ -521,16 +520,11 @@
     <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-md-8 col-lg-5">
-                <img data-src="/img/love-story/love-story-4.jpg" alt="" class="lazyload img-fluid"/>
+                <img data-src="/img/love-story/love-story-4.jpg" alt="" class="lazyload img-fluid" />
             </div>
 
             <div class="col-lg-7 pl-lg-5 pt-5 pt-lg-0">
                 <form id="contact-form" asp-controller="Common" asp-action="SendFeedback" method="POST">
-
-                    <input type="hidden" name="g-recaptcha-action">
-                    <input type="hidden" name="g-recaptcha-response-token">
-                    <input type="hidden" name="g-recaptcha-site-key" value="@RecaptchaOptions.Value.SiteKey">
-
                     <div class="row">
                         <div class="col-12 text-center">
                             <span class="d-block font-alt2 text-extra-large text-gray-700">Come and celebrate our day with us.</span>
