@@ -82,6 +82,19 @@ namespace RichardGrace.com
             {
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
+
+                // Add header:
+                app.Use((context, next) =>
+                {
+                    //HTTP\2 push feeature
+                    context.Response.Headers["Link"] = "</dist/custom_styles.css>; as=style; rel=preload, " +
+                                                       "</dist/fonts/open-sans-subset.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
+                                                       "</dist/fonts/dancing-script-subset.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
+                                                       "</dist/react_js.js>; as=script; rel=preload, " +
+                                                       "</dist/main.js>; as=script; rel=preload, " +
+                                                       "</dist/fonts-load.js>; as=script; rel=preload";
+                    return next.Invoke();
+                });
             }
 
             app.UseHttpsRedirection();

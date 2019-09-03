@@ -7,7 +7,7 @@
     } else if ("fonts" in document) {
         var primarySubset = "1em OpenSansSubset";
         var secondarySubset = "1em DancingScriptSubset";
-        var fontsArray = ["400 1em Dancing Script", "700 1em Dancing Script", "300 1em Open Sans", "400 1em Open Sans", "700 1em Open Sans"];
+        var fontsArray = ["400 1em Dancing Script", "700 1em Dancing Script", "400 1em Open Sans", "700 1em Open Sans"];
         document.fonts.load(primarySubset).then(function () {
             document.fonts.load(secondarySubset).then(function () {
                 document.documentElement.className += " fonts-loaded-1";
