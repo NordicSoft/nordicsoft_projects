@@ -182,7 +182,7 @@
 
         /**/
         $('.gallery-img a').each(function () {
-            var href = $(this).attr('aria-link');
+            var href = $(this).attr('aria-label');
             var currentHref;
             $('html').hasClass("webp") ? currentHref = '/img/gallery/gallery-' + href + '.webp' : currentHref = '/img/gallery/gallery-' + href + '.jpg';
             $(this).attr('href', currentHref);
