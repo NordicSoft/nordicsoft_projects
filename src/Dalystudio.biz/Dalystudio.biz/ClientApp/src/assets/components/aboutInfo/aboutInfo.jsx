@@ -1,33 +1,79 @@
 ﻿"use strict";
 import React, { Component } from 'react'
 import "./aboutInfo.css"
+import { Line, Circle } from 'rc-progress';
+
+//class OtherComponent extends React.Component {
+//    render() {
+//        return (
+//            <div>
+//                <Progress completed={75} />
+//            </div>
+//        )
+//    }
+//}
+
+class ProgressBarExample extends React.Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            percentage: 0
+        }
+       
+
+        this.val = props.value;
+
+        this.nextStep = this.nextStep.bind(this)
+    }
+
+    nextStep() {
+        return
+        this.setState(prevState => ({ percentage: this.val }))
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.nextStep);
+    }
+    componentWillUnmount() {
+
+    }
+
+    render() {
+        return (
+            <div>
+                    <h5 className="progress-title font-inc">Adobe Lightroom</h5>
+                    <ProgressBar percentage={60} />
+                    <h5 className="progress-title font-inc">Adobe Photoshop</h5>
+                    <ProgressBar percentage={80} />
+                    <h5 className="progress-title font-inc">Skylum Luminar</h5>
+                    <ProgressBar percentage={50} />
+                    <h5 className="progress-title font-inc">Gimp</h5>
+                    <ProgressBar percentage={90} />                            
+            </div>
+        )
+    }
+}
+
+const ProgressBar = (props) => {
+    return (
+        <div className="progress-bar">
+            <Filler percentage={props.percentage} />
+            
+        </div>
+    )
+}
+
+const Filler = (props) => {
+    return <div className="filler" style={{ width: `${props.percentage}%` }}> <span className="font-inc" >{props.percentage}</span></div>
+}
+
 
 const socials = [
     { id: 1, linkUrl: '#', ariaLabel: 'Facebook', title: 'facebook', spanClass: 'icon-facebook' },
     { id: 2, linkUrl: '#', ariaLabel: 'Twitter', title: 'twitter', spanClass: 'icon-twitter' },
     { id: 3, linkUrl: '#', ariaLabel: 'Google Plus', title: 'google plus', spanClass: 'icon-googleplus' }
 ];
-
-const progressBar = [
-    { id: 11, head: 'Adobe Lightroom', value: '60' },
-    { id: 12, head: 'Adobe Photoshop', value: '80' },
-    { id: 13, head: 'Skylum Luminar', value: '50' },
-    { id: 14, head: 'Gimp', value: '90' }
-];
-
-const progresses = [];
-
-for (var t = 0; t < progressBar.length; t++) {
-    progresses.push(
-        <div key={progressBar[t].id}> <h5 className="progress-title font-inc">{progressBar[t].head}</h5>
-            <div className="progress">
-                <div className="progress-bar pb-dark" aria-valuenow={progressBar[t].value} role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                    <span className="font-inc"></span>
-                </div>
-            </div>
-        </div>
-    );
-}
 
 function SocialItem(props) {
     const social = props;
@@ -43,6 +89,7 @@ function SocialList(props) {
 }
 
 function AboutInfo() {
+    
     return(
         <section className="module">
             <div className="container">
@@ -63,8 +110,9 @@ function AboutInfo() {
 
                     </div>
                     <div className="col-sm-6">
-
-                        {progresses}
+                        <div>
+                            <ProgressBarExample />
+                        </div>
 
                     </div>
 

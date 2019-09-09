@@ -1,98 +1,92 @@
 ﻿"use strict";
 import React, { Component } from 'react'
 import { BrowserRouter, Link } from 'react-router-dom'
+import PropTypes from 'prop-types';
 import "./header.css"
 
+//import { connect } from 'react-redux'
 
+class Dropdown extends Component {
+    constructor(props) {
+        super(props)
 
-
-const mainListMenu = [
-    { id: 11, linkUrl: '/', name: 'Home' },
-    { id: 12, linkUrl: '/about', name: 'About' },
-    { id: 13, linkUrl: '/portfolio', name: 'Portfolio', down: true},
-    { id: 14, linkUrl: '/contact', name: 'Contact' }
-];
-
-const dropItems = [
-    { id: 21, linkUrl: '/project1', name: 'Wedding' },
-    { id: 22, linkUrl: '/project2', name: 'Love Story' },
-    { id: 23, linkUrl: '/project3', name: 'Fashion' },
-    { id: 24, linkUrl: '/project4', name: 'Family' }
-];
-
-const iconMenu = [];
-
-for (var j = 0; j < 3; j++) {
-    iconMenu.push(<span key={j} className="icon-bar"></span>);
-}
-
-
-var ourItem;
-
-function InnerListMenu(props) {
-
-    return (<li >
-                <Link to={props.item.linkUrl} title={props.item.name}>{props.item.name}</Link>
-            </li >);
-}
-
-
-function DropMenu(props) {
-    const dropItems = props.dropItems;
-    const itemsForMenu = dropItems.map((item) => {
-        return <InnerListMenu key={item.id} item={item} />;
-    });
-
-    return (<ul className="dropdown-menu" role="menu">{itemsForMenu}</ul>);
-}
-
-function MainMenuItem(props) {
-    const itemMain = props;
-    if (itemMain.item.down) {
-        ourItem = (
-            <li className="dropdown" id="desktop"> <Link to={itemMain.item.linkUrl} title={itemMain.item.name}>{itemMain.item.name}</Link>
-                <div className="dropdown-toggle" data-toggle="dropdown">
-                    <span className="arrow"><i className="icon-angle-down"></i></span>
-                </div>
-
-                <DropMenu dropItems={dropItems} />
-                
-            </li>
-        );
-    } else {
-        ourItem = (<li> <Link to={itemMain.item.linkUrl} title={itemMain.item.name}>{itemMain.item.name}</Link> </li>);
+        this.toggleClass = this.toggleClass.bind(this);
+        this.state = {
+            activeIndex: 0
+        }
     }
-    return ourItem;
+
+    toggleClass(index, e) {
+
+        this.setState({ activeIndex: index });
+    };
+
+    render() {
+        return (
+                    <ul className="dropdown-menu" role="menu">
+                        <li className={this.state.activeIndex == 4 ? 'active' : null} onClick={this.toggleClass.bind(this, 4)}>
+                            <Link to='/project1' title='Wedding'>Wedding</Link>
+                        </li >
+                        <li className={this.state.activeIndex == 5 ? 'active' : null} onClick={this.toggleClass.bind(this, 5)}>
+                            <Link to='/project2' title='Love Story'>Love Story</Link>
+                        </li >
+                        <li className={this.state.activeIndex == 6 ? 'active' : null} onClick={this.toggleClass.bind(this, 6)}>
+                            <Link to='/project3' title='Fashion'>Fashion</Link>
+                        </li >
+                        <li className={this.state.activeIndex == 7 ? 'active' : null} onClick={this.toggleClass.bind(this, 7)}>
+                            <Link to='/project4' title='Family'>Family</Link>
+                        </li >
+                    </ul>
+        )
+    }
+
 }
 
-function ListOfMenu(props) {
-    const menuMainItems = props.listitems;
-    const items = menuMainItems.map((item) => {
-        return <MainMenuItem key={item.id} item={item} />;
-    });
-    return (<ul className="nav navbar-nav navbar-right" id="menu">{items}</ul>);
-}
 
-//function ListOfMenu() {
-//    return(
-//        <ul className="nav navbar-nav navbar-right" id="menu">
-//            <NavLink to="/">
-//                <span>Home</span>
-//            </NavLink>
-//            <NavLink to="/about">
-//                 <span>About</span>
-//            </NavLink>
-//            <NavLink to="/portfolio">
-//               <span>Portfolio</span>
-//            </NavLink>
-//            <NavLink to="/contactS">
-//                <span>Contact</span>
-//            </NavLink>
-//        </ul>
-//    );
-//}
+class Navbar extends Component {
+    constructor(props) {
+        super(props)
+
+        this.toggleClass = this.toggleClass.bind(this);
+        this.state = {
+            activeIndex: 0
+        }
+    }
+
+    toggleClass(index, e) {
+
+        this.setState({ activeIndex: index });
+    };
+
+    render() {
+        return (
+          
+                    <ul className="nav navbar-nav navbar-right" id="menu">
+                        {this.renderSidebarMenuItems}
+                        <li className={this.state.activeIndex == 0 ? 'active' : null} onClick={this.toggleClass.bind(this, 0)}><Link to='/' title='Home'>Home</Link></li>
+                        <li className={this.state.activeIndex == 1 ? 'active' : null} onClick={this.toggleClass.bind(this, 1)}><Link to='/about' title='About'>About</Link></li>
+                        <li className={this.state.activeIndex == 2 ? 'active dropdown' : 'dropdown'} onClick={this.toggleClass.bind(this, 2)} id="desktop"><Link to='/portfolio' title='Portfolio'>Portfolio</Link>
+                            <div className="dropdown-toggle" data-toggle="dropdown">
+                   <span className="arrow"><i className="icon-angle-down"></i></span>
+               </div>
+                    <Dropdown />
+                            </li>
+                        <li className={this.state.activeIndex == 3 ? 'active' : null} onClick={this.toggleClass.bind(this, 3)}><Link to='/contact' title='Contact'>Contact</Link></li>
+                    </ul>
+               
+        )
+    }
+
+}
 
 function Header() {
+
+    const iconMenu = [];
+
+    for (var j = 0; j < 3; j++) {
+        iconMenu.push(<span key={j} className="icon-bar"></span>);
+    }
+
     return (
         <nav className="navbar navbar-custom navbar-transparent navbar-fixed-top" role="navigation">
 
@@ -107,7 +101,7 @@ function Header() {
                 </div>
 
                 <div className="collapse navbar-collapse" id="custom-collapse">
-                    <ListOfMenu listitems={mainListMenu} />
+                    <Navbar  />
                  
         </div >
 

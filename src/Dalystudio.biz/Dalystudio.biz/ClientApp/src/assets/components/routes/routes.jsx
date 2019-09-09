@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import Footer from "../footer/footer";
 import AboutSection from "../aboutSection/aboutSection";
@@ -130,22 +130,52 @@ function Family() {
 }
 
 export default function Routes() {
-    return(<div >
-               <BrowserRouter>
-                   <div>
-                       <Header/>
+    return (<div >
 
-                       <Switch>
-                           <Route exact path="/" component={Index}/>
-                           <Route path="/about" component={About}/>
-                           <Route path="/portfolio" component={Portfolio}/>
-                           <Route path="/contact" component={Contact}/>
-                           <Route path="/project1" component={Wedding}/>
-                           <Route path="/project2" component={Lovestory}/>
-                           <Route path="/project3" component={Fashion}/>
-                           <Route path="/project4" component={Family}/>
-                       </Switch>
-                   </div>
-               </BrowserRouter>
+                <Router>
+                    <div>
+                        
+                <Header />
+                        <Route path="/" exact component={Index} />
+                        <Route path="/about/" component={About} />
+                        <Route path="/portfolio/" component={Portfolio} />
+                        <Route path="/contact/" component={Contact} />
+                        <Route path="/project1/" component={Wedding}/>
+                        <Route path="/project2/" component={Lovestory}/>
+                        <Route path="/project3/" component={Fashion}/>
+                        <Route path="/project4/" component={Family}/>
+                    </div>
+                </Router>
+              
            </div >);
 }
+//<nav>
+//    <ul>
+//        <li>
+//            <Link to="/">Home</Link>
+//        </li>
+//        <li>
+//            <Link to="/about/">About</Link>
+//        </li>
+//        <li>
+//            <Link to="/portfolio/">Users</Link>
+//        </li>
+//    </ul>
+//</nav>
+
+//<BrowserRouter>
+//    <div>
+//        <Header/>
+
+//        <Switch>
+//            <Route exact path="/" component={Index}/>
+//            <Route path="/about" component={About}/>
+//            <Route path="/portfolio" component={Portfolio}/>
+//            <Route path="/contact" component={Contact}/>
+//            <Route path="/project1" component={Wedding}/>
+//            <Route path="/project2" component={Lovestory}/>
+//            <Route path="/project3" component={Fashion}/>
+//            <Route path="/project4" component={Family}/>
+//        </Switch>
+//    </div>
+//</BrowserRouter>

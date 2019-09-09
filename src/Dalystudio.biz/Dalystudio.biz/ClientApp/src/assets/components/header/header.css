@@ -383,7 +383,6 @@ nav.navbar-transparent li.dropdown.active > a {
     }
 }
 
-
 @media(max-width:479px) {
     li.dropdown a {
         width: 85%;
@@ -392,4 +391,10 @@ nav.navbar-transparent li.dropdown.active > a {
 .hs-title-size-4 {
     letter-spacing: .2em;
     font-size: 36px;
+}
+.navbar-transparent .nav li.active {
+    color:#FFF;
+}
+.navbar-transparent .nav li.dropdown.active:after {
+    width: calc(100% - 45px);
 }

@@ -36,24 +36,7 @@ const family = [
     { id: 6, linkUrl: "../img/family/5.jpg", title: "Family 6", srcset: "../img/family/5.webp" }
 ];
 
-var page;
 
-switch (window.location.pathname) {
-    case '/project1':
-        page = wedding;
-        break;
-    case '/project2':
-        page = lovestory;
-        break;
-    case '/project3':
-        page = fashion;
-        break;
-    case '/project4':
-        page = family;
-        break;
-    default:
-        break;
-}
 
 //<picture>
 //    <source type="image/webp" data-srcset="../img/wedding/cover.webp">
@@ -103,6 +86,24 @@ function PortfolioTaleTemplate(props) {
             }
 
 function PortfolioTale() {
+    var page;
+
+    switch (window.location.pathname) {
+        case '/project1':
+            page = wedding;
+            break;
+        case '/project2':
+            page = lovestory;
+            break;
+        case '/project3':
+            page = fashion;
+            break;
+        case '/project4':
+            page = family;
+            break;
+        default:
+            break;
+    }
     return (
         <section className="module-small p-t-20 p-b-0 p-t-sm-0">
 

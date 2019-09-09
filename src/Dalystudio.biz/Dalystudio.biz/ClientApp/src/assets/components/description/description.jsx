@@ -7,24 +7,7 @@ const lovestory = { p1: 'May ended well with a trip away to photograph Amy and E
 const fashion = { p1: 'Christine L. Smith is a young fashion designer and I was honored to take photos of her new designs for her personal portfolio. When I saw designs for the first time, I was impressed by the color combination! I couldn\'t even imagine that with only two colors one can create such a stunning stylish looks.', p2: 'The shoot took place at the customer\'s location - Christine\'s studio. Package included 4 hour photoshoot using special equipment: beauty dishes, giant umbrellas, octabanks, strip soft boxes, snoots for creating different interesting mods, and fashion retouching of 100 photos.', items: [{ id: 1, head: 'Customer: ', text: 'Christine L. Smith' }, { id: 2, head: 'Date: ', text: '24.04.2017' }, { id: 3, head: 'Price: ', text: '$940' }] };
 const family = {p1: 'It was a very MERRY session! We all love the tradition of taking pictures during Christmas to send out on cards. Petersons is one of those families, who do it every year! So cute and adorable...my heart melted every time I clicked my camera. It was indeed a Christmas magic! ', p2: 'The shoot took place at the studio and included 2 hours photography, editing of 42 photos, and 30 printed photo cards. We started with some Christmas tree decorating and present opening photos, then I took some pics of kids playing under the Christmas tree. And, of course, warm and cozy photos of the whole family hugging, playing, and interacting with each other. Isn\'t it a perfect Christmas story ?', items: [{ id: 1, head: 'Customer: ', text: 'Peterson Family' }, { id: 2, head: 'Date: ', text: '11.12.2018' }, { id: 3, head: 'Price: ', text: '$640' }] };
 
-var page;
 
-switch (window.location.pathname) {
-    case '/project1':
-        page = wedding;
-        break;
-    case '/project2':
-        page = lovestory;
-        break;
-    case '/project3':
-        page = fashion;
-        break;
-    case '/project4':
-        page = family;
-        break;
-    default:
-        break;
-}
 
 function DescriptItem(props) {
 
@@ -62,6 +45,24 @@ function DescriptionTemplate(props) {
 }
 
 function Description() {
+    var page;
+
+    switch (window.location.pathname) {
+        case '/project1':
+            page = wedding;
+            break;
+        case '/project2':
+            page = lovestory;
+            break;
+        case '/project3':
+            page = fashion;
+            break;
+        case '/project4':
+            page = family;
+            break;
+        default:
+            break;
+    }
     return (
         <DescriptionTemplate page={page}/>
     );
