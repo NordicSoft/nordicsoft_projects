@@ -1,43 +1,57 @@
 (function($){
 
 
-    $("#contact-form").on('submit',
-        function (e) {
-            e.preventDefault();
-            var $form = $(this);
-            var siteKey = $("input[name=g-recaptcha-site-key]", $form).val();
-            $("button[type=submit]", $form).prop("disabled", true);
+    $("#contact-form").on('submit', function (e) {
+        e.preventDefault();
+        var $form = $(this);
 
-            grecaptcha.execute(siteKey, {
-                action: 'contact'
-            }).then(function (token) {
+            //var siteKey = $("input[name=g-recaptcha-site-key]", $form).val();
+            //$("button[type=submit]", $form).prop("disabled", true);
 
-                $("input[name=g-recaptcha-response-token]", $form).val(token);
-                $("input[name=g-recaptcha-action]", $form).val("contact");
-            }).then(function () {
-                var data = $form.serialize();
-                var url = $form.prop("action");
-                return $.post(url, data).fail(function (e) { console.log(e) });
+            //grecaptcha.execute(siteKey, {
+            //    action: 'contact'
+            //}).then(function (token) {
 
-            }).then(function (resp) {
+            //    $("input[name=g-recaptcha-response-token]", $form).val(token);
+            //    $("input[name=g-recaptcha-action]", $form).val("contact");
+            //}).then(function () {
+            //    var data = $form.serialize();
+            //    var url = $form.prop("action");
+            //    return $.post(url, data).fail(function (e) { console.log(e) });
 
-                $("button[type=submit]", $form).prop("disabled", false);
+            //}).then(function (resp) {
 
-                resp.success == true
-                        ? $.alert({
-                            content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "", backgroundDismiss: true, 
-                            onOpen: function () { $('body').addClass('overflow-y') },
-                            onClose: function () { $('body').removeClass('overflow-y') }
-                        })
-                        : $.alert({
-                            content: "Sorry, we couldn't send your message. Try later!", theme: "my-theme", title: "", backgroundDismiss: true, 
-                            onOpen: function () { $('body').addClass('overflow-y') },
-                            onClose: function () { $('body').removeClass('overflow-y') } });
+            //    $("button[type=submit]", $form).prop("disabled", false);
 
-                $form.trigger("reset");
+            //    resp.success == true
+            //            ? $.alert({
+            //                content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "", backgroundDismiss: true, 
+            //                onOpen: function () { $('body').addClass('overflow-y') },
+            //                onClose: function () { $('body').removeClass('overflow-y') }
+            //            })
+            //            : $.alert({
+            //                content: "Sorry, we couldn't send your message. Try later!", theme: "my-theme", title: "", backgroundDismiss: true, 
+            //                onOpen: function () { $('body').addClass('overflow-y') },
+            //                onClose: function () { $('body').removeClass('overflow-y') } });
+
+            //    $form.trigger("reset");
                
-                });
-        });
+            //    });
+
+        var data = $form.serialize();
+        var url = $form.prop("action");
+        return $.post(url, data).catch(function (e) {
+                console.log(e);
+            }).then(function (resp) {
+                $("button[type=submit]", $form).prop("disabled", false);
+                resp.success === true
+                    ? $.alert({ content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "" })
+                    : $.alert({ content: "Sorry, we couldn't send your message. Try later!", theme: "my-theme", title: "" });
+                $form.trigger("reset");
+            });
+
+    });
+
 
 
 

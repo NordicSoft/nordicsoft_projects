@@ -105,9 +105,9 @@
 
                     <form id="contact-form" role="form" asp-controller="Common" asp-action="SendFeedback" method="POST">
                         
-                        <input type="hidden" name="g-recaptcha-response-token" />
+                        @*<input type="hidden" name="g-recaptcha-response-token" />
                         <input type="hidden" name="g-recaptcha-action" />
-                        <input type="hidden" name="g-recaptcha-site-key" value="@RecaptchaOptions.Value.SiteKey">
+                        <input type="hidden" name="g-recaptcha-site-key" value="@RecaptchaOptions.Value.SiteKey">*@
 
                         <div class="form-group">
                             <input type="text" tabindex="0" id="name" name="name" class="form-control" placeholder="Name" required="" data-validation-required-message="Please enter your name." aria-invalid="false" aria-label="your name" value="@nameValue">
