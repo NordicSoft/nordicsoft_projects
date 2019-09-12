@@ -4,45 +4,13 @@
     $("#contact-form").on('submit', function (e) {
         e.preventDefault();
         var $form = $(this);
-
-            //var siteKey = $("input[name=g-recaptcha-site-key]", $form).val();
-            //$("button[type=submit]", $form).prop("disabled", true);
-
-            //grecaptcha.execute(siteKey, {
-            //    action: 'contact'
-            //}).then(function (token) {
-
-            //    $("input[name=g-recaptcha-response-token]", $form).val(token);
-            //    $("input[name=g-recaptcha-action]", $form).val("contact");
-            //}).then(function () {
-            //    var data = $form.serialize();
-            //    var url = $form.prop("action");
-            //    return $.post(url, data).fail(function (e) { console.log(e) });
-
-            //}).then(function (resp) {
-
-            //    $("button[type=submit]", $form).prop("disabled", false);
-
-            //    resp.success == true
-            //            ? $.alert({
-            //                content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "", backgroundDismiss: true, 
-            //                onOpen: function () { $('body').addClass('overflow-y') },
-            //                onClose: function () { $('body').removeClass('overflow-y') }
-            //            })
-            //            : $.alert({
-            //                content: "Sorry, we couldn't send your message. Try later!", theme: "my-theme", title: "", backgroundDismiss: true, 
-            //                onOpen: function () { $('body').addClass('overflow-y') },
-            //                onClose: function () { $('body').removeClass('overflow-y') } });
-
-            //    $form.trigger("reset");
-               
-            //    });
-
         var data = $form.serialize();
         var url = $form.prop("action");
-        return $.post(url, data).catch(function (e) {
+        return $.post(url, data)
+            .fail(function (e) {
                 console.log(e);
-            }).then(function (resp) {
+            })
+            .done(function (resp) {
                 $("button[type=submit]", $form).prop("disabled", false);
                 resp.success === true
                     ? $.alert({ content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "" })
@@ -51,7 +19,6 @@
             });
 
     });
-
 
 
 
@@ -438,12 +405,34 @@
     });
 
     document.addEventListener('lazybeforeunveil', function (e) {
-        var bg = e.target.getAttribute('data-bg');
-        if (bg) {
-            if ($('html').hasClass("webp")) {
-                bg = bg.replace(/\.[^/.]+$/, ".webp");
+        var bgbuf = e.target.getAttribute('data-bgset');
+        var onlybg = e.target.getAttribute('data-bg');
+        if (bgbuf) {
+            var bg = bgbuf.split(',');
+            var bg1 = "";
+            if ($('html').hasClass("webp") && $(window).width() > 767) {
+                bg1 = bg[0].replace(/\.[^/.]+$/, ".webp");
+                e.target.style.backgroundImage = 'url(' + bg1 + ')';
             }
-            e.target.style.backgroundImage = 'url(' + bg + ')';
+            else if ($(window).width() > 767) {
+                bg1 = bg[0];
+                e.target.style.backgroundImage = 'url(' + bg1 + ')';
+            } else if ($('html').hasClass("webp")) {
+                bg1 = bg[1].replace(/\.[^/.]+$/, ".webp");
+                e.target.style.backgroundImage = 'url(' + bg1 + ')';
+            }
+            else {
+                bg1 = bg[1];
+                e.target.style.backgroundImage = 'url(' + bg1 + ')';
+            }
+        }
+        if (onlybg) {
+            if ($('html').hasClass("webp")) {
+                onlybg = onlybg.replace(/\.[^/.]+$/, ".webp");
+               
+            }
+            e.target.style.backgroundImage = 'url(' + onlybg + ')';
+           
         }
     });
 

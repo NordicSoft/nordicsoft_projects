@@ -85,8 +85,7 @@ namespace Dalystudio.biz
                 app.Use((context, next) =>
                 {
                     //HTTP\2 push feeature
-                    context.Response.Headers["Link"] = "</dist/vendor_styles.css>; as=style; rel=preload, " +
-                                                       "</dist/custom_styles.css>; as=style; rel=preload, " +
+                    context.Response.Headers["Link"] = "</dist/custom_styles.css>; as=style; rel=preload, " +
                                                        "</dist/fonts/et-line.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
                                                        "</dist/jquery_plugins.js>; as=script; rel=preload, " +
                                                        "</dist/main_bootstrap.js>; as=script; rel=preload, " +
