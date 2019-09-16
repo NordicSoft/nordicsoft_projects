@@ -87,6 +87,12 @@ namespace Dalystudio.biz
                     //HTTP\2 push feeature
                     context.Response.Headers["Link"] = "</dist/custom_styles.css>; as=style; rel=preload, " +
                                                        "</dist/fonts/et-line.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
+                                                       "</dist/fonts/Inconsolata-Regular.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
+                                                       "</dist/fonts/Inconsolata-Bold.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
+                                                       "</dist/fonts/Montserrat-Regular.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
+                                                       "</dist/fonts/OpenSans-Regular.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
+                                                       "</dist/fonts/OpenSans-Regular.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
+                                                       "</dist/fonts/OpenSans-Regular.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
                                                        "</dist/jquery_plugins.js>; as=script; rel=preload, " +
                                                        "</dist/main_bootstrap.js>; as=script; rel=preload, " +
                                                        "</dist/effect_plugins.js>; as=script; rel=preload, " +
