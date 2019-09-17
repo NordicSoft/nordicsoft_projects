@@ -141,6 +141,16 @@ module.exports = (env, options) => {
           }
         },
         //If you have some urls in your css/scss, uncomment it. Set context to your image assets folder
+          {
+              test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+              use: [{
+                  loader: 'file-loader',
+                  options: {
+                      name: "fonts/[name].[ext]", // Output below ./fonts
+                      publicPath: "/dist"
+                  }
+              }]
+          },
         {
           test: /\.(png|svg|jpg|gif)$/,
           use: [{
@@ -151,17 +161,8 @@ module.exports = (env, options) => {
               context: './ClientApp/src/assets/img'
             }
           }]
-        },
-        {
-          test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-          use: [{
-            loader: 'file-loader',
-            options: {
-              name: "fonts/[name].[ext]", // Output below ./fonts
-              publicPath: devMode ? "/dist" : "/dist"
-            }
-          }]
         }
+        
       ]
     }
   }
