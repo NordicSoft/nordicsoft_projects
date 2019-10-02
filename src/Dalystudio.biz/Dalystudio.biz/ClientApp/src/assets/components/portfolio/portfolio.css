@@ -69,13 +69,15 @@
     left: 0;
     text-align: center;
     overflow: hidden;
-    width: unset;
+    width: 100%;
 }
 
 .work-title {
     font-size: 18px;
     color: #fff;
     margin: 0 0 6px;
+    width: 100%;
+    text-align: center;
 }
 
 .work-descr {
@@ -107,6 +109,10 @@
     transform: scale(1.1);
 }
 
+
+.work-item .icon-magnifying-glass:before {
+    font-size: 31px;
+}
 
 @media(max-width:767px) {
     .work-item:hover .work-image > img {
