@@ -42,14 +42,14 @@ class ProgressBarExample extends React.Component {
     render() {
         return (
             <div>
-                    <h5 className="progress-title font-inc">Adobe Lightroom</h5>
-                    <ProgressBar percentage={60} />
-                    <h5 className="progress-title font-inc">Adobe Photoshop</h5>
-                    <ProgressBar percentage={80} />
-                    <h5 className="progress-title font-inc">Skylum Luminar</h5>
-                    <ProgressBar percentage={50} />
-                    <h5 className="progress-title font-inc">Gimp</h5>
-                    <ProgressBar percentage={90} />                            
+                   <div className="progress-bar-block"> <h5 className="progress-title font-inc">Adobe Lightroom</h5>
+                    <ProgressBar percentage={60} /></div>
+                <div className="progress-bar-block"> <h5 className="progress-title font-inc">Adobe Photoshop</h5>
+                    <ProgressBar percentage={80} /></div>
+                <div className="progress-bar-block"> <h5 className="progress-title font-inc">Skylum Luminar</h5>
+                    <ProgressBar percentage={50} /></div>
+                <div className="progress-bar-block"><h5 className="progress-title font-inc">Gimp</h5>
+                    <ProgressBar percentage={90} /></div>                            
             </div>
         )
     }

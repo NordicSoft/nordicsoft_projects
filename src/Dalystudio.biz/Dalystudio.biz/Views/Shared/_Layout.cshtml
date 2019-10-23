@@ -16,10 +16,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <environment include="Production">
+    @*<environment include="Production">
         @if (Context.Request.Host.Value == Settings.SiteNameDomain.ToLower())
         {
-            <!-- Global site tag (gtag.js) - Google Analytics -->
+             Global site tag (gtag.js) - Google Analytics 
             <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137521661-4"></script>
             <script>
                 window.dataLayer = window.dataLayer || [];
@@ -29,7 +29,7 @@
                 gtag('config', 'UA-137521661-4');
             </script>
         }
-    </environment>
+    </environment>*@
 
     <title>@ViewData["Title"] </title>
     <meta name="description" content="@ViewData["Description"]" />

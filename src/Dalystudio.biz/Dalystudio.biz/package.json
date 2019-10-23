@@ -59,9 +59,13 @@
     "what-input": "^5.1.3"
   },
   "dependencies": {
+    "prop-types": "^15.7.2",
     "rc-progress": "^2.5.2",
+    "react-bnb-gallery": "^1.1.8",
     "react-count-to": "^0.12.0",
     "react-countup": "^4.2.2",
+    "react-grid-gallery": "^0.5.5",
+    "react-magnific-popup": "^1.0.1",
     "react-progressbar": "^15.4.1",
     "react-redux": "^7.1.1",
     "react-router-dom": "^5.0.1",
