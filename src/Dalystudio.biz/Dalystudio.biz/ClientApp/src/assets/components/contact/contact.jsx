@@ -45,40 +45,28 @@ export default class Contact extends React.Component {
         var self = this;
         event.preventDefault();
         var form = document.querySelector('form');
-        var siteAction = document.querySelector("input[name=g-recaptcha-action]");
-        var siteToken = document.querySelector("input[name=g-recaptcha-response-token]");
         var siteKey = document.querySelector("input[name=g-recaptcha-site-key]");
         var submitButton = document.querySelector("input[name=submit]");
-        var siteKeyValue = siteKey.value;
 
         submitButton.disabled = true;
 
-        grecaptcha.execute(siteKeyValue, {
-            action: 'contact'
-        }).then(function (token) {
-            siteToken.value = token;
-            siteAction.value = "contact";
-        }).then(function () {
-            var formatData = new FormData(form);
-            return self.request({ method: "POST", url: "/api/send-feedback", body: formatData });
-        }).then(function (resp) {
-            resp = JSON.parse(resp);
-            (resp.success === true)
-                ? self.message = "Your message was successfully sent. We will write your back soon!"
-                : self.message = "Sorry, we couldn't send your message. Try later!";
-            submitButton.disabled = false;
-            self.togglePopup();
-            form.reset();
-        });
+        var formatData = new FormData(form);
+        return self.request({ method: "POST", url: "/api/send-feedback", body: formatData })
+            .then(function (resp) {
+                resp = JSON.parse(resp);
+                (resp.success === true)
+                    ? self.message = "Your message was successfully sent. We will write your back soon!"
+                    : self.message = "Sorry, we couldn't send your message. Try later!";
+                submitButton.disabled = false;
+                self.togglePopup();
+                form.reset();
+            });
     }
 
     render() {
         return (
             <section>
             <form id="contact-form" role="form" asp-controller="Common" asp-action="SendFeedback" method="POST" onSubmit={this.handleSubmit}>
-                <input type="hidden" name="g-recaptcha-action" />
-                <input type="hidden" name="g-recaptcha-response-token" />
-                <input type="hidden" name="g-recaptcha-site-key" value={this.props.siteKey} />
 
                 <div className="form-group">
                     <input type="text" tabIndex="0" id="cname" name="cname" className="form-control" placeholder="Name" required="" data-validation-required-message="Please enter your name." aria-invalid="false" aria-label="your name" />
