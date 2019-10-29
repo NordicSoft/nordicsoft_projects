@@ -1,56 +1,12 @@
 (function($){
 
 
-    //$("#contact-form").on('submit',
-    //    function (e) {
-    //        e.preventDefault();
-    //        var $form = $(this);
-    //        var siteKey = $("input[name=g-recaptcha-site-key]", $form).val();
-    //        $("button[type=submit]", $form).prop("disabled", true);
-
-    //        grecaptcha.execute(siteKey, {
-    //            action: 'contact'
-    //        }).then(function (token) {
-
-    //            $("input[name=g-recaptcha-response-token]", $form).val(token);
-    //            $("input[name=g-recaptcha-action]", $form).val("contact");
-    //        }).then(function () {
-    //            var data = $form.serialize();
-    //            var url = $form.prop("action");
-    //            return $.post(url, data).fail(function (e) { console.log(e) });
-
-    //        }).then(function (resp) {
-
-    //            $("button[type=submit]", $form).prop("disabled", false);
-
-    //            resp.success == true
-    //                    ? $.alert({
-    //                        content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "", backgroundDismiss: true, 
-    //                        onOpen: function () { $('body').addClass('overflow-y') },
-    //                        onClose: function () { $('body').removeClass('overflow-y') }
-    //                    })
-    //                    : $.alert({
-    //                        content: "Sorry, we couldn't send your message. Try later!", theme: "my-theme", title: "", backgroundDismiss: true, 
-    //                        onOpen: function () { $('body').addClass('overflow-y') },
-    //                        onClose: function () { $('body').removeClass('overflow-y') } });
-
-    //            $form.trigger("reset");
-               
-    //            });
-    //    });
-
-
-
-	/* ---------------------------------------------- /*
-	 * Preloader
-	/* ---------------------------------------------- */
-
 	$(window).load(function() {
-		$('.loader').fadeOut();
-		$('.page-loader').delay(350).fadeOut('slow');
+		//$('.loader').fadeOut();
+		//$('.page-loader').delay(350).fadeOut('slow');
 
-	    $("#menu li").removeClass("active");
-	    $("#menu a[href$='" + window.location.pathname + "']").closest("li").addClass("active");
+	    //$("#menu li").removeClass("active");
+	    //$("#menu a[href$='" + window.location.pathname + "']").closest("li").addClass("active");
 		/* ---------------------------------------------- /*
 		 * Initialization General Scripts for all pages
 		/* ---------------------------------------------- */
@@ -69,8 +25,8 @@
 
 
 	    buildModuleHero(moduleHero);
-		navbarCheck(navbar);
-		navbarAnimation(navbar, moduleHero, navHeight);
+		//navbarCheck(navbar);
+		//navbarAnimation(navbar, moduleHero, navHeight);
 		navbarSubmenu(width);
 		hoverDropdown(width, mobileTest);
 
@@ -82,7 +38,7 @@
 
 		$(window).scroll(function() {
 			effectsModuleHero(moduleHero, this);
-			navbarAnimation(navbar, moduleHero, navHeight);
+			//navbarAnimation(navbar, moduleHero, navHeight);
 		});
 
 
@@ -159,15 +115,15 @@
 		 * Change color on light slide
 		/* ---------------------------------------------- */
 
-		function heroSliderLight() {
-			if ($('li.bg-light').hasClass('flex-active-slide')) {
-				navbar.addClass('nabar-dark');
-				$('.hero-slider').addClass('hero-slider-dark');
-			} else {
-				navbar.removeClass('nabar-dark');
-				$('.hero-slider').removeClass('hero-slider-dark');
-			}
-		}
+		//function heroSliderLight() {
+		//	if ($('li.bg-light').hasClass('flex-active-slide')) {
+		//		navbar.addClass('nabar-dark');
+		//		$('.hero-slider').addClass('hero-slider-dark');
+		//	} else {
+		//		navbar.removeClass('nabar-dark');
+		//		$('.hero-slider').removeClass('hero-slider-dark');
+		//	}
+		//}
 
 		/* ---------------------------------------------- /*
 		 * Hero slider pause on scroll
@@ -186,24 +142,24 @@
 		 * Transparent navbar animation
 		/* ---------------------------------------------- */
 
-		function navbarCheck() {
-			if (navbar.length > 0 && navbar.hasClass('navbar-transparent')) {
-				navbatTrans = true;
-			} else {
-				navbatTrans = false;
-			}
-		}
+		//function navbarCheck() {
+		//	if (navbar.length > 0 && navbar.hasClass('navbar-transparent')) {
+		//		navbatTrans = true;
+		//	} else {
+		//		navbatTrans = false;
+		//	}
+		//}
 
-		function navbarAnimation(navbar, moduleHero, navHeight) {
-			var topScroll = $(window).scrollTop();
-			if (navbar.length > 0 && navbatTrans != false) {
-				if (topScroll >= navHeight) {
-					navbar.removeClass('navbar-transparent');
-				} else {
-					navbar.addClass('navbar-transparent');
-				}
-			}
-		};
+		//function navbarAnimation(navbar, moduleHero, navHeight) {
+		//	var topScroll = $(window).scrollTop();
+		//	if (navbar.length > 0 && navbatTrans != false) {
+		//		if (topScroll >= navHeight) {
+		//			navbar.removeClass('navbar-transparent');
+		//		} else {
+		//			navbar.addClass('navbar-transparent');
+		//		}
+		//	}
+		//};
 
 		/* ---------------------------------------------- /*
 		 * Navbar collapse on click

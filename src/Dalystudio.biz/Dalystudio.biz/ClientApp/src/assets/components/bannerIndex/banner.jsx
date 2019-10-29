@@ -5,6 +5,9 @@ import "./banner.css"
 const bg = "../img/homepage.jpg"
 
 function Banner() {
+
+
+
     return (
         <div id="home" className="module-hero module-parallax module-fade module-full-height bg-dark-30 lazyload" data-bg={bg}>
 

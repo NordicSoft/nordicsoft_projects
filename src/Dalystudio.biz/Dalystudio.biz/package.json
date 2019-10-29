@@ -69,6 +69,7 @@
     "react-progressbar": "^15.4.1",
     "react-redux": "^7.1.1",
     "react-router-dom": "^5.0.1",
-    "react-visibility-sensor": "^5.1.1"
+    "react-visibility-sensor": "^5.1.1",
+    "reactjs-popup": "^1.5.0"
   }
 }
