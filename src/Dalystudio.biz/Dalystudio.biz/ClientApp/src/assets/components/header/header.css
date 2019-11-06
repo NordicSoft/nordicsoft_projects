@@ -195,13 +195,13 @@ Navbar
     .navbar-custom .dropdown-menu {
         position: absolute;
         display: block;
-        visibility: hidden;
-        opacity: 0;
+        /*visibility: hidden;
+        opacity: 0;*/
     }
 
     .navbar-custom .open > .dropdown-menu {
-        visibility: visible;
-        opacity: 1;
+        /*visibility: visible;
+        opacity: 1;*/
     }
 
     .navbar-right .dropdown-menu {
@@ -324,8 +324,8 @@ li.dropdown:hover ul {
 }
 
 li.dropdown:not(.open) ul {
-    visibility: hidden;
-    opacity: 0;
+    /*visibility: hidden;
+    opacity: 0;*/
 }
 
 li.dropdown i:before {
@@ -398,3 +398,16 @@ nav.navbar-transparent li.dropdown.active > a {
 .navbar-transparent .nav li.dropdown.active:after {
     width: calc(100% - 45px);
 }
+
+
+/*#desktop:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-visible {
+    visibility:visible;
+    opacity:1;
+}*/
+
+

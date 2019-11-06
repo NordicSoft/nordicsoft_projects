@@ -26,7 +26,7 @@ class Dropdown extends Component {
 
     render() {
         return (
-                    <ul className="dropdown-menu" role="menu">
+                    <ul className="dropdown-menu" role="menu" id="mytogglemenu">
                         <li className={this.state.activeIndex == 4 ? 'active' : null} onClick={this.toggleClass.bind(this, 4)}>
                             <Link to='/project1' title='Wedding'>Wedding</Link>
                         </li >
@@ -44,8 +44,73 @@ class Dropdown extends Component {
     }
 
 }
+class NavMenu extends Component{
+    constructor(props) {
+        super(props)
+        this.state = {
+            isOpen: false
+        };
+    }
 
+    render() {
+        if (this.props.isOpen === true) {
+            return (
+                <div className="dropdown">
+                    <ul className="dropdown-menu" role="menu" >
+                        <li className={this.state.activeIndex == 4 ? 'active' : null}>
+                            <Link to='/project1' title='Wedding'>Wedding</Link>
+                        </li >
+                        <li className={this.state.activeIndex == 5 ? 'active' : null}>
+                            <Link to='/project2' title='Love Story'>Love Story</Link>
+                        </li >
+                        <li className={this.state.activeIndex == 6 ? 'active' : null}>
+                            <Link to='/project3' title='Fashion'>Fashion</Link>
+                        </li >
+                        <li className={this.state.activeIndex == 7 ? 'active' : null}>
+                            <Link to='/project4' title='Family'>Family</Link>
+                        </li >
+                    </ul>
+                </div>
+            );
+        }
+        return null;
+    }
+}
+class NavMenuButton extends Component{
 
+    constructor(props) {
+        super(props)
+        this.state = {
+            isOpen: false
+        }
+    }
+
+    handleClick = () => {
+        this.setState({ isOpen: !this.state.isOpen });
+    }
+
+    componentDidMount () {
+        document.body.addEventListener('click', this.handleBodyClick);
+    }
+
+    componentWillUnmount () {
+        document.body.removeEventListener('click', this.handleBodyClick);
+    }
+
+    handleBodyClick = () =>  {
+        this.setState({ isOpen: false });
+    }
+
+    render() {
+        return (
+            <div>
+                <a onClick={this.handleClick} href="#"> <span className="arrow"><i className="icon-angle-down"></i></span></a>
+                <NavMenu isOpen={this.state.isOpen} />
+            </div>
+        );
+    }
+
+}
 class Navbar extends Component {
     constructor(props) {
         super(props)
@@ -86,6 +151,18 @@ class Navbar extends Component {
    
 
     render() {
+
+        function openMenu() {
+            var toggleMenu = document.getElementById("mytogglemenu");
+            if (toggleMenu.classList.contains("menu-visible"))
+            {
+                toggleMenu.classList.remove("mytogglemenu");
+            }
+            else {
+                toggleMenu.classList.add("mytogglemenu");
+            }
+        }
+
         return (
 
             <ul className="nav navbar-nav navbar-right" id="menu">
@@ -93,10 +170,7 @@ class Navbar extends Component {
                         <li className={this.state.activeIndex == 0 ? 'active' : null} onClick={this.toggleClass.bind(this, 0)}><Link to='/' title='Home'>Home</Link></li>
                         <li className={this.state.activeIndex == 1 ? 'active' : null} onClick={this.toggleClass.bind(this, 1)}><Link to='/about' title='About'>About</Link></li>
                         <li className={this.state.activeIndex == 2 ? 'active dropdown' : 'dropdown'} onClick={this.toggleClass.bind(this, 2)} id="desktop"><Link to='/portfolio' title='Portfolio'>Portfolio</Link>
-                            <div className="dropdown-toggle" data-toggle="dropdown">
-                                <span className="arrow"><i className="icon-angle-down"></i></span>
-                            </div>
-                            <Dropdown />
+                            <NavMenuButton />
                         </li>
                         <li className={this.state.activeIndex == 3 ? 'active' : null} onClick={this.toggleClass.bind(this, 3)}><Link to='/contact' title='Contact'>Contact</Link></li>
                     </ul>
@@ -105,7 +179,10 @@ class Navbar extends Component {
     }
 
 }
-
+                    //<div className="dropdown-toggle" data-toggle="dropdown" onClick={openMenu}>
+                    //           v
+                    //        </div>
+                    //        <Dropdown />
 class MainPartHeader extends Component {
     constructor(props) {
         super(props)
