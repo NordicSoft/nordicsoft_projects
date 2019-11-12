@@ -411,3 +411,13 @@ nav.navbar-transparent li.dropdown.active > a {
 }*/
 
 
+li.dropdown.active a {
+    float:left;
+}
+
+li.dropdown.active a {
+    float: left;
+}
+li.dropdown.active div a {
+    margin-top:12px;
+}
