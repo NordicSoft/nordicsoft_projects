@@ -6,44 +6,6 @@ import "./header.css"
 import classnames from "classnames";
 //import { connect } from 'react-redux'
 
-class Dropdown extends Component {
-    constructor(props) {
-        super(props)
-
-        this.toggleClass = this.toggleClass.bind(this);
-        this.state = {
-            activeIndex: 0
-        }
-    }
-
-    toggleClass(index, e) {
-
-        this.setState({ activeIndex: index });
-    };
-
-
-   
-
-    render() {
-        return (
-                    <ul className="dropdown-menu" role="menu" id="mytogglemenu">
-                        <li className={this.state.activeIndex == 4 ? 'active' : null} onClick={this.toggleClass.bind(this, 4)}>
-                            <Link to='/project1' title='Wedding'>Wedding</Link>
-                        </li >
-                        <li className={this.state.activeIndex == 5 ? 'active' : null} onClick={this.toggleClass.bind(this, 5)}>
-                            <Link to='/project2' title='Love Story'>Love Story</Link>
-                        </li >
-                        <li className={this.state.activeIndex == 6 ? 'active' : null} onClick={this.toggleClass.bind(this, 6)}>
-                            <Link to='/project3' title='Fashion'>Fashion</Link>
-                        </li >
-                        <li className={this.state.activeIndex == 7 ? 'active' : null} onClick={this.toggleClass.bind(this, 7)}>
-                            <Link to='/project4' title='Family'>Family</Link>
-                        </li >
-                    </ul>
-        )
-    }
-
-}
 class NavMenu extends Component{
     constructor(props) {
         super(props)
@@ -179,10 +141,7 @@ class Navbar extends Component {
     }
 
 }
-                    //<div className="dropdown-toggle" data-toggle="dropdown" onClick={openMenu}>
-                    //           v
-                    //        </div>
-                    //        <Dropdown />
+
 class MainPartHeader extends Component {
     constructor(props) {
         super(props)

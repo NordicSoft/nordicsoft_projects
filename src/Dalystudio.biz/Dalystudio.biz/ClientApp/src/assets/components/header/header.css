@@ -418,6 +418,28 @@ li.dropdown.active a {
 li.dropdown.active a {
     float: left;
 }
+
+li.dropdown.active div {
+    position: relative;
+    height: 30px;
+    top: 10px;
+}
+
 li.dropdown.active div a {
-    margin-top:12px;
+    margin-top: 3px;
+}
+
+    li.dropdown.active div{
+        cursor:pointer;
+    }
+
+    li.dropdown.active div a + div {
+        position: absolute;
+        left: 3px;
+        top: 0px;
+    }
+
+.active.dropdown .dropdown ul.dropdown-menu {
+    top:35px;
+    left:-95px;
 }
