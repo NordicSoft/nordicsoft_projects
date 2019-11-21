@@ -49,7 +49,7 @@ module.exports = (env, options) => {
       main: './ClientApp/src/assets/js/index.js',
       react_js: './ClientApp/src/assets/components/index.js'
     },
-    devtool: 'eval',
+    devtool: devMode ? 'source-map' : false,
     output: {
       path: path.resolve(__dirname, './wwwroot/dist'),
       filename: "[name].js",
