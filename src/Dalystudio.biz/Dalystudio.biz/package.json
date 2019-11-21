@@ -66,6 +66,7 @@
     "react-countup": "^4.2.2",
     "react-grid-gallery": "^0.5.5",
     "react-magnific-popup": "^1.0.1",
+    "react-parallax": "^2.2.4",
     "react-progressbar": "^15.4.1",
     "react-redux": "^7.1.1",
     "react-router-dom": "^5.0.1",

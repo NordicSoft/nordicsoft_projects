@@ -1,7 +1,7 @@
 ﻿"use strict";
 import React, { Component } from 'react'
 import "./banner.css"
-
+import { Parallax, Background } from 'react-parallax';
 const bg = "../img/homepage.jpg"
 
 function Banner() {

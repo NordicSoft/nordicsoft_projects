@@ -425,11 +425,7 @@ li.dropdown.active div {
     top: 10px;
 }
 
-li.dropdown.active div a {
-    margin-top: 3px;
-}
-
-    li.dropdown.active div{
+    li.dropdown.active div a i::before {
         cursor:pointer;
     }
 
