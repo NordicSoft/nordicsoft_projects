@@ -1,88 +1,19 @@
-﻿//import React, { Component } from 'react';
-//import ReactDOM from 'react-dom';
-//import { MagnificPopup, LightBoxGallery, GalleryItem } from 'react-magnific-popup';
-
-
-
-//class PortfolioTale extends Component{
-//    config = {
-//        delegate: 'a',
-//        type: 'image',
-//        tLoading: 'Loading image #%curr%...',
-//        mainClass: 'mfp-img-mobile',
-//        gallery: {
-//            enabled: true,
-//            navigateByImgClick: true,
-//            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-//        },
-//        image: {
-//            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-//            titleSrc: function (item) {
-//                return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-//            }
-//        }
-//    }
-
-//    render(){
-//        return (
-//            <LightBoxGallery
-//                className="popup-gallery"
-//                config={config}
-//            >
-//                <GalleryItem
-//                    href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg"
-//                    title="The Cleaner"
-//                >
-//                    <img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg" width="75" height="75" />
-//                </GalleryItem>
-//                <GalleryItem
-//                    href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg"
-//                    title="The Cleaner"
-//                >
-//                    <img src="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg" width="75" height="75" />
-//                </GalleryItem>
-//                <GalleryItem
-//                    href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg"
-//                    title="The Uninvited Guest"
-//                >
-//                    <img src="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_s.jpg" width="75" height="75" />
-//                </GalleryItem>
-//                <GalleryItem
-//                    href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg"
-//                    title="Oh no, not again!"
-//                >
-//                    <img src="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_s.jpg" width="75" height="75" />
-//                </GalleryItem>
-//                <GalleryItem
-//                    href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg"
-//                    title="Swan Lake"
-//                >
-//                    <img src="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_s.jpg" width="75" height="75" />
-//                </GalleryItem>
-//                <GalleryItem
-//                    href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg"
-//                    title="The Shake"
-//                >
-//                    <img src="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_s.jpg" width="75" height="75" />
-//                </GalleryItem>
-//                <GalleryItem
-//                    href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg"
-//                    title="Who's that, mommy?"
-//                >
-//                    <img src="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_s.jpg" width="75" height="75" />
-//                </GalleryItem>
-//            </LightBoxGallery>
-//        );
-//    }
-//}
-
-//export default PortfolioTale;
-
-
-"use strict";
+﻿"use strict";
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import "./portfolio.css"
+import "./portfolio.css";
+
+const config = {
+    type: 'image',
+    gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0, 1]
+    },
+    image: {
+        titleSrc: 'title',
+        tError: 'The image could not be loaded.'
+    }
+}
 
 const wedding = [
     { id: 1, linkUrl: "../img/wedding/cover.jpg", title: "Wedding 1", srcset: "../img/wedding/cover.webp" },
@@ -131,7 +62,7 @@ function TaleItem(props) {
 
     return (
         <li className="work-item">
-            <Link to={props.item.linkUrl} className="popup" title={props.item.title}>
+            <a href={props.item.linkUrl} className="popup" title={props.item.title}>
                 <div className="work-image">
                     <TaleImg pic={props.item} />
                 </div>
@@ -140,7 +71,7 @@ function TaleItem(props) {
                         <span className="icon-magnifying-glass"></span>
                     </h3>
                 </div>
-            </Link>
+            </a>
         </li>
     );
 }
@@ -160,32 +91,54 @@ function PortfolioTaleTemplate(props) {
     );
 }
 
-function PortfolioTale() {
-    var page;
+class PortfolioTale extends Component {
+    constructor(props) {
+        super(props);
+        this.page = null;
 
-    switch (window.location.pathname) {
-        case '/project1':
-            page = wedding;
-            break;
-        case '/project2':
-            page = lovestory;
-            break;
-        case '/project3':
-            page = fashion;
-            break;
-        case '/project4':
-            page = family;
-            break;
-        default:
-            break;
+        switch (window.location.pathname) {
+            case '/project1':
+                this.page = wedding;
+                break;
+            case '/project2':
+                page = lovestory;
+                break;
+            case '/project3':
+                page = fashion;
+                break;
+            case '/project4':
+                this.page = family;
+                break;
+            default:
+                break;
+        }
+
     }
-    return (
-        <section className="module-small p-t-20 p-b-0 p-t-sm-0">
+    componentDidMount(){
+        $('a.popup').magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0, 1]
+            },
+            image: {
+                titleSrc: 'title',
+                tError: 'The image could not be loaded.'
+            }
+        });
+    }
 
-            <PortfolioTaleTemplate page={page} />
-        </section>
-    );
+    render() {
+        
+        return (
+            <section className="module-small p-t-20 p-b-0 p-t-sm-0" >
+
+                <PortfolioTaleTemplate page={this.page} />
+            </section>
+        );
+    }
 }
 
-  
+
 export default PortfolioTale;
