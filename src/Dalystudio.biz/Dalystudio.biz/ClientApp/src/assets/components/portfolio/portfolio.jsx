@@ -101,10 +101,10 @@ class PortfolioTale extends Component {
                 this.page = wedding;
                 break;
             case '/project2':
-                page = lovestory;
+                this.page = lovestory;
                 break;
             case '/project3':
-                page = fashion;
+                this.page = fashion;
                 break;
             case '/project4':
                 this.page = family;
