@@ -1,22 +1,40 @@
 (function($){
 
+    $("#contact-form").on('submit',
+        function (e) {
+            e.preventDefault();
+            var data = $(this).serialize();
+            var url = $(this).prop("action");
+            var form = this;
+            $.post(url,
+                data,
+                function (resp) {
+                    resp.success == true
+                        ? $.alert({ content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "" })
+                        : $.alert({ content: "Sorry, we couldn't send your message. Try later!", theme: "my-theme", title: "" });
 
-    $("#contact-form").on('submit', function (e) {
-        e.preventDefault();
-        var $form = $(this);
-        var data = $form.serialize();
-        var url = $form.prop("action");
-        return $.post(url, data)
-            .fail(function (e) {
-                console.log(e);
-            })
-            .done(function (resp) {
-                $("button[type=submit]", $form).prop("disabled", false);
-                resp.success === true
-                    ? $.alert({ content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "" })
-                    : $.alert({ content: "Sorry, we couldn't send your message. Try later!", theme: "my-theme", title: "" });
-                $form.trigger("reset");
-            });
+                    $(':input', form)
+                        .not(':button, :submit, :reset, :hidden')
+                        .val('')
+                        .prop('checked', false)
+                        .prop('selected', false);
+                });
+
+        //e.preventDefault();
+        //var $form = $(this);
+        //var data = $form.serialize();
+        //var url = $form.prop("action");
+        //return $.post(url, data)
+        //    .fail(function (e) {
+        //        console.log(e);
+        //    })
+        //    .done(function (resp) {
+        //        $("button[type=submit]", $form).prop("disabled", false);
+        //        resp.success === true
+        //            ? $.alert({ content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "" })
+        //            : $.alert({ content: "Sorry, we couldn't send your message. Try later!", theme: "my-theme", title: "" });
+        //        $form.trigger("reset");
+        //    });
 
     });
 
