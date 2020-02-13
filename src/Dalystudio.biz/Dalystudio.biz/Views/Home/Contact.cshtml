@@ -1044,15 +1044,7 @@
 
 
 @section scripts{
-    <script src='https://www.google.com/recaptcha/api.js?render=@RecaptchaOptions.Value.SiteKey' defer></script>
-    <script>
-        grecaptcha.ready(function () {
-            grecaptcha.execute('6LdXTp0UAAAAAEWy3hhPCKXb8CBP4IclbuzSYPfK', { action: 'contact' }).then(function (token) {
-                $("input[name=g-recaptcha-response-token]").val(token);
-                $("input[name=g-recaptcha-action]").val("contact");
-            });
-        });
-    </script>
+
 
 }
 <section class="module module-header bg-dark bg-dark-50 lazyload" data-bg="../img/contact.jpg">
@@ -1106,30 +1098,7 @@
 
                 <div class="col-sm-6 col-sm-offset-3">
 
-                    <form id="contact-form" role="form" asp-controller="Common" asp-action="SendFeedback" method="POST">
-
-                        <input type="hidden" name="g-recaptcha-response-token" />
-                            <input type="hidden" name="g-recaptcha-action" />
-                            <input type="hidden" name="g-recaptcha-site-key" value="@RecaptchaOptions.Value.SiteKey">
-
-                        <div class="form-group">
-                            <input type="text" tabindex="0" id="name" name="name" class="form-control" placeholder="Name" required="" data-validation-required-message="Please enter your name." aria-invalid="false" aria-label="your name" value="@nameValue">
-                            <p class="help-block text-danger"></p>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="email" tabindex="0" id="email" name="email" class="form-control" placeholder="Your E-mail" required="" data-validation-required-message="Please enter your email address." aria-label="your email" value="@emailValue">
-                            <p class="help-block text-danger"></p>
-                        </div>
-
-                        <div class="form-group">
-                            <textarea class="form-control" tabindex="0" id="feedbackMessage" name="feedbackMessage" rows="7" placeholder="Message" required="" data-validation-required-message="Please enter your message." aria-label="your message" value="@textareaValue">@textareaValue</textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class=" text-right">
-                            <button type="submit" class="btn btn-round btn-g" title="submit">Submit</button>
-                        </div>
-                    </form>
+                    <partial name="_ContactForm" />
 
                     <!-- Ajax response -->
                     <div id="contact-response" class="ajax-response font-alt"></div>
