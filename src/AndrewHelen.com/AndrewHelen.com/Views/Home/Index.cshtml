@@ -26,7 +26,7 @@
 }
 
 @section Scripts{
-    <script src='https://www.google.com/recaptcha/api.js?render=@RecaptchaOptions.Value.SiteKey' defer></script>
+    <!--script src='https://www.google.com/recaptcha/api.js?render=@RecaptchaOptions.Value.SiteKey' defer></!--script-->
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
@@ -525,74 +525,7 @@
             </div>
 
             <div class="col-lg-7 pl-lg-5 pt-5 pt-lg-0">
-                <form id="contact-form" asp-controller="Common" asp-action="SendFeedback" method="POST">
-                    <input type="hidden" name="g-recaptcha-action">
-                    <input type="hidden" name="g-recaptcha-response-token">
-                    <input type="hidden" name="g-recaptcha-site-key" value="@RecaptchaOptions.Value.SiteKey">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <span class="d-block font-alt2 text-extra-large text-gray-700">Come and celebrate our day with us.</span>
-                            <h3 class="font-alt letter-spacing-1 mb-0 mt-2 text-uppercase title-small">RSVP</h3>
-                            <span class="bg-base-color d-block mt-1 mx-auto sep-line-thick"></span>
-                            <span class="d-block font-alt2 mt-4 text-small">Please RSVP by Sunday, November 9th, 2019</span>
-                        </div>
-                    </div>
-
-                    <div class="row mt-4">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="name" class="text-base">Name:</label>
-                                <input type="text" name="name" class="font-alt form-control p-3 required" aria-label="Your name" maxlength="100" placeholder="Full Name" required>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="email" class="text-base">Email:</label>
-                                <input type="email" name="email" class="font-alt form-control p-3 required email" aria-label="Your email" maxlength="100" placeholder="Email Address" required>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="events" class="text-base">Events:</label>
-                                <select name="events" id="rsvp-events" class="font-alt form-control required" aria-label="Events" required>
-                                    <option value="">- Please Select -</option>
-                                    <option value="Ceremony & Reception">Ceremony & Reception</option>
-                                    <option value="Ceremony Only">Ceremony Only</option>
-                                    <option value="Reception Only">Reception Only</option>v
-                                    <option value="Sory, Can't Make Either">Sory, Can't Make Either</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="guests" class="text-base">Guests:</label>
-                                <select name="guests" id="rsvp-guests" class="font-alt form-control required" aria-label="Guests" required>
-                                    <option value="">- Please Select -</option>
-                                    <option value="No Guests">No Guests</option>
-                                    <option value="1 Guest">1 Guest</option>
-                                    <option value="2 Guests">2 Guests</option>
-                                    <option value="3 Guests">3 Guests</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12">
-                            <label for="additionalInformation" class="text-base">Additional Information:</label>
-                            <textarea name="additionalInformation" class="form-control u-rounded-15 u-mb-30" rows="6" placeholder="Eg. Transfer organisation" maxlength="1000" required aria-label="Additional Information"></textarea>
-                        </div>
-
-                        <div class="col-12 mt-4 text-center">
-                            <button class="btn btn-small btn-lg-medium btn-base-color" aria-label="Submit" type="submit" title="Submit">Submit</button>
-                        </div>
-                    </div>
-                </form>
+                <partial name="_ContactForm" />
             </div>
         </div>
     </div>
