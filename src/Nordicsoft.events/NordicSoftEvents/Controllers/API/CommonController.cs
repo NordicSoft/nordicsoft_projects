@@ -30,12 +30,12 @@ namespace NordicSoftEvents.Controllers.API
             string subject = $"{Settings.SiteNameDomain}: Feedback from customer";
             var feedbackMessage = $"Seats: <strong>{seats}</strong> \n <br> Pass: <strong>{pass}</strong> \n <br> Phone: <strong>{phone}</strong>";
 
-            //bool isCaptchaValid = await googleRecaptcha.IsCaptchaValid(encodedResponse, action);
+            bool isCaptchaValid = await googleRecaptcha.IsCaptchaValid(encodedResponse, action);
 
-            //if (!isCaptchaValid && env.IsProduction())
-            //{
-            //    return JObject.FromObject(new { success = false });
-            //}
+            if (!isCaptchaValid && env.IsProduction())
+            {
+                return JObject.FromObject(new { success = false });
+            }
 
             var textHtml = $"<p>{Settings.SiteNameDomain}: Feedback from customer with name: <strong>{name}</strong> and e-mail: <strong>{email}</strong>: </p>" +
                            $"<p>{feedbackMessage}</p>";
