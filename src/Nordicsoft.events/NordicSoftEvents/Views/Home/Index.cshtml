@@ -28,7 +28,38 @@
 }
 
 @section Scripts{
-    @*<script src='https://www.google.com/recaptcha/api.js?render=@RecaptchaOptions.Value.SiteKey' defer></script>*@
+
+    <script>
+    (function () {
+        var div = document.createElement('div');
+        div.setAttribute('id', 'recaptcha-badge');
+        div.setAttribute('class', 'lazyload');
+        div.setAttribute('data-site-key', '@RecaptchaOptions.Value.SiteKey');
+        document.getElementById("ticketsModal").appendChild(div);
+
+        document.addEventListener('lazybeforeunveil',
+            function(e) {
+                var siteKey = e.target.getAttribute('data-site-key');
+                if (siteKey) {
+                    var script = document.createElement('script');
+
+                    script.async = true;
+                    script.src = 'https://www.google.com/recaptcha/api.js?render=explicit&onload=onRecaptchaLoadCallback';
+                    document.body.appendChild(script);
+                }
+            });
+
+        window.onRecaptchaLoadCallback = function() {
+            var siteKey = document.getElementById("recaptcha-badge").getAttribute('data-site-key');
+
+            var clientId = grecaptcha.render('recaptcha-badge',
+                {
+                    'sitekey': siteKey,
+                    'size': 'invisible'
+                });
+        }
+    })();
+    </script>
 
     <script>
         if ('serviceWorker' in navigator) {
@@ -298,7 +329,7 @@
                 </div>
             </div>
         </div>
-        <div class="content-img bg-parallax pos-right hidden-md-down"> 
+        <div class="content-img bg-parallax pos-right hidden-md-down">
             <iframe width="100%" title="Maps" height="600" id="gmap_canvas" class="lazyload" data-src="https://maps.google.com/maps?q=%C3%9Clemiste%20City%20Park&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </div>
     </div>
