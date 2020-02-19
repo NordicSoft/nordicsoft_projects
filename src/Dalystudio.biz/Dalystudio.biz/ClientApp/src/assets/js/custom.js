@@ -1,42 +1,30 @@
-(function($){
+(function ($) {
 
-    $("#contact-form").on('submit',
-        function (e) {
-            e.preventDefault();
-            var data = $(this).serialize();
-            var url = $(this).prop("action");
-            var form = this;
-            $.post(url,
-                data,
-                function (resp) {
-                    resp.success == true
-                        ? $.alert({ content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "" })
-                        : $.alert({ content: "Sorry, we couldn't send your message. Try later!", theme: "my-theme", title: "" });
+	$("#contact-form").on('submit',
+		function (e) {
+			e.preventDefault();
+			var action = "contact";
+			var $form = $(this);
+			$("button[type=submit]", $form).prop("disabled", true);
+			var widgetId = $("#recaptcha-badge").data("widget-id");
+			grecaptcha.execute(widgetId, { action: action }).then(function (token) {
+				$("input[name=g-recaptcha-response-token]", $form).val(token);
+				$("input[name=g-recaptcha-action]", $form).val(action);
+			}).then(function () {
+				var data = $form.serialize();
+				var url = $form.prop("action");
 
-                    $(':input', form)
-                        .not(':button, :submit, :reset, :hidden')
-                        .val('')
-                        .prop('checked', false)
-                        .prop('selected', false);
-                });
+				return $.post(url, data);
 
-        //e.preventDefault();
-        //var $form = $(this);
-        //var data = $form.serialize();
-        //var url = $form.prop("action");
-        //return $.post(url, data)
-        //    .fail(function (e) {
-        //        console.log(e);
-        //    })
-        //    .done(function (resp) {
-        //        $("button[type=submit]", $form).prop("disabled", false);
-        //        resp.success === true
-        //            ? $.alert({ content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "" })
-        //            : $.alert({ content: "Sorry, we couldn't send your message. Try later!", theme: "my-theme", title: "" });
-        //        $form.trigger("reset");
-        //    });
+			}).then(function (resp) {
+				$("button[type=submit]", $form).prop("disabled", false);
+				resp.success == true
+					? $.alert({ content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "" })
+					: $.alert({ content: "Sorry, we couldn't send your message. Try later!", theme: "my-theme", title: "" });
 
-    });
+				$form.trigger("reset");
+			});
+		});
 
 
 
@@ -44,55 +32,55 @@
 	 * Preloader
 	/* ---------------------------------------------- */
 
-	$(window).load(function() {
+	$(window).load(function () {
 		$('.loader').fadeOut();
 		$('.page-loader').delay(350).fadeOut('slow');
 
-	    $("#menu li").removeClass("active");
-	    $("#menu a[href$='" + window.location.pathname + "']").closest("li").addClass("active");
+		$("#menu li").removeClass("active");
+		$("#menu a[href$='" + window.location.pathname + "']").closest("li").addClass("active");
 		/* ---------------------------------------------- /*
 		 * Initialization General Scripts for all pages
 		/* ---------------------------------------------- */
 
 		var moduleHero = $('.module-hero'),
-			module     = $('.module-hero, .module, .module-small'),
-			navbar     = $('.navbar-custom'),
-			navHeight  = navbar.height(),
-			worksgrid  = $('#works-grid'),
-			width      = Math.max($(window).width(), window.innerWidth),
+			module = $('.module-hero, .module, .module-small'),
+			navbar = $('.navbar-custom'),
+			navHeight = navbar.height(),
+			worksgrid = $('#works-grid'),
+			width = Math.max($(window).width(), window.innerWidth),
 			mobileTest;
 
-		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 			mobileTest = true;
-        }
+		}
 
 
-	    buildModuleHero(moduleHero);
+		buildModuleHero(moduleHero);
 		navbarCheck(navbar);
 		navbarAnimation(navbar, moduleHero, navHeight);
 		navbarSubmenu(width);
 		hoverDropdown(width, mobileTest);
 
-		$(window).resize(function() {
+		$(window).resize(function () {
 			var width = Math.max($(window).width(), window.innerWidth);
 			buildModuleHero(moduleHero);
 			hoverDropdown(width);
 		});
 
-		$(window).scroll(function() {
+		$(window).scroll(function () {
 			effectsModuleHero(moduleHero, this);
 			navbarAnimation(navbar, moduleHero, navHeight);
 		});
 
-	
+
 
 	    /* ---------------------------------------------- /*
          * Full height module
         /* ---------------------------------------------- */
 
-        function buildModuleHero(moduleHero) {
+		function buildModuleHero(moduleHero) {
 
-          
+
 			//if (moduleHero.length > 0) {
 			//	if (moduleHero.hasClass('module-full-height')) {
 			//		moduleHero.height($(window).height());
@@ -114,7 +102,7 @@
 					moduleHero.css('top', (topScroll * 0.55));
 				}
 				if (moduleHero.hasClass('module-fade') && ($(scrollTopp).scrollTop() <= homeSHeight)) {
-					moduleHero.css('opacity', (1 - topScroll/moduleHero.height() * 1));
+					moduleHero.css('opacity', (1 - topScroll / moduleHero.height() * 1));
 				}
 			}
 		};
@@ -123,7 +111,7 @@
 		 * Hero slider setup
 		/* ---------------------------------------------- */
 
-		if(mobileTest != true) {
+		if (mobileTest != true) {
 			directionNav = true;
 		} else {
 			directionNav = false;
@@ -137,20 +125,20 @@
 				directionNav: directionNav,
 				prevText: '',
 				nextText: '',
-				start: function(slider) {
+				start: function (slider) {
 					heroSliderLight();
 				},
-				before: function(slider) {
-					if(mobileTest != true) {
-						$('.hs-caption').fadeOut().animate({top:'-80px'},{queue:false, easing: 'swing', duration: 700});
+				before: function (slider) {
+					if (mobileTest != true) {
+						$('.hs-caption').fadeOut().animate({ top: '-80px' }, { queue: false, easing: 'swing', duration: 700 });
 						slider.slides.eq(slider.currentSlide).delay(500);
 						slider.slides.eq(slider.animatingTo).delay(500);
 					}
 				},
-				after: function(slider) {
+				after: function (slider) {
 					heroSliderLight();
-					if(mobileTest != true) {
-						$('.hs-caption').fadeIn().animate({top:'0'},{queue:false, easing: 'swing', duration: 700});
+					if (mobileTest != true) {
+						$('.hs-caption').fadeIn().animate({ top: '0' }, { queue: false, easing: 'swing', duration: 700 });
 					}
 				},
 				useCSS: true
@@ -176,7 +164,7 @@
 		/* ---------------------------------------------- */
 
 		if ($('.hero-slider').length > 0) {
-			$(window).scroll(function() {
+			$(window).scroll(function () {
 				var st = $(window).scrollTop();
 				if (st > 0) {
 					$('.hero-slider').flexslider('pause');
@@ -211,7 +199,7 @@
 		 * Navbar collapse on click
 		/* ---------------------------------------------- */
 
-		$(document).on('click','.navbar-collapse.in',function(e) {
+		$(document).on('click', '.navbar-collapse.in', function (e) {
 			if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
 				$(this).collapse('hide');
 			}
@@ -223,8 +211,8 @@
 
 		function navbarSubmenu(width) {
 			if (width > 767) {
-				$('.navbar-custom .navbar-nav > li.dropdown').hover(function() {
-					var MenuLeftOffset  = $('.dropdown-menu', $(this)).offset().left;
+				$('.navbar-custom .navbar-nav > li.dropdown').hover(function () {
+					var MenuLeftOffset = $('.dropdown-menu', $(this)).offset().left;
 					var Menu1LevelWidth = $('.dropdown-menu', $(this)).width();
 					if (width - MenuLeftOffset < Menu1LevelWidth * 2) {
 						$(this).children('.dropdown-menu').addClass('leftauto');
@@ -252,21 +240,21 @@
 				$('.navbar-custom .navbar-nav > li.dropdown, .navbar-custom li.dropdown > ul > li.dropdown').removeClass('open');
 				var delay = 0;
 				var setTimeoutConst;
-				$('.navbar-custom .navbar-nav > li.dropdown, .navbar-custom li.dropdown > ul > li.dropdown').hover(function() {
+				$('.navbar-custom .navbar-nav > li.dropdown, .navbar-custom li.dropdown > ul > li.dropdown').hover(function () {
 					var $this = $(this);
-					setTimeoutConst = setTimeout(function() {
+					setTimeoutConst = setTimeout(function () {
 						$this.addClass('open');
 						$this.find('.dropdown-toggle').addClass('disabled');
 					}, delay);
 				},
-				function() {
-					clearTimeout(setTimeoutConst);
-					$(this).removeClass('open');
-					$(this).find('.dropdown-toggle').removeClass('disabled');
-				});
+					function () {
+						clearTimeout(setTimeoutConst);
+						$(this).removeClass('open');
+						$(this).find('.dropdown-toggle').removeClass('disabled');
+					});
 			} else {
 				$('.navbar-custom .navbar-nav > li.dropdown, .navbar-custom li.dropdown > ul > li.dropdown').unbind('mouseenter mouseleave');
-				$('.navbar-custom [data-toggle=dropdown]').not('.binded').addClass('binded').on('click', function(event) {
+				$('.navbar-custom [data-toggle=dropdown]').not('.binded').addClass('binded').on('click', function (event) {
 					event.preventDefault();
 					event.stopPropagation();
 					$(this).parent().siblings().removeClass('open');
@@ -274,9 +262,9 @@
 					$(this).parent().toggleClass('open');
 				});
 			}
-        };
+		};
 
-	
+
 		/* ---------------------------------------------- /*
 		 * Portfolio
 		/* ---------------------------------------------- */
@@ -288,21 +276,21 @@
 			worksgrid_mode = 'fitRows';
 		}
 
-	    worksgrid.each(function () {
-	        var update = function () {
-	            worksgrid.isotope({
-	                layoutMode: worksgrid_mode,
-	                itemSelector: '.work-item',
-	            });
-	        };
+		worksgrid.each(function () {
+			var update = function () {
+				worksgrid.isotope({
+					layoutMode: worksgrid_mode,
+					itemSelector: '.work-item',
+				});
+			};
 
-	        // Note: Instead of waiting for all images until we initialize the widget
-	        // we use event capturing to update the widget's layout progressively.
-	        this.addEventListener('load', update, true);
-	    });
-		
+			// Note: Instead of waiting for all images until we initialize the widget
+			// we use event capturing to update the widget's layout progressively.
+			this.addEventListener('load', update, true);
+		});
 
-		$('#filters a').click(function() {
+
+		$('#filters a').click(function () {
 			$('#filters .current').removeClass('current');
 			$(this).addClass('current');
 			var selector = $(this).attr('data-filter');
@@ -323,29 +311,29 @@
 		 * Post slider
 		/* ---------------------------------------------- */
 
-		$('.post-images-slider').flexslider( {
+		$('.post-images-slider').flexslider({
 			animation: 'slide',
 			smoothHeight: true,
 		});
 
-		
+
 		/* ---------------------------------------------- /*
 		 * Progress bars, counters animations
 		/* ---------------------------------------------- */
 
-		$('.progress-bar').each(function(i) {
-			$(this).appear(function() {
+		$('.progress-bar').each(function (i) {
+			$(this).appear(function () {
 				var percent = $(this).attr('aria-valuenow');
-				$(this).animate({'width' : percent + '%'});
-				$(this).find('span').animate({'opacity' : 1}, 900);
-				$(this).find('span').countTo({from: 0, to: percent, speed: 900, refreshInterval: 30});
+				$(this).animate({ 'width': percent + '%' });
+				$(this).find('span').animate({ 'opacity': 1 }, 900);
+				$(this).find('span').countTo({ from: 0, to: percent, speed: 900, refreshInterval: 30 });
 			});
 		});
 
-		$('.counter-item').each(function(i) {
-			$(this).appear(function() {
+		$('.counter-item').each(function (i) {
+			$(this).appear(function () {
 				var number = $(this).find('.counter-number').data('number');
-				$(this).find('.counter-number span').countTo({from: 0, to: number, speed: 1200, refreshInterval: 30});
+				$(this).find('.counter-number span').countTo({ from: 0, to: number, speed: 1200, refreshInterval: 30 });
 			});
 		});
 
@@ -367,7 +355,7 @@
 			gallery: {
 				enabled: true,
 				navigateByImgClick: true,
-				preload: [0,1]
+				preload: [0, 1]
 			},
 			image: {
 				titleSrc: 'title',
@@ -395,7 +383,7 @@
 		 * Scroll Animation
 		/* ---------------------------------------------- */
 
-		$('.section-scroll').bind('click', function(e) {
+		$('.section-scroll').bind('click', function (e) {
 			var anchor = $(this);
 			$('html, body').stop().animate({
 				scrollTop: $(anchor.attr('href')).offset().top
@@ -407,7 +395,7 @@
 		 * Scroll top
 		/* ---------------------------------------------- */
 
-		$(window).scroll(function() {
+		$(window).scroll(function () {
 			if ($(this).scrollTop() > 100) {
 				$('.scroll-up').fadeIn();
 			} else {
@@ -415,43 +403,43 @@
 			}
 		});
 
-		$('a[href="#totop"]').click(function() {
+		$('a[href="#totop"]').click(function () {
 			$('html, body').animate({ scrollTop: 0 }, 'slow');
 			return false;
 		});
 
-    });
+	});
 
-    document.addEventListener('lazybeforeunveil', function (e) {
-        var bgbuf = e.target.getAttribute('data-bgset');
-        var onlybg = e.target.getAttribute('data-bg');
-        if (bgbuf) {
-            var bg = bgbuf.split(',');
-            var bg1 = "";
-            if ($('html').hasClass("webp") && $(window).width() > 767) {
-                bg1 = bg[0].replace(/\.[^/.]+$/, ".webp");
-                e.target.style.backgroundImage = 'url(' + bg1 + ')';
-            }
-            else if ($(window).width() > 767) {
-                bg1 = bg[0];
-                e.target.style.backgroundImage = 'url(' + bg1 + ')';
-            } else if ($('html').hasClass("webp")) {
-                bg1 = bg[1].replace(/\.[^/.]+$/, ".webp");
-                e.target.style.backgroundImage = 'url(' + bg1 + ')';
-            }
-            else {
-                bg1 = bg[1];
-                e.target.style.backgroundImage = 'url(' + bg1 + ')';
-            }
-        }
-        if (onlybg) {
-            if ($('html').hasClass("webp")) {
-                onlybg = onlybg.replace(/\.[^/.]+$/, ".webp");
-               
-            }
-            e.target.style.backgroundImage = 'url(' + onlybg + ')';
-           
-        }
-    });
+	document.addEventListener('lazybeforeunveil', function (e) {
+		var bgbuf = e.target.getAttribute('data-bgset');
+		var onlybg = e.target.getAttribute('data-bg');
+		if (bgbuf) {
+			var bg = bgbuf.split(',');
+			var bg1 = "";
+			if ($('html').hasClass("webp") && $(window).width() > 767) {
+				bg1 = bg[0].replace(/\.[^/.]+$/, ".webp");
+				e.target.style.backgroundImage = 'url(' + bg1 + ')';
+			}
+			else if ($(window).width() > 767) {
+				bg1 = bg[0];
+				e.target.style.backgroundImage = 'url(' + bg1 + ')';
+			} else if ($('html').hasClass("webp")) {
+				bg1 = bg[1].replace(/\.[^/.]+$/, ".webp");
+				e.target.style.backgroundImage = 'url(' + bg1 + ')';
+			}
+			else {
+				bg1 = bg[1];
+				e.target.style.backgroundImage = 'url(' + bg1 + ')';
+			}
+		}
+		if (onlybg) {
+			if ($('html').hasClass("webp")) {
+				onlybg = onlybg.replace(/\.[^/.]+$/, ".webp");
+
+			}
+			e.target.style.backgroundImage = 'url(' + onlybg + ')';
+
+		}
+	});
 
 })(jQuery);
