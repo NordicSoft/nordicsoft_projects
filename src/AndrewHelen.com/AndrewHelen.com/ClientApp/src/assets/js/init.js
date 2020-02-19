@@ -40,9 +40,9 @@
         $("#contact-form").on('submit', function (e) {
             e.preventDefault();
             var $form = $(this);
-            var siteKey = $("input[name=g-recaptcha-site-key]", $form).val();
             $("button[type=submit]", $form).prop("disabled", true);
-            grecaptcha.execute(siteKey, {
+            var widgetId = $("#recaptcha-badge").data("widget-id");
+            grecaptcha.execute(widgetId, {
                 action: 'contact'
             }).then(function (token) {
                 $("input[name=g-recaptcha-response-token]", $form).val(token);
