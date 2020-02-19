@@ -1,3 +1,0 @@
-﻿User-agent: *
-Host: https://dalystudio.biz
-Sitemap: https://dalystudio.biz/sitemap.xml
