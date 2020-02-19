@@ -1,10 +1,14 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Newtonsoft.Json.Linq;
-using Event.Services.GoogleRecaptcha;
-using Event.Services.MailSender;
+using NordicSoftEvents.Services.GoogleRecaptcha;
+//using NordicSoftEvents.Services.MailSender;
 
-namespace Event.Controllers.API
+//using NordicSoftEvents.Services.MailSender;
+
+namespace NordicSoftEvents.Controllers.API
 {
     [Route("api/")]
     [ApiController]
@@ -12,7 +16,7 @@ namespace Event.Controllers.API
     {
         [HttpPost]
         [Route("send-feedback")]
-        public async Task<JObject> SendFeedback([FromServices] IGoogleRecaptcha googleRecaptcha, [FromServices] IMailSender mailSender, string subject = "Feedback from customer")
+        public async Task<JObject> SendFeedback([FromServices] IGoogleRecaptcha googleRecaptcha, [FromServices] IEmailSender mailSender, [FromServices] IHostingEnvironment env)
         {
 
             string name = Request.Form["name"];
@@ -20,41 +24,32 @@ namespace Event.Controllers.API
             string phone = Request.Form["phone"];
             string seats = Request.Form["numberSeats"];
             string pass = Request.Form["selectPass"];
+            string encodedResponse = Request.Form["g-recaptcha-response-token"];
+            string action = Request.Form["g-recaptcha-action"];
 
-            var feedbackMessage =
-                $"Seats: {seats} \n Pass: {pass}";
+            string subject = $"{Settings.SiteNameDomain}: Feedback from customer";
+            var feedbackMessage = $"Seats: <strong>{seats}</strong> \n <br> Pass: <strong>{pass}</strong> \n <br> Phone: <strong>{phone}</strong>";
 
-            var emailModel = new
-            {
-                Name = name,
-                Email = email,
-                Phone = phone,
-                //Seats = seats,
-                //Pass = pass,
-                //Subject = subject,
-                FeedbackMessage = feedbackMessage
-            };
+            //bool isCaptchaValid = await googleRecaptcha.IsCaptchaValid(encodedResponse, action);
 
-            var textBody = $"Feedback from customer with name: {name} and e-mail: {email}: " +
-                           $"{feedbackMessage}";
+            //if (!isCaptchaValid && env.IsProduction())
+            //{
+            //    return JObject.FromObject(new { success = false });
+            //}
 
-            var textHtml = $"<p>Feedback from customer with name: <strong>{name}</strong></p>" +
-                           $"<p>and e-mail: <strong>{email}</strong>: </p>" +
+            var textHtml = $"<p>{Settings.SiteNameDomain}: Feedback from customer with name: <strong>{name}</strong> and e-mail: <strong>{email}</strong>: </p>" +
                            $"<p>{feedbackMessage}</p>";
 
-            // send email to administrator
-            IMail mail = new AmazonSESMail
+            try
             {
-                SenderAddress = Settings.SupportEmail,
-                ReceiverAddress = Settings.SupportEmail,
-                Subject = subject,
-                TextBody = textBody,
-                HtmlBody = textHtml
-            };
-            var success = await mailSender.SendEmailAsync(mail);
+                await mailSender.SendEmailAsync(Settings.SupportEmail, subject, textHtml);
+                return JObject.FromObject(new { success = true });
 
-            return JObject.FromObject(new {success = success });
+            }
+            catch
+            {
+                return JObject.FromObject(new { success = false });
+            }
         }
-
     }
 }

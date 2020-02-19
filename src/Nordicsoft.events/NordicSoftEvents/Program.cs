@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 using NLog.Common;
 using NLog.Web;
 
-namespace Event
+namespace NordicSoftEvents
 {
     public class Program
     {

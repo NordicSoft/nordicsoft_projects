@@ -3,30 +3,24 @@
     min-height: 100vh;
     position: relative;
     overflow: hidden;
-}
 
-.fullscreen-hero .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transform: translateY(-50%);
-    z-index: 2;
-}
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        min-height: 100vh;
+        background-color: rgba(52, 73, 94, 0.6);
+    }
 
-/*.fullscreen-hero .hero-content .hero-inner {
-    display: table-cell;
-    width: 100%;
-    vertical-align: middle;
-}*/
-
-.fullscreen-hero:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    min-height: 100vh;
-    background-color: rgba(52, 73, 94, 0.6);
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
 }

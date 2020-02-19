@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Linq;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Primitives;
 
-namespace Event.Extensions
+namespace NordicSoftEvents.Extensions
 {
     public static class Extensions
     {
@@ -18,6 +21,21 @@ namespace Event.Extensions
         {
             if (string.IsNullOrEmpty(value)) return value;
             return value.Length <= maxLength ? value : value.Substring(0, maxLength);
+        }
+
+        public static bool IsWebP(this HttpContext context)
+        {
+            bool isWebP = false;
+            var isAccept = context.Request.Headers.TryGetValue("Accept", out var acceptHeader);
+            if (isAccept && !StringValues.IsNullOrEmpty(acceptHeader))
+            {
+                var headerValue = acceptHeader.ToArray().FirstOrDefault();
+                if (!string.IsNullOrEmpty(headerValue) && headerValue.Contains("image/webp"))
+                {
+                    isWebP = true;
+                }
+            }
+            return isWebP;
         }
     }
 }

@@ -5,10 +5,10 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
+using NordicSoftEvents.Extensions;
 using SmartBreadcrumbs;
-using Event.Extensions;
 
-namespace Event.TagHelpers
+namespace NordicSoftEvents.TagHelpers
 {
     [HtmlTargetElement("breadcrumbs")]
     public class BreadcrumbsTagHelper : TagHelper

@@ -1,4 +1,8 @@
-﻿@using Event
+﻿@using NordicSoftEvents;
+@using NordicSoftEvents.Services.GoogleRecaptcha;
+@using Microsoft.Extensions.Options;
+@inject IOptions<ReCaptchaClass> RecaptchaOptions;
+
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -7,44 +11,65 @@
     <meta property="og:title" content="NordicSoft | YOUCANHACKIT" />
     <meta property="og:url" content="@Html.Raw($"https://{Context.Request.Host}{Context.Request.Path}")" />
     <meta property="og:description" content="Register now if you are sure #youcanhackit. Learn more info about hackathon itself, prizes and facilities we offer." />
-    <meta property="og:image" content="@($"{Context.Request.Scheme}://{Context.Request.Host}/images/events_og_image.jpg")" />
+    <meta property="og:image" content="@($"https://{Context.Request.Host}/images/events_og_image.jpg")" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="522" />
+
     <meta name="description" content="Register now if you are sure #youcanhackit. Learn more info about hackathon itself, prizes and facilities we offer." />
 }
 @section links{
     <link rel="canonical" href="@Html.Raw($"https://{Context.Request.Host}{Context.Request.Path}")" />
 }
 
-<div id="preloader">
-    <div id="preloader-inner"></div>
-</div>
+@section criticalCSS{
+    <style>
+        .bg-faded{background:#f8f8f8}.bg-overlay{position:relative}.bg-overlay:before{background-color:rgba(0,0,0,.3);position:absolute;width:100%;height:100%;left:0;top:0;z-index:1;content:""}.bg-overlay .container{z-index:3;position:relative}body,html{height:100%}body{color:#666;font-weight:300;letter-spacing:0;font-size:.9em;line-height:1.85714286em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:Arial,sans-serif}#home{background-attachment:fixed}h3,h5{color:#252525;font-variant-ligatures:common-ligatures;margin-top:0}h3{font-size:1.5em;line-height:1.5em}h5{font-size:1em;line-height:1.85714286em}.lead{font-size:1.35714286em;line-height:1.68421053em;font-weight:400;color:#595959}.font700{font-weight:700!important}@@media (max-width:767px){h3{line-height:1.85714286em}.lead,h3{font-size:1.35714286em}.lead{line-height:1.36842105em}}.text-white-gray{color:hsla(0,0%,100%,.8)!important}a{color:#8bcb26}.btn{font-size:.8rem}.btn{overflow:hidden;position:relative;z-index:1;border-radius:2px;font-weight:600;letter-spacing:0;padding:13px 25px!important;text-transform:uppercase}.btn:before{content:"";position:absolute;left:0;top:0;width:0;height:100%;z-index:-1}.btn-primary{color:#17212b;box-shadow:0 .05em .1em rgba(0,0,0,.18);border:0}.btn-primary{background:#8bcb26}.btn-width{max-width:150px;margin:auto}.navbar-brand.logo{font-weight:700;color:#fff;opacity:.6}.navbar.navbar-light.navbar-transparent.bg-faded{background-color:transparent!important;position:fixed;left:0;top:0;width:100%;z-index:999}.navbar.navbar-light.navbar-transparent.bg-faded .nav-link{color:#fff;opacity:.8;text-transform:uppercase;font-weight:700;font-size:.8rem;padding-left:1rem;padding-right:1rem}.fullscreen-hero{width:100%;min-height:100vh;position:relative;overflow:hidden}.fullscreen-hero:before{content:"";position:absolute;left:0;top:0;width:100%;min-height:100vh;background-color:rgba(52,73,94,.6)}.fullscreen-hero .hero-content{position:absolute;top:50%;left:0;right:0;margin:auto;transform:translateY(-50%);z-index:2}.event-info{padding-right:30px;text-transform:uppercase}@@media (min-width:575px){.event-info{text-align:right}}.event-info span{display:block;font-size:16px;margin-top:5px}.event-detail{border-left:2px solid #8bcb26;padding-left:30px;position:relative}.event-detail:before{content:"";position:absolute;width:14px;height:14px;border-radius:7px;background:#fff;left:-7px;top:10px}.event-detail:after{content:"";background-image:url(/images/icons.svg);background-position:-150px 0;background-repeat:no-repeat;position:absolute;left:-2px;top:9px;width:10px;height:16px}@@media (min-width:575px){.event-detail h3{margin-bottom:20px}}@@media (max-width:991px){.hero-content .display-3{font-size:3rem}.navbar.navbar-light.navbar-transparent.bg-faded{position:fixed;top:0;left:0;width:100%;z-index:999;background-color:#000!important;padding:.7rem 1rem}.navbar.navbar-light.navbar-transparent.bg-faded .navbar-toggler{position:absolute;top:10px;right:15px;background-color:#fff;border-radius:0;-webkit-border-radius:0;border:0}.event-detail:after,.event-detail:before{display:none}.event-detail{border-left:0;padding-left:15px}}@@media (max-width:576px){.hero-content .display-3{font-size:1.5rem}.hero-content .lead{font-size:13px}.hero-content h5{font-size:.8rem}.hero-content .btn-primary{margin-bottom:20px}}:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}*,:after,:before{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-ms-overflow-style:scrollbar}@@-ms-viewport{width:device-width}main,nav{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}h3,h5{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}ul{margin-bottom:1rem}ul{margin-top:0}a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects}button{border-radius:0}button,input{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,input{overflow:visible}button{text-transform:none}button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}h3,h5{margin-bottom:.5rem;font-family:inherit;font-weight:400;line-height:1.2;color:inherit}h3{font-size:1.75rem}h5{font-size:1.25rem}.lead{font-size:1.25rem;font-weight:300}.display-3{font-size:4.5rem}.display-3{font-weight:300;line-height:1.2}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@@media (min-width:576px){.container{max-width:540px}}@@media (min-width:768px){.container{max-width:720px}}@@media (min-width:992px){.container{max-width:960px}}@@media (min-width:1200px){.container{max-width:1140px}}.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col-lg-8,.col-sm-3,.col-sm-9{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}@@media (min-width:576px){.col-sm-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-sm-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}}@@media (min-width:992px){.col-lg-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}}.btn{display:inline-block;font-weight:400;text-align:center;white-space:nowrap;vertical-align:middle;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem}.btn-primary{color:#fff;background-color:#007bff;border-color:#007bff}.fade:not(.show){opacity:0}.collapse:not(.show){display:none}.nav-link{display:block;padding:.5rem 1rem}.tab-content>.tab-pane{display:none}.navbar{position:relative;padding:.5rem 1rem}.navbar{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between}.navbar-brand{display:inline-block;padding-top:.3125rem;padding-bottom:.3125rem;margin-right:1rem;font-size:1.25rem;line-height:inherit;white-space:nowrap}.navbar-nav{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}.navbar-nav .nav-link{padding-right:0;padding-left:0}.navbar-collapse{-ms-flex-preferred-size:100%;flex-basis:100%;-ms-flex-positive:1;flex-grow:1;-ms-flex-align:center;align-items:center}.navbar-toggler{padding:.25rem .75rem;font-size:1.25rem;line-height:1;background-color:transparent;border:1px solid transparent;border-radius:.25rem}.navbar-toggler-icon{display:inline-block;width:1.5em;height:1.5em;vertical-align:middle;content:"";background:no-repeat 50%;background-size:100% 100%}@@media (min-width:992px){.navbar-expand-lg{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-lg .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand-lg .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-lg .navbar-collapse{display:-ms-flexbox!important;display:flex!important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand-lg .navbar-toggler{display:none}}.navbar-light .navbar-brand{color:rgba(0,0,0,.9)}.navbar-light .navbar-nav .nav-link{color:rgba(0,0,0,.5)}.navbar-light .navbar-toggler{color:rgba(0,0,0,.5);border-color:rgba(0,0,0,.1)}.navbar-light .navbar-toggler-icon{background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")}.mr-auto{margin-right:auto!important}.ml-auto{margin-left:auto!important}.text-center{text-align:center!important}.text-uppercase{text-transform:uppercase!important}.text-white{color:#fff!important}
+    </style>
+}
+
+@section Scripts{
+    @*<script src='https://www.google.com/recaptcha/api.js?render=@RecaptchaOptions.Value.SiteKey' defer></script>*@
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/dist/sw.js', { scope: '/' }).then(function (registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+}
 
 <nav class="navbar navbar-expand-lg navbar-light bg-faded navbar-sticky navbar-transparent">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarevent" aria-controls="navbarevent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand logo" href="/">
-        #YOUCANHACKIT
-    </a>
+    <a class="navbar-brand logo" href="/">#YOUCANHACKIT</a>
     <div class="collapse navbar-collapse" id="navbarevent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" data-scroll href="#home">Home</a>
+                <a class="nav-link" data-scroll href="#home" title="Home">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-scroll href="#schedule">Schedule</a>
+                <a class="nav-link" data-scroll href="#schedule" title="Schedule">Schedule</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-scroll href="#about">About</a>
+                <a class="nav-link" data-scroll href="#about" title="About">About</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" data-scroll href="#facilities">Facilities</a>
+                <a class="nav-link" data-scroll href="#facilities" title="Facilities">Facilities</a>
             </li>
         </ul>
     </div>
 </nav>
 
-<div id="home" class="fullscreen-hero bg-overlay bg-parallax" data-jarallax='{"speed": 0.4}' style='background-image: url("images/event/bg.jpg")'>
+<div id="home" class="fullscreen-hero bg-overlay bg-bg">
     <div class="hero-content">
         <div class="hero-inner">
             <div class="container">
@@ -56,7 +81,7 @@
                             When: 7, November – 9, November 2019<br>
                             Where: Ulemiste City park, Tallinn
                         </p>
-                        <a class="btn btn-primary btn-width" href="#" data-toggle="modal" data-target="#ticketsModal">Register Now</a>
+                        <a class="btn btn-primary btn-width" href="#" data-toggle="modal" data-target="#ticketsModal" title="Register Now">Register Now</a>
                     </div>
                 </div>
             </div>
@@ -202,11 +227,15 @@
 
 <section id="about" class="bg-light">
     <div class="half-image-content one-half-image-content">
-        <div class="content-img bg-parallax pos-left hidden-md-down" data-jarallax='{"speed": 0.2}' style="background:url(images/event/about.jpg) no-repeat;"></div>
-        <img src="images/event/about.jpg" class="visible-lg-down hidden-lg-up img-fluid img-about" alt="">
+        <div class="bg-about content-img pos-left hidden-md-down lazyload" data-bg="/images/event/about.jpg"></div>
+        <picture>
+            <source type="image/webp" data-srcset="images/event/about.webp">
+            <img data-src="images/event/about.jpg" class="visible-lg-down hidden-lg-up img-fluid img-about lazyload" alt="About event">
+        </picture>
+
         <div class="container-fluid">
             <div class="row">
-                <div class="offset-lg-4 col-lg-8 pl-110 pt80 pb80">
+                <div class="offset-lg-4 col-lg-8 pl110 pt80 pb80">
                     <h2 class="mb20">About  NordicSoft’s #YOUCANHACKIT 2019</h2>
                     <div class="clearfix">
                         <p>Hackathons are about great learning and teaching experience, but prizes ain’t bad motivation, isn’t it? Meet and network with fellow techies, experienced mentors, and company partners throughout the 24 hours and win great cash prizes for your innovative ideas.</p>
@@ -214,7 +243,7 @@
                         <br>
                         <h5 class="font700">Conference will start in</h5>
                         <div id="clock" data-until-date="2019/11/07 19:00:00" class="row mt-4 mb-4"></div>
-                        <a href="#schedule" data-toggle="modal" data-target="#ticketsModal" class="btn btn-primary mr-3 mb-2">Apply Now</a>
+                        <a href="#schedule" data-toggle="modal" data-target="#ticketsModal" class="btn btn-primary mr-3 mb-2" title="Apply Now">Apply Now</a>
                     </div>
                 </div>
 
@@ -231,12 +260,12 @@
         </div>
         <div class="row">
             <div class="col-md-6 mb30 text-center">
-                <i class="fa fa-bed fa-3x text-primary mb20"></i>
+                <div class="sprite-icon icon-bed"></div>
                 <h4>Accommodation</h4>
                 <p>Typically, teams are working overnight in order to finish up the projects. We will provide comfortable spaces for you to be able to take naps if needed.</p>
             </div>
             <div class="col-md-6 mb30 text-center">
-                <i class="fa fa-spoon fa-3x text-primary mb20"></i>
+                <div class="sprite-icon icon-meals"></div>
                 <h4>Meals & Drinks</h4>
                 <p>All meals are included and will be provided according to the schedule. Also, there will be coffee spots with alcohol-free drinks and fresh cookies.</p>
             </div>
@@ -248,7 +277,7 @@
     <div class="half-image-content two-half-image-content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4 pl-110 pt80 pb80">
+                <div class="col-lg-4 pl110 pt80 pb80">
                     <div class="mr-auto m-auto mb30">
                         <div class="center-title mb30">
                             <h2 class="text-white">Contact us</h2>
@@ -260,29 +289,21 @@
                         </div>
                         <div class="tags-post">
                             <div class="cleafix">
-                                <a href="#" class="social-icon si-dark si-colored-facebook">
-                                    <i class="fa fa-facebook"></i>
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <a href="#" class="social-icon  si-dark si-colored-twitter">
-                                    <i class="fa fa-twitter"></i>
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <a href="#" class="social-icon si-dark si-colored-linkedin">
-                                    <i class="fa fa-linkedin"></i>
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
+                                <a href="#" class="social-icon sprite-icon facebook" aria-label="Facebook"></a>
+                                <a href="#" class="social-icon sprite-icon twitter" aria-label="Twitter"></a>
+                                <a href="#" class="social-icon sprite-icon linkedin" aria-label="Linkedin"></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="content-img bg-parallax pos-right hidden-md-down">
-            <iframe width="100%" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=%C3%9Clemiste%20City%20Park&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <div class="content-img bg-parallax pos-right hidden-md-down"> 
+            <iframe width="100%" title="Maps" height="600" id="gmap_canvas" class="lazyload" data-src="https://maps.google.com/maps?q=%C3%9Clemiste%20City%20Park&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </div>
     </div>
 </section>
+
 <section class="pt90 pb60">
     <div class="container">
         <div class="row newsletter-row">
@@ -294,27 +315,23 @@
                         </div>
                     </div>
                 </div>
-                <form>
+                <form method="POST" asp-controller="Common" asp-action="Subscribe" id="subscribe-form">
                     <div class="row">
                         <div class="col-sm-3 event-info"><span>Name</span></div>
                         <div class="col-sm-9 event-detail">
-                            <input type="text" class="form-control" required="">
+                            <input type="text" name="name" minlength="3" maxlength="20" class="form-control" required aria-label="Name">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-3 event-info"><span>Email</span></div>
                         <div class="col-sm-9 event-detail">
-                            <input type="email" class="form-control" required="">
+                            <input type="email" name="email" class="form-control" required aria-label="Email">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-3 event-info pb-0"></div>
                         <div class="col-sm-9 event-detail">
-                            <button type="submit" class="btn btn-primary btn-block btn-square">Subscribe</button>
-                            <label class="custom-checkbox accept-terms">
-                                <input type="checkbox" class="custom-control-input">
-                                <span class="custom-control-indicator"></span>
-                            </label>
+                            <button type="submit" class="btn btn-primary btn-block btn-square" title="Subscribe">Subscribe</button>
                         </div>
                     </div>
                 </form>
@@ -327,7 +344,7 @@
     <div class="container text-center">
         <div class="row">
             <div class="col-lg-12">
-                <span>&copy; 2019 Powered by NordicSoft. All rights reserved.</span>
+                <span>&copy; @DateTime.Now.Year Powered by <a href="https://nordicsoft.net/" target="_blank" rel="noopener noreferrer nofollow">NordicSoft</a>. All rights reserved.</span>
             </div>
         </div>
 
@@ -339,24 +356,31 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title h4" id="exampleModalLabel">Register for conference</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="ti-close"></i></span>
+                <button type="button" class="sprite-icon icon-close close" data-dismiss="modal" aria-label="Close">
+                    @*<span aria-hidden="true"><i class="fa fa-times"></i></span>*@
                 </button>
             </div>
             <form method="POST" asp-controller="Common" asp-action="SendFeedback" id="contact-form">
+
+                <input type="hidden" name="g-recaptcha-action">
+                <input type="hidden" name="g-recaptcha-response-token">
+                <input type="hidden" name="g-recaptcha-site-key" value="@RecaptchaOptions.Value.SiteKey">
+
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-12 mb10">
-                            <input type="text" name="name" class="form-control" placeholder="Name" required="">
+                            <input type="text" name="name" minlength="3" maxlength="20" class="form-control" placeholder="Name" required>
                         </div>
                         <div class="col-md-12 mb10">
-                            <input type="text" name="email" class="form-control" placeholder="Email address" required="">
+                            <input type="email" name="email" class="form-control" placeholder="Email address" required>
                         </div>
                         <div class="col-md-12 mb10">
-                            <input type="text" name="phone" class="form-control" placeholder="Phone" required="">
+                            <div class="item-input-phone">
+                                <input type="text" name="phone" class="form-control" maxlength="10" placeholder="Phone" required>
+                            </div>
                         </div>
                         <div class="col-md-12 mb10">
-                            <select class="form-control" name="numberSeats" required="">
+                            <select class="form-control" name="numberSeats" required>
                                 <option value="">Number of Seats</option>
                                 <option value="1">1 Seat</option>
                                 <option value="2">2 Seats</option>
@@ -366,23 +390,22 @@
                             </select>
                         </div>
                         <div class="col-md-12 mb10">
-                            <select class="form-control" name="selectPass" required="">
+                            <select class="form-control" name="selectPass" required>
                                 <option value="">Select a Pass</option>
-                                <option value="1">Bronze pass - 99$/1 seat</option>
-                                <option value="2">Silver pass - 199$/1 seat</option>
-                                <option value="3">Gold pass - 299$/1 seat</option>
-                                <option value="4">VIP pass - 399$/1 seat</option>
+                                <option value="99">Bronze pass - 99$/1 seat</option>
+                                <option value="199">Silver pass - 199$/1 seat</option>
+                                <option value="299">Gold pass - 299$/1 seat</option>
+                                <option value="399">VIP pass - 399$/1 seat</option>
                             </select>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    <button type="submit" class="btn btn-primary btn-block" title="Submit">Submit</button>
                 </div>
             </form>
         </div>
     </div>
 </div>
 
-<a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="ti-angle-up"></i></a>
-
+<a href="#" class="back-to-top sprite-icon hidden-xs-down" id="back-to-top" title="Back to top"></a>
