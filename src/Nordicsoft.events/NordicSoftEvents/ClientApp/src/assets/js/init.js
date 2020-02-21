@@ -3,36 +3,27 @@ $(document).ready(function () {
     $("#contact-form").on('submit', function (e) {
         e.preventDefault();
         var $form = $(this);
-        var siteKey = $("input[name=g-recaptcha-site-key]", $form).val();
-
+        var widgetId = $("#recaptcha-badge").data("widget-id");
         $("button[type=submit]", $form).prop("disabled", true);
-        var data = $form.serialize();
-        var url = $form.prop("action");
-        $.post(url,
-            data,
-            function (resp) {
-                $("button[type=submit]", $form).prop("disabled", false);
-                resp.success == true
-                    ? $.alert({
-                        backgroundDismiss: true,
-                        content: "Your message was successfully sent. We will write your back soon!",
-                        theme: "my-theme",
-                        title: "",
-                        onOpen: function () { $('body').addClass('overflow-y') },
-                        onClose: function () { $('body').removeClass('overflow-y') }
-                    })
-                    : $.alert({
-                        backgroundDismiss: true,
-                        content: "Sorry, we couldn't send your message. Try later!",
-                        theme: "my-theme",
-                        title: "",
-                        onOpen: function () { $('body').addClass('overflow-y') },
-                        onClose: function () { $('body').removeClass('overflow-y') }
-                    });
+        grecaptcha.execute(widgetId, {
+            action: 'contact'
+        }).then(function (token) {
+            $("input[name=g-recaptcha-response-token]", $form).val(token);
+            $("input[name=g-recaptcha-action]", $form).val("contact");
+        }).then(function () {
+            var data = $form.serialize();
+            var url = $form.prop("action");
 
-                $form.trigger("reset");
-            });
+            return $.post(url, data).catch(function (e) { console.log(e) });
 
+        }).then(function (resp) {
+            $("button[type=submit]", $form).prop("disabled", false);
+            resp.success == true
+                ? $.alert({ content: "Your message was successfully sent. We will write your back soon!", theme: "my-theme", title: "" })
+                : $.alert({ content: "Sorry, we couldn't send your message. Try later!", theme: "my-theme", title: "" });
+
+            $form.trigger("reset");
+        });
     });
     //subscribe
     $("#subscribe-form").on('submit', function (e) {
