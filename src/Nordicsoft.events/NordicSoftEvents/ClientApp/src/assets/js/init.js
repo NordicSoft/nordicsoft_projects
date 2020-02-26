@@ -8,8 +8,8 @@ $(document).ready(function () {
 
         $("button[type=submit]", $form).prop("disabled", true);
         grecaptcha.execute(widgetId, { action: action }).then(function (token) {
-            $("input[name=ClientResponseToken]", $form).val(token);
-            $("input[name=Action]", $form).val(action);
+            $("input[name=g-recaptcha-response-token]", $form).val(token);
+            $("input[name=g-recaptcha-action]", $form).val(action);
         }).then(function () {
             var data = $form.serialize();
             var url = $form.prop("action");
