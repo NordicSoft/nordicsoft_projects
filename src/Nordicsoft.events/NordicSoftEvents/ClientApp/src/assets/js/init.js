@@ -2,15 +2,20 @@ $(document).ready(function () {
     //contact-form
     $("#contact-form").on('submit', function (e) {
         e.preventDefault();
+        var action = "contact";
         var $form = $(this);
-        var siteKey = $("input[name=g-recaptcha-site-key]", $form).val();
+        var widgetId = $("#recaptcha-badge").data("widget-id");
 
         $("button[type=submit]", $form).prop("disabled", true);
-        var data = $form.serialize();
-        var url = $form.prop("action");
-        $.post(url,
-            data,
-            function (resp) {
+        grecaptcha.execute(widgetId, { action: action }).then(function (token) {
+            $("input[name=ClientResponseToken]", $form).val(token);
+            $("input[name=Action]", $form).val(action);
+        }).then(function () {
+            var data = $form.serialize();
+            var url = $form.prop("action");
+
+            return $.post(url, data);
+        }).then(function (resp) {
                 $("button[type=submit]", $form).prop("disabled", false);
                 resp.success == true
                     ? $.alert({
