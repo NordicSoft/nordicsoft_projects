@@ -16,28 +16,27 @@ $(document).ready(function () {
 
             return $.post(url, data);
         }).then(function (resp) {
-                $("button[type=submit]", $form).prop("disabled", false);
-                resp.success == true
-                    ? $.alert({
-                        backgroundDismiss: true,
-                        content: "Your message was successfully sent. We will write your back soon!",
-                        theme: "my-theme",
-                        title: "",
-                        onOpen: function () { $('body').addClass('overflow-y') },
-                        onClose: function () { $('body').removeClass('overflow-y') }
-                    })
-                    : $.alert({
-                        backgroundDismiss: true,
-                        content: "Sorry, we couldn't send your message. Try later!",
-                        theme: "my-theme",
-                        title: "",
-                        onOpen: function () { $('body').addClass('overflow-y') },
-                        onClose: function () { $('body').removeClass('overflow-y') }
-                    });
+            $("button[type=submit]", $form).prop("disabled", false);
+            resp.success == true
+                ? $.alert({
+                    backgroundDismiss: true,
+                    content: "Your message was successfully sent. We will write your back soon!",
+                    theme: "my-theme",
+                    title: "",
+                    onOpen: function () { $('body').addClass('overflow-y') },
+                    onClose: function () { $('body').removeClass('overflow-y') }
+                })
+                : $.alert({
+                    backgroundDismiss: true,
+                    content: "Sorry, we couldn't send your message. Try later!",
+                    theme: "my-theme",
+                    title: "",
+                    onOpen: function () { $('body').addClass('overflow-y') },
+                    onClose: function () { $('body').removeClass('overflow-y') }
+                });
 
-                $form.trigger("reset");
-            });
-
+            $form.trigger("reset");
+        });
     });
     //subscribe
     $("#subscribe-form").on('submit', function (e) {
