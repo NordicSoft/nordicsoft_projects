@@ -32,8 +32,10 @@ namespace RichardGrace.com.Controllers.API
                 return JObject.FromObject(new { success = false });
             }
 
-            var textHtml = $"<p>{Settings.SiteNameDomain}: Feedback from customer with name: <strong>{name}</strong> and e-mail: <strong>{email}</strong>.</p>" +
+            var textHtml = $"<p>{Settings.SiteNameDomain}: Feedback rom customer with name: <strong>{name}</strong></p><br>" +
+                           $"<p>and e-mail: <strong>{email}</strong>: </p><br>" +
                            $"<p>{feedbackMessage}</p>";
+
             try
             {
                 await mailSender.SendEmailAsync(Settings.SupportEmail, subject, textHtml);
