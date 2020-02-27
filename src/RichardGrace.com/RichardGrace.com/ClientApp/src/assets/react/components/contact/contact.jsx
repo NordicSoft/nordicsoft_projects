@@ -72,6 +72,8 @@ export default class Contact extends React.Component {
                     'sitekey': siteKey,
                     'size': 'invisible'
                 });
+                
+            document.getElementById("recaptcha-badge").setAttribute('data-widget-id', clientId);
         }
     }
 
