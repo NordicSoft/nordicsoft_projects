@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+      dotnet: 2.1
+  pre_build:
+    commands:
+      - cd ./src/AndrewHelen.com/AndrewHelen.com && npm i && cd ../../..
+  build:
+    commands:
+       - cd ./src/AndrewHelen.com/AndrewHelen.com && npm run buildspec_script  && cd ../../..
+artifacts:
+  files:
+    - src/AndrewHelen.com/AndrewHelen.com/build_output/**/*
+    - scripts/**/*
+    - appspec.yml
