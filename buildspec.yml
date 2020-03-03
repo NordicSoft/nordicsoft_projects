@@ -7,12 +7,12 @@ phases:
       dotnet: 3.1
   pre_build:
     commands:
-      - cd ./src/RichardGrace.com && npm i && cd ../..
+      - cd ./src/RichardGrace.com/RichardGrace.com && npm i && cd ../../..
   build:
     commands:
-       - cd ./src/RichardGrace.com && npm run buildspec_script  && cd ../..
+       - cd ./src/RichardGrace.com/RichardGrace.com && npm run buildspec_script  && cd ../../..
 artifacts:
   files:
-    - src/RichardGrace.com/build_output/**/*
+    - src/RichardGrace.com/RichardGrace.com/build_output/**/*
     - scripts/**/*
     - appspec.yml
