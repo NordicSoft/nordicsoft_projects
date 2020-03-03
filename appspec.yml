@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: RichardGrace.com/build_output
+  - source: src/RichardGrace.com/build_output
     destination: /var/www/richard-grace_com
 hooks:
   ApplicationStart:
