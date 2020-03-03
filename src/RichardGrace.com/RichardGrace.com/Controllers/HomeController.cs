@@ -1,12 +1,7 @@
-﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using SmartBreadcrumbs;
-using System.IO;
-using Microsoft.AspNetCore.Hosting;
-using RichardGrace.com.Services;
 
 namespace RichardGrace.com.Controllers
 {
@@ -15,18 +10,15 @@ namespace RichardGrace.com.Controllers
     {
         private ILogger<HomeController> _logger;
         private IRazorViewEngine _viewEngine;
-        private BreadcrumbsManager _breadcrumbsManager;
         private Settings _settings;
 
-        public HomeController(ILogger<HomeController> logger, IRazorViewEngine viewEngine, BreadcrumbsManager breadcrumbsManager, IOptions<Settings> settings)
+        public HomeController(ILogger<HomeController> logger, IRazorViewEngine viewEngine, IOptions<Settings> settings)
         {
             _logger = logger;
             _viewEngine = viewEngine;
-            _breadcrumbsManager = breadcrumbsManager;
             _settings = settings.Value;
         }
 
-        [DefaultBreadcrumb("Home")]
         [Route("", Name = "HomeIndex")]
         public IActionResult Index(string culture)
         {
@@ -35,7 +27,6 @@ namespace RichardGrace.com.Controllers
         }
 
         [Route("contact", Name = "Contact")]
-        [Breadcrumb("ViewData.Title", FromAction = "Home.Index")]
         public IActionResult Contact(string culture, string contactName, string contactEmail, string category, string typeOfService)
         {
             //}

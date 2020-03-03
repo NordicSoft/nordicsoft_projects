@@ -4,20 +4,19 @@ using RichardGrace.com.Services.GoogleRecaptcha;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Net.Http.Headers;
-using Microsoft.AspNetCore.Identity.UI.Services;
 using RichardGrace.com.EmailSenders;
-using SmartBreadcrumbs;
+using RichardGrace.com.Services.MailSender;
+using Microsoft.Extensions.Hosting;
 
 namespace RichardGrace.com
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration, IHostingEnvironment hostingEnvironment)
+        public Startup(IConfiguration configuration, IWebHostEnvironment hostingEnvironment)
 
         {
             Configuration = configuration;
@@ -25,7 +24,7 @@ namespace RichardGrace.com
         }
 
         public IConfiguration Configuration { get; }
-        public IHostingEnvironment HostingEnvironment { get; }
+        public IWebHostEnvironment HostingEnvironment { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
@@ -34,19 +33,13 @@ namespace RichardGrace.com
             services.AddOptions();
             // Add our Config object so it can be injected
             services.Configure<Settings>(Configuration.GetSection("SiteSettings"));
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1).AddSessionStateTempDataProvider();
+
+            services.AddControllersWithViews().AddNewtonsoftJson(); ;
+            services.AddRazorPages().AddNewtonsoftJson(); ;
+
             services.AddHttpsRedirection(options =>
             {
                 options.RedirectStatusCode = StatusCodes.Status301MovedPermanently;
-            });
-            // These are the classes by default (Bootstrap 4.1)
-            services.UseBreadcrumbs(GetType().Assembly, options =>
-            {
-                options.TagName = "nav";
-                options.TagClasses = "nav-breadcrumb container";
-                options.OlClasses = "breadcrumb";
-                options.LiClasses = "breadcrumb-item";
-                options.ActiveLiClasses = "breadcrumb-item active";
             });
             services.Configure<ReCaptchaClass>(Configuration.GetSection("GoogleRecaptcha"));
             services.AddScoped<IGoogleRecaptcha, GoogleRecaptcha>();
@@ -66,7 +59,7 @@ namespace RichardGrace.com
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -120,7 +113,14 @@ namespace RichardGrace.com
             app.UseSession();
 
             app.UseStatusCodePagesWithReExecute("/error/{0}");
-            app.UseMvc();
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapDefaultControllerRoute();
+            });
         }
     }
 }

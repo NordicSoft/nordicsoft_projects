@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Hosting;
 using Newtonsoft.Json.Linq;
 using RichardGrace.com.Services.GoogleRecaptcha;
+using RichardGrace.com.Services.MailSender;
 
 namespace RichardGrace.com.Controllers.API
 {

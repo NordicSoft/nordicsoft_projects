@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: RichardGrace.com/build_output
+    destination: /var/www/richard-grace_com
+hooks:
+  ApplicationStart:
+    - location: scripts/start_service.sh
+      timeout: 300
+      runas: root

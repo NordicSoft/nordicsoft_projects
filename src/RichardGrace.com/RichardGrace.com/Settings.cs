@@ -1,6 +1,4 @@
-﻿using RichardGrace.com.Services.GoogleRecaptcha;
-
-namespace RichardGrace.com
+﻿namespace RichardGrace.com
 {
     public class Settings
     {
