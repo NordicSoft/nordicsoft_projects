@@ -13,6 +13,6 @@ phases:
        - cd ./src/RichardGrace.com && npm run buildspec_script  && cd ../..
 artifacts:
   files:
-    - ./src/RichardGrace.com/build_output/**/*
+    - src/RichardGrace.com/build_output/**/*
     - scripts/**/*
     - appspec.yml
