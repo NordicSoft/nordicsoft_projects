@@ -1,0 +1,3 @@
+User-agent: *
+Host: https://richard-grace.com
+Sitemap: https://richard-grace.com/sitemap.xml

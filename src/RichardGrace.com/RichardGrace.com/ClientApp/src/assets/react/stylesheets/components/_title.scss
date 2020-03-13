@@ -1,0 +1,25 @@
+﻿@import '../_variables.scss';
+.section-heading {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 34px;
+    letter-spacing: 5px;
+
+    @media(max-width: 767px) {
+        font-size: 24px;
+    }
+}
+.thin-hr {
+    width: 180px;
+    border-top: 0;
+    border-width: 1px;
+    margin: 45px auto;
+
+    &.dark-hr {
+        border-color: $dark-gray;
+    }
+
+    &.light-hr {
+        border-color: $light-gray;
+    }
+}
