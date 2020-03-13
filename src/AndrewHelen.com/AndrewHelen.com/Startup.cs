@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Net.Http.Headers;
-using SmartBreadcrumbs;
 
 namespace AndrewHelen.com
 {
@@ -38,15 +37,7 @@ namespace AndrewHelen.com
             {
                 options.RedirectStatusCode = StatusCodes.Status301MovedPermanently;
             });
-            // These are the classes by default (Bootstrap 4.1)
-            services.UseBreadcrumbs(GetType().Assembly, options =>
-            {
-                options.TagName = "nav";
-                options.TagClasses = "nav-breadcrumb container";
-                options.OlClasses = "breadcrumb";
-                options.LiClasses = "breadcrumb-item";
-                options.ActiveLiClasses = "breadcrumb-item active";
-            });
+           
             services.Configure<ReCaptchaClass>(Configuration.GetSection("GoogleRecaptcha"));
             services.AddScoped<IGoogleRecaptcha, GoogleRecaptcha>();
 
