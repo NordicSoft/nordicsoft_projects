@@ -1,0 +1,164 @@
+﻿/** Gallery  */
+
+.gallery-grid img {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.gallery-wrapper {
+    clear: both;
+    width: 100%;
+}
+
+.gallery-grid .item {
+    float: left;
+}
+
+.gallery-grid figure {
+    height: 100%;
+    margin: 0 !important;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.gallery-grid img {
+    display: block;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.gallery-column {
+    padding: 0 10px;
+    float: left;
+    width: 25%;
+
+    .gallery-item:first-child {
+        margin-bottom: 20px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    @media(max-width: 991px) {
+        width: 50%;
+
+        .gallery-item {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media(max-width: 575px) {
+        width: 100%;
+    }
+}
+
+/** Gallery - Hover effect  */
+
+.gallery-grid figure:hover img {
+    @media(min-width: 768px) {
+        transform: scale(1.2, 1.2);
+        -webkit-transform: scale(1.2, 1.2);
+        -ms-transform: scale(1.2, 1.2);
+    }
+}
+
+/** Gallery - Magnific popup  */
+
+.mfp-bg {
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0.5 !important;
+}
+
+.mfp-figure:after {
+    -webkit-box-shadow: 0 50px 80px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 50px 80px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 50px 80px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mfp-title, .mfp-counter {
+    font-family: $primary-font;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    .fonts-loaded-1 & {
+        font-family: $primary-font-loaded-1;
+    }
+
+    .fonts-loaded-2 & {
+        font-family: $primary-font-loaded-2;
+    }
+}
+
+.mfp-title, .mfp-counter-curr {
+    color: #000000;
+}
+
+.mfp-counter {
+    color: #495057;
+}
+
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+    cursor: pointer;
+}
+
+.mfp-image-holder .mfp-close {
+    color: #000000;
+}
+
+.mfp-iframe-holder .mfp-close {
+    color: #000000;
+}
+
+.mfp-arrow {
+    height: 46px !important;
+    margin-top: -30px !important;
+    width: 45px !important;
+}
+
+.mfp-arrow:before, .mfp-arrow:after {
+    display: none !important;
+}
+
+.mfp-arrow-right, .mfp-arrow-left {
+    background-image: url(/img/icons.svg) !important;
+    background-size: 250px 150px !important;
+}
+
+.mfp-arrow-right {
+    right: 10px !important;
+    background-position: 45px -52px !important;
+}
+
+.mfp-arrow-left {
+    left: 10px !important;
+    background-position: 90px -52px !important;
+}
+
+
+/** Gallery - Magnific popup (Fade effect)  */
+
+.mfp-fade.mfp-bg, .mfp-fade.mfp-wrap .mfp-content {
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+
+.mfp-fade.mfp-bg, .mfp-fade.mfp-bg.mfp-removing, .mfp-fade.mfp-wrap .mfp-content, .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+    opacity: 0;
+}
+
+.mfp-fade.mfp-bg.mfp-ready {
+    opacity: 0.98;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+    opacity: 1;
+}

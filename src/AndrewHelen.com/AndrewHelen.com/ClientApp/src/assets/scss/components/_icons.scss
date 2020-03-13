@@ -1,0 +1,70 @@
+﻿.flaticon-icons {
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/icons.svg);
+    background-size: 250px 150px;
+    display: block;
+    margin: auto;
+
+
+    &.flaticon-bride {
+        background-position: 0 0;
+    }
+
+    &.flaticon-date {
+        background-position: -50px 0;
+    }
+
+    &.flaticon-locatoin-ceremony {
+        background-position: -100px 0;
+    }
+
+    &.flaticon-locatoin-reception {
+        background-position: -150px 0;
+    }
+
+    &.flaticon-heart {
+        background-position: -200px 0;
+    }
+
+    &.flaticon-camera {
+        background-position: 0 -50px;
+    }
+}
+.fa-icons {
+    background-image: url(/img/icons.svg);
+    background-size: 250px 150px;
+    display: block;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+
+    &.fac-up {
+        background-position: 0 -100px;
+    }
+
+    &.fac-facebook {
+        background-position: -18px -100px;
+    }
+
+    &.fac-twitter {
+        background-position: -36px -100px;
+    }
+
+    &.fac-pinterest {
+        background-position: -54px -100px;
+    }
+
+    &.fac-instagram {
+        background-position: -72px -100px;
+    }
+
+    &.fac-heart {
+        background-position: -108px -100px;
+
+        .is-selected & {
+            background-position: -90px -100px;
+        }
+    }
+}
