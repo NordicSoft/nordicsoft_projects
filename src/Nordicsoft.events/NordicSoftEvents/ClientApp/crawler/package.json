@@ -1,0 +1,18 @@
+{
+  "name": "critical-css-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "minimalcss": "^0.8.2",
+    "get-css": "^3.3.0",
+    "penthouse": "^2.2.0",
+    "purify-css": "^1.2.5",
+    "supercrawler": "^1.7.0"
+  }
+}
