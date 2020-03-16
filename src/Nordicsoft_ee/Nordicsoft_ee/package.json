@@ -13,7 +13,8 @@
     "copy_to_env_debug": "pscp -pw 5gtaa$6A -r ./bin/Debug/netcoreapp2.1/publish/* xbanner@192.168.11.25:/var/www/%npm_package_name%",
     "publish_release": "npm run release && dotnet publish -c Release",
     "publish_debug": "npm run release && dotnet clean -c Debug && dotnet publish -c Debug",
-    "publish_to_environment": "npm run publish_release && npm run copy_to_env"
+    "publish_to_environment": "npm run publish_release && npm run copy_to_env",
+    "buildspec_script": "npm run release && dotnet clean -c Release && dotnet publish -c Release -o ./build_output Nordicsoft_ee.csproj"
   },
   "keywords": [],
   "author": "",

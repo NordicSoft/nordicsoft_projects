@@ -9,6 +9,8 @@ files:
     destination: /var/www/nordicsoft_events
   - source: src/Dalystudio.biz/Dalystudio.biz/build_output
     destination: /var/www/dalystudio_biz
+  - source: src/Nordicsoft_ee/Nordicsoft_ee/build_output
+    destination: /var/www/nordicsoft_ee
 hooks:
   ApplicationStart:
     - location: scripts/start_service.sh

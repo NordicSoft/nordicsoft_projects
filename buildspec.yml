@@ -12,17 +12,20 @@ phases:
       - cd ./src/AndrewHelen.com/AndrewHelen.com && npm i && cd ../../..
       - cd ./src/Nordicsoft.events/NordicSoftEvents && npm i && cd ../../..
       - cd ./src/Dalystudio.biz/Dalystudio.biz && npm i && cd ../../..
+      - cd ./src/Nordicsoft_ee/Nordicsoft_ee && npm i && cd ../../..
   build:
     commands:
       - cd ./src/RichardGrace.com/RichardGrace.com && npm run buildspec_script  && cd ../../..
       - cd ./src/AndrewHelen.com/AndrewHelen.com && npm run buildspec_script  && cd ../../..
       - cd ./src/Nordicsoft.events/NordicSoftEvents && npm run buildspec_script && cd ../../..
       - cd ./src/Dalystudio.biz/Dalystudio.biz && npm run buildspec_script && cd ../../..
+      - cd ./src/Nordicsoft_ee/Nordicsoft_ee && npm run buildspec_script && cd ../../..
 artifacts:
   files:
     - src/RichardGrace.com/RichardGrace.com/build_output/**/*
     - src/AndrewHelen.com/AndrewHelen.com/build_output/**/*
     - src/Nordicsoft.events/NordicSoftEvents/build_output/**/*
     - src/Dalystudio.biz/Dalystudio.biz/build_output/**/*
+    - src/Nordicsoft_ee/Nordicsoft_ee/build_output/**/*
     - scripts/**/*
     - appspec.yml
