@@ -243,3 +243,6 @@ _Pvt_Extensions
 
 # Unit test coverage file
 coverage/
+
+build_output
+package-lock.json
