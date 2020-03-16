@@ -1,0 +1,21 @@
+/* latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url('../fonts/montserrat/montserrat.woff2') format('woff2');
+}
+/* latin */
+@font-face {
+    font-family: 'PT Serif';
+    font-style: italic;
+    font-weight: 400;
+    src: local('PT Serif Italic'), local('PTSerif-Italic'), url('../fonts/ptserif/ptserif-400.woff2') format('woff2');
+}
+/* latin */
+@font-face {
+    font-family: 'PT Serif';
+    font-style: italic;
+    font-weight: 700;
+    src: local('PT Serif Bold Italic'), local('PTSerif-BoldItalic'), url('../fonts/ptserif/ptserif-700.woff2') format('woff2');
+}
