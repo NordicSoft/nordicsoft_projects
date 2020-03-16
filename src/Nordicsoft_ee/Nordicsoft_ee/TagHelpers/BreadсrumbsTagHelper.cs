@@ -9,11 +9,7 @@ using Microsoft.AspNetCore.Razor.TagHelpers;
 using Nordicsoft_ee.Extensions;
 using SmartBreadcrumbs;
 
-<<<<<<< HEAD:src/Nordicsoft_ee/Nordicsoft_ee/TagHelpers/BreadсrumbsTagHelper.cs
 namespace Nordicsoft_ee.TagHelpers
-=======
-namespace Dalystudio.biz.TagHelpers
->>>>>>> master-monorepo:src/Dalystudio.biz/Dalystudio.biz/TagHelpers/BreadßrumbsTagHelper.cs
 {
     [HtmlTargetElement("breadcrumbs")]
     public class BreadcrumbsTagHelper : TagHelper

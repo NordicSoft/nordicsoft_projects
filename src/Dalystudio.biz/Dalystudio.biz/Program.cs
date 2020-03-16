@@ -7,11 +7,7 @@ using Microsoft.Extensions.Logging;
 using NLog.Common;
 using NLog.Web;
 
-<<<<<<< HEAD:src/Nordicsoft_ee/Nordicsoft_ee/Program.cs
-namespace Nordicsoft_ee
-=======
 namespace Dalystudio.biz
->>>>>>> master-monorepo:src/Dalystudio.biz/Dalystudio.biz/Program.cs
 {
     public class Program
     {
