@@ -1,0 +1,56 @@
+﻿.wrapper-carousel {
+    padding: 0 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.slide-item {
+    @media(min-width: 768px) {
+        padding: 0 45px;
+    }
+
+    .lead {
+        font-size: 14px;
+        line-height: 32px;
+        text-align: center;
+
+        &.secondary-font {
+            font-size: 21px;
+            text-align: right;
+        }
+    }
+}
+
+.button-carousel {
+    background-image: url(/img/arrow.png);
+    width: 45px;
+    height: 45px;
+    position: relative;
+
+    &.previous {
+        &.button-gifts, &.button-wishes {
+            transform: rotate(180deg);
+        }
+    }
+
+    &.previous, &.next {
+        &.button-gifts {
+            background-position: -45px 0;
+        }
+    }
+}
+
+.chevron-gifts {
+    align-items: center;
+    justify-content: center;
+}
+
+.chevron-wishes {
+    top: 25px !important;
+
+    @media(max-width: 767px) {
+        top: 0;
+        align-items: center;
+        justify-content: center;
+    }
+}

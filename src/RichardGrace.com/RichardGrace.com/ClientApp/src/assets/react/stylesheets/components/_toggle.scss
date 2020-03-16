@@ -1,0 +1,97 @@
+﻿@import '../_variables.scss';
+
+.group-button {
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 1px;
+        height: 70px;
+        background-color: rgb(17, 17, 17);
+
+        @media(max-width: 768px) {
+            height: 48px;
+        }
+    }
+}
+
+.toggle-button {
+    clear: both;
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    width: 50%;
+    padding: 25px 0;
+    line-height: 1;
+    cursor: pointer;
+
+    &.active {
+        color: $theme-color;
+        position: relative;
+    }
+
+    @media(max-width: 767px) {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+
+    @media(max-width: 575px) {
+        letter-spacing: 2px;
+    }
+}
+
+.toggle-inner {
+    padding: 30px 0 20px;
+       
+    @media(min-width: 768px) {
+        margin-top: 60px;
+    }
+       
+    @media(min-width: 576px) {
+        margin-top: 15px;
+    }
+
+    @media(max-width: 1199px) {
+        min-height: 148px;
+    }
+
+    @media(max-width: 608px) {
+        min-height: 154px;
+    }
+
+
+    @media(max-width: 478px) {
+        min-height: 180px;
+    }
+
+    @media(max-width: 373px) {
+        min-height: 206px;
+    }
+
+    @media(max-width: 330px) {
+        min-height: 232px;
+    }
+
+    p {
+        font-size: 16px;
+
+        @media(max-width: 767px) {
+            font-size: 14px;
+        }
+
+        @media(max-width: 991px) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.toggle-spacing {
+    @media(min-width: 992px) {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

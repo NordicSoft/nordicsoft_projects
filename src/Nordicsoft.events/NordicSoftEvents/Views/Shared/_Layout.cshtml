@@ -1,0 +1,147 @@
+﻿@using Microsoft.Extensions.Primitives
+@using NordicSoftEvents
+@using NordicSoftEvents.Extensions
+@{
+    var viewPath = ViewContext.View.Path.Replace(".cshtml", string.Empty);
+    var isCssCrawler = Context.Request.Headers.ContainsKey("CriticalCssCrawler");
+
+    bool isWebP = Context.IsWebP();
+    if (isWebP)
+    {
+        Context.Response.Headers.Add("Vary", "Accept");
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en" @Html.Raw(isCssCrawler ? $"data-id-view={viewPath}" : string.Empty) class="@Html.Raw(isCssCrawler ? "fonts-loaded-1 fonts-loaded-2" : "") @Html.Raw(isWebP ? "webp" : "")">
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    @*<environment include="Production">
+    @if (Context.Request.Host.Value == Settings.SiteNameDomain.ToLower())
+    {
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137521661-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-137521661-1');
+        </script>
+    }
+    </environment>*@
+
+    <title>NordicSoft | YOUCANHACKIT</title>
+    <meta property="og:site_name" content="@Settings.SiteName" />
+
+    @RenderSection("metatags", false)
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    @RenderSection("links", false)
+
+    <link rel="preload" href="~/dist/fonts/opensans-subset.woff2" as="font" type="font/woff2" crossorigin>
+    <script src="~/dist/fonts-load.js" defer></script>
+
+    @RenderSection("criticalCSS", false)
+
+    <environment include="Development">
+        <script src="~/dist/vendor_styles.js"></script>
+        <script src="~/dist/custom_styles.js"></script>
+    </environment>
+    <environment exclude="Development">
+
+        <link rel="preload" href="~/dist/vendor_styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="~/dist/vendor_styles.css"></noscript>
+
+        <link rel="preload" href="~/dist/custom_styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="~/dist/custom_styles.css"></noscript>
+        <script>
+            /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+            !function (t) { "use strict"; t.loadCSS || (t.loadCSS = function () { }); var e = loadCSS.relpreload = {}; if (e.support = function () { var e; try { e = t.document.createElement("link").relList.supports("preload") } catch (t) { e = !1 } return function () { return e } }(), e.bindMediaToggle = function (t) { var e = t.media || "all"; function a() { t.media = e } t.addEventListener ? t.addEventListener("load", a) : t.attachEvent && t.attachEvent("onload", a), setTimeout(function () { t.rel = "stylesheet", t.media = "only x" }), setTimeout(a, 3e3) }, e.poly = function () { if (!e.support()) for (var a = t.document.getElementsByTagName("link"), n = 0; n < a.length; n++) { var o = a[n]; "preload" !== o.rel || "style" !== o.getAttribute("as") || o.getAttribute("data-loadcss") || (o.setAttribute("data-loadcss", !0), e.bindMediaToggle(o)) } }, !e.support()) { e.poly(); var a = t.setInterval(e.poly, 500); t.addEventListener ? t.addEventListener("load", function () { e.poly(), t.clearInterval(a) }) : t.attachEvent && t.attachEvent("onload", function () { e.poly(), t.clearInterval(a) }) } "undefined" != typeof exports ? exports.loadCSS = loadCSS : t.loadCSS = loadCSS }("undefined" != typeof global ? global : this);
+        </script>
+    </environment>
+    
+    @if (!isWebP)
+    {
+        <script>
+            // check_webp_feature:
+            //   'feature' can be one of 'lossy', 'lossless', 'alpha' or 'animation'.
+            //   'callback(feature, result)' will be passed back the detection result (in an asynchronous way!)
+            function check_webp_feature(A,Q){var o=new Image;o.onload=function(){var B=o.width>0&&o.height>0;Q(A,B)},o.onerror=function(){Q(A,!1)},o.src="data:image/webp;base64,"+{lossy:"UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA",lossless:"UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==",alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[A]}
+            
+            check_webp_feature("lossless",
+                function (feature, result) {
+                    var root = document.documentElement;
+                    root.className += result === false ? ' no-webp' : ' webp';
+                });
+        </script>
+    }
+
+</head>
+<body data-spy="scroll" data-target=".navbar">
+    <!--[if lt IE 8]>
+        <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <main>
+        @RenderBody()
+    </main>
+    <script type="application/ld+json">
+        {
+        "@@context": "http://schema.org",
+        "@@type": "Event",
+        "name": "#YOUCANHACKIT 2019",
+        "startDate": "2019-11-07T19:00",
+        "endDate": "2019-11-09T15:00",
+        "location": {
+        "@@type": "Place",
+        "name": "Ulemiste City park",
+        "address": {
+        "@@type": "PostalAddress",
+        "streetAddress": "Keevise 3",
+        "addressLocality": "Tallinn",
+        "postalCode": "11415"
+        }
+        },
+        "offers": {
+        "@@type": "Offer",
+        "price": "99",
+        "priceCurrency": "USD",
+        "availability": "http://schema.org/SoldOut",
+        "url": "https://nordicsoft.events/",
+        "validFrom": "2019-01-01T00:00-00:00"
+        },
+        "performer": {
+        "@@type": "Person",
+        "name": "Rodion Kharabet"
+        },
+        "image": "https://nordicsoft.events/images/events_google_image.jpg",
+        "description": "Register now if you are sure #youcanhackit. Learn more info about hackathon itself, prizes and facilities we offer."
+        }
+    </script>
+
+    <script src="~/dist/jquery_src.js" defer></script>
+    <script src="~/dist/bootstrap_src.js" defer></script>
+    <script src="~/dist/plugins_src.js" defer></script>
+    <script src="~/dist/main.js" defer></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

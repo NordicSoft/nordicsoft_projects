@@ -1,0 +1,181 @@
+﻿.bg-base-color {
+    background-color: $base !important;
+}
+
+.border-base-color {
+    border-color: $base !important;
+}
+
+.btn-base-color {
+    color: #fff;
+    background-color: $base;
+    border-color: $base;
+}
+
+.btn-base-color:hover {
+    color: #fff;
+    background-color: #ff1a68;
+    border-color: $base-hover;
+}
+
+.btn-base-color:focus, .btn-base-color.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 64, 129, 0.5);
+}
+
+.btn-base-color.disabled, .btn-base-color:disabled {
+    color: #fff;
+    background-color: $base;
+    border-color: $base;
+}
+
+.btn-base-color:not(:disabled):not(.disabled):active, 
+.btn-base-color:not(:disabled):not(.disabled).active, 
+.show > .btn-base-color.dropdown-toggle {
+    color: #fff;
+    background-color: $base-hover;
+    border-color: #ff0057;
+}
+
+.btn-base-color:not(:disabled):not(.disabled):active:focus, 
+.btn-base-color:not(:disabled):not(.disabled).active:focus, 
+.show > .btn-base-color.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 64, 129, 0.5);
+}
+
+.btn-outline-base-color {
+    color: $base;
+    background-color: transparent;
+    background-image: none;
+    border-color: $base;
+}
+
+.btn-outline-base-color:hover {
+    color: #ffffff;
+    background-color: $base;
+    border-color: $base;
+}
+
+.btn-outline-base-color:focus, 
+.btn-outline-base-color.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 64, 129, 0.5);
+}
+
+.btn-outline-base-color.disabled, 
+.btn-outline-base-color:disabled {
+    color: $base;
+    background-color: transparent;
+}
+
+.btn-outline-base-color:not(:disabled):not(.disabled):active, 
+.btn-outline-base-color:not(:disabled):not(.disabled).active, 
+.show > .btn-outline-base-color.dropdown-toggle {
+    color: #fff;
+    background-color: $base;
+    border-color: $base;
+}
+
+.btn-outline-base-color:not(:disabled):not(.disabled):active:focus, 
+.btn-outline-base-color:not(:disabled):not(.disabled).active:focus, 
+.show > .btn-outline-base-color.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 64, 129, 0.5);
+}
+
+.carousel-custom.carousel-base-color .flickity-prev-next-button {
+    background-color: $base !important;
+}
+
+.carousel-custom.carousel-base-color.page-dots-custom .flickity-page-dots .is-selected > .page > .page-dots {
+    color: $base !important;
+}
+
+.pace .pace-progress {
+    background-color: $base !important;
+}
+
+.nav-tabs.nav-tabs-custom .nav-link.active {
+    color: $base !important;
+}
+
+.text-base-color {
+    color: $base !important;
+}
+
+/*#region Hero*/
+#hero-bg-static {
+    background-size: cover;
+    background-position: 50% 100%;
+
+    .webp & {
+        background-image: url(/img/bg/bg-hero-static.webp);
+    }
+
+    .no-webp & {
+        background-image: url(/img/bg/bg-hero-static.jpg);
+    }
+}
+.hero {
+    .container {
+        position: relative;
+        z-index: 20;
+
+        .row {
+            height: 100vh;
+        }
+    }
+}
+
+/*.hero .particles-js-canvas-el {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+*/
+.hero-text{
+    h2, h3{
+    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+}
+}
+/*#endregion*/
+
+/*#region Gifts*/
+#wedding-gifts {
+    background-size: cover;
+    background-position: 50% 100%;
+}
+/*#endregion*/
+
+/*#region Event*/
+#wedding-event {
+    background-size: cover;
+}
+/*#endregion*/
+
+/*#region Proposed*/
+#proposed {
+    background-size: cover;
+    background-position: 100% 50%;
+}
+/*#endregion*/
+
+/*#region Footer*/
+footer {
+    background-size: cover;
+    background-position: 50% 25%;
+
+    .border-top {
+        border-color: rgba(255, 255, 255, 0.2) !important;
+    }
+}
+/*#endregion*/
+
+.jconfirm.jconfirm-my-theme {
+    .jconfirm-bg {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+.color-white{
+    color: white;
+}

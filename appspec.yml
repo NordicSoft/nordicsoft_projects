@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: src/RichardGrace.com/RichardGrace.com/build_output
+    destination: /var/www/richard-grace_com
+  - source: src/AndrewHelen.com/AndrewHelen.com/build_output
+    destination: /var/www/andrew-helen_com
+  - source: src/Nordicsoft.events/NordicSoftEvents/build_output
+    destination: /var/www/nordicsoft_events
+  - source: src/Dalystudio.biz/Dalystudio.biz/build_output
+    destination: /var/www/dalystudio_biz
+hooks:
+  ApplicationStart:
+    - location: scripts/start_service.sh
+      timeout: 300
+      runas: root
