@@ -1,0 +1,27 @@
+﻿.bg-gray-100 {
+    background-color: #f8f9fa !important;
+}
+
+/** Background Image  */
+
+.bg-img-cover {
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative;
+}
+
+.bg-overlay-black-5 {
+    position: relative;
+
+    &:before {
+        content: '';
+        background: rgba(0, 0, 0, 0.5) !important;
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}

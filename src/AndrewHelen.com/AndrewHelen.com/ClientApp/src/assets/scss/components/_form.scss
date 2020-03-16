@@ -1,0 +1,99 @@
+﻿input[type="email"].form-control, input[type="text"].form-control, textarea.form-control, select.form-control {
+    border-color: #ced4da !important;
+    border-radius: 2px;
+    color: #495057;
+    font-family: $primary-font;
+    font-size: 0.6875rem !important;
+    font-weight: 600;
+    letter-spacing: 0.0625rem !important;
+    padding: 0.875rem 1rem;
+
+    .fonts-loaded-1 & {
+        font-family: $primary-font-loaded-1;
+    }
+
+    .fonts-loaded-2 & {
+        font-family: $primary-font-loaded-2;
+    }
+}
+
+input[type="email"].form-control:focus, input[type="text"].form-control:focus, textarea.form-control:focus, select.form-control:focus {
+    box-shadow: none !important;
+}
+
+input.error[type="email"].form-control, input.error[type="text"].form-control, textarea.error.form-control, select.error.form-control {
+    border-color: #f2998b !important;
+}
+
+select.form-control {
+    height: auto !important;
+    text-transform: uppercase;
+}
+
+label.error {
+    display: none !important;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+textarea {
+    min-height: 46px;
+}
+
+::-webkit-input-placeholder {
+    color: #868e96 !important;
+    font-family: $primary-font;
+    font-weight: 600;
+    font-size: 0.6875rem !important;
+    letter-spacing: 0.0625rem !important;
+    opacity: 1 !important;
+    text-overflow: ellipsis !important;
+    text-transform: uppercase;
+
+    .fonts-loaded-1 & {
+        font-family: $primary-font-loaded-1;
+    }
+
+    .fonts-loaded-2 & {
+        font-family: $primary-font-loaded-2;
+    }
+}
+
+:-moz-placeholder {
+    color: #868e96 !important;
+    font-family: $primary-font;
+    font-weight: 600;
+    font-size: 0.6875rem !important;
+    letter-spacing: 0.0625rem !important;
+    opacity: 1 !important;
+    text-overflow: ellipsis !important;
+    text-transform: uppercase;
+
+    .fonts-loaded-1 & {
+        font-family: $primary-font-loaded-1;
+    }
+
+    .fonts-loaded-2 & {
+        font-family: $primary-font-loaded-2;
+    }
+}
+
+:-ms-input-placeholder {
+    color: #868e96 !important;
+    font-family: $primary-font;
+    font-weight: 600;
+    font-size: 0.6875rem !important;
+    letter-spacing: 0.0625rem !important;
+    opacity: 1 !important;
+    text-overflow: ellipsis !important;
+    text-transform: uppercase;
+
+    .fonts-loaded-1 & {
+        font-family: $primary-font-loaded-1;
+    }
+
+    .fonts-loaded-2 & {
+        font-family: $primary-font-loaded-2;
+    }
+}

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using SmartBreadcrumbs;
 
 namespace AndrewHelen.com.Controllers
 {
@@ -10,15 +11,18 @@ namespace AndrewHelen.com.Controllers
     {
         private ILogger<HomeController> _logger;
         private IRazorViewEngine _viewEngine;
+        private BreadcrumbsManager _breadcrumbsManager;
         private Settings _settings;
 
-        public HomeController(ILogger<HomeController> logger, IRazorViewEngine viewEngine, IOptions<Settings> settings)
+        public HomeController(ILogger<HomeController> logger, IRazorViewEngine viewEngine, BreadcrumbsManager breadcrumbsManager, IOptions<Settings> settings)
         {
             _logger = logger;
             _viewEngine = viewEngine;
+            _breadcrumbsManager = breadcrumbsManager;
             _settings = settings.Value;
         }
 
+        [DefaultBreadcrumb("Home")]
         [Route("", Name = "HomeIndex")]
         public IActionResult Index(string culture)
         {
@@ -27,6 +31,7 @@ namespace AndrewHelen.com.Controllers
         }
 
         [Route("contact", Name = "Contact")]
+        [Breadcrumb("ViewData.Title", FromAction = "Home.Index")]
         public IActionResult Contact(string culture, string contactName, string contactEmail, string category, string typeOfService)
         {
             //}
@@ -39,42 +44,49 @@ namespace AndrewHelen.com.Controllers
             return View();
         }
 
+        [Breadcrumb("ViewData.Title", FromAction = "Home.Index")]
         [Route("about", Name = "About")]
         public IActionResult About(string culture)
         {
             return View();
         }
 
+        [Breadcrumb("ViewData.Title", FromAction = "Home.Index")]
         [Route("portfolio", Name = "Portfolio")]
         public IActionResult Portfolio(string culture)
         {
             return View();
         }
 
+        [Breadcrumb("ViewData.Title", FromAction = "Home.Index")]
         [Route("sitemap", Name = "Sitemap")]
         public IActionResult Sitemap(string culture)
         {
             return View();
         }
 
+        [Breadcrumb("ViewData.Title", FromAction = "Home.Index")]
         [Route("workflow", Name = "Workflow")]
         public IActionResult Workflow(string culture)
         {
             return View();
         }
 
+        [Breadcrumb("ViewData.Title", FromAction = "Home.Index")]
         [Route("team", Name = "Team")]
         public IActionResult Team(string culture)
         {
             return View();
         }
 
+        [Breadcrumb("ViewData.Title", FromAction = "Home.Index")]
         [Route("faq", Name = "Faq")]
         public IActionResult Faq(string culture)
         {
             return View();
         }
 
+        [Breadcrumb("ViewData.Title", FromAction = "Home.Index")]
         [Route("pricing", Name = "Pricing")]
         public IActionResult Pricing(string culture)
         {

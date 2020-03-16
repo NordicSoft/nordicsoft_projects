@@ -1,0 +1,200 @@
+﻿/** Header & Navigation  */
+
+header, header .navbar-header, header .navbar-brand img, header .navbar-nav-brand {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+header .navbar-nav .nav-link {
+    font-family: $primary-font;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.09375rem;
+    position: relative;
+    text-transform: uppercase;
+
+    .fonts-loaded-1 & {
+        font-family: $primary-font-loaded-1;
+    }
+
+    .fonts-loaded-2 & {
+        font-family: $primary-font-loaded-2;
+    }
+}
+
+header .navbar-brand, header .navbar-nav-brand {
+    display: block;
+    padding: 10px 0 !important;
+    width: 220px;
+}
+
+header .navbar-brand .d-flex, header .navbar-nav-brand .d-flex {
+    border-radius: 1px;
+    position: relative;
+}
+
+header .navbar-brand .d-flex:before, header .navbar-nav-brand .d-flex:before {
+    border: 1px dashed rgba(255, 255, 255, 0.6);
+    content: '';
+    display: block;
+    height: calc(100% - 12px);
+    position: absolute;
+    width: calc(100% - 10px);
+    top: 6px;
+    left: 4px;
+}
+
+header .navbar-brand .d-flex span, header .navbar-nav-brand .d-flex span {
+    display: block;
+    height: 30px;
+    line-height: 30px !important;
+    position: relative;
+    width: auto;
+}
+
+header .navbar-brand .d-flex span:before, header .navbar-nav-brand .d-flex span:before, header .navbar-brand .d-flex span:after, header .navbar-nav-brand .d-flex span:after {
+    background-color: #ffffff;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 4px;
+    margin-top: -1px;
+    opacity: .9;
+    position: absolute;
+    top: 50%;
+    width: 4px;
+}
+
+header .navbar-brand .d-flex span:before, header .navbar-nav-brand .d-flex span:before {
+    left: 0;
+    margin-left: -12px;
+}
+
+header .navbar-brand .d-flex span:after, header .navbar-nav-brand .d-flex span:after {
+    margin-right: -12px;
+    right: 0;
+}
+
+header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    height: 90px;
+    position: relative;
+    width: 100%;
+    z-index: 1020;
+
+    @media(max-width: 991px) {
+        height: 80px;
+    }
+
+    @media(max-width: 575px) {
+        height: 70px;
+    }
+}
+
+header .navbar {
+    padding: 0;
+}
+
+header .navbar-header {
+    height: 90px;
+    width: 100%;
+
+    @media(max-width: 991px) {
+        height: 80px;
+    }
+
+    @media(max-width: 575px) {
+        height: 70px;
+    }
+}
+
+header .navbar-brand {
+    font-size: 1rem;
+    height: 100%;
+    line-height: 90px;
+    position: relative;
+}
+
+header .navbar-brand img {
+    position: absolute;
+    left: 0;
+    height: 46px;
+    top: 17px;
+}
+
+header .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+
+    @media(max-width: 575px) {
+        top: 15px;
+    }
+}
+
+header .navbar-toggler-icon {
+    background-image: url("/img/navbar-toggler-dark.svg");
+}
+
+header .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+header .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+header .navbar-nav-brand {
+    border-radius: 1px;
+    height: 90px;
+}
+
+header.header-dark {
+    background-color: rgba(0, 0, 0, 0.98);
+}
+
+header.header-dark .navbar-wrapper {
+    background-color: rgba(0, 0, 0, 0.98);
+}
+
+header.header-light {
+    background-color: rgba(255, 255, 255, 0.98);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+header.header-light .navbar-wrapper {
+    background-color: rgba(255, 255, 255, 0.98);
+}
+
+header.header-light .navbar-brand .logo-text-dark {
+    opacity: 1;
+}
+
+header.header-light .navbar-brand .logo-text-light {
+    opacity: 0;
+}
+
+header.header-light .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+header.header-light .navbar-toggler-icon {
+    background-image: url("/img/navbar-toggler-light.svg");
+}
+
+header.header-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.9);
+}
+.navbar-brand-item {
+    @media(max-width: 991px) {
+        max-height: 60px;
+    }
+
+    @media(max-width: 575px) {
+        max-height: 50px;
+    }
+}
