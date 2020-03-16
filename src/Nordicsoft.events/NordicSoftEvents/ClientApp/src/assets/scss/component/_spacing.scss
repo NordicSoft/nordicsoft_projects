@@ -1,0 +1,25 @@
+﻿.pt80 {
+    padding-top: 80px !important;
+}
+.pt90 {
+    padding-top: 90px !important;
+}
+
+.pb60 {
+    padding-bottom: 60px !important;
+}
+.pb80 {
+    padding-bottom: 80px !important;
+}
+.pb90 {
+    padding-bottom: 90px !important;
+}
+
+.pl110 {
+    @media(min-width: 768px) {
+        padding-left: 110px !important;
+    }
+}
+.mb10 {
+    margin-bottom: 10px !important;
+}
