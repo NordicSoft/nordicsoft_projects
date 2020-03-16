@@ -1,0 +1,98 @@
+﻿@using Microsoft.Extensions.Primitives
+@using RichardGrace.com
+@using RichardGrace.com.Extensions
+@{
+    bool isWebP = Context.IsWebP();
+    if (isWebP)
+    {
+        Context.Response.Headers.Add("Vary", "Accept");
+
+    }
+}
+<!DOCTYPE html>
+<html lang="en" class="@Html.Raw(isWebP ? "webp" : "")">
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=100">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="google-site-verification" content="GqrU3rn1wxPYSEQ9E_nDVoSVdmex7OVB1w0r8saY66k" />
+    <title>Wedding | Richard and Grace</title>
+
+    <meta property="og:site_name" content="@Settings.SiteName" />
+    @RenderSection("metatags", false)
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="application-name" content="@Settings.SiteName">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    <meta name="apple-mobile-web-app-title" content="@Settings.SiteName">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    @RenderSection("links", false)
+    @RenderSection("critical", false)
+
+    <link rel="preload" href="~/dist/fonts/open-sans-subset.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="~/dist/fonts/dancing-script-subset.woff2" as="font" type="font/woff2" crossorigin>
+
+    <environment include="Development">
+        <script src="~/dist/custom_styles.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <link rel="preload" href="~/dist/custom_styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="~/dist/custom_styles.css"></noscript>
+
+        <script>
+            /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+            !function (t) { "use strict"; t.loadCSS || (t.loadCSS = function () { }); var e = loadCSS.relpreload = {}; if (e.support = function () { var e; try { e = t.document.createElement("link").relList.supports("preload") } catch (t) { e = !1 } return function () { return e } }(), e.bindMediaToggle = function (t) { var e = t.media || "all"; function a() { t.media = e } t.addEventListener ? t.addEventListener("load", a) : t.attachEvent && t.attachEvent("onload", a), setTimeout(function () { t.rel = "stylesheet", t.media = "only x" }), setTimeout(a, 3e3) }, e.poly = function () { if (!e.support()) for (var a = t.document.getElementsByTagName("link"), n = 0; n < a.length; n++) { var o = a[n]; "preload" !== o.rel || "style" !== o.getAttribute("as") || o.getAttribute("data-loadcss") || (o.setAttribute("data-loadcss", !0), e.bindMediaToggle(o)) } }, !e.support()) { e.poly(); var a = t.setInterval(e.poly, 500); t.addEventListener ? t.addEventListener("load", function () { e.poly(), t.clearInterval(a) }) : t.attachEvent && t.attachEvent("onload", function () { e.poly(), t.clearInterval(a) }) } "undefined" != typeof exports ? exports.loadCSS = loadCSS : t.loadCSS = loadCSS }("undefined" != typeof global ? global : this);
+        </script>
+    </environment>
+
+    @if (!isWebP)
+    {
+        <script>
+            function check_webp_feature(A, Q) { var o = new Image; o.onload = function () { var B = o.width > 0 && o.height > 0; Q(A, B) }, o.onerror = function () { Q(A, !1) }, o.src = "data:image/webp;base64," + { lossy: "UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA", lossless: "UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==", alpha: "UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==", animation: "UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA" }[A] }
+            check_webp_feature("lossless", function (feature, result) {
+                var root = document.documentElement;
+                root.className += result === false ? ' no-webp' : ' webp';
+            });
+        </script>
+    }
+</head>
+<body>
+    <!--[if lt IE 8]>
+        <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    @RenderBody()
+    <script type="application/ld+json">
+        {
+        "@@context": "http://schema.org",
+        "@@type": "Event",
+        "name": "Richard and Grace",
+        "startDate": "2020-01-11T16:00",
+        "endDate": "2020-01-11T22:00",
+        "location": {
+        "@@type": "Place",
+        "name": "Hollins House Weddings and Events",
+        "address": {
+        "@@type": "PostalAddress",
+        "streetAddress": "20 Clubhouse Rd",
+        "addressLocality": "Santa Cruz",
+        "postalCode": "95060"
+        }
+        },
+        "image": "https://richard-grace.com/img/richard-grace-image.jpg",
+        "description": "We are happy to invite you to celebrate our special day with us, click here to find some useful and interesting information about us and our wedding."
+        }
+    </script>
+    <script src="~/dist/react_js.js" defer></script>
+
+    <script src="~/dist/main.js" defer></script>
+    @RenderSection("Scripts", required: false)
+    <script src="~/dist/fonts-load.js" defer></script>
+
+</body>
+</html>

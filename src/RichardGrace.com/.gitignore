@@ -244,5 +244,7 @@ _Pvt_Extensions
 # Unit test coverage file
 coverage/
 
+
+wwwroot/dist/
+
 build_output
-package-lock.json

@@ -1,0 +1,120 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    color: #666666;
+    font-weight: 300;
+    letter-spacing: 0em;
+    font-size: 0.9em;
+    line-height: 1.85714286em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    font-family: $primary-font;
+    .fonts-loaded-1 & {
+        font-family: $primary-font-loaded-1;
+    }
+
+    .fonts-loaded-2 & {
+        font-family: $primary-font-loaded-2;
+    }
+}
+
+.cd-row {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.cd-row > div {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.cd-row > div p {
+    color: #999;
+    margin: 0px;
+}
+
+.cd-row > div h3 {
+    margin-bottom: 0px;
+}
+
+#clock {
+    .font-alt {
+        color: rgb(37, 37, 37);
+        font-size: 2.1em;
+        font-weight: 400;
+    }
+}
+
+@media(max-width: 991px) {
+    .img-about {
+        display: none;
+    }
+
+    .contact-us {
+        iframe {
+            height: 390px;
+            height: 390px;
+            padding: 15px;
+        }
+    }
+}
+
+#home {
+    background-attachment: fixed;
+}
+
+.bg-about {
+    background-attachment: fixed;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('/images/event/arrow.png');
+    background-position: center right;
+    background-size: 28px 8px;
+    background-repeat: no-repeat;
+
+    .webp & {
+        background-image: url('/images/event/arrow.webp');
+        background-position: center right;
+        background-size: 28px 8px;
+        background-repeat: no-repeat;
+    }
+
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+body.jconfirm-noscroll {
+    overflow-y: hidden;
+    padding-right: 17px;
+}
+.item-input-phone {
+    position: relative;
+
+    &:before {
+        content: '+';
+        position: absolute;
+        text-align: center;
+        line-height: 45px;
+        color: #495057;
+        position: absolute;
+        left: 12px;
+        top: 0;
+        font-size: 17px;
+    }
+}
+input[name='phone']{
+    padding-left: 25px;
+}
+.grecaptcha-badge{
+    z-index: 2;
+}

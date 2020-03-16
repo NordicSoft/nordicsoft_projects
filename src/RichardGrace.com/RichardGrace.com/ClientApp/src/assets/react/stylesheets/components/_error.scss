@@ -1,0 +1,13 @@
+﻿@import "../_variables";
+
+.firstScreen {
+    .button-error {
+        border: 1px solid $white;
+        color: $white;
+        padding: 10px;
+        font-weight: 700;
+        display: block;
+        max-width: 120px;
+        margin: 30px auto;
+    }
+}

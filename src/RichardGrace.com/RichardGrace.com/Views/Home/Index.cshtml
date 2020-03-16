@@ -1,0 +1,43 @@
+﻿@using RichardGrace.com
+@using RichardGrace.com.Services.GoogleRecaptcha
+@using Microsoft.Extensions.Options;
+@inject IOptions<ReCaptchaClass> RecaptchaOptions;
+@{
+    ViewData["Title"] = "Home Page";
+}
+@section metatags{
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Wedding | Richard and Grace" />
+    <meta property="og:description" content="We are happy to invite you to celebrate our special day with us, click here to find some useful and interesting information about us and our wedding." />
+    <meta property="og:url" content="@($"https://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
+    <meta property="og:image" content="@($"https://{Context.Request.Host}/img/richard-grace-image.jpg")" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="512" />
+    <meta name="description" content="We are happy to invite you to celebrate our special day with us, click here to find some useful and interesting information about us and our wedding." />
+}
+@section links
+    {
+    <link rel="canonical" href="@($"https://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
+}
+@section critical
+{
+
+}
+@section Scripts{
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/dist/sw.js', { scope: '/' }).then(function (registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+}
+<section id="root" data-key="@RecaptchaOptions.Value.SiteKey"></section>
+

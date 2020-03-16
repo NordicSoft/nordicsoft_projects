@@ -1,11 +1,10 @@
-﻿using System;
-using System.Net;
+﻿using System.Net;
 using System.Net.Mail;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.Logging;
+using RichardGrace.com.Services.MailSender;
 
-namespace Dalystudio.biz.Services.EmailSenders
+namespace RichardGrace.com.EmailSenders
 {
     public class SmtpEmailSender : IEmailSender
     {
@@ -31,26 +30,14 @@ namespace Dalystudio.biz.Services.EmailSenders
         }
 
         // Use our configuration to send the email by using SmtpClient
-        public async Task SendEmailAsync(string email, string subject, string htmlMessage)
+        public Task SendEmailAsync(string email, string subject, string htmlMessage)
         {
             var client = new SmtpClient(host, port)
             {
                 Credentials = new NetworkCredential(userName, password),
                 EnableSsl = enableSSL
             };
-            try
-            {
-                await client.SendMailAsync(
-                    new MailMessage(userName, email, subject, htmlMessage) { IsBodyHtml = true }
-                );
-            }
-            catch (Exception ex)
-            {
-                _logger.Log(LogLevel.Error, ex, "Mail send failed");
-                throw;
-            }
-
-
+            return client.SendMailAsync(new MailMessage(userName, email, subject, htmlMessage) { IsBodyHtml = true });
         }
 
     }

@@ -1,0 +1,52 @@
+﻿@import "../variables";
+
+h1, h2, h3, .h1, .h2, .h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h3, .h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 26px;
+    margin: 0 0 10px;
+}
+
+.secondary-font {
+    text-transform: inherit;
+    @include fonts-secondary;
+}
+
+.text-center {
+    text-align: center;
+}
+
+input, textarea {
+    &:hover, &:focus, &:active {
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+a {
+    color: $dark-gray;
+
+    &:hover, &:focus, &:active, &.active {
+        outline: 0;
+        text-decoration: none;
+        color: $theme-color;
+    }
+}
+.color-white {
+    color: $white;
+}
+.text-center {
+    text-align: center;
+}
