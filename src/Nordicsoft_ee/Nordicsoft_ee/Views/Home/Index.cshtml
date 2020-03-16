@@ -1,0 +1,1458 @@
+﻿@using Nordicsoft_ee
+@using Nordicsoft_ee.Services.GoogleRecaptcha
+@using Microsoft.Extensions.Options
+@inject IOptions<ReCaptchaClass> RecaptchaOptions
+
+@{
+    ViewData["Title"] = "Websites Development";
+}
+
+@section metatags{
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="@Settings.SiteName – @ViewData["Title"]" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
+    <meta property="og:image" content="@($"{Context.Request.Scheme}://{Context.Request.Host}/img/noridc_og_image.jpg")" />
+    <meta property="og:image:width" content="1220" />
+    <meta property="og:image:height" content="770" />
+
+    <meta name="description" content="" />
+}
+@section links
+    {
+    <link rel="canonical" href="@($"{Context.Request.Scheme}://{Context.Request.Host}{Url.RouteUrl("HomeIndex")}")" />
+}
+@section criticalCss{
+    <style>
+        @@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto+Slab);
+
+        html {
+            font-family: sans-serif;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%
+        }
+
+        body {
+            margin: 0
+        }
+
+        header, main, nav, section {
+            display: block
+        }
+
+        a {
+            background-color: transparent
+        }
+
+        h1 {
+            margin: .67em 0;
+            font-size: 2em
+        }
+
+        img {
+            border: 0
+        }
+
+        hr {
+            height: 0;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box
+        }
+
+        button, input {
+            margin: 0;
+            font: inherit;
+            color: inherit
+        }
+
+        button {
+            overflow: visible
+        }
+
+        button {
+            text-transform: none
+        }
+
+        button {
+            -webkit-appearance: button
+        }
+
+            button::-moz-focus-inner, input::-moz-focus-inner {
+                padding: 0;
+                border: 0
+            }
+
+        input {
+            line-height: normal
+        }
+
+        *, :after, :before {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        html {
+            font-size: 10px
+        }
+
+        body {
+            font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #fff
+        }
+
+        button, input {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit
+        }
+
+        a {
+            color: #337ab7;
+            text-decoration: none
+        }
+
+        img {
+            vertical-align: middle
+        }
+
+        .img-responsive {
+            display: block;
+            max-width: 100%;
+            height: auto
+        }
+
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 1px solid #eee
+        }
+
+        h1, h2 {
+            font-family: inherit;
+            font-weight: 500;
+            line-height: 1.1;
+            color: inherit
+        }
+
+        h1, h2 {
+            margin-top: 20px;
+            margin-bottom: 10px
+        }
+
+        h1 {
+            font-size: 36px
+        }
+
+        h2 {
+            font-size: 30px
+        }
+
+        p {
+            margin: 0 0 10px
+        }
+
+        .lead {
+            margin-bottom: 20px;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.4
+        }
+
+        @@media (min-width:768px) {
+            .lead {
+                font-size: 21px
+            }
+        }
+
+        .text-center {
+            text-align: center
+        }
+
+        ul {
+            margin-top: 0;
+            margin-bottom: 10px
+        }
+
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto
+        }
+
+        @@media (min-width:768px) {
+            .container {
+                width: 750px
+            }
+        }
+
+        @@media (min-width:992px) {
+            .container {
+                width: 970px
+            }
+        }
+
+        @@media (min-width:1200px) {
+            .container {
+                width: 1170px
+            }
+        }
+
+        .row {
+            margin-right: -15px;
+            margin-left: -15px
+        }
+
+        .col-lg-12, .col-md-4, .col-md-6, .col-md-8, .col-md-12, .col-sm-6, .col-sm-12, .col-xs-12 {
+            position: relative;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px
+        }
+
+        .col-xs-12 {
+            float: left
+        }
+
+        .col-xs-12 {
+            width: 100%
+        }
+
+        @@media (min-width:768px) {
+            .col-sm-6, .col-sm-12 {
+                float: left
+            }
+
+            .col-sm-12 {
+                width: 100%
+            }
+
+            .col-sm-6 {
+                width: 50%
+            }
+        }
+
+        @@media (min-width:992px) {
+            .col-md-4, .col-md-6, .col-md-8, .col-md-12 {
+                float: left
+            }
+
+            .col-md-12 {
+                width: 100%
+            }
+
+            .col-md-8 {
+                width: 66.66666667%
+            }
+
+            .col-md-6 {
+                width: 50%
+            }
+
+            .col-md-4 {
+                width: 33.33333333%
+            }
+
+            .col-md-offset-3 {
+                margin-left: 25%
+            }
+
+            .col-md-offset-2 {
+                margin-left: 16.66666667%
+            }
+        }
+
+        @@media (min-width:1200px) {
+            .col-lg-12 {
+                float: left
+            }
+
+            .col-lg-12 {
+                width: 100%
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px
+        }
+
+        .collapse {
+            display: none
+        }
+
+        .nav {
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none
+        }
+
+            .nav > li, .nav > li > a {
+                position: relative;
+                display: block
+            }
+
+                .nav > li > a {
+                    padding: 10px 15px
+                }
+
+        .navbar {
+            position: relative;
+            min-height: 50px;
+            margin-bottom: 20px;
+            border: 1px solid transparent
+        }
+
+        @@media (min-width:768px) {
+            .navbar {
+                border-radius: 4px
+            }
+        }
+
+        @@media (min-width:768px) {
+            .navbar-header {
+                float: left
+            }
+        }
+
+        .navbar-collapse {
+            padding-right: 15px;
+            padding-left: 15px;
+            overflow-x: visible;
+            -webkit-overflow-scrolling: touch;
+            border-top: 1px solid transparent;
+            -webkit-box-shadow: inset 0 1px 0 hsla(0,0%,100%,.1);
+            box-shadow: inset 0 1px 0 hsla(0,0%,100%,.1)
+        }
+
+        @@media (min-width:768px) {
+            .navbar-collapse {
+                width: auto;
+                border-top: 0;
+                -webkit-box-shadow: none;
+                box-shadow: none
+            }
+
+                .navbar-collapse.collapse {
+                    display: block !important;
+                    height: auto !important;
+                    padding-bottom: 0;
+                    overflow: visible !important
+                }
+
+            .navbar-fixed-top .navbar-collapse {
+                padding-right: 0;
+                padding-left: 0
+            }
+        }
+
+        .navbar-fixed-top .navbar-collapse {
+            max-height: 340px
+        }
+
+        @@media (max-device-width:480px) and (orientation:landscape) {
+            .navbar-fixed-top .navbar-collapse {
+                max-height: 200px
+            }
+        }
+
+        .container > .navbar-collapse, .container > .navbar-header {
+            margin-right: -15px;
+            margin-left: -15px
+        }
+
+        @@media (min-width:768px) {
+            .container > .navbar-collapse, .container > .navbar-header {
+                margin-right: 0;
+                margin-left: 0
+            }
+        }
+
+        .navbar-fixed-top {
+            position: fixed;
+            right: 0;
+            left: 0;
+            z-index: 1030
+        }
+
+        @@media (min-width:768px) {
+            .navbar-fixed-top {
+                border-radius: 0
+            }
+        }
+
+        .navbar-fixed-top {
+            top: 0;
+            border-width: 0 0 1px
+        }
+
+        .navbar-brand {
+            float: left;
+            height: 50px;
+            padding: 15px;
+            font-size: 18px;
+            line-height: 20px
+        }
+
+            .navbar-brand > img {
+                display: block
+            }
+
+        @@media (min-width:768px) {
+            .navbar > .container .navbar-brand {
+                margin-left: -15px
+            }
+        }
+
+        .navbar-toggle {
+            position: relative;
+            float: right;
+            padding: 9px 10px;
+            margin-top: 8px;
+            margin-right: 15px;
+            margin-bottom: 8px;
+            background-color: transparent;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px
+        }
+
+            .navbar-toggle .icon-bar {
+                display: block;
+                width: 22px;
+                height: 2px;
+                border-radius: 1px
+            }
+
+                .navbar-toggle .icon-bar + .icon-bar {
+                    margin-top: 4px
+                }
+
+        @@media (min-width:768px) {
+            .navbar-toggle {
+                display: none
+            }
+        }
+
+        .navbar-nav {
+            margin: 7.5px -15px
+        }
+
+            .navbar-nav > li > a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                line-height: 20px
+            }
+
+        @@media (min-width:768px) {
+            .navbar-nav {
+                float: left;
+                margin: 0
+            }
+
+                .navbar-nav > li {
+                    float: left
+                }
+
+                    .navbar-nav > li > a {
+                        padding-top: 15px;
+                        padding-bottom: 15px
+                    }
+        }
+
+        @@media (min-width:768px) {
+            .navbar-right {
+                float: right !important;
+                margin-right: -15px
+            }
+        }
+
+        .navbar-default {
+            background-color: #f8f8f8;
+            border-color: #e7e7e7
+        }
+
+            .navbar-default .navbar-brand {
+                color: #777
+            }
+
+            .navbar-default .navbar-nav > li > a {
+                color: #777
+            }
+
+            .navbar-default .navbar-toggle {
+                border-color: #ddd
+            }
+
+                .navbar-default .navbar-toggle .icon-bar {
+                    background-color: #888
+                }
+
+            .navbar-default .navbar-collapse {
+                border-color: #e7e7e7
+            }
+
+        .well {
+            min-height: 20px;
+            padding: 19px;
+            margin-bottom: 20px;
+            background-color: #f5f5f5;
+            border: 1px solid #e3e3e3;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.05)
+        }
+
+        .well-sm {
+            padding: 9px;
+            border-radius: 3px
+        }
+
+        .container:after, .container:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .row:after, .row:before {
+            display: table;
+            content: " "
+        }
+
+        .container:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .row:after {
+            clear: both
+        }
+
+        .center-block {
+            display: block;
+            margin-right: auto;
+            margin-left: auto
+        }
+
+        .hidden {
+            display: none !important
+        }
+
+        @@-ms-viewport {
+            width: device-width
+        }
+
+        @@-o-viewport {
+            width: device-width
+        }
+
+        @@viewport {
+            width: device-width
+        }
+
+        body {
+            font-family: Roboto Condensed,sans-serif
+        }
+
+        @@media only screen and (min-width:768px) {
+            body, html {
+                height: 100%
+            }
+        }
+
+        a {
+            color: #e91e63
+        }
+
+        #main_nav_alt.navbar-default {
+            background-color: #3c2095;
+            min-height: 70px;
+            border-color: transparent;
+            -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.4);
+            -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.4);
+            box-shadow: 0 1px 5px 0 rgba(0,0,0,.4)
+        }
+
+        #main_nav_alt.navbar-fixed-top {
+            border-width: 0
+        }
+
+        #main_nav_alt.navbar-default .navbar-brand {
+            padding: 15px
+        }
+
+        #main_nav_alt.navbar-default .navbar-nav > li > a {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: .1em
+        }
+
+        @@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+            #main_nav_alt.navbar-default .navbar-nav > li > a {
+                font-size: 11px;
+                padding-left: 10px;
+                padding-right: 10px;
+                letter-spacing: .05em
+            }
+        }
+
+        #main_nav_alt.navbar-default .navbar-toggle {
+            border-color: transparent
+        }
+
+            #main_nav_alt.navbar-default .navbar-toggle .icon-bar {
+                background-color: #fff
+            }
+
+        #main_nav_alt.navbar-default .navbar-collapse {
+            border-color: transparent
+        }
+
+        @@media (max-width:767px) {
+            #main_nav_alt.navbar-default .navbar-nav > li > a {
+                padding-top: 15px;
+                padding-bottom: 15px
+            }
+        }
+
+        @@media (-o-min-device-pixel-ratio:3/2),(-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(min-device-pixel-ratio:1.5),(min-resolution:1.5dppx) {
+            header#main-header {
+                background: url(/img/headers/dreamstime2x.jpg) no-repeat
+            }
+        }
+
+        header#main-header {
+            background: url(/img/headers/dreamstime1x.jpg) no-repeat;
+            background-position: 80%;
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+            min-height: 850px
+        }
+
+        @@media (-ms-high-contrast:active),(-ms-high-contrast:none) {
+            header#main-header {
+                height: 750px
+            }
+
+                header#main-header h1 {
+                    margin-top: 35px
+                }
+        }
+
+        @@media (min-width:768px) and (max-width:991px) {
+            header#main-header {
+                height: auto
+            }
+
+            .flex-container {
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-flex-wrap: nowrap;
+                -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+                -webkit-justify-content: flex-start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                -webkit-align-content: stretch;
+                -ms-flex-line-pack: stretch;
+                align-content: stretch;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center
+            }
+
+            .flex-item:first-child {
+                -webkit-order: 0;
+                -ms-flex-order: 0;
+                order: 0;
+                -webkit-flex: 0 1 auto;
+                -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+                -webkit-align-self: auto;
+                -ms-flex-item-align: auto;
+                align-self: auto
+            }
+        }
+
+        @@media (max-width:767px) {
+            header#main-header {
+                height: auto
+            }
+
+            .flex-container {
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-flex-wrap: nowrap;
+                -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+                -webkit-justify-content: flex-start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                -webkit-align-content: stretch;
+                -ms-flex-line-pack: stretch;
+                align-content: stretch;
+                -ms-flex-align: center
+            }
+
+            .flex-container, .flex-item:first-child {
+                -webkit-align-items: center;
+                align-items: center
+            }
+
+            .flex-item:first-child {
+                -webkit-order: 0;
+                -ms-flex-order: 0;
+                order: 0;
+                -webkit-flex: 0 1 auto;
+                -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+                -ms-flex-align: center
+            }
+        }
+
+        header#main-header .header-bg {
+            color: #3c2095
+        }
+
+        @@media only screen and (min-device-width:320px) and (max-device-width:568px) {
+            header#main-header .header-text {
+                position: relative;
+                top: 0
+            }
+
+            header#main-header h1 {
+                font-size: 3em;
+                font-weight: 500;
+                letter-spacing: 1px;
+                margin-top: 80px
+            }
+
+            header#main-header p.title {
+                font-size: 1.1em;
+                letter-spacing: 5px;
+                font-weight: 500;
+                text-transform: uppercase
+            }
+        }
+
+        @@media (min-width:768px) {
+            header#main-header h1 {
+                font-size: 4em;
+                font-weight: 500;
+                letter-spacing: 1px;
+                margin-top: 80px
+            }
+
+            header#main-header p.title {
+                font-size: 1.6em;
+                letter-spacing: 5px;
+                font-weight: 500;
+                text-transform: uppercase
+            }
+        }
+
+        @@media (min-width:569px) and (max-width:768px) {
+            header#main-header .header-text {
+                position: relative;
+                top: -10px
+            }
+
+            header#main-header h1 {
+                font-size: 4em;
+                font-weight: 500;
+                letter-spacing: 1px
+            }
+
+            header#main-header p.title {
+                font-size: 1.6em;
+                letter-spacing: 5px;
+                font-weight: 500;
+                text-transform: uppercase
+            }
+        }
+
+        @@media only screen and (max-width:641px) {
+            header#main-header {
+                min-height: 400px
+            }
+        }
+
+        @@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+            header#main-header {
+                min-height: 550px
+            }
+        }
+
+        @@media only screen and (min-device-width:1024px) and (max-device-width:1366px) {
+            header#main-header {
+                min-height: 550px
+            }
+        }
+
+        @@media (min-width:992px) {
+            header#main-header {
+                background: url(/img/headers/dreamstime1x.jpg) no-repeat
+            }
+
+            .flex-container {
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-flex-wrap: nowrap;
+                -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+                -webkit-justify-content: flex-start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                -webkit-align-content: stretch;
+                -ms-flex-line-pack: stretch;
+                align-content: stretch;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center
+            }
+
+            .flex-item:first-child {
+                -webkit-order: 0;
+                -ms-flex-order: 0;
+                order: 0;
+                -webkit-flex: 0 1 auto;
+                -ms-flex: 0 1 auto;
+                flex: 0 1 auto;
+                -webkit-align-self: auto;
+                -ms-flex-item-align: auto;
+                align-self: auto
+            }
+        }
+
+        .header-dash-white-center {
+            border: 0;
+            border-top: 5px dotted #fff;
+            background: none;
+            height: 0;
+            width: 25px
+        }
+
+        .section-dash-dark {
+            border: 0;
+            border-top: 5px dotted #1c1a24;
+            background: none;
+            height: 0;
+            width: 25px
+        }
+
+        section#intro .intro-bg {
+            position: relative;
+            z-index: 5;
+            margin-top: -80px;
+            background: #e91e63 url(/img/patterns/zig-zag-pattern.png) repeat;
+            padding: 40px 40px 20px
+        }
+
+            section#intro .intro-bg p.lead {
+                text-align: center;
+                color: #fff;
+                font-weight: 400;
+                font-size: 28px;
+                letter-spacing: 1px
+            }
+
+        @@media screen and (max-width:767px) {
+            section#intro .intro-bg {
+                margin-top: 0;
+                padding: 20px 20px 5px
+            }
+
+                section#intro .intro-bg p.lead {
+                    font-size: 21px
+                }
+        }
+
+        @@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+            section#intro .intro-bg {
+                margin-top: -55px;
+                padding: 20px 20px 10px
+            }
+
+                section#intro .intro-bg p.lead {
+                    font-size: 21px
+                }
+        }
+
+        section#services {
+            padding: 100px 0
+        }
+
+            section#services h2.section-title {
+                color: #e91e63;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 600
+            }
+
+            section#services p.section-lead {
+                text-transform: uppercase;
+                color: #1c1a24;
+                letter-spacing: 2px;
+                font-weight: 600;
+                font-size: 21px
+            }
+
+        section#testimonials #testimonials-slider .item {
+            color: #fff
+        }
+
+        section#testimonials #testimonials-slider .testimonial-text {
+            font-size: 28px
+        }
+
+        section#testimonials #testimonials-slider .quote-symbol {
+            font-size: 32px
+        }
+
+        section#testimonials #testimonials-slider .client {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            font-size: 16px;
+            color: #e91e63
+        }
+
+        .btn-main-prpl {
+            color: #fff;
+            background-color: #6534ff;
+            border-color: #6534ff;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 7px 20px 6px;
+            font-size: 16px;
+            border-width: 2px
+        }
+
+        #top-link-block .well-sm {
+            padding: 0 8px 4px;
+            border-radius: 0
+        }
+
+        #top-link-block .well {
+            height: 20px;
+            width: 20px;
+            color: #fff;
+            font-weight: 500;
+            font-size: 21px;
+            background-color: #6534ff;
+            border: 1px solid #6534ff;
+            border-radius: 50%;
+            -webkit-box-shadow: none;
+            box-shadow: none
+        }
+
+        .no-padding {
+            padding: 0
+        }
+
+        .mrgn-20-top {
+            margin-top: 20px
+        }
+
+        .mrgn-30-top {
+            margin-top: 30px
+        }
+
+        .mrgn-40-top {
+            margin-top: 40px
+        }
+
+        .row .row {
+            margin: 0
+        }
+
+        @@font-face {
+            font-family: FontAwesome;
+            src: url(/dist/fonts/fontawesome-webfont.eot);
+            src: url(/dist/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format("embedded-opentype"),url(/dist/fonts/fontawesome-webfont.woff2) format("woff2"),url(/dist/fonts/fontawesome-webfont.woff) format("woff"),url(/dist/fonts/fontawesome-webfont.ttf) format("truetype"),url(/img/_/vendor/font-awesome/fonts/fontawesome-webfont.svg#fontawesomeregular) format("svg");
+            font-weight: 400;
+            font-style: normal
+        }
+
+        .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale
+        }
+
+        .fa-angle-right:before {
+            content: "\F105"
+        }
+
+        .fa-angle-up:before {
+            content: "\F106"
+        }
+
+        .fa-quote-left:before {
+            content: "\F10D"
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0
+        }
+
+        .owl-carousel {
+            position: relative
+        }
+
+        .owl-carousel {
+            display: none;
+            width: 100%;
+            z-index: 1
+        }
+    </style>
+}
+
+<!-- Main Header -->
+<header id="main-header" class="flex-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-xs-12 col-md-6 col-md-offset-3">
+                <div class="flex-item">
+                    <div class="header-text text-center">
+                        <div class="header-bg">
+                            <h1>NordicSoft Studio</h1>
+                            <hr class="header-dash-white-center" />
+                            <p class="title">Making you website good done</p>
+                            <p class="lead">
+                                We have a strong expirience in websites and IT infranstructure development of various complexity.
+                            </p>
+                            <p class="text-center">
+                                <a href="#contact_form" class="btn btn-main-prpl" title="Contact us">Contact Us <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- end container -->
+</header>
+<!-- /.Main Header -->
+<!-- Section Intro -->
+<section id="intro">
+    <div class="container no-padding">
+        <div class="intro-bg animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="lead">
+                        Our fantastic team can find unique solutions to drive your business forward.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.End Container -->
+</section>
+<!-- /.Section Intro -->
+<!-- Section Services -->
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h2 class="section-title">Our Services</h2>
+                <hr class="section-dash-dark" />
+                <p class="section-lead">We offer great range of services in IT, web design, coding, internet marketing & more</p>
+            </div>
+        </div>
+        <!-- Services Row -->
+        <div class="row text-center mrgn-30-top">
+            <div class="col-md-4 col-sm-6 mrgn-40-top" style="min-height: 252px;">
+                <div class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s">
+                    <img data-src="img/icons/icn-research.svg" width="100" height="100" class="img-responsive center-block lazyload" alt="Research service" />
+                    <h3 class="service-title">Research</h3>
+                    <p class="service-lead-sm">
+                        Our profesionals know how to implement new math algorithms, find ideal IT solutions to make your business ahead of all the competitors in its sphere.
+
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mrgn-40-top" style="min-height: 252px;">
+                <div class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.2s">
+                    <img data-src="img/icons/icn-graphic-design.svg" width="100" height="100" class="img-responsive center-block lazyload" alt="Graphic Design service" />
+                    <h3 class="service-title">Graphic Design</h3>
+                    <p class="service-lead-sm">
+                        Graphic design is in everything we see, digital or printed, yet  is always a combination of pictures and words to made up a communication goal.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mrgn-40-top" style="min-height: 252px;">
+                <div class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.3s">
+                    <img data-src="img/icons/icn-marketing.svg" width="100" height="100" class="img-responsive center-block lazyload" alt="Marketing service" />
+                    <h3 class="service-title">Digital Marketing</h3>
+                    <p class="service-lead-sm">We can show you how to rainforce your digital amrketing facilities to improve the full customer journey across all the channels.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mrgn-40-top" style="min-height: 252px;">
+                <div class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.4s">
+                    <img data-src="img/icons/icn-web-design.svg" width="100" height="100" class="img-responsive center-block lazyload" alt="Web design service" />
+                    <h3 class="service-title">Web Design</h3>
+                    <p class="service-lead-sm">Our professional team produces only exclusive experiences to lead your business to triumph in the computer age.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mrgn-40-top" style="min-height: 252px;">
+                <div class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.5s">
+                    <img data-src="img/icons/icn-web-development.svg" width="100" height="100" class="img-responsive center-block lazyload" alt="Web development service" />
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-lead-sm">We know how to create, refine, evolve, spread, and maintain next-gen products that will make your business a success.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mrgn-40-top" style="min-height: 252px;">
+                <div class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.6s">
+                    <img data-src="img/icons/icn-mobile-apps.svg" width="100" height="100" class="img-responsive center-block lazyload" alt="Mobile apps creating serivce" />
+                    <h3 class="service-title">IT Services</h3>
+                    <p class="service-lead-sm">We can renovate digital platforms and know how to make a strong solution system framework to maintain high system productivity on all stages.</p>
+                </div>
+            </div>
+        </div>
+        <!-- /.End Services Row -->
+    </div><!-- /.End Container -->
+</section>
+<!-- /.Section Services -->
+<!-- Section Work Intro -->
+<section id="work-intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-title">Our Work</h2>
+                <hr class="section-dash-white" />
+                <p class="lead">
+                    Nowadays, business improvement requires top-level technology. Our team of professionals consists of experts in multiple scops,
+                    providing our customers with the unique software solutions that will drive you forward.
+                </p>
+                <p class="text-center">
+                    <a href="#contact_form" class="btn btn-main" title="Contact us">Contact Us <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </p>
+            </div>
+        </div>
+    </div><!-- /.End Container -->
+</section>
+<!-- /.Section Work Intro -->
+<!-- Section Why Us -->
+<section id="why-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h2 class="section-title">Why Choose Us</h2>
+                <hr class="section-dash-dark" />
+                <p class="section-lead">We are a group of perfectionists who know how to create ideal solutions.</p>
+            </div>
+        </div>
+        <!-- Row Tabs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Responsive Tabs -->
+                <div id="parentVerticalTab" role="tablist">
+                    <ul class="resp-tabs-list hor_1">
+                        <li class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.2s">
+                            We improve our tools.<br>
+                            <small class="subtext">
+                                Tendencies change constuntly, and so are we bold and ready to try new tolls.
+                                That's who we are. We learn and master new tools and skills daily.
+                            </small>
+                        </li>
+                        <!--  <li class="animate" data-animate="fadeIn" data-duration="1.0s"
+                              data-delay="0.4s">We work with the best.<br>
+                              <small class="subtext">
+
+                              </small>
+                          </li> -->
+                        <li class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.6s">
+                            We never give up.<br>
+                            <small class="subtext">
+                                We are not affraid of short deadlines or hard challenges.
+                                Everything we do is worth, every second of our time because we know our clients are happy and content.
+                            </small>
+                        </li>
+                    </ul>
+                    <div class="resp-tabs-container hor_1">
+                        <div role="tabpanel">
+                            <img data-src="img/features/feature-01.jpg" width="800" height="800" class="img-responsive lazyload" alt="Improve our tools" />
+                        </div>
+                        <div role="tabpanel">
+                            <img data-src="img/features/2.jpg" width="800" height="800" class="img-responsive lazyload" alt="Never give up" />
+                        </div>
+                        @*<div>
+                                <img src="img/features/feature-03.jpg" width="800" height="800" class="img-responsive" alt="Never give up" />
+                            </div>*@
+                    </div>
+                </div>
+                <!-- /.End Responsive Tabs -->
+            </div>
+        </div><!-- /.End Row Tabs -->
+    </div><!-- /.End Container -->
+</section>
+<!-- /.Section Why Us -->
+<!-- Section Case Studies -->
+<section id="case-studies">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h2 class="section-title">Case Studies</h2>
+                <hr class="section-dash-white" />
+                <p class="section-lead">
+                    Our goal is to ensure our customers are pleased and to witness their success.
+                </p>
+            </div>
+        </div>
+        <!-- Case Studies row -->
+        <div class="row mrgn-40-top">
+            <div class="d-flex">
+                <div class="col-md-4">
+                    <!-- Case Study 01 -->
+                    <div class="animate" data-animate="fadeIn" data-duration="1.0s"
+                         data-delay="0.1s">
+                        <div class="cs-item">
+                            <img data-src="img/case-studies/case-study-01.jpg" class="img-responsive center-block lazyload" alt="Cloud management" />
+                            <div class="cs-item-inner">
+                                <h4>Cloud Management</h4>
+                                <hr class="section-dash-blue" />
+                                <p class="section-lead-sm">
+                                    We help you to concentrate on your business goals by simplifying your applications and moving them to the cloud.
+                                </p>
+                                @*<p class="mrgn-20-top">
+                                        <a href="mailto:@{@Settings.SupportEmail}" class="btn-link" title="Email us">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </p>*@
+                            </div>
+                        </div>
+                        <!-- /. End Case Study 01 -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Case Study 02 -->
+                    <div class="animate" data-animate="fadeIn" data-duration="1.0s"
+                         data-delay="0.2s">
+                        <div class="cs-item">
+                            <img data-src="img/case-studies/case-study-02.jpg" class="img-responsive center-block lazyload" alt="Enterprise applications" />
+                            <div class="cs-item-inner">
+                                <h4>Enterprise Applications</h4>
+                                <hr class="section-dash-blue" />
+                                <p class="section-lead-sm">
+                                    We create unique enterprise applications that enable cooperation, innovation, creativity, and improve performance accross the whole organization.
+                                </p>
+                                @*<p class="mrgn-20-top">
+                                        <a href="mailto:@{@Settings.SupportEmail}" class="btn-link" title="Email us">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </p>*@
+                            </div>
+                        </div>
+                        <!-- /. End Case Study 02 -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Case Study 03 -->
+                    <div class="animate" data-animate="fadeIn" data-duration="1.0s"
+                         data-delay="0.3s">
+                        <div class="cs-item">
+                            <img data-src="img/case-studies/case-study-03.jpg" class="img-responsive center-block lazyload" alt="Next-gen architecture" />
+                            <div class="cs-item-inner">
+                                <h4>Next-Gen Architecture</h4>
+                                <hr class="section-dash-blue" />
+                                <p class="section-lead-sm">
+                                    We develop next-gen architecture for present high-tech industry, maximazing your business value.
+                                </p>
+                                @*<p class="mrgn-20-top">
+                                        <a href="mailto:@{@Settings.SupportEmail}" class="btn-link" title="Email us">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </p>*@
+                            </div>
+                        </div>
+                        <!-- /. End Case Study 03 -->
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.End Row -->
+    </div><!-- /.End Container -->
+</section>
+<!-- /.Section Case Studies -->
+<!-- Section About -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h2 class="section-title">About Us</h2>
+                <hr class="section-dash-dark" />
+                <p class="section-lead">We are a small and very creative Team.</p>
+                <p class="section-lead-sm">Our company consists of creative, higly motivated, smart, and young individuals who are experts in crafting web experiences for our customers.</p>
+            </div>
+        </div>
+        <!-- Team Row
+        <div class="row pddn-20-top">
+            <div class="col-sm-6 col-md-3 mrgn-30-top">
+                <div class="animate" data-animate="fadeIn" data-duration="1.0s"
+                     data-delay="0.1s">
+                    <img src="img/team/alicia.jpg" width="600"
+                         height="600"
+                         class="img-responsive center-block" alt="Alicia">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 mrgn-30-top">
+                <div class="animate" data-animate="fadeIn" data-duration="1.0s"
+                     data-delay="0.4s">
+                    <img src="img/team/albert.jpg" width="600"
+                         height="600"
+                         class="img-responsive center-block" alt="Albert">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 mrgn-30-top">
+                <div class="animate" data-animate="fadeIn" data-duration="1.0s"
+                     data-delay="0.2s">
+                    <img src="img/team/rachel.jpg" width="600"
+                         height="600"
+                         class="img-responsive center-block" alt="Rachel">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 mrgn-30-top">
+                <div class="animate" data-animate="fadeIn" data-duration="1.0s"
+                     data-delay="0.3s">
+                    <img src="img/team/kevin.jpg" width="600"
+                         height="600"
+                         class="img-responsive center-block" alt="Kevin">
+                </div>
+            </div>
+        </div>
+        /. End Team Row -->
+        <!-- More About the Team -->
+        <div class="row mrgn-40-top">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <a href="#contact_form" class="btn btn-main" title="Contact us">Contact Us <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <!-- /. End More About the Team -->
+    </div><!-- /.End Container -->
+</section>
+<!-- /.Section About -->
+<!-- Section Testimonials -->
+<section id="testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center">
+
+                <!-- Testimonial Carousel -->
+                <div id="testimonials-slider">
+
+                    <!-- Testimonial 01 -->
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="quote-symbol mrgn-30-top">
+                                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                </p>
+                                <p class="testimonial-text mrgn30-top-btm">“Great things in business are never done by one person. They're done by a team of people.”</p>
+                                <p class="client mrgn-20-top">Steve Jobs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.Testimonial 01 -->
+                </div>
+                <!-- /.Testimonial Carousel -->
+            </div>
+        </div>
+    </div><!-- /.End Container -->
+</section>
+
+
+<!-- Section Contact Form -->
+<section id="contact_form">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h3>Get In Touch to Discuss Your Business Requirements</h3>
+                <p class="form-subtitle">Leave us a message and we will get in touch with you to discuss how services we provide fit in with your business requirements.</p>
+                <div class="form-wrapper animate" data-animate="fadeIn" data-duration="1.0s"
+                     data-delay="0.3s">
+                    <!-- Contact Form -->
+                    <div class="form-inner">
+                        <form id="contact-form" asp-controller="Common" asp-action="SendFeedback" method="POST">
+                            <input type="hidden" name="g-recaptcha-action">
+                            <input type="hidden" name="g-recaptcha-response-token">
+                            <input type="hidden" name="g-recaptcha-site-key" value="@RecaptchaOptions.Value.SiteKey">
+
+                            <div class="form-group">
+                                <label class="sr-only" for="firstName">Name</label>
+                                <input type="text" class="form-control" id="firstName" name="name" placeholder="Name" maxlength="100" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="emailInput">Email Address</label>
+                                <input type="email" class="form-control" id="emailInput" name="email" placeholder="Email Address" maxlength="100" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="3" data-validation-required-message="Message"
+                                          id="thoughts" name="feedbackMessage" placeholder="Message"
+                                          aria-invalid="false" aria-label="Feedback message" maxlength="1000" required></textarea>
+                            </div>
+                            <p class="text-center">
+                                <button type="submit" class="btn btn-main">
+                                    Send
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </button>
+                            </p>
+
+                        </form>
+                    </div>
+                    <!-- /.End Conctact Form -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /.End Section Contact Form -->
+@section scripts{
+    
+    <script src='https://www.google.com/recaptcha/api.js?render=@RecaptchaOptions.Value.SiteKey' defer></script>
+
+    @*@if (Context.Request.Host.Value == Settings.SiteNameDomain.ToLower())
+        {
+            <script src='https://www.google.com/recaptcha/api.js?render=6Lc3Q3oUAAAAAPOn-dLXG6chEP_hXUO5eCqo91Ez'></script>
+            <script>
+                grecaptcha.ready(function() {
+                    grecaptcha.execute('6Lc3Q3oUAAAAAPOn-dLXG6chEP_hXUO5eCqo91Ez', { action: 'contact' }).then(
+                        function(token) {
+                            $("input[name=g-recaptcha-response-token]").val(token);
+                            $("input[name=g-recaptcha-action]").val("contact");
+                        });
+                });
+            </script>
+        }*@
+    }

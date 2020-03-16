@@ -1,0 +1,289 @@
+
+ul.resp-tabs-list p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.resp-tabs-list li {
+    font-weight: 400;
+    font-size: 16px;
+    display: inline-block;
+    padding: 13px 15px;
+    margin: 0 4px 0 0;
+    list-style: none;
+    cursor: pointer;
+    float: left;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .resp-tabs-list li {
+        font-size: 14px;
+    }
+
+    .resp-vtabs .resp-tabs-list li:first-child {
+        margin-top: 10px;
+    }
+}
+
+.resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    clear: left;
+}
+
+h2.resp-accordion {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+}
+
+.resp-tab-content {
+    display: none;
+    padding: 0px;
+}
+
+.resp-tab-active {
+    border: 1px solid #e9f0fd !important;
+    border-bottom: none;
+    margin-bottom: -1px !important;
+    padding: 12px 14px 14px 14px !important;
+    border-top: 4px solid #e9f0fd !important;
+    border-bottom: 0px #fff solid !important;
+}
+
+.resp-tab-active {
+    border-bottom: none;
+    background-color: #fff;
+}
+
+.resp-content-active, .resp-accordion-active {
+    display: block;
+}
+
+.resp-tab-content {
+    border: 1px solid #c1c1c1;
+    border-top-color: #c1c1c1;
+}
+
+h2.resp-accordion {
+    font-size: 16px;
+    border: 1px solid #e9f0fd;
+    border-top: 0px solid #e9f0fd;
+    margin: 0px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+h2.resp-accordion > small.subtext {
+    font-size: 80%;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+}
+
+h2.resp-tab-active {
+    border-bottom: 0px solid #c1c1c1 !important;
+    margin-bottom: 0px !important;
+    padding: 10px 15px !important;
+}
+
+h2.resp-tab-title:last-child {
+    border-bottom: 12px solid #c1c1c1 !important;
+}
+
+/*-----------Vertical tabs-----------*/
+
+.resp-vtabs ul.resp-tabs-list {
+    float: left;
+    width: 50%;
+}
+
+.resp-vtabs .resp-tabs-list li {
+    font-weight: 700;
+}
+
+.resp-vtabs li small {
+    font-weight: 400
+}
+
+@media (min-width: 1200px) {
+    .resp-vtabs .resp-tabs-list li {
+        display: block;
+        padding: 30px 15px 30px 14px !important;
+        margin: 0 0 4px;
+        cursor: pointer;
+        float: none;
+    }
+
+    .resp-vtabs .resp-tabs-list li:first-child {
+        margin-top: 80px
+    }
+
+    .resp-vtabs li.resp-tab-active {
+        position: relative;
+        z-index: 1;
+        margin-right: -1px !important;
+        padding: 30px 15px 30px 14px !important;
+        border-top: 0px solid;
+        border: 1px solid #e9f0fd !important;
+        border-left: 1px solid #e9f0fd !important;
+        margin-bottom: 4px !important;
+        border-right: 0px #FFF solid !important;
+        background-color: #f2f5fd;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .resp-vtabs .resp-tabs-list li {
+        display: block;
+        padding: 30px 15px 30px 14px !important;
+        margin: 0 0 4px;
+        cursor: pointer;
+        float: none;
+
+    }
+
+    .resp-vtabs .resp-tabs-list li:first-child {
+        margin-top: 40px
+    }
+
+    .resp-vtabs li.resp-tab-active {
+        position: relative;
+        z-index: 1;
+        margin-right: -1px !important;
+        padding: 30px 15px 30px 14px !important;
+        border-top: 0px solid;
+        border: 1px solid #e9f0fd !important;
+        border-left: 1px solid #e9f0fd !important;
+        margin-bottom: 4px !important;
+        border-right: 0px #FFF solid !important;
+        background-color: #f2f5fd;
+    }
+}
+
+.resp-vtabs .resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    float: left;
+    width: 50%;
+    min-height: 250px;
+    clear: none;
+}
+
+.resp-vtabs .resp-tab-content {
+    border: none;
+    word-wrap: break-word;
+}
+
+.resp-vtabs .resp-tab-content img {
+    border: 1px solid #e9f0fd;
+}
+
+.resp-vtabs li {
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+
+.resp-vtabs li small {
+    text-transform: none;
+    letter-spacing: normal;
+    color: #3c4a6e;
+}
+
+.resp-vtabs li.resp-tab-active {
+    position: relative;
+    z-index: 1;
+    margin-right: -1px !important;
+    padding: 30px 15px 30px 14px !important;
+    border-top: 0px solid;
+    border: 1px solid #e9f0fd !important;
+    border-left: 1px solid #e9f0fd !important;
+    margin-bottom: 4px !important;
+    border-right: 0px #FFF solid !important;
+    background-color: #f2f5fd;
+}
+
+.resp-arrow {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: 3px;
+    position: relative;
+    margin-right: -7px;
+    margin-left: 20px;
+    width: 15px;
+    height: 50px;
+}
+
+.resp-arrow:before {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+h2.resp-tab-active span.resp-arrow {
+}
+
+/*-----------Accordion styles-----------*/
+h2.resp-tab-active {
+    background: #DBDBDB; /* !important;*/
+}
+
+.resp-easy-accordion h2.resp-accordion {
+    display: block;
+}
+
+.resp-easy-accordion .resp-tab-content {
+    border: 1px solid #c1c1c1;
+}
+
+.resp-easy-accordion .resp-tab-content:last-child {
+    border-bottom: 1px solid #c1c1c1; /* !important;*/
+}
+
+.resp-jfit {
+    width: 100%;
+    margin: 0px;
+}
+
+.resp-tab-content-active {
+    display: block;
+}
+
+h2.resp-accordion:first-child {
+    border-top: 1px solid #e9f0fd; /* !important;*/
+}
+
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+@media only screen and (max-width: 768px) {
+    ul.resp-tabs-list {
+        display: none;
+    }
+
+    h2.resp-accordion {
+        display: block;
+    }
+
+    .resp-vtabs .resp-tab-content {
+        border: 0px solid #C1C1C1;
+    }
+
+    .resp-vtabs .resp-tabs-container {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: 100px;
+        clear: none;
+    }
+
+    .resp-accordion-closed {
+        display: none !important;
+    }
+
+    .resp-vtabs .resp-tab-content:last-child {
+        border-bottom: 1px solid #c1c1c1 !important;
+    }
+}

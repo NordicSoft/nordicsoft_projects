@@ -1,0 +1,300 @@
+﻿@using Nordicsoft_ee
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+    <environment include="Production">
+        @if (Context.Request.Host.Value == Settings.SiteNameDomain.ToLower())
+        {
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137521661-5"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-137521661-5');
+            </script>
+        }
+    </environment>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@Settings.SiteName – @ViewData["Title"]</title>
+
+    @if (!string.IsNullOrEmpty(Settings.FbAppId))
+    {
+        <meta property="fb:app_id" content="@Settings.FbAppId"/>
+    }
+    <meta property="og:site_name" content="@Settings.SiteName"/>
+
+    @RenderSection("metatags", false)
+
+    <meta name="application-name" content="@Settings.SiteName">
+    <meta name="apple-mobile-web-app-title" content="@Settings.SiteName">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3c2095">
+    <meta name="msapplication-TileColor" content="#3c2095">
+    <meta name="theme-color" content="#3c2095">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+
+
+    @RenderSection("links", false)
+
+    @RenderSection("criticalCSS", false)
+
+    <environment include="Development">
+        <script src="~/dist/vendor_styles.js"></script>
+        <script src="~/dist/custom_styles.js"></script>
+    </environment>
+    <environment exclude="Development">
+
+        <link rel="preload" href="~/dist/vendor_styles.css" as="style" onload="this.onload = null;this.rel = 'stylesheet'">
+        <noscript><link rel="stylesheet" href="~/dist/vendor_styles.css"></noscript>
+
+        <link rel="preload" href="~/dist/custom_styles.css" as="style" onload="this.onload = null;this.rel = 'stylesheet'">
+        <noscript><link rel="stylesheet" href="~/dist/custom_styles.css"></noscript>
+        <script>
+            /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+            !function(t) {
+                "use strict";
+                t.loadCSS || (t.loadCSS = function() {});
+                var e = loadCSS.relpreload = {};
+                if (e.support = function() {
+                    var e;
+                    try {
+                        e = t.document.createElement("link").relList.supports("preload")
+                    } catch (t) {
+                        e = !1
+                    }
+                    return function() { return e }
+                }(), e.bindMediaToggle = function(t) {
+                    var e = t.media || "all";
+
+                    function a() { t.media = e }
+
+                    t.addEventListener ? t.addEventListener("load", a) : t.attachEvent && t.attachEvent("onload", a),
+                        setTimeout(function() { t.rel = "stylesheet", t.media = "only x" }), setTimeout(a, 3e3)
+                }, e.poly = function() {
+                    if (!e.support())
+                        for (var a = t.document.getElementsByTagName("link"), n = 0; n < a.length; n++) {
+                            var o = a[n];
+                            "preload" !== o.rel ||
+                                "style" !== o.getAttribute("as") ||
+                                o.getAttribute("data-loadcss") ||
+                                (o.setAttribute("data-loadcss", !0), e.bindMediaToggle(o))
+                        }
+                }, !e.support()) {
+                    e.poly();
+                    var a = t.setInterval(e.poly, 500);
+                    t.addEventListener
+                        ? t.addEventListener("load", function() { e.poly(), t.clearInterval(a) })
+                        : t.attachEvent && t.attachEvent("onload", function() { e.poly(), t.clearInterval(a) })
+                }
+                "undefined" != typeof exports ? exports.loadCSS = loadCSS : t.loadCSS = loadCSS
+            }("undefined" != typeof global ? global : this);
+        </script>
+    </environment>
+
+</head>
+<body>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+        <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <nav id="main_nav_alt" class="navbar-default navbar navbar-fixed-top" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" id="toggled-but" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="@Url.RouteUrl("HomeIndex")" title="Home" aria-label="NordicSoft logo">
+                    <img src="img/logo.png" class="center-block" width="174" height="35" alt="Logo">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="">
+                        <a href="#main-header" class="page-scroll" itemprop="url" role="menuitem" title="Home">
+                            <span itemprop="name">Home</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#services" class="page-scroll" itemprop="url" role="menuitem" title="Services">
+                            <span itemprop="name">Services</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#work-intro" class="page-scroll" itemprop="url" role="menuitem" title="Work">
+                            <span itemprop="name">Work</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#why-us" class="page-scroll" itemprop="url" role="menuitem" title="Why us">
+                            <span itemprop="name">Why us</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#case-studies" class="page-scroll" itemprop="url" role="menuitem" title="Science">
+                            <span itemprop="name">Science</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#about" class="page-scroll" itemprop="url" role="menuitem" title="About us">
+                            <span itemprop="name">About us</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#contact_form" class="page-scroll" itemprop="url" role="menuitem" title="Contact us">
+                            <span itemprop="name">Contact us</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <!-- /.Fixed navbar Alternative -->
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row text-center">
+                <!-- Top-link-block -->
+                <span id="top-link-block" class="hidden">
+                    <a href="#top" class="well well-sm" title="Back to top">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </span>
+                <!-- /.Top-link-block -->
+            </div>
+            <!-- Footer Widgets Row -->
+            <div class="row">
+                <div class="col-xs-4 col-xxs-12">
+                    <!-- Footer Widget 01 -->
+                    <div class="footer_widget text-center">
+                        <p class="footer_subtext">Business hours</p>
+                        <p>Monday - Friday // 9 AM - 7 PM</p>
+
+                    </div>
+                    <!-- /.End Footer Widget 01 -->
+                </div>
+                <div class="col-xs-4 col-xxs-12">
+                    <!-- Footer Widget 02 -->
+                    <div class="footer_widget text-center">
+                        <p class="footer_subtext">Phone number</p>
+                        <p><a href="tel:+37251933015" title="phone number" aria-label="phone number">+372 5193 3015</a></p>
+                    </div>
+                    <!-- /.End Footer Widget 02 -->
+                </div>
+
+                <div class="col-xs-4 col-xxs-12">
+                    <!-- Footer Widget 04 -->
+                    <div class="footer_widget text-center">
+                        <p class="footer_subtext">Email address</p>
+                        <p><a href="mailto:@{@Settings.SupportEmail}" title="email" aria-label="email">@Settings.SupportEmail</a></p>
+                        <!--   <div class="newsletter_form">
+                              <form>
+                                  <div class="form-group">
+                                      <label class="sr-only" for="firstNameNewsletter">First Name</label>
+                                      <input type="text" class="form-control" id="firstNameNewsletter"
+                                             placeholder="First Name">
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="sr-only" for="lastNameNewsletter">Last Name</label>
+                                      <input type="text" class="form-control" id="lastNameNewsletter"
+                                             placeholder="Last Name">
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="sr-only" for="inputEmailNewsletter">Email address</label>
+                                      <input type="email" class="form-control" id="inputEmailNewsletter"
+                                             placeholder="Email Address">
+                                  </div>
+                                  <button type="submit" class="btn btn-main-sm">Submit <i class="fa fa-angle-right"
+                                                                                          aria-hidden="true"></i></button>
+                              </form>
+                          </div> -->
+                    </div>
+                    <!-- /.End Footer Widget 04 -->
+                </div>
+            </div>
+            <!-- /.End Footer Widgets Row -->
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="copyright">
+                        <hr />
+                        <p>
+                            &copy; @DateTime.Now.Year. Created with love. All Rights Reserved. <a href="@Url.RouteUrl("HomeIndex")" target="_blank" title="">NordicSoft OÜ (reg.# 14187539)</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.End Copyright -->
+        </div><!-- /.End Container -->
+    </footer>
+    <!-- /.End Footer -->
+
+    <script type="application/ld+json">
+        {
+        "@@context": "http://schema.org",
+        "@@type": "Organization",
+        "name": "@Settings.SiteName",
+        "url": "@($"{Context.Request.Scheme}://{Context.Request.Host}")",
+        "logo": {
+        "@@type": "ImageObject",
+        "url":"@($"{Context.Request.Scheme}://{Context.Request.Host}/img/noridc_organization_image.png")",
+        "height": "70",
+        "width": "348"
+        },
+        "address": {
+        "@@type": "PostalAddress",
+        "streetAddress": "Narva maantee 5",
+        "addressLocality": "Tallinn",
+        "postalCode": "10117",
+        "addressCountry": "EST"
+        },
+        "contactPoint": {
+        "@@type": "ContactPoint",
+        "telephone": "+372 5193 3015",
+        "contactType": "customer service",
+        "email": "@Settings.SupportEmail"
+        },
+        "sameAs": [
+        "https://www.facebook.com/NordicSoft.net/",
+        "https://www.linkedin.com/company/nordicsoftnet/"
+        ]
+        }
+    </script>
+    <script src="~/dist/vendor_src.js" defer></script>
+    <script src="~/dist/main.js" defer></script>
+
+    @RenderSection("Scripts", required: false)
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/dist/sw.js', { scope: '/' }).then(function (registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+</body>
+</html>
