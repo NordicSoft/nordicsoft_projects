@@ -61,6 +61,7 @@
   "dependencies": {
     "prop-types": "^15.7.2",
     "rc-progress": "^2.5.2",
+    "react-back-to-top-button": "0.0.14",
     "react-bnb-gallery": "^1.1.8",
     "react-count-to": "^0.12.0",
     "react-countup": "^4.2.2",
@@ -70,6 +71,7 @@
     "react-progressbar": "^15.4.1",
     "react-redux": "^7.1.1",
     "react-router-dom": "^5.0.1",
+    "react-scroll-up-button": "^1.6.4",
     "react-visibility-sensor": "^5.1.1",
     "reactjs-popup": "^1.5.0",
     "reactstrap": "^8.1.1"

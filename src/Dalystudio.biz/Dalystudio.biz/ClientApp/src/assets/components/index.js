@@ -2,12 +2,15 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import ScrollUpButton from "react-scroll-up-button";
 import Routes from "./routes/routes";
+//import BackToTop from 'react-back-to-top';
 import "./vendor.css";
 import "./index.css";
 import "./fonts.css";
 
 //functionimport Footer from "../footer/footer";
+
 import AboutSection from "./aboutSection/aboutSection";
 import GetInTouch from "./getInTouch/getInTouch";
 import Header from "./header/header";
@@ -20,6 +23,7 @@ import Counter from "./counters/counters";
 import Description from "./description/description";
 import PortfolioTale from "./portfolio/portfolio";
 import Footer from "./footer/footer";
+
 
 const devide = (<hr className="divider-w" />);
 
@@ -196,19 +200,56 @@ function Family() {
 var root = document.querySelector("#root");
 var siteKey = root.getAttribute("data-key");
 ReactDOM.render((
+
+    <React.Fragment>
    
         <Router>
             <Header />
-      <Route path="/" exact component={Index} />
-        <Route path="/about/" component={About} />
-        <Route path="/portfolio/" component={Portfolio} /> 
-        <Route path="/contact/" component={Contact} />
-        <Route path="/project1/" component={Wedding} />
-        <Route path="/project2/" component={Lovestory} />
-        <Route path="/project3/" component={Fashion} />
-        <Route path="/project4/" component={Family} />
+            <Route path="/" exact component={Index} />
+            <Route path="/about/" component={About} />
+            <Route path="/portfolio/" component={Portfolio} /> 
+            <Route path="/contact/" component={Contact} />
+            <Route path="/project1/" component={Wedding} />
+            <Route path="/project2/" component={Lovestory} />
+            <Route path="/project3/" component={Fashion} />
+            <Route path="/project4/" component={Family} />
         </Router>
+
+        <ScrollUpButton
+            StopPosition={0}
+            ShowAtPosition={100}
+            EasingType='easeOutCubic'
+            AnimationDuration={500}
+            ContainerClassName='ScrollUpButton__Container'
+            TransitionClassName='ScrollUpButton__Toggled'
+            style={{ height: 28, width: 28, padding: 9}}
+            ToggledStyle={{ }}
+        />
+
+       
+        
+    </ React.Fragment>
 ), root);
+
+
+
+//<div class="scroll-up">
+        //    <a href="#totop"><i class="icon-angle-double-up"></i></a>
+        //</div>
+
+
+//<ScrollUpButton
+//    StopPosition={0}
+//    ShowAtPosition={100}
+//    EasingType='easeOutCubic'
+//    AnimationDuration={500}
+//    ContainerClassName='ScrollUpButton__Container'
+//    TransitionClassName='ScrollUpButton__Toggled'
+//    style={{}}
+//    ToggledStyle={{}}
+///>
+
+
 
  //<Route path="/" exact component={Index} />
         //<Route path="/about/" component={About} />

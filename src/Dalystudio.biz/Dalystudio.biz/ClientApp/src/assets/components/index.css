@@ -332,7 +332,7 @@ Sections
 Scroll to top
 ------------------------------------------------------------------- */
 
-.scroll-up {
+/*.scroll-up {
     position: fixed;
     display: none;
     bottom: 80px;
@@ -360,7 +360,23 @@ Scroll to top
         .scroll-up a:active {
             opacity: 1;
             color: #000;
-        }
+        }*/
+
+aside.ScrollUpButton__Container {
+    background-color: #ddd !important;
+    opacity: 0.6 !important;
+}
+
+    aside.ScrollUpButton__Container:hover {
+        background-color: #ddd !important;
+        opacity: 1 !important;
+    }
+
+    aside.ScrollUpButton__Container svg {
+        fill: #000 !important;
+        height: 10px;
+        vertical-align: top;
+    }
 
 .grecaptcha-badge {
     bottom: 10px !important;
