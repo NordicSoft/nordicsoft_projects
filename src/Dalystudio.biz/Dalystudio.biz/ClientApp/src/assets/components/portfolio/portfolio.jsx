@@ -131,7 +131,7 @@ function TaleItem(props) {
 
     return (
         <li className="work-item">
-            <Link to={props.item.linkUrl} className="popup" title={props.item.title}>
+            <a href={props.item.linkUrl} className="popup" title={props.item.title}>
                 <div className="work-image">
                     <TaleImg pic={props.item} />
                 </div>
@@ -140,7 +140,7 @@ function TaleItem(props) {
                         <span className="icon-magnifying-glass"></span>
                     </h3>
                 </div>
-            </Link>
+            </a>
         </li>
     );
 }

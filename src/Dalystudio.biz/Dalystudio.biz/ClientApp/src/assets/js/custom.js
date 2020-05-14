@@ -12,11 +12,11 @@
 		/* ---------------------------------------------- */
 
 		var moduleHero = $('.module-hero'),
-			module     = $('.module-hero, .module, .module-small'),
+		//	module     = $('.module-hero, .module, .module-small'),
 			navbar     = $('.navbar-custom'),
-			navHeight  = navbar.height(),
+		//	navHeight  = navbar.height(),
 			worksgrid  = $('#works-grid'),
-			width      = Math.max($(window).width(), window.innerWidth),
+		//	width      = Math.max($(window).width(), window.innerWidth),
 			mobileTest;
 
 		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -24,7 +24,7 @@
         }
 
 
-	    buildModuleHero(moduleHero);
+	//    buildModuleHero(moduleHero);
 		//navbarCheck(navbar);
 		//navbarAnimation(navbar, moduleHero, navHeight);
 		//navbarSubmenu(width);
@@ -46,7 +46,7 @@
 		 * Full height module
 		/* ---------------------------------------------- */
 
-		function buildModuleHero(moduleHero) {
+	//	function buildModuleHero(moduleHero) {
 			//if (moduleHero.length > 0) {
 			//	if (moduleHero.hasClass('module-full-height')) {
 			//		moduleHero.height($(window).height());
@@ -54,7 +54,7 @@
 			//		moduleHero.height($(window).height() * 0.85);
 			//	}
 			//}
-		};
+		//};
 
 		/* ---------------------------------------------- /*
 		 * Hero module parallax, fade

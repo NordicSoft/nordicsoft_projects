@@ -52,7 +52,7 @@ function MainFooter() {
             <div className="container">
                 <div className="row">
                     <div className="col-sm-12 text-center">
-                        <p className="copyright font-inc m-b-0">2019 <a href="https://nordicsoft.net" rel="noopener noreferrer nofollow" target="_blank">NordicSoft</a>. All rights reserved.</p>
+                        <p className="copyright font-inc m-b-0">{new Date().getFullYear()} <a href="https://nordicsoft.net" rel="noopener noreferrer nofollow" target="_blank">NordicSoft</a>. All rights reserved.</p>
                     </div>
                 </div>
             </div>
