@@ -13,7 +13,7 @@
 
 		var moduleHero = $('.module-hero'),
 		//	module     = $('.module-hero, .module, .module-small'),
-			navbar     = $('.navbar-custom'),
+		//	navbar     = $('.navbar-custom'),
 		//	navHeight  = navbar.height(),
 			worksgrid  = $('#works-grid'),
 		//	width      = Math.max($(window).width(), window.innerWidth),
@@ -46,7 +46,7 @@
 		 * Full height module
 		/* ---------------------------------------------- */
 
-	//	function buildModuleHero(moduleHero) {
+	/*	function buildModuleHero(moduleHero) {
 			//if (moduleHero.length > 0) {
 			//	if (moduleHero.hasClass('module-full-height')) {
 			//		moduleHero.height($(window).height());
@@ -55,7 +55,7 @@
 			//	}
 			//}
 		//};
-
+		*/
 		/* ---------------------------------------------- /*
 		 * Hero module parallax, fade
 		/* ---------------------------------------------- */
@@ -115,7 +115,7 @@
 		 * Change color on light slide
 		/* ---------------------------------------------- */
 
-		//function heroSliderLight() {
+		///function heroSliderLight() {
 		//	if ($('li.bg-light').hasClass('flex-active-slide')) {
 		//		navbar.addClass('nabar-dark');
 		//		$('.hero-slider').addClass('hero-slider-dark');
@@ -277,20 +277,20 @@
 		 * Post slider
 		/* ---------------------------------------------- */
 
-		$('.post-images-slider').flexslider( {
-			animation: 'slide',
-			smoothHeight: true,
-		});
+		//$('.post-images-slider').flexslider( {
+		//	animation: 'slide',
+		//	smoothHeight: true,
+		//});
 
 
 		/* ---------------------------------------------- /*
 		 * WOW Animation When You Scroll
 		/* ---------------------------------------------- */
 
-		wow = new WOW({
-			mobile: false
-		});
-		wow.init();
+		//wow = new WOW({
+		//	mobile: false
+		//});
+		//wow.init();
 
 		/* ---------------------------------------------- /*
 		 * Popup images
@@ -313,11 +313,11 @@
 		 * Rotate
 		/* ---------------------------------------------- */
 
-		$(".rotate").textrotator({
-			animation: "dissolve",
-			separator: "|",
-			speed: 3000
-		});
+		//$(".rotate").textrotator({
+		//	animation: "dissolve",
+		//	separator: "|",
+		//	speed: 3000
+		//});
 
 		/* ---------------------------------------------- /*
 		 * A jQuery plugin for fluid width video embeds

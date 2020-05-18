@@ -128,6 +128,18 @@ function TaleImg(props) {
 }
 
 function TaleItem(props) {
+    //document.getElementsByClassName('.popup').magnificPopup({
+    //    type: 'image',
+    //    gallery: {
+    //        enabled: true,
+    //        navigateByImgClick: true,
+    //        preload: [0, 1]
+    //    },
+    //    image: {
+    //        titleSrc: 'title',
+    //        tError: 'The image could not be loaded.',
+    //    }
+    //});
 
     return (
         <li className="work-item">

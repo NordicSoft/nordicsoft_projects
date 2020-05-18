@@ -67,6 +67,8 @@ function PortfolioList(props) {
                 }
                
 function FilterItem(props) {
+
+    
     return (
         <li><a href="#" data-filter={props.item.dataFilter} className={props.item.classN} data-wow-delay={props.item.dataWow} title={props.item.title}>{props.item.innerText}</a></li>
             );
