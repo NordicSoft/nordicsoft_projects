@@ -15,7 +15,7 @@
 		//	module     = $('.module-hero, .module, .module-small'),
 		//	navbar     = $('.navbar-custom'),
 		//	navHeight  = navbar.height(),
-			worksgrid  = $('#works-grid'),
+		//	worksgrid  = $('#works-grid'),
 		//	width      = Math.max($(window).width(), window.innerWidth),
 			mobileTest;
 
@@ -235,43 +235,43 @@
 		 * Portfolio
 		/* ---------------------------------------------- */
 
-		var worksgrid_mode;
-		if (worksgrid.hasClass('works-grid-masonry')) {
-			worksgrid_mode = 'masonry';
-		} else {
-			worksgrid_mode = 'fitRows';
-		}
+		//var worksgrid_mode;
+		//if (worksgrid.hasClass('works-grid-masonry')) {
+		//	worksgrid_mode = 'masonry';
+		//} else {
+		//	worksgrid_mode = 'fitRows';
+		//}
 
-	    worksgrid.each(function () {
-	        var update = function () {
-	            worksgrid.isotope({
-	                layoutMode: worksgrid_mode,
-	                itemSelector: '.work-item',
-	            });
-	        };
+	 //   worksgrid.each(function () {
+	 //       var update = function () {
+	 //           worksgrid.isotope({
+	 //               layoutMode: worksgrid_mode,
+	 //               itemSelector: '.work-item',
+	 //           });
+	 //       };
 
-	        // Note: Instead of waiting for all images until we initialize the widget
-	        // we use event capturing to update the widget's layout progressively.
-	        this.addEventListener('load', update, true);
-	    });
+	 //       // Note: Instead of waiting for all images until we initialize the widget
+	 //       // we use event capturing to update the widget's layout progressively.
+	 //       this.addEventListener('load', update, true);
+	 //   });
 		
 
-		$('#filters a').click(function() {
-			$('#filters .current').removeClass('current');
-			$(this).addClass('current');
-			var selector = $(this).attr('data-filter');
+		//$('#filters a').click(function() {
+		//	$('#filters .current').removeClass('current');
+		//	$(this).addClass('current');
+		//	var selector = $(this).attr('data-filter');
 
-			worksgrid.isotope({
-				filter: selector,
-				animationOptions: {
-					duration: 750,
-					easing: 'linear',
-					queue: false
-				}
-			});
+		//	worksgrid.isotope({
+		//		filter: selector,
+		//		animationOptions: {
+		//			duration: 750,
+		//			easing: 'linear',
+		//			queue: false
+		//		}
+		//	});
 
-			return false;
-		});
+		//	return false;
+		//});
 
 		/* ---------------------------------------------- /*
 		 * Post slider
