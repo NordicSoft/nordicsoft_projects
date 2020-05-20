@@ -45,7 +45,7 @@ export default class Contact extends React.Component {
         var self = this;
         event.preventDefault();
         var form = document.querySelector('form');
-        var siteKey = document.querySelector("input[name=g-recaptcha-site-key]");
+      //  var siteKey = document.querySelector("input[name=g-recaptcha-site-key]");
         var submitButton = document.querySelector("input[name=submit]");
 
         submitButton.disabled = true;
