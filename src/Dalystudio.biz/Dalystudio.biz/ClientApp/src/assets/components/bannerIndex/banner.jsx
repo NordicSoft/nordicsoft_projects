@@ -13,7 +13,7 @@ export default class Banner extends Component {
 
         return (
             //<div id="home" className="module-hero module-parallax module-fade module-full-height bg-dark-30 lazyload" data-bg={bg}>
-            <LazyHero imageSrc={bg} id="home" className=" module-hero bg-dark-30 " minHeight="75vh" color="rgb(0,0,0)" opacity="0.7" parallaxOffset="100" minHeight="75vh" >
+            <LazyHero imageSrc={bg} id="home" className=" module-hero bg-dark-30 " minHeight="75vh" color="rgb(0,0,0)" opacity={0.7} parallaxOffset={100} minHeight="75vh" >
                         <div className="hs-title-size-4 font-alt m-b-30">
                             Daly Studio
                     </div>
