@@ -11,17 +11,17 @@
 		 * Initialization General Scripts for all pages
 		/* ---------------------------------------------- */
 
-		var moduleHero = $('.module-hero'),
+		//var moduleHero = $('.module-hero'),
 		//	module     = $('.module-hero, .module, .module-small'),
 		//	navbar     = $('.navbar-custom'),
 		//	navHeight  = navbar.height(),
 		//	worksgrid  = $('#works-grid'),
 		//	width      = Math.max($(window).width(), window.innerWidth),
-			mobileTest;
+			//mobileTest;
 
-		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-			mobileTest = true;
-        }
+		//if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		//	mobileTest = true;
+  //      }
 
 
 	//    buildModuleHero(moduleHero);
@@ -30,16 +30,16 @@
 		//navbarSubmenu(width);
 		//hoverDropdown(width, mobileTest);
 
-		$(window).resize(function() {
-			var width = Math.max($(window).width(), window.innerWidth);
-			buildModuleHero(moduleHero);
-			//hoverDropdown(width);
-		});
+		//$(window).resize(function() {
+		//	var width = Math.max($(window).width(), window.innerWidth);
+		//	buildModuleHero(moduleHero);
+		//	//hoverDropdown(width);
+		//});
 
-		$(window).scroll(function() {
-			effectsModuleHero(moduleHero, this);
-			//navbarAnimation(navbar, moduleHero, navHeight);
-		});
+		//$(window).scroll(function() {
+		//	effectsModuleHero(moduleHero, this);
+		//	//navbarAnimation(navbar, moduleHero, navHeight);
+		//});
 
 
 		/* ---------------------------------------------- /*
@@ -60,56 +60,56 @@
 		 * Hero module parallax, fade
 		/* ---------------------------------------------- */
 
-		function effectsModuleHero(moduleHero, scrollTopp) {
-			if (moduleHero.length > 0) {
-				var homeSHeight = moduleHero.height();
-				var topScroll = $(document).scrollTop();
-				if ((moduleHero.hasClass('module-parallax')) && ($(scrollTopp).scrollTop() <= homeSHeight)) {
-					moduleHero.css('top', (topScroll * 0.55));
-				}
-				if (moduleHero.hasClass('module-fade') && ($(scrollTopp).scrollTop() <= homeSHeight)) {
-					moduleHero.css('opacity', (1 - topScroll/moduleHero.height() * 1));
-				}
-			}
-		};
+		//function effectsModuleHero(moduleHero, scrollTopp) {
+		//	if (moduleHero.length > 0) {
+		//		var homeSHeight = moduleHero.height();
+		//		var topScroll = $(document).scrollTop();
+		//		if ((moduleHero.hasClass('module-parallax')) && ($(scrollTopp).scrollTop() <= homeSHeight)) {
+		//			moduleHero.css('top', (topScroll * 0.55));
+		//		}
+		//		if (moduleHero.hasClass('module-fade') && ($(scrollTopp).scrollTop() <= homeSHeight)) {
+		//			moduleHero.css('opacity', (1 - topScroll/moduleHero.height() * 1));
+		//		}
+		//	}
+		//};
 
 		/* ---------------------------------------------- /*
 		 * Hero slider setup
 		/* ---------------------------------------------- */
 
-		if(mobileTest != true) {
-			directionNav = true;
-		} else {
-			directionNav = false;
-		}
+		//if(mobileTest != true) {
+		//	directionNav = true;
+		//} else {
+		//	directionNav = false;
+		//}
 
-		if ($('.hero-slider').length > 0) {
-			$('.hero-slider').flexslider({
-				animation: 'fade',
-				animationSpeed: 1000,
-				animationLoop: true,
-				directionNav: directionNav,
-				prevText: '',
-				nextText: '',
-				start: function(slider) {
-					heroSliderLight();
-				},
-				before: function(slider) {
-					if(mobileTest != true) {
-						$('.hs-caption').fadeOut().animate({top:'-80px'},{queue:false, easing: 'swing', duration: 700});
-						slider.slides.eq(slider.currentSlide).delay(500);
-						slider.slides.eq(slider.animatingTo).delay(500);
-					}
-				},
-				after: function(slider) {
-					heroSliderLight();
-					if(mobileTest != true) {
-						$('.hs-caption').fadeIn().animate({top:'0'},{queue:false, easing: 'swing', duration: 700});
-					}
-				},
-				useCSS: true
-			});
-		};
+		//if ($('.hero-slider').length > 0) {
+		//	$('.hero-slider').flexslider({
+		//		animation: 'fade',
+		//		animationSpeed: 1000,
+		//		animationLoop: true,
+		//		directionNav: directionNav,
+		//		prevText: '',
+		//		nextText: '',
+		//		start: function(slider) {
+		//			heroSliderLight();
+		//		},
+		//		before: function(slider) {
+		//			if(mobileTest != true) {
+		//				$('.hs-caption').fadeOut().animate({top:'-80px'},{queue:false, easing: 'swing', duration: 700});
+		//				slider.slides.eq(slider.currentSlide).delay(500);
+		//				slider.slides.eq(slider.animatingTo).delay(500);
+		//			}
+		//		},
+		//		after: function(slider) {
+		//			heroSliderLight();
+		//			if(mobileTest != true) {
+		//				$('.hs-caption').fadeIn().animate({top:'0'},{queue:false, easing: 'swing', duration: 700});
+		//			}
+		//		},
+		//		useCSS: true
+		//	});
+		//};
 
 		/* ---------------------------------------------- /*
 		 * Change color on light slide
@@ -129,14 +129,14 @@
 		 * Hero slider pause on scroll
 		/* ---------------------------------------------- */
 
-		if ($('.hero-slider').length > 0) {
-			$(window).scroll(function() {
-				var st = $(window).scrollTop();
-				if (st > 0) {
-					$('.hero-slider').flexslider('pause');
-				}
-			});
-		}
+		//if ($('.hero-slider').length > 0) {
+		//	$(window).scroll(function() {
+		//		var st = $(window).scrollTop();
+		//		if (st > 0) {
+		//			$('.hero-slider').flexslider('pause');
+		//		}
+		//	});
+		//}
 
 		/* ---------------------------------------------- /*
 		 * Transparent navbar animation
@@ -296,18 +296,18 @@
 		 * Popup images
 		/* ---------------------------------------------- */
 
-		$('a.popup').magnificPopup({
-			type: 'image',
-			gallery: {
-				enabled: true,
-				navigateByImgClick: true,
-				preload: [0,1]
-			},
-			image: {
-				titleSrc: 'title',
-				tError: 'The image could not be loaded.',
-			}
-		});
+		//$('a.popup').magnificPopup({
+		//	type: 'image',
+		//	gallery: {
+		//		enabled: true,
+		//		navigateByImgClick: true,
+		//		preload: [0,1]
+		//	},
+		//	image: {
+		//		titleSrc: 'title',
+		//		tError: 'The image could not be loaded.',
+		//	}
+		//});
 
 		/* ---------------------------------------------- /*
 		 * Rotate
@@ -323,19 +323,19 @@
 		 * A jQuery plugin for fluid width video embeds
 		/* ---------------------------------------------- */
 
-		$('body').fitVids();
+		//$('body').fitVids();
 
 		/* ---------------------------------------------- /*
 		 * Scroll Animation
 		/* ---------------------------------------------- */
 
-		$('.section-scroll').bind('click', function(e) {
-			var anchor = $(this);
-			$('html, body').stop().animate({
-				scrollTop: $(anchor.attr('href')).offset().top
-			}, 1000);
-			e.preventDefault();
-		});
+		//$('.section-scroll').bind('click', function(e) {
+		//	var anchor = $(this);
+		//	$('html, body').stop().animate({
+		//		scrollTop: $(anchor.attr('href')).offset().top
+		//	}, 1000);
+		//	e.preventDefault();
+		//});
 
 		/* ---------------------------------------------- /*
 		 * Scroll top
@@ -356,14 +356,14 @@
 
     });
 
-    document.addEventListener('lazybeforeunveil', function (e) {
-        var bg = e.target.getAttribute('data-bg');
-        if (bg) {
-            if ($('html').hasClass("webp")) {
-                bg = bg.replace(/\.[^/.]+$/, ".webp");
-            }
-            e.target.style.backgroundImage = 'url(' + bg + ')';
-        }
-    });
+    //document.addEventListener('lazybeforeunveil', function (e) {
+    //    var bg = e.target.getAttribute('data-bg');
+    //    if (bg) {
+    //        if ($('html').hasClass("webp")) {
+    //            bg = bg.replace(/\.[^/.]+$/, ".webp");
+    //        }
+    //        e.target.style.backgroundImage = 'url(' + bg + ')';
+    //    }
+    //});
 
 })(jQuery);

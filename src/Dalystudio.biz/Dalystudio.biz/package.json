@@ -67,6 +67,7 @@
     "react-countup": "^4.2.2",
     "react-grid-gallery": "^0.5.5",
     "react-isotope": "^1.0.7",
+    "react-lazy-hero": "^2.0.0",
     "react-magnific-popup": "^1.0.1",
     "react-parallax": "^2.2.4",
     "react-progressbar": "^15.4.1",
@@ -75,6 +76,7 @@
     "react-scroll-up-button": "^1.6.4",
     "react-visibility-sensor": "^5.1.1",
     "reactjs-popup": "^1.5.0",
-    "reactstrap": "^8.1.1"
+    "reactstrap": "^8.1.1",
+    "styled-components": "^5.1.0"
   }
 }
