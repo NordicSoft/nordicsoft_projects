@@ -1,7 +1,8 @@
 ﻿"use strict";
 import React, { useState } from 'react'
 import "./portfolioSection.css"
-import { Link } from 'react-router-dom'
+import Filter from './filter'
+import PortfolioList from './portfolioList'
 
 const filterArray = [
     { id: 1, dataFilter: '*', title: 'filter all', innerText: 'All' },
@@ -19,74 +20,6 @@ const portfolioMainArray = [
     { id: 15, filtertext: '* lovestory', classNF: 'work-item lovestory', linkUrl: '/project2', title: 'Amy & Erick', head: 'AMY & ERICK', text: 'Love is not about how many days, weeks, or months you\'ve been together, it\'s all about how much you love each other every day', dataSrcset: '../img/lovestory/3.webp', dataSrc: '../img/lovestory/3.jpg', alt: 'lovestory-2' },
     { id: 16, filtertext: '* wedding', classNF: 'work-item wedding', linkUrl: '/project1', title: 'Tom & Olivia', head: 'TOM & OLIVIA', text: 'Once in awhile, right in the middle of an ordinary life, love gives us a fairy tale.', dataSrcset: '../img/wedding/2.webp', dataSrc: '../img/wedding/2.jpg', alt: 'wedding-2' }
 ];
-
-function WorkPicture(props) {
-    return (
-        <picture>
-            <source type="image/webp" data-srcset={props.pict.dataSrcset} />
-            <img data-src={props.pict.dataSrc} alt={props.pict.alt} className="lazyload" />
-        </picture>
-    );
-}
-
-function TaleLink(props) {
-    const picinfo = props.infoLink;
-    return (
-        <Link to={props.infoLink.linkUrl} title={props.infoLink.title} >
-            <div className="work-image">
-                <WorkPicture pict={picinfo} />
-            </div>
-            <div className="work-caption">
-                <h3 className="work-title font-alt">{props.infoLink.head}</h3>
-                <div className="work-descr font-inc">
-                    {props.infoLink.text}
-                </div>
-            </div>
-        </Link>
-
-    );
-}
-
-function WorksGridItem(props) {
-    return (
-        <li className={props.item.classNF}>
-            <TaleLink infoLink={props.item} />
-        </li>
-    );
-}
-
-function PortfolioList(props) {
-
-    const portfolioItems = props.portfolioItems;
-    const items = portfolioItems.map((item) => {
-        return <WorksGridItem key={item.id} item={item} />;
-    });
-    return (<ul id="works-grid" className="works-grid works-grid-masonry works-grid-3 works-hover-w">{items}</ul>);
-}
-
-function FilterItem(props) {
-
-    const onItemClick = (e) => {
-        e.preventDefault();
-        props.changeFilter(props.item.dataFilter);
-        props.changeActiveFilter(props.item.id)
-    }
-
-    return (
-        <li><a href="#" onClick={onItemClick} data-filter={props.item.dataFilter} className={props.item.id === props.activeFilter ? 'current' : ''} data-wow-delay={props.item.dataWow} title={props.item.title}>{props.item.innerText}</a></li>
-    );
-}
-
-function Filter(props) {
-    const filterItems = props.filterItems;
-    const items = filterItems.map((item) => {
-        return <FilterItem key={item.id} item={item} changeFilter={props.changeFilter} activeFilter={props.activeFilter} changeActiveFilter={props.changeActiveFilter} />;
-    });
-    return (<ul id="filters" className="filter font-inc">{items}</ul>);
-}
-
-
-
 
 function PortfolioSection() {
 

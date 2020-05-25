@@ -12,9 +12,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\img\homepage.jpg" />
+    <None Include="wwwroot\img\homepage.jpg" />
+    <None Include="wwwroot\img\homepagemobile.jpg" />
+    <None Include="wwwroot\img\homepagemobile.webp" />
   </ItemGroup>
-
+  
   <ItemGroup>
     <Content Include="Credentials\.aws\credentials">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

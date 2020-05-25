@@ -1,6 +1,4 @@
-﻿
-
-/* ------------------------------------------------------------------
+﻿/* ------------------------------------------------------------------
 Navbar
 ------------------------------------------------------------------- */
 
@@ -17,50 +15,50 @@ Navbar
     z-index: 1000;
 }
 
-    .navbar-custom .dropdown-menu {
-        background: #fff;
-        border: 1px solid #f5f5f5;
-        border-radius: 0;
-        padding: 0;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
+.navbar-custom .dropdown-menu {
+    background: #fff;
+    border: 1px solid #f5f5f5;
+    border-radius: 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
 
-        .navbar-custom .dropdown-menu .dropdown-menu {
-            top: 0;
-            left: 100%;
-            right: auto;
-            margin-top: -1px;
-        }
+.navbar-custom .dropdown-menu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    right: auto;
+    margin-top: -1px;
+}
 
-    .navbar-custom .navbar-brand {
-        font-family: "Montserrat", sans-serif;
-        letter-spacing: 0.1em;
-        font-weight: 400;
-        font-size: 20px;
-        color: #000;
-    }
+.navbar-custom .navbar-brand {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+}
 
-    .navbar-custom .nav li > a {
-        position: relative;
-        color: #000;
-    }
+.navbar-custom .nav li > a {
+    position: relative;
+    color: #000;
+}
 
-    .navbar-custom .nav > li > a:focus,
-    .navbar-custom .nav > li > a:hover,
-    .navbar-custom .nav > li.active > a,
-    .navbar-custom .nav .open > a,
-    .navbar-custom .nav .open > a:focus,
-    .navbar-custom .nav .open > a:hover,
-    .navbar-custom .dropdown-menu > li > a:focus,
-    .navbar-custom .dropdown-menu > li > a:hover {
-        background: none;
-        color: #999;
-    }
+.navbar-custom .nav > li > a:focus,
+.navbar-custom .nav > li > a:hover,
+.navbar-custom .nav > li.active > a,
+.navbar-custom .nav .open > a,
+.navbar-custom .nav .open > a:focus,
+.navbar-custom .nav .open > a:hover,
+.navbar-custom .dropdown-menu > li > a:focus,
+.navbar-custom .dropdown-menu > li > a:hover {
+    background: none;
+    color: #999;
+}
 
-    .navbar-custom.navbar-transparent .nav > li.active > a {
-        color: #FFF;
-    }
+.navbar-custom.navbar-transparent .nav > li.active > a {
+    color: #FFF;
+}
 
 @media (max-width: 767px) {
     .navbar-custom.navbar-transparent .nav > li.active > a {
@@ -293,9 +291,6 @@ li.dropdown .arrow i {
     padding: 2px 5px;
 }
 
-    
-
-
 nav:not(.navbar-transparent) li.dropdown .arrow i {
     color: #000;
 }
@@ -388,6 +383,7 @@ nav.navbar-transparent li.dropdown.active > a {
         width: 85%;
     }
 }
+
 .hs-title-size-4 {
     letter-spacing: .2em;
     font-size: 36px;
@@ -398,18 +394,6 @@ nav.navbar-transparent li.dropdown.active > a {
 .navbar-transparent .nav li.dropdown.active:after {
     width: calc(100% - 45px);
 }
-
-
-/*#desktop:hover .dropdown-menu {
-    visibility: visible;
-    opacity: 1;
-}
-
-.menu-visible {
-    visibility:visible;
-    opacity:1;
-}*/
-
 
 li.dropdown.active a {
     float:left;
@@ -425,15 +409,15 @@ li.dropdown.active div {
     top: 10px;
 }
 
-    li.dropdown.active div a i::before {
-        cursor:pointer;
-    }
+li.dropdown.active div a i::before {
+    cursor:pointer;
+}
 
-    li.dropdown.active div a + div {
-        position: absolute;
-        left: 3px;
-        top: 0px;
-    }
+li.dropdown.active div a + div {
+    position: absolute;
+    left: 3px;
+    top: 0px;
+}
 
 .active.dropdown .dropdown ul.dropdown-menu {
     top:35px;

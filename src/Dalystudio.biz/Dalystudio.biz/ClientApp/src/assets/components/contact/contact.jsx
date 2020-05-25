@@ -1,9 +1,8 @@
 ﻿import React, { Component } from 'react'
 import Confirm from '../confirm/confirm.jsx';
-import "./contact.css";
 import '../confirm/confirm.css';
 
-export default class Contact extends React.Component {
+export default class Contact extends Component {
     constructor(props) {
         super(props);
         this.state = {

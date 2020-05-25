@@ -1,7 +1,8 @@
 ﻿"use strict";
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import "./portfolio.css"
+import ListPortfolioTale from './listPortfolioTale'
+
 
 const config = {
     type: 'image',
@@ -49,49 +50,6 @@ const family = [
     { id: 6, linkUrl: "../img/family/5.jpg", title: "Family 6", srcset: "../img/family/5.webp" }
 ];
 
-
-function TaleImg(props) {
-    return (
-        <picture>
-            <source type="image/webp" data-srcset={props.pic.srcset} />
-            <img data-src={props.pic.linkUrl} alt={props.pic.title} className="lazyload" />
-        </picture>
-    );
-}
-
-function TaleItem(props) {
-
-    return (
-        <li className="work-item">
-            <a href={props.item.linkUrl} className="popup" title={props.item.title}>
-                <div className="work-image">
-                    <TaleImg pic={props.item} />
-                </div>
-                <div className="work-caption">
-                    <h3 className="work-title font-alt">
-                        <span className="icon-magnifying-glass"></span>
-                    </h3>
-                </div>
-            </a>
-        </li>
-    );
-}
-
-function ListPortfolioTale(props) {
-    const taleItems = props.tales;
-    const itemsForTale = taleItems.map((item) => {
-        return <TaleItem key={item.id} item={item} />;
-    });
-
-    return (<ul id="works-grid" className="works-grid works-grid-masonry works-grid-3 works-hover-w">{itemsForTale}</ul>);
-}
-
-function PortfolioTaleTemplate(props) {
-    return (
-        <ListPortfolioTale tales={props.page} />
-    );
-}
-
 class PortfolioTale extends Component {
     constructor(props) {
         super(props);
@@ -123,8 +81,7 @@ class PortfolioTale extends Component {
 
         return (
             <section className="module-small p-t-20 p-b-0 p-t-sm-0" >
-
-                <PortfolioTaleTemplate page={this.page} />
+                <ListPortfolioTale tales={this.page} />
             </section>
         );
     }
