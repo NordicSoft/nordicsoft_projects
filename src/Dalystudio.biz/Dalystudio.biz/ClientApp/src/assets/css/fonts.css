@@ -8,16 +8,6 @@
     unicode-range: U+20-7E;
 }
 
-/*
-@font-face {
-    font-family: 'Inconsolata';
-    src: url('../fonts/inconsolata/inconsolatabold.woff2') format('woff2');
-    src: url('../fonts/inconsolata/inconsolatabold.woff2') format('woff2'), url('../fonts/inconsolata/inconsolatabold.woff') format('woff'), url('../fonts/inconsolata/inconsolatabold.ttf') format('truetype'), url('../fonts/inconsolata/inconsolatabold.svg') format('svg'), url('../fonts/inconsolata/inconsolatabold.eot') format('embedded-opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-    */
-
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/montserrat/montserratregular.woff2');
@@ -37,24 +27,6 @@
     font-display: swap;
     unicode-range: U+20-7E;
 }
-
-/* 
-    @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/opensans/opensansbold.woff2');
-    src: url('../fonts/opensans/opensansbold.woff2') format('woff2'), url('../fonts/opensans/opensansbold.woff') format('woff'), url('../fonts/opensans/opensansbold.ttf') format('truetype'), url('../fonts/opensans/opensansbold.eot') format('embedded-opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/opensans/opensansitalic.woff2');
-    src: url('../fonts/opensans/opensansitalic.woff2') format('woff2'), url('../fonts/opensans/opensansitalic.woff') format('woff'), url('../fonts/opensans/opensansitalic.ttf') format('truetype'), url('../fonts/opensans/opensansitalic.svg') format('svg'), url('../fonts/opensans/opensansitalic.eot') format('embedded-opentype');
-    font-weight: normal;
-    font-style: italic;
-}
-    */
 
 @font-face {
     font-family: 'et-line';

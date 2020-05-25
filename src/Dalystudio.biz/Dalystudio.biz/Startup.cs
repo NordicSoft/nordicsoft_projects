@@ -95,9 +95,7 @@ namespace Dalystudio.biz
                                                        "</dist/main_jquery.js>; as=script; rel=preload" +
                                                        "</dist/vendor_src.js>; as=script; rel=preload, " +
                                                        "</dist/vendor_styles.js>; as=script; rel=preload, " +
-
                                                        "</dist/fonts/inconsolataregular.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
-                                               //      "</dist/fonts/inconsolatabold.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
                                                        "</dist/fonts/montserratregular.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
                                                        "</dist/fonts/opensansregular.woff2>; as=font; crossorigin=anonymus; rel=preload, " 
 
