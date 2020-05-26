@@ -7,7 +7,7 @@ import 'lazysizes';
 
 var jconfirm = require('jquery-confirm');
 
-import './custom.js';
+//import './custom.js';
 
 jconfirm.defaults = {
     theme: 'my-theme',

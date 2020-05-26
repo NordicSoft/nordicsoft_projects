@@ -10,7 +10,7 @@ export default class Navbar extends Component {
 
         this.toggleClass = this.toggleClass.bind(this);
         this.state = {
-            activeIndex: 0,
+            activeIndex: -1,
             prevScrollpos: window.pageYOffset,
             visible: true
         }
@@ -45,15 +45,15 @@ export default class Navbar extends Component {
 
     render() {
 
-        //function openMenu() {
-        //    var toggleMenu = document.getElementById("mytogglemenu");
-        //    if (toggleMenu.classList.contains("menu-visible")) {
-        //        toggleMenu.classList.remove("mytogglemenu");
-        //    }
-        //    else {
-        //        toggleMenu.classList.add("mytogglemenu");
-        //    }
-        //}
+        function openMenu() {
+            var toggleMenu = document.getElementById("mytogglemenu");
+            if (toggleMenu.classList.contains("menu-visible")) {
+                toggleMenu.classList.remove("mytogglemenu");
+            }
+            else {
+                toggleMenu.classList.add("mytogglemenu");
+            }
+        }
 
         return (
 
