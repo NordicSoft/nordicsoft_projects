@@ -35,8 +35,8 @@ const lovestory = [
 ];
 
 const fashion = [
-    { id: 1, linkUrl: "../img/fashion/1.jpg", title: "Fashion 1", srcset: "../img/fashion/1.webp" },
-    { id: 2, linkUrl: "../img/fashion/2.jpg", title: "Fashion 2", srcset: "../img/fashion/2.webp" },
+    { id: 1, linkUrl: "../img/fashion/2.jpg", title: "Fashion 2", srcset: "../img/fashion/2.webp" },
+    { id: 2, linkUrl: "../img/fashion/1.jpg", title: "Fashion 1", srcset: "../img/fashion/1.webp" },
     { id: 3, linkUrl: "../img/fashion/3.jpg", title: "Fashion 3", srcset: "../img/fashion/3.webp" },
     { id: 4, linkUrl: "../img/fashion/fashion.jpg", title: "Fashion 4", srcset: "../img/fashion/fashion.webp" },
     { id: 5, linkUrl: "../img/fashion/4.jpg", title: "Fashion 5", srcset: "../img/fashion/4.webp" }
