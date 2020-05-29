@@ -61,16 +61,23 @@
   "dependencies": {
     "prop-types": "^15.7.2",
     "rc-progress": "^2.5.2",
+    "react-back-to-top-button": "0.0.14",
     "react-bnb-gallery": "^1.1.8",
     "react-count-to": "^0.12.0",
     "react-countup": "^4.2.2",
     "react-grid-gallery": "^0.5.5",
+    "react-isotope": "^1.0.7",
+    "react-lazy-hero": "^2.0.0",
+    "react-magnific-popup": "^1.0.1",
     "react-parallax": "^2.2.4",
     "react-progressbar": "^15.4.1",
     "react-redux": "^7.1.1",
     "react-router-dom": "^5.0.1",
+    "react-scroll": "^1.7.16",
+    "react-scroll-up-button": "^1.6.4",
     "react-visibility-sensor": "^5.1.1",
     "reactjs-popup": "^1.5.0",
-    "reactstrap": "^8.1.1"
+    "reactstrap": "^8.1.1",
+    "styled-components": "^5.1.0"
   }
 }

@@ -1,7 +1,7 @@
 ﻿"use strict";
 import "./counters.css"
 import React, { Component } from 'react';
-import CountUp, { startAnimation } from 'react-countup';
+import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 
 
@@ -33,7 +33,8 @@ class Counter extends Component {
                             <div className="counter-title font-inc">
                                 countries visited
                         </div>
-                        </div> </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="col-sm-3">
                     <div className="counter-item">
@@ -47,7 +48,8 @@ class Counter extends Component {
                             <div className="counter-title font-inc">
                                 total customers
                         </div>
-                        </div> </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="col-sm-3">
                     <div className="counter-item">
@@ -61,7 +63,8 @@ class Counter extends Component {
                             <div className="counter-title font-inc">
                                 photos made
                         </div>
-                        </div> </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="col-sm-3">
                     <div className="counter-item">
@@ -75,9 +78,12 @@ class Counter extends Component {
                             <div className="counter-title font-inc">
                                 albums created
                         </div>
-                        </div> </div>
+                        </div>
+                    </div>
                 </div>
-            </div> </div></div>
+            </div>
+            </div>
+        </div>
         );
     }
 }

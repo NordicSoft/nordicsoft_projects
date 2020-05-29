@@ -1,9 +1,8 @@
 ﻿import React, { Component } from 'react'
 import Confirm from '../confirm/confirm.jsx';
-import "./contact.css";
 import '../confirm/confirm.css';
 
-export default class Contact extends React.Component {
+export default class Contact extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -41,11 +40,42 @@ export default class Contact extends React.Component {
         });
     };
 
+    componentDidMount() {
+        var div = document.createElement('div');
+        div.setAttribute('id', 'recaptcha-badge');
+        div.setAttribute('class', 'lazyload');
+        div.setAttribute('data-site-key', this.state.siteKey);
+        document.body.appendChild(div);
+
+        document.addEventListener('lazybeforeunveil',
+            function (e) {
+                var siteKey = e.target.getAttribute('data-site-key');
+                if (siteKey) {
+                    var script = document.createElement('script');
+
+                    script.async = true;
+                    script.src = 'https://www.google.com/recaptcha/api.js?render=explicit&onload=onRecaptchaLoadCallback';
+                    document.body.appendChild(script);
+                }
+            });
+
+        window.onRecaptchaLoadCallback = function () {
+            var siteKey = document.getElementById("recaptcha-badge").getAttribute('data-site-key');
+
+            var clientId = grecaptcha.render('recaptcha-badge',
+                {
+                    'sitekey': siteKey,
+                    'size': 'invisible'
+                });
+            document.getElementById("recaptcha-badge").setAttribute('data-widget-id', clientId);
+        }
+    }
+
     handleSubmit(event) {
         var self = this;
         event.preventDefault();
         var form = document.querySelector('form');
-        var siteKey = document.querySelector("input[name=g-recaptcha-site-key]");
+      //  var siteKey = document.querySelector("input[name=g-recaptcha-site-key]");
         var submitButton = document.querySelector("input[name=submit]");
 
         submitButton.disabled = true;

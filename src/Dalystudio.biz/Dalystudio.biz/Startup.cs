@@ -87,9 +87,6 @@ namespace Dalystudio.biz
                     //HTTP\2 push feeature
                     context.Response.Headers["Link"] = "</dist/custom_styles.css>; as=style; rel=preload, " +
                                                        "</dist/fonts/et-line.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
-                                                       "</dist/fonts/inconsolataregular.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
-                                                       "</dist/fonts/montserratregular.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
-                                                       "</dist/fonts/opensansregular.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
                                                        "</dist/custom_styles.js>; as=script; rel=preload, " +
                                                        "</dist/effect_plugins.js>; as=script; rel=preload, " +
                                                        "</dist/jquery_plugins.js>; as=script; rel=preload, " +
@@ -97,7 +94,14 @@ namespace Dalystudio.biz
                                                        "</dist/main_bootstrap.js>; as=script; rel=preload, " +
                                                        "</dist/main_jquery.js>; as=script; rel=preload" +
                                                        "</dist/vendor_src.js>; as=script; rel=preload, " +
-                                                       "</dist/vendor_styles.js>; as=script; rel=preload, ";
+                                                       "</dist/vendor_styles.js>; as=script; rel=preload, " +
+                                                       "</dist/fonts/inconsolataregular.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
+                                                       "</dist/fonts/montserratregular.woff2>; as=font; crossorigin=anonymus; rel=preload, " +
+                                                       "</dist/fonts/opensansregular.woff2>; as=font; crossorigin=anonymus; rel=preload, " 
+
+
+
+                                                       ;
                     return next.Invoke();
                 });
             }

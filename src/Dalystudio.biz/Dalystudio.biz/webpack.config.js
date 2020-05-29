@@ -21,7 +21,7 @@ module.exports = (env, options) => {
   return {
     mode: devMode ? "development" : "production",
     entry: {
-      vendor_styles: "./ClientApp/src/assets/js/vendor_styles.js",
+     // vendor_styles: "./ClientApp/src/assets/js/vendor_styles.js",
     
         main_jquery: 
             "script-loader!./ClientApp/src/assets/vendor/jquery-2.1.3.js",
@@ -31,19 +31,19 @@ module.exports = (env, options) => {
         //],
       vendor_src: [
        // "script-loader!./ClientApp/src/assets/vendor/jquery.confirm.js",
-        "script-loader!./ClientApp/src/assets/vendor/appear.js",
-        "script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.js",
+   //     "script-loader!./ClientApp/src/assets/vendor/appear.js",
+   //     "script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.js",
        ],
         jquery_plugins: [
-          "script-loader!./ClientApp/src/assets/vendor/jquery.fitvids.js",
-          "script-loader!./ClientApp/src/assets/vendor/jquery.flexslider.js",
+      //    "script-loader!./ClientApp/src/assets/vendor/jquery.fitvids.js",
+      //    "script-loader!./ClientApp/src/assets/vendor/jquery.flexslider.js",
         ],
         effect_plugins: [
   "script-loader!./ClientApp/src/assets/vendor/jquery.magnific-popup.js", 
        //"script-loader!./ClientApp/src/assets/vendor/jquery.mb.YTPlayer.js",
-        "script-loader!./ClientApp/src/assets/vendor/jquery.simple-text-rotator.js",
+  //      "script-loader!./ClientApp/src/assets/vendor/jquery.simple-text-rotator.js",
        //"script-loader!./ClientApp/src/assets/vendor/smoothscroll.js",
-       "script-loader!./ClientApp/src/assets/vendor/wow.js"
+  //     "script-loader!./ClientApp/src/assets/vendor/wow.js"
             ],
       custom_styles: './ClientApp/src/assets/js/custom_styles.js',
       main: './ClientApp/src/assets/js/index.js',
@@ -152,16 +152,16 @@ module.exports = (env, options) => {
             }
           }]
         },
-        {
-          test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-          use: [{
-            loader: 'file-loader',
-            options: {
-              name: "fonts/[name].[ext]", // Output below ./fonts
-              publicPath: devMode ? "/dist" : "/dist"
+            {
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: "fonts/[name].[ext]", // Output below ./fonts
+                        publicPath: "/dist"
+                    }
+                }]
             }
-          }]
-        }
       ]
       },
     resolve: {

@@ -1,0 +1,31 @@
+﻿/* ------------------------------------------------------------------
+Content boxes
+------------------------------------------------------------------- */
+
+.content-box {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.content-box-icon {
+    font-size: 36px;
+}
+
+.content-box-title {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.content-box-text {
+    margin: 15px 0 0;
+}
+
+.content-box a:focus {
+    color: #000;
+}
+
+@media(max-width:767px) {
+    .content-box a:hover {
+        color: #000;
+    }
+}

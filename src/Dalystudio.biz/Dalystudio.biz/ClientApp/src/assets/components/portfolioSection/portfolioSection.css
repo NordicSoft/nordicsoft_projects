@@ -55,6 +55,7 @@ Portfolio
     width: 50%;
     float: left;
     margin: 0;
+    transition: top 5s ease-out 1s;
 }
 
 .works-grid-3 .work-item {
