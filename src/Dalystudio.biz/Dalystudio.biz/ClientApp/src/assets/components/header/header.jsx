@@ -42,17 +42,9 @@ class MainPartHeader extends Component {
         return (
             <nav className={classnames("navbar navbar-custom  navbar-fixed-top", { "navbar-transparent": this.state.visible })} role="navigation">
                 <div className="container">
-                    <div className="navbar-header">
-                        <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
-                            <span className="sr-only">Toggle navigation</span>
-                            {iconMenu}
-                        </button>
-                        <a className="navbar-brand" href="/" title="logo">Daly Studio</a>
-                    </div>
 
-                    <div className="collapse navbar-collapse" id="custom-collapse">
-                        <Navbar />
-                    </div >
+                    <Navbar />
+
                 </div >
             </nav >
         )

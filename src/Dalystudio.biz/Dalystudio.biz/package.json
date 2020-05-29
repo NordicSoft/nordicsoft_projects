@@ -73,6 +73,7 @@
     "react-progressbar": "^15.4.1",
     "react-redux": "^7.1.1",
     "react-router-dom": "^5.0.1",
+    "react-scroll": "^1.7.16",
     "react-scroll-up-button": "^1.6.4",
     "react-visibility-sensor": "^5.1.1",
     "reactjs-popup": "^1.5.0",

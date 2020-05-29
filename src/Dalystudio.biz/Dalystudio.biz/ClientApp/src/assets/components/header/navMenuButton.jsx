@@ -1,7 +1,7 @@
 ﻿"use strict";
 import React, { Component } from 'react'
 import "./header.css"
-import NavMenu from './navMenu'
+import { Link } from 'react-router-dom'
 
 export default class NavMenuButton extends Component {
 
@@ -12,7 +12,8 @@ export default class NavMenuButton extends Component {
         }
     }
 
-    handleClick = () => {
+    handleClick = (e) => {
+        e.preventDefault();
         this.setState({ isOpen: !this.state.isOpen });
     }
 
@@ -30,11 +31,22 @@ export default class NavMenuButton extends Component {
 
     render() {
         return (
-            <div>
-                <a onClick={this.handleClick} href="#"> <span className="arrow"><i className="icon-angle-down"></i></span></a>
-                <NavMenu isOpen={this.state.isOpen} />
-            </div>
+            <ul className="dropdown-menu" role="menu" >
+                <li className={this.state.activeIndex == 4 ? 'active' : null}>
+                    <Link to='/project1' title='Wedding'>Wedding</Link>
+                </li >
+                <li className={this.state.activeIndex == 5 ? 'active' : null}>
+                    <Link to='/project2' title='Love Story'>Love Story</Link>
+                </li >
+                <li className={this.state.activeIndex == 6 ? 'active' : null}>
+                    <Link to='/project3' title='Fashion'>Fashion</Link>
+                </li >
+                <li className={this.state.activeIndex == 7 ? 'active' : null}>
+                    <Link to='/project4' title='Family'>Family</Link>
+                </li >
+            </ul>
         );
     }
 
 }
+
