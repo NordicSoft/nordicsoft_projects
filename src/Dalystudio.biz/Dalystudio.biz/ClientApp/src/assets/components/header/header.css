@@ -483,3 +483,15 @@ li.dropdown.active div a + div {
 li.dropdown:hover .arrow i:before {
     content: "\F106";
 }
+
+@media(max-width:576px) {
+    .dropdown a + a {
+        width: 15%;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-custom li a:hover {
+        background: none !important;
+    }
+}
