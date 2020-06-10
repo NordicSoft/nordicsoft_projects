@@ -28,18 +28,18 @@ module.exports = (env, options) => {
         //main_bootstrap: [
         //  //  "script-loader!./ClientApp/src/assets/vendor/bootstrap/js/bootstrap.js",
         //   // "script-loader!./ClientApp/src/assets/vendor/jqBootstrapValidation.js"
-        //],
-      vendor_src: [
+        // ],
+      //vendor_src: [
        // "script-loader!./ClientApp/src/assets/vendor/jquery.confirm.js",
    //     "script-loader!./ClientApp/src/assets/vendor/appear.js",
    //     "script-loader!./ClientApp/src/assets/vendor/imagesloaded.pkgd.js",
-       ],
-        jquery_plugins: [
+       // ],
+       // jquery_plugins: [
       //    "script-loader!./ClientApp/src/assets/vendor/jquery.fitvids.js",
       //    "script-loader!./ClientApp/src/assets/vendor/jquery.flexslider.js",
-        ],
+        //],
         effect_plugins: [
-  "script-loader!./ClientApp/src/assets/vendor/jquery.magnific-popup.js", 
+  "script-loader!./ClientApp/src/assets/vendor/jquery.magnific-popup.js" 
        //"script-loader!./ClientApp/src/assets/vendor/jquery.mb.YTPlayer.js",
   //      "script-loader!./ClientApp/src/assets/vendor/jquery.simple-text-rotator.js",
        //"script-loader!./ClientApp/src/assets/vendor/smoothscroll.js",
