@@ -16,12 +16,6 @@
     <None Include="wwwroot\img\homepagemobile.jpg" />
     <None Include="wwwroot\img\homepagemobile.webp" />
   </ItemGroup>
-  
-  <ItemGroup>
-    <Content Include="Credentials\.aws\credentials">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
 
   <ItemGroup>
     <None Include="wwwroot\img\homepage.jpg" />
@@ -46,6 +40,10 @@
     <Content Update="Views\Shared\_ContactForm.cshtml">
            <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Credentials\.aws\" />
   </ItemGroup>
 
 </Project>
