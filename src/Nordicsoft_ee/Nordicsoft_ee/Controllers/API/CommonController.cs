@@ -49,9 +49,9 @@ namespace Nordicsoft_ee.Controllers.API
 
 
             }
-            catch
+            catch(System.Exception e)
             {
-                return JObject.FromObject(new {success = false});
+                return JObject.FromObject(new {success = false, message = e.Message});
             }
 
 
