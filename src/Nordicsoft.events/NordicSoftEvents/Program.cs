@@ -43,7 +43,7 @@ namespace NordicSoftEvents
                     var env = hostingContext.HostingEnvironment;
 
                     config.AddJsonFile("appsettings.json", optional: true)
-                        .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+                         .AddJsonFile($"{ Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)}\\appsettings\\nordic_soft_events\\appsettings.{env.EnvironmentName}.json", optional: true);
 
                     config.AddEnvironmentVariables();
                 })

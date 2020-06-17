@@ -56,7 +56,6 @@ namespace NordicSoftEvents
             services.AddTransient<IMailSender, MailSender>();*/
             if (HostingEnvironment.IsProduction())
             {
-                services.AddDefaultAWSOptions(Configuration.GetAWSOptions());
                 services.AddAWSService<IAmazonSimpleEmailService>();
                 services.AddTransient<IEmailSender, AmazonSesEmailSender>();
             }
