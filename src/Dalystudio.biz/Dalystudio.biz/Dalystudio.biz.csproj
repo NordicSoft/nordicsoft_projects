@@ -12,15 +12,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Credentials\.aws\credentials">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <None Include="wwwroot\img\homepage.jpg" />
+    <None Include="wwwroot\img\homepagemobile.jpg" />
+    <None Include="wwwroot\img\homepagemobile.webp" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="wwwroot\img\homepage.jpg" />
-    <None Include="wwwroot\img\homepagemobile.jpg" />
-    <None Include="wwwroot\img\homepagemobile.webp" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,8 +38,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Update="Views\Shared\_ContactForm.cshtml">
-      <Pack>$(IncludeRazorContentInPack)</Pack>
+           <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Credentials\.aws\" />
   </ItemGroup>
 
 </Project>
