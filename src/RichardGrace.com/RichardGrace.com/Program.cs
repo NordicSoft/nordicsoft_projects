@@ -43,7 +43,7 @@ namespace RichardGrace.com
                     var env = hostingContext.HostingEnvironment;
 
                     config.AddJsonFile("appsettings.json", optional: true)
-                        .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+                         .AddJsonFile($"{ Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)}\\appsettings\\richard_grace_com\\appsettings.{env.EnvironmentName}.json", optional: true);
 
                     config.AddEnvironmentVariables();
                 })

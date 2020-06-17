@@ -45,7 +45,6 @@ namespace RichardGrace.com
             services.AddScoped<IGoogleRecaptcha, GoogleRecaptcha>();
             if (HostingEnvironment.IsProduction())
             {
-                services.AddDefaultAWSOptions(Configuration.GetAWSOptions());
                 services.AddAWSService<IAmazonSimpleEmailService>();
                 services.AddTransient<IEmailSender, AmazonSesEmailSender>();
 

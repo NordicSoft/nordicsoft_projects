@@ -42,9 +42,9 @@ namespace RichardGrace.com.Controllers.API
                 return JObject.FromObject(new { success = true });
 
             }
-            catch
+            catch(System.Exception e)
             {
-                return JObject.FromObject(new { success = false });
+                return JObject.FromObject(new { success = false, message = e.Message });
             }
         }
     }
