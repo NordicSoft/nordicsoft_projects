@@ -30,7 +30,7 @@ namespace Dalystudio.biz.Controllers.API
 
             if (!isCaptchaValid && env.IsProduction())
             {
-                return JObject.FromObject(new {success = false});
+                return JObject.FromObject(new {success = false, message = "Captcha is not valid"});
             }
 
           
