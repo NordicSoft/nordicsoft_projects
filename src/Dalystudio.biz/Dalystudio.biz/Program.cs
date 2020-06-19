@@ -43,8 +43,10 @@ namespace Dalystudio.biz
                     var env = hostingContext.HostingEnvironment;
 
                     config.AddJsonFile("appsettings.json", optional: true)
-                        .AddJsonFile($"{ Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)}\\appsettings\\dalystudio_biz\\appsettings.{env.EnvironmentName}.json", optional: true);
+                        .AddJsonFile($"{ Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)}/appsettings/dalystudio_biz/appsettings.{env.EnvironmentName}.json", optional: true);
 
+                var logger = NLog.Web.NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
+                logger.Error($"{ Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)}/appsettings/dalystudio_biz/appsettings.{env.EnvironmentName}.json");
                     config.AddEnvironmentVariables();
                 })
                 .UseStartup<Startup>()
