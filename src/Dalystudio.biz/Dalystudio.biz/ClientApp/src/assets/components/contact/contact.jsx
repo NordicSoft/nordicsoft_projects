@@ -97,7 +97,9 @@ export default class Contact extends Component {
         return (
             <section>
             <form id="contact-form" role="form" asp-controller="Common" asp-action="SendFeedback" method="POST" onSubmit={this.handleSubmit}>
-
+                    <input type="hidden" name="g-recaptcha-action" />
+                    <input type="hidden" name="g-recaptcha-response-token" />
+                    <input type="hidden" name="g-recaptcha-site-key" value={this.props.siteKey} />
                 <div className="form-group">
                     <input type="text" tabIndex="0" id="cname" name="cname" className="form-control" placeholder="Name" required="" data-validation-required-message="Please enter your name." aria-invalid="false" aria-label="your name" />
                     <p className="help-block text-danger"></p>
