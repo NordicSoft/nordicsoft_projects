@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import ScrollToTop from './scrollTopLink/scrollToTop'
 import ScrollUpButton from "react-scroll-up-button";
 import "./vendor.css";
 import "./index.css";
@@ -36,6 +37,8 @@ class App extends Component {
             <React.Fragment>
 
                 <Router>
+
+                    <ScrollToTop>
                     <Header />
                     <Route path="/" exact component={Index} />
                     <Route path="/about/" component={About} />
@@ -45,6 +48,8 @@ class App extends Component {
                     <Route path="/project2/" component={Lovestory} />
                     <Route path="/project3/" component={Fashion} />
                     <Route path="/project4/" component={Family} />
+
+                    </ScrollToTop>
                 </Router>
 
                 <ScrollUpButton

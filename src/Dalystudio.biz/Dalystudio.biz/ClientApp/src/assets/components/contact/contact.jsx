@@ -8,7 +8,8 @@ export default class Contact extends Component {
         this.state = {
             showPopup: false,
             message: '',
-            siteKey: props.siteKey
+            siteKey: props.siteKey,
+            widgetId: ''
         };
         this.handleSubmit = this.handleSubmit.bind(this);
         this.togglePopup = this.togglePopup.bind(this);
@@ -62,6 +63,8 @@ export default class Contact extends Component {
                 }
             });
 
+        var self  = this;
+
         window.onRecaptchaLoadCallback = function () {
             var siteKey = document.getElementById("recaptcha-badge").getAttribute('data-site-key');
 
@@ -70,8 +73,19 @@ export default class Contact extends Component {
                     'sitekey': siteKey,
                     'size': 'invisible'
                 });
+
+            self.setState({ widgetId: clientId });
+
             document.getElementById("recaptcha-badge").setAttribute('data-widget-id', clientId);
+            console.log(self.state.widgetId);
         }
+      //  console.log(this.state.widgetId);
+
+    }
+
+    componentWillUnmount() {
+        grecaptcha.reset(this.state.widgetId);
+        //clientId = undefined;
     }
 
     handleSubmit(event) {
