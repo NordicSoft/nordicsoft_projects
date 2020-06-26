@@ -12,16 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\img\homepage.jpg" />
-    <None Include="wwwroot\img\homepagemobile.jpg" />
-    <None Include="wwwroot\img\homepagemobile.webp" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="wwwroot\img\homepage.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AWSSDK.Core" Version="3.3.26" />
     <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.3.6" />
     <PackageReference Include="AWSSDK.SimpleEmail" Version="3.3.6.22" />
@@ -43,7 +33,38 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="ClientApp\src\assets\img\" />
     <Folder Include="Credentials\.aws\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\family\1.webp" />
+    <None Include="wwwroot\img\family\2.webp" />
+    <None Include="wwwroot\img\family\3.webp" />
+    <None Include="wwwroot\img\family\4.webp" />
+    <None Include="wwwroot\img\family\5.webp" />
+    <None Include="wwwroot\img\family\family.webp" />
+    <None Include="wwwroot\img\family\main.webp" />
+    <None Include="wwwroot\img\fashion\1.webp" />
+    <None Include="wwwroot\img\fashion\2.webp" />
+    <None Include="wwwroot\img\fashion\3.webp" />
+    <None Include="wwwroot\img\fashion\4.webp" />
+    <None Include="wwwroot\img\fashion\fashion.webp" />
+    <None Include="wwwroot\img\fashion\main.webp" />
+    <None Include="wwwroot\img\lovestory\1.webp" />
+    <None Include="wwwroot\img\lovestory\2.webp" />
+    <None Include="wwwroot\img\lovestory\3.webp" />
+    <None Include="wwwroot\img\lovestory\4.webp" />
+    <None Include="wwwroot\img\lovestory\5.webp" />
+    <None Include="wwwroot\img\lovestory\lovestory.webp" />
+    <None Include="wwwroot\img\lovestory\main.webp" />
+    <None Include="wwwroot\img\wedding\1.webp" />
+    <None Include="wwwroot\img\wedding\2.webp" />
+    <None Include="wwwroot\img\wedding\3.webp" />
+    <None Include="wwwroot\img\wedding\4.webp" />
+    <None Include="wwwroot\img\wedding\5.webp" />
+    <None Include="wwwroot\img\wedding\cover.webp" />
+    <None Include="wwwroot\img\wedding\main.webp" />
   </ItemGroup>
 
 </Project>
