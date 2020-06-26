@@ -9,9 +9,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
     <Content Include="ClientApp\src\assets\images\event\arrow.png" />
-    <Content Include="Credentials\.aws\credentials">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include=".\wwwroot\images\**" />
   </ItemGroup>
 
@@ -58,6 +55,7 @@
 
   <ItemGroup>
     <Folder Include="ClientApp\crawler\critical\" />
+    <Folder Include="Credentials\.aws\" />
   </ItemGroup>
 
 </Project>

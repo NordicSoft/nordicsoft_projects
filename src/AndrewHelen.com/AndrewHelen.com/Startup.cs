@@ -52,7 +52,6 @@ namespace AndrewHelen.com
 
             if (HostingEnvironment.IsProduction())
             {
-                services.AddDefaultAWSOptions(Configuration.GetAWSOptions());
                 services.AddAWSService<IAmazonSimpleEmailService>();
                 services.AddTransient<IEmailSender, AmazonSesEmailSender>();
             }
