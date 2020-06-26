@@ -11,12 +11,14 @@ export default class Contact extends Component {
             siteKey: props.siteKey,
             widgetId: ''
         };
+        this.grecaptchaId =`recaptcha-badge-${new Date().getTime()}`;
+        this._isMounted = false;
         this.handleSubmit = this.handleSubmit.bind(this);
         this.togglePopup = this.togglePopup.bind(this);
         this.request = this.request.bind(this);
     }
     togglePopup() {
-        this.setState({
+        this._isMounted && this.setState({
             showPopup: !this.state.showPopup
         });
     }
@@ -42,11 +44,12 @@ export default class Contact extends Component {
     };
 
     componentDidMount() {
+        this._isMounted = true;
         var siteKey = document.querySelector("input[name=g-recaptcha-site-key]");
         var siteKeyValue = this.props.siteKey;
 
         var div = document.createElement('div');
-        div.setAttribute('id', 'recaptcha-badge');
+        div.setAttribute('id', this.grecaptchaId);
         div.setAttribute('class', 'lazyload');
         div.setAttribute('data-site-key', this.state.siteKey);
         document.body.appendChild(div);
@@ -66,17 +69,17 @@ export default class Contact extends Component {
         var self  = this;
 
         window.onRecaptchaLoadCallback = function () {
-            var siteKey = document.getElementById("recaptcha-badge").getAttribute('data-site-key');
+            var siteKey = document.getElementById(self.grecaptchaId).getAttribute('data-site-key');
 
-            var clientId = grecaptcha.render('recaptcha-badge',
+            var clientId = grecaptcha.render(self.grecaptchaId,
                 {
                     'sitekey': siteKey,
                     'size': 'invisible'
                 });
 
-            self.setState({ widgetId: clientId });
+            self._isMounted && self.setState({ widgetId: clientId });
 
-            document.getElementById("recaptcha-badge").setAttribute('data-widget-id', clientId);
+            document.getElementById(self.grecaptchaId).setAttribute('data-widget-id', clientId);
             console.log(self.state.widgetId);
         }
       //  console.log(this.state.widgetId);
@@ -84,7 +87,10 @@ export default class Contact extends Component {
     }
 
     componentWillUnmount() {
-        grecaptcha.reset(this.state.widgetId);
+        this.state.widgetId !== "" && grecaptcha.reset(this.state.widgetId);
+        document.getElementById(this.grecaptchaId).remove();
+        
+        this._isMounted = false;
         //clientId = undefined;
     }
 
@@ -95,7 +101,7 @@ export default class Contact extends Component {
       //  var siteKey = document.querySelector("input[name=g-recaptcha-site-key]");
         var siteAction = document.querySelector("input[name=g-recaptcha-action]");
         var siteToken = document.querySelector("input[name=g-recaptcha-response-token]");
-        var widgetId = document.querySelector("#recaptcha-badge").dataset.widgetId;
+        var widgetId = document.getElementById(this.grecaptchaId).dataset.widgetId;
 
         var submitButton = document.querySelector("input[name=submit]");
 

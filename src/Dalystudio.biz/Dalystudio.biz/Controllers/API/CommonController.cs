@@ -28,12 +28,12 @@ namespace Dalystudio.biz.Controllers.API
 
             bool isCaptchaValid = await googleRecaptcha.IsCaptchaValid(encodedResponse, action);
 
-            // if (!isCaptchaValid && env.IsProduction())
-            // {
-            //     return JObject.FromObject(new {success = false, message = "Captcha is not valid"});
-            // }
+            if (!isCaptchaValid && env.IsProduction())
+            {
+                return JObject.FromObject(new { success = false, message = "Captcha is not valid" });
+            }
 
-          
+
             var textHtml = $"<p>{Settings.SiteNameDomain}: Feedback from customer with name: <strong>{name}</strong></p><br>" +
                            $"<p>and e-mail: <strong>{email}</strong>: </p><br>" +
                   $"<p>{feedbackMessage}</p>";
